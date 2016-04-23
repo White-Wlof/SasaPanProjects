@@ -45,20 +45,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Animation\test.cs" />
-     <Compile Include="Assets\Audio\test.cs" />
-     <Compile Include="Assets\Fonts\test.cs" />
-     <Compile Include="Assets\Materials\test.cs" />
-     <Compile Include="Assets\Physics Materials\test.cs" />
-     <Compile Include="Assets\Prefabs\test.cs" />
-     <Compile Include="Assets\Resources\test.cs" />
-     <Compile Include="Assets\Scenes\test.cs" />
-     <Compile Include="Assets\Scripts\test.cs" />
+     <Compile Include="Assets\RiverTool\ICurvePoint.cs" />
+     <Compile Include="Assets\RiverTool\IRiverTool.cs" />
+     <Compile Include="Assets\RiverTool\TextureAnimator.cs" />
+     <None Include="Assets\Fonts\test.txt" />
+     <None Include="Assets\Animation\test.txt" />
+     <None Include="Assets\Physics Materials\test.txt" />
+     <None Include="Assets\Prefabs\test.txt" />
+     <None Include="Assets\Scripts\test.txt" />
+     <None Include="Assets\RiverTool\waterShader.shader" />
+     <None Include="Assets\Audio\test.txt" />
+     <None Include="Assets\Materials\test.txt" />
+     <None Include="Assets\Scenes\test.txt" />
+     <None Include="Assets\Resources\test.txt" />
+     <None Include="Assets\RiverTool\VertexColor.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="RiverTools">
+ <HintPath>/Users/Sho/SasaPanProjects/SasaProjects/Assets/RiverTool/RiverTools.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
