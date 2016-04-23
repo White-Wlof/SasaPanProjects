@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{BC0D5EAF-B3B6-3924-5669-4D1B72D07A48}") = "SasaProjects", "Assembly-CSharp-firstpass.csproj", "{140D6703-FEC7-6746-4E6C-560A098710B4}"
+EndProject
 Project("{BC0D5EAF-B3B6-3924-5669-4D1B72D07A48}") = "SasaProjects", "Assembly-CSharp.csproj", "{0B3307E2-B3A4-B97D-AA93-B089B82D119D}"
 EndProject
 Project("{BC0D5EAF-B3B6-3924-5669-4D1B72D07A48}") = "SasaProjects", "Assembly-CSharp-Editor.csproj", "{CEBFC0B7-BA78-3AEC-C629-56C5C97D6127}"
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{140D6703-FEC7-6746-4E6C-560A098710B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{140D6703-FEC7-6746-4E6C-560A098710B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{140D6703-FEC7-6746-4E6C-560A098710B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{140D6703-FEC7-6746-4E6C-560A098710B4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0B3307E2-B3A4-B97D-AA93-B089B82D119D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0B3307E2-B3A4-B97D-AA93-B089B82D119D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B3307E2-B3A4-B97D-AA93-B089B82D119D}.Release|Any CPU.ActiveCfg = Release|Any CPU
