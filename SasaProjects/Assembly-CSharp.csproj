@@ -176,6 +176,7 @@
      <Compile Include="Assets\RiverTool\ICurvePoint.cs" />
      <Compile Include="Assets\RiverTool\IRiverTool.cs" />
      <Compile Include="Assets\RiverTool\TextureAnimator.cs" />
+     <Compile Include="Assets\Scripts\Game\PlayerController.cs" />
      <None Include="Assets\Fonts\test.txt" />
      <None Include="Assets\Animation\test.txt" />
      <None Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\marcopolo-readme.txt" />
@@ -210,6 +211,10 @@
  <Reference Include="Photon3Unity3D">
  <HintPath>/Users/Sho/SasaPanProjects/SasaProjects/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{140D6703-FEC7-6746-4E6C-560A098710B4}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
