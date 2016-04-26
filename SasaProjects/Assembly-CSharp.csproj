@@ -202,14 +202,14 @@
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
- <Reference Include="RiverTools">
- <HintPath>/Users/Sho/SasaPanProjects/SasaProjects/Assets/RiverTool/RiverTools.dll</HintPath>
+ <Reference Include="Photon3Unity3D">
+ <HintPath>/Users/Sho/SasaPanProjects/SasaProjects/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
  <HintPath>/Users/Sho/SasaPanProjects/SasaProjects/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
- <Reference Include="Photon3Unity3D">
- <HintPath>/Users/Sho/SasaPanProjects/SasaProjects/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ <Reference Include="RiverTools">
+ <HintPath>/Users/Sho/SasaPanProjects/SasaProjects/Assets/RiverTool/RiverTools.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
