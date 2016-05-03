@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 0cfc4a0540b944d6f8bb8670bf0793ef
+timeCreated: 1462162029
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BoostGage_0
+    21300002: BoostGage_1
+    21300004: BoostGage_2
+    21300006: BoostGage_3
+    21300008: BoostGage_4
+    21300010: BoostGage_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: BoostGage_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 286
+        width: 285
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -85.5, y: 86.16667}
+        - {x: -85.5, y: 25.166672}
+        - {x: 24.5, y: -84.83333}
+        - {x: 85.5, y: -84.83333}
+        - {x: 85.5, y: 3.1666718}
+        - {x: -9.5, y: 86.16667}
+    - name: BoostGage_1
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 286
+        width: 285
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -85.43007, y: -84.83333}
+        - {x: -82.43007, y: -84.83333}
+        - {x: -82.43007, y: -57.83333}
+        - {x: -84.43007, y: -55.83333}
+        - {x: -85.43007, y: -55.83333}
+      - - {x: -85.43007, y: 86.16667}
+        - {x: -85.43007, y: 25.166672}
+        - {x: 28.569931, y: -84.83333}
+        - {x: 85.56993, y: -84.83333}
+        - {x: 85.56993, y: 23.166672}
+        - {x: -19.430069, y: 86.16667}
+    - name: BoostGage_2
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 286
+        width: 285
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -85.36014, y: -46.83333}
+        - {x: -85.36014, y: -84.83333}
+        - {x: -80.36014, y: -84.83333}
+        - {x: -80.36014, y: -50.83333}
+        - {x: -83.36014, y: -46.83333}
+      - - {x: -84.36014, y: 86.16667}
+        - {x: -84.36014, y: 2.1666718}
+        - {x: -30.360138, y: -84.83333}
+        - {x: 85.63986, y: -84.83333}
+        - {x: 85.63986, y: 26.166672}
+        - {x: 0.63986206, y: 86.16667}
+    - name: BoostGage_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 285
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80.5, y: 86.09673}
+        - {x: -41.5, y: 86.09673}
+        - {x: -67.5, y: 84.09673}
+        - {x: -85.5, y: 77.09673}
+        - {x: -85.5, y: -64.90327}
+        - {x: -67.5, y: -84.90327}
+        - {x: 54.5, y: -84.90327}
+        - {x: 69.5, y: -83.90327}
+        - {x: 85.5, y: -70.90327}
+        - {x: 85.5, y: 64.09673}
+        - {x: 81.5, y: 85.09673}
+    - name: BoostGage_4
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1
+        width: 285
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 70.56993, y: 86.09673}
+        - {x: -48.43007, y: 86.09673}
+        - {x: -68.43007, y: 83.09673}
+        - {x: -85.43007, y: 69.09673}
+        - {x: -85.43007, y: -32.903267}
+        - {x: -74.43007, y: -84.90327}
+        - {x: 43.56993, y: -84.90327}
+        - {x: 51.56993, y: -83.90327}
+        - {x: 85.56993, y: -59.903267}
+        - {x: 85.56993, y: 56.096733}
+      - - {x: -85.43007, y: -46.903267}
+        - {x: -82.43007, y: -45.903267}
+        - {x: -82.43007, y: -25.903267}
+        - {x: -84.43007, y: -23.903267}
+        - {x: -85.43007, y: -23.903267}
+    - name: BoostGage_5
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1
+        width: 285
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -75.36014, y: 86.09673}
+        - {x: -84.36014, y: 55.096733}
+        - {x: -84.36014, y: -17.903267}
+        - {x: -79.36014, y: -60.903267}
+        - {x: -70.36014, y: -84.90327}
+        - {x: 85.63986, y: -84.90327}
+        - {x: 85.63986, y: 59.096733}
+        - {x: 79.63986, y: 86.09673}
+      - - {x: -85.36014, y: -17.903267}
+        - {x: -85.36014, y: -49.903267}
+        - {x: -82.36014, y: -48.903267}
+        - {x: -81.36014, y: -45.903267}
+        - {x: -81.36014, y: -22.903267}
+        - {x: -83.36014, y: -17.903267}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
