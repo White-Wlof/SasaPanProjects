@@ -53,14 +53,14 @@
      <None Include="Assets\Plugins\release_history.txt" />
      <None Include="Assets\Physics Materials\test.txt" />
      <None Include="Assets\Prefabs\test.txt" />
-     <None Include="Assets\Scripts\test.txt" />
+     <None Include="Assets\_Scripts\test.txt" />
      <None Include="Assets\Photon Unity Networking\Demos\DemoBoxes\Resources\eurof_tt.txt" />
      <None Include="Assets\RiverTool\waterShader.shader" />
      <None Include="Assets\Audio\test.txt" />
      <None Include="Assets\Materials\test.txt" />
      <None Include="Assets\Photon Unity Networking\Demos\DemoPickup\Assets\3dFont\3dText.shader" />
      <None Include="Assets\Photon Unity Networking\readme.txt" />
-     <None Include="Assets\Scenes\test.txt" />
+     <None Include="Assets\_Scenes\test.txt" />
      <None Include="Assets\Detonator Explosion Framework\Resources\Detonator\Textures\HeatDistort.shader" />
      <None Include="Assets\Photon Unity Networking\Demos\DemoRockPaperScissors\Assets\OpenSans\Apache License.txt" />
      <None Include="Assets\Resources\test.txt" />

@@ -14,6 +14,8 @@
 
 // UnityEngine.Transform
 struct Transform_t284553113;
+// System.String
+struct String_t;
 // System.Collections.IEnumerator
 struct IEnumerator_t287207039;
 
@@ -23,6 +25,7 @@ struct IEnumerator_t287207039;
 #include "UnityEngine_UnityEngine_Transform284553113.h"
 #include "UnityEngine_UnityEngine_Matrix4x4277289660.h"
 #include "UnityEngine_UnityEngine_Space1602970931.h"
+#include "mscorlib_System_String968488902.h"
 
 // UnityEngine.Vector3 UnityEngine.Transform::get_position()
 extern "C"  Vector3_t3525329789  Transform_get_position_m2211398607 (Transform_t284553113 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -42,6 +45,8 @@ extern "C"  void Transform_INTERNAL_get_localPosition_m2703574131 (Transform_t28
 extern "C"  void Transform_INTERNAL_set_localPosition_m221305727 (Transform_t284553113 * __this, Vector3_t3525329789 * ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Transform::get_eulerAngles()
 extern "C"  Vector3_t3525329789  Transform_get_eulerAngles_m1058084741 (Transform_t284553113 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::set_eulerAngles(UnityEngine.Vector3)
+extern "C"  void Transform_set_eulerAngles_m1704681314 (Transform_t284553113 * __this, Vector3_t3525329789  ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Transform::get_right()
 extern "C"  Vector3_t3525329789  Transform_get_right_m2070836824 (Transform_t284553113 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Transform::get_up()
@@ -112,6 +117,8 @@ extern "C"  void Transform_LookAt_m2663225588 (Transform_t284553113 * __this, Tr
 extern "C"  void Transform_LookAt_m3252223111 (Transform_t284553113 * __this, Transform_t284553113 * ___target, Vector3_t3525329789  ___worldUp, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::LookAt(UnityEngine.Vector3,UnityEngine.Vector3)
 extern "C"  void Transform_LookAt_m2054691043 (Transform_t284553113 * __this, Vector3_t3525329789  ___worldPosition, Vector3_t3525329789  ___worldUp, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::LookAt(UnityEngine.Vector3)
+extern "C"  void Transform_LookAt_m724138832 (Transform_t284553113 * __this, Vector3_t3525329789  ___worldPosition, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::INTERNAL_CALL_LookAt(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
 extern "C"  void Transform_INTERNAL_CALL_LookAt_m302711157 (Il2CppObject * __this /* static, unused */, Transform_t284553113 * ___self, Vector3_t3525329789 * ___worldPosition, Vector3_t3525329789 * ___worldUp, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Transform::TransformDirection(UnityEngine.Vector3)
@@ -132,6 +139,8 @@ extern "C"  Transform_t284553113 * Transform_get_root_m1064615716 (Transform_t28
 extern "C"  int32_t Transform_get_childCount_m2107810675 (Transform_t284553113 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::SetAsFirstSibling()
 extern "C"  void Transform_SetAsFirstSibling_m1746075601 (Transform_t284553113 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Transform UnityEngine.Transform::Find(System.String)
+extern "C"  Transform_t284553113 * Transform_Find_m3950449392 (Transform_t284553113 * __this, String_t* ___name, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Transform::IsChildOf(UnityEngine.Transform)
 extern "C"  bool Transform_IsChildOf_m3321648579 (Transform_t284553113 * __this, Transform_t284553113 * ___parent, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator UnityEngine.Transform::GetEnumerator()

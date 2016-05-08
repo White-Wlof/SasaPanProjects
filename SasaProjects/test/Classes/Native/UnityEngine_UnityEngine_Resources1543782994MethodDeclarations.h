@@ -28,5 +28,7 @@ struct String_t;
 
 // UnityEngine.Object[] UnityEngine.Resources::FindObjectsOfTypeAll(System.Type)
 extern "C"  ObjectU5BU5D_t3051965477* Resources_FindObjectsOfTypeAll_m1346325355 (Il2CppObject * __this /* static, unused */, Type_t * ___type, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Object UnityEngine.Resources::Load(System.String)
+extern "C"  Object_t3878351788 * Resources_Load_m2187391845 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Object UnityEngine.Resources::Load(System.String,System.Type)
 extern "C"  Object_t3878351788 * Resources_Load_m3601699608 (Il2CppObject * __this /* static, unused */, String_t* ___path, Type_t * ___systemTypeInstance, const MethodInfo* method) IL2CPP_METHOD_ATTR;

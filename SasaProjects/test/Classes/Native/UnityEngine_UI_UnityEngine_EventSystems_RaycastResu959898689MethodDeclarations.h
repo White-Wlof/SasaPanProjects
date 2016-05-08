@@ -27,5 +27,7 @@ extern "C"  GameObject_t4012695102 * RaycastResult_get_gameObject_m1138099278 (R
 extern "C"  void RaycastResult_set_gameObject_m726369707 (RaycastResult_t959898689 * __this, GameObject_t4012695102 * ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.EventSystems.RaycastResult::get_isValid()
 extern "C"  bool RaycastResult_get_isValid_m3098154392 (RaycastResult_t959898689 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.EventSystems.RaycastResult::Clear()
+extern "C"  void RaycastResult_Clear_m2117708874 (RaycastResult_t959898689 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String UnityEngine.EventSystems.RaycastResult::ToString()
 extern "C"  String_t* RaycastResult_ToString_m2924263764 (RaycastResult_t959898689 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

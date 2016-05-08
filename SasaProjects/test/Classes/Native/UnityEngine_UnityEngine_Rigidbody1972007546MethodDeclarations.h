@@ -42,7 +42,7 @@ extern "C"  void Rigidbody_set_isKinematic_m294703295 (Rigidbody_t1972007546 * _
 extern "C"  void Rigidbody_AddForce_m3682301239 (Rigidbody_t1972007546 * __this, Vector3_t3525329789  ___force, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Rigidbody::INTERNAL_CALL_AddForce(UnityEngine.Rigidbody,UnityEngine.Vector3&,UnityEngine.ForceMode)
 extern "C"  void Rigidbody_INTERNAL_CALL_AddForce_m3651654387 (Il2CppObject * __this /* static, unused */, Rigidbody_t1972007546 * ___self, Vector3_t3525329789 * ___force, int32_t ___mode, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Rigidbody::set_centerOfMass(UnityEngine.Vector3)
-extern "C"  void Rigidbody_set_centerOfMass_m760020516 (Rigidbody_t1972007546 * __this, Vector3_t3525329789  ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void UnityEngine.Rigidbody::INTERNAL_set_centerOfMass(UnityEngine.Vector3&)
-extern "C"  void Rigidbody_INTERNAL_set_centerOfMass_m1759559900 (Rigidbody_t1972007546 * __this, Vector3_t3525329789 * ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Rigidbody::AddExplosionForce(System.Single,UnityEngine.Vector3,System.Single,System.Single)
+extern "C"  void Rigidbody_AddExplosionForce_m2669187207 (Rigidbody_t1972007546 * __this, float ___explosionForce, Vector3_t3525329789  ___explosionPosition, float ___explosionRadius, float ___upwardsModifier, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Rigidbody::INTERNAL_CALL_AddExplosionForce(UnityEngine.Rigidbody,System.Single,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.ForceMode)
+extern "C"  void Rigidbody_INTERNAL_CALL_AddExplosionForce_m3109367769 (Il2CppObject * __this /* static, unused */, Rigidbody_t1972007546 * ___self, float ___explosionForce, Vector3_t3525329789 * ___explosionPosition, float ___explosionRadius, float ___upwardsModifier, int32_t ___mode, const MethodInfo* method) IL2CPP_METHOD_ATTR;

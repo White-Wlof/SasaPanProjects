@@ -29,6 +29,8 @@ extern "C"  void OptionData__ctor_m2550995262 (OptionData_t3366553055 * __this, 
 extern "C"  void OptionData__ctor_m3621517956 (OptionData_t3366553055 * __this, String_t* ___text, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.UI.Dropdown/OptionData::.ctor(UnityEngine.Sprite)
 extern "C"  void OptionData__ctor_m715763394 (OptionData_t3366553055 * __this, Sprite_t4006040370 * ___image, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.UI.Dropdown/OptionData::.ctor(System.String,UnityEngine.Sprite)
+extern "C"  void OptionData__ctor_m2001511174 (OptionData_t3366553055 * __this, String_t* ___text, Sprite_t4006040370 * ___image, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String UnityEngine.UI.Dropdown/OptionData::get_text()
 extern "C"  String_t* OptionData_get_text_m2592726207 (OptionData_t3366553055 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.UI.Dropdown/OptionData::set_text(System.String)

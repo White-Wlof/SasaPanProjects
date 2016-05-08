@@ -12,6 +12,8 @@
 #include <assert.h>
 #include <exception>
 
+// UnityEngine.UI.MaskUtilities
+struct MaskUtilities_t643542887;
 // UnityEngine.Component
 struct Component_t2126946602;
 // UnityEngine.Transform
@@ -28,6 +30,8 @@ struct List_1_t1595633764;
 #include "UnityEngine_UnityEngine_Transform284553113.h"
 #include "UnityEngine_UI_UnityEngine_UI_RectMask2D798674795.h"
 
+// System.Void UnityEngine.UI.MaskUtilities::.ctor()
+extern "C"  void MaskUtilities__ctor_m1166009725 (MaskUtilities_t643542887 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.UI.MaskUtilities::Notify2DMaskStateChanged(UnityEngine.Component)
 extern "C"  void MaskUtilities_Notify2DMaskStateChanged_m2199550555 (Il2CppObject * __this /* static, unused */, Component_t2126946602 * ___mask, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.UI.MaskUtilities::NotifyStencilStateChanged(UnityEngine.Component)

@@ -46,7 +46,7 @@ struct X509CrlEntry_t3291243611;
 #include "Mono_Security_Mono_Security_X509_X509Crl_X509CrlEn3291243611.h"
 
 // System.Void System.Security.Cryptography.X509Certificates.X509Chain::.ctor()
-extern "C"  void X509Chain__ctor_m440780008 (X509Chain_t2831591730 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  void X509Chain__ctor_m649780428 (X509Chain_t2831591730 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Security.Cryptography.X509Certificates.X509Chain::.ctor(System.Boolean)
 extern "C"  void X509Chain__ctor_m2887631967 (X509Chain_t2831591730 * __this, bool ___useMachineContext, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Security.Cryptography.X509Certificates.X509Chain::.cctor()
@@ -54,7 +54,7 @@ extern "C"  void X509Chain__cctor_m297182149 (Il2CppObject * __this /* static, u
 // System.Security.Cryptography.X509Certificates.X509ChainPolicy System.Security.Cryptography.X509Certificates.X509Chain::get_ChainPolicy()
 extern "C"  X509ChainPolicy_t1031963204 * X509Chain_get_ChainPolicy_m3141824143 (X509Chain_t2831591730 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Security.Cryptography.X509Certificates.X509Chain::Build(System.Security.Cryptography.X509Certificates.X509Certificate2)
-extern "C"  bool X509Chain_Build_m417178512 (X509Chain_t2831591730 * __this, X509Certificate2_t2583282360 * ___certificate, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  bool X509Chain_Build_m2593695788 (X509Chain_t2831591730 * __this, X509Certificate2_t2583282360 * ___certificate, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Security.Cryptography.X509Certificates.X509Chain::Reset()
 extern "C"  void X509Chain_Reset_m2382180245 (X509Chain_t2831591730 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Security.Cryptography.X509Certificates.X509Store System.Security.Cryptography.X509Certificates.X509Chain::get_Roots()

@@ -197,12 +197,12 @@ struct MonoType_t;
 struct StrongName_t3441834685;
 // System.Reflection.CustomAttributeData
 struct CustomAttributeData_t2584644259;
+// System.Byte[]
+struct ByteU5BU5D_t58506160;
 // System.Security.Cryptography.X509Certificates.X509Certificate
 struct X509Certificate_t3432067208;
 // System.Runtime.Serialization.IDeserializationCallback
 struct IDeserializationCallback_t3135514852;
-// System.Byte[]
-struct ByteU5BU5D_t58506160;
 // System.IDisposable
 struct IDisposable_t1628921374;
 // System.Attribute
@@ -311,9 +311,9 @@ struct ObjectU5BU5D_t11523773;
 #include "mscorlib_System_MonoType2517050482.h"
 #include "mscorlib_System_Security_Policy_StrongName3441834685.h"
 #include "mscorlib_System_Reflection_CustomAttributeData2584644259.h"
+#include "mscorlib_System_Security_Cryptography_X509Certific3432067208.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_22686855369.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_21337234543.h"
-#include "mscorlib_System_Security_Cryptography_X509Certific3432067208.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_2_816448501.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23632373593.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_22133154421.h"
@@ -2292,32 +2292,19 @@ public:
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
-// System.Collections.Generic.KeyValuePair`2<System.Object,System.Boolean>[]
-struct KeyValuePair_2U5BU5D_t4139652596  : public Il2CppArray
+// System.Byte[][]
+struct ByteU5BU5DU5BU5D_t1952051089  : public Il2CppArray
 {
 public:
-	ALIGN_TYPE (8) KeyValuePair_2_t2686855369  m_Items[1];
+	ALIGN_TYPE (8) ByteU5BU5D_t58506160* m_Items[1];
 
 public:
-	inline KeyValuePair_2_t2686855369  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
-	inline KeyValuePair_2_t2686855369 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
-	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t2686855369  value)
+	inline ByteU5BU5D_t58506160* GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline ByteU5BU5D_t58506160** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, ByteU5BU5D_t58506160* value)
 	{
 		m_Items[index] = value;
-	}
-};
-// System.Collections.Generic.KeyValuePair`2<System.String,System.Boolean>[]
-struct KeyValuePair_2U5BU5D_t2379167990  : public Il2CppArray
-{
-public:
-	ALIGN_TYPE (8) KeyValuePair_2_t1337234543  m_Items[1];
-
-public:
-	inline KeyValuePair_2_t1337234543  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
-	inline KeyValuePair_2_t1337234543 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
-	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t1337234543  value)
-	{
-		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
 // System.Security.Cryptography.X509Certificates.X509Certificate[]
@@ -2350,19 +2337,32 @@ public:
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
-// System.Byte[][]
-struct ByteU5BU5DU5BU5D_t1952051089  : public Il2CppArray
+// System.Collections.Generic.KeyValuePair`2<System.Object,System.Boolean>[]
+struct KeyValuePair_2U5BU5D_t4139652596  : public Il2CppArray
 {
 public:
-	ALIGN_TYPE (8) ByteU5BU5D_t58506160* m_Items[1];
+	ALIGN_TYPE (8) KeyValuePair_2_t2686855369  m_Items[1];
 
 public:
-	inline ByteU5BU5D_t58506160* GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
-	inline ByteU5BU5D_t58506160** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
-	inline void SetAt(il2cpp_array_size_t index, ByteU5BU5D_t58506160* value)
+	inline KeyValuePair_2_t2686855369  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t2686855369 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t2686855369  value)
 	{
 		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// System.Collections.Generic.KeyValuePair`2<System.String,System.Boolean>[]
+struct KeyValuePair_2U5BU5D_t2379167990  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) KeyValuePair_2_t1337234543  m_Items[1];
+
+public:
+	inline KeyValuePair_2_t1337234543  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t1337234543 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t1337234543  value)
+	{
+		m_Items[index] = value;
 	}
 };
 // System.IDisposable[]

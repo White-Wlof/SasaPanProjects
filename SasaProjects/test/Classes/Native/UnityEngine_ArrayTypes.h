@@ -42,6 +42,8 @@ struct Display_t564335855;
 struct GameObject_t4012695102;
 // UnityEngine.Experimental.Director.Playable
 struct Playable_t3404354247;
+// UnityEngine.Collider
+struct Collider_t955670625;
 // UnityEngine.Rigidbody2D
 struct Rigidbody2D_t3632243084;
 // UnityEngine.GUIContent
@@ -79,6 +81,8 @@ struct Font_t1525081276;
 struct CanvasGroup_t1295922228;
 // UnityEngine.RectTransform
 struct RectTransform_t3317474837;
+// UnityEngine.AudioClip
+struct AudioClip_t3714538611;
 // UnityEngine.Material
 struct Material_t1886596500;
 // UnityEngine.MonoBehaviour
@@ -103,10 +107,12 @@ struct MonoBehaviour_t3012272455;
 #include "UnityEngine_UnityEngine_Behaviour3120504042.h"
 #include "UnityEngine_UnityEngine_Component2126946602.h"
 #include "UnityEngine_UnityEngine_Display564335855.h"
+#include "UnityEngine_UnityEngine_Touch1603883884.h"
 #include "UnityEngine_UnityEngine_GameObject4012695102.h"
 #include "UnityEngine_UnityEngine_Experimental_Director_Play3404354247.h"
 #include "UnityEngine_UnityEngine_ContactPoint2951122365.h"
 #include "UnityEngine_UnityEngine_RaycastHit46221527.h"
+#include "UnityEngine_UnityEngine_Collider955670625.h"
 #include "UnityEngine_UnityEngine_Rigidbody2D3632243084.h"
 #include "UnityEngine_UnityEngine_RaycastHit2D4082783401.h"
 #include "UnityEngine_UnityEngine_ContactPoint2D3963746319.h"
@@ -133,6 +139,7 @@ struct MonoBehaviour_t3012272455;
 #include "UnityEngine_UnityEngine_Font1525081276.h"
 #include "UnityEngine_UnityEngine_CanvasGroup1295922228.h"
 #include "UnityEngine_UnityEngine_RectTransform3317474837.h"
+#include "UnityEngine_UnityEngine_AudioClip3714538611.h"
 #include "UnityEngine_UnityEngine_Material1886596500.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
 
@@ -459,6 +466,20 @@ public:
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
+// UnityEngine.Touch[]
+struct TouchU5BU5D_t376223077  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) Touch_t1603883884  m_Items[1];
+
+public:
+	inline Touch_t1603883884  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline Touch_t1603883884 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, Touch_t1603883884  value)
+	{
+		m_Items[index] = value;
+	}
+};
 // UnityEngine.GameObject[]
 struct GameObjectU5BU5D_t3499186955  : public Il2CppArray
 {
@@ -515,6 +536,21 @@ public:
 	inline void SetAt(il2cpp_array_size_t index, RaycastHit_t46221527  value)
 	{
 		m_Items[index] = value;
+	}
+};
+// UnityEngine.Collider[]
+struct ColliderU5BU5D_t1585173756  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) Collider_t955670625 * m_Items[1];
+
+public:
+	inline Collider_t955670625 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline Collider_t955670625 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, Collider_t955670625 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
 // UnityEngine.Rigidbody2D[]
@@ -894,6 +930,21 @@ public:
 	inline RectTransform_t3317474837 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline RectTransform_t3317474837 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, RectTransform_t3317474837 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.AudioClip[]
+struct AudioClipU5BU5D_t2889538658  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) AudioClip_t3714538611 * m_Items[1];
+
+public:
+	inline AudioClip_t3714538611 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline AudioClip_t3714538611 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, AudioClip_t3714538611 * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);

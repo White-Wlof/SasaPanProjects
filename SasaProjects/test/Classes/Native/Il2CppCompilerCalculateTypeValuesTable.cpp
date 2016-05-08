@@ -550,6 +550,93 @@
 #include "mscorlib_System_Version497901645.h"
 #include "mscorlib_System_WeakReference2193916456.h"
 #include "mscorlib_U3CPrivateImplementationDetailsU3E3053238933.h"
+#include "Mono_Security_Mono_Math_BigInteger1694088927.h"
+#include "Mono_Security_Mono_Math_BigInteger_Sign2576861.h"
+#include "Mono_Security_Mono_Math_BigInteger_ModulusRing948575271.h"
+#include "Mono_Security_Mono_Math_Prime_ConfidenceFactor2428357797.h"
+#include "Mono_Security_Mono_Security_ASN11254135646.h"
+#include "Mono_Security_Mono_Security_PKCS7_ContentInfo1278398631.h"
+#include "Mono_Security_Mono_Security_PKCS7_EncryptedData636832622.h"
+#include "Mono_Security_Mono_Security_Cryptography_ARC4Manag1769787186.h"
+#include "Mono_Security_Mono_Security_Cryptography_KeyBuilde2049706641.h"
+#include "Mono_Security_Mono_Security_Cryptography_MD2Manage2591968217.h"
+#include "Mono_Security_Mono_Security_Cryptography_PKCS13821523995.h"
+#include "Mono_Security_Mono_Security_Cryptography_PKCS8_Pri2184496330.h"
+#include "Mono_Security_Mono_Security_Cryptography_PKCS8_Encr785870702.h"
+#include "Mono_Security_Mono_Security_Cryptography_RC43745421912.h"
+#include "Mono_Security_Mono_Security_Cryptography_RSAManaged639738772.h"
+#include "Mono_Security_Mono_Security_X509_SafeBag4111116302.h"
+#include "Mono_Security_Mono_Security_X509_PKCS122950126079.h"
+#include "Mono_Security_Mono_Security_X509_PKCS12_DeriveByte2715912548.h"
+#include "Mono_Security_Mono_Security_X509_X501591126673.h"
+#include "Mono_Security_Mono_Security_X509_X509Certificate273828612.h"
+#include "Mono_Security_Mono_Security_X509_X509CertificateCo3569011381.h"
+#include "Mono_Security_Mono_Security_X509_X509Chain3968320430.h"
+#include "Mono_Security_Mono_Security_X509_X509ChainStatusFl2524654829.h"
+#include "Mono_Security_Mono_Security_X509_X509Crl2942805322.h"
+#include "Mono_Security_Mono_Security_X509_X509Crl_X509CrlEn3291243611.h"
+#include "Mono_Security_Mono_Security_X509_X509Extension1510964268.h"
+#include "Mono_Security_Mono_Security_X509_X509ExtensionColl3528692650.h"
+#include "Mono_Security_Mono_Security_X509_X509Store3983467982.h"
+#include "Mono_Security_Mono_Security_X509_X509StoreManager902433605.h"
+#include "Mono_Security_Mono_Security_X509_X509Stores2754714603.h"
+#include "Mono_Security_Mono_Security_X509_Extensions_Author4106742333.h"
+#include "Mono_Security_Mono_Security_X509_Extensions_BasicCo455698010.h"
+#include "Mono_Security_Mono_Security_X509_Extensions_Extende973649415.h"
+#include "Mono_Security_Mono_Security_X509_Extensions_Genera2474193379.h"
+#include "Mono_Security_Mono_Security_X509_Extensions_KeyUsag912788628.h"
+#include "Mono_Security_Mono_Security_X509_Extensions_KeyUsa4108765760.h"
+#include "Mono_Security_Mono_Security_X509_Extensions_Netsca1387961723.h"
+#include "Mono_Security_Mono_Security_X509_Extensions_Netscap588297365.h"
+#include "Mono_Security_Mono_Security_X509_Extensions_Subjec1663182458.h"
+#include "Mono_Security_Mono_Security_Cryptography_HMAC3747562012.h"
+#include "Mono_Security_Mono_Security_Cryptography_MD5SHA11066953176.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_AlertLeve1107615680.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_AlertDesc1415847224.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Alert1570308436.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_CipherAlg3070348278.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_CipherSuit995991461.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_CipherSui1023598115.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_ClientCon3677726556.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_ClientSes4062822289.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_ClientSes3423305263.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_ContentTy2785698635.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Context4123145639.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_ExchangeA1807586014.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake3657199378.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_HashAlgor2506270163.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_HttpsClie2708006830.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_RecordPro3519001153.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_RecordPro1547021349.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_RecordPro2772416992.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_RSASslSig3446121365.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_RSASslSign491693046.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_SecurityC1615155800.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_SecurityPa202779010.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_SecurityP4015394186.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Validatio2397874734.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_SslClient1178954575.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_SslCipher3658722873.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_SslHandsha521809713.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_SslStreamB589897109.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_SslStream2689067676.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_TlsCipher1815597034.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_TlsClient2063694561.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_TlsExcept1029166540.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_TlsServer2090450521.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_TlsStream720149587.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake2725032177.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake_276412187.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake1150764700.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake_C98714569.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake2295380400.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake1844074116.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake2616569169.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake3177402414.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake2322136360.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake1259177484.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake1391668572.h"
+#include "Mono_Security_U3CPrivateImplementationDetailsU3E3053238933.h"
 #include "System_System_MonoTODOAttribute1287393896.h"
 #include "System_System_Collections_Specialized_HybridDiction370358365.h"
 #include "System_System_Collections_Specialized_ListDictiona4226329727.h"
@@ -690,94 +777,8 @@
 #include "System_Core_Mono_Security_Cryptography_SymmetricTr3854241866.h"
 #include "System_Core_System_Security_Cryptography_AesTransf2186883254.h"
 #include "System_Core_U3CPrivateImplementationDetailsU3E3053238933.h"
-#include "Mono_Security_Mono_Math_BigInteger1694088927.h"
-#include "Mono_Security_Mono_Math_BigInteger_Sign2576861.h"
-#include "Mono_Security_Mono_Math_BigInteger_ModulusRing948575271.h"
-#include "Mono_Security_Mono_Math_Prime_ConfidenceFactor2428357797.h"
-#include "Mono_Security_Mono_Security_ASN11254135646.h"
-#include "Mono_Security_Mono_Security_PKCS7_ContentInfo1278398631.h"
-#include "Mono_Security_Mono_Security_PKCS7_EncryptedData636832622.h"
-#include "Mono_Security_Mono_Security_Cryptography_ARC4Manag1769787186.h"
-#include "Mono_Security_Mono_Security_Cryptography_KeyBuilde2049706641.h"
-#include "Mono_Security_Mono_Security_Cryptography_MD2Manage2591968217.h"
-#include "Mono_Security_Mono_Security_Cryptography_PKCS13821523995.h"
-#include "Mono_Security_Mono_Security_Cryptography_PKCS8_Pri2184496330.h"
-#include "Mono_Security_Mono_Security_Cryptography_PKCS8_Encr785870702.h"
-#include "Mono_Security_Mono_Security_Cryptography_RC43745421912.h"
-#include "Mono_Security_Mono_Security_Cryptography_RSAManaged639738772.h"
-#include "Mono_Security_Mono_Security_X509_SafeBag4111116302.h"
-#include "Mono_Security_Mono_Security_X509_PKCS122950126079.h"
-#include "Mono_Security_Mono_Security_X509_PKCS12_DeriveByte2715912548.h"
-#include "Mono_Security_Mono_Security_X509_X501591126673.h"
-#include "Mono_Security_Mono_Security_X509_X509Certificate273828612.h"
-#include "Mono_Security_Mono_Security_X509_X509CertificateCo3569011381.h"
-#include "Mono_Security_Mono_Security_X509_X509Chain3968320430.h"
-#include "Mono_Security_Mono_Security_X509_X509ChainStatusFl2524654829.h"
-#include "Mono_Security_Mono_Security_X509_X509Crl2942805322.h"
-#include "Mono_Security_Mono_Security_X509_X509Crl_X509CrlEn3291243611.h"
-#include "Mono_Security_Mono_Security_X509_X509Extension1510964268.h"
-#include "Mono_Security_Mono_Security_X509_X509ExtensionColl3528692650.h"
-#include "Mono_Security_Mono_Security_X509_X509Store3983467982.h"
-#include "Mono_Security_Mono_Security_X509_X509StoreManager902433605.h"
-#include "Mono_Security_Mono_Security_X509_X509Stores2754714603.h"
-#include "Mono_Security_Mono_Security_X509_Extensions_Author4106742333.h"
-#include "Mono_Security_Mono_Security_X509_Extensions_BasicCo455698010.h"
-#include "Mono_Security_Mono_Security_X509_Extensions_Extende973649415.h"
-#include "Mono_Security_Mono_Security_X509_Extensions_Genera2474193379.h"
-#include "Mono_Security_Mono_Security_X509_Extensions_KeyUsag912788628.h"
-#include "Mono_Security_Mono_Security_X509_Extensions_KeyUsa4108765760.h"
-#include "Mono_Security_Mono_Security_X509_Extensions_Netsca1387961723.h"
-#include "Mono_Security_Mono_Security_X509_Extensions_Netscap588297365.h"
-#include "Mono_Security_Mono_Security_X509_Extensions_Subjec1663182458.h"
-#include "Mono_Security_Mono_Security_Cryptography_HMAC3747562012.h"
-#include "Mono_Security_Mono_Security_Cryptography_MD5SHA11066953176.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_AlertLeve1107615680.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_AlertDesc1415847224.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Alert1570308436.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_CipherAlg3070348278.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_CipherSuit995991461.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_CipherSui1023598115.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_ClientCon3677726556.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_ClientSes4062822289.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_ClientSes3423305263.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_ContentTy2785698635.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Context4123145639.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_ExchangeA1807586014.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake3657199378.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_HashAlgor2506270163.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_HttpsClie2708006830.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_RecordPro3519001153.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_RecordPro1547021349.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_RecordPro2772416992.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_RSASslSig3446121365.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_RSASslSign491693046.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_SecurityC1615155800.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_SecurityPa202779010.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_SecurityP4015394186.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Validatio2397874734.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_SslClient1178954575.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_SslCipher3658722873.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_SslHandsha521809713.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_SslStreamB589897109.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_SslStream2689067676.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_TlsCipher1815597034.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_TlsClient2063694561.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_TlsExcept1029166540.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_TlsServer2090450521.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_TlsStream720149587.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake2725032177.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake_276412187.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake1150764700.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake_C98714569.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake2295380400.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake1844074116.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake2616569169.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake3177402414.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake2322136360.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake1259177484.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake1391668572.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E3053238933.h"
 #include "UnityEngine_UnityEngine_SendMessageOptions2623293100.h"
+#include "UnityEngine_UnityEngine_PrimitiveType3380664558.h"
 #include "UnityEngine_UnityEngine_Space1602970931.h"
 #include "UnityEngine_UnityEngine_RuntimePlatform1574985880.h"
 #include "UnityEngine_UnityEngine_LogType3529269451.h"
@@ -840,6 +841,8 @@
 #include "UnityEngine_UnityEngine_Experimental_Director_Play3404354247.h"
 #include "UnityEngine_UnityEngine_SceneManagement_LoadSceneM2068802481.h"
 #include "UnityEngine_UnityEngine_SceneManagement_Scene2772977204.h"
+#include "UnityEngine_UnityEngine_InternalEmitParticleArgume3421370189.h"
+#include "UnityEngine_UnityEngine_ParticleRenderMode518303724.h"
 #include "UnityEngine_UnityEngine_ForceMode759713627.h"
 #include "UnityEngine_UnityEngine_ControllerColliderHit2693066224.h"
 #include "UnityEngine_UnityEngine_Collision1119538015.h"
@@ -920,6 +923,7 @@
 #include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter1714018390.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter1317012096.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter2223678307.h"
+#include "UnityEngine_UnityEngine_LightType4212539805.h"
 #include "UnityEngine_UnityEngine_CameraClearFlags3602484652.h"
 #include "UnityEngine_UnityEngine_TextureFormat2239483167.h"
 #include "UnityEngine_UnityEngine_Rendering_CompareFunction1446377492.h"
@@ -961,6 +965,10 @@
 #include "UnityEngine_UnityEngine_Serialization_FormerlySeria581346955.h"
 #include "UnityEngine_UnityEngineInternal_TypeInferenceRules435505844.h"
 #include "UnityEngine_UnityEngineInternal_TypeInferenceRuleAt471424957.h"
+#include "RiverTools_CubicSpline67207067.h"
+#include "RiverTools_CurvePoint131694081.h"
+#include "RiverTools_Point77292912.h"
+#include "RiverTools_RiverTool774771108.h"
 #include "Photon3Unity3D_Photon_SocketServer_Security_Diffie3764219664.h"
 #include "Photon3Unity3D_Photon_SocketServer_Security_Oakley1401475037.h"
 #include "Photon3Unity3D_Photon_SocketServer_Numeric_BigInte2113513851.h"
@@ -1015,10 +1023,7 @@
 #include "Photon3Unity3D_ExitGames_Client_Photon_TrafficStat2447340108.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_TrafficStat3177679614.h"
 #include "Photon3Unity3D_U3CPrivateImplementationDetailsU3E3053238933.h"
-#include "RiverTools_CubicSpline67207067.h"
-#include "RiverTools_CurvePoint131694081.h"
-#include "RiverTools_Point77292912.h"
-#include "RiverTools_RiverTool774771108.h"
+#include "UnityEngine_UI_UnityEngine_EventSystems_EventHandle72269245.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_EventSystem409518532.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_EventTrigg2937500249.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_EventTrigger67115090.h"
@@ -1051,6 +1056,8 @@
 #include "UnityEngine_UI_UnityEngine_UI_CanvasUpdate941568618.h"
 #include "UnityEngine_UI_UnityEngine_UI_CanvasUpdateRegistry2591544775.h"
 #include "UnityEngine_UI_UnityEngine_UI_ColorBlock2245020947.h"
+#include "UnityEngine_UI_UnityEngine_UI_DefaultControls3717991936.h"
+#include "UnityEngine_UI_UnityEngine_UI_DefaultControls_Resour20897285.h"
 #include "UnityEngine_UI_UnityEngine_UI_Dropdown2916437562.h"
 #include "UnityEngine_UI_UnityEngine_UI_Dropdown_DropdownIte2010846948.h"
 #include "UnityEngine_UI_UnityEngine_UI_Dropdown_OptionData3366553055.h"
@@ -1066,6 +1073,11 @@
 #include "UnityEngine_UI_UnityEngine_UI_Image3354615620.h"
 #include "UnityEngine_UI_UnityEngine_UI_Image_Type2622298.h"
 #include "UnityEngine_UI_UnityEngine_UI_Image_FillMethod1232150628.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image_OriginHorizonta638657546.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image_OriginVertical1858650332.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image_Origin901443686621.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image_Origin1801804604899.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image_Origin3601804606759.h"
 #include "UnityEngine_UI_UnityEngine_UI_InputField2345609593.h"
 #include "UnityEngine_UI_UnityEngine_UI_InputField_ContentTy1278737203.h"
 #include "UnityEngine_UI_UnityEngine_UI_InputField_InputType3710944772.h"
@@ -1123,6 +1135,22 @@
 #include "UnityEngine_UI_UnityEngine_UI_BaseMeshEffect770218424.h"
 #include "UnityEngine_UI_UnityEngine_UI_Shadow1464142665.h"
 #include "UnityEngine_UI_U3CPrivateImplementationDetailsU3E3053238933.h"
+#include "AssemblyU2DCSharp_DetonatorSprayHelper3937829939.h"
+#include "AssemblyU2DCSharp_Detonator436005224.h"
+#include "AssemblyU2DCSharp_DetonatorBurstEmitter2784708534.h"
+#include "AssemblyU2DCSharp_DetonatorCloudRing3579438461.h"
+#include "AssemblyU2DCSharp_DetonatorComponent2605738101.h"
+#include "AssemblyU2DCSharp_DetonatorFireball3306641085.h"
+#include "AssemblyU2DCSharp_DetonatorForce305353315.h"
+#include "AssemblyU2DCSharp_DetonatorGlow2503728917.h"
+#include "AssemblyU2DCSharp_DetonatorHeatwave2770030193.h"
+#include "AssemblyU2DCSharp_DetonatorLight310705294.h"
+#include "AssemblyU2DCSharp_DetonatorShockwave1540898835.h"
+#include "AssemblyU2DCSharp_DetonatorSmoke317296871.h"
+#include "AssemblyU2DCSharp_DetonatorSound317362311.h"
+#include "AssemblyU2DCSharp_DetonatorSparks1248628926.h"
+#include "AssemblyU2DCSharp_DetonatorSpray317388837.h"
+#include "AssemblyU2DCSharp_DetonatorTest2504109594.h"
 #include "AssemblyU2DCSharp_JumpAndRunMovement3956238833.h"
 #include "AssemblyU2DCSharp_ColorPerPlayer2366540379.h"
 #include "AssemblyU2DCSharp_ColorPerPlayerApply2273921491.h"
@@ -1250,12 +1278,12 @@
 #include "AssemblyU2DCSharp_PhotonAnimatorView_SynchronizeTyp341227658.h"
 #include "AssemblyU2DCSharp_PhotonAnimatorView_SynchronizedP3311342805.h"
 #include "AssemblyU2DCSharp_PhotonAnimatorView_SynchronizedL1918348413.h"
-#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CDoesLayerS1573396527.h"
-#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CDoesParame2133516376.h"
-#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CGetLayerSy1115327303.h"
-#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CGetParamet3056155808.h"
-#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CSetLayerSy3336388189.h"
-#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CSetParameter28730886.h"
+#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CDoesLayerS1573396519.h"
+#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CDoesParame2133516375.h"
+#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CGetLayerSy1115327302.h"
+#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CGetParamet3056155807.h"
+#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CSetLayerSy3336388188.h"
+#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CSetParameter28730885.h"
 #include "AssemblyU2DCSharp_PhotonRigidbody2DView2664395880.h"
 #include "AssemblyU2DCSharp_PhotonRigidbodyView1273153366.h"
 #include "AssemblyU2DCSharp_PhotonTransformView486317301.h"
@@ -1310,8 +1338,16 @@
 #include "AssemblyU2DCSharp_ExitGames_Client_Photon_Chat_Cha1678887231.h"
 #include "AssemblyU2DCSharp_ExitGames_Client_Photon_Chat_Cha3332334203.h"
 #include "AssemblyU2DCSharp_TextureAnimator186110210.h"
-#include "AssemblyU2DCSharp_PlayerController2866526589.h"
-#include "AssemblyU2DCSharp_PlayerController_U3CDeceleratione375801630.h"
+#include "AssemblyU2DCSharp_Cannon_CannonBallController3728533319.h"
+#include "AssemblyU2DCSharp_PLAYER_CharacterOperationMaster3608733915.h"
+#include "AssemblyU2DCSharp_PLAYER_GameUIButton1364003187.h"
+#include "AssemblyU2DCSharp_PLAYER_PlayerCameraController3553451581.h"
+#include "AssemblyU2DCSharp_PLAYER_PlayerController3796194808.h"
+#include "AssemblyU2DCSharp_PlayerStateManager4277940093.h"
+#include "AssemblyU2DCSharp_PLAYER_RivalController3953764641.h"
+#include "AssemblyU2DCSharp_UIController2684559696.h"
+#include "AssemblyU2DCSharp_PLAYER_BoatDirectionSystem1888994697.h"
+#include "AssemblyU2DCSharp_CannonPullSystem3255870929.h"
 #include "mscorlib_U3CModuleU3E86524790.h"
 #include "mscorlib_System_Object837106420.h"
 #include "mscorlib_System_ValueType4014882752.h"
@@ -1528,6 +1564,40 @@
 #include "mscorlib_U3CPrivateImplementationDetailsU3E_U24Arr2366146685.h"
 #include "mscorlib_U3CPrivateImplementationDetailsU3E_U24Arr2366141826.h"
 #include "mscorlib_U3CPrivateImplementationDetailsU3E_U24Arra214874610.h"
+#include "Mono_Security_U3CModuleU3E86524790.h"
+#include "Mono_Security_Locale2281372282.h"
+#include "Mono_Security_Mono_Math_BigInteger_Kernel2243967069.h"
+#include "Mono_Security_Mono_Math_Prime_PrimalityTests1761959568.h"
+#include "Mono_Security_Mono_Math_Prime_Generator_PrimeGener3362129976.h"
+#include "Mono_Security_Mono_Math_Prime_Generator_Sequential3092056095.h"
+#include "Mono_Security_Mono_Security_ASN1Convert4150720679.h"
+#include "Mono_Security_Mono_Security_BitConverterLE4175540725.h"
+#include "Mono_Security_Mono_Security_PKCS71328300021.h"
+#include "Mono_Security_Mono_Security_Cryptography_CryptoCon3463653319.h"
+#include "Mono_Security_Mono_Security_Cryptography_MD23745417136.h"
+#include "Mono_Security_Mono_Security_Cryptography_PKCS83821524002.h"
+#include "Mono_Security_Mono_Security_Cryptography_RSAManage1233396096.h"
+#include "Mono_Security_Mono_Security_X509_X509CertificateCo3336811650.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_CipherSui1874120917.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_ClientRec1274010348.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_ServerCon4232778980.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake1094471586.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake3168781268.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake_132596654.h"
+#include "Mono_Security_Mono_Math_Prime_PrimalityTest397689819.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Certifica3726148045.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Certifica1582269749.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_Certifica3257378130.h"
+#include "Mono_Security_Mono_Security_Protocol_Tls_PrivateKe4199006061.h"
+#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2336011090.h"
+#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2366142878.h"
+#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2214874515.h"
+#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2214874548.h"
+#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2214874585.h"
+#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2214874643.h"
+#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2214874486.h"
+#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2214874490.h"
+#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2777878079.h"
 #include "System_U3CModuleU3E86524790.h"
 #include "System_Locale2281372282.h"
 #include "System_System_ComponentModel_TypeConverter3398830607.h"
@@ -1573,40 +1643,6 @@
 #include "System_Core_U3CPrivateImplementationDetailsU3E_U242366141818.h"
 #include "System_Core_U3CPrivateImplementationDetailsU3E_U242366142878.h"
 #include "System_Core_U3CPrivateImplementationDetailsU3E_U24A335950518.h"
-#include "Mono_Security_U3CModuleU3E86524790.h"
-#include "Mono_Security_Locale2281372282.h"
-#include "Mono_Security_Mono_Math_BigInteger_Kernel2243967069.h"
-#include "Mono_Security_Mono_Math_Prime_PrimalityTests1761959568.h"
-#include "Mono_Security_Mono_Math_Prime_Generator_PrimeGener3362129976.h"
-#include "Mono_Security_Mono_Math_Prime_Generator_Sequential3092056095.h"
-#include "Mono_Security_Mono_Security_ASN1Convert4150720679.h"
-#include "Mono_Security_Mono_Security_BitConverterLE4175540725.h"
-#include "Mono_Security_Mono_Security_PKCS71328300021.h"
-#include "Mono_Security_Mono_Security_Cryptography_CryptoCon3463653319.h"
-#include "Mono_Security_Mono_Security_Cryptography_MD23745417136.h"
-#include "Mono_Security_Mono_Security_Cryptography_PKCS83821524002.h"
-#include "Mono_Security_Mono_Security_Cryptography_RSAManage1233396096.h"
-#include "Mono_Security_Mono_Security_X509_X509CertificateCo3336811650.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_CipherSui1874120917.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_ClientRec1274010348.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_ServerCon4232778980.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake1094471586.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake3168781268.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Handshake_132596654.h"
-#include "Mono_Security_Mono_Math_Prime_PrimalityTest397689819.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Certifica3726148045.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Certifica1582269749.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_Certifica3257378130.h"
-#include "Mono_Security_Mono_Security_Protocol_Tls_PrivateKe4199006061.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2336011090.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2366142878.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2214874515.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2214874548.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2214874585.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2214874643.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2214874486.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2214874490.h"
-#include "Mono_Security_U3CPrivateImplementationDetailsU3E_U2777878079.h"
 #include "UnityEngine_U3CModuleU3E86524790.h"
 #include "UnityEngine_UnityEngine_AssetBundleCreateRequest2779486190.h"
 #include "UnityEngine_UnityEngine_AssetBundleRequest920637194.h"
@@ -1650,6 +1686,7 @@
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
 #include "UnityEngine_UnityEngine_Input1593691127.h"
 #include "UnityEngine_UnityEngine_Component2126946602.h"
+#include "UnityEngine_UnityEngine_Light1596303683.h"
 #include "UnityEngine_UnityEngine_GameObject4012695102.h"
 #include "UnityEngine_UnityEngine_Transform284553113.h"
 #include "UnityEngine_UnityEngine_Time1525492538.h"
@@ -1665,9 +1702,14 @@
 #include "UnityEngine_UnityEngine_iOS_ADInterstitialAd_Inters402653446.h"
 #include "UnityEngine_UnityEngine_Experimental_Director_Direc608261574.h"
 #include "UnityEngine_UnityEngine_SceneManagement_SceneManag1523288937.h"
+#include "UnityEngine_UnityEngine_ParticleEmitter3425549877.h"
+#include "UnityEngine_UnityEngine_EllipsoidParticleEmitter418172146.h"
+#include "UnityEngine_UnityEngine_ParticleAnimator2875113466.h"
+#include "UnityEngine_UnityEngine_ParticleRenderer3175470550.h"
 #include "UnityEngine_UnityEngine_Physics2601443956.h"
 #include "UnityEngine_UnityEngine_Rigidbody1972007546.h"
 #include "UnityEngine_UnityEngine_Collider955670625.h"
+#include "UnityEngine_UnityEngine_MeshCollider1080724846.h"
 #include "UnityEngine_UnityEngine_CharacterController2029520850.h"
 #include "UnityEngine_UnityEngine_Rigidbody2D3632243084.h"
 #include "UnityEngine_UnityEngine_Collider2D1890038195.h"
@@ -1711,6 +1753,7 @@
 #include "UnityEngine_UnityEngineInternal_GenericStack2344941421.h"
 #include "UnityEngine_UnityEngineInternal_NetFxCoreExtension3785516670.h"
 #include "UnityEngine_UnityEngine_Events_UnityAction909267611.h"
+#include "RiverTools_U3CModuleU3E86524790.h"
 #include "Photon3Unity3D_U3CModuleU3E86524790.h"
 #include "Photon3Unity3D_ExitGames_Client_IProtocol2724506835.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_PeerBase_My3022056226.h"
@@ -1726,7 +1769,6 @@
 #include "Photon3Unity3D_U3CPrivateImplementationDetailsU3E_2238181776.h"
 #include "Photon3Unity3D_U3CPrivateImplementationDetailsU3E_2238181987.h"
 #include "Photon3Unity3D_U3CPrivateImplementationDetailsU3E__664158153.h"
-#include "RiverTools_U3CModuleU3E86524790.h"
 #include "UnityEngine_UI_U3CModuleU3E86524790.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_EventTrigge516183010.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_UIBehaviour644839684.h"
@@ -1750,10 +1792,12 @@
 #include "UnityEngine_UI_UnityEngine_UI_Clipping4267116267.h"
 #include "UnityEngine_UI_UnityEngine_UI_HorizontalLayoutGrou2687518874.h"
 #include "UnityEngine_UI_UnityEngine_UI_VerticalLayoutGroup916192776.h"
+#include "UnityEngine_UI_UnityEngine_UI_BaseVertexEffect381296623.h"
 #include "UnityEngine_UI_UnityEngine_UI_Outline3842262571.h"
 #include "UnityEngine_UI_UnityEngine_UI_PositionAsUV1826283646.h"
 #include "UnityEngine_UI_U3CPrivateImplementationDetailsU3E_U214874486.h"
 #include "AssemblyU2DCSharp_U3CModuleU3E86524790.h"
+#include "AssemblyU2DCSharp_TouchToMouse1650215627.h"
 #include "AssemblyU2DCSharp_Demo2DJumpAndRun927175799.h"
 #include "AssemblyU2DCSharp_OnAwakePhysicsSettings231832548.h"
 #include "AssemblyU2DCSharp_OnClickDisableObj3195089048.h"
@@ -1778,6 +1822,9 @@
 #include "AssemblyU2DCSharp_ServerTime167540944.h"
 #include "AssemblyU2DCSharp_ICurvePoint2098231050.h"
 #include "AssemblyU2DCSharp_IRiverTool3609154427.h"
+#include "AssemblyU2DCSharp_PlayerCollider3298947605.h"
+#include "AssemblyU2DCSharp_Prefabs1345984335.h"
+#include "AssemblyU2DCSharp_Prefabs_GameObj1469031301.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_U3CModuleU3E86524790.h"
 
 
@@ -1787,7 +1834,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[8578] = 
+extern const int32_t g_FieldOffsetTable[8929] = 
 {
 	0,
 	0,
@@ -4982,6 +5029,491 @@ extern const int32_t g_FieldOffsetTable[8578] =
 	U3CPrivateImplementationDetailsU3E_t3053238933_StaticFields::get_offset_of_U24U24fieldU2D63_50(),
 	U3CPrivateImplementationDetailsU3E_t3053238933_StaticFields::get_offset_of_U24U24fieldU2D64_51(),
 	U3CPrivateImplementationDetailsU3E_t3053238933_StaticFields::get_offset_of_U24U24fieldU2D65_52(),
+	BigInteger_t1694088928::get_offset_of_length_0(),
+	BigInteger_t1694088928::get_offset_of_data_1(),
+	BigInteger_t1694088928_StaticFields::get_offset_of_smallPrimes_2(),
+	BigInteger_t1694088928_StaticFields::get_offset_of_rng_3(),
+	Sign_t2576862::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	ModulusRing_t948575272::get_offset_of_mod_0(),
+	ModulusRing_t948575272::get_offset_of_constant_1(),
+	ConfidenceFactor_t2428357798::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	ASN1_t1254135647::get_offset_of_m_nTag_0(),
+	ASN1_t1254135647::get_offset_of_m_aValue_1(),
+	ASN1_t1254135647::get_offset_of_elist_2(),
+	ContentInfo_t1278398632::get_offset_of_contentType_0(),
+	ContentInfo_t1278398632::get_offset_of_content_1(),
+	EncryptedData_t636832623::get_offset_of__version_0(),
+	EncryptedData_t636832623::get_offset_of__content_1(),
+	EncryptedData_t636832623::get_offset_of__encryptionAlgorithm_2(),
+	EncryptedData_t636832623::get_offset_of__encrypted_3(),
+	ARC4Managed_t1769787186::get_offset_of_key_12(),
+	ARC4Managed_t1769787186::get_offset_of_state_13(),
+	ARC4Managed_t1769787186::get_offset_of_x_14(),
+	ARC4Managed_t1769787186::get_offset_of_y_15(),
+	ARC4Managed_t1769787186::get_offset_of_m_disposed_16(),
+	KeyBuilder_t2049706642_StaticFields::get_offset_of_rng_0(),
+	MD2Managed_t2591968217::get_offset_of_state_4(),
+	MD2Managed_t2591968217::get_offset_of_checksum_5(),
+	MD2Managed_t2591968217::get_offset_of_buffer_6(),
+	MD2Managed_t2591968217::get_offset_of_count_7(),
+	MD2Managed_t2591968217::get_offset_of_x_8(),
+	MD2Managed_t2591968217_StaticFields::get_offset_of_PI_SUBST_9(),
+	PKCS1_t3821523996_StaticFields::get_offset_of_emptySHA1_0(),
+	PKCS1_t3821523996_StaticFields::get_offset_of_emptySHA256_1(),
+	PKCS1_t3821523996_StaticFields::get_offset_of_emptySHA384_2(),
+	PKCS1_t3821523996_StaticFields::get_offset_of_emptySHA512_3(),
+	PrivateKeyInfo_t2184496331::get_offset_of__version_0(),
+	PrivateKeyInfo_t2184496331::get_offset_of__algorithm_1(),
+	PrivateKeyInfo_t2184496331::get_offset_of__key_2(),
+	PrivateKeyInfo_t2184496331::get_offset_of__list_3(),
+	EncryptedPrivateKeyInfo_t785870703::get_offset_of__algorithm_0(),
+	EncryptedPrivateKeyInfo_t785870703::get_offset_of__salt_1(),
+	EncryptedPrivateKeyInfo_t785870703::get_offset_of__iterations_2(),
+	EncryptedPrivateKeyInfo_t785870703::get_offset_of__data_3(),
+	RC4_t3745421912_StaticFields::get_offset_of_s_legalBlockSizes_10(),
+	RC4_t3745421912_StaticFields::get_offset_of_s_legalKeySizes_11(),
+	RSAManaged_t639738773::get_offset_of_isCRTpossible_2(),
+	RSAManaged_t639738773::get_offset_of_keyBlinding_3(),
+	RSAManaged_t639738773::get_offset_of_keypairGenerated_4(),
+	RSAManaged_t639738773::get_offset_of_m_disposed_5(),
+	RSAManaged_t639738773::get_offset_of_d_6(),
+	RSAManaged_t639738773::get_offset_of_p_7(),
+	RSAManaged_t639738773::get_offset_of_q_8(),
+	RSAManaged_t639738773::get_offset_of_dp_9(),
+	RSAManaged_t639738773::get_offset_of_dq_10(),
+	RSAManaged_t639738773::get_offset_of_qInv_11(),
+	RSAManaged_t639738773::get_offset_of_n_12(),
+	RSAManaged_t639738773::get_offset_of_e_13(),
+	RSAManaged_t639738773::get_offset_of_KeyGenerated_14(),
+	SafeBag_t4111116303::get_offset_of__bagOID_0(),
+	SafeBag_t4111116303::get_offset_of__asn1_1(),
+	PKCS12_t2950126080_StaticFields::get_offset_of_recommendedIterationCount_0(),
+	PKCS12_t2950126080::get_offset_of__password_1(),
+	PKCS12_t2950126080::get_offset_of__keyBags_2(),
+	PKCS12_t2950126080::get_offset_of__secretBags_3(),
+	PKCS12_t2950126080::get_offset_of__certs_4(),
+	PKCS12_t2950126080::get_offset_of__keyBagsChanged_5(),
+	PKCS12_t2950126080::get_offset_of__secretBagsChanged_6(),
+	PKCS12_t2950126080::get_offset_of__certsChanged_7(),
+	PKCS12_t2950126080::get_offset_of__iterations_8(),
+	PKCS12_t2950126080::get_offset_of__safeBags_9(),
+	PKCS12_t2950126080::get_offset_of__rng_10(),
+	PKCS12_t2950126080_StaticFields::get_offset_of_password_max_length_11(),
+	PKCS12_t2950126080_StaticFields::get_offset_of_U3CU3Ef__switchU24map5_12(),
+	PKCS12_t2950126080_StaticFields::get_offset_of_U3CU3Ef__switchU24map6_13(),
+	PKCS12_t2950126080_StaticFields::get_offset_of_U3CU3Ef__switchU24map7_14(),
+	PKCS12_t2950126080_StaticFields::get_offset_of_U3CU3Ef__switchU24map8_15(),
+	PKCS12_t2950126080_StaticFields::get_offset_of_U3CU3Ef__switchU24mapC_16(),
+	DeriveBytes_t2715912549_StaticFields::get_offset_of_keyDiversifier_0(),
+	DeriveBytes_t2715912549_StaticFields::get_offset_of_ivDiversifier_1(),
+	DeriveBytes_t2715912549_StaticFields::get_offset_of_macDiversifier_2(),
+	DeriveBytes_t2715912549::get_offset_of__hashName_3(),
+	DeriveBytes_t2715912549::get_offset_of__iterations_4(),
+	DeriveBytes_t2715912549::get_offset_of__password_5(),
+	DeriveBytes_t2715912549::get_offset_of__salt_6(),
+	X501_t591126674_StaticFields::get_offset_of_countryName_0(),
+	X501_t591126674_StaticFields::get_offset_of_organizationName_1(),
+	X501_t591126674_StaticFields::get_offset_of_organizationalUnitName_2(),
+	X501_t591126674_StaticFields::get_offset_of_commonName_3(),
+	X501_t591126674_StaticFields::get_offset_of_localityName_4(),
+	X501_t591126674_StaticFields::get_offset_of_stateOrProvinceName_5(),
+	X501_t591126674_StaticFields::get_offset_of_streetAddress_6(),
+	X501_t591126674_StaticFields::get_offset_of_domainComponent_7(),
+	X501_t591126674_StaticFields::get_offset_of_userid_8(),
+	X501_t591126674_StaticFields::get_offset_of_email_9(),
+	X501_t591126674_StaticFields::get_offset_of_dnQualifier_10(),
+	X501_t591126674_StaticFields::get_offset_of_title_11(),
+	X501_t591126674_StaticFields::get_offset_of_surname_12(),
+	X501_t591126674_StaticFields::get_offset_of_givenName_13(),
+	X501_t591126674_StaticFields::get_offset_of_initial_14(),
+	X509Certificate_t273828613::get_offset_of_decoder_0(),
+	X509Certificate_t273828613::get_offset_of_m_encodedcert_1(),
+	X509Certificate_t273828613::get_offset_of_m_from_2(),
+	X509Certificate_t273828613::get_offset_of_m_until_3(),
+	X509Certificate_t273828613::get_offset_of_issuer_4(),
+	X509Certificate_t273828613::get_offset_of_m_issuername_5(),
+	X509Certificate_t273828613::get_offset_of_m_keyalgo_6(),
+	X509Certificate_t273828613::get_offset_of_m_keyalgoparams_7(),
+	X509Certificate_t273828613::get_offset_of_subject_8(),
+	X509Certificate_t273828613::get_offset_of_m_subject_9(),
+	X509Certificate_t273828613::get_offset_of_m_publickey_10(),
+	X509Certificate_t273828613::get_offset_of_signature_11(),
+	X509Certificate_t273828613::get_offset_of_m_signaturealgo_12(),
+	X509Certificate_t273828613::get_offset_of_m_signaturealgoparams_13(),
+	X509Certificate_t273828613::get_offset_of_certhash_14(),
+	X509Certificate_t273828613::get_offset_of__rsa_15(),
+	X509Certificate_t273828613::get_offset_of__dsa_16(),
+	X509Certificate_t273828613::get_offset_of_version_17(),
+	X509Certificate_t273828613::get_offset_of_serialnumber_18(),
+	X509Certificate_t273828613::get_offset_of_issuerUniqueID_19(),
+	X509Certificate_t273828613::get_offset_of_subjectUniqueID_20(),
+	X509Certificate_t273828613::get_offset_of_extensions_21(),
+	X509Certificate_t273828613_StaticFields::get_offset_of_encoding_error_22(),
+	X509Certificate_t273828613_StaticFields::get_offset_of_U3CU3Ef__switchU24mapF_23(),
+	X509Certificate_t273828613_StaticFields::get_offset_of_U3CU3Ef__switchU24map10_24(),
+	X509Certificate_t273828613_StaticFields::get_offset_of_U3CU3Ef__switchU24map11_25(),
+	X509CertificateEnumerator_t3569011382::get_offset_of_enumerator_0(),
+	X509Chain_t3968320430::get_offset_of_roots_0(),
+	X509Chain_t3968320430::get_offset_of_certs_1(),
+	X509Chain_t3968320430::get_offset_of__root_2(),
+	X509Chain_t3968320430::get_offset_of__chain_3(),
+	X509Chain_t3968320430::get_offset_of__status_4(),
+	X509ChainStatusFlags_t2524654829::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	X509Crl_t2942805322::get_offset_of_issuer_0(),
+	X509Crl_t2942805322::get_offset_of_version_1(),
+	X509Crl_t2942805322::get_offset_of_thisUpdate_2(),
+	X509Crl_t2942805322::get_offset_of_nextUpdate_3(),
+	X509Crl_t2942805322::get_offset_of_entries_4(),
+	X509Crl_t2942805322::get_offset_of_signatureOID_5(),
+	X509Crl_t2942805322::get_offset_of_signature_6(),
+	X509Crl_t2942805322::get_offset_of_extensions_7(),
+	X509Crl_t2942805322::get_offset_of_encoded_8(),
+	X509Crl_t2942805322::get_offset_of_hash_value_9(),
+	X509Crl_t2942805322_StaticFields::get_offset_of_U3CU3Ef__switchU24map13_10(),
+	X509CrlEntry_t3291243611::get_offset_of_sn_0(),
+	X509CrlEntry_t3291243611::get_offset_of_revocationDate_1(),
+	X509CrlEntry_t3291243611::get_offset_of_extensions_2(),
+	X509Extension_t1510964269::get_offset_of_extnOid_0(),
+	X509Extension_t1510964269::get_offset_of_extnCritical_1(),
+	X509Extension_t1510964269::get_offset_of_extnValue_2(),
+	X509ExtensionCollection_t3528692651::get_offset_of_readOnly_1(),
+	X509Store_t3983467982::get_offset_of__storePath_0(),
+	X509Store_t3983467982::get_offset_of__certificates_1(),
+	X509Store_t3983467982::get_offset_of__crls_2(),
+	X509Store_t3983467982::get_offset_of__crl_3(),
+	X509StoreManager_t902433605_StaticFields::get_offset_of__userStore_0(),
+	X509StoreManager_t902433605_StaticFields::get_offset_of__machineStore_1(),
+	X509Stores_t2754714603::get_offset_of__storePath_0(),
+	X509Stores_t2754714603::get_offset_of__trusted_1(),
+	AuthorityKeyIdentifierExtension_t4106742333::get_offset_of_aki_3(),
+	BasicConstraintsExtension_t455698010::get_offset_of_cA_3(),
+	BasicConstraintsExtension_t455698010::get_offset_of_pathLenConstraint_4(),
+	ExtendedKeyUsageExtension_t973649415::get_offset_of_keyPurpose_3(),
+	ExtendedKeyUsageExtension_t973649415_StaticFields::get_offset_of_U3CU3Ef__switchU24map14_4(),
+	GeneralNames_t2474193379::get_offset_of_rfc822Name_0(),
+	GeneralNames_t2474193379::get_offset_of_dnsName_1(),
+	GeneralNames_t2474193379::get_offset_of_directoryNames_2(),
+	GeneralNames_t2474193379::get_offset_of_uris_3(),
+	GeneralNames_t2474193379::get_offset_of_ipAddr_4(),
+	KeyUsages_t912788628::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	KeyUsageExtension_t4108765760::get_offset_of_kubits_3(),
+	NetscapeCertTypeExtension_t1387961723::get_offset_of_ctbits_3(),
+	CertTypes_t588297365::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	SubjectAltNameExtension_t1663182458::get_offset_of__names_3(),
+	HMAC_t3747562012::get_offset_of_hash_5(),
+	HMAC_t3747562012::get_offset_of_hashing_6(),
+	HMAC_t3747562012::get_offset_of_innerPad_7(),
+	HMAC_t3747562012::get_offset_of_outerPad_8(),
+	MD5SHA1_t1066953176::get_offset_of_md5_4(),
+	MD5SHA1_t1066953176::get_offset_of_sha_5(),
+	MD5SHA1_t1066953176::get_offset_of_hashing_6(),
+	AlertLevel_t1107615680::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	AlertDescription_t1415847224::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	Alert_t1570308436::get_offset_of_level_0(),
+	Alert_t1570308436::get_offset_of_description_1(),
+	CipherAlgorithmType_t3070348278::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	CipherSuite_t995991461_StaticFields::get_offset_of_EmptyArray_0(),
+	CipherSuite_t995991461::get_offset_of_code_1(),
+	CipherSuite_t995991461::get_offset_of_name_2(),
+	CipherSuite_t995991461::get_offset_of_cipherAlgorithmType_3(),
+	CipherSuite_t995991461::get_offset_of_hashAlgorithmType_4(),
+	CipherSuite_t995991461::get_offset_of_exchangeAlgorithmType_5(),
+	CipherSuite_t995991461::get_offset_of_isExportable_6(),
+	CipherSuite_t995991461::get_offset_of_cipherMode_7(),
+	CipherSuite_t995991461::get_offset_of_keyMaterialSize_8(),
+	CipherSuite_t995991461::get_offset_of_keyBlockSize_9(),
+	CipherSuite_t995991461::get_offset_of_expandedKeyMaterialSize_10(),
+	CipherSuite_t995991461::get_offset_of_effectiveKeyBits_11(),
+	CipherSuite_t995991461::get_offset_of_ivSize_12(),
+	CipherSuite_t995991461::get_offset_of_blockSize_13(),
+	CipherSuite_t995991461::get_offset_of_context_14(),
+	CipherSuite_t995991461::get_offset_of_encryptionAlgorithm_15(),
+	CipherSuite_t995991461::get_offset_of_encryptionCipher_16(),
+	CipherSuite_t995991461::get_offset_of_decryptionAlgorithm_17(),
+	CipherSuite_t995991461::get_offset_of_decryptionCipher_18(),
+	CipherSuite_t995991461::get_offset_of_clientHMAC_19(),
+	CipherSuite_t995991461::get_offset_of_serverHMAC_20(),
+	CipherSuiteCollection_t1023598115::get_offset_of_cipherSuites_0(),
+	CipherSuiteCollection_t1023598115::get_offset_of_protocol_1(),
+	ClientContext_t3677726556::get_offset_of_sslStream_30(),
+	ClientContext_t3677726556::get_offset_of_clientHelloProtocol_31(),
+	ClientSessionInfo_t4062822289_StaticFields::get_offset_of_ValidityInterval_0(),
+	ClientSessionInfo_t4062822289::get_offset_of_disposed_1(),
+	ClientSessionInfo_t4062822289::get_offset_of_validuntil_2(),
+	ClientSessionInfo_t4062822289::get_offset_of_host_3(),
+	ClientSessionInfo_t4062822289::get_offset_of_sid_4(),
+	ClientSessionInfo_t4062822289::get_offset_of_masterSecret_5(),
+	ClientSessionCache_t3423305263_StaticFields::get_offset_of_cache_0(),
+	ClientSessionCache_t3423305263_StaticFields::get_offset_of_locker_1(),
+	ContentType_t2785698635::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	Context_t4123145639::get_offset_of_securityProtocol_0(),
+	Context_t4123145639::get_offset_of_sessionId_1(),
+	Context_t4123145639::get_offset_of_compressionMethod_2(),
+	Context_t4123145639::get_offset_of_serverSettings_3(),
+	Context_t4123145639::get_offset_of_clientSettings_4(),
+	Context_t4123145639::get_offset_of_current_5(),
+	Context_t4123145639::get_offset_of_negotiating_6(),
+	Context_t4123145639::get_offset_of_read_7(),
+	Context_t4123145639::get_offset_of_write_8(),
+	Context_t4123145639::get_offset_of_supportedCiphers_9(),
+	Context_t4123145639::get_offset_of_lastHandshakeMsg_10(),
+	Context_t4123145639::get_offset_of_handshakeState_11(),
+	Context_t4123145639::get_offset_of_abbreviatedHandshake_12(),
+	Context_t4123145639::get_offset_of_receivedConnectionEnd_13(),
+	Context_t4123145639::get_offset_of_sentConnectionEnd_14(),
+	Context_t4123145639::get_offset_of_protocolNegotiated_15(),
+	Context_t4123145639::get_offset_of_writeSequenceNumber_16(),
+	Context_t4123145639::get_offset_of_readSequenceNumber_17(),
+	Context_t4123145639::get_offset_of_clientRandom_18(),
+	Context_t4123145639::get_offset_of_serverRandom_19(),
+	Context_t4123145639::get_offset_of_randomCS_20(),
+	Context_t4123145639::get_offset_of_randomSC_21(),
+	Context_t4123145639::get_offset_of_masterSecret_22(),
+	Context_t4123145639::get_offset_of_clientWriteKey_23(),
+	Context_t4123145639::get_offset_of_serverWriteKey_24(),
+	Context_t4123145639::get_offset_of_clientWriteIV_25(),
+	Context_t4123145639::get_offset_of_serverWriteIV_26(),
+	Context_t4123145639::get_offset_of_handshakeMessages_27(),
+	Context_t4123145639::get_offset_of_random_28(),
+	Context_t4123145639::get_offset_of_recordProtocol_29(),
+	ExchangeAlgorithmType_t1807586014::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	HandshakeState_t3657199378::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	HashAlgorithmType_t2506270163::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	HttpsClientStream_t2708006830::get_offset_of__request_20(),
+	HttpsClientStream_t2708006830::get_offset_of__status_21(),
+	HttpsClientStream_t2708006830_StaticFields::get_offset_of_U3CU3Ef__amU24cache2_22(),
+	HttpsClientStream_t2708006830_StaticFields::get_offset_of_U3CU3Ef__amU24cache3_23(),
+	RecordProtocol_t3519001153_StaticFields::get_offset_of_record_processing_0(),
+	RecordProtocol_t3519001153::get_offset_of_innerStream_1(),
+	RecordProtocol_t3519001153::get_offset_of_context_2(),
+	ReceiveRecordAsyncResult_t1547021349::get_offset_of_locker_0(),
+	ReceiveRecordAsyncResult_t1547021349::get_offset_of__userCallback_1(),
+	ReceiveRecordAsyncResult_t1547021349::get_offset_of__userState_2(),
+	ReceiveRecordAsyncResult_t1547021349::get_offset_of__asyncException_3(),
+	ReceiveRecordAsyncResult_t1547021349::get_offset_of_handle_4(),
+	ReceiveRecordAsyncResult_t1547021349::get_offset_of__resultingBuffer_5(),
+	ReceiveRecordAsyncResult_t1547021349::get_offset_of__record_6(),
+	ReceiveRecordAsyncResult_t1547021349::get_offset_of_completed_7(),
+	ReceiveRecordAsyncResult_t1547021349::get_offset_of__initialBuffer_8(),
+	SendRecordAsyncResult_t2772416992::get_offset_of_locker_0(),
+	SendRecordAsyncResult_t2772416992::get_offset_of__userCallback_1(),
+	SendRecordAsyncResult_t2772416992::get_offset_of__userState_2(),
+	SendRecordAsyncResult_t2772416992::get_offset_of__asyncException_3(),
+	SendRecordAsyncResult_t2772416992::get_offset_of_handle_4(),
+	SendRecordAsyncResult_t2772416992::get_offset_of__message_5(),
+	SendRecordAsyncResult_t2772416992::get_offset_of_completed_6(),
+	RSASslSignatureDeformatter_t3446121365::get_offset_of_key_0(),
+	RSASslSignatureDeformatter_t3446121365::get_offset_of_hash_1(),
+	RSASslSignatureDeformatter_t3446121365_StaticFields::get_offset_of_U3CU3Ef__switchU24map15_2(),
+	RSASslSignatureFormatter_t491693046::get_offset_of_key_0(),
+	RSASslSignatureFormatter_t491693046::get_offset_of_hash_1(),
+	RSASslSignatureFormatter_t491693046_StaticFields::get_offset_of_U3CU3Ef__switchU24map16_2(),
+	SecurityCompressionType_t1615155800::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	SecurityParameters_t202779010::get_offset_of_cipher_0(),
+	SecurityParameters_t202779010::get_offset_of_clientWriteMAC_1(),
+	SecurityParameters_t202779010::get_offset_of_serverWriteMAC_2(),
+	SecurityProtocolType_t4015394186::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	ValidationResult_t2397874734::get_offset_of_trusted_0(),
+	ValidationResult_t2397874734::get_offset_of_error_code_1(),
+	SslClientStream_t1178954575::get_offset_of_ServerCertValidation_16(),
+	SslClientStream_t1178954575::get_offset_of_ClientCertSelection_17(),
+	SslClientStream_t1178954575::get_offset_of_PrivateKeySelection_18(),
+	SslClientStream_t1178954575::get_offset_of_ServerCertValidation2_19(),
+	SslCipherSuite_t3658722873::get_offset_of_pad1_21(),
+	SslCipherSuite_t3658722873::get_offset_of_pad2_22(),
+	SslCipherSuite_t3658722873::get_offset_of_header_23(),
+	SslHandshakeHash_t521809713::get_offset_of_md5_4(),
+	SslHandshakeHash_t521809713::get_offset_of_sha_5(),
+	SslHandshakeHash_t521809713::get_offset_of_hashing_6(),
+	SslHandshakeHash_t521809713::get_offset_of_secret_7(),
+	SslHandshakeHash_t521809713::get_offset_of_innerPadMD5_8(),
+	SslHandshakeHash_t521809713::get_offset_of_outerPadMD5_9(),
+	SslHandshakeHash_t521809713::get_offset_of_innerPadSHA_10(),
+	SslHandshakeHash_t521809713::get_offset_of_outerPadSHA_11(),
+	0,
+	SslStreamBase_t589897109_StaticFields::get_offset_of_record_processing_2(),
+	SslStreamBase_t589897109::get_offset_of_innerStream_3(),
+	SslStreamBase_t589897109::get_offset_of_inputBuffer_4(),
+	SslStreamBase_t589897109::get_offset_of_context_5(),
+	SslStreamBase_t589897109::get_offset_of_protocol_6(),
+	SslStreamBase_t589897109::get_offset_of_ownsStream_7(),
+	SslStreamBase_t589897109::get_offset_of_disposed_8(),
+	SslStreamBase_t589897109::get_offset_of_checkCertRevocationStatus_9(),
+	SslStreamBase_t589897109::get_offset_of_negotiate_10(),
+	SslStreamBase_t589897109::get_offset_of_read_11(),
+	SslStreamBase_t589897109::get_offset_of_write_12(),
+	SslStreamBase_t589897109::get_offset_of_negotiationComplete_13(),
+	SslStreamBase_t589897109::get_offset_of_recbuf_14(),
+	SslStreamBase_t589897109::get_offset_of_recordStream_15(),
+	InternalAsyncResult_t2689067676::get_offset_of_locker_0(),
+	InternalAsyncResult_t2689067676::get_offset_of__userCallback_1(),
+	InternalAsyncResult_t2689067676::get_offset_of__userState_2(),
+	InternalAsyncResult_t2689067676::get_offset_of__asyncException_3(),
+	InternalAsyncResult_t2689067676::get_offset_of_handle_4(),
+	InternalAsyncResult_t2689067676::get_offset_of_completed_5(),
+	InternalAsyncResult_t2689067676::get_offset_of__bytesRead_6(),
+	InternalAsyncResult_t2689067676::get_offset_of__fromWrite_7(),
+	InternalAsyncResult_t2689067676::get_offset_of__proceedAfterHandshake_8(),
+	InternalAsyncResult_t2689067676::get_offset_of__buffer_9(),
+	InternalAsyncResult_t2689067676::get_offset_of__offset_10(),
+	InternalAsyncResult_t2689067676::get_offset_of__count_11(),
+	TlsCipherSuite_t1815597034::get_offset_of_header_21(),
+	TlsCipherSuite_t1815597034::get_offset_of_headerLock_22(),
+	TlsClientSettings_t2063694561::get_offset_of_targetHost_0(),
+	TlsClientSettings_t2063694561::get_offset_of_certificates_1(),
+	TlsClientSettings_t2063694561::get_offset_of_clientCertificate_2(),
+	TlsClientSettings_t2063694561::get_offset_of_certificateRSA_3(),
+	TlsException_t1029166540::get_offset_of_alert_11(),
+	TlsServerSettings_t2090450521::get_offset_of_certificates_0(),
+	TlsServerSettings_t2090450521::get_offset_of_certificateRSA_1(),
+	TlsServerSettings_t2090450521::get_offset_of_rsaParameters_2(),
+	TlsServerSettings_t2090450521::get_offset_of_signedParams_3(),
+	TlsServerSettings_t2090450521::get_offset_of_distinguisedNames_4(),
+	TlsServerSettings_t2090450521::get_offset_of_serverKeyExchange_5(),
+	TlsServerSettings_t2090450521::get_offset_of_certificateRequest_6(),
+	TlsServerSettings_t2090450521::get_offset_of_certificateTypes_7(),
+	TlsStream_t720149587::get_offset_of_canRead_1(),
+	TlsStream_t720149587::get_offset_of_canWrite_2(),
+	TlsStream_t720149587::get_offset_of_buffer_3(),
+	TlsStream_t720149587::get_offset_of_temp_4(),
+	ClientCertificateType_t2725032177::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	HandshakeMessage_t276412187::get_offset_of_context_5(),
+	HandshakeMessage_t276412187::get_offset_of_handshakeType_6(),
+	HandshakeMessage_t276412187::get_offset_of_contentType_7(),
+	HandshakeMessage_t276412187::get_offset_of_cache_8(),
+	HandshakeType_t1150764700::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	TlsClientCertificate_t98714569::get_offset_of_clientCertSelected_9(),
+	TlsClientCertificate_t98714569::get_offset_of_clientCert_10(),
+	TlsClientFinished_t2295380400_StaticFields::get_offset_of_Ssl3Marker_9(),
+	TlsClientHello_t1844074116::get_offset_of_random_9(),
+	TlsServerCertificate_t2616569169::get_offset_of_certificates_9(),
+	TlsServerCertificateRequest_t3177402414::get_offset_of_certificateTypes_9(),
+	TlsServerCertificateRequest_t3177402414::get_offset_of_distinguisedNames_10(),
+	TlsServerFinished_t2322136360_StaticFields::get_offset_of_Ssl3Marker_9(),
+	TlsServerHello_t1259177484::get_offset_of_compressionMethod_9(),
+	TlsServerHello_t1259177484::get_offset_of_random_10(),
+	TlsServerHello_t1259177484::get_offset_of_sessionId_11(),
+	TlsServerHello_t1259177484::get_offset_of_cipherSuite_12(),
+	TlsServerKeyExchange_t1391668572::get_offset_of_rsaParams_9(),
+	TlsServerKeyExchange_t1391668572::get_offset_of_signedParams_10(),
+	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D0_0(),
+	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D5_1(),
+	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D6_2(),
+	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D7_3(),
+	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D8_4(),
+	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D9_5(),
+	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D11_6(),
+	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D12_7(),
+	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D13_8(),
+	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D14_9(),
+	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D15_10(),
+	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D16_11(),
+	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D17_12(),
+	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D21_13(),
+	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D22_14(),
 	MonoTODOAttribute_t1287393897::get_offset_of_comment_0(),
 	0,
 	0,
@@ -5439,7 +5971,7 @@ extern const int32_t g_FieldOffsetTable[8578] =
 	X509Certificate2_t2583282360_StaticFields::get_offset_of_email_16(),
 	X509Certificate2_t2583282360_StaticFields::get_offset_of_signedData_17(),
 	X509Certificate2Enumerator_t944265564::get_offset_of_enumerator_0(),
-	X509CertificateEnumerator_t3569011382::get_offset_of_enumerator_0(),
+	X509CertificateEnumerator_t3569011383::get_offset_of_enumerator_0(),
 	X509Chain_t2831591730::get_offset_of_location_0(),
 	X509Chain_t2831591730::get_offset_of_elements_1(),
 	X509Chain_t2831591730::get_offset_of_policy_2(),
@@ -5985,10 +6517,10 @@ extern const int32_t g_FieldOffsetTable[8578] =
 	0,
 	0,
 	0,
-	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D2_0(),
-	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D3_1(),
-	U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields::get_offset_of_U24U24fieldU2D4_2(),
-	KeyBuilder_t2049706642_StaticFields::get_offset_of_rng_0(),
+	U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields::get_offset_of_U24U24fieldU2D2_0(),
+	U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields::get_offset_of_U24U24fieldU2D3_1(),
+	U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields::get_offset_of_U24U24fieldU2D4_2(),
+	KeyBuilder_t2049706643_StaticFields::get_offset_of_rng_0(),
 	SymmetricTransform_t3854241867::get_offset_of_algo_0(),
 	SymmetricTransform_t3854241867::get_offset_of_encrypt_1(),
 	SymmetricTransform_t3854241867::get_offset_of_BlockSizeByte_2(),
@@ -6044,504 +6576,26 @@ extern const int32_t g_FieldOffsetTable[8578] =
 	AesTransform_t2186883254_StaticFields::get_offset_of_iT1_23(),
 	AesTransform_t2186883254_StaticFields::get_offset_of_iT2_24(),
 	AesTransform_t2186883254_StaticFields::get_offset_of_iT3_25(),
-	U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields::get_offset_of_U24U24fieldU2D0_0(),
-	U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields::get_offset_of_U24U24fieldU2D1_1(),
-	U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields::get_offset_of_U24U24fieldU2D2_2(),
-	U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields::get_offset_of_U24U24fieldU2D3_3(),
-	U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields::get_offset_of_U24U24fieldU2D4_4(),
-	U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields::get_offset_of_U24U24fieldU2D5_5(),
-	U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields::get_offset_of_U24U24fieldU2D6_6(),
-	U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields::get_offset_of_U24U24fieldU2D7_7(),
-	U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields::get_offset_of_U24U24fieldU2D8_8(),
-	U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields::get_offset_of_U24U24fieldU2D9_9(),
-	U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields::get_offset_of_U24U24fieldU2D10_10(),
-	U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields::get_offset_of_U24U24fieldU2D11_11(),
-	BigInteger_t1694088928::get_offset_of_length_0(),
-	BigInteger_t1694088928::get_offset_of_data_1(),
-	BigInteger_t1694088928_StaticFields::get_offset_of_smallPrimes_2(),
-	BigInteger_t1694088928_StaticFields::get_offset_of_rng_3(),
-	Sign_t2576862::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	ModulusRing_t948575272::get_offset_of_mod_0(),
-	ModulusRing_t948575272::get_offset_of_constant_1(),
-	ConfidenceFactor_t2428357798::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	ASN1_t1254135647::get_offset_of_m_nTag_0(),
-	ASN1_t1254135647::get_offset_of_m_aValue_1(),
-	ASN1_t1254135647::get_offset_of_elist_2(),
-	ContentInfo_t1278398632::get_offset_of_contentType_0(),
-	ContentInfo_t1278398632::get_offset_of_content_1(),
-	EncryptedData_t636832623::get_offset_of__version_0(),
-	EncryptedData_t636832623::get_offset_of__content_1(),
-	EncryptedData_t636832623::get_offset_of__encryptionAlgorithm_2(),
-	EncryptedData_t636832623::get_offset_of__encrypted_3(),
-	ARC4Managed_t1769787186::get_offset_of_key_12(),
-	ARC4Managed_t1769787186::get_offset_of_state_13(),
-	ARC4Managed_t1769787186::get_offset_of_x_14(),
-	ARC4Managed_t1769787186::get_offset_of_y_15(),
-	ARC4Managed_t1769787186::get_offset_of_m_disposed_16(),
-	KeyBuilder_t2049706643_StaticFields::get_offset_of_rng_0(),
-	MD2Managed_t2591968217::get_offset_of_state_4(),
-	MD2Managed_t2591968217::get_offset_of_checksum_5(),
-	MD2Managed_t2591968217::get_offset_of_buffer_6(),
-	MD2Managed_t2591968217::get_offset_of_count_7(),
-	MD2Managed_t2591968217::get_offset_of_x_8(),
-	MD2Managed_t2591968217_StaticFields::get_offset_of_PI_SUBST_9(),
-	PKCS1_t3821523996_StaticFields::get_offset_of_emptySHA1_0(),
-	PKCS1_t3821523996_StaticFields::get_offset_of_emptySHA256_1(),
-	PKCS1_t3821523996_StaticFields::get_offset_of_emptySHA384_2(),
-	PKCS1_t3821523996_StaticFields::get_offset_of_emptySHA512_3(),
-	PrivateKeyInfo_t2184496331::get_offset_of__version_0(),
-	PrivateKeyInfo_t2184496331::get_offset_of__algorithm_1(),
-	PrivateKeyInfo_t2184496331::get_offset_of__key_2(),
-	PrivateKeyInfo_t2184496331::get_offset_of__list_3(),
-	EncryptedPrivateKeyInfo_t785870703::get_offset_of__algorithm_0(),
-	EncryptedPrivateKeyInfo_t785870703::get_offset_of__salt_1(),
-	EncryptedPrivateKeyInfo_t785870703::get_offset_of__iterations_2(),
-	EncryptedPrivateKeyInfo_t785870703::get_offset_of__data_3(),
-	RC4_t3745421912_StaticFields::get_offset_of_s_legalBlockSizes_10(),
-	RC4_t3745421912_StaticFields::get_offset_of_s_legalKeySizes_11(),
-	RSAManaged_t639738773::get_offset_of_isCRTpossible_2(),
-	RSAManaged_t639738773::get_offset_of_keyBlinding_3(),
-	RSAManaged_t639738773::get_offset_of_keypairGenerated_4(),
-	RSAManaged_t639738773::get_offset_of_m_disposed_5(),
-	RSAManaged_t639738773::get_offset_of_d_6(),
-	RSAManaged_t639738773::get_offset_of_p_7(),
-	RSAManaged_t639738773::get_offset_of_q_8(),
-	RSAManaged_t639738773::get_offset_of_dp_9(),
-	RSAManaged_t639738773::get_offset_of_dq_10(),
-	RSAManaged_t639738773::get_offset_of_qInv_11(),
-	RSAManaged_t639738773::get_offset_of_n_12(),
-	RSAManaged_t639738773::get_offset_of_e_13(),
-	RSAManaged_t639738773::get_offset_of_KeyGenerated_14(),
-	SafeBag_t4111116303::get_offset_of__bagOID_0(),
-	SafeBag_t4111116303::get_offset_of__asn1_1(),
-	PKCS12_t2950126080_StaticFields::get_offset_of_recommendedIterationCount_0(),
-	PKCS12_t2950126080::get_offset_of__password_1(),
-	PKCS12_t2950126080::get_offset_of__keyBags_2(),
-	PKCS12_t2950126080::get_offset_of__secretBags_3(),
-	PKCS12_t2950126080::get_offset_of__certs_4(),
-	PKCS12_t2950126080::get_offset_of__keyBagsChanged_5(),
-	PKCS12_t2950126080::get_offset_of__secretBagsChanged_6(),
-	PKCS12_t2950126080::get_offset_of__certsChanged_7(),
-	PKCS12_t2950126080::get_offset_of__iterations_8(),
-	PKCS12_t2950126080::get_offset_of__safeBags_9(),
-	PKCS12_t2950126080::get_offset_of__rng_10(),
-	PKCS12_t2950126080_StaticFields::get_offset_of_password_max_length_11(),
-	PKCS12_t2950126080_StaticFields::get_offset_of_U3CU3Ef__switchU24map5_12(),
-	PKCS12_t2950126080_StaticFields::get_offset_of_U3CU3Ef__switchU24map6_13(),
-	PKCS12_t2950126080_StaticFields::get_offset_of_U3CU3Ef__switchU24map7_14(),
-	PKCS12_t2950126080_StaticFields::get_offset_of_U3CU3Ef__switchU24map8_15(),
-	PKCS12_t2950126080_StaticFields::get_offset_of_U3CU3Ef__switchU24mapC_16(),
-	DeriveBytes_t2715912549_StaticFields::get_offset_of_keyDiversifier_0(),
-	DeriveBytes_t2715912549_StaticFields::get_offset_of_ivDiversifier_1(),
-	DeriveBytes_t2715912549_StaticFields::get_offset_of_macDiversifier_2(),
-	DeriveBytes_t2715912549::get_offset_of__hashName_3(),
-	DeriveBytes_t2715912549::get_offset_of__iterations_4(),
-	DeriveBytes_t2715912549::get_offset_of__password_5(),
-	DeriveBytes_t2715912549::get_offset_of__salt_6(),
-	X501_t591126674_StaticFields::get_offset_of_countryName_0(),
-	X501_t591126674_StaticFields::get_offset_of_organizationName_1(),
-	X501_t591126674_StaticFields::get_offset_of_organizationalUnitName_2(),
-	X501_t591126674_StaticFields::get_offset_of_commonName_3(),
-	X501_t591126674_StaticFields::get_offset_of_localityName_4(),
-	X501_t591126674_StaticFields::get_offset_of_stateOrProvinceName_5(),
-	X501_t591126674_StaticFields::get_offset_of_streetAddress_6(),
-	X501_t591126674_StaticFields::get_offset_of_domainComponent_7(),
-	X501_t591126674_StaticFields::get_offset_of_userid_8(),
-	X501_t591126674_StaticFields::get_offset_of_email_9(),
-	X501_t591126674_StaticFields::get_offset_of_dnQualifier_10(),
-	X501_t591126674_StaticFields::get_offset_of_title_11(),
-	X501_t591126674_StaticFields::get_offset_of_surname_12(),
-	X501_t591126674_StaticFields::get_offset_of_givenName_13(),
-	X501_t591126674_StaticFields::get_offset_of_initial_14(),
-	X509Certificate_t273828613::get_offset_of_decoder_0(),
-	X509Certificate_t273828613::get_offset_of_m_encodedcert_1(),
-	X509Certificate_t273828613::get_offset_of_m_from_2(),
-	X509Certificate_t273828613::get_offset_of_m_until_3(),
-	X509Certificate_t273828613::get_offset_of_issuer_4(),
-	X509Certificate_t273828613::get_offset_of_m_issuername_5(),
-	X509Certificate_t273828613::get_offset_of_m_keyalgo_6(),
-	X509Certificate_t273828613::get_offset_of_m_keyalgoparams_7(),
-	X509Certificate_t273828613::get_offset_of_subject_8(),
-	X509Certificate_t273828613::get_offset_of_m_subject_9(),
-	X509Certificate_t273828613::get_offset_of_m_publickey_10(),
-	X509Certificate_t273828613::get_offset_of_signature_11(),
-	X509Certificate_t273828613::get_offset_of_m_signaturealgo_12(),
-	X509Certificate_t273828613::get_offset_of_m_signaturealgoparams_13(),
-	X509Certificate_t273828613::get_offset_of_certhash_14(),
-	X509Certificate_t273828613::get_offset_of__rsa_15(),
-	X509Certificate_t273828613::get_offset_of__dsa_16(),
-	X509Certificate_t273828613::get_offset_of_version_17(),
-	X509Certificate_t273828613::get_offset_of_serialnumber_18(),
-	X509Certificate_t273828613::get_offset_of_issuerUniqueID_19(),
-	X509Certificate_t273828613::get_offset_of_subjectUniqueID_20(),
-	X509Certificate_t273828613::get_offset_of_extensions_21(),
-	X509Certificate_t273828613_StaticFields::get_offset_of_encoding_error_22(),
-	X509Certificate_t273828613_StaticFields::get_offset_of_U3CU3Ef__switchU24mapF_23(),
-	X509Certificate_t273828613_StaticFields::get_offset_of_U3CU3Ef__switchU24map10_24(),
-	X509Certificate_t273828613_StaticFields::get_offset_of_U3CU3Ef__switchU24map11_25(),
-	X509CertificateEnumerator_t3569011383::get_offset_of_enumerator_0(),
-	X509Chain_t3968320430::get_offset_of_roots_0(),
-	X509Chain_t3968320430::get_offset_of_certs_1(),
-	X509Chain_t3968320430::get_offset_of__root_2(),
-	X509Chain_t3968320430::get_offset_of__chain_3(),
-	X509Chain_t3968320430::get_offset_of__status_4(),
-	X509ChainStatusFlags_t2524654829::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	X509Crl_t2942805322::get_offset_of_issuer_0(),
-	X509Crl_t2942805322::get_offset_of_version_1(),
-	X509Crl_t2942805322::get_offset_of_thisUpdate_2(),
-	X509Crl_t2942805322::get_offset_of_nextUpdate_3(),
-	X509Crl_t2942805322::get_offset_of_entries_4(),
-	X509Crl_t2942805322::get_offset_of_signatureOID_5(),
-	X509Crl_t2942805322::get_offset_of_signature_6(),
-	X509Crl_t2942805322::get_offset_of_extensions_7(),
-	X509Crl_t2942805322::get_offset_of_encoded_8(),
-	X509Crl_t2942805322::get_offset_of_hash_value_9(),
-	X509Crl_t2942805322_StaticFields::get_offset_of_U3CU3Ef__switchU24map13_10(),
-	X509CrlEntry_t3291243611::get_offset_of_sn_0(),
-	X509CrlEntry_t3291243611::get_offset_of_revocationDate_1(),
-	X509CrlEntry_t3291243611::get_offset_of_extensions_2(),
-	X509Extension_t1510964269::get_offset_of_extnOid_0(),
-	X509Extension_t1510964269::get_offset_of_extnCritical_1(),
-	X509Extension_t1510964269::get_offset_of_extnValue_2(),
-	X509ExtensionCollection_t3528692651::get_offset_of_readOnly_1(),
-	X509Store_t3983467982::get_offset_of__storePath_0(),
-	X509Store_t3983467982::get_offset_of__certificates_1(),
-	X509Store_t3983467982::get_offset_of__crls_2(),
-	X509Store_t3983467982::get_offset_of__crl_3(),
-	X509StoreManager_t902433605_StaticFields::get_offset_of__userStore_0(),
-	X509StoreManager_t902433605_StaticFields::get_offset_of__machineStore_1(),
-	X509Stores_t2754714603::get_offset_of__storePath_0(),
-	X509Stores_t2754714603::get_offset_of__trusted_1(),
-	AuthorityKeyIdentifierExtension_t4106742333::get_offset_of_aki_3(),
-	BasicConstraintsExtension_t455698010::get_offset_of_cA_3(),
-	BasicConstraintsExtension_t455698010::get_offset_of_pathLenConstraint_4(),
-	ExtendedKeyUsageExtension_t973649415::get_offset_of_keyPurpose_3(),
-	ExtendedKeyUsageExtension_t973649415_StaticFields::get_offset_of_U3CU3Ef__switchU24map14_4(),
-	GeneralNames_t2474193379::get_offset_of_rfc822Name_0(),
-	GeneralNames_t2474193379::get_offset_of_dnsName_1(),
-	GeneralNames_t2474193379::get_offset_of_directoryNames_2(),
-	GeneralNames_t2474193379::get_offset_of_uris_3(),
-	GeneralNames_t2474193379::get_offset_of_ipAddr_4(),
-	KeyUsages_t912788628::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	KeyUsageExtension_t4108765760::get_offset_of_kubits_3(),
-	NetscapeCertTypeExtension_t1387961723::get_offset_of_ctbits_3(),
-	CertTypes_t588297365::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	SubjectAltNameExtension_t1663182458::get_offset_of__names_3(),
-	HMAC_t3747562012::get_offset_of_hash_5(),
-	HMAC_t3747562012::get_offset_of_hashing_6(),
-	HMAC_t3747562012::get_offset_of_innerPad_7(),
-	HMAC_t3747562012::get_offset_of_outerPad_8(),
-	MD5SHA1_t1066953176::get_offset_of_md5_4(),
-	MD5SHA1_t1066953176::get_offset_of_sha_5(),
-	MD5SHA1_t1066953176::get_offset_of_hashing_6(),
-	AlertLevel_t1107615680::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	AlertDescription_t1415847224::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	Alert_t1570308436::get_offset_of_level_0(),
-	Alert_t1570308436::get_offset_of_description_1(),
-	CipherAlgorithmType_t3070348278::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	CipherSuite_t995991461_StaticFields::get_offset_of_EmptyArray_0(),
-	CipherSuite_t995991461::get_offset_of_code_1(),
-	CipherSuite_t995991461::get_offset_of_name_2(),
-	CipherSuite_t995991461::get_offset_of_cipherAlgorithmType_3(),
-	CipherSuite_t995991461::get_offset_of_hashAlgorithmType_4(),
-	CipherSuite_t995991461::get_offset_of_exchangeAlgorithmType_5(),
-	CipherSuite_t995991461::get_offset_of_isExportable_6(),
-	CipherSuite_t995991461::get_offset_of_cipherMode_7(),
-	CipherSuite_t995991461::get_offset_of_keyMaterialSize_8(),
-	CipherSuite_t995991461::get_offset_of_keyBlockSize_9(),
-	CipherSuite_t995991461::get_offset_of_expandedKeyMaterialSize_10(),
-	CipherSuite_t995991461::get_offset_of_effectiveKeyBits_11(),
-	CipherSuite_t995991461::get_offset_of_ivSize_12(),
-	CipherSuite_t995991461::get_offset_of_blockSize_13(),
-	CipherSuite_t995991461::get_offset_of_context_14(),
-	CipherSuite_t995991461::get_offset_of_encryptionAlgorithm_15(),
-	CipherSuite_t995991461::get_offset_of_encryptionCipher_16(),
-	CipherSuite_t995991461::get_offset_of_decryptionAlgorithm_17(),
-	CipherSuite_t995991461::get_offset_of_decryptionCipher_18(),
-	CipherSuite_t995991461::get_offset_of_clientHMAC_19(),
-	CipherSuite_t995991461::get_offset_of_serverHMAC_20(),
-	CipherSuiteCollection_t1023598115::get_offset_of_cipherSuites_0(),
-	CipherSuiteCollection_t1023598115::get_offset_of_protocol_1(),
-	ClientContext_t3677726556::get_offset_of_sslStream_30(),
-	ClientContext_t3677726556::get_offset_of_clientHelloProtocol_31(),
-	ClientSessionInfo_t4062822289_StaticFields::get_offset_of_ValidityInterval_0(),
-	ClientSessionInfo_t4062822289::get_offset_of_disposed_1(),
-	ClientSessionInfo_t4062822289::get_offset_of_validuntil_2(),
-	ClientSessionInfo_t4062822289::get_offset_of_host_3(),
-	ClientSessionInfo_t4062822289::get_offset_of_sid_4(),
-	ClientSessionInfo_t4062822289::get_offset_of_masterSecret_5(),
-	ClientSessionCache_t3423305263_StaticFields::get_offset_of_cache_0(),
-	ClientSessionCache_t3423305263_StaticFields::get_offset_of_locker_1(),
-	ContentType_t2785698635::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	Context_t4123145639::get_offset_of_securityProtocol_0(),
-	Context_t4123145639::get_offset_of_sessionId_1(),
-	Context_t4123145639::get_offset_of_compressionMethod_2(),
-	Context_t4123145639::get_offset_of_serverSettings_3(),
-	Context_t4123145639::get_offset_of_clientSettings_4(),
-	Context_t4123145639::get_offset_of_current_5(),
-	Context_t4123145639::get_offset_of_negotiating_6(),
-	Context_t4123145639::get_offset_of_read_7(),
-	Context_t4123145639::get_offset_of_write_8(),
-	Context_t4123145639::get_offset_of_supportedCiphers_9(),
-	Context_t4123145639::get_offset_of_lastHandshakeMsg_10(),
-	Context_t4123145639::get_offset_of_handshakeState_11(),
-	Context_t4123145639::get_offset_of_abbreviatedHandshake_12(),
-	Context_t4123145639::get_offset_of_receivedConnectionEnd_13(),
-	Context_t4123145639::get_offset_of_sentConnectionEnd_14(),
-	Context_t4123145639::get_offset_of_protocolNegotiated_15(),
-	Context_t4123145639::get_offset_of_writeSequenceNumber_16(),
-	Context_t4123145639::get_offset_of_readSequenceNumber_17(),
-	Context_t4123145639::get_offset_of_clientRandom_18(),
-	Context_t4123145639::get_offset_of_serverRandom_19(),
-	Context_t4123145639::get_offset_of_randomCS_20(),
-	Context_t4123145639::get_offset_of_randomSC_21(),
-	Context_t4123145639::get_offset_of_masterSecret_22(),
-	Context_t4123145639::get_offset_of_clientWriteKey_23(),
-	Context_t4123145639::get_offset_of_serverWriteKey_24(),
-	Context_t4123145639::get_offset_of_clientWriteIV_25(),
-	Context_t4123145639::get_offset_of_serverWriteIV_26(),
-	Context_t4123145639::get_offset_of_handshakeMessages_27(),
-	Context_t4123145639::get_offset_of_random_28(),
-	Context_t4123145639::get_offset_of_recordProtocol_29(),
-	ExchangeAlgorithmType_t1807586014::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	0,
-	HandshakeState_t3657199378::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	HashAlgorithmType_t2506270163::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	HttpsClientStream_t2708006830::get_offset_of__request_20(),
-	HttpsClientStream_t2708006830::get_offset_of__status_21(),
-	HttpsClientStream_t2708006830_StaticFields::get_offset_of_U3CU3Ef__amU24cache2_22(),
-	HttpsClientStream_t2708006830_StaticFields::get_offset_of_U3CU3Ef__amU24cache3_23(),
-	RecordProtocol_t3519001153_StaticFields::get_offset_of_record_processing_0(),
-	RecordProtocol_t3519001153::get_offset_of_innerStream_1(),
-	RecordProtocol_t3519001153::get_offset_of_context_2(),
-	ReceiveRecordAsyncResult_t1547021349::get_offset_of_locker_0(),
-	ReceiveRecordAsyncResult_t1547021349::get_offset_of__userCallback_1(),
-	ReceiveRecordAsyncResult_t1547021349::get_offset_of__userState_2(),
-	ReceiveRecordAsyncResult_t1547021349::get_offset_of__asyncException_3(),
-	ReceiveRecordAsyncResult_t1547021349::get_offset_of_handle_4(),
-	ReceiveRecordAsyncResult_t1547021349::get_offset_of__resultingBuffer_5(),
-	ReceiveRecordAsyncResult_t1547021349::get_offset_of__record_6(),
-	ReceiveRecordAsyncResult_t1547021349::get_offset_of_completed_7(),
-	ReceiveRecordAsyncResult_t1547021349::get_offset_of__initialBuffer_8(),
-	SendRecordAsyncResult_t2772416992::get_offset_of_locker_0(),
-	SendRecordAsyncResult_t2772416992::get_offset_of__userCallback_1(),
-	SendRecordAsyncResult_t2772416992::get_offset_of__userState_2(),
-	SendRecordAsyncResult_t2772416992::get_offset_of__asyncException_3(),
-	SendRecordAsyncResult_t2772416992::get_offset_of_handle_4(),
-	SendRecordAsyncResult_t2772416992::get_offset_of__message_5(),
-	SendRecordAsyncResult_t2772416992::get_offset_of_completed_6(),
-	RSASslSignatureDeformatter_t3446121365::get_offset_of_key_0(),
-	RSASslSignatureDeformatter_t3446121365::get_offset_of_hash_1(),
-	RSASslSignatureDeformatter_t3446121365_StaticFields::get_offset_of_U3CU3Ef__switchU24map15_2(),
-	RSASslSignatureFormatter_t491693046::get_offset_of_key_0(),
-	RSASslSignatureFormatter_t491693046::get_offset_of_hash_1(),
-	RSASslSignatureFormatter_t491693046_StaticFields::get_offset_of_U3CU3Ef__switchU24map16_2(),
-	SecurityCompressionType_t1615155800::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	SecurityParameters_t202779010::get_offset_of_cipher_0(),
-	SecurityParameters_t202779010::get_offset_of_clientWriteMAC_1(),
-	SecurityParameters_t202779010::get_offset_of_serverWriteMAC_2(),
-	SecurityProtocolType_t4015394186::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	ValidationResult_t2397874734::get_offset_of_trusted_0(),
-	ValidationResult_t2397874734::get_offset_of_error_code_1(),
-	SslClientStream_t1178954575::get_offset_of_ServerCertValidation_16(),
-	SslClientStream_t1178954575::get_offset_of_ClientCertSelection_17(),
-	SslClientStream_t1178954575::get_offset_of_PrivateKeySelection_18(),
-	SslClientStream_t1178954575::get_offset_of_ServerCertValidation2_19(),
-	SslCipherSuite_t3658722873::get_offset_of_pad1_21(),
-	SslCipherSuite_t3658722873::get_offset_of_pad2_22(),
-	SslCipherSuite_t3658722873::get_offset_of_header_23(),
-	SslHandshakeHash_t521809713::get_offset_of_md5_4(),
-	SslHandshakeHash_t521809713::get_offset_of_sha_5(),
-	SslHandshakeHash_t521809713::get_offset_of_hashing_6(),
-	SslHandshakeHash_t521809713::get_offset_of_secret_7(),
-	SslHandshakeHash_t521809713::get_offset_of_innerPadMD5_8(),
-	SslHandshakeHash_t521809713::get_offset_of_outerPadMD5_9(),
-	SslHandshakeHash_t521809713::get_offset_of_innerPadSHA_10(),
-	SslHandshakeHash_t521809713::get_offset_of_outerPadSHA_11(),
-	0,
-	SslStreamBase_t589897109_StaticFields::get_offset_of_record_processing_2(),
-	SslStreamBase_t589897109::get_offset_of_innerStream_3(),
-	SslStreamBase_t589897109::get_offset_of_inputBuffer_4(),
-	SslStreamBase_t589897109::get_offset_of_context_5(),
-	SslStreamBase_t589897109::get_offset_of_protocol_6(),
-	SslStreamBase_t589897109::get_offset_of_ownsStream_7(),
-	SslStreamBase_t589897109::get_offset_of_disposed_8(),
-	SslStreamBase_t589897109::get_offset_of_checkCertRevocationStatus_9(),
-	SslStreamBase_t589897109::get_offset_of_negotiate_10(),
-	SslStreamBase_t589897109::get_offset_of_read_11(),
-	SslStreamBase_t589897109::get_offset_of_write_12(),
-	SslStreamBase_t589897109::get_offset_of_negotiationComplete_13(),
-	SslStreamBase_t589897109::get_offset_of_recbuf_14(),
-	SslStreamBase_t589897109::get_offset_of_recordStream_15(),
-	InternalAsyncResult_t2689067676::get_offset_of_locker_0(),
-	InternalAsyncResult_t2689067676::get_offset_of__userCallback_1(),
-	InternalAsyncResult_t2689067676::get_offset_of__userState_2(),
-	InternalAsyncResult_t2689067676::get_offset_of__asyncException_3(),
-	InternalAsyncResult_t2689067676::get_offset_of_handle_4(),
-	InternalAsyncResult_t2689067676::get_offset_of_completed_5(),
-	InternalAsyncResult_t2689067676::get_offset_of__bytesRead_6(),
-	InternalAsyncResult_t2689067676::get_offset_of__fromWrite_7(),
-	InternalAsyncResult_t2689067676::get_offset_of__proceedAfterHandshake_8(),
-	InternalAsyncResult_t2689067676::get_offset_of__buffer_9(),
-	InternalAsyncResult_t2689067676::get_offset_of__offset_10(),
-	InternalAsyncResult_t2689067676::get_offset_of__count_11(),
-	TlsCipherSuite_t1815597034::get_offset_of_header_21(),
-	TlsCipherSuite_t1815597034::get_offset_of_headerLock_22(),
-	TlsClientSettings_t2063694561::get_offset_of_targetHost_0(),
-	TlsClientSettings_t2063694561::get_offset_of_certificates_1(),
-	TlsClientSettings_t2063694561::get_offset_of_clientCertificate_2(),
-	TlsClientSettings_t2063694561::get_offset_of_certificateRSA_3(),
-	TlsException_t1029166540::get_offset_of_alert_11(),
-	TlsServerSettings_t2090450521::get_offset_of_certificates_0(),
-	TlsServerSettings_t2090450521::get_offset_of_certificateRSA_1(),
-	TlsServerSettings_t2090450521::get_offset_of_rsaParameters_2(),
-	TlsServerSettings_t2090450521::get_offset_of_signedParams_3(),
-	TlsServerSettings_t2090450521::get_offset_of_distinguisedNames_4(),
-	TlsServerSettings_t2090450521::get_offset_of_serverKeyExchange_5(),
-	TlsServerSettings_t2090450521::get_offset_of_certificateRequest_6(),
-	TlsServerSettings_t2090450521::get_offset_of_certificateTypes_7(),
-	TlsStream_t720149587::get_offset_of_canRead_1(),
-	TlsStream_t720149587::get_offset_of_canWrite_2(),
-	TlsStream_t720149587::get_offset_of_buffer_3(),
-	TlsStream_t720149587::get_offset_of_temp_4(),
-	ClientCertificateType_t2725032177::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	0,
-	HandshakeMessage_t276412187::get_offset_of_context_5(),
-	HandshakeMessage_t276412187::get_offset_of_handshakeType_6(),
-	HandshakeMessage_t276412187::get_offset_of_contentType_7(),
-	HandshakeMessage_t276412187::get_offset_of_cache_8(),
-	HandshakeType_t1150764700::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	TlsClientCertificate_t98714569::get_offset_of_clientCertSelected_9(),
-	TlsClientCertificate_t98714569::get_offset_of_clientCert_10(),
-	TlsClientFinished_t2295380400_StaticFields::get_offset_of_Ssl3Marker_9(),
-	TlsClientHello_t1844074116::get_offset_of_random_9(),
-	TlsServerCertificate_t2616569169::get_offset_of_certificates_9(),
-	TlsServerCertificateRequest_t3177402414::get_offset_of_certificateTypes_9(),
-	TlsServerCertificateRequest_t3177402414::get_offset_of_distinguisedNames_10(),
-	TlsServerFinished_t2322136360_StaticFields::get_offset_of_Ssl3Marker_9(),
-	TlsServerHello_t1259177484::get_offset_of_compressionMethod_9(),
-	TlsServerHello_t1259177484::get_offset_of_random_10(),
-	TlsServerHello_t1259177484::get_offset_of_sessionId_11(),
-	TlsServerHello_t1259177484::get_offset_of_cipherSuite_12(),
-	TlsServerKeyExchange_t1391668572::get_offset_of_rsaParams_9(),
-	TlsServerKeyExchange_t1391668572::get_offset_of_signedParams_10(),
 	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D0_0(),
-	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D5_1(),
-	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D6_2(),
-	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D7_3(),
-	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D8_4(),
-	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D9_5(),
-	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D11_6(),
-	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D12_7(),
-	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D13_8(),
-	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D14_9(),
-	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D15_10(),
-	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D16_11(),
-	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D17_12(),
-	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D21_13(),
-	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D22_14(),
+	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D1_1(),
+	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D2_2(),
+	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D3_3(),
+	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D4_4(),
+	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D5_5(),
+	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D6_6(),
+	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D7_7(),
+	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D8_8(),
+	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D9_9(),
+	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D10_10(),
+	U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields::get_offset_of_U24U24fieldU2D11_11(),
 	SendMessageOptions_t2623293100::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	PrimitiveType_t3380664558::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
 	0,
 	0,
 	Space_t1602970931::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
@@ -6837,6 +6891,19 @@ extern const int32_t g_FieldOffsetTable[8578] =
 	0,
 	0,
 	Scene_t2772977204::get_offset_of_m_Handle_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	InternalEmitParticleArguments_t3421370189::get_offset_of_pos_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	InternalEmitParticleArguments_t3421370189::get_offset_of_velocity_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	InternalEmitParticleArguments_t3421370189::get_offset_of_size_2() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	InternalEmitParticleArguments_t3421370189::get_offset_of_energy_3() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	InternalEmitParticleArguments_t3421370189::get_offset_of_color_4() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	InternalEmitParticleArguments_t3421370189::get_offset_of_rotation_5() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	InternalEmitParticleArguments_t3421370189::get_offset_of_angularVelocity_6() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	ParticleRenderMode_t518303724::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
 	ForceMode_t759713627::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
@@ -7708,6 +7775,11 @@ extern const int32_t g_FieldOffsetTable[8578] =
 	GcScoreData_t2223678307::get_offset_of_m_FormattedValue_4() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	GcScoreData_t2223678307::get_offset_of_m_PlayerID_5() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	GcScoreData_t2223678307::get_offset_of_m_Rank_6() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	LightType_t4212539805::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
 	CameraClearFlags_t3602484652::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
@@ -7917,6 +7989,43 @@ extern const int32_t g_FieldOffsetTable[8578] =
 	0,
 	0,
 	TypeInferenceRuleAttribute_t471424957::get_offset_of__rule_0(),
+	CubicSpline_t67207067::get_offset_of_segment_0(),
+	CubicSpline_t67207067::get_offset_of_smoothness_1(),
+	CubicSpline_t67207067::get_offset_of_isLocal_2(),
+	CubicSpline_t67207067::get_offset_of_ep_3(),
+	CubicSpline_t67207067::get_offset_of_cp_4(),
+	CubicSpline_t67207067::get_offset_of_lp_5(),
+	CubicSpline_t67207067::get_offset_of_np_6(),
+	CubicSpline_t67207067::get_offset_of_bp_7(),
+	CubicSpline_t67207067::get_offset_of_t_8(),
+	CubicSpline_t67207067::get_offset_of_z_9(),
+	CurvePoint_t131694081::get_offset_of_GizmoSize_2(),
+	CurvePoint_t131694081::get_offset_of_width_3(),
+	CurvePoint_t131694081::get_offset_of_color_4(),
+	Point_t77292912::get_offset_of_p_0(),
+	Point_t77292912::get_offset_of_c1_1(),
+	Point_t77292912::get_offset_of_c2_2(),
+	Point_t77292912::get_offset_of_scale_3(),
+	RiverTool_t774771108::get_offset_of_Smoothness_2(),
+	RiverTool_t774771108::get_offset_of_segment_3(),
+	RiverTool_t774771108::get_offset_of_MeshWidth_4(),
+	RiverTool_t774771108::get_offset_of_showGizmos_5(),
+	RiverTool_t774771108::get_offset_of_gizmoSize_6(),
+	RiverTool_t774771108::get_offset_of_UpdateMesh_7(),
+	RiverTool_t774771108::get_offset_of_points_8(),
+	RiverTool_t774771108::get_offset_of_P_9(),
+	RiverTool_t774771108::get_offset_of_spline_10(),
+	RiverTool_t774771108::get_offset_of_verts_11(),
+	RiverTool_t774771108::get_offset_of_tris_12(),
+	RiverTool_t774771108::get_offset_of_riverOffset_13(),
+	RiverTool_t774771108::get_offset_of_np_14(),
+	RiverTool_t774771108::get_offset_of_tempcolors_15(),
+	RiverTool_t774771108::get_offset_of_colors_16(),
+	RiverTool_t774771108::get_offset_of_norms_17(),
+	RiverTool_t774771108::get_offset_of_uvs_18(),
+	RiverTool_t774771108::get_offset_of_mesh_19(),
+	RiverTool_t774771108::get_offset_of_mat_20(),
+	RiverTool_t774771108::get_offset_of_c_21(),
 	DiffieHellmanCryptoProvider_t3764219664_StaticFields::get_offset_of_primeRoot_0(),
 	DiffieHellmanCryptoProvider_t3764219664::get_offset_of_prime_1(),
 	DiffieHellmanCryptoProvider_t3764219664::get_offset_of_secret_2(),
@@ -8325,43 +8434,9 @@ extern const int32_t g_FieldOffsetTable[8578] =
 	U3CPrivateImplementationDetailsU3E_t3053238937_StaticFields::get_offset_of_70AE3F6F18539B6C47CFF9F0D9672AEEBDBCDB4C_4(),
 	U3CPrivateImplementationDetailsU3E_t3053238937_StaticFields::get_offset_of_AEAF34DCCF141E917F02F7768DAEA80AA2B13B95_5(),
 	U3CPrivateImplementationDetailsU3E_t3053238937_StaticFields::get_offset_of_C033BD4351FBA3732545EA2E016D52B0FC3E69EC_6(),
-	CubicSpline_t67207067::get_offset_of_segment_0(),
-	CubicSpline_t67207067::get_offset_of_smoothness_1(),
-	CubicSpline_t67207067::get_offset_of_isLocal_2(),
-	CubicSpline_t67207067::get_offset_of_ep_3(),
-	CubicSpline_t67207067::get_offset_of_cp_4(),
-	CubicSpline_t67207067::get_offset_of_lp_5(),
-	CubicSpline_t67207067::get_offset_of_np_6(),
-	CubicSpline_t67207067::get_offset_of_bp_7(),
-	CubicSpline_t67207067::get_offset_of_t_8(),
-	CubicSpline_t67207067::get_offset_of_z_9(),
-	CurvePoint_t131694081::get_offset_of_GizmoSize_2(),
-	CurvePoint_t131694081::get_offset_of_width_3(),
-	CurvePoint_t131694081::get_offset_of_color_4(),
-	Point_t77292912::get_offset_of_p_0(),
-	Point_t77292912::get_offset_of_c1_1(),
-	Point_t77292912::get_offset_of_c2_2(),
-	Point_t77292912::get_offset_of_scale_3(),
-	RiverTool_t774771108::get_offset_of_Smoothness_2(),
-	RiverTool_t774771108::get_offset_of_segment_3(),
-	RiverTool_t774771108::get_offset_of_MeshWidth_4(),
-	RiverTool_t774771108::get_offset_of_showGizmos_5(),
-	RiverTool_t774771108::get_offset_of_gizmoSize_6(),
-	RiverTool_t774771108::get_offset_of_UpdateMesh_7(),
-	RiverTool_t774771108::get_offset_of_points_8(),
-	RiverTool_t774771108::get_offset_of_P_9(),
-	RiverTool_t774771108::get_offset_of_spline_10(),
-	RiverTool_t774771108::get_offset_of_verts_11(),
-	RiverTool_t774771108::get_offset_of_tris_12(),
-	RiverTool_t774771108::get_offset_of_riverOffset_13(),
-	RiverTool_t774771108::get_offset_of_np_14(),
-	RiverTool_t774771108::get_offset_of_tempcolors_15(),
-	RiverTool_t774771108::get_offset_of_colors_16(),
-	RiverTool_t774771108::get_offset_of_norms_17(),
-	RiverTool_t774771108::get_offset_of_uvs_18(),
-	RiverTool_t774771108::get_offset_of_mesh_19(),
-	RiverTool_t774771108::get_offset_of_mat_20(),
-	RiverTool_t774771108::get_offset_of_c_21(),
+	EventHandle_t72269245::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
 	EventSystem_t409518532::get_offset_of_m_SystemInputModules_2(),
 	EventSystem_t409518532::get_offset_of_m_CurrentInputModule_3(),
 	EventSystem_t409518532::get_offset_of_m_FirstSelected_4(),
@@ -8558,6 +8633,22 @@ extern const int32_t g_FieldOffsetTable[8578] =
 	ColorBlock_t2245020947::get_offset_of_m_DisabledColor_3() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	ColorBlock_t2245020947::get_offset_of_m_ColorMultiplier_4() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	ColorBlock_t2245020947::get_offset_of_m_FadeDuration_5() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	DefaultControls_t3717991936_StaticFields::get_offset_of_s_ThickElementSize_3(),
+	DefaultControls_t3717991936_StaticFields::get_offset_of_s_ThinElementSize_4(),
+	DefaultControls_t3717991936_StaticFields::get_offset_of_s_ImageElementSize_5(),
+	DefaultControls_t3717991936_StaticFields::get_offset_of_s_DefaultSelectableColor_6(),
+	DefaultControls_t3717991936_StaticFields::get_offset_of_s_PanelColor_7(),
+	DefaultControls_t3717991936_StaticFields::get_offset_of_s_TextColor_8(),
+	Resources_t20897285::get_offset_of_standard_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	Resources_t20897285::get_offset_of_background_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	Resources_t20897285::get_offset_of_inputField_2() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	Resources_t20897285::get_offset_of_knob_3() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	Resources_t20897285::get_offset_of_checkmark_4() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	Resources_t20897285::get_offset_of_dropdown_5() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	Resources_t20897285::get_offset_of_mask_6() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	Dropdown_t2916437562::get_offset_of_m_Template_16(),
 	Dropdown_t2916437562::get_offset_of_m_CaptionText_17(),
 	Dropdown_t2916437562::get_offset_of_m_CaptionImage_18(),
@@ -8655,6 +8746,27 @@ extern const int32_t g_FieldOffsetTable[8578] =
 	0,
 	FillMethod_t1232150628::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
+	0,
+	0,
+	0,
+	0,
+	OriginHorizontal_t638657546::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	OriginVertical_t1858650332::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	Origin90_t1443686621::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	Origin180_t1804604899::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	Origin360_t1804606759::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
 	0,
@@ -9060,6 +9172,254 @@ extern const int32_t g_FieldOffsetTable[8578] =
 	Shadow_t1464142665::get_offset_of_m_EffectDistance_5(),
 	Shadow_t1464142665::get_offset_of_m_UseGraphicAlpha_6(),
 	U3CPrivateImplementationDetailsU3E_t3053238938_StaticFields::get_offset_of_U24U24fieldU2D0_0(),
+	DetonatorSprayHelper_t3937829939::get_offset_of_startTimeMin_2(),
+	DetonatorSprayHelper_t3937829939::get_offset_of_startTimeMax_3(),
+	DetonatorSprayHelper_t3937829939::get_offset_of_stopTimeMin_4(),
+	DetonatorSprayHelper_t3937829939::get_offset_of_stopTimeMax_5(),
+	DetonatorSprayHelper_t3937829939::get_offset_of_firstMaterial_6(),
+	DetonatorSprayHelper_t3937829939::get_offset_of_secondMaterial_7(),
+	DetonatorSprayHelper_t3937829939::get_offset_of_startTime_8(),
+	DetonatorSprayHelper_t3937829939::get_offset_of_stopTime_9(),
+	DetonatorSprayHelper_t3937829939::get_offset_of_isReallyOn_10(),
+	Detonator_t436005224_StaticFields::get_offset_of__baseSize_2(),
+	Detonator_t436005224_StaticFields::get_offset_of__baseColor_3(),
+	Detonator_t436005224_StaticFields::get_offset_of__baseDuration_4(),
+	Detonator_t436005224::get_offset_of_size_5(),
+	Detonator_t436005224::get_offset_of_color_6(),
+	Detonator_t436005224::get_offset_of_explodeOnStart_7(),
+	Detonator_t436005224::get_offset_of_duration_8(),
+	Detonator_t436005224::get_offset_of_detail_9(),
+	Detonator_t436005224::get_offset_of_upwardsBias_10(),
+	Detonator_t436005224::get_offset_of_destroyTime_11(),
+	Detonator_t436005224::get_offset_of_useWorldSpace_12(),
+	Detonator_t436005224::get_offset_of_direction_13(),
+	Detonator_t436005224::get_offset_of_fireballAMaterial_14(),
+	Detonator_t436005224::get_offset_of_fireballBMaterial_15(),
+	Detonator_t436005224::get_offset_of_smokeAMaterial_16(),
+	Detonator_t436005224::get_offset_of_smokeBMaterial_17(),
+	Detonator_t436005224::get_offset_of_shockwaveMaterial_18(),
+	Detonator_t436005224::get_offset_of_sparksMaterial_19(),
+	Detonator_t436005224::get_offset_of_glowMaterial_20(),
+	Detonator_t436005224::get_offset_of_heatwaveMaterial_21(),
+	Detonator_t436005224::get_offset_of_components_22(),
+	Detonator_t436005224::get_offset_of__fireball_23(),
+	Detonator_t436005224::get_offset_of__sparks_24(),
+	Detonator_t436005224::get_offset_of__shockwave_25(),
+	Detonator_t436005224::get_offset_of__smoke_26(),
+	Detonator_t436005224::get_offset_of__glow_27(),
+	Detonator_t436005224::get_offset_of__light_28(),
+	Detonator_t436005224::get_offset_of__force_29(),
+	Detonator_t436005224::get_offset_of__heatwave_30(),
+	Detonator_t436005224::get_offset_of_autoCreateFireball_31(),
+	Detonator_t436005224::get_offset_of_autoCreateSparks_32(),
+	Detonator_t436005224::get_offset_of_autoCreateShockwave_33(),
+	Detonator_t436005224::get_offset_of_autoCreateSmoke_34(),
+	Detonator_t436005224::get_offset_of_autoCreateGlow_35(),
+	Detonator_t436005224::get_offset_of_autoCreateLight_36(),
+	Detonator_t436005224::get_offset_of_autoCreateForce_37(),
+	Detonator_t436005224::get_offset_of_autoCreateHeatwave_38(),
+	Detonator_t436005224::get_offset_of__lastExplosionTime_39(),
+	Detonator_t436005224::get_offset_of__firstComponentUpdate_40(),
+	Detonator_t436005224::get_offset_of__subDetonators_41(),
+	Detonator_t436005224_StaticFields::get_offset_of_defaultFireballAMaterial_42(),
+	Detonator_t436005224_StaticFields::get_offset_of_defaultFireballBMaterial_43(),
+	Detonator_t436005224_StaticFields::get_offset_of_defaultSmokeAMaterial_44(),
+	Detonator_t436005224_StaticFields::get_offset_of_defaultSmokeBMaterial_45(),
+	Detonator_t436005224_StaticFields::get_offset_of_defaultShockwaveMaterial_46(),
+	Detonator_t436005224_StaticFields::get_offset_of_defaultSparksMaterial_47(),
+	Detonator_t436005224_StaticFields::get_offset_of_defaultGlowMaterial_48(),
+	Detonator_t436005224_StaticFields::get_offset_of_defaultHeatwaveMaterial_49(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__particleEmitter_22(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__particleRenderer_23(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__particleAnimator_24(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__baseDamping_25(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__baseSize_26(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__baseColor_27(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_damping_28(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_startRadius_29(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_maxScreenSize_30(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_explodeOnAwake_31(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_oneShot_32(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_sizeVariation_33(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_particleSize_34(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_count_35(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_sizeGrow_36(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_exponentialGrowth_37(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_durationVariation_38(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_useWorldSpace_39(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_upwardsBias_40(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_angularVelocity_41(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_randomRotation_42(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_renderMode_43(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_useExplicitColorAnimation_44(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_colorAnimation_45(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__delayedExplosionStarted_46(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__explodeDelay_47(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_material_48(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__emitTime_49(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_speed_50(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of_initFraction_51(),
+	DetonatorBurstEmitter_t2784708534_StaticFields::get_offset_of_epsilon_52(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__tmpParticleSize_53(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__tmpPos_54(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__tmpDir_55(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__thisPos_56(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__tmpDuration_57(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__tmpCount_58(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__scaledDuration_59(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__scaledDurationVariation_60(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__scaledStartRadius_61(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__scaledColor_62(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__randomizedRotation_63(),
+	DetonatorBurstEmitter_t2784708534::get_offset_of__tmpAngularVelocity_64(),
+	DetonatorCloudRing_t3579438461::get_offset_of__baseSize_22(),
+	DetonatorCloudRing_t3579438461::get_offset_of__baseDuration_23(),
+	DetonatorCloudRing_t3579438461::get_offset_of__baseVelocity_24(),
+	DetonatorCloudRing_t3579438461::get_offset_of__baseColor_25(),
+	DetonatorCloudRing_t3579438461::get_offset_of__baseForce_26(),
+	DetonatorCloudRing_t3579438461::get_offset_of__cloudRing_27(),
+	DetonatorCloudRing_t3579438461::get_offset_of__cloudRingEmitter_28(),
+	DetonatorCloudRing_t3579438461::get_offset_of_cloudRingMaterial_29(),
+	DetonatorComponent_t2605738101::get_offset_of_on_2(),
+	DetonatorComponent_t2605738101::get_offset_of_detonatorControlled_3(),
+	DetonatorComponent_t2605738101::get_offset_of_startSize_4(),
+	DetonatorComponent_t2605738101::get_offset_of_size_5(),
+	DetonatorComponent_t2605738101::get_offset_of_explodeDelayMin_6(),
+	DetonatorComponent_t2605738101::get_offset_of_explodeDelayMax_7(),
+	DetonatorComponent_t2605738101::get_offset_of_startDuration_8(),
+	DetonatorComponent_t2605738101::get_offset_of_duration_9(),
+	DetonatorComponent_t2605738101::get_offset_of_timeScale_10(),
+	DetonatorComponent_t2605738101::get_offset_of_startDetail_11(),
+	DetonatorComponent_t2605738101::get_offset_of_detail_12(),
+	DetonatorComponent_t2605738101::get_offset_of_startColor_13(),
+	DetonatorComponent_t2605738101::get_offset_of_color_14(),
+	DetonatorComponent_t2605738101::get_offset_of_startLocalPosition_15(),
+	DetonatorComponent_t2605738101::get_offset_of_localPosition_16(),
+	DetonatorComponent_t2605738101::get_offset_of_startForce_17(),
+	DetonatorComponent_t2605738101::get_offset_of_force_18(),
+	DetonatorComponent_t2605738101::get_offset_of_startVelocity_19(),
+	DetonatorComponent_t2605738101::get_offset_of_velocity_20(),
+	DetonatorComponent_t2605738101::get_offset_of_detailThreshold_21(),
+	DetonatorFireball_t3306641085::get_offset_of__baseSize_22(),
+	DetonatorFireball_t3306641085::get_offset_of__baseDuration_23(),
+	DetonatorFireball_t3306641085::get_offset_of__baseColor_24(),
+	DetonatorFireball_t3306641085::get_offset_of__baseVelocity_25(),
+	DetonatorFireball_t3306641085::get_offset_of__scaledDuration_26(),
+	DetonatorFireball_t3306641085::get_offset_of__fireballA_27(),
+	DetonatorFireball_t3306641085::get_offset_of__fireballAEmitter_28(),
+	DetonatorFireball_t3306641085::get_offset_of_fireballAMaterial_29(),
+	DetonatorFireball_t3306641085::get_offset_of__fireballB_30(),
+	DetonatorFireball_t3306641085::get_offset_of__fireballBEmitter_31(),
+	DetonatorFireball_t3306641085::get_offset_of_fireballBMaterial_32(),
+	DetonatorFireball_t3306641085::get_offset_of__fireShadow_33(),
+	DetonatorFireball_t3306641085::get_offset_of__fireShadowEmitter_34(),
+	DetonatorFireball_t3306641085::get_offset_of_fireShadowMaterial_35(),
+	DetonatorFireball_t3306641085::get_offset_of_drawFireballA_36(),
+	DetonatorFireball_t3306641085::get_offset_of_drawFireballB_37(),
+	DetonatorFireball_t3306641085::get_offset_of_drawFireShadow_38(),
+	DetonatorFireball_t3306641085::get_offset_of__detailAdjustedColor_39(),
+	DetonatorForce_t305353315::get_offset_of__baseRadius_22(),
+	DetonatorForce_t305353315::get_offset_of__basePower_23(),
+	DetonatorForce_t305353315::get_offset_of__scaledRange_24(),
+	DetonatorForce_t305353315::get_offset_of__scaledIntensity_25(),
+	DetonatorForce_t305353315::get_offset_of__delayedExplosionStarted_26(),
+	DetonatorForce_t305353315::get_offset_of__explodeDelay_27(),
+	DetonatorForce_t305353315::get_offset_of_radius_28(),
+	DetonatorForce_t305353315::get_offset_of_power_29(),
+	DetonatorForce_t305353315::get_offset_of_fireObject_30(),
+	DetonatorForce_t305353315::get_offset_of_fireObjectLife_31(),
+	DetonatorForce_t305353315::get_offset_of__colliders_32(),
+	DetonatorForce_t305353315::get_offset_of__tempFireObject_33(),
+	DetonatorForce_t305353315::get_offset_of__explosionPosition_34(),
+	DetonatorGlow_t2503728917::get_offset_of__baseSize_22(),
+	DetonatorGlow_t2503728917::get_offset_of__baseDuration_23(),
+	DetonatorGlow_t2503728917::get_offset_of__baseVelocity_24(),
+	DetonatorGlow_t2503728917::get_offset_of__baseColor_25(),
+	DetonatorGlow_t2503728917::get_offset_of__scaledDuration_26(),
+	DetonatorGlow_t2503728917::get_offset_of__glow_27(),
+	DetonatorGlow_t2503728917::get_offset_of__glowEmitter_28(),
+	DetonatorGlow_t2503728917::get_offset_of_glowMaterial_29(),
+	DetonatorHeatwave_t2770030193::get_offset_of__heatwave_22(),
+	DetonatorHeatwave_t2770030193::get_offset_of_s_23(),
+	DetonatorHeatwave_t2770030193::get_offset_of__startSize_24(),
+	DetonatorHeatwave_t2770030193::get_offset_of__maxSize_25(),
+	DetonatorHeatwave_t2770030193::get_offset_of__baseDuration_26(),
+	DetonatorHeatwave_t2770030193::get_offset_of__delayedExplosionStarted_27(),
+	DetonatorHeatwave_t2770030193::get_offset_of__explodeDelay_28(),
+	DetonatorHeatwave_t2770030193::get_offset_of_zOffset_29(),
+	DetonatorHeatwave_t2770030193::get_offset_of_distortion_30(),
+	DetonatorHeatwave_t2770030193::get_offset_of__elapsedTime_31(),
+	DetonatorHeatwave_t2770030193::get_offset_of__normalizedTime_32(),
+	DetonatorHeatwave_t2770030193::get_offset_of_heatwaveMaterial_33(),
+	DetonatorHeatwave_t2770030193::get_offset_of__material_34(),
+	DetonatorLight_t310705294::get_offset_of__baseIntensity_22(),
+	DetonatorLight_t310705294::get_offset_of__baseColor_23(),
+	DetonatorLight_t310705294::get_offset_of__scaledDuration_24(),
+	DetonatorLight_t310705294::get_offset_of__explodeTime_25(),
+	DetonatorLight_t310705294::get_offset_of__light_26(),
+	DetonatorLight_t310705294::get_offset_of__lightComponent_27(),
+	DetonatorLight_t310705294::get_offset_of_intensity_28(),
+	DetonatorLight_t310705294::get_offset_of__reduceAmount_29(),
+	DetonatorShockwave_t1540898835::get_offset_of__baseSize_22(),
+	DetonatorShockwave_t1540898835::get_offset_of__baseDuration_23(),
+	DetonatorShockwave_t1540898835::get_offset_of__baseVelocity_24(),
+	DetonatorShockwave_t1540898835::get_offset_of__baseColor_25(),
+	DetonatorShockwave_t1540898835::get_offset_of__shockwave_26(),
+	DetonatorShockwave_t1540898835::get_offset_of__shockwaveEmitter_27(),
+	DetonatorShockwave_t1540898835::get_offset_of_shockwaveMaterial_28(),
+	DetonatorShockwave_t1540898835::get_offset_of_renderMode_29(),
+	0,
+	0,
+	0,
+	DetonatorSmoke_t317296871::get_offset_of__baseColor_25(),
+	DetonatorSmoke_t317296871::get_offset_of__scaledDuration_26(),
+	DetonatorSmoke_t317296871::get_offset_of__smokeA_27(),
+	DetonatorSmoke_t317296871::get_offset_of__smokeAEmitter_28(),
+	DetonatorSmoke_t317296871::get_offset_of_smokeAMaterial_29(),
+	DetonatorSmoke_t317296871::get_offset_of__smokeB_30(),
+	DetonatorSmoke_t317296871::get_offset_of__smokeBEmitter_31(),
+	DetonatorSmoke_t317296871::get_offset_of_smokeBMaterial_32(),
+	DetonatorSmoke_t317296871::get_offset_of_drawSmokeA_33(),
+	DetonatorSmoke_t317296871::get_offset_of_drawSmokeB_34(),
+	DetonatorSound_t317362311::get_offset_of_nearSounds_22(),
+	DetonatorSound_t317362311::get_offset_of_farSounds_23(),
+	DetonatorSound_t317362311::get_offset_of_distanceThreshold_24(),
+	DetonatorSound_t317362311::get_offset_of_minVolume_25(),
+	DetonatorSound_t317362311::get_offset_of_maxVolume_26(),
+	DetonatorSound_t317362311::get_offset_of_rolloffFactor_27(),
+	DetonatorSound_t317362311::get_offset_of__soundComponent_28(),
+	DetonatorSound_t317362311::get_offset_of__delayedExplosionStarted_29(),
+	DetonatorSound_t317362311::get_offset_of__explodeDelay_30(),
+	DetonatorSound_t317362311::get_offset_of__idx_31(),
+	DetonatorSparks_t1248628926::get_offset_of__baseSize_22(),
+	DetonatorSparks_t1248628926::get_offset_of__baseDuration_23(),
+	DetonatorSparks_t1248628926::get_offset_of__baseVelocity_24(),
+	DetonatorSparks_t1248628926::get_offset_of__baseColor_25(),
+	DetonatorSparks_t1248628926::get_offset_of__baseForce_26(),
+	DetonatorSparks_t1248628926::get_offset_of__scaledDuration_27(),
+	DetonatorSparks_t1248628926::get_offset_of__sparks_28(),
+	DetonatorSparks_t1248628926::get_offset_of__sparksEmitter_29(),
+	DetonatorSparks_t1248628926::get_offset_of_sparksMaterial_30(),
+	DetonatorSpray_t317388837::get_offset_of_sprayObject_22(),
+	DetonatorSpray_t317388837::get_offset_of_count_23(),
+	DetonatorSpray_t317388837::get_offset_of_startingRadius_24(),
+	DetonatorSpray_t317388837::get_offset_of_minScale_25(),
+	DetonatorSpray_t317388837::get_offset_of_maxScale_26(),
+	DetonatorSpray_t317388837::get_offset_of__delayedExplosionStarted_27(),
+	DetonatorSpray_t317388837::get_offset_of__explodeDelay_28(),
+	DetonatorSpray_t317388837::get_offset_of__explosionPosition_29(),
+	DetonatorSpray_t317388837::get_offset_of__tmpScale_30(),
+	DetonatorTest_t2504109594::get_offset_of_currentDetonator_2(),
+	DetonatorTest_t2504109594::get_offset_of__currentExpIdx_3(),
+	DetonatorTest_t2504109594::get_offset_of_detonatorPrefabs_4(),
+	DetonatorTest_t2504109594::get_offset_of_explosionLife_5(),
+	DetonatorTest_t2504109594::get_offset_of_timeScale_6(),
+	DetonatorTest_t2504109594::get_offset_of_detailLevel_7(),
+	DetonatorTest_t2504109594::get_offset_of_wall_8(),
+	DetonatorTest_t2504109594::get_offset_of__currentWall_9(),
+	DetonatorTest_t2504109594::get_offset_of__spawnWallTime_10(),
+	DetonatorTest_t2504109594::get_offset_of__guiRect_11(),
+	DetonatorTest_t2504109594::get_offset_of_checkRect_12(),
 	JumpAndRunMovement_t3956238833::get_offset_of_Speed_2(),
 	JumpAndRunMovement_t3956238833::get_offset_of_JumpForce_3(),
 	JumpAndRunMovement_t3956238833::get_offset_of_m_Animator_4(),
@@ -9878,7 +10238,7 @@ extern const int32_t g_FieldOffsetTable[8578] =
 	PhotonHandler_t1652511502_StaticFields::get_offset_of_PingImplementation_12(),
 	PhotonHandler_t1652511502_StaticFields::get_offset_of_BestRegionCodeCurrently_13(),
 	U3CPingAvailableRegionsCoroutineU3Ec__Iterator5_t4215923374::get_offset_of_U3CpingManagerU3E__0_0(),
-	U3CPingAvailableRegionsCoroutineU3Ec__Iterator5_t4215923374::get_offset_of_U3CU24s_54U3E__1_1(),
+	U3CPingAvailableRegionsCoroutineU3Ec__Iterator5_t4215923374::get_offset_of_U3CU24s_66U3E__1_1(),
 	U3CPingAvailableRegionsCoroutineU3Ec__Iterator5_t4215923374::get_offset_of_U3CregionU3E__2_2(),
 	U3CPingAvailableRegionsCoroutineU3Ec__Iterator5_t4215923374::get_offset_of_U3CbestU3E__3_3(),
 	U3CPingAvailableRegionsCoroutineU3Ec__Iterator5_t4215923374::get_offset_of_connectToBest_4(),
@@ -10065,12 +10425,12 @@ extern const int32_t g_FieldOffsetTable[8578] =
 	SynchronizedParameter_t3311342805::get_offset_of_Name_2(),
 	SynchronizedLayer_t1918348413::get_offset_of_SynchronizeType_0(),
 	SynchronizedLayer_t1918348413::get_offset_of_LayerIndex_1(),
-	U3CDoesLayerSynchronizeTypeExistU3Ec__AnonStoreyA_t1573396527::get_offset_of_layerIndex_0(),
-	U3CDoesParameterSynchronizeTypeExistU3Ec__AnonStoreyB_t2133516376::get_offset_of_name_0(),
-	U3CGetLayerSynchronizeTypeU3Ec__AnonStoreyC_t1115327303::get_offset_of_layerIndex_0(),
-	U3CGetParameterSynchronizeTypeU3Ec__AnonStoreyD_t3056155808::get_offset_of_name_0(),
-	U3CSetLayerSynchronizedU3Ec__AnonStoreyE_t3336388189::get_offset_of_layerIndex_0(),
-	U3CSetParameterSynchronizedU3Ec__AnonStoreyF_t28730886::get_offset_of_name_0(),
+	U3CDoesLayerSynchronizeTypeExistU3Ec__AnonStorey9_t1573396519::get_offset_of_layerIndex_0(),
+	U3CDoesParameterSynchronizeTypeExistU3Ec__AnonStoreyA_t2133516375::get_offset_of_name_0(),
+	U3CGetLayerSynchronizeTypeU3Ec__AnonStoreyB_t1115327302::get_offset_of_layerIndex_0(),
+	U3CGetParameterSynchronizeTypeU3Ec__AnonStoreyC_t3056155807::get_offset_of_name_0(),
+	U3CSetLayerSynchronizedU3Ec__AnonStoreyD_t3336388188::get_offset_of_layerIndex_0(),
+	U3CSetParameterSynchronizedU3Ec__AnonStoreyE_t28730885::get_offset_of_name_0(),
 	PhotonRigidbody2DView_t2664395880::get_offset_of_m_SynchronizeVelocity_2(),
 	PhotonRigidbody2DView_t2664395880::get_offset_of_m_SynchronizeAngularVelocity_3(),
 	PhotonRigidbody2DView_t2664395880::get_offset_of_m_Body_4(),
@@ -10359,19 +10719,57 @@ extern const int32_t g_FieldOffsetTable[8578] =
 	TextureAnimator_t186110210::get_offset_of_frameCounter_6(),
 	TextureAnimator_t186110210::get_offset_of__renderer_7(),
 	TextureAnimator_t186110210::get_offset_of__material_8(),
-	PlayerController_t2866526589::get_offset_of_center_2(),
-	PlayerController_t2866526589::get_offset_of_mainCamera_3(),
-	PlayerController_t2866526589::get_offset_of_playerRb_4(),
-	PlayerController_t2866526589::get_offset_of_boost_flag_5(),
-	U3CDecelerationerU3Ec__Iterator9_t375801630::get_offset_of_U3CnumU3E__0_0(),
-	U3CDecelerationerU3Ec__Iterator9_t375801630::get_offset_of_U24PC_1(),
-	U3CDecelerationerU3Ec__Iterator9_t375801630::get_offset_of_U24current_2(),
-	U3CDecelerationerU3Ec__Iterator9_t375801630::get_offset_of_U3CU3Ef__this_3(),
+	CannonBallController_t3728533319::get_offset_of_detonatorSmall_2(),
+	CannonBallController_t3728533319::get_offset_of_detonatorBig_3(),
+	CannonBallController_t3728533319_StaticFields::get_offset_of_U3CU3Ef__switchU24map0_4(),
+	CharacterOperationMaster_t3608733915::get_offset_of_LEFT_2(),
+	CharacterOperationMaster_t3608733915::get_offset_of_RIGHT_3(),
+	GameUIButton_t1364003187::get_offset_of_playerRb_4(),
+	GameUIButton_t1364003187::get_offset_of_playerCenter_5(),
+	GameUIButton_t1364003187::get_offset_of_state_6(),
+	GameUIButton_t1364003187_StaticFields::get_offset_of_U3CU3Ef__switchU24map1_7(),
+	PlayerCameraController_t3553451581::get_offset_of_mainCamera_2(),
+	PlayerController_t3796194808::get_offset_of_center_4(),
+	PlayerController_t3796194808::get_offset_of_cannon_5(),
+	PlayerController_t3796194808::get_offset_of_state_6(),
+	PlayerController_t3796194808::get_offset_of_playerRb_7(),
+	PlayerController_t3796194808::get_offset_of_cannonBall_8(),
+	PlayerStateManager_t4277940093_StaticFields::get_offset_of__singleInstance_2(),
+	PlayerStateManager_t4277940093::get_offset_of_U3ChpU3Ek__BackingField_3(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CatkU3Ek__BackingField_4(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CcannonModeU3Ek__BackingField_5(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CboostFragU3Ek__BackingField_6(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CboostLevelU3Ek__BackingField_7(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CrevivalBoostU3Ek__BackingField_8(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CcannonFragU3Ek__BackingField_9(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CinitialVelocityCannonU3Ek__BackingField_10(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CmaxSuccessionCannonU3Ek__BackingField_11(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CrevivalCannonU3Ek__BackingField_12(),
+	RivalController_t3953764641::get_offset_of_center_4(),
+	RivalController_t3953764641::get_offset_of_cannon_5(),
+	RivalController_t3953764641::get_offset_of_player_6(),
+	RivalController_t3953764641::get_offset_of_state_7(),
+	RivalController_t3953764641::get_offset_of_rivalRb_8(),
+	RivalController_t3953764641::get_offset_of_cannonBall_9(),
+	RivalController_t3953764641::get_offset_of_timer_10(),
+	UIController_t2684559696::get_offset_of_boostGage_2(),
+	UIController_t2684559696::get_offset_of_state_3(),
+	UIController_t2684559696::get_offset_of_boostTimer_4(),
+	UIController_t2684559696::get_offset_of_meterCount_5(),
+	BoatDirectionSystem_t1888994697::get_offset_of_state_4(),
+	BoatDirectionSystem_t1888994697::get_offset_of_touchPos_5(),
+	BoatDirectionSystem_t1888994697::get_offset_of_detachPos_6(),
+	CannonPullSystem_t3255870929::get_offset_of_center_2(),
+	CannonPullSystem_t3255870929::get_offset_of_state_3(),
+	CannonPullSystem_t3255870929::get_offset_of_touchPos_4(),
+	CannonPullSystem_t3255870929::get_offset_of_detachPos_5(),
+	CannonPullSystem_t3255870929::get_offset_of_degree_6(),
+	CannonPullSystem_t3255870929::get_offset_of_length_7(),
 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1990] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2040] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -11263,6 +11661,127 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1990] =
 	sizeof (U24ArrayTypeU2452_t214874610)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2452_t214874610_marshaled_pinvoke), 0, 0,
 	sizeof (U3CModuleU3E_t86524791), -1, 0, 0,
 	sizeof (Locale_t2281372283), -1, 0, 0,
+	sizeof (BigInteger_t1694088928), -1, sizeof(BigInteger_t1694088928_StaticFields), 0,
+	sizeof (Sign_t2576862)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (ModulusRing_t948575272), -1, 0, 0,
+	sizeof (Kernel_t2243967070), -1, 0, 0,
+	sizeof (ConfidenceFactor_t2428357798)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (PrimalityTests_t1761959569), -1, 0, 0,
+	sizeof (PrimeGeneratorBase_t3362129977), -1, 0, 0,
+	sizeof (SequentialSearchPrimeGeneratorBase_t3092056096), -1, 0, 0,
+	sizeof (ASN1_t1254135647), -1, 0, 0,
+	sizeof (ASN1Convert_t4150720680), -1, 0, 0,
+	sizeof (BitConverterLE_t4175540726), -1, 0, 0,
+	sizeof (PKCS7_t1328300022), -1, 0, 0,
+	sizeof (ContentInfo_t1278398632), -1, 0, 0,
+	sizeof (EncryptedData_t636832623), -1, 0, 0,
+	sizeof (ARC4Managed_t1769787186), -1, 0, 0,
+	sizeof (CryptoConvert_t3463653320), -1, 0, 0,
+	sizeof (KeyBuilder_t2049706642), -1, sizeof(KeyBuilder_t2049706642_StaticFields), 0,
+	sizeof (MD2_t3745417136), -1, 0, 0,
+	sizeof (MD2Managed_t2591968217), -1, sizeof(MD2Managed_t2591968217_StaticFields), 0,
+	sizeof (PKCS1_t3821523996), -1, sizeof(PKCS1_t3821523996_StaticFields), 0,
+	sizeof (PKCS8_t3821524003), -1, 0, 0,
+	sizeof (PrivateKeyInfo_t2184496331), -1, 0, 0,
+	sizeof (EncryptedPrivateKeyInfo_t785870703), -1, 0, 0,
+	sizeof (RC4_t3745421912), -1, sizeof(RC4_t3745421912_StaticFields), 0,
+	sizeof (RSAManaged_t639738773), -1, 0, 0,
+	sizeof (KeyGeneratedEventHandler_t1233396098), sizeof(methodPointerType), 0, 0,
+	sizeof (SafeBag_t4111116303), -1, 0, 0,
+	sizeof (PKCS12_t2950126080), -1, sizeof(PKCS12_t2950126080_StaticFields), 0,
+	sizeof (DeriveBytes_t2715912549), -1, sizeof(DeriveBytes_t2715912549_StaticFields), 0,
+	sizeof (X501_t591126674), -1, sizeof(X501_t591126674_StaticFields), 0,
+	sizeof (X509Certificate_t273828613), -1, sizeof(X509Certificate_t273828613_StaticFields), 0,
+	sizeof (X509CertificateCollection_t3336811651), -1, 0, 0,
+	sizeof (X509CertificateEnumerator_t3569011382), -1, 0, 0,
+	sizeof (X509Chain_t3968320430), -1, 0, 0,
+	sizeof (X509ChainStatusFlags_t2524654829)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (X509Crl_t2942805322), -1, sizeof(X509Crl_t2942805322_StaticFields), 0,
+	sizeof (X509CrlEntry_t3291243611), -1, 0, 0,
+	sizeof (X509Extension_t1510964269), -1, 0, 0,
+	sizeof (X509ExtensionCollection_t3528692651), -1, 0, 0,
+	sizeof (X509Store_t3983467982), -1, 0, 0,
+	sizeof (X509StoreManager_t902433605), -1, sizeof(X509StoreManager_t902433605_StaticFields), 0,
+	sizeof (X509Stores_t2754714603), -1, 0, 0,
+	sizeof (AuthorityKeyIdentifierExtension_t4106742333), -1, 0, 0,
+	sizeof (BasicConstraintsExtension_t455698010), -1, 0, 0,
+	sizeof (ExtendedKeyUsageExtension_t973649415), -1, sizeof(ExtendedKeyUsageExtension_t973649415_StaticFields), 0,
+	sizeof (GeneralNames_t2474193379), -1, 0, 0,
+	sizeof (KeyUsages_t912788628)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (KeyUsageExtension_t4108765760), -1, 0, 0,
+	sizeof (NetscapeCertTypeExtension_t1387961723), -1, 0, 0,
+	sizeof (CertTypes_t588297365)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (SubjectAltNameExtension_t1663182458), -1, 0, 0,
+	sizeof (HMAC_t3747562012), -1, 0, 0,
+	sizeof (MD5SHA1_t1066953176), -1, 0, 0,
+	sizeof (AlertLevel_t1107615680)+ sizeof (Il2CppObject), sizeof(uint8_t), 0, 0,
+	sizeof (AlertDescription_t1415847224)+ sizeof (Il2CppObject), sizeof(uint8_t), 0, 0,
+	sizeof (Alert_t1570308436), -1, 0, 0,
+	sizeof (CipherAlgorithmType_t3070348278)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (CipherSuite_t995991461), -1, sizeof(CipherSuite_t995991461_StaticFields), 0,
+	sizeof (CipherSuiteCollection_t1023598115), -1, 0, 0,
+	sizeof (CipherSuiteFactory_t1874120917), -1, 0, 0,
+	sizeof (ClientContext_t3677726556), -1, 0, 0,
+	sizeof (ClientRecordProtocol_t1274010348), -1, 0, 0,
+	sizeof (ClientSessionInfo_t4062822289), -1, sizeof(ClientSessionInfo_t4062822289_StaticFields), 0,
+	sizeof (ClientSessionCache_t3423305263), -1, sizeof(ClientSessionCache_t3423305263_StaticFields), 0,
+	sizeof (ContentType_t2785698635)+ sizeof (Il2CppObject), sizeof(uint8_t), 0, 0,
+	sizeof (Context_t4123145639), -1, 0, 0,
+	sizeof (ExchangeAlgorithmType_t1807586014)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (HandshakeState_t3657199378)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (HashAlgorithmType_t2506270163)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (HttpsClientStream_t2708006830), -1, sizeof(HttpsClientStream_t2708006830_StaticFields), 0,
+	sizeof (RecordProtocol_t3519001153), -1, sizeof(RecordProtocol_t3519001153_StaticFields), 0,
+	sizeof (ReceiveRecordAsyncResult_t1547021349), -1, 0, 0,
+	sizeof (SendRecordAsyncResult_t2772416992), -1, 0, 0,
+	sizeof (RSASslSignatureDeformatter_t3446121365), -1, sizeof(RSASslSignatureDeformatter_t3446121365_StaticFields), 0,
+	sizeof (RSASslSignatureFormatter_t491693046), -1, sizeof(RSASslSignatureFormatter_t491693046_StaticFields), 0,
+	sizeof (SecurityCompressionType_t1615155800)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (SecurityParameters_t202779010), -1, 0, 0,
+	sizeof (SecurityProtocolType_t4015394186)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (ServerContext_t4232778980), -1, 0, 0,
+	sizeof (ValidationResult_t2397874734), -1, 0, 0,
+	sizeof (SslClientStream_t1178954575), -1, 0, 0,
+	sizeof (SslCipherSuite_t3658722873), -1, 0, 0,
+	sizeof (SslHandshakeHash_t521809713), -1, 0, 0,
+	sizeof (SslStreamBase_t589897109), -1, sizeof(SslStreamBase_t589897109_StaticFields), 0,
+	sizeof (InternalAsyncResult_t2689067676), -1, 0, 0,
+	sizeof (TlsCipherSuite_t1815597034), -1, 0, 0,
+	sizeof (TlsClientSettings_t2063694561), -1, 0, 0,
+	sizeof (TlsException_t1029166540), -1, 0, 0,
+	sizeof (TlsServerSettings_t2090450521), -1, 0, 0,
+	sizeof (TlsStream_t720149587), -1, 0, 0,
+	sizeof (ClientCertificateType_t2725032177)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (HandshakeMessage_t276412187), -1, 0, 0,
+	sizeof (HandshakeType_t1150764700)+ sizeof (Il2CppObject), sizeof(uint8_t), 0, 0,
+	sizeof (TlsClientCertificate_t98714569), -1, 0, 0,
+	sizeof (TlsClientCertificateVerify_t1094471586), -1, 0, 0,
+	sizeof (TlsClientFinished_t2295380400), -1, sizeof(TlsClientFinished_t2295380400_StaticFields), 0,
+	sizeof (TlsClientHello_t1844074116), -1, 0, 0,
+	sizeof (TlsClientKeyExchange_t3168781268), -1, 0, 0,
+	sizeof (TlsServerCertificate_t2616569169), -1, 0, 0,
+	sizeof (TlsServerCertificateRequest_t3177402414), -1, 0, 0,
+	sizeof (TlsServerFinished_t2322136360), -1, sizeof(TlsServerFinished_t2322136360_StaticFields), 0,
+	sizeof (TlsServerHello_t1259177484), -1, 0, 0,
+	sizeof (TlsServerHelloDone_t132596654), -1, 0, 0,
+	sizeof (TlsServerKeyExchange_t1391668572), -1, 0, 0,
+	sizeof (PrimalityTest_t397689820), sizeof(methodPointerType), 0, 0,
+	sizeof (CertificateValidationCallback_t3726148045), sizeof(methodPointerType), 0, 0,
+	sizeof (CertificateValidationCallback2_t1582269749), sizeof(methodPointerType), 0, 0,
+	sizeof (CertificateSelectionCallback_t3257378130), sizeof(methodPointerType), 0, 0,
+	sizeof (PrivateKeySelectionCallback_t4199006061), sizeof(methodPointerType), 0, 0,
+	sizeof (U3CPrivateImplementationDetailsU3E_t3053238934), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields), 0,
+	sizeof (U24ArrayTypeU243132_t336011091)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU243132_t336011091_marshaled_pinvoke), 0, 0,
+	sizeof (U24ArrayTypeU24256_t2366142879)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24256_t2366142879_marshaled_pinvoke), 0, 0,
+	sizeof (U24ArrayTypeU2420_t214874516)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2420_t214874516_marshaled_pinvoke), 0, 0,
+	sizeof (U24ArrayTypeU2432_t214874549)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2432_t214874549_marshaled_pinvoke), 0, 0,
+	sizeof (U24ArrayTypeU2448_t214874586)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2448_t214874586_marshaled_pinvoke), 0, 0,
+	sizeof (U24ArrayTypeU2464_t214874644)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2464_t214874644_marshaled_pinvoke), 0, 0,
+	sizeof (U24ArrayTypeU2412_t214874487)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2412_t214874487_marshaled_pinvoke), 0, 0,
+	sizeof (U24ArrayTypeU2416_t214874491)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2416_t214874491_marshaled_pinvoke), 0, 0,
+	sizeof (U24ArrayTypeU244_t2777878079)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU244_t2777878079_marshaled_pinvoke), 0, 0,
+	sizeof (U3CModuleU3E_t86524792), -1, 0, 0,
+	sizeof (Locale_t2281372284), -1, 0, 0,
 	sizeof (MonoTODOAttribute_t1287393897), -1, 0, 0,
 	0, 0, 0, 0,
 	0, 0, 0, 0,
@@ -11342,7 +11861,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1990] =
 	sizeof (X509Certificate2Collection_t123613238), -1, 0, 0,
 	sizeof (X509Certificate2Enumerator_t944265564), -1, 0, 0,
 	sizeof (X509CertificateCollection_t2200082950), -1, 0, 0,
-	sizeof (X509CertificateEnumerator_t3569011382), -1, 0, 0,
+	sizeof (X509CertificateEnumerator_t3569011383), -1, 0, 0,
 	sizeof (X509Chain_t2831591730), -1, sizeof(X509Chain_t2831591730_StaticFields), 0,
 	sizeof (X509ChainElement_t4224632376), -1, 0, 0,
 	sizeof (X509ChainElementCollection_t56939446), -1, 0, 0,
@@ -11441,14 +11960,14 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1990] =
 	sizeof (UriTypeConverter_t3286319), -1, 0, 0,
 	sizeof (RemoteCertificateValidationCallback_t4087051103), sizeof(methodPointerType), 0, 0,
 	sizeof (MatchEvaluator_t510977541), sizeof(methodPointerType), 0, 0,
-	sizeof (U3CPrivateImplementationDetailsU3E_t3053238934), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238934_StaticFields), 0,
+	sizeof (U3CPrivateImplementationDetailsU3E_t3053238935), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields), 0,
 	sizeof (U24ArrayTypeU24128_t2366141827)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24128_t2366141827_marshaled_pinvoke), 0, 0,
-	sizeof (U24ArrayTypeU2412_t214874487)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2412_t214874487_marshaled_pinvoke), 0, 0,
-	sizeof (U3CModuleU3E_t86524792), -1, 0, 0,
+	sizeof (U24ArrayTypeU2412_t214874488)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2412_t214874488_marshaled_pinvoke), 0, 0,
+	sizeof (U3CModuleU3E_t86524793), -1, 0, 0,
 	sizeof (ExtensionAttribute_t795512515), -1, 0, 0,
-	sizeof (Locale_t2281372284), -1, 0, 0,
+	sizeof (Locale_t2281372285), -1, 0, 0,
 	sizeof (MonoTODOAttribute_t1287393898), -1, 0, 0,
-	sizeof (KeyBuilder_t2049706642), -1, sizeof(KeyBuilder_t2049706642_StaticFields), 0,
+	sizeof (KeyBuilder_t2049706643), -1, sizeof(KeyBuilder_t2049706643_StaticFields), 0,
 	sizeof (SymmetricTransform_t3854241867), -1, 0, 0,
 	0, 0, 0, 0,
 	0, 0, 0, 0,
@@ -11462,137 +11981,17 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1990] =
 	sizeof (AesTransform_t2186883254), -1, sizeof(AesTransform_t2186883254_StaticFields), 0,
 	0, 0, 0, 0,
 	0, 0, 0, 0,
-	sizeof (U3CPrivateImplementationDetailsU3E_t3053238935), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238935_StaticFields), 0,
+	sizeof (U3CPrivateImplementationDetailsU3E_t3053238936), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields), 0,
 	sizeof (U24ArrayTypeU24136_t2366141856)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24136_t2366141856_marshaled_pinvoke), 0, 0,
 	sizeof (U24ArrayTypeU24120_t2366141819)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24120_t2366141819_marshaled_pinvoke), 0, 0,
-	sizeof (U24ArrayTypeU24256_t2366142879)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24256_t2366142879_marshaled_pinvoke), 0, 0,
-	sizeof (U24ArrayTypeU241024_t335950519)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU241024_t335950519_marshaled_pinvoke), 0, 0,
-	sizeof (U3CModuleU3E_t86524793), -1, 0, 0,
-	sizeof (Locale_t2281372285), -1, 0, 0,
-	sizeof (BigInteger_t1694088928), -1, sizeof(BigInteger_t1694088928_StaticFields), 0,
-	sizeof (Sign_t2576862)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (ModulusRing_t948575272), -1, 0, 0,
-	sizeof (Kernel_t2243967070), -1, 0, 0,
-	sizeof (ConfidenceFactor_t2428357798)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (PrimalityTests_t1761959569), -1, 0, 0,
-	sizeof (PrimeGeneratorBase_t3362129977), -1, 0, 0,
-	sizeof (SequentialSearchPrimeGeneratorBase_t3092056096), -1, 0, 0,
-	sizeof (ASN1_t1254135647), -1, 0, 0,
-	sizeof (ASN1Convert_t4150720680), -1, 0, 0,
-	sizeof (BitConverterLE_t4175540726), -1, 0, 0,
-	sizeof (PKCS7_t1328300022), -1, 0, 0,
-	sizeof (ContentInfo_t1278398632), -1, 0, 0,
-	sizeof (EncryptedData_t636832623), -1, 0, 0,
-	sizeof (ARC4Managed_t1769787186), -1, 0, 0,
-	sizeof (CryptoConvert_t3463653320), -1, 0, 0,
-	sizeof (KeyBuilder_t2049706643), -1, sizeof(KeyBuilder_t2049706643_StaticFields), 0,
-	sizeof (MD2_t3745417136), -1, 0, 0,
-	sizeof (MD2Managed_t2591968217), -1, sizeof(MD2Managed_t2591968217_StaticFields), 0,
-	sizeof (PKCS1_t3821523996), -1, sizeof(PKCS1_t3821523996_StaticFields), 0,
-	sizeof (PKCS8_t3821524003), -1, 0, 0,
-	sizeof (PrivateKeyInfo_t2184496331), -1, 0, 0,
-	sizeof (EncryptedPrivateKeyInfo_t785870703), -1, 0, 0,
-	sizeof (RC4_t3745421912), -1, sizeof(RC4_t3745421912_StaticFields), 0,
-	sizeof (RSAManaged_t639738773), -1, 0, 0,
-	sizeof (KeyGeneratedEventHandler_t1233396098), sizeof(methodPointerType), 0, 0,
-	sizeof (SafeBag_t4111116303), -1, 0, 0,
-	sizeof (PKCS12_t2950126080), -1, sizeof(PKCS12_t2950126080_StaticFields), 0,
-	sizeof (DeriveBytes_t2715912549), -1, sizeof(DeriveBytes_t2715912549_StaticFields), 0,
-	sizeof (X501_t591126674), -1, sizeof(X501_t591126674_StaticFields), 0,
-	sizeof (X509Certificate_t273828613), -1, sizeof(X509Certificate_t273828613_StaticFields), 0,
-	sizeof (X509CertificateCollection_t3336811651), -1, 0, 0,
-	sizeof (X509CertificateEnumerator_t3569011383), -1, 0, 0,
-	sizeof (X509Chain_t3968320430), -1, 0, 0,
-	sizeof (X509ChainStatusFlags_t2524654829)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (X509Crl_t2942805322), -1, sizeof(X509Crl_t2942805322_StaticFields), 0,
-	sizeof (X509CrlEntry_t3291243611), -1, 0, 0,
-	sizeof (X509Extension_t1510964269), -1, 0, 0,
-	sizeof (X509ExtensionCollection_t3528692651), -1, 0, 0,
-	sizeof (X509Store_t3983467982), -1, 0, 0,
-	sizeof (X509StoreManager_t902433605), -1, sizeof(X509StoreManager_t902433605_StaticFields), 0,
-	sizeof (X509Stores_t2754714603), -1, 0, 0,
-	sizeof (AuthorityKeyIdentifierExtension_t4106742333), -1, 0, 0,
-	sizeof (BasicConstraintsExtension_t455698010), -1, 0, 0,
-	sizeof (ExtendedKeyUsageExtension_t973649415), -1, sizeof(ExtendedKeyUsageExtension_t973649415_StaticFields), 0,
-	sizeof (GeneralNames_t2474193379), -1, 0, 0,
-	sizeof (KeyUsages_t912788628)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (KeyUsageExtension_t4108765760), -1, 0, 0,
-	sizeof (NetscapeCertTypeExtension_t1387961723), -1, 0, 0,
-	sizeof (CertTypes_t588297365)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (SubjectAltNameExtension_t1663182458), -1, 0, 0,
-	sizeof (HMAC_t3747562012), -1, 0, 0,
-	sizeof (MD5SHA1_t1066953176), -1, 0, 0,
-	sizeof (AlertLevel_t1107615680)+ sizeof (Il2CppObject), sizeof(uint8_t), 0, 0,
-	sizeof (AlertDescription_t1415847224)+ sizeof (Il2CppObject), sizeof(uint8_t), 0, 0,
-	sizeof (Alert_t1570308436), -1, 0, 0,
-	sizeof (CipherAlgorithmType_t3070348278)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (CipherSuite_t995991461), -1, sizeof(CipherSuite_t995991461_StaticFields), 0,
-	sizeof (CipherSuiteCollection_t1023598115), -1, 0, 0,
-	sizeof (CipherSuiteFactory_t1874120917), -1, 0, 0,
-	sizeof (ClientContext_t3677726556), -1, 0, 0,
-	sizeof (ClientRecordProtocol_t1274010348), -1, 0, 0,
-	sizeof (ClientSessionInfo_t4062822289), -1, sizeof(ClientSessionInfo_t4062822289_StaticFields), 0,
-	sizeof (ClientSessionCache_t3423305263), -1, sizeof(ClientSessionCache_t3423305263_StaticFields), 0,
-	sizeof (ContentType_t2785698635)+ sizeof (Il2CppObject), sizeof(uint8_t), 0, 0,
-	sizeof (Context_t4123145639), -1, 0, 0,
-	sizeof (ExchangeAlgorithmType_t1807586014)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (HandshakeState_t3657199378)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (HashAlgorithmType_t2506270163)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (HttpsClientStream_t2708006830), -1, sizeof(HttpsClientStream_t2708006830_StaticFields), 0,
-	sizeof (RecordProtocol_t3519001153), -1, sizeof(RecordProtocol_t3519001153_StaticFields), 0,
-	sizeof (ReceiveRecordAsyncResult_t1547021349), -1, 0, 0,
-	sizeof (SendRecordAsyncResult_t2772416992), -1, 0, 0,
-	sizeof (RSASslSignatureDeformatter_t3446121365), -1, sizeof(RSASslSignatureDeformatter_t3446121365_StaticFields), 0,
-	sizeof (RSASslSignatureFormatter_t491693046), -1, sizeof(RSASslSignatureFormatter_t491693046_StaticFields), 0,
-	sizeof (SecurityCompressionType_t1615155800)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (SecurityParameters_t202779010), -1, 0, 0,
-	sizeof (SecurityProtocolType_t4015394186)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (ServerContext_t4232778980), -1, 0, 0,
-	sizeof (ValidationResult_t2397874734), -1, 0, 0,
-	sizeof (SslClientStream_t1178954575), -1, 0, 0,
-	sizeof (SslCipherSuite_t3658722873), -1, 0, 0,
-	sizeof (SslHandshakeHash_t521809713), -1, 0, 0,
-	sizeof (SslStreamBase_t589897109), -1, sizeof(SslStreamBase_t589897109_StaticFields), 0,
-	sizeof (InternalAsyncResult_t2689067676), -1, 0, 0,
-	sizeof (TlsCipherSuite_t1815597034), -1, 0, 0,
-	sizeof (TlsClientSettings_t2063694561), -1, 0, 0,
-	sizeof (TlsException_t1029166540), -1, 0, 0,
-	sizeof (TlsServerSettings_t2090450521), -1, 0, 0,
-	sizeof (TlsStream_t720149587), -1, 0, 0,
-	sizeof (ClientCertificateType_t2725032177)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
-	sizeof (HandshakeMessage_t276412187), -1, 0, 0,
-	sizeof (HandshakeType_t1150764700)+ sizeof (Il2CppObject), sizeof(uint8_t), 0, 0,
-	sizeof (TlsClientCertificate_t98714569), -1, 0, 0,
-	sizeof (TlsClientCertificateVerify_t1094471586), -1, 0, 0,
-	sizeof (TlsClientFinished_t2295380400), -1, sizeof(TlsClientFinished_t2295380400_StaticFields), 0,
-	sizeof (TlsClientHello_t1844074116), -1, 0, 0,
-	sizeof (TlsClientKeyExchange_t3168781268), -1, 0, 0,
-	sizeof (TlsServerCertificate_t2616569169), -1, 0, 0,
-	sizeof (TlsServerCertificateRequest_t3177402414), -1, 0, 0,
-	sizeof (TlsServerFinished_t2322136360), -1, sizeof(TlsServerFinished_t2322136360_StaticFields), 0,
-	sizeof (TlsServerHello_t1259177484), -1, 0, 0,
-	sizeof (TlsServerHelloDone_t132596654), -1, 0, 0,
-	sizeof (TlsServerKeyExchange_t1391668572), -1, 0, 0,
-	sizeof (PrimalityTest_t397689820), sizeof(methodPointerType), 0, 0,
-	sizeof (CertificateValidationCallback_t3726148045), sizeof(methodPointerType), 0, 0,
-	sizeof (CertificateValidationCallback2_t1582269749), sizeof(methodPointerType), 0, 0,
-	sizeof (CertificateSelectionCallback_t3257378130), sizeof(methodPointerType), 0, 0,
-	sizeof (PrivateKeySelectionCallback_t4199006061), sizeof(methodPointerType), 0, 0,
-	sizeof (U3CPrivateImplementationDetailsU3E_t3053238936), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238936_StaticFields), 0,
-	sizeof (U24ArrayTypeU243132_t336011091)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU243132_t336011091_marshaled_pinvoke), 0, 0,
 	sizeof (U24ArrayTypeU24256_t2366142880)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU24256_t2366142880_marshaled_pinvoke), 0, 0,
-	sizeof (U24ArrayTypeU2420_t214874516)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2420_t214874516_marshaled_pinvoke), 0, 0,
-	sizeof (U24ArrayTypeU2432_t214874549)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2432_t214874549_marshaled_pinvoke), 0, 0,
-	sizeof (U24ArrayTypeU2448_t214874586)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2448_t214874586_marshaled_pinvoke), 0, 0,
-	sizeof (U24ArrayTypeU2464_t214874644)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2464_t214874644_marshaled_pinvoke), 0, 0,
-	sizeof (U24ArrayTypeU2412_t214874488)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2412_t214874488_marshaled_pinvoke), 0, 0,
-	sizeof (U24ArrayTypeU2416_t214874491)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2416_t214874491_marshaled_pinvoke), 0, 0,
-	sizeof (U24ArrayTypeU244_t2777878079)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU244_t2777878079_marshaled_pinvoke), 0, 0,
+	sizeof (U24ArrayTypeU241024_t335950519)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU241024_t335950519_marshaled_pinvoke), 0, 0,
 	sizeof (U3CModuleU3E_t86524794), -1, 0, 0,
 	sizeof (AssetBundleCreateRequest_t2779486190), -1, 0, 0,
 	sizeof (AssetBundleRequest_t920637194), sizeof(AssetBundleRequest_t920637194_marshaled_pinvoke), 0, 0,
 	sizeof (AssetBundle_t3959431103), -1, 0, 0,
 	sizeof (SendMessageOptions_t2623293100)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (PrimitiveType_t3380664558)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (Space_t1602970931)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (RuntimePlatform_t1574985880)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (LogType_t3529269451)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
@@ -11684,6 +12083,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1990] =
 	sizeof (HideFlags_t62234258)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (Object_t3878351788), sizeof(Object_t3878351788_marshaled_pinvoke), 0, 0,
 	sizeof (Component_t2126946602), -1, 0, 0,
+	sizeof (Light_t1596303683), -1, 0, 0,
 	sizeof (GameObject_t4012695102), -1, 0, 0,
 	sizeof (Transform_t284553113), -1, 0, 0,
 	sizeof (Enumerator_t1072804841), -1, 0, 0,
@@ -11710,6 +12110,12 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1990] =
 	sizeof (LoadSceneMode_t2068802481)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (SceneManager_t1523288937), -1, 0, 0,
 	sizeof (Scene_t2772977204)+ sizeof (Il2CppObject), sizeof(Scene_t2772977204_marshaled_pinvoke), 0, 0,
+	sizeof (InternalEmitParticleArguments_t3421370189)+ sizeof (Il2CppObject), sizeof(InternalEmitParticleArguments_t3421370189_marshaled_pinvoke), 0, 0,
+	sizeof (ParticleEmitter_t3425549877), -1, 0, 0,
+	sizeof (EllipsoidParticleEmitter_t418172146), -1, 0, 0,
+	sizeof (ParticleAnimator_t2875113466), -1, 0, 0,
+	sizeof (ParticleRenderMode_t518303724)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (ParticleRenderer_t3175470550), -1, 0, 0,
 	sizeof (ForceMode_t759713627)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (ControllerColliderHit_t2693066224), -1, 0, 0,
 	sizeof (Collision_t1119538015), -1, 0, 0,
@@ -11719,6 +12125,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1990] =
 	sizeof (ContactPoint_t2951122365)+ sizeof (Il2CppObject), sizeof(ContactPoint_t2951122365_marshaled_pinvoke), 0, 0,
 	sizeof (Rigidbody_t1972007546), -1, 0, 0,
 	sizeof (Collider_t955670625), -1, 0, 0,
+	sizeof (MeshCollider_t1080724846), -1, 0, 0,
 	sizeof (RaycastHit_t46221527)+ sizeof (Il2CppObject), -1, 0, 0,
 	sizeof (CharacterController_t2029520850), -1, 0, 0,
 	sizeof (Physics2D_t2930244358), -1, sizeof(Physics2D_t2930244358_StaticFields), 0,
@@ -11828,6 +12235,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1990] =
 	sizeof (GcAchievementDescriptionData_t1714018390)+ sizeof (Il2CppObject), -1, 0, 0,
 	sizeof (GcAchievementData_t1317012096)+ sizeof (Il2CppObject), sizeof(GcAchievementData_t1317012096_marshaled_pinvoke), 0, 0,
 	sizeof (GcScoreData_t2223678307)+ sizeof (Il2CppObject), sizeof(GcScoreData_t2223678307_marshaled_pinvoke), 0, 0,
+	sizeof (LightType_t4212539805)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (CameraClearFlags_t3602484652)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (TextureFormat_t2239483167)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (CompareFunction_t1446377492)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
@@ -11903,6 +12311,11 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1990] =
 	0, 0, 0, 0,
 	0, 0, 0, 0,
 	sizeof (U3CModuleU3E_t86524795), -1, 0, 0,
+	sizeof (CubicSpline_t67207067), -1, 0, 0,
+	sizeof (CurvePoint_t131694081), -1, 0, 0,
+	sizeof (Point_t77292912), -1, 0, 0,
+	sizeof (RiverTool_t774771108), -1, 0, 0,
+	sizeof (U3CModuleU3E_t86524796), -1, 0, 0,
 	sizeof (DiffieHellmanCryptoProvider_t3764219664), -1, sizeof(DiffieHellmanCryptoProvider_t3764219664_StaticFields), 0,
 	sizeof (OakleyGroups_t1401475037), -1, sizeof(OakleyGroups_t1401475037_StaticFields), 0,
 	sizeof (BigInteger_t2113513851), -1, sizeof(BigInteger_t2113513851_StaticFields), 0,
@@ -11972,12 +12385,8 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1990] =
 	sizeof (__StaticArrayInitTypeSizeU3D128_t2238181776)+ sizeof (Il2CppObject), sizeof(__StaticArrayInitTypeSizeU3D128_t2238181776_marshaled_pinvoke), 0, 0,
 	sizeof (__StaticArrayInitTypeSizeU3D192_t2238181987)+ sizeof (Il2CppObject), sizeof(__StaticArrayInitTypeSizeU3D192_t2238181987_marshaled_pinvoke), 0, 0,
 	sizeof (__StaticArrayInitTypeSizeU3D1212_t664158153)+ sizeof (Il2CppObject), sizeof(__StaticArrayInitTypeSizeU3D1212_t664158153_marshaled_pinvoke), 0, 0,
-	sizeof (U3CModuleU3E_t86524796), -1, 0, 0,
-	sizeof (CubicSpline_t67207067), -1, 0, 0,
-	sizeof (CurvePoint_t131694081), -1, 0, 0,
-	sizeof (Point_t77292912), -1, 0, 0,
-	sizeof (RiverTool_t774771108), -1, 0, 0,
 	sizeof (U3CModuleU3E_t86524797), -1, 0, 0,
+	sizeof (EventHandle_t72269245)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	0, -1, 0, 0,
 	0, -1, 0, 0,
 	0, -1, 0, 0,
@@ -12040,6 +12449,8 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1990] =
 	0, -1, 0, 0,
 	sizeof (CanvasUpdateRegistry_t2591544775), -1, sizeof(CanvasUpdateRegistry_t2591544775_StaticFields), 0,
 	sizeof (ColorBlock_t2245020947)+ sizeof (Il2CppObject), sizeof(ColorBlock_t2245020947_marshaled_pinvoke), 0, 0,
+	sizeof (DefaultControls_t3717991936), -1, sizeof(DefaultControls_t3717991936_StaticFields), 0,
+	sizeof (Resources_t20897285)+ sizeof (Il2CppObject), -1, 0, 0,
 	sizeof (Dropdown_t2916437562), -1, sizeof(Dropdown_t2916437562_StaticFields), 0,
 	sizeof (DropdownItem_t2010846948), -1, 0, 0,
 	sizeof (OptionData_t3366553055), -1, 0, 0,
@@ -12053,9 +12464,16 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1990] =
 	sizeof (GraphicRaycaster_t2033008887), -1, sizeof(GraphicRaycaster_t2033008887_StaticFields), 0,
 	sizeof (BlockingObjects_t3349705471)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (GraphicRegistry_t3790421294), -1, sizeof(GraphicRegistry_t3790421294_StaticFields), 0,
+	0, -1, 0, 0,
 	sizeof (Image_t3354615620), -1, sizeof(Image_t3354615620_StaticFields), 0,
 	sizeof (Type_t2622298)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (FillMethod_t1232150628)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (OriginHorizontal_t638657546)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (OriginVertical_t1858650332)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (Origin90_t1443686621)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (Origin180_t1804604899)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (Origin360_t1804606759)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	0, -1, 0, 0,
 	0, -1, 0, 0,
 	sizeof (InputField_t2345609593), -1, sizeof(InputField_t2345609593_StaticFields), 0,
 	sizeof (ContentType_t1278737203)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
@@ -12136,7 +12554,9 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1990] =
 	0, 0, 0, 0,
 	0, 0, 0, 0,
 	sizeof (VertexHelper_t1471929499), -1, sizeof(VertexHelper_t1471929499_StaticFields), 0,
+	sizeof (BaseVertexEffect_t381296623), -1, 0, 0,
 	sizeof (BaseMeshEffect_t770218424), -1, 0, 0,
+	0, -1, 0, 0,
 	0, -1, 0, 0,
 	sizeof (Outline_t3842262571), -1, 0, 0,
 	sizeof (PositionAsUV1_t826283646), -1, 0, 0,
@@ -12144,6 +12564,23 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1990] =
 	sizeof (U3CPrivateImplementationDetailsU3E_t3053238938), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238938_StaticFields), 0,
 	sizeof (U24ArrayTypeU2412_t214874489)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2412_t214874489_marshaled_pinvoke), 0, 0,
 	sizeof (U3CModuleU3E_t86524798), -1, 0, 0,
+	sizeof (DetonatorSprayHelper_t3937829939), -1, 0, 0,
+	sizeof (Detonator_t436005224), -1, sizeof(Detonator_t436005224_StaticFields), 0,
+	sizeof (DetonatorBurstEmitter_t2784708534), -1, sizeof(DetonatorBurstEmitter_t2784708534_StaticFields), 0,
+	sizeof (DetonatorCloudRing_t3579438461), -1, 0, 0,
+	sizeof (DetonatorComponent_t2605738101), -1, 0, 0,
+	sizeof (DetonatorFireball_t3306641085), -1, 0, 0,
+	sizeof (DetonatorForce_t305353315), -1, 0, 0,
+	sizeof (DetonatorGlow_t2503728917), -1, 0, 0,
+	sizeof (DetonatorHeatwave_t2770030193), -1, 0, 0,
+	sizeof (DetonatorLight_t310705294), -1, 0, 0,
+	sizeof (DetonatorShockwave_t1540898835), -1, 0, 0,
+	sizeof (DetonatorSmoke_t317296871), -1, 0, 0,
+	sizeof (DetonatorSound_t317362311), -1, 0, 0,
+	sizeof (DetonatorSparks_t1248628926), -1, 0, 0,
+	sizeof (DetonatorSpray_t317388837), -1, 0, 0,
+	sizeof (DetonatorTest_t2504109594), -1, 0, 0,
+	sizeof (TouchToMouse_t1650215627), -1, 0, 0,
 	sizeof (Demo2DJumpAndRun_t927175799), -1, 0, 0,
 	sizeof (JumpAndRunMovement_t3956238833), -1, 0, 0,
 	sizeof (ColorPerPlayer_t2366540379), -1, 0, 0,
@@ -12290,12 +12727,12 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1990] =
 	sizeof (SynchronizeType_t341227658)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (SynchronizedParameter_t3311342805), -1, 0, 0,
 	sizeof (SynchronizedLayer_t1918348413), -1, 0, 0,
-	sizeof (U3CDoesLayerSynchronizeTypeExistU3Ec__AnonStoreyA_t1573396527), -1, 0, 0,
-	sizeof (U3CDoesParameterSynchronizeTypeExistU3Ec__AnonStoreyB_t2133516376), -1, 0, 0,
-	sizeof (U3CGetLayerSynchronizeTypeU3Ec__AnonStoreyC_t1115327303), -1, 0, 0,
-	sizeof (U3CGetParameterSynchronizeTypeU3Ec__AnonStoreyD_t3056155808), -1, 0, 0,
-	sizeof (U3CSetLayerSynchronizedU3Ec__AnonStoreyE_t3336388189), -1, 0, 0,
-	sizeof (U3CSetParameterSynchronizedU3Ec__AnonStoreyF_t28730886), -1, 0, 0,
+	sizeof (U3CDoesLayerSynchronizeTypeExistU3Ec__AnonStorey9_t1573396519), -1, 0, 0,
+	sizeof (U3CDoesParameterSynchronizeTypeExistU3Ec__AnonStoreyA_t2133516375), -1, 0, 0,
+	sizeof (U3CGetLayerSynchronizeTypeU3Ec__AnonStoreyB_t1115327302), -1, 0, 0,
+	sizeof (U3CGetParameterSynchronizeTypeU3Ec__AnonStoreyC_t3056155807), -1, 0, 0,
+	sizeof (U3CSetLayerSynchronizedU3Ec__AnonStoreyD_t3336388188), -1, 0, 0,
+	sizeof (U3CSetParameterSynchronizedU3Ec__AnonStoreyE_t28730885), -1, 0, 0,
 	sizeof (PhotonRigidbody2DView_t2664395880), -1, 0, 0,
 	sizeof (PhotonRigidbodyView_t1273153366), -1, 0, 0,
 	sizeof (PhotonTransformView_t486317301), -1, 0, 0,
@@ -12360,7 +12797,18 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1990] =
 	sizeof (ICurvePoint_t2098231050), -1, 0, 0,
 	sizeof (IRiverTool_t3609154427), -1, 0, 0,
 	sizeof (TextureAnimator_t186110210), -1, 0, 0,
-	sizeof (PlayerController_t2866526589), -1, 0, 0,
-	sizeof (U3CDecelerationerU3Ec__Iterator9_t375801630), -1, 0, 0,
+	sizeof (CannonBallController_t3728533319), -1, sizeof(CannonBallController_t3728533319_StaticFields), 0,
+	sizeof (CharacterOperationMaster_t3608733915), -1, 0, 0,
+	sizeof (GameUIButton_t1364003187), -1, sizeof(GameUIButton_t1364003187_StaticFields), 0,
+	sizeof (PlayerCameraController_t3553451581), -1, 0, 0,
+	sizeof (PlayerCollider_t3298947605), -1, 0, 0,
+	sizeof (PlayerController_t3796194808), -1, 0, 0,
+	sizeof (PlayerStateManager_t4277940093), -1, sizeof(PlayerStateManager_t4277940093_StaticFields), 0,
+	sizeof (RivalController_t3953764641), -1, 0, 0,
+	sizeof (UIController_t2684559696), -1, 0, 0,
+	sizeof (BoatDirectionSystem_t1888994697), -1, 0, 0,
+	sizeof (CannonPullSystem_t3255870929), -1, 0, 0,
+	sizeof (Prefabs_t1345984335), -1, 0, 0,
+	sizeof (GameObj_t1469031301), -1, 0, 0,
 	sizeof (U3CModuleU3E_t86524799), -1, 0, 0,
 };

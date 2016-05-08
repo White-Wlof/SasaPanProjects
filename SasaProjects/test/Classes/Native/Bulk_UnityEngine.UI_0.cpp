@@ -13,6 +13,8 @@
 #include <limits>
 #include <assert.h>
 
+// <PrivateImplementationDetails>
+struct U3CPrivateImplementationDetailsU3E_t3053238938;
 // UnityEngine.EventSystems.AbstractEventData
 struct AbstractEventData_t419992509;
 // UnityEngine.EventSystems.AxisEventData
@@ -21,10 +23,10 @@ struct AxisEventData_t552897310;
 struct EventSystem_t409518532;
 // UnityEngine.EventSystems.BaseEventData
 struct BaseEventData_t3547103726;
-// UnityEngine.GameObject
-struct GameObject_t4012695102;
 // UnityEngine.EventSystems.BaseInputModule
 struct BaseInputModule_t3800378272;
+// UnityEngine.GameObject
+struct GameObject_t4012695102;
 // System.Object
 struct Il2CppObject;
 // System.Collections.Generic.List`1<UnityEngine.EventSystems.RaycastResult>
@@ -161,6 +163,8 @@ struct BaseMeshEffect_t770218424;
 struct Graphic_t933884113;
 // UnityEngine.Mesh
 struct Mesh_t1525280346;
+// UnityEngine.UI.BaseVertexEffect
+struct BaseVertexEffect_t381296623;
 // UnityEngine.UI.Button
 struct Button_t990034267;
 // UnityEngine.UI.Button/ButtonClickedEvent
@@ -195,12 +199,28 @@ struct ColorTweenCallback_t3305784653;
 struct UnityAction_1_t938670926;
 // UnityEngine.UI.CoroutineTween.FloatTween/FloatTweenCallback
 struct FloatTweenCallback_t2670964468;
-// UnityEngine.UI.Dropdown
-struct Dropdown_t2916437562;
 // UnityEngine.UI.Text
 struct Text_t3286458198;
+// UnityEngine.UI.Selectable
+struct Selectable_t3621744255;
 // UnityEngine.UI.Image
 struct Image_t3354615620;
+// UnityEngine.UI.RawImage
+struct RawImage_t3831555132;
+// UnityEngine.UI.Slider
+struct Slider_t1468074762;
+// UnityEngine.UI.Scrollbar
+struct Scrollbar_t1410649103;
+// UnityEngine.UI.Toggle
+struct Toggle_t1499417981;
+// UnityEngine.UI.InputField
+struct InputField_t2345609593;
+// UnityEngine.UI.ScrollRect
+struct ScrollRect_t1048578170;
+// UnityEngine.UI.Mask
+struct Mask_t3286245653;
+// UnityEngine.UI.Dropdown
+struct Dropdown_t2916437562;
 // System.Collections.Generic.List`1<UnityEngine.UI.Dropdown/OptionData>
 struct List_1_t4163512024;
 // UnityEngine.UI.Dropdown/DropdownEvent
@@ -209,8 +229,6 @@ struct DropdownEvent_t2203078889;
 struct List_1_t1765447871;
 // System.Collections.Generic.List`1<UnityEngine.Sprite>
 struct List_1_t508032043;
-// UnityEngine.UI.Toggle
-struct Toggle_t1499417981;
 // UnityEngine.UI.Dropdown/DropdownItem
 struct DropdownItem_t2010846948;
 // UnityEngine.UI.GraphicRaycaster
@@ -263,8 +281,6 @@ struct HorizontalLayoutGroup_t2687518874;
 struct HorizontalOrVerticalLayoutGroup_t2416992609;
 // UnityEngine.Vector3[]
 struct Vector3U5BU5D_t3227571696;
-// UnityEngine.UI.InputField
-struct InputField_t2345609593;
 // UnityEngine.TextGenerator
 struct TextGenerator_t2883685459;
 // UnityEngine.UI.InputField/SubmitEvent
@@ -304,29 +320,6 @@ struct Component_t2126946602;
 struct Func_2_t4205183563;
 // UnityEngine.UI.ILayoutElement
 struct ILayoutElement_t109776050;
-// UnityEngine.UI.Mask
-struct Mask_t3286245653;
-// UnityEngine.UI.MaskableGraphic
-struct MaskableGraphic_t2806572971;
-// UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
-struct CullStateChangedEvent_t3567555589;
-// System.Collections.Generic.List`1<UnityEngine.UI.Mask>
-struct List_1_t4083204622;
-// UnityEngine.UI.RectMask2D
-struct RectMask2D_t798674795;
-// UnityEngine.UI.IClippable
-struct IClippable_t2239353914;
-// UnityEngine.Object
-struct Object_t3878351788;
-struct Object_t3878351788_marshaled_pinvoke;
-// UnityEngine.UI.Selectable
-struct Selectable_t3621744255;
-// UnityEngine.UI.Outline
-struct Outline_t3842262571;
-// UnityEngine.UI.PositionAsUV1
-struct PositionAsUV1_t826283646;
-// UnityEngine.UI.RawImage
-struct RawImage_t3831555132;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -335,12 +328,12 @@ struct RawImage_t3831555132;
 #include "UnityEngine_UI_U3CModuleU3E86524790MethodDeclarations.h"
 #include "UnityEngine_UI_U3CPrivateImplementationDetailsU3E3053238933.h"
 #include "UnityEngine_UI_U3CPrivateImplementationDetailsU3E3053238933MethodDeclarations.h"
+#include "mscorlib_System_Void2779279689.h"
+#include "mscorlib_System_Object837106420MethodDeclarations.h"
 #include "UnityEngine_UI_U3CPrivateImplementationDetailsU3E_U214874486.h"
 #include "UnityEngine_UI_U3CPrivateImplementationDetailsU3E_U214874486MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_AbstractEve419992509.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_AbstractEve419992509MethodDeclarations.h"
-#include "mscorlib_System_Void2779279689.h"
-#include "mscorlib_System_Object837106420MethodDeclarations.h"
 #include "mscorlib_System_Boolean211005341.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_AxisEventDa552897310.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_AxisEventDa552897310MethodDeclarations.h"
@@ -350,9 +343,9 @@ struct RawImage_t3831555132;
 #include "UnityEngine_UnityEngine_Vector23525329788.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_MoveDirectio37419785.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_BaseEventD3547103726.h"
-#include "UnityEngine_UnityEngine_GameObject4012695102.h"
-#include "UnityEngine_UI_UnityEngine_EventSystems_EventSystem409518532MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_BaseInputM3800378272.h"
+#include "UnityEngine_UI_UnityEngine_EventSystems_EventSystem409518532MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_GameObject4012695102.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_BaseInputM3800378272MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen1756857658MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_UIBehaviour644839684MethodDeclarations.h"
@@ -387,6 +380,8 @@ struct RawImage_t3831555132;
 #include "mscorlib_System_Object837106420.h"
 #include "UnityEngine_UnityEngine_Camera3533968274.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_RaycasterM3461082770MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_EventSystems_EventHandle72269245.h"
+#include "UnityEngine_UI_UnityEngine_EventSystems_EventHandle72269245MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen302369945MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen302369945.h"
 #include "mscorlib_System_Comparison_1_gen3663573565MethodDeclarations.h"
@@ -539,6 +534,8 @@ struct RawImage_t3831555132;
 #include "UnityEngine_UnityEngine_Mesh1525280346.h"
 #include "UnityEngine_UI_UnityEngine_UI_VertexHelper1471929499MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_VertexHelper1471929499.h"
+#include "UnityEngine_UI_UnityEngine_UI_BaseVertexEffect381296623.h"
+#include "UnityEngine_UI_UnityEngine_UI_BaseVertexEffect381296623MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Button990034267.h"
 #include "UnityEngine_UI_UnityEngine_UI_Button990034267MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Button_ButtonClickedE962981669MethodDeclarations.h"
@@ -615,40 +612,62 @@ struct RawImage_t3831555132;
 #include "UnityEngine_UI_UnityEngine_UI_CoroutineTween_Float2670964468.h"
 #include "UnityEngine_UnityEngine_Events_UnityAction_1_gen938670926.h"
 #include "UnityEngine_UI_UnityEngine_UI_CoroutineTween_Float2670964468MethodDeclarations.h"
-#include "UnityEngine_UI_UnityEngine_UI_Dropdown2916437562.h"
+#include "UnityEngine_UI_UnityEngine_UI_DefaultControls3717991936.h"
+#include "UnityEngine_UI_UnityEngine_UI_DefaultControls3717991936MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_Text3286458198.h"
+#include "UnityEngine_UI_UnityEngine_UI_DefaultControls_Resour20897285.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image3354615620MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image3354615620.h"
+#include "UnityEngine_UnityEngine_Sprite4006040370.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image_Type2622298.h"
+#include "UnityEngine_UI_UnityEngine_UI_Text3286458198MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_TextAnchor551935663.h"
+#include "UnityEngine_UI_UnityEngine_UI_RawImage3831555132.h"
+#include "UnityEngine_UI_UnityEngine_UI_Slider1468074762MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_Slider1468074762.h"
+#include "UnityEngine_UI_UnityEngine_UI_Slider_Direction1041377119.h"
+#include "UnityEngine_UI_UnityEngine_UI_Scrollbar1410649103MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_Scrollbar1410649103.h"
+#include "UnityEngine_UI_UnityEngine_UI_Toggle1499417981MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_Toggle1499417981.h"
+#include "UnityEngine_UI_UnityEngine_UI_InputField2345609593MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_InputField2345609593.h"
+#include "UnityEngine_UnityEngine_FontStyle1975910095.h"
+#include "UnityEngine_UI_UnityEngine_UI_ScrollRect1048578170MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_Mask3286245653MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Dropdown2916437562MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_Dropdown_OptionData3366553055MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_ScrollRect1048578170.h"
+#include "UnityEngine_UI_UnityEngine_UI_Mask3286245653.h"
+#include "UnityEngine_UI_UnityEngine_UI_Dropdown2916437562.h"
+#include "UnityEngine_UI_UnityEngine_UI_Dropdown_OptionData3366553055.h"
+#include "UnityEngine_UI_UnityEngine_UI_Scrollbar_Direction1041377119.h"
+#include "UnityEngine_UI_UnityEngine_UI_ScrollRect_MovementT3563546793.h"
+#include "UnityEngine_UI_UnityEngine_UI_ScrollRect_ScrollbarV260445624.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen4163512024.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen4163512024MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_DefaultControls_Resour20897285MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Dropdown_OptionDataL2865341213MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Dropdown_DropdownEve2203078889MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen2807805917MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Dropdown_OptionDataL2865341213.h"
 #include "UnityEngine_UI_UnityEngine_UI_Dropdown_DropdownEve2203078889.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen2807805917.h"
-#include "UnityEngine_UI_UnityEngine_UI_Dropdown_OptionData3366553055MethodDeclarations.h"
-#include "UnityEngine_UI_UnityEngine_UI_Dropdown_OptionData3366553055.h"
-#include "UnityEngine_UI_UnityEngine_UI_Text3286458198.h"
-#include "UnityEngine_UI_UnityEngine_UI_Image3354615620.h"
-#include "mscorlib_System_Collections_Generic_List_1_gen4163512024.h"
 #include "UnityEngine_UnityEngine_Application450040189MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Events_UnityEvent_1_gen1789869598MethodDeclarations.h"
-#include "mscorlib_System_Collections_Generic_List_1_gen4163512024MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_CoroutineTween_Tween3422778292MethodDeclarations.h"
-#include "UnityEngine_UI_UnityEngine_UI_Image3354615620MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_CoroutineTween_Tween3422778292.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
-#include "UnityEngine_UnityEngine_Sprite4006040370.h"
-#include "UnityEngine_UI_UnityEngine_UI_Text3286458198MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen1765447871.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen1765447871MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen508032043.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen508032043MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Dropdown_DropdownIte2010846948MethodDeclarations.h"
-#include "UnityEngine_UI_UnityEngine_UI_Toggle1499417981.h"
 #include "UnityEngine_UI_UnityEngine_UI_Dropdown_DropdownIte2010846948.h"
 #include "UnityEngine_UI_UnityEngine_UI_GraphicRaycaster2033008887.h"
 #include "UnityEngine_UnityEngine_CanvasGroup1295922228.h"
 #include "UnityEngine_UI_UnityEngine_UI_ListPool_1_gen3148029054MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Dropdown_U3CShowU3Ec3327131860MethodDeclarations.h"
-#include "UnityEngine_UI_UnityEngine_UI_Toggle1499417981MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Events_UnityAction_1_gen191467246MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Events_UnityEvent_1_gen3448427448MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Navigation2845019197MethodDeclarations.h"
@@ -668,8 +687,6 @@ struct RawImage_t3831555132;
 #include "UnityEngine_UI_UnityEngine_UI_Dropdown_U3CDelayedD1911489372.h"
 #include "UnityEngine_UI_UnityEngine_UI_FontData3713645250.h"
 #include "UnityEngine_UI_UnityEngine_UI_FontData3713645250MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_FontStyle1975910095.h"
-#include "UnityEngine_UnityEngine_TextAnchor551935663.h"
 #include "UnityEngine_UnityEngine_HorizontalWrapMode1685321150.h"
 #include "UnityEngine_UnityEngine_VerticalWrapMode2656823056.h"
 #include "UnityEngine_UnityEngine_Font1525081276.h"
@@ -741,7 +758,6 @@ struct RawImage_t3831555132;
 #include "UnityEngine_UI_UnityEngine_UI_HorizontalOrVertical2416992609.h"
 #include "UnityEngine_UI_UnityEngine_UI_MaskableGraphic2806572971MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Image_FillMethod1232150628.h"
-#include "UnityEngine_UI_UnityEngine_UI_Image_Type2622298.h"
 #include "UnityEngine_UnityEngine_Material1886596500MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Sprite4006040370MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Sprites_DataUtility4121269839MethodDeclarations.h"
@@ -751,9 +767,17 @@ struct RawImage_t3831555132;
 #include "UnityEngine_UnityEngine_Texture1769722184MethodDeclarations.h"
 #include "mscorlib_System_Exception1967233988MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Image_FillMethod1232150628MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image_Origin1801804604899.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image_Origin1801804604899MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image_Origin3601804606759.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image_Origin3601804606759MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image_Origin901443686621.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image_Origin901443686621MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image_OriginHorizonta638657546.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image_OriginHorizonta638657546MethodDeclarations.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image_OriginVertical1858650332.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image_OriginVertical1858650332MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Image_Type2622298MethodDeclarations.h"
-#include "UnityEngine_UI_UnityEngine_UI_InputField2345609593.h"
-#include "UnityEngine_UI_UnityEngine_UI_InputField2345609593MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_InputField_SubmitEve1697462594MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_InputField_OnChangeE3894605131MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Event1590224583MethodDeclarations.h"
@@ -822,33 +846,11 @@ struct RawImage_t3831555132;
 #include "UnityEngine_UI_UnityEngine_UI_LayoutUtility4203675851.h"
 #include "System_Core_System_Func_2_gen4205183563MethodDeclarations.h"
 #include "System_Core_System_Func_2_gen4205183563.h"
-#include "UnityEngine_UI_UnityEngine_UI_Mask3286245653.h"
-#include "UnityEngine_UI_UnityEngine_UI_Mask3286245653MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_MaskUtilities643542887MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_StencilMaterial260192492MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Rendering_StencilOp3002996980.h"
 #include "UnityEngine_UnityEngine_Rendering_CompareFunction1446377492.h"
 #include "UnityEngine_UnityEngine_Rendering_ColorWriteMask819857343.h"
-#include "UnityEngine_UI_UnityEngine_UI_MaskableGraphic2806572971.h"
-#include "UnityEngine_UI_UnityEngine_UI_MaskableGraphic_Cull3567555589MethodDeclarations.h"
-#include "UnityEngine_UI_UnityEngine_UI_MaskableGraphic_Cull3567555589.h"
-#include "UnityEngine_UI_UnityEngine_UI_MaskUtilities643542887.h"
-#include "UnityEngine_UI_UnityEngine_UI_ListPool_1_gen2900260814MethodDeclarations.h"
-#include "mscorlib_System_Collections_Generic_List_1_gen4083204622.h"
-#include "mscorlib_System_Collections_Generic_List_1_gen4083204622MethodDeclarations.h"
-#include "UnityEngine_UI_UnityEngine_UI_ListPool_1_gen412689956MethodDeclarations.h"
-#include "UnityEngine_UI_UnityEngine_UI_Misc3286253333.h"
-#include "UnityEngine_UI_UnityEngine_UI_Misc3286253333MethodDeclarations.h"
-#include "UnityEngine_UI_UnityEngine_UI_Navigation_Mode2403779MethodDeclarations.h"
-#include "UnityEngine_UI_UnityEngine_UI_Outline3842262571.h"
-#include "UnityEngine_UI_UnityEngine_UI_Outline3842262571MethodDeclarations.h"
-#include "UnityEngine_UI_UnityEngine_UI_Shadow1464142665MethodDeclarations.h"
-#include "UnityEngine_UI_UnityEngine_UI_ListPool_1_gen1874076766MethodDeclarations.h"
-#include "mscorlib_System_Collections_Generic_List_1_gen3057020574MethodDeclarations.h"
-#include "UnityEngine_UI_UnityEngine_UI_PositionAsUV1826283646.h"
-#include "UnityEngine_UI_UnityEngine_UI_PositionAsUV1826283646MethodDeclarations.h"
-#include "UnityEngine_UI_UnityEngine_UI_RawImage3831555132.h"
-#include "UnityEngine_UI_UnityEngine_UI_RawImage3831555132MethodDeclarations.h"
 
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gshared (Component_t2126946602 * __this, const MethodInfo* method);
@@ -945,14 +947,42 @@ extern "C"  bool SetPropertyUtility_SetStruct_TisSingle_t958209021_m1643007650_g
 // System.Boolean UnityEngine.UI.SetPropertyUtility::SetStruct<UnityEngine.UI.ContentSizeFitter/FitMode>(!!0&,!!0)
 extern "C"  bool SetPropertyUtility_SetStruct_TisFitMode_t816341300_m3401974325_gshared (Il2CppObject * __this /* static, unused */, int32_t* p0, int32_t p1, const MethodInfo* method);
 #define SetPropertyUtility_SetStruct_TisFitMode_t816341300_m3401974325(__this /* static, unused */, p0, p1, method) ((  bool (*) (Il2CppObject * /* static, unused */, int32_t*, int32_t, const MethodInfo*))SetPropertyUtility_SetStruct_TisFitMode_t816341300_m3401974325_gshared)(__this /* static, unused */, p0, p1, method)
+// !!0 UnityEngine.GameObject::AddComponent<System.Object>()
+extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
+#define GameObject_AddComponent_TisIl2CppObject_m1123549903(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.RectTransform>()
+#define GameObject_AddComponent_TisRectTransform_t3317474837_m3846759000(__this, method) ((  RectTransform_t3317474837 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.RectTransform>()
+#define GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(__this, method) ((  RectTransform_t3317474837 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Image>()
+#define GameObject_AddComponent_TisImage_t3354615620_m3664949437(__this, method) ((  Image_t3354615620 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Button>()
+#define GameObject_AddComponent_TisButton_t990034267_m2834709044(__this, method) ((  Button_t990034267 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Text>()
+#define GameObject_AddComponent_TisText_t3286458198_m3161596953(__this, method) ((  Text_t3286458198 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.RawImage>()
+#define GameObject_AddComponent_TisRawImage_t3831555132_m1228665331(__this, method) ((  RawImage_t3831555132 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Slider>()
+#define GameObject_AddComponent_TisSlider_t1468074762_m2027542053(__this, method) ((  Slider_t1468074762 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Scrollbar>()
+#define GameObject_AddComponent_TisScrollbar_t1410649103_m567367570(__this, method) ((  Scrollbar_t1410649103 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Toggle>()
+#define GameObject_AddComponent_TisToggle_t1499417981_m3765476050(__this, method) ((  Toggle_t1499417981 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.InputField>()
+#define GameObject_AddComponent_TisInputField_t2345609593_m1532989910(__this, method) ((  InputField_t2345609593 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.Scrollbar>()
+#define GameObject_GetComponent_TisScrollbar_t1410649103_m179289597(__this, method) ((  Scrollbar_t1410649103 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.ScrollRect>()
+#define GameObject_AddComponent_TisScrollRect_t1048578170_m3490629429(__this, method) ((  ScrollRect_t1048578170 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Mask>()
+#define GameObject_AddComponent_TisMask_t3286245653_m1124636154(__this, method) ((  Mask_t3286245653 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Dropdown>()
+#define GameObject_AddComponent_TisDropdown_t2916437562_m3413532469(__this, method) ((  Dropdown_t2916437562 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponentInChildren<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponentInChildren_TisIl2CppObject_m900797242_gshared (Component_t2126946602 * __this, const MethodInfo* method);
 #define Component_GetComponentInChildren_TisIl2CppObject_m900797242(__this, method) ((  Il2CppObject * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponentInChildren_TisIl2CppObject_m900797242_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponentInChildren<UnityEngine.UI.Toggle>()
 #define Component_GetComponentInChildren_TisToggle_t1499417981_m612160161(__this, method) ((  Toggle_t1499417981 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponentInChildren_TisIl2CppObject_m900797242_gshared)(__this, method)
-// !!0 UnityEngine.GameObject::AddComponent<System.Object>()
-extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
-#define GameObject_AddComponent_TisIl2CppObject_m1123549903(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Dropdown/DropdownItem>()
 #define GameObject_AddComponent_TisDropdownItem_t2010846948_m1733990038(__this, method) ((  DropdownItem_t2010846948 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
 // !!0 UnityEngine.UI.Dropdown::GetOrAddComponent<System.Object>(UnityEngine.GameObject)
@@ -974,18 +1004,12 @@ extern "C"  Il2CppObject * GameObject_GetComponentInChildren_TisIl2CppObject_m78
 #define GameObject_GetComponentInChildren_TisIl2CppObject_m782999868(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponentInChildren_TisIl2CppObject_m782999868_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponentInChildren<UnityEngine.UI.Dropdown/DropdownItem>()
 #define GameObject_GetComponentInChildren_TisDropdownItem_t2010846948_m678737573(__this, method) ((  DropdownItem_t2010846948 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponentInChildren_TisIl2CppObject_m782999868_gshared)(__this, method)
-// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.RectTransform>()
-#define GameObject_AddComponent_TisRectTransform_t3317474837_m3846759000(__this, method) ((  RectTransform_t3317474837 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.Canvas>()
 #define GameObject_AddComponent_TisCanvas_t3534013893_m2137401606(__this, method) ((  Canvas_t3534013893 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.Canvas>()
 #define GameObject_GetComponent_TisCanvas_t3534013893_m4009786289(__this, method) ((  Canvas_t3534013893 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.GraphicRaycaster>()
 #define GameObject_AddComponent_TisGraphicRaycaster_t2033008887_m3633242200(__this, method) ((  GraphicRaycaster_t2033008887 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
-// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Image>()
-#define GameObject_AddComponent_TisImage_t3354615620_m3664949437(__this, method) ((  Image_t3354615620 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
-// !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Button>()
-#define GameObject_AddComponent_TisButton_t990034267_m2834709044(__this, method) ((  Button_t990034267 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
 // !!0 UnityEngine.Object::Instantiate<System.Object>(!!0)
 extern "C"  Il2CppObject * Object_Instantiate_TisIl2CppObject_m3133387403_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, const MethodInfo* method);
 #define Object_Instantiate_TisIl2CppObject_m3133387403(__this /* static, unused */, p0, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, Il2CppObject *, const MethodInfo*))Object_Instantiate_TisIl2CppObject_m3133387403_gshared)(__this /* static, unused */, p0, method)
@@ -1082,27 +1106,19 @@ extern "C"  void LayoutGroup_SetProperty_TisIl2CppObject_m2605202953_gshared (La
 // System.Void UnityEngine.UI.LayoutGroup::SetProperty<UnityEngine.TextAnchor>(!!0&,!!0)
 extern "C"  void LayoutGroup_SetProperty_TisTextAnchor_t551935663_m3585160266_gshared (LayoutGroup_t2646131550 * __this, int32_t* p0, int32_t p1, const MethodInfo* method);
 #define LayoutGroup_SetProperty_TisTextAnchor_t551935663_m3585160266(__this, p0, p1, method) ((  void (*) (LayoutGroup_t2646131550 *, int32_t*, int32_t, const MethodInfo*))LayoutGroup_SetProperty_TisTextAnchor_t551935663_m3585160266_gshared)(__this, p0, p1, method)
-// !!0 UnityEngine.Component::GetComponent<UnityEngine.UI.Mask>()
-#define Component_GetComponent_TisMask_t3286245653_m433240493(__this, method) ((  Mask_t3286245653 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
-// System.Void UnityEngine.Component::GetComponentsInChildren<System.Object>(System.Collections.Generic.List`1<!!0>)
-extern "C"  void Component_GetComponentsInChildren_TisIl2CppObject_m434699324_gshared (Component_t2126946602 * __this, List_1_t1634065389 * p0, const MethodInfo* method);
-#define Component_GetComponentsInChildren_TisIl2CppObject_m434699324(__this, p0, method) ((  void (*) (Component_t2126946602 *, List_1_t1634065389 *, const MethodInfo*))Component_GetComponentsInChildren_TisIl2CppObject_m434699324_gshared)(__this, p0, method)
-// System.Void UnityEngine.Component::GetComponentsInChildren<UnityEngine.Component>(System.Collections.Generic.List`1<!!0>)
-#define Component_GetComponentsInChildren_TisComponent_t2126946602_m1080956020(__this, p0, method) ((  void (*) (Component_t2126946602 *, List_1_t2923905571 *, const MethodInfo*))Component_GetComponentsInChildren_TisIl2CppObject_m434699324_gshared)(__this, p0, method)
-// System.Void UnityEngine.Component::GetComponentsInParent<System.Object>(System.Boolean,System.Collections.Generic.List`1<!!0>)
-extern "C"  void Component_GetComponentsInParent_TisIl2CppObject_m101791494_gshared (Component_t2126946602 * __this, bool p0, List_1_t1634065389 * p1, const MethodInfo* method);
-#define Component_GetComponentsInParent_TisIl2CppObject_m101791494(__this, p0, p1, method) ((  void (*) (Component_t2126946602 *, bool, List_1_t1634065389 *, const MethodInfo*))Component_GetComponentsInParent_TisIl2CppObject_m101791494_gshared)(__this, p0, p1, method)
-// System.Void UnityEngine.Component::GetComponentsInParent<UnityEngine.Canvas>(System.Boolean,System.Collections.Generic.List`1<!!0>)
-#define Component_GetComponentsInParent_TisCanvas_t3534013893_m2636073967(__this, p0, p1, method) ((  void (*) (Component_t2126946602 *, bool, List_1_t36005566 *, const MethodInfo*))Component_GetComponentsInParent_TisIl2CppObject_m101791494_gshared)(__this, p0, p1, method)
-// System.Void UnityEngine.Component::GetComponents<UnityEngine.UI.Mask>(System.Collections.Generic.List`1<!!0>)
-#define Component_GetComponents_TisMask_t3286245653_m956513135(__this, p0, method) ((  void (*) (Component_t2126946602 *, List_1_t4083204622 *, const MethodInfo*))Component_GetComponents_TisIl2CppObject_m4263137760_gshared)(__this, p0, method)
-// System.Void UnityEngine.Component::GetComponentsInParent<UnityEngine.UI.RectMask2D>(System.Boolean,System.Collections.Generic.List`1<!!0>)
-#define Component_GetComponentsInParent_TisRectMask2D_t798674795_m2818396525(__this, p0, p1, method) ((  void (*) (Component_t2126946602 *, bool, List_1_t1595633764 *, const MethodInfo*))Component_GetComponentsInParent_TisIl2CppObject_m101791494_gshared)(__this, p0, p1, method)
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void <PrivateImplementationDetails>::.ctor()
+extern "C"  void U3CPrivateImplementationDetailsU3E__ctor_m2615655811 (U3CPrivateImplementationDetailsU3E_t3053238938 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
 // Conversion methods for marshalling of: <PrivateImplementationDetails>/$ArrayType$12
 extern "C" void U24ArrayTypeU2412_t214874489_marshal_pinvoke(const U24ArrayTypeU2412_t214874489& unmarshaled, U24ArrayTypeU2412_t214874489_marshaled_pinvoke& marshaled)
 {
@@ -1169,6 +1185,14 @@ extern "C"  void AxisEventData__ctor_m3411840806 (AxisEventData_t552897310 * __t
 		return;
 	}
 }
+// UnityEngine.Vector2 UnityEngine.EventSystems.AxisEventData::get_moveVector()
+extern "C"  Vector2_t3525329788  AxisEventData_get_moveVector_m2997093594 (AxisEventData_t552897310 * __this, const MethodInfo* method)
+{
+	{
+		Vector2_t3525329788  L_0 = __this->get_U3CmoveVectorU3Ek__BackingField_2();
+		return L_0;
+	}
+}
 // System.Void UnityEngine.EventSystems.AxisEventData::set_moveVector(UnityEngine.Vector2)
 extern "C"  void AxisEventData_set_moveVector_m286185191 (AxisEventData_t552897310 * __this, Vector2_t3525329788  ___value, const MethodInfo* method)
 {
@@ -1203,6 +1227,26 @@ extern "C"  void BaseEventData__ctor_m3246352982 (BaseEventData_t3547103726 * __
 		EventSystem_t409518532 * L_0 = ___eventSystem;
 		__this->set_m_EventSystem_1(L_0);
 		return;
+	}
+}
+// UnityEngine.EventSystems.BaseInputModule UnityEngine.EventSystems.BaseEventData::get_currentInputModule()
+extern "C"  BaseInputModule_t3800378272 * BaseEventData_get_currentInputModule_m502779959 (BaseEventData_t3547103726 * __this, const MethodInfo* method)
+{
+	{
+		EventSystem_t409518532 * L_0 = __this->get_m_EventSystem_1();
+		NullCheck(L_0);
+		BaseInputModule_t3800378272 * L_1 = EventSystem_get_currentInputModule_m1694913485(L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// UnityEngine.GameObject UnityEngine.EventSystems.BaseEventData::get_selectedObject()
+extern "C"  GameObject_t4012695102 * BaseEventData_get_selectedObject_m2003968484 (BaseEventData_t3547103726 * __this, const MethodInfo* method)
+{
+	{
+		EventSystem_t409518532 * L_0 = __this->get_m_EventSystem_1();
+		NullCheck(L_0);
+		GameObject_t4012695102 * L_1 = EventSystem_get_currentSelectedGameObject_m4236083783(L_0, /*hidden argument*/NULL);
+		return L_1;
 	}
 }
 // System.Void UnityEngine.EventSystems.BaseEventData::set_selectedObject(UnityEngine.GameObject)
@@ -5062,6 +5106,14 @@ extern "C"  void PointerEventData_set_lastPress_m1523028000 (PointerEventData_t3
 		return;
 	}
 }
+// UnityEngine.GameObject UnityEngine.EventSystems.PointerEventData::get_rawPointerPress()
+extern "C"  GameObject_t4012695102 * PointerEventData_get_rawPointerPress_m4005541676 (PointerEventData_t3205101634 * __this, const MethodInfo* method)
+{
+	{
+		GameObject_t4012695102 * L_0 = __this->get_U3CrawPointerPressU3Ek__BackingField_6();
+		return L_0;
+	}
+}
 // System.Void UnityEngine.EventSystems.PointerEventData::set_rawPointerPress(UnityEngine.GameObject)
 extern "C"  void PointerEventData_set_rawPointerPress_m505214625 (PointerEventData_t3205101634 * __this, GameObject_t4012695102 * ___value, const MethodInfo* method)
 {
@@ -5207,6 +5259,40 @@ extern "C"  void PointerEventData_set_pressPosition_m3056630579 (PointerEventDat
 		return;
 	}
 }
+// UnityEngine.Vector3 UnityEngine.EventSystems.PointerEventData::get_worldPosition()
+extern "C"  Vector3_t3525329789  PointerEventData_get_worldPosition_m489722276 (PointerEventData_t3205101634 * __this, const MethodInfo* method)
+{
+	{
+		Vector3_t3525329789  L_0 = __this->get_U3CworldPositionU3Ek__BackingField_15();
+		return L_0;
+	}
+}
+// System.Void UnityEngine.EventSystems.PointerEventData::set_worldPosition(UnityEngine.Vector3)
+extern "C"  void PointerEventData_set_worldPosition_m914315875 (PointerEventData_t3205101634 * __this, Vector3_t3525329789  ___value, const MethodInfo* method)
+{
+	{
+		Vector3_t3525329789  L_0 = ___value;
+		__this->set_U3CworldPositionU3Ek__BackingField_15(L_0);
+		return;
+	}
+}
+// UnityEngine.Vector3 UnityEngine.EventSystems.PointerEventData::get_worldNormal()
+extern "C"  Vector3_t3525329789  PointerEventData_get_worldNormal_m3470386274 (PointerEventData_t3205101634 * __this, const MethodInfo* method)
+{
+	{
+		Vector3_t3525329789  L_0 = __this->get_U3CworldNormalU3Ek__BackingField_16();
+		return L_0;
+	}
+}
+// System.Void UnityEngine.EventSystems.PointerEventData::set_worldNormal(UnityEngine.Vector3)
+extern "C"  void PointerEventData_set_worldNormal_m2060170853 (PointerEventData_t3205101634 * __this, Vector3_t3525329789  ___value, const MethodInfo* method)
+{
+	{
+		Vector3_t3525329789  L_0 = ___value;
+		__this->set_U3CworldNormalU3Ek__BackingField_16(L_0);
+		return;
+	}
+}
 // System.Single UnityEngine.EventSystems.PointerEventData::get_clickTime()
 extern "C"  float PointerEventData_get_clickTime_m2529670096 (PointerEventData_t3205101634 * __this, const MethodInfo* method)
 {
@@ -5316,6 +5402,18 @@ extern "C"  bool PointerEventData_IsPointerMoving_m1462208007 (PointerEventData_
 	memset(&V_0, 0, sizeof(V_0));
 	{
 		Vector2_t3525329788  L_0 = PointerEventData_get_delta_m4112242786(__this, /*hidden argument*/NULL);
+		V_0 = L_0;
+		float L_1 = Vector2_get_sqrMagnitude_m996072851((&V_0), /*hidden argument*/NULL);
+		return (bool)((((float)L_1) > ((float)(0.0f)))? 1 : 0);
+	}
+}
+// System.Boolean UnityEngine.EventSystems.PointerEventData::IsScrolling()
+extern "C"  bool PointerEventData_IsScrolling_m2052637201 (PointerEventData_t3205101634 * __this, const MethodInfo* method)
+{
+	Vector2_t3525329788  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Vector2_t3525329788  L_0 = PointerEventData_get_scrollDelta_m3602781717(__this, /*hidden argument*/NULL);
 		V_0 = L_0;
 		float L_1 = Vector2_get_sqrMagnitude_m996072851((&V_0), /*hidden argument*/NULL);
 		return (bool)((((float)L_1) > ((float)(0.0f)))? 1 : 0);
@@ -6628,6 +6726,104 @@ extern "C"  void MouseState__ctor_m2621211907 (MouseState_t2990183180 * __this, 
 		return;
 	}
 }
+// System.Boolean UnityEngine.EventSystems.PointerInputModule/MouseState::AnyPressesThisFrame()
+extern "C"  bool MouseState_AnyPressesThisFrame_m3921583709 (MouseState_t2990183180 * __this, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		V_0 = 0;
+		goto IL_0028;
+	}
+
+IL_0007:
+	{
+		List_1_t694330712 * L_0 = __this->get_m_TrackedButtons_0();
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		ButtonState_t4192339039 * L_2 = VirtFuncInvoker1< ButtonState_t4192339039 *, int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.EventSystems.PointerInputModule/ButtonState>::get_Item(System.Int32) */, L_0, L_1);
+		NullCheck(L_2);
+		MouseButtonEventData_t3739491085 * L_3 = ButtonState_get_eventData_m3874795698(L_2, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		bool L_4 = MouseButtonEventData_PressedThisFrame_m3377699805(L_3, /*hidden argument*/NULL);
+		if (!L_4)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		return (bool)1;
+	}
+
+IL_0024:
+	{
+		int32_t L_5 = V_0;
+		V_0 = ((int32_t)((int32_t)L_5+(int32_t)1));
+	}
+
+IL_0028:
+	{
+		int32_t L_6 = V_0;
+		List_1_t694330712 * L_7 = __this->get_m_TrackedButtons_0();
+		NullCheck(L_7);
+		int32_t L_8 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.EventSystems.PointerInputModule/ButtonState>::get_Count() */, L_7);
+		if ((((int32_t)L_6) < ((int32_t)L_8)))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return (bool)0;
+	}
+}
+// System.Boolean UnityEngine.EventSystems.PointerInputModule/MouseState::AnyReleasesThisFrame()
+extern "C"  bool MouseState_AnyReleasesThisFrame_m2672125158 (MouseState_t2990183180 * __this, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		V_0 = 0;
+		goto IL_0028;
+	}
+
+IL_0007:
+	{
+		List_1_t694330712 * L_0 = __this->get_m_TrackedButtons_0();
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		ButtonState_t4192339039 * L_2 = VirtFuncInvoker1< ButtonState_t4192339039 *, int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.EventSystems.PointerInputModule/ButtonState>::get_Item(System.Int32) */, L_0, L_1);
+		NullCheck(L_2);
+		MouseButtonEventData_t3739491085 * L_3 = ButtonState_get_eventData_m3874795698(L_2, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		bool L_4 = MouseButtonEventData_ReleasedThisFrame_m949274724(L_3, /*hidden argument*/NULL);
+		if (!L_4)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		return (bool)1;
+	}
+
+IL_0024:
+	{
+		int32_t L_5 = V_0;
+		V_0 = ((int32_t)((int32_t)L_5+(int32_t)1));
+	}
+
+IL_0028:
+	{
+		int32_t L_6 = V_0;
+		List_1_t694330712 * L_7 = __this->get_m_TrackedButtons_0();
+		NullCheck(L_7);
+		int32_t L_8 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.EventSystems.PointerInputModule/ButtonState>::get_Count() */, L_7);
+		if ((((int32_t)L_6) < ((int32_t)L_8)))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return (bool)0;
+	}
+}
 // UnityEngine.EventSystems.PointerInputModule/ButtonState UnityEngine.EventSystems.PointerInputModule/MouseState::GetButtonState(UnityEngine.EventSystems.PointerEventData/InputButton)
 extern TypeInfo* ButtonState_t4192339039_il2cpp_TypeInfo_var;
 extern TypeInfo* MouseButtonEventData_t3739491085_il2cpp_TypeInfo_var;
@@ -6901,6 +7097,26 @@ IL_001f:
 IL_0020:
 	{
 		return (bool)G_B3_0;
+	}
+}
+// System.Void UnityEngine.EventSystems.RaycastResult::Clear()
+extern "C"  void RaycastResult_Clear_m2117708874 (RaycastResult_t959898689 * __this, const MethodInfo* method)
+{
+	{
+		RaycastResult_set_gameObject_m726369707(__this, (GameObject_t4012695102 *)NULL, /*hidden argument*/NULL);
+		__this->set_module_1((BaseRaycaster_t3819875680 *)NULL);
+		__this->set_distance_2((0.0f));
+		__this->set_index_3((0.0f));
+		__this->set_depth_4(0);
+		__this->set_sortingLayer_5(0);
+		__this->set_sortingOrder_6(0);
+		Vector3_t3525329789  L_0 = Vector3_get_up_m4046647141(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_worldNormal_8(L_0);
+		Vector3_t3525329789  L_1 = Vector3_get_zero_m2017759730(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_worldPosition_7(L_1);
+		Vector2_t3525329788  L_2 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_screenPosition_9(L_2);
+		return;
 	}
 }
 // System.String UnityEngine.EventSystems.RaycastResult::ToString()
@@ -10017,12 +10233,30 @@ extern "C"  String_t* AnimationTriggers_get_normalTrigger_m326085791 (AnimationT
 		return L_0;
 	}
 }
+// System.Void UnityEngine.UI.AnimationTriggers::set_normalTrigger(System.String)
+extern "C"  void AnimationTriggers_set_normalTrigger_m2497706644 (AnimationTriggers_t513475400 * __this, String_t* ___value, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___value;
+		__this->set_m_NormalTrigger_4(L_0);
+		return;
+	}
+}
 // System.String UnityEngine.UI.AnimationTriggers::get_highlightedTrigger()
 extern "C"  String_t* AnimationTriggers_get_highlightedTrigger_m1862702265 (AnimationTriggers_t513475400 * __this, const MethodInfo* method)
 {
 	{
 		String_t* L_0 = __this->get_m_HighlightedTrigger_5();
 		return L_0;
+	}
+}
+// System.Void UnityEngine.UI.AnimationTriggers::set_highlightedTrigger(System.String)
+extern "C"  void AnimationTriggers_set_highlightedTrigger_m3911773112 (AnimationTriggers_t513475400 * __this, String_t* ___value, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___value;
+		__this->set_m_HighlightedTrigger_5(L_0);
+		return;
 	}
 }
 // System.String UnityEngine.UI.AnimationTriggers::get_pressedTrigger()
@@ -10033,12 +10267,30 @@ extern "C"  String_t* AnimationTriggers_get_pressedTrigger_m3081240394 (Animatio
 		return L_0;
 	}
 }
+// System.Void UnityEngine.UI.AnimationTriggers::set_pressedTrigger(System.String)
+extern "C"  void AnimationTriggers_set_pressedTrigger_m763343943 (AnimationTriggers_t513475400 * __this, String_t* ___value, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___value;
+		__this->set_m_PressedTrigger_6(L_0);
+		return;
+	}
+}
 // System.String UnityEngine.UI.AnimationTriggers::get_disabledTrigger()
 extern "C"  String_t* AnimationTriggers_get_disabledTrigger_m2031458154 (AnimationTriggers_t513475400 * __this, const MethodInfo* method)
 {
 	{
 		String_t* L_0 = __this->get_m_DisabledTrigger_7();
 		return L_0;
+	}
+}
+// System.Void UnityEngine.UI.AnimationTriggers::set_disabledTrigger(System.String)
+extern "C"  void AnimationTriggers_set_disabledTrigger_m472449385 (AnimationTriggers_t513475400 * __this, String_t* ___value, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___value;
+		__this->set_m_DisabledTrigger_7(L_0);
+		return;
 	}
 }
 // System.Void UnityEngine.UI.AspectRatioFitter::.ctor()
@@ -10622,6 +10874,14 @@ IL_0026:
 
 IL_0027:
 	{
+		return;
+	}
+}
+// System.Void UnityEngine.UI.BaseVertexEffect::.ctor()
+extern "C"  void BaseVertexEffect__ctor_m1287105989 (BaseVertexEffect_t381296623 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -12331,6 +12591,26 @@ extern "C"  void CanvasUpdateRegistry_RegisterCanvasElementForGraphicRebuild_m14
 		return;
 	}
 }
+// System.Boolean UnityEngine.UI.CanvasUpdateRegistry::TryRegisterCanvasElementForGraphicRebuild(UnityEngine.UI.ICanvasElement)
+extern TypeInfo* CanvasUpdateRegistry_t2591544775_il2cpp_TypeInfo_var;
+extern const uint32_t CanvasUpdateRegistry_TryRegisterCanvasElementForGraphicRebuild_m795284133_MetadataUsageId;
+extern "C"  bool CanvasUpdateRegistry_TryRegisterCanvasElementForGraphicRebuild_m795284133 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___element, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (CanvasUpdateRegistry_TryRegisterCanvasElementForGraphicRebuild_m795284133_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(CanvasUpdateRegistry_t2591544775_il2cpp_TypeInfo_var);
+		CanvasUpdateRegistry_t2591544775 * L_0 = CanvasUpdateRegistry_get_instance_m1077376867(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Il2CppObject * L_1 = ___element;
+		NullCheck(L_0);
+		bool L_2 = CanvasUpdateRegistry_InternalRegisterCanvasElementForGraphicRebuild_m1322910355(L_0, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
 // System.Boolean UnityEngine.UI.CanvasUpdateRegistry::InternalRegisterCanvasElementForGraphicRebuild(UnityEngine.UI.ICanvasElement)
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
 extern TypeInfo* Debug_t1588791936_il2cpp_TypeInfo_var;
@@ -12884,12 +13164,30 @@ extern "C"  Color_t1588175760  ColorBlock_get_normalColor_m1021113593 (ColorBloc
 		return L_0;
 	}
 }
+// System.Void UnityEngine.UI.ColorBlock::set_normalColor(UnityEngine.Color)
+extern "C"  void ColorBlock_set_normalColor_m2914277480 (ColorBlock_t2245020947 * __this, Color_t1588175760  ___value, const MethodInfo* method)
+{
+	{
+		Color_t1588175760  L_0 = ___value;
+		__this->set_m_NormalColor_0(L_0);
+		return;
+	}
+}
 // UnityEngine.Color UnityEngine.UI.ColorBlock::get_highlightedColor()
 extern "C"  Color_t1588175760  ColorBlock_get_highlightedColor_m2834784533 (ColorBlock_t2245020947 * __this, const MethodInfo* method)
 {
 	{
 		Color_t1588175760  L_0 = __this->get_m_HighlightedColor_1();
 		return L_0;
+	}
+}
+// System.Void UnityEngine.UI.ColorBlock::set_highlightedColor(UnityEngine.Color)
+extern "C"  void ColorBlock_set_highlightedColor_m4179336310 (ColorBlock_t2245020947 * __this, Color_t1588175760  ___value, const MethodInfo* method)
+{
+	{
+		Color_t1588175760  L_0 = ___value;
+		__this->set_m_HighlightedColor_1(L_0);
+		return;
 	}
 }
 // UnityEngine.Color UnityEngine.UI.ColorBlock::get_pressedColor()
@@ -12900,12 +13198,30 @@ extern "C"  Color_t1588175760  ColorBlock_get_pressedColor_m2014354534 (ColorBlo
 		return L_0;
 	}
 }
+// System.Void UnityEngine.UI.ColorBlock::set_pressedColor(UnityEngine.Color)
+extern "C"  void ColorBlock_set_pressedColor_m830240709 (ColorBlock_t2245020947 * __this, Color_t1588175760  ___value, const MethodInfo* method)
+{
+	{
+		Color_t1588175760  L_0 = ___value;
+		__this->set_m_PressedColor_2(L_0);
+		return;
+	}
+}
 // UnityEngine.Color UnityEngine.UI.ColorBlock::get_disabledColor()
 extern "C"  Color_t1588175760  ColorBlock_get_disabledColor_m2484721348 (ColorBlock_t2245020947 * __this, const MethodInfo* method)
 {
 	{
 		Color_t1588175760  L_0 = __this->get_m_DisabledColor_3();
 		return L_0;
+	}
+}
+// System.Void UnityEngine.UI.ColorBlock::set_disabledColor(UnityEngine.Color)
+extern "C"  void ColorBlock_set_disabledColor_m215468861 (ColorBlock_t2245020947 * __this, Color_t1588175760  ___value, const MethodInfo* method)
+{
+	{
+		Color_t1588175760  L_0 = ___value;
+		__this->set_m_DisabledColor_3(L_0);
+		return;
 	}
 }
 // System.Single UnityEngine.UI.ColorBlock::get_colorMultiplier()
@@ -13100,6 +13416,24 @@ extern "C"  int32_t ColorBlock_GetHashCode_m2259731448 (ColorBlock_t2245020947 *
 		NullCheck((ValueType_t4014882752 *)L_1);
 		int32_t L_2 = ValueType_GetHashCode_m3949669881((ValueType_t4014882752 *)L_1, /*hidden argument*/NULL);
 		return L_2;
+	}
+}
+// System.Boolean UnityEngine.UI.ColorBlock::op_Equality(UnityEngine.UI.ColorBlock,UnityEngine.UI.ColorBlock)
+extern "C"  bool ColorBlock_op_Equality_m1998893503 (Il2CppObject * __this /* static, unused */, ColorBlock_t2245020947  ___point1, ColorBlock_t2245020947  ___point2, const MethodInfo* method)
+{
+	{
+		ColorBlock_t2245020947  L_0 = ___point2;
+		bool L_1 = ColorBlock_Equals_m3761062129((&___point1), L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.Boolean UnityEngine.UI.ColorBlock::op_Inequality(UnityEngine.UI.ColorBlock,UnityEngine.UI.ColorBlock)
+extern "C"  bool ColorBlock_op_Inequality_m2751981882 (Il2CppObject * __this /* static, unused */, ColorBlock_t2245020947  ___point1, ColorBlock_t2245020947  ___point2, const MethodInfo* method)
+{
+	{
+		ColorBlock_t2245020947  L_0 = ___point2;
+		bool L_1 = ColorBlock_Equals_m3761062129((&___point1), L_0, /*hidden argument*/NULL);
+		return (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0);
 	}
 }
 // Conversion methods for marshalling of: UnityEngine.UI.ColorBlock
@@ -13912,6 +14246,1996 @@ extern "C"  void FloatTweenCallback__ctor_m2342804402 (FloatTweenCallback_t26709
 	{
 		UnityEvent_1__ctor_m1354608473(__this, /*hidden argument*/UnityEvent_1__ctor_m1354608473_MethodInfo_var);
 		return;
+	}
+}
+// System.Void UnityEngine.UI.DefaultControls::.cctor()
+extern TypeInfo* DefaultControls_t3717991936_il2cpp_TypeInfo_var;
+extern const uint32_t DefaultControls__cctor_m1303793449_MetadataUsageId;
+extern "C"  void DefaultControls__cctor_m1303793449 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DefaultControls__cctor_m1303793449_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Vector2_t3525329788  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Vector2__ctor_m1517109030(&L_0, (160.0f), (30.0f), /*hidden argument*/NULL);
+		((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->set_s_ThickElementSize_3(L_0);
+		Vector2_t3525329788  L_1;
+		memset(&L_1, 0, sizeof(L_1));
+		Vector2__ctor_m1517109030(&L_1, (160.0f), (20.0f), /*hidden argument*/NULL);
+		((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->set_s_ThinElementSize_4(L_1);
+		Vector2_t3525329788  L_2;
+		memset(&L_2, 0, sizeof(L_2));
+		Vector2__ctor_m1517109030(&L_2, (100.0f), (100.0f), /*hidden argument*/NULL);
+		((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->set_s_ImageElementSize_5(L_2);
+		Color_t1588175760  L_3;
+		memset(&L_3, 0, sizeof(L_3));
+		Color__ctor_m2252924356(&L_3, (1.0f), (1.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
+		((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->set_s_DefaultSelectableColor_6(L_3);
+		Color_t1588175760  L_4;
+		memset(&L_4, 0, sizeof(L_4));
+		Color__ctor_m2252924356(&L_4, (1.0f), (1.0f), (1.0f), (0.392f), /*hidden argument*/NULL);
+		((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->set_s_PanelColor_7(L_4);
+		Color_t1588175760  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		Color__ctor_m2252924356(&L_5, (0.196078435f), (0.196078435f), (0.196078435f), (1.0f), /*hidden argument*/NULL);
+		((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->set_s_TextColor_8(L_5);
+		return;
+	}
+}
+// UnityEngine.GameObject UnityEngine.UI.DefaultControls::CreateUIElementRoot(System.String,UnityEngine.Vector2)
+extern TypeInfo* GameObject_t4012695102_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisRectTransform_t3317474837_m3846759000_MethodInfo_var;
+extern const uint32_t DefaultControls_CreateUIElementRoot_m335662421_MetadataUsageId;
+extern "C"  GameObject_t4012695102 * DefaultControls_CreateUIElementRoot_m335662421 (Il2CppObject * __this /* static, unused */, String_t* ___name, Vector2_t3525329788  ___size, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DefaultControls_CreateUIElementRoot_m335662421_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	GameObject_t4012695102 * V_0 = NULL;
+	RectTransform_t3317474837 * V_1 = NULL;
+	{
+		String_t* L_0 = ___name;
+		GameObject_t4012695102 * L_1 = (GameObject_t4012695102 *)il2cpp_codegen_object_new(GameObject_t4012695102_il2cpp_TypeInfo_var);
+		GameObject__ctor_m3920833606(L_1, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		GameObject_t4012695102 * L_2 = V_0;
+		NullCheck(L_2);
+		RectTransform_t3317474837 * L_3 = GameObject_AddComponent_TisRectTransform_t3317474837_m3846759000(L_2, /*hidden argument*/GameObject_AddComponent_TisRectTransform_t3317474837_m3846759000_MethodInfo_var);
+		V_1 = L_3;
+		RectTransform_t3317474837 * L_4 = V_1;
+		Vector2_t3525329788  L_5 = ___size;
+		NullCheck(L_4);
+		RectTransform_set_sizeDelta_m1223846609(L_4, L_5, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_6 = V_0;
+		return L_6;
+	}
+}
+// UnityEngine.GameObject UnityEngine.UI.DefaultControls::CreateUIObject(System.String,UnityEngine.GameObject)
+extern TypeInfo* GameObject_t4012695102_il2cpp_TypeInfo_var;
+extern TypeInfo* DefaultControls_t3717991936_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisRectTransform_t3317474837_m3846759000_MethodInfo_var;
+extern const uint32_t DefaultControls_CreateUIObject_m1826457530_MetadataUsageId;
+extern "C"  GameObject_t4012695102 * DefaultControls_CreateUIObject_m1826457530 (Il2CppObject * __this /* static, unused */, String_t* ___name, GameObject_t4012695102 * ___parent, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DefaultControls_CreateUIObject_m1826457530_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	GameObject_t4012695102 * V_0 = NULL;
+	{
+		String_t* L_0 = ___name;
+		GameObject_t4012695102 * L_1 = (GameObject_t4012695102 *)il2cpp_codegen_object_new(GameObject_t4012695102_il2cpp_TypeInfo_var);
+		GameObject__ctor_m3920833606(L_1, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		GameObject_t4012695102 * L_2 = V_0;
+		NullCheck(L_2);
+		GameObject_AddComponent_TisRectTransform_t3317474837_m3846759000(L_2, /*hidden argument*/GameObject_AddComponent_TisRectTransform_t3317474837_m3846759000_MethodInfo_var);
+		GameObject_t4012695102 * L_3 = V_0;
+		GameObject_t4012695102 * L_4 = ___parent;
+		IL2CPP_RUNTIME_CLASS_INIT(DefaultControls_t3717991936_il2cpp_TypeInfo_var);
+		DefaultControls_SetParentAndAlign_m867848490(NULL /*static, unused*/, L_3, L_4, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Void UnityEngine.UI.DefaultControls::SetDefaultTextValues(UnityEngine.UI.Text)
+extern TypeInfo* DefaultControls_t3717991936_il2cpp_TypeInfo_var;
+extern const uint32_t DefaultControls_SetDefaultTextValues_m2676194036_MetadataUsageId;
+extern "C"  void DefaultControls_SetDefaultTextValues_m2676194036 (Il2CppObject * __this /* static, unused */, Text_t3286458198 * ___lbl, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DefaultControls_SetDefaultTextValues_m2676194036_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Text_t3286458198 * L_0 = ___lbl;
+		IL2CPP_RUNTIME_CLASS_INIT(DefaultControls_t3717991936_il2cpp_TypeInfo_var);
+		Color_t1588175760  L_1 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_TextColor_8();
+		NullCheck(L_0);
+		Graphic_set_color_m1311501487(L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.UI.DefaultControls::SetDefaultColorTransitionValues(UnityEngine.UI.Selectable)
+extern "C"  void DefaultControls_SetDefaultColorTransitionValues_m2995057500 (Il2CppObject * __this /* static, unused */, Selectable_t3621744255 * ___slider, const MethodInfo* method)
+{
+	ColorBlock_t2245020947  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		Selectable_t3621744255 * L_0 = ___slider;
+		NullCheck(L_0);
+		ColorBlock_t2245020947  L_1 = Selectable_get_colors_m2926475394(L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		Color_t1588175760  L_2;
+		memset(&L_2, 0, sizeof(L_2));
+		Color__ctor_m103496991(&L_2, (0.882f), (0.882f), (0.882f), /*hidden argument*/NULL);
+		ColorBlock_set_highlightedColor_m4179336310((&V_0), L_2, /*hidden argument*/NULL);
+		Color_t1588175760  L_3;
+		memset(&L_3, 0, sizeof(L_3));
+		Color__ctor_m103496991(&L_3, (0.698f), (0.698f), (0.698f), /*hidden argument*/NULL);
+		ColorBlock_set_pressedColor_m830240709((&V_0), L_3, /*hidden argument*/NULL);
+		Color_t1588175760  L_4;
+		memset(&L_4, 0, sizeof(L_4));
+		Color__ctor_m103496991(&L_4, (0.521f), (0.521f), (0.521f), /*hidden argument*/NULL);
+		ColorBlock_set_disabledColor_m215468861((&V_0), L_4, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.UI.DefaultControls::SetParentAndAlign(UnityEngine.GameObject,UnityEngine.GameObject)
+extern TypeInfo* DefaultControls_t3717991936_il2cpp_TypeInfo_var;
+extern const uint32_t DefaultControls_SetParentAndAlign_m867848490_MetadataUsageId;
+extern "C"  void DefaultControls_SetParentAndAlign_m867848490 (Il2CppObject * __this /* static, unused */, GameObject_t4012695102 * ___child, GameObject_t4012695102 * ___parent, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DefaultControls_SetParentAndAlign_m867848490_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		GameObject_t4012695102 * L_0 = ___parent;
+		bool L_1 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_0, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		return;
+	}
+
+IL_000d:
+	{
+		GameObject_t4012695102 * L_2 = ___child;
+		NullCheck(L_2);
+		Transform_t284553113 * L_3 = GameObject_get_transform_m1278640159(L_2, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_4 = ___parent;
+		NullCheck(L_4);
+		Transform_t284553113 * L_5 = GameObject_get_transform_m1278640159(L_4, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Transform_SetParent_m263985879(L_3, L_5, (bool)0, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_6 = ___child;
+		GameObject_t4012695102 * L_7 = ___parent;
+		NullCheck(L_7);
+		int32_t L_8 = GameObject_get_layer_m1648550306(L_7, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(DefaultControls_t3717991936_il2cpp_TypeInfo_var);
+		DefaultControls_SetLayerRecursively_m2948337421(NULL /*static, unused*/, L_6, L_8, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.UI.DefaultControls::SetLayerRecursively(UnityEngine.GameObject,System.Int32)
+extern TypeInfo* DefaultControls_t3717991936_il2cpp_TypeInfo_var;
+extern const uint32_t DefaultControls_SetLayerRecursively_m2948337421_MetadataUsageId;
+extern "C"  void DefaultControls_SetLayerRecursively_m2948337421 (Il2CppObject * __this /* static, unused */, GameObject_t4012695102 * ___go, int32_t ___layer, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DefaultControls_SetLayerRecursively_m2948337421_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Transform_t284553113 * V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		GameObject_t4012695102 * L_0 = ___go;
+		int32_t L_1 = ___layer;
+		NullCheck(L_0);
+		GameObject_set_layer_m1872241535(L_0, L_1, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_2 = ___go;
+		NullCheck(L_2);
+		Transform_t284553113 * L_3 = GameObject_get_transform_m1278640159(L_2, /*hidden argument*/NULL);
+		V_0 = L_3;
+		V_1 = 0;
+		goto IL_002b;
+	}
+
+IL_0015:
+	{
+		Transform_t284553113 * L_4 = V_0;
+		int32_t L_5 = V_1;
+		NullCheck(L_4);
+		Transform_t284553113 * L_6 = Transform_GetChild_m4040462992(L_4, L_5, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		GameObject_t4012695102 * L_7 = Component_get_gameObject_m1170635899(L_6, /*hidden argument*/NULL);
+		int32_t L_8 = ___layer;
+		IL2CPP_RUNTIME_CLASS_INIT(DefaultControls_t3717991936_il2cpp_TypeInfo_var);
+		DefaultControls_SetLayerRecursively_m2948337421(NULL /*static, unused*/, L_7, L_8, /*hidden argument*/NULL);
+		int32_t L_9 = V_1;
+		V_1 = ((int32_t)((int32_t)L_9+(int32_t)1));
+	}
+
+IL_002b:
+	{
+		int32_t L_10 = V_1;
+		Transform_t284553113 * L_11 = V_0;
+		NullCheck(L_11);
+		int32_t L_12 = Transform_get_childCount_m2107810675(L_11, /*hidden argument*/NULL);
+		if ((((int32_t)L_10) < ((int32_t)L_12)))
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		return;
+	}
+}
+// UnityEngine.GameObject UnityEngine.UI.DefaultControls::CreatePanel(UnityEngine.UI.DefaultControls/Resources)
+extern TypeInfo* DefaultControls_t3717991936_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral76880356;
+extern const uint32_t DefaultControls_CreatePanel_m131101809_MetadataUsageId;
+extern "C"  GameObject_t4012695102 * DefaultControls_CreatePanel_m131101809 (Il2CppObject * __this /* static, unused */, Resources_t20897285  ___resources, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DefaultControls_CreatePanel_m131101809_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	GameObject_t4012695102 * V_0 = NULL;
+	RectTransform_t3317474837 * V_1 = NULL;
+	Image_t3354615620 * V_2 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(DefaultControls_t3717991936_il2cpp_TypeInfo_var);
+		Vector2_t3525329788  L_0 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_ThickElementSize_3();
+		GameObject_t4012695102 * L_1 = DefaultControls_CreateUIElementRoot_m335662421(NULL /*static, unused*/, _stringLiteral76880356, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		GameObject_t4012695102 * L_2 = V_0;
+		NullCheck(L_2);
+		RectTransform_t3317474837 * L_3 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_2, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_1 = L_3;
+		RectTransform_t3317474837 * L_4 = V_1;
+		Vector2_t3525329788  L_5 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		RectTransform_set_anchorMin_m989253483(L_4, L_5, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_6 = V_1;
+		Vector2_t3525329788  L_7 = Vector2_get_one_m2767488832(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		RectTransform_set_anchorMax_m715345817(L_6, L_7, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_8 = V_1;
+		Vector2_t3525329788  L_9 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		RectTransform_set_anchoredPosition_m1498949997(L_8, L_9, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_10 = V_1;
+		Vector2_t3525329788  L_11 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		RectTransform_set_sizeDelta_m1223846609(L_10, L_11, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_12 = V_0;
+		NullCheck(L_12);
+		Image_t3354615620 * L_13 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_12, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_2 = L_13;
+		Image_t3354615620 * L_14 = V_2;
+		Sprite_t4006040370 * L_15 = (&___resources)->get_background_1();
+		NullCheck(L_14);
+		Image_set_sprite_m572551402(L_14, L_15, /*hidden argument*/NULL);
+		Image_t3354615620 * L_16 = V_2;
+		NullCheck(L_16);
+		Image_set_type_m3406009990(L_16, 1, /*hidden argument*/NULL);
+		Image_t3354615620 * L_17 = V_2;
+		Color_t1588175760  L_18 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_PanelColor_7();
+		NullCheck(L_17);
+		Graphic_set_color_m1311501487(L_17, L_18, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_19 = V_0;
+		return L_19;
+	}
+}
+// UnityEngine.GameObject UnityEngine.UI.DefaultControls::CreateButton(UnityEngine.UI.DefaultControls/Resources)
+extern TypeInfo* DefaultControls_t3717991936_il2cpp_TypeInfo_var;
+extern TypeInfo* GameObject_t4012695102_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisButton_t990034267_m2834709044_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisText_t3286458198_m3161596953_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2001146706;
+extern Il2CppCodeGenString* _stringLiteral2603341;
+extern const uint32_t DefaultControls_CreateButton_m2909407539_MetadataUsageId;
+extern "C"  GameObject_t4012695102 * DefaultControls_CreateButton_m2909407539 (Il2CppObject * __this /* static, unused */, Resources_t20897285  ___resources, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DefaultControls_CreateButton_m2909407539_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	GameObject_t4012695102 * V_0 = NULL;
+	GameObject_t4012695102 * V_1 = NULL;
+	Image_t3354615620 * V_2 = NULL;
+	Button_t990034267 * V_3 = NULL;
+	Text_t3286458198 * V_4 = NULL;
+	RectTransform_t3317474837 * V_5 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(DefaultControls_t3717991936_il2cpp_TypeInfo_var);
+		Vector2_t3525329788  L_0 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_ThickElementSize_3();
+		GameObject_t4012695102 * L_1 = DefaultControls_CreateUIElementRoot_m335662421(NULL /*static, unused*/, _stringLiteral2001146706, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		GameObject_t4012695102 * L_2 = (GameObject_t4012695102 *)il2cpp_codegen_object_new(GameObject_t4012695102_il2cpp_TypeInfo_var);
+		GameObject__ctor_m3920833606(L_2, _stringLiteral2603341, /*hidden argument*/NULL);
+		V_1 = L_2;
+		GameObject_t4012695102 * L_3 = V_1;
+		GameObject_t4012695102 * L_4 = V_0;
+		DefaultControls_SetParentAndAlign_m867848490(NULL /*static, unused*/, L_3, L_4, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_5 = V_0;
+		NullCheck(L_5);
+		Image_t3354615620 * L_6 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_5, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_2 = L_6;
+		Image_t3354615620 * L_7 = V_2;
+		Sprite_t4006040370 * L_8 = (&___resources)->get_standard_0();
+		NullCheck(L_7);
+		Image_set_sprite_m572551402(L_7, L_8, /*hidden argument*/NULL);
+		Image_t3354615620 * L_9 = V_2;
+		NullCheck(L_9);
+		Image_set_type_m3406009990(L_9, 1, /*hidden argument*/NULL);
+		Image_t3354615620 * L_10 = V_2;
+		Color_t1588175760  L_11 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_DefaultSelectableColor_6();
+		NullCheck(L_10);
+		Graphic_set_color_m1311501487(L_10, L_11, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_12 = V_0;
+		NullCheck(L_12);
+		Button_t990034267 * L_13 = GameObject_AddComponent_TisButton_t990034267_m2834709044(L_12, /*hidden argument*/GameObject_AddComponent_TisButton_t990034267_m2834709044_MethodInfo_var);
+		V_3 = L_13;
+		Button_t990034267 * L_14 = V_3;
+		DefaultControls_SetDefaultColorTransitionValues_m2995057500(NULL /*static, unused*/, L_14, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_15 = V_1;
+		NullCheck(L_15);
+		Text_t3286458198 * L_16 = GameObject_AddComponent_TisText_t3286458198_m3161596953(L_15, /*hidden argument*/GameObject_AddComponent_TisText_t3286458198_m3161596953_MethodInfo_var);
+		V_4 = L_16;
+		Text_t3286458198 * L_17 = V_4;
+		NullCheck(L_17);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_17, _stringLiteral2001146706);
+		Text_t3286458198 * L_18 = V_4;
+		NullCheck(L_18);
+		Text_set_alignment_m4246723817(L_18, 4, /*hidden argument*/NULL);
+		Text_t3286458198 * L_19 = V_4;
+		DefaultControls_SetDefaultTextValues_m2676194036(NULL /*static, unused*/, L_19, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_20 = V_1;
+		NullCheck(L_20);
+		RectTransform_t3317474837 * L_21 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_20, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_5 = L_21;
+		RectTransform_t3317474837 * L_22 = V_5;
+		Vector2_t3525329788  L_23 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_22);
+		RectTransform_set_anchorMin_m989253483(L_22, L_23, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_24 = V_5;
+		Vector2_t3525329788  L_25 = Vector2_get_one_m2767488832(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_24);
+		RectTransform_set_anchorMax_m715345817(L_24, L_25, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_26 = V_5;
+		Vector2_t3525329788  L_27 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_26);
+		RectTransform_set_sizeDelta_m1223846609(L_26, L_27, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_28 = V_0;
+		return L_28;
+	}
+}
+// UnityEngine.GameObject UnityEngine.UI.DefaultControls::CreateText(UnityEngine.UI.DefaultControls/Resources)
+extern TypeInfo* DefaultControls_t3717991936_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisText_t3286458198_m3161596953_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2603341;
+extern Il2CppCodeGenString* _stringLiteral1382836205;
+extern const uint32_t DefaultControls_CreateText_m414838766_MetadataUsageId;
+extern "C"  GameObject_t4012695102 * DefaultControls_CreateText_m414838766 (Il2CppObject * __this /* static, unused */, Resources_t20897285  ___resources, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DefaultControls_CreateText_m414838766_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	GameObject_t4012695102 * V_0 = NULL;
+	Text_t3286458198 * V_1 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(DefaultControls_t3717991936_il2cpp_TypeInfo_var);
+		Vector2_t3525329788  L_0 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_ThickElementSize_3();
+		GameObject_t4012695102 * L_1 = DefaultControls_CreateUIElementRoot_m335662421(NULL /*static, unused*/, _stringLiteral2603341, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		GameObject_t4012695102 * L_2 = V_0;
+		NullCheck(L_2);
+		Text_t3286458198 * L_3 = GameObject_AddComponent_TisText_t3286458198_m3161596953(L_2, /*hidden argument*/GameObject_AddComponent_TisText_t3286458198_m3161596953_MethodInfo_var);
+		V_1 = L_3;
+		Text_t3286458198 * L_4 = V_1;
+		NullCheck(L_4);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_4, _stringLiteral1382836205);
+		Text_t3286458198 * L_5 = V_1;
+		DefaultControls_SetDefaultTextValues_m2676194036(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_6 = V_0;
+		return L_6;
+	}
+}
+// UnityEngine.GameObject UnityEngine.UI.DefaultControls::CreateImage(UnityEngine.UI.DefaultControls/Resources)
+extern TypeInfo* DefaultControls_t3717991936_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral70760763;
+extern const uint32_t DefaultControls_CreateImage_m3925407496_MetadataUsageId;
+extern "C"  GameObject_t4012695102 * DefaultControls_CreateImage_m3925407496 (Il2CppObject * __this /* static, unused */, Resources_t20897285  ___resources, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DefaultControls_CreateImage_m3925407496_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	GameObject_t4012695102 * V_0 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(DefaultControls_t3717991936_il2cpp_TypeInfo_var);
+		Vector2_t3525329788  L_0 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_ImageElementSize_5();
+		GameObject_t4012695102 * L_1 = DefaultControls_CreateUIElementRoot_m335662421(NULL /*static, unused*/, _stringLiteral70760763, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		GameObject_t4012695102 * L_2 = V_0;
+		NullCheck(L_2);
+		GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_2, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		GameObject_t4012695102 * L_3 = V_0;
+		return L_3;
+	}
+}
+// UnityEngine.GameObject UnityEngine.UI.DefaultControls::CreateRawImage(UnityEngine.UI.DefaultControls/Resources)
+extern TypeInfo* DefaultControls_t3717991936_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisRawImage_t3831555132_m1228665331_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral547700275;
+extern const uint32_t DefaultControls_CreateRawImage_m383828052_MetadataUsageId;
+extern "C"  GameObject_t4012695102 * DefaultControls_CreateRawImage_m383828052 (Il2CppObject * __this /* static, unused */, Resources_t20897285  ___resources, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DefaultControls_CreateRawImage_m383828052_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	GameObject_t4012695102 * V_0 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(DefaultControls_t3717991936_il2cpp_TypeInfo_var);
+		Vector2_t3525329788  L_0 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_ImageElementSize_5();
+		GameObject_t4012695102 * L_1 = DefaultControls_CreateUIElementRoot_m335662421(NULL /*static, unused*/, _stringLiteral547700275, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		GameObject_t4012695102 * L_2 = V_0;
+		NullCheck(L_2);
+		GameObject_AddComponent_TisRawImage_t3831555132_m1228665331(L_2, /*hidden argument*/GameObject_AddComponent_TisRawImage_t3831555132_m1228665331_MethodInfo_var);
+		GameObject_t4012695102 * L_3 = V_0;
+		return L_3;
+	}
+}
+// UnityEngine.GameObject UnityEngine.UI.DefaultControls::CreateSlider(UnityEngine.UI.DefaultControls/Resources)
+extern TypeInfo* DefaultControls_t3717991936_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisSlider_t1468074762_m2027542053_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2479187201;
+extern Il2CppCodeGenString* _stringLiteral661270862;
+extern Il2CppCodeGenString* _stringLiteral828397834;
+extern Il2CppCodeGenString* _stringLiteral2189731;
+extern Il2CppCodeGenString* _stringLiteral4162714292;
+extern Il2CppCodeGenString* _stringLiteral2154256968;
+extern const uint32_t DefaultControls_CreateSlider_m3090010146_MetadataUsageId;
+extern "C"  GameObject_t4012695102 * DefaultControls_CreateSlider_m3090010146 (Il2CppObject * __this /* static, unused */, Resources_t20897285  ___resources, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DefaultControls_CreateSlider_m3090010146_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	GameObject_t4012695102 * V_0 = NULL;
+	GameObject_t4012695102 * V_1 = NULL;
+	GameObject_t4012695102 * V_2 = NULL;
+	GameObject_t4012695102 * V_3 = NULL;
+	GameObject_t4012695102 * V_4 = NULL;
+	GameObject_t4012695102 * V_5 = NULL;
+	Image_t3354615620 * V_6 = NULL;
+	RectTransform_t3317474837 * V_7 = NULL;
+	RectTransform_t3317474837 * V_8 = NULL;
+	Image_t3354615620 * V_9 = NULL;
+	RectTransform_t3317474837 * V_10 = NULL;
+	RectTransform_t3317474837 * V_11 = NULL;
+	Image_t3354615620 * V_12 = NULL;
+	RectTransform_t3317474837 * V_13 = NULL;
+	Slider_t1468074762 * V_14 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(DefaultControls_t3717991936_il2cpp_TypeInfo_var);
+		Vector2_t3525329788  L_0 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_ThinElementSize_4();
+		GameObject_t4012695102 * L_1 = DefaultControls_CreateUIElementRoot_m335662421(NULL /*static, unused*/, _stringLiteral2479187201, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		GameObject_t4012695102 * L_2 = V_0;
+		GameObject_t4012695102 * L_3 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral661270862, L_2, /*hidden argument*/NULL);
+		V_1 = L_3;
+		GameObject_t4012695102 * L_4 = V_0;
+		GameObject_t4012695102 * L_5 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral828397834, L_4, /*hidden argument*/NULL);
+		V_2 = L_5;
+		GameObject_t4012695102 * L_6 = V_2;
+		GameObject_t4012695102 * L_7 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral2189731, L_6, /*hidden argument*/NULL);
+		V_3 = L_7;
+		GameObject_t4012695102 * L_8 = V_0;
+		GameObject_t4012695102 * L_9 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral4162714292, L_8, /*hidden argument*/NULL);
+		V_4 = L_9;
+		GameObject_t4012695102 * L_10 = V_4;
+		GameObject_t4012695102 * L_11 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral2154256968, L_10, /*hidden argument*/NULL);
+		V_5 = L_11;
+		GameObject_t4012695102 * L_12 = V_1;
+		NullCheck(L_12);
+		Image_t3354615620 * L_13 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_12, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_6 = L_13;
+		Image_t3354615620 * L_14 = V_6;
+		Sprite_t4006040370 * L_15 = (&___resources)->get_background_1();
+		NullCheck(L_14);
+		Image_set_sprite_m572551402(L_14, L_15, /*hidden argument*/NULL);
+		Image_t3354615620 * L_16 = V_6;
+		NullCheck(L_16);
+		Image_set_type_m3406009990(L_16, 1, /*hidden argument*/NULL);
+		Image_t3354615620 * L_17 = V_6;
+		Color_t1588175760  L_18 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_DefaultSelectableColor_6();
+		NullCheck(L_17);
+		Graphic_set_color_m1311501487(L_17, L_18, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_19 = V_1;
+		NullCheck(L_19);
+		RectTransform_t3317474837 * L_20 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_19, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_7 = L_20;
+		RectTransform_t3317474837 * L_21 = V_7;
+		Vector2_t3525329788  L_22;
+		memset(&L_22, 0, sizeof(L_22));
+		Vector2__ctor_m1517109030(&L_22, (0.0f), (0.25f), /*hidden argument*/NULL);
+		NullCheck(L_21);
+		RectTransform_set_anchorMin_m989253483(L_21, L_22, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_23 = V_7;
+		Vector2_t3525329788  L_24;
+		memset(&L_24, 0, sizeof(L_24));
+		Vector2__ctor_m1517109030(&L_24, (1.0f), (0.75f), /*hidden argument*/NULL);
+		NullCheck(L_23);
+		RectTransform_set_anchorMax_m715345817(L_23, L_24, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_25 = V_7;
+		Vector2_t3525329788  L_26;
+		memset(&L_26, 0, sizeof(L_26));
+		Vector2__ctor_m1517109030(&L_26, (0.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_25);
+		RectTransform_set_sizeDelta_m1223846609(L_25, L_26, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_27 = V_2;
+		NullCheck(L_27);
+		RectTransform_t3317474837 * L_28 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_27, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_8 = L_28;
+		RectTransform_t3317474837 * L_29 = V_8;
+		Vector2_t3525329788  L_30;
+		memset(&L_30, 0, sizeof(L_30));
+		Vector2__ctor_m1517109030(&L_30, (0.0f), (0.25f), /*hidden argument*/NULL);
+		NullCheck(L_29);
+		RectTransform_set_anchorMin_m989253483(L_29, L_30, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_31 = V_8;
+		Vector2_t3525329788  L_32;
+		memset(&L_32, 0, sizeof(L_32));
+		Vector2__ctor_m1517109030(&L_32, (1.0f), (0.75f), /*hidden argument*/NULL);
+		NullCheck(L_31);
+		RectTransform_set_anchorMax_m715345817(L_31, L_32, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_33 = V_8;
+		Vector2_t3525329788  L_34;
+		memset(&L_34, 0, sizeof(L_34));
+		Vector2__ctor_m1517109030(&L_34, (-5.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_33);
+		RectTransform_set_anchoredPosition_m1498949997(L_33, L_34, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_35 = V_8;
+		Vector2_t3525329788  L_36;
+		memset(&L_36, 0, sizeof(L_36));
+		Vector2__ctor_m1517109030(&L_36, (-20.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_35);
+		RectTransform_set_sizeDelta_m1223846609(L_35, L_36, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_37 = V_3;
+		NullCheck(L_37);
+		Image_t3354615620 * L_38 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_37, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_9 = L_38;
+		Image_t3354615620 * L_39 = V_9;
+		Sprite_t4006040370 * L_40 = (&___resources)->get_standard_0();
+		NullCheck(L_39);
+		Image_set_sprite_m572551402(L_39, L_40, /*hidden argument*/NULL);
+		Image_t3354615620 * L_41 = V_9;
+		NullCheck(L_41);
+		Image_set_type_m3406009990(L_41, 1, /*hidden argument*/NULL);
+		Image_t3354615620 * L_42 = V_9;
+		Color_t1588175760  L_43 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_DefaultSelectableColor_6();
+		NullCheck(L_42);
+		Graphic_set_color_m1311501487(L_42, L_43, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_44 = V_3;
+		NullCheck(L_44);
+		RectTransform_t3317474837 * L_45 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_44, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_10 = L_45;
+		RectTransform_t3317474837 * L_46 = V_10;
+		Vector2_t3525329788  L_47;
+		memset(&L_47, 0, sizeof(L_47));
+		Vector2__ctor_m1517109030(&L_47, (10.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_46);
+		RectTransform_set_sizeDelta_m1223846609(L_46, L_47, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_48 = V_4;
+		NullCheck(L_48);
+		RectTransform_t3317474837 * L_49 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_48, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_11 = L_49;
+		RectTransform_t3317474837 * L_50 = V_11;
+		Vector2_t3525329788  L_51;
+		memset(&L_51, 0, sizeof(L_51));
+		Vector2__ctor_m1517109030(&L_51, (-20.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_50);
+		RectTransform_set_sizeDelta_m1223846609(L_50, L_51, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_52 = V_11;
+		Vector2_t3525329788  L_53;
+		memset(&L_53, 0, sizeof(L_53));
+		Vector2__ctor_m1517109030(&L_53, (0.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_52);
+		RectTransform_set_anchorMin_m989253483(L_52, L_53, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_54 = V_11;
+		Vector2_t3525329788  L_55;
+		memset(&L_55, 0, sizeof(L_55));
+		Vector2__ctor_m1517109030(&L_55, (1.0f), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_54);
+		RectTransform_set_anchorMax_m715345817(L_54, L_55, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_56 = V_5;
+		NullCheck(L_56);
+		Image_t3354615620 * L_57 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_56, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_12 = L_57;
+		Image_t3354615620 * L_58 = V_12;
+		Sprite_t4006040370 * L_59 = (&___resources)->get_knob_3();
+		NullCheck(L_58);
+		Image_set_sprite_m572551402(L_58, L_59, /*hidden argument*/NULL);
+		Image_t3354615620 * L_60 = V_12;
+		Color_t1588175760  L_61 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_DefaultSelectableColor_6();
+		NullCheck(L_60);
+		Graphic_set_color_m1311501487(L_60, L_61, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_62 = V_5;
+		NullCheck(L_62);
+		RectTransform_t3317474837 * L_63 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_62, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_13 = L_63;
+		RectTransform_t3317474837 * L_64 = V_13;
+		Vector2_t3525329788  L_65;
+		memset(&L_65, 0, sizeof(L_65));
+		Vector2__ctor_m1517109030(&L_65, (20.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_64);
+		RectTransform_set_sizeDelta_m1223846609(L_64, L_65, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_66 = V_0;
+		NullCheck(L_66);
+		Slider_t1468074762 * L_67 = GameObject_AddComponent_TisSlider_t1468074762_m2027542053(L_66, /*hidden argument*/GameObject_AddComponent_TisSlider_t1468074762_m2027542053_MethodInfo_var);
+		V_14 = L_67;
+		Slider_t1468074762 * L_68 = V_14;
+		GameObject_t4012695102 * L_69 = V_3;
+		NullCheck(L_69);
+		RectTransform_t3317474837 * L_70 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_69, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		NullCheck(L_68);
+		Slider_set_fillRect_m3297119715(L_68, L_70, /*hidden argument*/NULL);
+		Slider_t1468074762 * L_71 = V_14;
+		GameObject_t4012695102 * L_72 = V_5;
+		NullCheck(L_72);
+		RectTransform_t3317474837 * L_73 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_72, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		NullCheck(L_71);
+		Slider_set_handleRect_m3189108254(L_71, L_73, /*hidden argument*/NULL);
+		Slider_t1468074762 * L_74 = V_14;
+		Image_t3354615620 * L_75 = V_12;
+		NullCheck(L_74);
+		Selectable_set_targetGraphic_m54088136(L_74, L_75, /*hidden argument*/NULL);
+		Slider_t1468074762 * L_76 = V_14;
+		NullCheck(L_76);
+		Slider_set_direction_m1506600084(L_76, 0, /*hidden argument*/NULL);
+		Slider_t1468074762 * L_77 = V_14;
+		DefaultControls_SetDefaultColorTransitionValues_m2995057500(NULL /*static, unused*/, L_77, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_78 = V_0;
+		return L_78;
+	}
+}
+// UnityEngine.GameObject UnityEngine.UI.DefaultControls::CreateScrollbar(UnityEngine.UI.DefaultControls/Resources)
+extern TypeInfo* DefaultControls_t3717991936_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisScrollbar_t1410649103_m567367570_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2421761542;
+extern Il2CppCodeGenString* _stringLiteral1943864191;
+extern Il2CppCodeGenString* _stringLiteral2154256968;
+extern const uint32_t DefaultControls_CreateScrollbar_m2399849235_MetadataUsageId;
+extern "C"  GameObject_t4012695102 * DefaultControls_CreateScrollbar_m2399849235 (Il2CppObject * __this /* static, unused */, Resources_t20897285  ___resources, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DefaultControls_CreateScrollbar_m2399849235_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	GameObject_t4012695102 * V_0 = NULL;
+	GameObject_t4012695102 * V_1 = NULL;
+	GameObject_t4012695102 * V_2 = NULL;
+	Image_t3354615620 * V_3 = NULL;
+	Image_t3354615620 * V_4 = NULL;
+	RectTransform_t3317474837 * V_5 = NULL;
+	RectTransform_t3317474837 * V_6 = NULL;
+	Scrollbar_t1410649103 * V_7 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(DefaultControls_t3717991936_il2cpp_TypeInfo_var);
+		Vector2_t3525329788  L_0 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_ThinElementSize_4();
+		GameObject_t4012695102 * L_1 = DefaultControls_CreateUIElementRoot_m335662421(NULL /*static, unused*/, _stringLiteral2421761542, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		GameObject_t4012695102 * L_2 = V_0;
+		GameObject_t4012695102 * L_3 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral1943864191, L_2, /*hidden argument*/NULL);
+		V_1 = L_3;
+		GameObject_t4012695102 * L_4 = V_1;
+		GameObject_t4012695102 * L_5 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral2154256968, L_4, /*hidden argument*/NULL);
+		V_2 = L_5;
+		GameObject_t4012695102 * L_6 = V_0;
+		NullCheck(L_6);
+		Image_t3354615620 * L_7 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_6, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_3 = L_7;
+		Image_t3354615620 * L_8 = V_3;
+		Sprite_t4006040370 * L_9 = (&___resources)->get_background_1();
+		NullCheck(L_8);
+		Image_set_sprite_m572551402(L_8, L_9, /*hidden argument*/NULL);
+		Image_t3354615620 * L_10 = V_3;
+		NullCheck(L_10);
+		Image_set_type_m3406009990(L_10, 1, /*hidden argument*/NULL);
+		Image_t3354615620 * L_11 = V_3;
+		Color_t1588175760  L_12 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_DefaultSelectableColor_6();
+		NullCheck(L_11);
+		Graphic_set_color_m1311501487(L_11, L_12, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_13 = V_2;
+		NullCheck(L_13);
+		Image_t3354615620 * L_14 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_13, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_4 = L_14;
+		Image_t3354615620 * L_15 = V_4;
+		Sprite_t4006040370 * L_16 = (&___resources)->get_standard_0();
+		NullCheck(L_15);
+		Image_set_sprite_m572551402(L_15, L_16, /*hidden argument*/NULL);
+		Image_t3354615620 * L_17 = V_4;
+		NullCheck(L_17);
+		Image_set_type_m3406009990(L_17, 1, /*hidden argument*/NULL);
+		Image_t3354615620 * L_18 = V_4;
+		Color_t1588175760  L_19 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_DefaultSelectableColor_6();
+		NullCheck(L_18);
+		Graphic_set_color_m1311501487(L_18, L_19, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_20 = V_1;
+		NullCheck(L_20);
+		RectTransform_t3317474837 * L_21 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_20, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_5 = L_21;
+		RectTransform_t3317474837 * L_22 = V_5;
+		Vector2_t3525329788  L_23;
+		memset(&L_23, 0, sizeof(L_23));
+		Vector2__ctor_m1517109030(&L_23, (-20.0f), (-20.0f), /*hidden argument*/NULL);
+		NullCheck(L_22);
+		RectTransform_set_sizeDelta_m1223846609(L_22, L_23, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_24 = V_5;
+		Vector2_t3525329788  L_25 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_24);
+		RectTransform_set_anchorMin_m989253483(L_24, L_25, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_26 = V_5;
+		Vector2_t3525329788  L_27 = Vector2_get_one_m2767488832(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_26);
+		RectTransform_set_anchorMax_m715345817(L_26, L_27, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_28 = V_2;
+		NullCheck(L_28);
+		RectTransform_t3317474837 * L_29 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_28, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_6 = L_29;
+		RectTransform_t3317474837 * L_30 = V_6;
+		Vector2_t3525329788  L_31;
+		memset(&L_31, 0, sizeof(L_31));
+		Vector2__ctor_m1517109030(&L_31, (20.0f), (20.0f), /*hidden argument*/NULL);
+		NullCheck(L_30);
+		RectTransform_set_sizeDelta_m1223846609(L_30, L_31, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_32 = V_0;
+		NullCheck(L_32);
+		Scrollbar_t1410649103 * L_33 = GameObject_AddComponent_TisScrollbar_t1410649103_m567367570(L_32, /*hidden argument*/GameObject_AddComponent_TisScrollbar_t1410649103_m567367570_MethodInfo_var);
+		V_7 = L_33;
+		Scrollbar_t1410649103 * L_34 = V_7;
+		RectTransform_t3317474837 * L_35 = V_6;
+		NullCheck(L_34);
+		Scrollbar_set_handleRect_m2375555625(L_34, L_35, /*hidden argument*/NULL);
+		Scrollbar_t1410649103 * L_36 = V_7;
+		Image_t3354615620 * L_37 = V_4;
+		NullCheck(L_36);
+		Selectable_set_targetGraphic_m54088136(L_36, L_37, /*hidden argument*/NULL);
+		Scrollbar_t1410649103 * L_38 = V_7;
+		DefaultControls_SetDefaultColorTransitionValues_m2995057500(NULL /*static, unused*/, L_38, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_39 = V_0;
+		return L_39;
+	}
+}
+// UnityEngine.GameObject UnityEngine.UI.DefaultControls::CreateToggle(UnityEngine.UI.DefaultControls/Resources)
+extern TypeInfo* DefaultControls_t3717991936_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisToggle_t1499417981_m3765476050_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisText_t3286458198_m3161596953_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2510530420;
+extern Il2CppCodeGenString* _stringLiteral661270862;
+extern Il2CppCodeGenString* _stringLiteral2403289013;
+extern Il2CppCodeGenString* _stringLiteral73174740;
+extern const uint32_t DefaultControls_CreateToggle_m1602114261_MetadataUsageId;
+extern "C"  GameObject_t4012695102 * DefaultControls_CreateToggle_m1602114261 (Il2CppObject * __this /* static, unused */, Resources_t20897285  ___resources, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DefaultControls_CreateToggle_m1602114261_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	GameObject_t4012695102 * V_0 = NULL;
+	GameObject_t4012695102 * V_1 = NULL;
+	GameObject_t4012695102 * V_2 = NULL;
+	GameObject_t4012695102 * V_3 = NULL;
+	Toggle_t1499417981 * V_4 = NULL;
+	Image_t3354615620 * V_5 = NULL;
+	Image_t3354615620 * V_6 = NULL;
+	Text_t3286458198 * V_7 = NULL;
+	RectTransform_t3317474837 * V_8 = NULL;
+	RectTransform_t3317474837 * V_9 = NULL;
+	RectTransform_t3317474837 * V_10 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(DefaultControls_t3717991936_il2cpp_TypeInfo_var);
+		Vector2_t3525329788  L_0 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_ThinElementSize_4();
+		GameObject_t4012695102 * L_1 = DefaultControls_CreateUIElementRoot_m335662421(NULL /*static, unused*/, _stringLiteral2510530420, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		GameObject_t4012695102 * L_2 = V_0;
+		GameObject_t4012695102 * L_3 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral661270862, L_2, /*hidden argument*/NULL);
+		V_1 = L_3;
+		GameObject_t4012695102 * L_4 = V_1;
+		GameObject_t4012695102 * L_5 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral2403289013, L_4, /*hidden argument*/NULL);
+		V_2 = L_5;
+		GameObject_t4012695102 * L_6 = V_0;
+		GameObject_t4012695102 * L_7 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral73174740, L_6, /*hidden argument*/NULL);
+		V_3 = L_7;
+		GameObject_t4012695102 * L_8 = V_0;
+		NullCheck(L_8);
+		Toggle_t1499417981 * L_9 = GameObject_AddComponent_TisToggle_t1499417981_m3765476050(L_8, /*hidden argument*/GameObject_AddComponent_TisToggle_t1499417981_m3765476050_MethodInfo_var);
+		V_4 = L_9;
+		Toggle_t1499417981 * L_10 = V_4;
+		NullCheck(L_10);
+		Toggle_set_isOn_m3467664234(L_10, (bool)1, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_11 = V_1;
+		NullCheck(L_11);
+		Image_t3354615620 * L_12 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_11, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_5 = L_12;
+		Image_t3354615620 * L_13 = V_5;
+		Sprite_t4006040370 * L_14 = (&___resources)->get_standard_0();
+		NullCheck(L_13);
+		Image_set_sprite_m572551402(L_13, L_14, /*hidden argument*/NULL);
+		Image_t3354615620 * L_15 = V_5;
+		NullCheck(L_15);
+		Image_set_type_m3406009990(L_15, 1, /*hidden argument*/NULL);
+		Image_t3354615620 * L_16 = V_5;
+		Color_t1588175760  L_17 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_DefaultSelectableColor_6();
+		NullCheck(L_16);
+		Graphic_set_color_m1311501487(L_16, L_17, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_18 = V_2;
+		NullCheck(L_18);
+		Image_t3354615620 * L_19 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_18, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_6 = L_19;
+		Image_t3354615620 * L_20 = V_6;
+		Sprite_t4006040370 * L_21 = (&___resources)->get_checkmark_4();
+		NullCheck(L_20);
+		Image_set_sprite_m572551402(L_20, L_21, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_22 = V_3;
+		NullCheck(L_22);
+		Text_t3286458198 * L_23 = GameObject_AddComponent_TisText_t3286458198_m3161596953(L_22, /*hidden argument*/GameObject_AddComponent_TisText_t3286458198_m3161596953_MethodInfo_var);
+		V_7 = L_23;
+		Text_t3286458198 * L_24 = V_7;
+		NullCheck(L_24);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_24, _stringLiteral2510530420);
+		Text_t3286458198 * L_25 = V_7;
+		DefaultControls_SetDefaultTextValues_m2676194036(NULL /*static, unused*/, L_25, /*hidden argument*/NULL);
+		Toggle_t1499417981 * L_26 = V_4;
+		Image_t3354615620 * L_27 = V_6;
+		NullCheck(L_26);
+		L_26->set_graphic_17(L_27);
+		Toggle_t1499417981 * L_28 = V_4;
+		Image_t3354615620 * L_29 = V_5;
+		NullCheck(L_28);
+		Selectable_set_targetGraphic_m54088136(L_28, L_29, /*hidden argument*/NULL);
+		Toggle_t1499417981 * L_30 = V_4;
+		DefaultControls_SetDefaultColorTransitionValues_m2995057500(NULL /*static, unused*/, L_30, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_31 = V_1;
+		NullCheck(L_31);
+		RectTransform_t3317474837 * L_32 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_31, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_8 = L_32;
+		RectTransform_t3317474837 * L_33 = V_8;
+		Vector2_t3525329788  L_34;
+		memset(&L_34, 0, sizeof(L_34));
+		Vector2__ctor_m1517109030(&L_34, (0.0f), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_33);
+		RectTransform_set_anchorMin_m989253483(L_33, L_34, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_35 = V_8;
+		Vector2_t3525329788  L_36;
+		memset(&L_36, 0, sizeof(L_36));
+		Vector2__ctor_m1517109030(&L_36, (0.0f), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_35);
+		RectTransform_set_anchorMax_m715345817(L_35, L_36, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_37 = V_8;
+		Vector2_t3525329788  L_38;
+		memset(&L_38, 0, sizeof(L_38));
+		Vector2__ctor_m1517109030(&L_38, (10.0f), (-10.0f), /*hidden argument*/NULL);
+		NullCheck(L_37);
+		RectTransform_set_anchoredPosition_m1498949997(L_37, L_38, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_39 = V_8;
+		Vector2_t3525329788  L_40;
+		memset(&L_40, 0, sizeof(L_40));
+		Vector2__ctor_m1517109030(&L_40, (20.0f), (20.0f), /*hidden argument*/NULL);
+		NullCheck(L_39);
+		RectTransform_set_sizeDelta_m1223846609(L_39, L_40, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_41 = V_2;
+		NullCheck(L_41);
+		RectTransform_t3317474837 * L_42 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_41, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_9 = L_42;
+		RectTransform_t3317474837 * L_43 = V_9;
+		Vector2_t3525329788  L_44;
+		memset(&L_44, 0, sizeof(L_44));
+		Vector2__ctor_m1517109030(&L_44, (0.5f), (0.5f), /*hidden argument*/NULL);
+		NullCheck(L_43);
+		RectTransform_set_anchorMin_m989253483(L_43, L_44, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_45 = V_9;
+		Vector2_t3525329788  L_46;
+		memset(&L_46, 0, sizeof(L_46));
+		Vector2__ctor_m1517109030(&L_46, (0.5f), (0.5f), /*hidden argument*/NULL);
+		NullCheck(L_45);
+		RectTransform_set_anchorMax_m715345817(L_45, L_46, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_47 = V_9;
+		Vector2_t3525329788  L_48 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_47);
+		RectTransform_set_anchoredPosition_m1498949997(L_47, L_48, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_49 = V_9;
+		Vector2_t3525329788  L_50;
+		memset(&L_50, 0, sizeof(L_50));
+		Vector2__ctor_m1517109030(&L_50, (20.0f), (20.0f), /*hidden argument*/NULL);
+		NullCheck(L_49);
+		RectTransform_set_sizeDelta_m1223846609(L_49, L_50, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_51 = V_3;
+		NullCheck(L_51);
+		RectTransform_t3317474837 * L_52 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_51, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_10 = L_52;
+		RectTransform_t3317474837 * L_53 = V_10;
+		Vector2_t3525329788  L_54;
+		memset(&L_54, 0, sizeof(L_54));
+		Vector2__ctor_m1517109030(&L_54, (0.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_53);
+		RectTransform_set_anchorMin_m989253483(L_53, L_54, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_55 = V_10;
+		Vector2_t3525329788  L_56;
+		memset(&L_56, 0, sizeof(L_56));
+		Vector2__ctor_m1517109030(&L_56, (1.0f), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_55);
+		RectTransform_set_anchorMax_m715345817(L_55, L_56, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_57 = V_10;
+		Vector2_t3525329788  L_58;
+		memset(&L_58, 0, sizeof(L_58));
+		Vector2__ctor_m1517109030(&L_58, (23.0f), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_57);
+		RectTransform_set_offsetMin_m951793481(L_57, L_58, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_59 = V_10;
+		Vector2_t3525329788  L_60;
+		memset(&L_60, 0, sizeof(L_60));
+		Vector2__ctor_m1517109030(&L_60, (-5.0f), (-2.0f), /*hidden argument*/NULL);
+		NullCheck(L_59);
+		RectTransform_set_offsetMax_m677885815(L_59, L_60, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_61 = V_0;
+		return L_61;
+	}
+}
+// UnityEngine.GameObject UnityEngine.UI.DefaultControls::CreateInputField(UnityEngine.UI.DefaultControls/Resources)
+extern TypeInfo* DefaultControls_t3717991936_il2cpp_TypeInfo_var;
+extern TypeInfo* String_t_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisInputField_t2345609593_m1532989910_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisText_t3286458198_m3161596953_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3356722032;
+extern Il2CppCodeGenString* _stringLiteral2266115411;
+extern Il2CppCodeGenString* _stringLiteral2603341;
+extern Il2CppCodeGenString* _stringLiteral509361337;
+extern const uint32_t DefaultControls_CreateInputField_m3813899985_MetadataUsageId;
+extern "C"  GameObject_t4012695102 * DefaultControls_CreateInputField_m3813899985 (Il2CppObject * __this /* static, unused */, Resources_t20897285  ___resources, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DefaultControls_CreateInputField_m3813899985_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	GameObject_t4012695102 * V_0 = NULL;
+	GameObject_t4012695102 * V_1 = NULL;
+	GameObject_t4012695102 * V_2 = NULL;
+	Image_t3354615620 * V_3 = NULL;
+	InputField_t2345609593 * V_4 = NULL;
+	Text_t3286458198 * V_5 = NULL;
+	Text_t3286458198 * V_6 = NULL;
+	Color_t1588175760  V_7;
+	memset(&V_7, 0, sizeof(V_7));
+	RectTransform_t3317474837 * V_8 = NULL;
+	RectTransform_t3317474837 * V_9 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(DefaultControls_t3717991936_il2cpp_TypeInfo_var);
+		Vector2_t3525329788  L_0 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_ThickElementSize_3();
+		GameObject_t4012695102 * L_1 = DefaultControls_CreateUIElementRoot_m335662421(NULL /*static, unused*/, _stringLiteral3356722032, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		GameObject_t4012695102 * L_2 = V_0;
+		GameObject_t4012695102 * L_3 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral2266115411, L_2, /*hidden argument*/NULL);
+		V_1 = L_3;
+		GameObject_t4012695102 * L_4 = V_0;
+		GameObject_t4012695102 * L_5 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral2603341, L_4, /*hidden argument*/NULL);
+		V_2 = L_5;
+		GameObject_t4012695102 * L_6 = V_0;
+		NullCheck(L_6);
+		Image_t3354615620 * L_7 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_6, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_3 = L_7;
+		Image_t3354615620 * L_8 = V_3;
+		Sprite_t4006040370 * L_9 = (&___resources)->get_inputField_2();
+		NullCheck(L_8);
+		Image_set_sprite_m572551402(L_8, L_9, /*hidden argument*/NULL);
+		Image_t3354615620 * L_10 = V_3;
+		NullCheck(L_10);
+		Image_set_type_m3406009990(L_10, 1, /*hidden argument*/NULL);
+		Image_t3354615620 * L_11 = V_3;
+		Color_t1588175760  L_12 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_DefaultSelectableColor_6();
+		NullCheck(L_11);
+		Graphic_set_color_m1311501487(L_11, L_12, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_13 = V_0;
+		NullCheck(L_13);
+		InputField_t2345609593 * L_14 = GameObject_AddComponent_TisInputField_t2345609593_m1532989910(L_13, /*hidden argument*/GameObject_AddComponent_TisInputField_t2345609593_m1532989910_MethodInfo_var);
+		V_4 = L_14;
+		InputField_t2345609593 * L_15 = V_4;
+		DefaultControls_SetDefaultColorTransitionValues_m2995057500(NULL /*static, unused*/, L_15, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_16 = V_2;
+		NullCheck(L_16);
+		Text_t3286458198 * L_17 = GameObject_AddComponent_TisText_t3286458198_m3161596953(L_16, /*hidden argument*/GameObject_AddComponent_TisText_t3286458198_m3161596953_MethodInfo_var);
+		V_5 = L_17;
+		Text_t3286458198 * L_18 = V_5;
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_19 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		NullCheck(L_18);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_18, L_19);
+		Text_t3286458198 * L_20 = V_5;
+		NullCheck(L_20);
+		Text_set_supportRichText_m1299469806(L_20, (bool)0, /*hidden argument*/NULL);
+		Text_t3286458198 * L_21 = V_5;
+		DefaultControls_SetDefaultTextValues_m2676194036(NULL /*static, unused*/, L_21, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_22 = V_1;
+		NullCheck(L_22);
+		Text_t3286458198 * L_23 = GameObject_AddComponent_TisText_t3286458198_m3161596953(L_22, /*hidden argument*/GameObject_AddComponent_TisText_t3286458198_m3161596953_MethodInfo_var);
+		V_6 = L_23;
+		Text_t3286458198 * L_24 = V_6;
+		NullCheck(L_24);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_24, _stringLiteral509361337);
+		Text_t3286458198 * L_25 = V_6;
+		NullCheck(L_25);
+		Text_set_fontStyle_m2882242342(L_25, 2, /*hidden argument*/NULL);
+		Text_t3286458198 * L_26 = V_5;
+		NullCheck(L_26);
+		Color_t1588175760  L_27 = Graphic_get_color_m2048831972(L_26, /*hidden argument*/NULL);
+		V_7 = L_27;
+		Color_t1588175760 * L_28 = (&V_7);
+		float L_29 = L_28->get_a_3();
+		L_28->set_a_3(((float)((float)L_29*(float)(0.5f))));
+		Text_t3286458198 * L_30 = V_6;
+		Color_t1588175760  L_31 = V_7;
+		NullCheck(L_30);
+		Graphic_set_color_m1311501487(L_30, L_31, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_32 = V_2;
+		NullCheck(L_32);
+		RectTransform_t3317474837 * L_33 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_32, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_8 = L_33;
+		RectTransform_t3317474837 * L_34 = V_8;
+		Vector2_t3525329788  L_35 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_34);
+		RectTransform_set_anchorMin_m989253483(L_34, L_35, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_36 = V_8;
+		Vector2_t3525329788  L_37 = Vector2_get_one_m2767488832(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_36);
+		RectTransform_set_anchorMax_m715345817(L_36, L_37, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_38 = V_8;
+		Vector2_t3525329788  L_39 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_38);
+		RectTransform_set_sizeDelta_m1223846609(L_38, L_39, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_40 = V_8;
+		Vector2_t3525329788  L_41;
+		memset(&L_41, 0, sizeof(L_41));
+		Vector2__ctor_m1517109030(&L_41, (10.0f), (6.0f), /*hidden argument*/NULL);
+		NullCheck(L_40);
+		RectTransform_set_offsetMin_m951793481(L_40, L_41, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_42 = V_8;
+		Vector2_t3525329788  L_43;
+		memset(&L_43, 0, sizeof(L_43));
+		Vector2__ctor_m1517109030(&L_43, (-10.0f), (-7.0f), /*hidden argument*/NULL);
+		NullCheck(L_42);
+		RectTransform_set_offsetMax_m677885815(L_42, L_43, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_44 = V_1;
+		NullCheck(L_44);
+		RectTransform_t3317474837 * L_45 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_44, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_9 = L_45;
+		RectTransform_t3317474837 * L_46 = V_9;
+		Vector2_t3525329788  L_47 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_46);
+		RectTransform_set_anchorMin_m989253483(L_46, L_47, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_48 = V_9;
+		Vector2_t3525329788  L_49 = Vector2_get_one_m2767488832(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_48);
+		RectTransform_set_anchorMax_m715345817(L_48, L_49, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_50 = V_9;
+		Vector2_t3525329788  L_51 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_50);
+		RectTransform_set_sizeDelta_m1223846609(L_50, L_51, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_52 = V_9;
+		Vector2_t3525329788  L_53;
+		memset(&L_53, 0, sizeof(L_53));
+		Vector2__ctor_m1517109030(&L_53, (10.0f), (6.0f), /*hidden argument*/NULL);
+		NullCheck(L_52);
+		RectTransform_set_offsetMin_m951793481(L_52, L_53, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_54 = V_9;
+		Vector2_t3525329788  L_55;
+		memset(&L_55, 0, sizeof(L_55));
+		Vector2__ctor_m1517109030(&L_55, (-10.0f), (-7.0f), /*hidden argument*/NULL);
+		NullCheck(L_54);
+		RectTransform_set_offsetMax_m677885815(L_54, L_55, /*hidden argument*/NULL);
+		InputField_t2345609593 * L_56 = V_4;
+		Text_t3286458198 * L_57 = V_5;
+		NullCheck(L_56);
+		InputField_set_textComponent_m4116377302(L_56, L_57, /*hidden argument*/NULL);
+		InputField_t2345609593 * L_58 = V_4;
+		Text_t3286458198 * L_59 = V_6;
+		NullCheck(L_58);
+		InputField_set_placeholder_m1981544106(L_58, L_59, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_60 = V_0;
+		return L_60;
+	}
+}
+// UnityEngine.GameObject UnityEngine.UI.DefaultControls::CreateDropdown(UnityEngine.UI.DefaultControls/Resources)
+extern TypeInfo* DefaultControls_t3717991936_il2cpp_TypeInfo_var;
+extern TypeInfo* RectTransform_t3317474837_il2cpp_TypeInfo_var;
+extern TypeInfo* OptionData_t3366553055_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisScrollbar_t1410649103_m179289597_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisText_t3286458198_m3161596953_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisToggle_t1499417981_m3765476050_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisScrollRect_t1048578170_m3490629429_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisMask_t3286245653_m1124636154_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisDropdown_t2916437562_m3413532469_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3927550001;
+extern Il2CppCodeGenString* _stringLiteral73174740;
+extern Il2CppCodeGenString* _stringLiteral63538153;
+extern Il2CppCodeGenString* _stringLiteral3038064794;
+extern Il2CppCodeGenString* _stringLiteral1261329606;
+extern Il2CppCodeGenString* _stringLiteral2616183897;
+extern Il2CppCodeGenString* _stringLiteral2289459;
+extern Il2CppCodeGenString* _stringLiteral476458075;
+extern Il2CppCodeGenString* _stringLiteral42022664;
+extern Il2CppCodeGenString* _stringLiteral2496208807;
+extern Il2CppCodeGenString* _stringLiteral2421761542;
+extern Il2CppCodeGenString* _stringLiteral4280592246;
+extern Il2CppCodeGenString* _stringLiteral4280592247;
+extern Il2CppCodeGenString* _stringLiteral4280592248;
+extern const uint32_t DefaultControls_CreateDropdown_m481152210_MetadataUsageId;
+extern "C"  GameObject_t4012695102 * DefaultControls_CreateDropdown_m481152210 (Il2CppObject * __this /* static, unused */, Resources_t20897285  ___resources, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DefaultControls_CreateDropdown_m481152210_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	GameObject_t4012695102 * V_0 = NULL;
+	GameObject_t4012695102 * V_1 = NULL;
+	GameObject_t4012695102 * V_2 = NULL;
+	GameObject_t4012695102 * V_3 = NULL;
+	GameObject_t4012695102 * V_4 = NULL;
+	GameObject_t4012695102 * V_5 = NULL;
+	GameObject_t4012695102 * V_6 = NULL;
+	GameObject_t4012695102 * V_7 = NULL;
+	GameObject_t4012695102 * V_8 = NULL;
+	GameObject_t4012695102 * V_9 = NULL;
+	GameObject_t4012695102 * V_10 = NULL;
+	Scrollbar_t1410649103 * V_11 = NULL;
+	RectTransform_t3317474837 * V_12 = NULL;
+	Text_t3286458198 * V_13 = NULL;
+	Image_t3354615620 * V_14 = NULL;
+	Image_t3354615620 * V_15 = NULL;
+	Toggle_t1499417981 * V_16 = NULL;
+	Image_t3354615620 * V_17 = NULL;
+	ScrollRect_t1048578170 * V_18 = NULL;
+	Mask_t3286245653 * V_19 = NULL;
+	Image_t3354615620 * V_20 = NULL;
+	Text_t3286458198 * V_21 = NULL;
+	Image_t3354615620 * V_22 = NULL;
+	Image_t3354615620 * V_23 = NULL;
+	Dropdown_t2916437562 * V_24 = NULL;
+	RectTransform_t3317474837 * V_25 = NULL;
+	RectTransform_t3317474837 * V_26 = NULL;
+	RectTransform_t3317474837 * V_27 = NULL;
+	RectTransform_t3317474837 * V_28 = NULL;
+	RectTransform_t3317474837 * V_29 = NULL;
+	RectTransform_t3317474837 * V_30 = NULL;
+	RectTransform_t3317474837 * V_31 = NULL;
+	RectTransform_t3317474837 * V_32 = NULL;
+	RectTransform_t3317474837 * V_33 = NULL;
+	Vector2_t3525329788  V_34;
+	memset(&V_34, 0, sizeof(V_34));
+	OptionData_t3366553055 * V_35 = NULL;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(DefaultControls_t3717991936_il2cpp_TypeInfo_var);
+		Vector2_t3525329788  L_0 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_ThickElementSize_3();
+		GameObject_t4012695102 * L_1 = DefaultControls_CreateUIElementRoot_m335662421(NULL /*static, unused*/, _stringLiteral3927550001, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		GameObject_t4012695102 * L_2 = V_0;
+		GameObject_t4012695102 * L_3 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral73174740, L_2, /*hidden argument*/NULL);
+		V_1 = L_3;
+		GameObject_t4012695102 * L_4 = V_0;
+		GameObject_t4012695102 * L_5 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral63538153, L_4, /*hidden argument*/NULL);
+		V_2 = L_5;
+		GameObject_t4012695102 * L_6 = V_0;
+		GameObject_t4012695102 * L_7 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral3038064794, L_6, /*hidden argument*/NULL);
+		V_3 = L_7;
+		GameObject_t4012695102 * L_8 = V_3;
+		GameObject_t4012695102 * L_9 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral1261329606, L_8, /*hidden argument*/NULL);
+		V_4 = L_9;
+		GameObject_t4012695102 * L_10 = V_4;
+		GameObject_t4012695102 * L_11 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral2616183897, L_10, /*hidden argument*/NULL);
+		V_5 = L_11;
+		GameObject_t4012695102 * L_12 = V_5;
+		GameObject_t4012695102 * L_13 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral2289459, L_12, /*hidden argument*/NULL);
+		V_6 = L_13;
+		GameObject_t4012695102 * L_14 = V_6;
+		GameObject_t4012695102 * L_15 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral476458075, L_14, /*hidden argument*/NULL);
+		V_7 = L_15;
+		GameObject_t4012695102 * L_16 = V_6;
+		GameObject_t4012695102 * L_17 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral42022664, L_16, /*hidden argument*/NULL);
+		V_8 = L_17;
+		GameObject_t4012695102 * L_18 = V_6;
+		GameObject_t4012695102 * L_19 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral2496208807, L_18, /*hidden argument*/NULL);
+		V_9 = L_19;
+		Resources_t20897285  L_20 = ___resources;
+		GameObject_t4012695102 * L_21 = DefaultControls_CreateScrollbar_m2399849235(NULL /*static, unused*/, L_20, /*hidden argument*/NULL);
+		V_10 = L_21;
+		GameObject_t4012695102 * L_22 = V_10;
+		NullCheck(L_22);
+		Object_set_name_m1123518500(L_22, _stringLiteral2421761542, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_23 = V_10;
+		GameObject_t4012695102 * L_24 = V_3;
+		DefaultControls_SetParentAndAlign_m867848490(NULL /*static, unused*/, L_23, L_24, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_25 = V_10;
+		NullCheck(L_25);
+		Scrollbar_t1410649103 * L_26 = GameObject_GetComponent_TisScrollbar_t1410649103_m179289597(L_25, /*hidden argument*/GameObject_GetComponent_TisScrollbar_t1410649103_m179289597_MethodInfo_var);
+		V_11 = L_26;
+		Scrollbar_t1410649103 * L_27 = V_11;
+		NullCheck(L_27);
+		Scrollbar_SetDirection_m826288644(L_27, 2, (bool)1, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_28 = V_10;
+		NullCheck(L_28);
+		RectTransform_t3317474837 * L_29 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_28, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_12 = L_29;
+		RectTransform_t3317474837 * L_30 = V_12;
+		Vector2_t3525329788  L_31 = Vector2_get_right_m3495203638(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_30);
+		RectTransform_set_anchorMin_m989253483(L_30, L_31, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_32 = V_12;
+		Vector2_t3525329788  L_33 = Vector2_get_one_m2767488832(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_32);
+		RectTransform_set_anchorMax_m715345817(L_32, L_33, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_34 = V_12;
+		Vector2_t3525329788  L_35 = Vector2_get_one_m2767488832(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_34);
+		RectTransform_set_pivot_m457344806(L_34, L_35, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_36 = V_12;
+		RectTransform_t3317474837 * L_37 = V_12;
+		NullCheck(L_37);
+		Vector2_t3525329788  L_38 = RectTransform_get_sizeDelta_m4279424984(L_37, /*hidden argument*/NULL);
+		V_34 = L_38;
+		float L_39 = (&V_34)->get_x_1();
+		Vector2_t3525329788  L_40;
+		memset(&L_40, 0, sizeof(L_40));
+		Vector2__ctor_m1517109030(&L_40, L_39, (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_36);
+		RectTransform_set_sizeDelta_m1223846609(L_36, L_40, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_41 = V_9;
+		NullCheck(L_41);
+		Text_t3286458198 * L_42 = GameObject_AddComponent_TisText_t3286458198_m3161596953(L_41, /*hidden argument*/GameObject_AddComponent_TisText_t3286458198_m3161596953_MethodInfo_var);
+		V_13 = L_42;
+		Text_t3286458198 * L_43 = V_13;
+		DefaultControls_SetDefaultTextValues_m2676194036(NULL /*static, unused*/, L_43, /*hidden argument*/NULL);
+		Text_t3286458198 * L_44 = V_13;
+		NullCheck(L_44);
+		Text_set_alignment_m4246723817(L_44, 3, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_45 = V_7;
+		NullCheck(L_45);
+		Image_t3354615620 * L_46 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_45, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_14 = L_46;
+		Image_t3354615620 * L_47 = V_14;
+		Color32_t4137084207  L_48;
+		memset(&L_48, 0, sizeof(L_48));
+		Color32__ctor_m576906339(&L_48, ((int32_t)245), ((int32_t)245), ((int32_t)245), ((int32_t)255), /*hidden argument*/NULL);
+		Color_t1588175760  L_49 = Color32_op_Implicit_m358459656(NULL /*static, unused*/, L_48, /*hidden argument*/NULL);
+		NullCheck(L_47);
+		Graphic_set_color_m1311501487(L_47, L_49, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_50 = V_8;
+		NullCheck(L_50);
+		Image_t3354615620 * L_51 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_50, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_15 = L_51;
+		Image_t3354615620 * L_52 = V_15;
+		Sprite_t4006040370 * L_53 = (&___resources)->get_checkmark_4();
+		NullCheck(L_52);
+		Image_set_sprite_m572551402(L_52, L_53, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_54 = V_6;
+		NullCheck(L_54);
+		Toggle_t1499417981 * L_55 = GameObject_AddComponent_TisToggle_t1499417981_m3765476050(L_54, /*hidden argument*/GameObject_AddComponent_TisToggle_t1499417981_m3765476050_MethodInfo_var);
+		V_16 = L_55;
+		Toggle_t1499417981 * L_56 = V_16;
+		Image_t3354615620 * L_57 = V_14;
+		NullCheck(L_56);
+		Selectable_set_targetGraphic_m54088136(L_56, L_57, /*hidden argument*/NULL);
+		Toggle_t1499417981 * L_58 = V_16;
+		Image_t3354615620 * L_59 = V_15;
+		NullCheck(L_58);
+		L_58->set_graphic_17(L_59);
+		Toggle_t1499417981 * L_60 = V_16;
+		NullCheck(L_60);
+		Toggle_set_isOn_m3467664234(L_60, (bool)1, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_61 = V_3;
+		NullCheck(L_61);
+		Image_t3354615620 * L_62 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_61, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_17 = L_62;
+		Image_t3354615620 * L_63 = V_17;
+		Sprite_t4006040370 * L_64 = (&___resources)->get_standard_0();
+		NullCheck(L_63);
+		Image_set_sprite_m572551402(L_63, L_64, /*hidden argument*/NULL);
+		Image_t3354615620 * L_65 = V_17;
+		NullCheck(L_65);
+		Image_set_type_m3406009990(L_65, 1, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_66 = V_3;
+		NullCheck(L_66);
+		ScrollRect_t1048578170 * L_67 = GameObject_AddComponent_TisScrollRect_t1048578170_m3490629429(L_66, /*hidden argument*/GameObject_AddComponent_TisScrollRect_t1048578170_m3490629429_MethodInfo_var);
+		V_18 = L_67;
+		ScrollRect_t1048578170 * L_68 = V_18;
+		GameObject_t4012695102 * L_69 = V_5;
+		NullCheck(L_69);
+		Transform_t284553113 * L_70 = GameObject_get_transform_m1278640159(L_69, /*hidden argument*/NULL);
+		NullCheck(L_68);
+		ScrollRect_set_content_m234982541(L_68, ((RectTransform_t3317474837 *)CastclassSealed(L_70, RectTransform_t3317474837_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
+		ScrollRect_t1048578170 * L_71 = V_18;
+		GameObject_t4012695102 * L_72 = V_4;
+		NullCheck(L_72);
+		Transform_t284553113 * L_73 = GameObject_get_transform_m1278640159(L_72, /*hidden argument*/NULL);
+		NullCheck(L_71);
+		ScrollRect_set_viewport_m1031184500(L_71, ((RectTransform_t3317474837 *)CastclassSealed(L_73, RectTransform_t3317474837_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
+		ScrollRect_t1048578170 * L_74 = V_18;
+		NullCheck(L_74);
+		ScrollRect_set_horizontal_m943369506(L_74, (bool)0, /*hidden argument*/NULL);
+		ScrollRect_t1048578170 * L_75 = V_18;
+		NullCheck(L_75);
+		ScrollRect_set_movementType_m4233390924(L_75, 2, /*hidden argument*/NULL);
+		ScrollRect_t1048578170 * L_76 = V_18;
+		Scrollbar_t1410649103 * L_77 = V_11;
+		NullCheck(L_76);
+		ScrollRect_set_verticalScrollbar_m845729640(L_76, L_77, /*hidden argument*/NULL);
+		ScrollRect_t1048578170 * L_78 = V_18;
+		NullCheck(L_78);
+		ScrollRect_set_verticalScrollbarVisibility_m4230518264(L_78, 2, /*hidden argument*/NULL);
+		ScrollRect_t1048578170 * L_79 = V_18;
+		NullCheck(L_79);
+		ScrollRect_set_verticalScrollbarSpacing_m4137600145(L_79, (-3.0f), /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_80 = V_4;
+		NullCheck(L_80);
+		Mask_t3286245653 * L_81 = GameObject_AddComponent_TisMask_t3286245653_m1124636154(L_80, /*hidden argument*/GameObject_AddComponent_TisMask_t3286245653_m1124636154_MethodInfo_var);
+		V_19 = L_81;
+		Mask_t3286245653 * L_82 = V_19;
+		NullCheck(L_82);
+		Mask_set_showMaskGraphic_m218433430(L_82, (bool)0, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_83 = V_4;
+		NullCheck(L_83);
+		Image_t3354615620 * L_84 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_83, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_20 = L_84;
+		Image_t3354615620 * L_85 = V_20;
+		Sprite_t4006040370 * L_86 = (&___resources)->get_mask_6();
+		NullCheck(L_85);
+		Image_set_sprite_m572551402(L_85, L_86, /*hidden argument*/NULL);
+		Image_t3354615620 * L_87 = V_20;
+		NullCheck(L_87);
+		Image_set_type_m3406009990(L_87, 1, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_88 = V_1;
+		NullCheck(L_88);
+		Text_t3286458198 * L_89 = GameObject_AddComponent_TisText_t3286458198_m3161596953(L_88, /*hidden argument*/GameObject_AddComponent_TisText_t3286458198_m3161596953_MethodInfo_var);
+		V_21 = L_89;
+		Text_t3286458198 * L_90 = V_21;
+		DefaultControls_SetDefaultTextValues_m2676194036(NULL /*static, unused*/, L_90, /*hidden argument*/NULL);
+		Text_t3286458198 * L_91 = V_21;
+		NullCheck(L_91);
+		Text_set_alignment_m4246723817(L_91, 3, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_92 = V_2;
+		NullCheck(L_92);
+		Image_t3354615620 * L_93 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_92, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_22 = L_93;
+		Image_t3354615620 * L_94 = V_22;
+		Sprite_t4006040370 * L_95 = (&___resources)->get_dropdown_5();
+		NullCheck(L_94);
+		Image_set_sprite_m572551402(L_94, L_95, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_96 = V_0;
+		NullCheck(L_96);
+		Image_t3354615620 * L_97 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_96, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_23 = L_97;
+		Image_t3354615620 * L_98 = V_23;
+		Sprite_t4006040370 * L_99 = (&___resources)->get_standard_0();
+		NullCheck(L_98);
+		Image_set_sprite_m572551402(L_98, L_99, /*hidden argument*/NULL);
+		Image_t3354615620 * L_100 = V_23;
+		Color_t1588175760  L_101 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_DefaultSelectableColor_6();
+		NullCheck(L_100);
+		Graphic_set_color_m1311501487(L_100, L_101, /*hidden argument*/NULL);
+		Image_t3354615620 * L_102 = V_23;
+		NullCheck(L_102);
+		Image_set_type_m3406009990(L_102, 1, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_103 = V_0;
+		NullCheck(L_103);
+		Dropdown_t2916437562 * L_104 = GameObject_AddComponent_TisDropdown_t2916437562_m3413532469(L_103, /*hidden argument*/GameObject_AddComponent_TisDropdown_t2916437562_m3413532469_MethodInfo_var);
+		V_24 = L_104;
+		Dropdown_t2916437562 * L_105 = V_24;
+		Image_t3354615620 * L_106 = V_23;
+		NullCheck(L_105);
+		Selectable_set_targetGraphic_m54088136(L_105, L_106, /*hidden argument*/NULL);
+		Dropdown_t2916437562 * L_107 = V_24;
+		DefaultControls_SetDefaultColorTransitionValues_m2995057500(NULL /*static, unused*/, L_107, /*hidden argument*/NULL);
+		Dropdown_t2916437562 * L_108 = V_24;
+		GameObject_t4012695102 * L_109 = V_3;
+		NullCheck(L_109);
+		RectTransform_t3317474837 * L_110 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_109, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		NullCheck(L_108);
+		Dropdown_set_template_m498709600(L_108, L_110, /*hidden argument*/NULL);
+		Dropdown_t2916437562 * L_111 = V_24;
+		Text_t3286458198 * L_112 = V_21;
+		NullCheck(L_111);
+		Dropdown_set_captionText_m4143100948(L_111, L_112, /*hidden argument*/NULL);
+		Dropdown_t2916437562 * L_113 = V_24;
+		Text_t3286458198 * L_114 = V_13;
+		NullCheck(L_113);
+		Dropdown_set_itemText_m3975071291(L_113, L_114, /*hidden argument*/NULL);
+		Text_t3286458198 * L_115 = V_13;
+		NullCheck(L_115);
+		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_115, _stringLiteral4280592246);
+		Dropdown_t2916437562 * L_116 = V_24;
+		NullCheck(L_116);
+		List_1_t4163512024 * L_117 = Dropdown_get_options_m399918042(L_116, /*hidden argument*/NULL);
+		OptionData_t3366553055 * L_118 = (OptionData_t3366553055 *)il2cpp_codegen_object_new(OptionData_t3366553055_il2cpp_TypeInfo_var);
+		OptionData__ctor_m2550995262(L_118, /*hidden argument*/NULL);
+		V_35 = L_118;
+		OptionData_t3366553055 * L_119 = V_35;
+		NullCheck(L_119);
+		OptionData_set_text_m704016114(L_119, _stringLiteral4280592246, /*hidden argument*/NULL);
+		OptionData_t3366553055 * L_120 = V_35;
+		NullCheck(L_117);
+		VirtActionInvoker1< OptionData_t3366553055 * >::Invoke(22 /* System.Void System.Collections.Generic.List`1<UnityEngine.UI.Dropdown/OptionData>::Add(!0) */, L_117, L_120);
+		Dropdown_t2916437562 * L_121 = V_24;
+		NullCheck(L_121);
+		List_1_t4163512024 * L_122 = Dropdown_get_options_m399918042(L_121, /*hidden argument*/NULL);
+		OptionData_t3366553055 * L_123 = (OptionData_t3366553055 *)il2cpp_codegen_object_new(OptionData_t3366553055_il2cpp_TypeInfo_var);
+		OptionData__ctor_m2550995262(L_123, /*hidden argument*/NULL);
+		V_35 = L_123;
+		OptionData_t3366553055 * L_124 = V_35;
+		NullCheck(L_124);
+		OptionData_set_text_m704016114(L_124, _stringLiteral4280592247, /*hidden argument*/NULL);
+		OptionData_t3366553055 * L_125 = V_35;
+		NullCheck(L_122);
+		VirtActionInvoker1< OptionData_t3366553055 * >::Invoke(22 /* System.Void System.Collections.Generic.List`1<UnityEngine.UI.Dropdown/OptionData>::Add(!0) */, L_122, L_125);
+		Dropdown_t2916437562 * L_126 = V_24;
+		NullCheck(L_126);
+		List_1_t4163512024 * L_127 = Dropdown_get_options_m399918042(L_126, /*hidden argument*/NULL);
+		OptionData_t3366553055 * L_128 = (OptionData_t3366553055 *)il2cpp_codegen_object_new(OptionData_t3366553055_il2cpp_TypeInfo_var);
+		OptionData__ctor_m2550995262(L_128, /*hidden argument*/NULL);
+		V_35 = L_128;
+		OptionData_t3366553055 * L_129 = V_35;
+		NullCheck(L_129);
+		OptionData_set_text_m704016114(L_129, _stringLiteral4280592248, /*hidden argument*/NULL);
+		OptionData_t3366553055 * L_130 = V_35;
+		NullCheck(L_127);
+		VirtActionInvoker1< OptionData_t3366553055 * >::Invoke(22 /* System.Void System.Collections.Generic.List`1<UnityEngine.UI.Dropdown/OptionData>::Add(!0) */, L_127, L_130);
+		Dropdown_t2916437562 * L_131 = V_24;
+		NullCheck(L_131);
+		Dropdown_RefreshShownValue_m9458643(L_131, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_132 = V_1;
+		NullCheck(L_132);
+		RectTransform_t3317474837 * L_133 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_132, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_25 = L_133;
+		RectTransform_t3317474837 * L_134 = V_25;
+		Vector2_t3525329788  L_135 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_134);
+		RectTransform_set_anchorMin_m989253483(L_134, L_135, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_136 = V_25;
+		Vector2_t3525329788  L_137 = Vector2_get_one_m2767488832(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_136);
+		RectTransform_set_anchorMax_m715345817(L_136, L_137, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_138 = V_25;
+		Vector2_t3525329788  L_139;
+		memset(&L_139, 0, sizeof(L_139));
+		Vector2__ctor_m1517109030(&L_139, (10.0f), (6.0f), /*hidden argument*/NULL);
+		NullCheck(L_138);
+		RectTransform_set_offsetMin_m951793481(L_138, L_139, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_140 = V_25;
+		Vector2_t3525329788  L_141;
+		memset(&L_141, 0, sizeof(L_141));
+		Vector2__ctor_m1517109030(&L_141, (-25.0f), (-7.0f), /*hidden argument*/NULL);
+		NullCheck(L_140);
+		RectTransform_set_offsetMax_m677885815(L_140, L_141, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_142 = V_2;
+		NullCheck(L_142);
+		RectTransform_t3317474837 * L_143 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_142, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_26 = L_143;
+		RectTransform_t3317474837 * L_144 = V_26;
+		Vector2_t3525329788  L_145;
+		memset(&L_145, 0, sizeof(L_145));
+		Vector2__ctor_m1517109030(&L_145, (1.0f), (0.5f), /*hidden argument*/NULL);
+		NullCheck(L_144);
+		RectTransform_set_anchorMin_m989253483(L_144, L_145, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_146 = V_26;
+		Vector2_t3525329788  L_147;
+		memset(&L_147, 0, sizeof(L_147));
+		Vector2__ctor_m1517109030(&L_147, (1.0f), (0.5f), /*hidden argument*/NULL);
+		NullCheck(L_146);
+		RectTransform_set_anchorMax_m715345817(L_146, L_147, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_148 = V_26;
+		Vector2_t3525329788  L_149;
+		memset(&L_149, 0, sizeof(L_149));
+		Vector2__ctor_m1517109030(&L_149, (20.0f), (20.0f), /*hidden argument*/NULL);
+		NullCheck(L_148);
+		RectTransform_set_sizeDelta_m1223846609(L_148, L_149, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_150 = V_26;
+		Vector2_t3525329788  L_151;
+		memset(&L_151, 0, sizeof(L_151));
+		Vector2__ctor_m1517109030(&L_151, (-15.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_150);
+		RectTransform_set_anchoredPosition_m1498949997(L_150, L_151, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_152 = V_3;
+		NullCheck(L_152);
+		RectTransform_t3317474837 * L_153 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_152, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_27 = L_153;
+		RectTransform_t3317474837 * L_154 = V_27;
+		Vector2_t3525329788  L_155;
+		memset(&L_155, 0, sizeof(L_155));
+		Vector2__ctor_m1517109030(&L_155, (0.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_154);
+		RectTransform_set_anchorMin_m989253483(L_154, L_155, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_156 = V_27;
+		Vector2_t3525329788  L_157;
+		memset(&L_157, 0, sizeof(L_157));
+		Vector2__ctor_m1517109030(&L_157, (1.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_156);
+		RectTransform_set_anchorMax_m715345817(L_156, L_157, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_158 = V_27;
+		Vector2_t3525329788  L_159;
+		memset(&L_159, 0, sizeof(L_159));
+		Vector2__ctor_m1517109030(&L_159, (0.5f), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_158);
+		RectTransform_set_pivot_m457344806(L_158, L_159, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_160 = V_27;
+		Vector2_t3525329788  L_161;
+		memset(&L_161, 0, sizeof(L_161));
+		Vector2__ctor_m1517109030(&L_161, (0.0f), (2.0f), /*hidden argument*/NULL);
+		NullCheck(L_160);
+		RectTransform_set_anchoredPosition_m1498949997(L_160, L_161, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_162 = V_27;
+		Vector2_t3525329788  L_163;
+		memset(&L_163, 0, sizeof(L_163));
+		Vector2__ctor_m1517109030(&L_163, (0.0f), (150.0f), /*hidden argument*/NULL);
+		NullCheck(L_162);
+		RectTransform_set_sizeDelta_m1223846609(L_162, L_163, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_164 = V_4;
+		NullCheck(L_164);
+		RectTransform_t3317474837 * L_165 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_164, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_28 = L_165;
+		RectTransform_t3317474837 * L_166 = V_28;
+		Vector2_t3525329788  L_167;
+		memset(&L_167, 0, sizeof(L_167));
+		Vector2__ctor_m1517109030(&L_167, (0.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_166);
+		RectTransform_set_anchorMin_m989253483(L_166, L_167, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_168 = V_28;
+		Vector2_t3525329788  L_169;
+		memset(&L_169, 0, sizeof(L_169));
+		Vector2__ctor_m1517109030(&L_169, (1.0f), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_168);
+		RectTransform_set_anchorMax_m715345817(L_168, L_169, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_170 = V_28;
+		Vector2_t3525329788  L_171;
+		memset(&L_171, 0, sizeof(L_171));
+		Vector2__ctor_m1517109030(&L_171, (-18.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_170);
+		RectTransform_set_sizeDelta_m1223846609(L_170, L_171, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_172 = V_28;
+		Vector2_t3525329788  L_173;
+		memset(&L_173, 0, sizeof(L_173));
+		Vector2__ctor_m1517109030(&L_173, (0.0f), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_172);
+		RectTransform_set_pivot_m457344806(L_172, L_173, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_174 = V_5;
+		NullCheck(L_174);
+		RectTransform_t3317474837 * L_175 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_174, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_29 = L_175;
+		RectTransform_t3317474837 * L_176 = V_29;
+		Vector2_t3525329788  L_177;
+		memset(&L_177, 0, sizeof(L_177));
+		Vector2__ctor_m1517109030(&L_177, (0.0f), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_176);
+		RectTransform_set_anchorMin_m989253483(L_176, L_177, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_178 = V_29;
+		Vector2_t3525329788  L_179;
+		memset(&L_179, 0, sizeof(L_179));
+		Vector2__ctor_m1517109030(&L_179, (1.0f), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_178);
+		RectTransform_set_anchorMax_m715345817(L_178, L_179, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_180 = V_29;
+		Vector2_t3525329788  L_181;
+		memset(&L_181, 0, sizeof(L_181));
+		Vector2__ctor_m1517109030(&L_181, (0.5f), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_180);
+		RectTransform_set_pivot_m457344806(L_180, L_181, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_182 = V_29;
+		Vector2_t3525329788  L_183;
+		memset(&L_183, 0, sizeof(L_183));
+		Vector2__ctor_m1517109030(&L_183, (0.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_182);
+		RectTransform_set_anchoredPosition_m1498949997(L_182, L_183, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_184 = V_29;
+		Vector2_t3525329788  L_185;
+		memset(&L_185, 0, sizeof(L_185));
+		Vector2__ctor_m1517109030(&L_185, (0.0f), (28.0f), /*hidden argument*/NULL);
+		NullCheck(L_184);
+		RectTransform_set_sizeDelta_m1223846609(L_184, L_185, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_186 = V_6;
+		NullCheck(L_186);
+		RectTransform_t3317474837 * L_187 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_186, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_30 = L_187;
+		RectTransform_t3317474837 * L_188 = V_30;
+		Vector2_t3525329788  L_189;
+		memset(&L_189, 0, sizeof(L_189));
+		Vector2__ctor_m1517109030(&L_189, (0.0f), (0.5f), /*hidden argument*/NULL);
+		NullCheck(L_188);
+		RectTransform_set_anchorMin_m989253483(L_188, L_189, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_190 = V_30;
+		Vector2_t3525329788  L_191;
+		memset(&L_191, 0, sizeof(L_191));
+		Vector2__ctor_m1517109030(&L_191, (1.0f), (0.5f), /*hidden argument*/NULL);
+		NullCheck(L_190);
+		RectTransform_set_anchorMax_m715345817(L_190, L_191, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_192 = V_30;
+		Vector2_t3525329788  L_193;
+		memset(&L_193, 0, sizeof(L_193));
+		Vector2__ctor_m1517109030(&L_193, (0.0f), (20.0f), /*hidden argument*/NULL);
+		NullCheck(L_192);
+		RectTransform_set_sizeDelta_m1223846609(L_192, L_193, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_194 = V_7;
+		NullCheck(L_194);
+		RectTransform_t3317474837 * L_195 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_194, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_31 = L_195;
+		RectTransform_t3317474837 * L_196 = V_31;
+		Vector2_t3525329788  L_197 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_196);
+		RectTransform_set_anchorMin_m989253483(L_196, L_197, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_198 = V_31;
+		Vector2_t3525329788  L_199 = Vector2_get_one_m2767488832(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_198);
+		RectTransform_set_anchorMax_m715345817(L_198, L_199, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_200 = V_31;
+		Vector2_t3525329788  L_201 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_200);
+		RectTransform_set_sizeDelta_m1223846609(L_200, L_201, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_202 = V_8;
+		NullCheck(L_202);
+		RectTransform_t3317474837 * L_203 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_202, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_32 = L_203;
+		RectTransform_t3317474837 * L_204 = V_32;
+		Vector2_t3525329788  L_205;
+		memset(&L_205, 0, sizeof(L_205));
+		Vector2__ctor_m1517109030(&L_205, (0.0f), (0.5f), /*hidden argument*/NULL);
+		NullCheck(L_204);
+		RectTransform_set_anchorMin_m989253483(L_204, L_205, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_206 = V_32;
+		Vector2_t3525329788  L_207;
+		memset(&L_207, 0, sizeof(L_207));
+		Vector2__ctor_m1517109030(&L_207, (0.0f), (0.5f), /*hidden argument*/NULL);
+		NullCheck(L_206);
+		RectTransform_set_anchorMax_m715345817(L_206, L_207, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_208 = V_32;
+		Vector2_t3525329788  L_209;
+		memset(&L_209, 0, sizeof(L_209));
+		Vector2__ctor_m1517109030(&L_209, (20.0f), (20.0f), /*hidden argument*/NULL);
+		NullCheck(L_208);
+		RectTransform_set_sizeDelta_m1223846609(L_208, L_209, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_210 = V_32;
+		Vector2_t3525329788  L_211;
+		memset(&L_211, 0, sizeof(L_211));
+		Vector2__ctor_m1517109030(&L_211, (10.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_210);
+		RectTransform_set_anchoredPosition_m1498949997(L_210, L_211, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_212 = V_9;
+		NullCheck(L_212);
+		RectTransform_t3317474837 * L_213 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_212, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_33 = L_213;
+		RectTransform_t3317474837 * L_214 = V_33;
+		Vector2_t3525329788  L_215 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_214);
+		RectTransform_set_anchorMin_m989253483(L_214, L_215, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_216 = V_33;
+		Vector2_t3525329788  L_217 = Vector2_get_one_m2767488832(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_216);
+		RectTransform_set_anchorMax_m715345817(L_216, L_217, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_218 = V_33;
+		Vector2_t3525329788  L_219;
+		memset(&L_219, 0, sizeof(L_219));
+		Vector2__ctor_m1517109030(&L_219, (20.0f), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_218);
+		RectTransform_set_offsetMin_m951793481(L_218, L_219, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_220 = V_33;
+		Vector2_t3525329788  L_221;
+		memset(&L_221, 0, sizeof(L_221));
+		Vector2__ctor_m1517109030(&L_221, (-10.0f), (-2.0f), /*hidden argument*/NULL);
+		NullCheck(L_220);
+		RectTransform_set_offsetMax_m677885815(L_220, L_221, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_222 = V_3;
+		NullCheck(L_222);
+		GameObject_SetActive_m3538205401(L_222, (bool)0, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_223 = V_0;
+		return L_223;
+	}
+}
+// UnityEngine.GameObject UnityEngine.UI.DefaultControls::CreateScrollView(UnityEngine.UI.DefaultControls/Resources)
+extern TypeInfo* DefaultControls_t3717991936_il2cpp_TypeInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisScrollbar_t1410649103_m179289597_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisScrollRect_t1048578170_m3490629429_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var;
+extern const MethodInfo* GameObject_AddComponent_TisMask_t3286245653_m1124636154_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3674249240;
+extern Il2CppCodeGenString* _stringLiteral1261329606;
+extern Il2CppCodeGenString* _stringLiteral2616183897;
+extern Il2CppCodeGenString* _stringLiteral3772431006;
+extern Il2CppCodeGenString* _stringLiteral2054089840;
+extern const uint32_t DefaultControls_CreateScrollView_m2763877395_MetadataUsageId;
+extern "C"  GameObject_t4012695102 * DefaultControls_CreateScrollView_m2763877395 (Il2CppObject * __this /* static, unused */, Resources_t20897285  ___resources, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (DefaultControls_CreateScrollView_m2763877395_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	GameObject_t4012695102 * V_0 = NULL;
+	GameObject_t4012695102 * V_1 = NULL;
+	GameObject_t4012695102 * V_2 = NULL;
+	GameObject_t4012695102 * V_3 = NULL;
+	RectTransform_t3317474837 * V_4 = NULL;
+	GameObject_t4012695102 * V_5 = NULL;
+	RectTransform_t3317474837 * V_6 = NULL;
+	RectTransform_t3317474837 * V_7 = NULL;
+	RectTransform_t3317474837 * V_8 = NULL;
+	ScrollRect_t1048578170 * V_9 = NULL;
+	Image_t3354615620 * V_10 = NULL;
+	Mask_t3286245653 * V_11 = NULL;
+	Image_t3354615620 * V_12 = NULL;
+	Vector2_t3525329788  V_13;
+	memset(&V_13, 0, sizeof(V_13));
+	Vector2_t3525329788  V_14;
+	memset(&V_14, 0, sizeof(V_14));
+	{
+		Vector2_t3525329788  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Vector2__ctor_m1517109030(&L_0, (200.0f), (200.0f), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(DefaultControls_t3717991936_il2cpp_TypeInfo_var);
+		GameObject_t4012695102 * L_1 = DefaultControls_CreateUIElementRoot_m335662421(NULL /*static, unused*/, _stringLiteral3674249240, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		GameObject_t4012695102 * L_2 = V_0;
+		GameObject_t4012695102 * L_3 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral1261329606, L_2, /*hidden argument*/NULL);
+		V_1 = L_3;
+		GameObject_t4012695102 * L_4 = V_1;
+		GameObject_t4012695102 * L_5 = DefaultControls_CreateUIObject_m1826457530(NULL /*static, unused*/, _stringLiteral2616183897, L_4, /*hidden argument*/NULL);
+		V_2 = L_5;
+		Resources_t20897285  L_6 = ___resources;
+		GameObject_t4012695102 * L_7 = DefaultControls_CreateScrollbar_m2399849235(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+		V_3 = L_7;
+		GameObject_t4012695102 * L_8 = V_3;
+		NullCheck(L_8);
+		Object_set_name_m1123518500(L_8, _stringLiteral3772431006, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_9 = V_3;
+		GameObject_t4012695102 * L_10 = V_0;
+		DefaultControls_SetParentAndAlign_m867848490(NULL /*static, unused*/, L_9, L_10, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_11 = V_3;
+		NullCheck(L_11);
+		RectTransform_t3317474837 * L_12 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_11, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_4 = L_12;
+		RectTransform_t3317474837 * L_13 = V_4;
+		Vector2_t3525329788  L_14 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_13);
+		RectTransform_set_anchorMin_m989253483(L_13, L_14, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_15 = V_4;
+		Vector2_t3525329788  L_16 = Vector2_get_right_m3495203638(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_15);
+		RectTransform_set_anchorMax_m715345817(L_15, L_16, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_17 = V_4;
+		Vector2_t3525329788  L_18 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_17);
+		RectTransform_set_pivot_m457344806(L_17, L_18, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_19 = V_4;
+		RectTransform_t3317474837 * L_20 = V_4;
+		NullCheck(L_20);
+		Vector2_t3525329788  L_21 = RectTransform_get_sizeDelta_m4279424984(L_20, /*hidden argument*/NULL);
+		V_13 = L_21;
+		float L_22 = (&V_13)->get_y_2();
+		Vector2_t3525329788  L_23;
+		memset(&L_23, 0, sizeof(L_23));
+		Vector2__ctor_m1517109030(&L_23, (0.0f), L_22, /*hidden argument*/NULL);
+		NullCheck(L_19);
+		RectTransform_set_sizeDelta_m1223846609(L_19, L_23, /*hidden argument*/NULL);
+		Resources_t20897285  L_24 = ___resources;
+		GameObject_t4012695102 * L_25 = DefaultControls_CreateScrollbar_m2399849235(NULL /*static, unused*/, L_24, /*hidden argument*/NULL);
+		V_5 = L_25;
+		GameObject_t4012695102 * L_26 = V_5;
+		NullCheck(L_26);
+		Object_set_name_m1123518500(L_26, _stringLiteral2054089840, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_27 = V_5;
+		GameObject_t4012695102 * L_28 = V_0;
+		DefaultControls_SetParentAndAlign_m867848490(NULL /*static, unused*/, L_27, L_28, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_29 = V_5;
+		NullCheck(L_29);
+		Scrollbar_t1410649103 * L_30 = GameObject_GetComponent_TisScrollbar_t1410649103_m179289597(L_29, /*hidden argument*/GameObject_GetComponent_TisScrollbar_t1410649103_m179289597_MethodInfo_var);
+		NullCheck(L_30);
+		Scrollbar_SetDirection_m826288644(L_30, 2, (bool)1, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_31 = V_5;
+		NullCheck(L_31);
+		RectTransform_t3317474837 * L_32 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_31, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_6 = L_32;
+		RectTransform_t3317474837 * L_33 = V_6;
+		Vector2_t3525329788  L_34 = Vector2_get_right_m3495203638(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_33);
+		RectTransform_set_anchorMin_m989253483(L_33, L_34, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_35 = V_6;
+		Vector2_t3525329788  L_36 = Vector2_get_one_m2767488832(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_35);
+		RectTransform_set_anchorMax_m715345817(L_35, L_36, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_37 = V_6;
+		Vector2_t3525329788  L_38 = Vector2_get_one_m2767488832(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_37);
+		RectTransform_set_pivot_m457344806(L_37, L_38, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_39 = V_6;
+		RectTransform_t3317474837 * L_40 = V_6;
+		NullCheck(L_40);
+		Vector2_t3525329788  L_41 = RectTransform_get_sizeDelta_m4279424984(L_40, /*hidden argument*/NULL);
+		V_14 = L_41;
+		float L_42 = (&V_14)->get_x_1();
+		Vector2_t3525329788  L_43;
+		memset(&L_43, 0, sizeof(L_43));
+		Vector2__ctor_m1517109030(&L_43, L_42, (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_39);
+		RectTransform_set_sizeDelta_m1223846609(L_39, L_43, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_44 = V_1;
+		NullCheck(L_44);
+		RectTransform_t3317474837 * L_45 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_44, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_7 = L_45;
+		RectTransform_t3317474837 * L_46 = V_7;
+		Vector2_t3525329788  L_47 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_46);
+		RectTransform_set_anchorMin_m989253483(L_46, L_47, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_48 = V_7;
+		Vector2_t3525329788  L_49 = Vector2_get_one_m2767488832(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_48);
+		RectTransform_set_anchorMax_m715345817(L_48, L_49, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_50 = V_7;
+		Vector2_t3525329788  L_51 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_50);
+		RectTransform_set_sizeDelta_m1223846609(L_50, L_51, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_52 = V_7;
+		Vector2_t3525329788  L_53 = Vector2_get_up_m1197831267(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_52);
+		RectTransform_set_pivot_m457344806(L_52, L_53, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_54 = V_2;
+		NullCheck(L_54);
+		RectTransform_t3317474837 * L_55 = GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(L_54, /*hidden argument*/GameObject_GetComponent_TisRectTransform_t3317474837_m406276429_MethodInfo_var);
+		V_8 = L_55;
+		RectTransform_t3317474837 * L_56 = V_8;
+		Vector2_t3525329788  L_57 = Vector2_get_up_m1197831267(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_56);
+		RectTransform_set_anchorMin_m989253483(L_56, L_57, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_58 = V_8;
+		Vector2_t3525329788  L_59 = Vector2_get_one_m2767488832(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_58);
+		RectTransform_set_anchorMax_m715345817(L_58, L_59, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_60 = V_8;
+		Vector2_t3525329788  L_61;
+		memset(&L_61, 0, sizeof(L_61));
+		Vector2__ctor_m1517109030(&L_61, (0.0f), (300.0f), /*hidden argument*/NULL);
+		NullCheck(L_60);
+		RectTransform_set_sizeDelta_m1223846609(L_60, L_61, /*hidden argument*/NULL);
+		RectTransform_t3317474837 * L_62 = V_8;
+		Vector2_t3525329788  L_63 = Vector2_get_up_m1197831267(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_62);
+		RectTransform_set_pivot_m457344806(L_62, L_63, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_64 = V_0;
+		NullCheck(L_64);
+		ScrollRect_t1048578170 * L_65 = GameObject_AddComponent_TisScrollRect_t1048578170_m3490629429(L_64, /*hidden argument*/GameObject_AddComponent_TisScrollRect_t1048578170_m3490629429_MethodInfo_var);
+		V_9 = L_65;
+		ScrollRect_t1048578170 * L_66 = V_9;
+		RectTransform_t3317474837 * L_67 = V_8;
+		NullCheck(L_66);
+		ScrollRect_set_content_m234982541(L_66, L_67, /*hidden argument*/NULL);
+		ScrollRect_t1048578170 * L_68 = V_9;
+		RectTransform_t3317474837 * L_69 = V_7;
+		NullCheck(L_68);
+		ScrollRect_set_viewport_m1031184500(L_68, L_69, /*hidden argument*/NULL);
+		ScrollRect_t1048578170 * L_70 = V_9;
+		GameObject_t4012695102 * L_71 = V_3;
+		NullCheck(L_71);
+		Scrollbar_t1410649103 * L_72 = GameObject_GetComponent_TisScrollbar_t1410649103_m179289597(L_71, /*hidden argument*/GameObject_GetComponent_TisScrollbar_t1410649103_m179289597_MethodInfo_var);
+		NullCheck(L_70);
+		ScrollRect_set_horizontalScrollbar_m2130920826(L_70, L_72, /*hidden argument*/NULL);
+		ScrollRect_t1048578170 * L_73 = V_9;
+		GameObject_t4012695102 * L_74 = V_5;
+		NullCheck(L_74);
+		Scrollbar_t1410649103 * L_75 = GameObject_GetComponent_TisScrollbar_t1410649103_m179289597(L_74, /*hidden argument*/GameObject_GetComponent_TisScrollbar_t1410649103_m179289597_MethodInfo_var);
+		NullCheck(L_73);
+		ScrollRect_set_verticalScrollbar_m845729640(L_73, L_75, /*hidden argument*/NULL);
+		ScrollRect_t1048578170 * L_76 = V_9;
+		NullCheck(L_76);
+		ScrollRect_set_horizontalScrollbarVisibility_m1831067046(L_76, 2, /*hidden argument*/NULL);
+		ScrollRect_t1048578170 * L_77 = V_9;
+		NullCheck(L_77);
+		ScrollRect_set_verticalScrollbarVisibility_m4230518264(L_77, 2, /*hidden argument*/NULL);
+		ScrollRect_t1048578170 * L_78 = V_9;
+		NullCheck(L_78);
+		ScrollRect_set_horizontalScrollbarSpacing_m1996166051(L_78, (-3.0f), /*hidden argument*/NULL);
+		ScrollRect_t1048578170 * L_79 = V_9;
+		NullCheck(L_79);
+		ScrollRect_set_verticalScrollbarSpacing_m4137600145(L_79, (-3.0f), /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_80 = V_0;
+		NullCheck(L_80);
+		Image_t3354615620 * L_81 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_80, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_10 = L_81;
+		Image_t3354615620 * L_82 = V_10;
+		Sprite_t4006040370 * L_83 = (&___resources)->get_background_1();
+		NullCheck(L_82);
+		Image_set_sprite_m572551402(L_82, L_83, /*hidden argument*/NULL);
+		Image_t3354615620 * L_84 = V_10;
+		NullCheck(L_84);
+		Image_set_type_m3406009990(L_84, 1, /*hidden argument*/NULL);
+		Image_t3354615620 * L_85 = V_10;
+		Color_t1588175760  L_86 = ((DefaultControls_t3717991936_StaticFields*)DefaultControls_t3717991936_il2cpp_TypeInfo_var->static_fields)->get_s_PanelColor_7();
+		NullCheck(L_85);
+		Graphic_set_color_m1311501487(L_85, L_86, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_87 = V_1;
+		NullCheck(L_87);
+		Mask_t3286245653 * L_88 = GameObject_AddComponent_TisMask_t3286245653_m1124636154(L_87, /*hidden argument*/GameObject_AddComponent_TisMask_t3286245653_m1124636154_MethodInfo_var);
+		V_11 = L_88;
+		Mask_t3286245653 * L_89 = V_11;
+		NullCheck(L_89);
+		Mask_set_showMaskGraphic_m218433430(L_89, (bool)0, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_90 = V_1;
+		NullCheck(L_90);
+		Image_t3354615620 * L_91 = GameObject_AddComponent_TisImage_t3354615620_m3664949437(L_90, /*hidden argument*/GameObject_AddComponent_TisImage_t3354615620_m3664949437_MethodInfo_var);
+		V_12 = L_91;
+		Image_t3354615620 * L_92 = V_12;
+		Sprite_t4006040370 * L_93 = (&___resources)->get_mask_6();
+		NullCheck(L_92);
+		Image_set_sprite_m572551402(L_92, L_93, /*hidden argument*/NULL);
+		Image_t3354615620 * L_94 = V_12;
+		NullCheck(L_94);
+		Image_set_type_m3406009990(L_94, 1, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_95 = V_0;
+		return L_95;
 	}
 }
 // System.Void UnityEngine.UI.Dropdown::.ctor()
@@ -16417,6 +18741,18 @@ extern "C"  void OptionData__ctor_m715763394 (OptionData_t3366553055 * __this, S
 		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
 		Sprite_t4006040370 * L_0 = ___image;
 		OptionData_set_image_m4214652734(__this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.UI.Dropdown/OptionData::.ctor(System.String,UnityEngine.Sprite)
+extern "C"  void OptionData__ctor_m2001511174 (OptionData_t3366553055 * __this, String_t* ___text, Sprite_t4006040370 * ___image, const MethodInfo* method)
+{
+	{
+		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
+		String_t* L_0 = ___text;
+		OptionData_set_text_m704016114(__this, L_0, /*hidden argument*/NULL);
+		Sprite_t4006040370 * L_1 = ___image;
+		OptionData_set_image_m4214652734(__this, L_1, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -38696,1927 +41032,6 @@ IL_00f6:
 		CanvasRenderer_SetPopMaterial_m1315408685(L_52, L_53, 0, /*hidden argument*/NULL);
 		Material_t1886596500 * L_54 = __this->get_m_MaskMaterial_5();
 		return L_54;
-	}
-}
-// System.Void UnityEngine.UI.MaskableGraphic::.ctor()
-extern TypeInfo* CullStateChangedEvent_t3567555589_il2cpp_TypeInfo_var;
-extern TypeInfo* Vector3U5BU5D_t3227571696_il2cpp_TypeInfo_var;
-extern TypeInfo* Graphic_t933884113_il2cpp_TypeInfo_var;
-extern const uint32_t MaskableGraphic__ctor_m3514233785_MetadataUsageId;
-extern "C"  void MaskableGraphic__ctor_m3514233785 (MaskableGraphic_t2806572971 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MaskableGraphic__ctor_m3514233785_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		__this->set_m_ShouldRecalculateStencil_19((bool)1);
-		__this->set_m_Maskable_22((bool)1);
-		CullStateChangedEvent_t3567555589 * L_0 = (CullStateChangedEvent_t3567555589 *)il2cpp_codegen_object_new(CullStateChangedEvent_t3567555589_il2cpp_TypeInfo_var);
-		CullStateChangedEvent__ctor_m2540235971(L_0, /*hidden argument*/NULL);
-		__this->set_m_OnCullStateChanged_24(L_0);
-		__this->set_m_ShouldRecalculate_25((bool)1);
-		__this->set_m_Corners_27(((Vector3U5BU5D_t3227571696*)SZArrayNew(Vector3U5BU5D_t3227571696_il2cpp_TypeInfo_var, (uint32_t)4)));
-		IL2CPP_RUNTIME_CLASS_INIT(Graphic_t933884113_il2cpp_TypeInfo_var);
-		Graphic__ctor_m4066569555(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// UnityEngine.UI.MaskableGraphic/CullStateChangedEvent UnityEngine.UI.MaskableGraphic::get_onCullStateChanged()
-extern "C"  CullStateChangedEvent_t3567555589 * MaskableGraphic_get_onCullStateChanged_m2293098922 (MaskableGraphic_t2806572971 * __this, const MethodInfo* method)
-{
-	{
-		CullStateChangedEvent_t3567555589 * L_0 = __this->get_m_OnCullStateChanged_24();
-		return L_0;
-	}
-}
-// System.Void UnityEngine.UI.MaskableGraphic::set_onCullStateChanged(UnityEngine.UI.MaskableGraphic/CullStateChangedEvent)
-extern "C"  void MaskableGraphic_set_onCullStateChanged_m1901835143 (MaskableGraphic_t2806572971 * __this, CullStateChangedEvent_t3567555589 * ___value, const MethodInfo* method)
-{
-	{
-		CullStateChangedEvent_t3567555589 * L_0 = ___value;
-		__this->set_m_OnCullStateChanged_24(L_0);
-		return;
-	}
-}
-// System.Boolean UnityEngine.UI.MaskableGraphic::get_maskable()
-extern "C"  bool MaskableGraphic_get_maskable_m2226181992 (MaskableGraphic_t2806572971 * __this, const MethodInfo* method)
-{
-	{
-		bool L_0 = __this->get_m_Maskable_22();
-		return L_0;
-	}
-}
-// System.Void UnityEngine.UI.MaskableGraphic::set_maskable(System.Boolean)
-extern "C"  void MaskableGraphic_set_maskable_m3088187909 (MaskableGraphic_t2806572971 * __this, bool ___value, const MethodInfo* method)
-{
-	{
-		bool L_0 = ___value;
-		bool L_1 = __this->get_m_Maskable_22();
-		if ((!(((uint32_t)L_0) == ((uint32_t)L_1))))
-		{
-			goto IL_000d;
-		}
-	}
-	{
-		return;
-	}
-
-IL_000d:
-	{
-		bool L_2 = ___value;
-		__this->set_m_Maskable_22(L_2);
-		__this->set_m_ShouldRecalculateStencil_19((bool)1);
-		VirtActionInvoker0::Invoke(24 /* System.Void UnityEngine.UI.Graphic::SetMaterialDirty() */, __this);
-		return;
-	}
-}
-// UnityEngine.Material UnityEngine.UI.MaskableGraphic::GetModifiedMaterial(UnityEngine.Material)
-extern TypeInfo* StencilMaterial_t260192492_il2cpp_TypeInfo_var;
-extern const MethodInfo* Component_GetComponent_TisMask_t3286245653_m433240493_MethodInfo_var;
-extern const uint32_t MaskableGraphic_GetModifiedMaterial_m2422156902_MetadataUsageId;
-extern "C"  Material_t1886596500 * MaskableGraphic_GetModifiedMaterial_m2422156902 (MaskableGraphic_t2806572971 * __this, Material_t1886596500 * ___baseMaterial, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MaskableGraphic_GetModifiedMaterial_m2422156902_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	Material_t1886596500 * V_0 = NULL;
-	Transform_t284553113 * V_1 = NULL;
-	Material_t1886596500 * V_2 = NULL;
-	MaskableGraphic_t2806572971 * G_B3_0 = NULL;
-	MaskableGraphic_t2806572971 * G_B2_0 = NULL;
-	int32_t G_B4_0 = 0;
-	MaskableGraphic_t2806572971 * G_B4_1 = NULL;
-	{
-		Material_t1886596500 * L_0 = ___baseMaterial;
-		V_0 = L_0;
-		bool L_1 = __this->get_m_ShouldRecalculateStencil_19();
-		if (!L_1)
-		{
-			goto IL_0043;
-		}
-	}
-	{
-		Transform_t284553113 * L_2 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		Transform_t284553113 * L_3 = MaskUtilities_FindRootSortOverrideCanvas_m4219954651(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		V_1 = L_3;
-		bool L_4 = MaskableGraphic_get_maskable_m2226181992(__this, /*hidden argument*/NULL);
-		G_B2_0 = __this;
-		if (!L_4)
-		{
-			G_B3_0 = __this;
-			goto IL_0036;
-		}
-	}
-	{
-		Transform_t284553113 * L_5 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		Transform_t284553113 * L_6 = V_1;
-		int32_t L_7 = MaskUtilities_GetStencilDepth_m2786493988(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
-		G_B4_0 = L_7;
-		G_B4_1 = G_B2_0;
-		goto IL_0037;
-	}
-
-IL_0036:
-	{
-		G_B4_0 = 0;
-		G_B4_1 = G_B3_0;
-	}
-
-IL_0037:
-	{
-		NullCheck(G_B4_1);
-		G_B4_1->set_m_StencilValue_26(G_B4_0);
-		__this->set_m_ShouldRecalculateStencil_19((bool)0);
-	}
-
-IL_0043:
-	{
-		int32_t L_8 = __this->get_m_StencilValue_26();
-		if ((((int32_t)L_8) <= ((int32_t)0)))
-		{
-			goto IL_009f;
-		}
-	}
-	{
-		Mask_t3286245653 * L_9 = Component_GetComponent_TisMask_t3286245653_m433240493(__this, /*hidden argument*/Component_GetComponent_TisMask_t3286245653_m433240493_MethodInfo_var);
-		bool L_10 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_9, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_10)
-		{
-			goto IL_009f;
-		}
-	}
-	{
-		Material_t1886596500 * L_11 = V_0;
-		int32_t L_12 = __this->get_m_StencilValue_26();
-		int32_t L_13 = __this->get_m_StencilValue_26();
-		IL2CPP_RUNTIME_CLASS_INIT(StencilMaterial_t260192492_il2cpp_TypeInfo_var);
-		Material_t1886596500 * L_14 = StencilMaterial_Add_m264449278(NULL /*static, unused*/, L_11, ((int32_t)((int32_t)((int32_t)((int32_t)1<<(int32_t)((int32_t)((int32_t)L_12&(int32_t)((int32_t)31)))))-(int32_t)1)), 0, 3, ((int32_t)15), ((int32_t)((int32_t)((int32_t)((int32_t)1<<(int32_t)((int32_t)((int32_t)L_13&(int32_t)((int32_t)31)))))-(int32_t)1)), 0, /*hidden argument*/NULL);
-		V_2 = L_14;
-		Material_t1886596500 * L_15 = __this->get_m_MaskMaterial_20();
-		StencilMaterial_Remove_m1013236306(NULL /*static, unused*/, L_15, /*hidden argument*/NULL);
-		Material_t1886596500 * L_16 = V_2;
-		__this->set_m_MaskMaterial_20(L_16);
-		Material_t1886596500 * L_17 = __this->get_m_MaskMaterial_20();
-		V_0 = L_17;
-	}
-
-IL_009f:
-	{
-		Material_t1886596500 * L_18 = V_0;
-		return L_18;
-	}
-}
-// System.Void UnityEngine.UI.MaskableGraphic::Cull(UnityEngine.Rect,System.Boolean)
-extern const MethodInfo* UnityEvent_1_Invoke_m4200629676_MethodInfo_var;
-extern const uint32_t MaskableGraphic_Cull_m1710243867_MetadataUsageId;
-extern "C"  void MaskableGraphic_Cull_m1710243867 (MaskableGraphic_t2806572971 * __this, Rect_t1525428817  ___clipRect, bool ___validRect, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MaskableGraphic_Cull_m1710243867_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	bool V_0 = false;
-	bool V_1 = false;
-	int32_t G_B5_0 = 0;
-	{
-		CanvasRenderer_t3626201768 * L_0 = Graphic_get_canvasRenderer_m184553434(__this, /*hidden argument*/NULL);
-		NullCheck(L_0);
-		bool L_1 = CanvasRenderer_get_hasMoved_m1392755130(L_0, /*hidden argument*/NULL);
-		if (L_1)
-		{
-			goto IL_0011;
-		}
-	}
-	{
-		return;
-	}
-
-IL_0011:
-	{
-		bool L_2 = ___validRect;
-		if (!L_2)
-		{
-			goto IL_002a;
-		}
-	}
-	{
-		Rect_t1525428817  L_3 = MaskableGraphic_get_canvasRect_m2184399948(__this, /*hidden argument*/NULL);
-		bool L_4 = Rect_Overlaps_m2751672171((&___clipRect), L_3, (bool)1, /*hidden argument*/NULL);
-		G_B5_0 = ((((int32_t)L_4) == ((int32_t)0))? 1 : 0);
-		goto IL_002b;
-	}
-
-IL_002a:
-	{
-		G_B5_0 = 1;
-	}
-
-IL_002b:
-	{
-		V_0 = (bool)G_B5_0;
-		CanvasRenderer_t3626201768 * L_5 = Graphic_get_canvasRenderer_m184553434(__this, /*hidden argument*/NULL);
-		NullCheck(L_5);
-		bool L_6 = CanvasRenderer_get_cull_m3343855795(L_5, /*hidden argument*/NULL);
-		bool L_7 = V_0;
-		V_1 = (bool)((((int32_t)((((int32_t)L_6) == ((int32_t)L_7))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		CanvasRenderer_t3626201768 * L_8 = Graphic_get_canvasRenderer_m184553434(__this, /*hidden argument*/NULL);
-		bool L_9 = V_0;
-		NullCheck(L_8);
-		CanvasRenderer_set_cull_m3433952120(L_8, L_9, /*hidden argument*/NULL);
-		bool L_10 = V_1;
-		if (!L_10)
-		{
-			goto IL_0062;
-		}
-	}
-	{
-		CullStateChangedEvent_t3567555589 * L_11 = __this->get_m_OnCullStateChanged_24();
-		bool L_12 = V_0;
-		NullCheck(L_11);
-		UnityEvent_1_Invoke_m4200629676(L_11, L_12, /*hidden argument*/UnityEvent_1_Invoke_m4200629676_MethodInfo_var);
-		VirtActionInvoker0::Invoke(23 /* System.Void UnityEngine.UI.Graphic::SetVerticesDirty() */, __this);
-	}
-
-IL_0062:
-	{
-		return;
-	}
-}
-// System.Void UnityEngine.UI.MaskableGraphic::SetClipRect(UnityEngine.Rect,System.Boolean)
-extern "C"  void MaskableGraphic_SetClipRect_m3970693835 (MaskableGraphic_t2806572971 * __this, Rect_t1525428817  ___clipRect, bool ___validRect, const MethodInfo* method)
-{
-	{
-		bool L_0 = ___validRect;
-		if (!L_0)
-		{
-			goto IL_0017;
-		}
-	}
-	{
-		CanvasRenderer_t3626201768 * L_1 = Graphic_get_canvasRenderer_m184553434(__this, /*hidden argument*/NULL);
-		Rect_t1525428817  L_2 = ___clipRect;
-		NullCheck(L_1);
-		CanvasRenderer_EnableRectClipping_m896218272(L_1, L_2, /*hidden argument*/NULL);
-		goto IL_0022;
-	}
-
-IL_0017:
-	{
-		CanvasRenderer_t3626201768 * L_3 = Graphic_get_canvasRenderer_m184553434(__this, /*hidden argument*/NULL);
-		NullCheck(L_3);
-		CanvasRenderer_DisableRectClipping_m2654388030(L_3, /*hidden argument*/NULL);
-	}
-
-IL_0022:
-	{
-		return;
-	}
-}
-// System.Void UnityEngine.UI.MaskableGraphic::OnEnable()
-extern const MethodInfo* Component_GetComponent_TisMask_t3286245653_m433240493_MethodInfo_var;
-extern const uint32_t MaskableGraphic_OnEnable_m487460141_MetadataUsageId;
-extern "C"  void MaskableGraphic_OnEnable_m487460141 (MaskableGraphic_t2806572971 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MaskableGraphic_OnEnable_m487460141_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		Graphic_OnEnable_m1102673235(__this, /*hidden argument*/NULL);
-		__this->set_m_ShouldRecalculateStencil_19((bool)1);
-		MaskableGraphic_UpdateClipParent_m2337272942(__this, /*hidden argument*/NULL);
-		VirtActionInvoker0::Invoke(24 /* System.Void UnityEngine.UI.Graphic::SetMaterialDirty() */, __this);
-		Mask_t3286245653 * L_0 = Component_GetComponent_TisMask_t3286245653_m433240493(__this, /*hidden argument*/Component_GetComponent_TisMask_t3286245653_m433240493_MethodInfo_var);
-		bool L_1 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_0, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_1)
-		{
-			goto IL_0030;
-		}
-	}
-	{
-		MaskUtilities_NotifyStencilStateChanged_m2159873435(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
-	}
-
-IL_0030:
-	{
-		return;
-	}
-}
-// System.Void UnityEngine.UI.MaskableGraphic::OnDisable()
-extern TypeInfo* StencilMaterial_t260192492_il2cpp_TypeInfo_var;
-extern const MethodInfo* Component_GetComponent_TisMask_t3286245653_m433240493_MethodInfo_var;
-extern const uint32_t MaskableGraphic_OnDisable_m2667299744_MetadataUsageId;
-extern "C"  void MaskableGraphic_OnDisable_m2667299744 (MaskableGraphic_t2806572971 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MaskableGraphic_OnDisable_m2667299744_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		Graphic_OnDisable_m264069178(__this, /*hidden argument*/NULL);
-		__this->set_m_ShouldRecalculateStencil_19((bool)1);
-		VirtActionInvoker0::Invoke(24 /* System.Void UnityEngine.UI.Graphic::SetMaterialDirty() */, __this);
-		MaskableGraphic_UpdateClipParent_m2337272942(__this, /*hidden argument*/NULL);
-		Material_t1886596500 * L_0 = __this->get_m_MaskMaterial_20();
-		IL2CPP_RUNTIME_CLASS_INIT(StencilMaterial_t260192492_il2cpp_TypeInfo_var);
-		StencilMaterial_Remove_m1013236306(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
-		__this->set_m_MaskMaterial_20((Material_t1886596500 *)NULL);
-		Mask_t3286245653 * L_1 = Component_GetComponent_TisMask_t3286245653_m433240493(__this, /*hidden argument*/Component_GetComponent_TisMask_t3286245653_m433240493_MethodInfo_var);
-		bool L_2 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_1, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_0042;
-		}
-	}
-	{
-		MaskUtilities_NotifyStencilStateChanged_m2159873435(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
-	}
-
-IL_0042:
-	{
-		return;
-	}
-}
-// System.Void UnityEngine.UI.MaskableGraphic::OnTransformParentChanged()
-extern "C"  void MaskableGraphic_OnTransformParentChanged_m2836893064 (MaskableGraphic_t2806572971 * __this, const MethodInfo* method)
-{
-	{
-		Graphic_OnTransformParentChanged_m321513902(__this, /*hidden argument*/NULL);
-		bool L_0 = Behaviour_get_isActiveAndEnabled_m210167461(__this, /*hidden argument*/NULL);
-		if (L_0)
-		{
-			goto IL_0012;
-		}
-	}
-	{
-		return;
-	}
-
-IL_0012:
-	{
-		__this->set_m_ShouldRecalculateStencil_19((bool)1);
-		MaskableGraphic_UpdateClipParent_m2337272942(__this, /*hidden argument*/NULL);
-		VirtActionInvoker0::Invoke(24 /* System.Void UnityEngine.UI.Graphic::SetMaterialDirty() */, __this);
-		return;
-	}
-}
-// System.Void UnityEngine.UI.MaskableGraphic::ParentMaskStateChanged()
-extern "C"  void MaskableGraphic_ParentMaskStateChanged_m3501359204 (MaskableGraphic_t2806572971 * __this, const MethodInfo* method)
-{
-	{
-		return;
-	}
-}
-// System.Void UnityEngine.UI.MaskableGraphic::OnCanvasHierarchyChanged()
-extern "C"  void MaskableGraphic_OnCanvasHierarchyChanged_m3030160609 (MaskableGraphic_t2806572971 * __this, const MethodInfo* method)
-{
-	{
-		Graphic_OnCanvasHierarchyChanged_m514781447(__this, /*hidden argument*/NULL);
-		bool L_0 = Behaviour_get_isActiveAndEnabled_m210167461(__this, /*hidden argument*/NULL);
-		if (L_0)
-		{
-			goto IL_0012;
-		}
-	}
-	{
-		return;
-	}
-
-IL_0012:
-	{
-		__this->set_m_ShouldRecalculateStencil_19((bool)1);
-		MaskableGraphic_UpdateClipParent_m2337272942(__this, /*hidden argument*/NULL);
-		VirtActionInvoker0::Invoke(24 /* System.Void UnityEngine.UI.Graphic::SetMaterialDirty() */, __this);
-		return;
-	}
-}
-// UnityEngine.Rect UnityEngine.UI.MaskableGraphic::get_canvasRect()
-extern "C"  Rect_t1525428817  MaskableGraphic_get_canvasRect_m2184399948 (MaskableGraphic_t2806572971 * __this, const MethodInfo* method)
-{
-	int32_t V_0 = 0;
-	{
-		RectTransform_t3317474837 * L_0 = Graphic_get_rectTransform_m4017371950(__this, /*hidden argument*/NULL);
-		Vector3U5BU5D_t3227571696* L_1 = __this->get_m_Corners_27();
-		NullCheck(L_0);
-		RectTransform_GetWorldCorners_m1829917190(L_0, L_1, /*hidden argument*/NULL);
-		Canvas_t3534013893 * L_2 = Graphic_get_canvas_m4291384250(__this, /*hidden argument*/NULL);
-		bool L_3 = Object_op_Implicit_m2106766291(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
-		if (!L_3)
-		{
-			goto IL_0065;
-		}
-	}
-	{
-		V_0 = 0;
-		goto IL_005e;
-	}
-
-IL_0028:
-	{
-		Vector3U5BU5D_t3227571696* L_4 = __this->get_m_Corners_27();
-		int32_t L_5 = V_0;
-		NullCheck(L_4);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
-		Canvas_t3534013893 * L_6 = Graphic_get_canvas_m4291384250(__this, /*hidden argument*/NULL);
-		NullCheck(L_6);
-		Transform_t284553113 * L_7 = Component_get_transform_m4257140443(L_6, /*hidden argument*/NULL);
-		Vector3U5BU5D_t3227571696* L_8 = __this->get_m_Corners_27();
-		int32_t L_9 = V_0;
-		NullCheck(L_8);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_8, L_9);
-		NullCheck(L_7);
-		Vector3_t3525329789  L_10 = Transform_InverseTransformPoint_m1626812000(L_7, (*(Vector3_t3525329789 *)((L_8)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_9)))), /*hidden argument*/NULL);
-		(*(Vector3_t3525329789 *)((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_5)))) = L_10;
-		int32_t L_11 = V_0;
-		V_0 = ((int32_t)((int32_t)L_11+(int32_t)1));
-	}
-
-IL_005e:
-	{
-		int32_t L_12 = V_0;
-		if ((((int32_t)L_12) < ((int32_t)4)))
-		{
-			goto IL_0028;
-		}
-	}
-
-IL_0065:
-	{
-		Vector3U5BU5D_t3227571696* L_13 = __this->get_m_Corners_27();
-		NullCheck(L_13);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_13, 0);
-		float L_14 = ((L_13)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->get_x_1();
-		Vector3U5BU5D_t3227571696* L_15 = __this->get_m_Corners_27();
-		NullCheck(L_15);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_15, 0);
-		float L_16 = ((L_15)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->get_y_2();
-		Vector3U5BU5D_t3227571696* L_17 = __this->get_m_Corners_27();
-		NullCheck(L_17);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_17, 2);
-		float L_18 = ((L_17)->GetAddressAt(static_cast<il2cpp_array_size_t>(2)))->get_x_1();
-		Vector3U5BU5D_t3227571696* L_19 = __this->get_m_Corners_27();
-		NullCheck(L_19);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_19, 0);
-		float L_20 = ((L_19)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->get_x_1();
-		Vector3U5BU5D_t3227571696* L_21 = __this->get_m_Corners_27();
-		NullCheck(L_21);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_21, 2);
-		float L_22 = ((L_21)->GetAddressAt(static_cast<il2cpp_array_size_t>(2)))->get_y_2();
-		Vector3U5BU5D_t3227571696* L_23 = __this->get_m_Corners_27();
-		NullCheck(L_23);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_23, 0);
-		float L_24 = ((L_23)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->get_y_2();
-		Rect_t1525428817  L_25;
-		memset(&L_25, 0, sizeof(L_25));
-		Rect__ctor_m3291325233(&L_25, L_14, L_16, ((float)((float)L_18-(float)L_20)), ((float)((float)L_22-(float)L_24)), /*hidden argument*/NULL);
-		return L_25;
-	}
-}
-// System.Void UnityEngine.UI.MaskableGraphic::UpdateClipParent()
-extern "C"  void MaskableGraphic_UpdateClipParent_m2337272942 (MaskableGraphic_t2806572971 * __this, const MethodInfo* method)
-{
-	RectMask2D_t798674795 * V_0 = NULL;
-	RectMask2D_t798674795 * G_B4_0 = NULL;
-	{
-		bool L_0 = MaskableGraphic_get_maskable_m2226181992(__this, /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_0021;
-		}
-	}
-	{
-		bool L_1 = VirtFuncInvoker0< bool >::Invoke(9 /* System.Boolean UnityEngine.EventSystems.UIBehaviour::IsActive() */, __this);
-		if (!L_1)
-		{
-			goto IL_0021;
-		}
-	}
-	{
-		RectMask2D_t798674795 * L_2 = MaskUtilities_GetRectMaskForClippable_m396614586(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
-		G_B4_0 = L_2;
-		goto IL_0022;
-	}
-
-IL_0021:
-	{
-		G_B4_0 = ((RectMask2D_t798674795 *)(NULL));
-	}
-
-IL_0022:
-	{
-		V_0 = G_B4_0;
-		RectMask2D_t798674795 * L_3 = V_0;
-		RectMask2D_t798674795 * L_4 = __this->get_m_ParentMask_21();
-		bool L_5 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_3, L_4, /*hidden argument*/NULL);
-		if (!L_5)
-		{
-			goto IL_0051;
-		}
-	}
-	{
-		RectMask2D_t798674795 * L_6 = __this->get_m_ParentMask_21();
-		bool L_7 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_6, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_7)
-		{
-			goto IL_0051;
-		}
-	}
-	{
-		RectMask2D_t798674795 * L_8 = __this->get_m_ParentMask_21();
-		NullCheck(L_8);
-		RectMask2D_RemoveClippable_m2506427137(L_8, __this, /*hidden argument*/NULL);
-	}
-
-IL_0051:
-	{
-		RectMask2D_t798674795 * L_9 = V_0;
-		bool L_10 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_9, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_10)
-		{
-			goto IL_0064;
-		}
-	}
-	{
-		RectMask2D_t798674795 * L_11 = V_0;
-		NullCheck(L_11);
-		RectMask2D_AddClippable_m3020362282(L_11, __this, /*hidden argument*/NULL);
-	}
-
-IL_0064:
-	{
-		RectMask2D_t798674795 * L_12 = V_0;
-		__this->set_m_ParentMask_21(L_12);
-		return;
-	}
-}
-// System.Void UnityEngine.UI.MaskableGraphic::RecalculateClipping()
-extern "C"  void MaskableGraphic_RecalculateClipping_m400162188 (MaskableGraphic_t2806572971 * __this, const MethodInfo* method)
-{
-	{
-		MaskableGraphic_UpdateClipParent_m2337272942(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.UI.MaskableGraphic::RecalculateMasking()
-extern "C"  void MaskableGraphic_RecalculateMasking_m2250524558 (MaskableGraphic_t2806572971 * __this, const MethodInfo* method)
-{
-	{
-		__this->set_m_ShouldRecalculateStencil_19((bool)1);
-		VirtActionInvoker0::Invoke(24 /* System.Void UnityEngine.UI.Graphic::SetMaterialDirty() */, __this);
-		return;
-	}
-}
-// UnityEngine.RectTransform UnityEngine.UI.MaskableGraphic::UnityEngine.UI.IClippable.get_rectTransform()
-extern "C"  RectTransform_t3317474837 * MaskableGraphic_UnityEngine_UI_IClippable_get_rectTransform_m3856601786 (MaskableGraphic_t2806572971 * __this, const MethodInfo* method)
-{
-	{
-		RectTransform_t3317474837 * L_0 = Graphic_get_rectTransform_m4017371950(__this, /*hidden argument*/NULL);
-		return L_0;
-	}
-}
-// System.Void UnityEngine.UI.MaskableGraphic/CullStateChangedEvent::.ctor()
-extern const MethodInfo* UnityEvent_1__ctor_m1579102881_MethodInfo_var;
-extern const uint32_t CullStateChangedEvent__ctor_m2540235971_MetadataUsageId;
-extern "C"  void CullStateChangedEvent__ctor_m2540235971 (CullStateChangedEvent_t3567555589 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (CullStateChangedEvent__ctor_m2540235971_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		UnityEvent_1__ctor_m1579102881(__this, /*hidden argument*/UnityEvent_1__ctor_m1579102881_MethodInfo_var);
-		return;
-	}
-}
-// System.Void UnityEngine.UI.MaskUtilities::Notify2DMaskStateChanged(UnityEngine.Component)
-extern TypeInfo* ListPool_1_t1740961763_il2cpp_TypeInfo_var;
-extern TypeInfo* IClippable_t2239353914_il2cpp_TypeInfo_var;
-extern const MethodInfo* ListPool_1_Get_m2014868279_MethodInfo_var;
-extern const MethodInfo* Component_GetComponentsInChildren_TisComponent_t2126946602_m1080956020_MethodInfo_var;
-extern const MethodInfo* ListPool_1_Release_m2849004751_MethodInfo_var;
-extern const uint32_t MaskUtilities_Notify2DMaskStateChanged_m2199550555_MetadataUsageId;
-extern "C"  void MaskUtilities_Notify2DMaskStateChanged_m2199550555 (Il2CppObject * __this /* static, unused */, Component_t2126946602 * ___mask, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MaskUtilities_Notify2DMaskStateChanged_m2199550555_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	List_1_t2923905571 * V_0 = NULL;
-	int32_t V_1 = 0;
-	Il2CppObject * V_2 = NULL;
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(ListPool_1_t1740961763_il2cpp_TypeInfo_var);
-		List_1_t2923905571 * L_0 = ListPool_1_Get_m2014868279(NULL /*static, unused*/, /*hidden argument*/ListPool_1_Get_m2014868279_MethodInfo_var);
-		V_0 = L_0;
-		Component_t2126946602 * L_1 = ___mask;
-		List_1_t2923905571 * L_2 = V_0;
-		NullCheck(L_1);
-		Component_GetComponentsInChildren_TisComponent_t2126946602_m1080956020(L_1, L_2, /*hidden argument*/Component_GetComponentsInChildren_TisComponent_t2126946602_m1080956020_MethodInfo_var);
-		V_1 = 0;
-		goto IL_0064;
-	}
-
-IL_0014:
-	{
-		List_1_t2923905571 * L_3 = V_0;
-		int32_t L_4 = V_1;
-		NullCheck(L_3);
-		Component_t2126946602 * L_5 = VirtFuncInvoker1< Component_t2126946602 *, int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.Component>::get_Item(System.Int32) */, L_3, L_4);
-		bool L_6 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_5, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (L_6)
-		{
-			goto IL_0042;
-		}
-	}
-	{
-		List_1_t2923905571 * L_7 = V_0;
-		int32_t L_8 = V_1;
-		NullCheck(L_7);
-		Component_t2126946602 * L_9 = VirtFuncInvoker1< Component_t2126946602 *, int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.Component>::get_Item(System.Int32) */, L_7, L_8);
-		NullCheck(L_9);
-		GameObject_t4012695102 * L_10 = Component_get_gameObject_m1170635899(L_9, /*hidden argument*/NULL);
-		Component_t2126946602 * L_11 = ___mask;
-		NullCheck(L_11);
-		GameObject_t4012695102 * L_12 = Component_get_gameObject_m1170635899(L_11, /*hidden argument*/NULL);
-		bool L_13 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_10, L_12, /*hidden argument*/NULL);
-		if (!L_13)
-		{
-			goto IL_0047;
-		}
-	}
-
-IL_0042:
-	{
-		goto IL_0060;
-	}
-
-IL_0047:
-	{
-		List_1_t2923905571 * L_14 = V_0;
-		int32_t L_15 = V_1;
-		NullCheck(L_14);
-		Component_t2126946602 * L_16 = VirtFuncInvoker1< Component_t2126946602 *, int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.Component>::get_Item(System.Int32) */, L_14, L_15);
-		V_2 = ((Il2CppObject *)IsInst(L_16, IClippable_t2239353914_il2cpp_TypeInfo_var));
-		Il2CppObject * L_17 = V_2;
-		if (!L_17)
-		{
-			goto IL_0060;
-		}
-	}
-	{
-		Il2CppObject * L_18 = V_2;
-		NullCheck(L_18);
-		InterfaceActionInvoker0::Invoke(0 /* System.Void UnityEngine.UI.IClippable::RecalculateClipping() */, IClippable_t2239353914_il2cpp_TypeInfo_var, L_18);
-	}
-
-IL_0060:
-	{
-		int32_t L_19 = V_1;
-		V_1 = ((int32_t)((int32_t)L_19+(int32_t)1));
-	}
-
-IL_0064:
-	{
-		int32_t L_20 = V_1;
-		List_1_t2923905571 * L_21 = V_0;
-		NullCheck(L_21);
-		int32_t L_22 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.Component>::get_Count() */, L_21);
-		if ((((int32_t)L_20) < ((int32_t)L_22)))
-		{
-			goto IL_0014;
-		}
-	}
-	{
-		List_1_t2923905571 * L_23 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(ListPool_1_t1740961763_il2cpp_TypeInfo_var);
-		ListPool_1_Release_m2849004751(NULL /*static, unused*/, L_23, /*hidden argument*/ListPool_1_Release_m2849004751_MethodInfo_var);
-		return;
-	}
-}
-// System.Void UnityEngine.UI.MaskUtilities::NotifyStencilStateChanged(UnityEngine.Component)
-extern TypeInfo* ListPool_1_t1740961763_il2cpp_TypeInfo_var;
-extern TypeInfo* IMaskable_t528807864_il2cpp_TypeInfo_var;
-extern const MethodInfo* ListPool_1_Get_m2014868279_MethodInfo_var;
-extern const MethodInfo* Component_GetComponentsInChildren_TisComponent_t2126946602_m1080956020_MethodInfo_var;
-extern const MethodInfo* ListPool_1_Release_m2849004751_MethodInfo_var;
-extern const uint32_t MaskUtilities_NotifyStencilStateChanged_m2159873435_MetadataUsageId;
-extern "C"  void MaskUtilities_NotifyStencilStateChanged_m2159873435 (Il2CppObject * __this /* static, unused */, Component_t2126946602 * ___mask, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MaskUtilities_NotifyStencilStateChanged_m2159873435_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	List_1_t2923905571 * V_0 = NULL;
-	int32_t V_1 = 0;
-	Il2CppObject * V_2 = NULL;
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(ListPool_1_t1740961763_il2cpp_TypeInfo_var);
-		List_1_t2923905571 * L_0 = ListPool_1_Get_m2014868279(NULL /*static, unused*/, /*hidden argument*/ListPool_1_Get_m2014868279_MethodInfo_var);
-		V_0 = L_0;
-		Component_t2126946602 * L_1 = ___mask;
-		List_1_t2923905571 * L_2 = V_0;
-		NullCheck(L_1);
-		Component_GetComponentsInChildren_TisComponent_t2126946602_m1080956020(L_1, L_2, /*hidden argument*/Component_GetComponentsInChildren_TisComponent_t2126946602_m1080956020_MethodInfo_var);
-		V_1 = 0;
-		goto IL_0064;
-	}
-
-IL_0014:
-	{
-		List_1_t2923905571 * L_3 = V_0;
-		int32_t L_4 = V_1;
-		NullCheck(L_3);
-		Component_t2126946602 * L_5 = VirtFuncInvoker1< Component_t2126946602 *, int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.Component>::get_Item(System.Int32) */, L_3, L_4);
-		bool L_6 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_5, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (L_6)
-		{
-			goto IL_0042;
-		}
-	}
-	{
-		List_1_t2923905571 * L_7 = V_0;
-		int32_t L_8 = V_1;
-		NullCheck(L_7);
-		Component_t2126946602 * L_9 = VirtFuncInvoker1< Component_t2126946602 *, int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.Component>::get_Item(System.Int32) */, L_7, L_8);
-		NullCheck(L_9);
-		GameObject_t4012695102 * L_10 = Component_get_gameObject_m1170635899(L_9, /*hidden argument*/NULL);
-		Component_t2126946602 * L_11 = ___mask;
-		NullCheck(L_11);
-		GameObject_t4012695102 * L_12 = Component_get_gameObject_m1170635899(L_11, /*hidden argument*/NULL);
-		bool L_13 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_10, L_12, /*hidden argument*/NULL);
-		if (!L_13)
-		{
-			goto IL_0047;
-		}
-	}
-
-IL_0042:
-	{
-		goto IL_0060;
-	}
-
-IL_0047:
-	{
-		List_1_t2923905571 * L_14 = V_0;
-		int32_t L_15 = V_1;
-		NullCheck(L_14);
-		Component_t2126946602 * L_16 = VirtFuncInvoker1< Component_t2126946602 *, int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.Component>::get_Item(System.Int32) */, L_14, L_15);
-		V_2 = ((Il2CppObject *)IsInst(L_16, IMaskable_t528807864_il2cpp_TypeInfo_var));
-		Il2CppObject * L_17 = V_2;
-		if (!L_17)
-		{
-			goto IL_0060;
-		}
-	}
-	{
-		Il2CppObject * L_18 = V_2;
-		NullCheck(L_18);
-		InterfaceActionInvoker0::Invoke(0 /* System.Void UnityEngine.UI.IMaskable::RecalculateMasking() */, IMaskable_t528807864_il2cpp_TypeInfo_var, L_18);
-	}
-
-IL_0060:
-	{
-		int32_t L_19 = V_1;
-		V_1 = ((int32_t)((int32_t)L_19+(int32_t)1));
-	}
-
-IL_0064:
-	{
-		int32_t L_20 = V_1;
-		List_1_t2923905571 * L_21 = V_0;
-		NullCheck(L_21);
-		int32_t L_22 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.Component>::get_Count() */, L_21);
-		if ((((int32_t)L_20) < ((int32_t)L_22)))
-		{
-			goto IL_0014;
-		}
-	}
-	{
-		List_1_t2923905571 * L_23 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(ListPool_1_t1740961763_il2cpp_TypeInfo_var);
-		ListPool_1_Release_m2849004751(NULL /*static, unused*/, L_23, /*hidden argument*/ListPool_1_Release_m2849004751_MethodInfo_var);
-		return;
-	}
-}
-// UnityEngine.Transform UnityEngine.UI.MaskUtilities::FindRootSortOverrideCanvas(UnityEngine.Transform)
-extern TypeInfo* ListPool_1_t3148029054_il2cpp_TypeInfo_var;
-extern const MethodInfo* ListPool_1_Get_m3707028656_MethodInfo_var;
-extern const MethodInfo* Component_GetComponentsInParent_TisCanvas_t3534013893_m2636073967_MethodInfo_var;
-extern const MethodInfo* ListPool_1_Release_m3200393738_MethodInfo_var;
-extern const uint32_t MaskUtilities_FindRootSortOverrideCanvas_m4219954651_MetadataUsageId;
-extern "C"  Transform_t284553113 * MaskUtilities_FindRootSortOverrideCanvas_m4219954651 (Il2CppObject * __this /* static, unused */, Transform_t284553113 * ___start, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MaskUtilities_FindRootSortOverrideCanvas_m4219954651_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	List_1_t36005566 * V_0 = NULL;
-	Canvas_t3534013893 * V_1 = NULL;
-	int32_t V_2 = 0;
-	Transform_t284553113 * G_B8_0 = NULL;
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(ListPool_1_t3148029054_il2cpp_TypeInfo_var);
-		List_1_t36005566 * L_0 = ListPool_1_Get_m3707028656(NULL /*static, unused*/, /*hidden argument*/ListPool_1_Get_m3707028656_MethodInfo_var);
-		V_0 = L_0;
-		Transform_t284553113 * L_1 = ___start;
-		List_1_t36005566 * L_2 = V_0;
-		NullCheck(L_1);
-		Component_GetComponentsInParent_TisCanvas_t3534013893_m2636073967(L_1, (bool)0, L_2, /*hidden argument*/Component_GetComponentsInParent_TisCanvas_t3534013893_m2636073967_MethodInfo_var);
-		V_1 = (Canvas_t3534013893 *)NULL;
-		V_2 = 0;
-		goto IL_0033;
-	}
-
-IL_0017:
-	{
-		List_1_t36005566 * L_3 = V_0;
-		int32_t L_4 = V_2;
-		NullCheck(L_3);
-		Canvas_t3534013893 * L_5 = VirtFuncInvoker1< Canvas_t3534013893 *, int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.Canvas>::get_Item(System.Int32) */, L_3, L_4);
-		V_1 = L_5;
-		Canvas_t3534013893 * L_6 = V_1;
-		NullCheck(L_6);
-		bool L_7 = Canvas_get_overrideSorting_m3812884636(L_6, /*hidden argument*/NULL);
-		if (!L_7)
-		{
-			goto IL_002f;
-		}
-	}
-	{
-		goto IL_003f;
-	}
-
-IL_002f:
-	{
-		int32_t L_8 = V_2;
-		V_2 = ((int32_t)((int32_t)L_8+(int32_t)1));
-	}
-
-IL_0033:
-	{
-		int32_t L_9 = V_2;
-		List_1_t36005566 * L_10 = V_0;
-		NullCheck(L_10);
-		int32_t L_11 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.Canvas>::get_Count() */, L_10);
-		if ((((int32_t)L_9) < ((int32_t)L_11)))
-		{
-			goto IL_0017;
-		}
-	}
-
-IL_003f:
-	{
-		List_1_t36005566 * L_12 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(ListPool_1_t3148029054_il2cpp_TypeInfo_var);
-		ListPool_1_Release_m3200393738(NULL /*static, unused*/, L_12, /*hidden argument*/ListPool_1_Release_m3200393738_MethodInfo_var);
-		Canvas_t3534013893 * L_13 = V_1;
-		bool L_14 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_13, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_14)
-		{
-			goto IL_005c;
-		}
-	}
-	{
-		Canvas_t3534013893 * L_15 = V_1;
-		NullCheck(L_15);
-		Transform_t284553113 * L_16 = Component_get_transform_m4257140443(L_15, /*hidden argument*/NULL);
-		G_B8_0 = L_16;
-		goto IL_005d;
-	}
-
-IL_005c:
-	{
-		G_B8_0 = ((Transform_t284553113 *)(NULL));
-	}
-
-IL_005d:
-	{
-		return G_B8_0;
-	}
-}
-// System.Int32 UnityEngine.UI.MaskUtilities::GetStencilDepth(UnityEngine.Transform,UnityEngine.Transform)
-extern TypeInfo* ListPool_1_t2900260814_il2cpp_TypeInfo_var;
-extern const MethodInfo* ListPool_1_Get_m2713847744_MethodInfo_var;
-extern const MethodInfo* Component_GetComponents_TisMask_t3286245653_m956513135_MethodInfo_var;
-extern const MethodInfo* ListPool_1_Release_m3569998872_MethodInfo_var;
-extern const uint32_t MaskUtilities_GetStencilDepth_m2786493988_MetadataUsageId;
-extern "C"  int32_t MaskUtilities_GetStencilDepth_m2786493988 (Il2CppObject * __this /* static, unused */, Transform_t284553113 * ___transform, Transform_t284553113 * ___stopAfter, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MaskUtilities_GetStencilDepth_m2786493988_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	int32_t V_0 = 0;
-	Transform_t284553113 * V_1 = NULL;
-	List_1_t4083204622 * V_2 = NULL;
-	int32_t V_3 = 0;
-	{
-		V_0 = 0;
-		Transform_t284553113 * L_0 = ___transform;
-		Transform_t284553113 * L_1 = ___stopAfter;
-		bool L_2 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_0010;
-		}
-	}
-	{
-		int32_t L_3 = V_0;
-		return L_3;
-	}
-
-IL_0010:
-	{
-		Transform_t284553113 * L_4 = ___transform;
-		NullCheck(L_4);
-		Transform_t284553113 * L_5 = Transform_get_parent_m2236876972(L_4, /*hidden argument*/NULL);
-		V_1 = L_5;
-		IL2CPP_RUNTIME_CLASS_INIT(ListPool_1_t2900260814_il2cpp_TypeInfo_var);
-		List_1_t4083204622 * L_6 = ListPool_1_Get_m2713847744(NULL /*static, unused*/, /*hidden argument*/ListPool_1_Get_m2713847744_MethodInfo_var);
-		V_2 = L_6;
-		goto IL_00b1;
-	}
-
-IL_0022:
-	{
-		Transform_t284553113 * L_7 = V_1;
-		List_1_t4083204622 * L_8 = V_2;
-		NullCheck(L_7);
-		Component_GetComponents_TisMask_t3286245653_m956513135(L_7, L_8, /*hidden argument*/Component_GetComponents_TisMask_t3286245653_m956513135_MethodInfo_var);
-		V_3 = 0;
-		goto IL_008d;
-	}
-
-IL_0030:
-	{
-		List_1_t4083204622 * L_9 = V_2;
-		int32_t L_10 = V_3;
-		NullCheck(L_9);
-		Mask_t3286245653 * L_11 = VirtFuncInvoker1< Mask_t3286245653 *, int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.UI.Mask>::get_Item(System.Int32) */, L_9, L_10);
-		bool L_12 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_11, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_12)
-		{
-			goto IL_0089;
-		}
-	}
-	{
-		List_1_t4083204622 * L_13 = V_2;
-		int32_t L_14 = V_3;
-		NullCheck(L_13);
-		Mask_t3286245653 * L_15 = VirtFuncInvoker1< Mask_t3286245653 *, int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.UI.Mask>::get_Item(System.Int32) */, L_13, L_14);
-		NullCheck(L_15);
-		bool L_16 = VirtFuncInvoker0< bool >::Invoke(9 /* System.Boolean UnityEngine.EventSystems.UIBehaviour::IsActive() */, L_15);
-		if (!L_16)
-		{
-			goto IL_0089;
-		}
-	}
-	{
-		List_1_t4083204622 * L_17 = V_2;
-		int32_t L_18 = V_3;
-		NullCheck(L_17);
-		Mask_t3286245653 * L_19 = VirtFuncInvoker1< Mask_t3286245653 *, int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.UI.Mask>::get_Item(System.Int32) */, L_17, L_18);
-		NullCheck(L_19);
-		Graphic_t933884113 * L_20 = Mask_get_graphic_m2101144526(L_19, /*hidden argument*/NULL);
-		bool L_21 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_20, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_21)
-		{
-			goto IL_0089;
-		}
-	}
-	{
-		List_1_t4083204622 * L_22 = V_2;
-		int32_t L_23 = V_3;
-		NullCheck(L_22);
-		Mask_t3286245653 * L_24 = VirtFuncInvoker1< Mask_t3286245653 *, int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.UI.Mask>::get_Item(System.Int32) */, L_22, L_23);
-		NullCheck(L_24);
-		Graphic_t933884113 * L_25 = Mask_get_graphic_m2101144526(L_24, /*hidden argument*/NULL);
-		NullCheck(L_25);
-		bool L_26 = VirtFuncInvoker0< bool >::Invoke(9 /* System.Boolean UnityEngine.EventSystems.UIBehaviour::IsActive() */, L_25);
-		if (!L_26)
-		{
-			goto IL_0089;
-		}
-	}
-	{
-		int32_t L_27 = V_0;
-		V_0 = ((int32_t)((int32_t)L_27+(int32_t)1));
-		goto IL_0099;
-	}
-
-IL_0089:
-	{
-		int32_t L_28 = V_3;
-		V_3 = ((int32_t)((int32_t)L_28+(int32_t)1));
-	}
-
-IL_008d:
-	{
-		int32_t L_29 = V_3;
-		List_1_t4083204622 * L_30 = V_2;
-		NullCheck(L_30);
-		int32_t L_31 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.UI.Mask>::get_Count() */, L_30);
-		if ((((int32_t)L_29) < ((int32_t)L_31)))
-		{
-			goto IL_0030;
-		}
-	}
-
-IL_0099:
-	{
-		Transform_t284553113 * L_32 = V_1;
-		Transform_t284553113 * L_33 = ___stopAfter;
-		bool L_34 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_32, L_33, /*hidden argument*/NULL);
-		if (!L_34)
-		{
-			goto IL_00aa;
-		}
-	}
-	{
-		goto IL_00bd;
-	}
-
-IL_00aa:
-	{
-		Transform_t284553113 * L_35 = V_1;
-		NullCheck(L_35);
-		Transform_t284553113 * L_36 = Transform_get_parent_m2236876972(L_35, /*hidden argument*/NULL);
-		V_1 = L_36;
-	}
-
-IL_00b1:
-	{
-		Transform_t284553113 * L_37 = V_1;
-		bool L_38 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_37, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (L_38)
-		{
-			goto IL_0022;
-		}
-	}
-
-IL_00bd:
-	{
-		List_1_t4083204622 * L_39 = V_2;
-		IL2CPP_RUNTIME_CLASS_INIT(ListPool_1_t2900260814_il2cpp_TypeInfo_var);
-		ListPool_1_Release_m3569998872(NULL /*static, unused*/, L_39, /*hidden argument*/ListPool_1_Release_m3569998872_MethodInfo_var);
-		int32_t L_40 = V_0;
-		return L_40;
-	}
-}
-// UnityEngine.UI.RectMask2D UnityEngine.UI.MaskUtilities::GetRectMaskForClippable(UnityEngine.UI.IClippable)
-extern TypeInfo* ListPool_1_t412689956_il2cpp_TypeInfo_var;
-extern TypeInfo* IClippable_t2239353914_il2cpp_TypeInfo_var;
-extern const MethodInfo* ListPool_1_Get_m2190567382_MethodInfo_var;
-extern const MethodInfo* Component_GetComponentsInParent_TisRectMask2D_t798674795_m2818396525_MethodInfo_var;
-extern const MethodInfo* ListPool_1_Release_m3441100526_MethodInfo_var;
-extern const uint32_t MaskUtilities_GetRectMaskForClippable_m396614586_MetadataUsageId;
-extern "C"  RectMask2D_t798674795 * MaskUtilities_GetRectMaskForClippable_m396614586 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___transform, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MaskUtilities_GetRectMaskForClippable_m396614586_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	List_1_t1595633764 * V_0 = NULL;
-	RectMask2D_t798674795 * V_1 = NULL;
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(ListPool_1_t412689956_il2cpp_TypeInfo_var);
-		List_1_t1595633764 * L_0 = ListPool_1_Get_m2190567382(NULL /*static, unused*/, /*hidden argument*/ListPool_1_Get_m2190567382_MethodInfo_var);
-		V_0 = L_0;
-		V_1 = (RectMask2D_t798674795 *)NULL;
-		Il2CppObject * L_1 = ___transform;
-		NullCheck(L_1);
-		RectTransform_t3317474837 * L_2 = InterfaceFuncInvoker0< RectTransform_t3317474837 * >::Invoke(1 /* UnityEngine.RectTransform UnityEngine.UI.IClippable::get_rectTransform() */, IClippable_t2239353914_il2cpp_TypeInfo_var, L_1);
-		List_1_t1595633764 * L_3 = V_0;
-		NullCheck(L_2);
-		Component_GetComponentsInParent_TisRectMask2D_t798674795_m2818396525(L_2, (bool)0, L_3, /*hidden argument*/Component_GetComponentsInParent_TisRectMask2D_t798674795_m2818396525_MethodInfo_var);
-		List_1_t1595633764 * L_4 = V_0;
-		NullCheck(L_4);
-		int32_t L_5 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.UI.RectMask2D>::get_Count() */, L_4);
-		if ((((int32_t)L_5) <= ((int32_t)0)))
-		{
-			goto IL_0029;
-		}
-	}
-	{
-		List_1_t1595633764 * L_6 = V_0;
-		NullCheck(L_6);
-		RectMask2D_t798674795 * L_7 = VirtFuncInvoker1< RectMask2D_t798674795 *, int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.UI.RectMask2D>::get_Item(System.Int32) */, L_6, 0);
-		V_1 = L_7;
-	}
-
-IL_0029:
-	{
-		List_1_t1595633764 * L_8 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(ListPool_1_t412689956_il2cpp_TypeInfo_var);
-		ListPool_1_Release_m3441100526(NULL /*static, unused*/, L_8, /*hidden argument*/ListPool_1_Release_m3441100526_MethodInfo_var);
-		RectMask2D_t798674795 * L_9 = V_1;
-		return L_9;
-	}
-}
-// System.Void UnityEngine.UI.MaskUtilities::GetRectMasksForClip(UnityEngine.UI.RectMask2D,System.Collections.Generic.List`1<UnityEngine.UI.RectMask2D>)
-extern const MethodInfo* Component_GetComponentsInParent_TisRectMask2D_t798674795_m2818396525_MethodInfo_var;
-extern const uint32_t MaskUtilities_GetRectMasksForClip_m447525417_MetadataUsageId;
-extern "C"  void MaskUtilities_GetRectMasksForClip_m447525417 (Il2CppObject * __this /* static, unused */, RectMask2D_t798674795 * ___clipper, List_1_t1595633764 * ___masks, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MaskUtilities_GetRectMasksForClip_m447525417_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		List_1_t1595633764 * L_0 = ___masks;
-		NullCheck(L_0);
-		VirtActionInvoker0::Invoke(23 /* System.Void System.Collections.Generic.List`1<UnityEngine.UI.RectMask2D>::Clear() */, L_0);
-		RectMask2D_t798674795 * L_1 = ___clipper;
-		NullCheck(L_1);
-		Transform_t284553113 * L_2 = Component_get_transform_m4257140443(L_1, /*hidden argument*/NULL);
-		List_1_t1595633764 * L_3 = ___masks;
-		NullCheck(L_2);
-		Component_GetComponentsInParent_TisRectMask2D_t798674795_m2818396525(L_2, (bool)0, L_3, /*hidden argument*/Component_GetComponentsInParent_TisRectMask2D_t798674795_m2818396525_MethodInfo_var);
-		return;
-	}
-}
-// System.Void UnityEngine.UI.Misc::DestroyImmediate(UnityEngine.Object)
-extern "C"  void Misc_DestroyImmediate_m40421862 (Il2CppObject * __this /* static, unused */, Object_t3878351788 * ___obj, const MethodInfo* method)
-{
-	{
-		Object_t3878351788 * L_0 = ___obj;
-		bool L_1 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_0, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_1)
-		{
-			goto IL_0027;
-		}
-	}
-	{
-		bool L_2 = Application_get_isEditor_m1279348309(NULL /*static, unused*/, /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_0021;
-		}
-	}
-	{
-		Object_t3878351788 * L_3 = ___obj;
-		Object_DestroyImmediate_m349958679(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
-		goto IL_0027;
-	}
-
-IL_0021:
-	{
-		Object_t3878351788 * L_4 = ___obj;
-		Object_Destroy_m176400816(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
-	}
-
-IL_0027:
-	{
-		return;
-	}
-}
-// UnityEngine.UI.Navigation/Mode UnityEngine.UI.Navigation::get_mode()
-extern "C"  int32_t Navigation_get_mode_m721480509 (Navigation_t2845019197 * __this, const MethodInfo* method)
-{
-	{
-		int32_t L_0 = __this->get_m_Mode_0();
-		return L_0;
-	}
-}
-// System.Void UnityEngine.UI.Navigation::set_mode(UnityEngine.UI.Navigation/Mode)
-extern "C"  void Navigation_set_mode_m1506614802 (Navigation_t2845019197 * __this, int32_t ___value, const MethodInfo* method)
-{
-	{
-		int32_t L_0 = ___value;
-		__this->set_m_Mode_0(L_0);
-		return;
-	}
-}
-// UnityEngine.UI.Selectable UnityEngine.UI.Navigation::get_selectOnUp()
-extern "C"  Selectable_t3621744255 * Navigation_get_selectOnUp_m2566832818 (Navigation_t2845019197 * __this, const MethodInfo* method)
-{
-	{
-		Selectable_t3621744255 * L_0 = __this->get_m_SelectOnUp_1();
-		return L_0;
-	}
-}
-// System.Void UnityEngine.UI.Navigation::set_selectOnUp(UnityEngine.UI.Selectable)
-extern "C"  void Navigation_set_selectOnUp_m2875366329 (Navigation_t2845019197 * __this, Selectable_t3621744255 * ___value, const MethodInfo* method)
-{
-	{
-		Selectable_t3621744255 * L_0 = ___value;
-		__this->set_m_SelectOnUp_1(L_0);
-		return;
-	}
-}
-// UnityEngine.UI.Selectable UnityEngine.UI.Navigation::get_selectOnDown()
-extern "C"  Selectable_t3621744255 * Navigation_get_selectOnDown_m929912185 (Navigation_t2845019197 * __this, const MethodInfo* method)
-{
-	{
-		Selectable_t3621744255 * L_0 = __this->get_m_SelectOnDown_2();
-		return L_0;
-	}
-}
-// System.Void UnityEngine.UI.Navigation::set_selectOnDown(UnityEngine.UI.Selectable)
-extern "C"  void Navigation_set_selectOnDown_m2647056978 (Navigation_t2845019197 * __this, Selectable_t3621744255 * ___value, const MethodInfo* method)
-{
-	{
-		Selectable_t3621744255 * L_0 = ___value;
-		__this->set_m_SelectOnDown_2(L_0);
-		return;
-	}
-}
-// UnityEngine.UI.Selectable UnityEngine.UI.Navigation::get_selectOnLeft()
-extern "C"  Selectable_t3621744255 * Navigation_get_selectOnLeft_m1149209502 (Navigation_t2845019197 * __this, const MethodInfo* method)
-{
-	{
-		Selectable_t3621744255 * L_0 = __this->get_m_SelectOnLeft_3();
-		return L_0;
-	}
-}
-// System.Void UnityEngine.UI.Navigation::set_selectOnLeft(UnityEngine.UI.Selectable)
-extern "C"  void Navigation_set_selectOnLeft_m619081677 (Navigation_t2845019197 * __this, Selectable_t3621744255 * ___value, const MethodInfo* method)
-{
-	{
-		Selectable_t3621744255 * L_0 = ___value;
-		__this->set_m_SelectOnLeft_3(L_0);
-		return;
-	}
-}
-// UnityEngine.UI.Selectable UnityEngine.UI.Navigation::get_selectOnRight()
-extern "C"  Selectable_t3621744255 * Navigation_get_selectOnRight_m2410966663 (Navigation_t2845019197 * __this, const MethodInfo* method)
-{
-	{
-		Selectable_t3621744255 * L_0 = __this->get_m_SelectOnRight_4();
-		return L_0;
-	}
-}
-// System.Void UnityEngine.UI.Navigation::set_selectOnRight(UnityEngine.UI.Selectable)
-extern "C"  void Navigation_set_selectOnRight_m1544013280 (Navigation_t2845019197 * __this, Selectable_t3621744255 * ___value, const MethodInfo* method)
-{
-	{
-		Selectable_t3621744255 * L_0 = ___value;
-		__this->set_m_SelectOnRight_4(L_0);
-		return;
-	}
-}
-// UnityEngine.UI.Navigation UnityEngine.UI.Navigation::get_defaultNavigation()
-extern TypeInfo* Navigation_t2845019197_il2cpp_TypeInfo_var;
-extern const uint32_t Navigation_get_defaultNavigation_m492829917_MetadataUsageId;
-extern "C"  Navigation_t2845019197  Navigation_get_defaultNavigation_m492829917 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Navigation_get_defaultNavigation_m492829917_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	Navigation_t2845019197  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	{
-		Initobj (Navigation_t2845019197_il2cpp_TypeInfo_var, (&V_0));
-		(&V_0)->set_m_Mode_0(3);
-		Navigation_t2845019197  L_0 = V_0;
-		return L_0;
-	}
-}
-// System.Boolean UnityEngine.UI.Navigation::Equals(UnityEngine.UI.Navigation)
-extern "C"  bool Navigation_Equals_m3278735261 (Navigation_t2845019197 * __this, Navigation_t2845019197  ___other, const MethodInfo* method)
-{
-	int32_t G_B6_0 = 0;
-	{
-		int32_t L_0 = Navigation_get_mode_m721480509(__this, /*hidden argument*/NULL);
-		int32_t L_1 = Navigation_get_mode_m721480509((&___other), /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_0) == ((uint32_t)L_1))))
-		{
-			goto IL_006b;
-		}
-	}
-	{
-		Selectable_t3621744255 * L_2 = Navigation_get_selectOnUp_m2566832818(__this, /*hidden argument*/NULL);
-		Selectable_t3621744255 * L_3 = Navigation_get_selectOnUp_m2566832818((&___other), /*hidden argument*/NULL);
-		bool L_4 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
-		if (!L_4)
-		{
-			goto IL_006b;
-		}
-	}
-	{
-		Selectable_t3621744255 * L_5 = Navigation_get_selectOnDown_m929912185(__this, /*hidden argument*/NULL);
-		Selectable_t3621744255 * L_6 = Navigation_get_selectOnDown_m929912185((&___other), /*hidden argument*/NULL);
-		bool L_7 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
-		if (!L_7)
-		{
-			goto IL_006b;
-		}
-	}
-	{
-		Selectable_t3621744255 * L_8 = Navigation_get_selectOnLeft_m1149209502(__this, /*hidden argument*/NULL);
-		Selectable_t3621744255 * L_9 = Navigation_get_selectOnLeft_m1149209502((&___other), /*hidden argument*/NULL);
-		bool L_10 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_8, L_9, /*hidden argument*/NULL);
-		if (!L_10)
-		{
-			goto IL_006b;
-		}
-	}
-	{
-		Selectable_t3621744255 * L_11 = Navigation_get_selectOnRight_m2410966663(__this, /*hidden argument*/NULL);
-		Selectable_t3621744255 * L_12 = Navigation_get_selectOnRight_m2410966663((&___other), /*hidden argument*/NULL);
-		bool L_13 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_11, L_12, /*hidden argument*/NULL);
-		G_B6_0 = ((int32_t)(L_13));
-		goto IL_006c;
-	}
-
-IL_006b:
-	{
-		G_B6_0 = 0;
-	}
-
-IL_006c:
-	{
-		return (bool)G_B6_0;
-	}
-}
-// System.Void UnityEngine.UI.Outline::.ctor()
-extern "C"  void Outline__ctor_m4004117817 (Outline_t3842262571 * __this, const MethodInfo* method)
-{
-	{
-		Shadow__ctor_m2944649643(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.UI.Outline::ModifyMesh(UnityEngine.UI.VertexHelper)
-extern TypeInfo* ListPool_1_t1874076766_il2cpp_TypeInfo_var;
-extern const MethodInfo* ListPool_1_Get_m3130095824_MethodInfo_var;
-extern const MethodInfo* List_1_get_Capacity_m792627810_MethodInfo_var;
-extern const MethodInfo* List_1_set_Capacity_m3820333071_MethodInfo_var;
-extern const MethodInfo* ListPool_1_Release_m2709067242_MethodInfo_var;
-extern const uint32_t Outline_ModifyMesh_m4125422123_MetadataUsageId;
-extern "C"  void Outline_ModifyMesh_m4125422123 (Outline_t3842262571 * __this, VertexHelper_t1471929499 * ___vh, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Outline_ModifyMesh_m4125422123_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	List_1_t3057020574 * V_0 = NULL;
-	int32_t V_1 = 0;
-	int32_t V_2 = 0;
-	int32_t V_3 = 0;
-	Vector2_t3525329788  V_4;
-	memset(&V_4, 0, sizeof(V_4));
-	Vector2_t3525329788  V_5;
-	memset(&V_5, 0, sizeof(V_5));
-	Vector2_t3525329788  V_6;
-	memset(&V_6, 0, sizeof(V_6));
-	Vector2_t3525329788  V_7;
-	memset(&V_7, 0, sizeof(V_7));
-	Vector2_t3525329788  V_8;
-	memset(&V_8, 0, sizeof(V_8));
-	Vector2_t3525329788  V_9;
-	memset(&V_9, 0, sizeof(V_9));
-	Vector2_t3525329788  V_10;
-	memset(&V_10, 0, sizeof(V_10));
-	Vector2_t3525329788  V_11;
-	memset(&V_11, 0, sizeof(V_11));
-	{
-		bool L_0 = VirtFuncInvoker0< bool >::Invoke(9 /* System.Boolean UnityEngine.EventSystems.UIBehaviour::IsActive() */, __this);
-		if (L_0)
-		{
-			goto IL_000c;
-		}
-	}
-	{
-		return;
-	}
-
-IL_000c:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(ListPool_1_t1874076766_il2cpp_TypeInfo_var);
-		List_1_t3057020574 * L_1 = ListPool_1_Get_m3130095824(NULL /*static, unused*/, /*hidden argument*/ListPool_1_Get_m3130095824_MethodInfo_var);
-		V_0 = L_1;
-		VertexHelper_t1471929499 * L_2 = ___vh;
-		List_1_t3057020574 * L_3 = V_0;
-		NullCheck(L_2);
-		VertexHelper_GetUIVertexStream_m1078623420(L_2, L_3, /*hidden argument*/NULL);
-		List_1_t3057020574 * L_4 = V_0;
-		NullCheck(L_4);
-		int32_t L_5 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.UIVertex>::get_Count() */, L_4);
-		V_1 = ((int32_t)((int32_t)L_5*(int32_t)5));
-		List_1_t3057020574 * L_6 = V_0;
-		NullCheck(L_6);
-		int32_t L_7 = List_1_get_Capacity_m792627810(L_6, /*hidden argument*/List_1_get_Capacity_m792627810_MethodInfo_var);
-		int32_t L_8 = V_1;
-		if ((((int32_t)L_7) >= ((int32_t)L_8)))
-		{
-			goto IL_0035;
-		}
-	}
-	{
-		List_1_t3057020574 * L_9 = V_0;
-		int32_t L_10 = V_1;
-		NullCheck(L_9);
-		List_1_set_Capacity_m3820333071(L_9, L_10, /*hidden argument*/List_1_set_Capacity_m3820333071_MethodInfo_var);
-	}
-
-IL_0035:
-	{
-		V_2 = 0;
-		List_1_t3057020574 * L_11 = V_0;
-		NullCheck(L_11);
-		int32_t L_12 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.UIVertex>::get_Count() */, L_11);
-		V_3 = L_12;
-		List_1_t3057020574 * L_13 = V_0;
-		Color_t1588175760  L_14 = Shadow_get_effectColor_m2953989785(__this, /*hidden argument*/NULL);
-		Color32_t4137084207  L_15 = Color32_op_Implicit_m3684884838(NULL /*static, unused*/, L_14, /*hidden argument*/NULL);
-		int32_t L_16 = V_2;
-		List_1_t3057020574 * L_17 = V_0;
-		NullCheck(L_17);
-		int32_t L_18 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.UIVertex>::get_Count() */, L_17);
-		Vector2_t3525329788  L_19 = Shadow_get_effectDistance_m1102454733(__this, /*hidden argument*/NULL);
-		V_4 = L_19;
-		float L_20 = (&V_4)->get_x_1();
-		Vector2_t3525329788  L_21 = Shadow_get_effectDistance_m1102454733(__this, /*hidden argument*/NULL);
-		V_5 = L_21;
-		float L_22 = (&V_5)->get_y_2();
-		Shadow_ApplyShadowZeroAlloc_m338158484(__this, L_13, L_15, L_16, L_18, L_20, L_22, /*hidden argument*/NULL);
-		int32_t L_23 = V_3;
-		V_2 = L_23;
-		List_1_t3057020574 * L_24 = V_0;
-		NullCheck(L_24);
-		int32_t L_25 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.UIVertex>::get_Count() */, L_24);
-		V_3 = L_25;
-		List_1_t3057020574 * L_26 = V_0;
-		Color_t1588175760  L_27 = Shadow_get_effectColor_m2953989785(__this, /*hidden argument*/NULL);
-		Color32_t4137084207  L_28 = Color32_op_Implicit_m3684884838(NULL /*static, unused*/, L_27, /*hidden argument*/NULL);
-		int32_t L_29 = V_2;
-		List_1_t3057020574 * L_30 = V_0;
-		NullCheck(L_30);
-		int32_t L_31 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.UIVertex>::get_Count() */, L_30);
-		Vector2_t3525329788  L_32 = Shadow_get_effectDistance_m1102454733(__this, /*hidden argument*/NULL);
-		V_6 = L_32;
-		float L_33 = (&V_6)->get_x_1();
-		Vector2_t3525329788  L_34 = Shadow_get_effectDistance_m1102454733(__this, /*hidden argument*/NULL);
-		V_7 = L_34;
-		float L_35 = (&V_7)->get_y_2();
-		Shadow_ApplyShadowZeroAlloc_m338158484(__this, L_26, L_28, L_29, L_31, L_33, ((-L_35)), /*hidden argument*/NULL);
-		int32_t L_36 = V_3;
-		V_2 = L_36;
-		List_1_t3057020574 * L_37 = V_0;
-		NullCheck(L_37);
-		int32_t L_38 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.UIVertex>::get_Count() */, L_37);
-		V_3 = L_38;
-		List_1_t3057020574 * L_39 = V_0;
-		Color_t1588175760  L_40 = Shadow_get_effectColor_m2953989785(__this, /*hidden argument*/NULL);
-		Color32_t4137084207  L_41 = Color32_op_Implicit_m3684884838(NULL /*static, unused*/, L_40, /*hidden argument*/NULL);
-		int32_t L_42 = V_2;
-		List_1_t3057020574 * L_43 = V_0;
-		NullCheck(L_43);
-		int32_t L_44 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.UIVertex>::get_Count() */, L_43);
-		Vector2_t3525329788  L_45 = Shadow_get_effectDistance_m1102454733(__this, /*hidden argument*/NULL);
-		V_8 = L_45;
-		float L_46 = (&V_8)->get_x_1();
-		Vector2_t3525329788  L_47 = Shadow_get_effectDistance_m1102454733(__this, /*hidden argument*/NULL);
-		V_9 = L_47;
-		float L_48 = (&V_9)->get_y_2();
-		Shadow_ApplyShadowZeroAlloc_m338158484(__this, L_39, L_41, L_42, L_44, ((-L_46)), L_48, /*hidden argument*/NULL);
-		int32_t L_49 = V_3;
-		V_2 = L_49;
-		List_1_t3057020574 * L_50 = V_0;
-		NullCheck(L_50);
-		int32_t L_51 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.UIVertex>::get_Count() */, L_50);
-		V_3 = L_51;
-		List_1_t3057020574 * L_52 = V_0;
-		Color_t1588175760  L_53 = Shadow_get_effectColor_m2953989785(__this, /*hidden argument*/NULL);
-		Color32_t4137084207  L_54 = Color32_op_Implicit_m3684884838(NULL /*static, unused*/, L_53, /*hidden argument*/NULL);
-		int32_t L_55 = V_2;
-		List_1_t3057020574 * L_56 = V_0;
-		NullCheck(L_56);
-		int32_t L_57 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.UIVertex>::get_Count() */, L_56);
-		Vector2_t3525329788  L_58 = Shadow_get_effectDistance_m1102454733(__this, /*hidden argument*/NULL);
-		V_10 = L_58;
-		float L_59 = (&V_10)->get_x_1();
-		Vector2_t3525329788  L_60 = Shadow_get_effectDistance_m1102454733(__this, /*hidden argument*/NULL);
-		V_11 = L_60;
-		float L_61 = (&V_11)->get_y_2();
-		Shadow_ApplyShadowZeroAlloc_m338158484(__this, L_52, L_54, L_55, L_57, ((-L_59)), ((-L_61)), /*hidden argument*/NULL);
-		VertexHelper_t1471929499 * L_62 = ___vh;
-		NullCheck(L_62);
-		VertexHelper_Clear_m412394180(L_62, /*hidden argument*/NULL);
-		VertexHelper_t1471929499 * L_63 = ___vh;
-		List_1_t3057020574 * L_64 = V_0;
-		NullCheck(L_63);
-		VertexHelper_AddUIVertexTriangleStream_m1263262953(L_63, L_64, /*hidden argument*/NULL);
-		List_1_t3057020574 * L_65 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(ListPool_1_t1874076766_il2cpp_TypeInfo_var);
-		ListPool_1_Release_m2709067242(NULL /*static, unused*/, L_65, /*hidden argument*/ListPool_1_Release_m2709067242_MethodInfo_var);
-		return;
-	}
-}
-// System.Void UnityEngine.UI.PositionAsUV1::.ctor()
-extern "C"  void PositionAsUV1__ctor_m3124267078 (PositionAsUV1_t826283646 * __this, const MethodInfo* method)
-{
-	{
-		BaseMeshEffect__ctor_m2332499996(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.UI.PositionAsUV1::ModifyMesh(UnityEngine.UI.VertexHelper)
-extern TypeInfo* UIVertex_t2260061605_il2cpp_TypeInfo_var;
-extern const uint32_t PositionAsUV1_ModifyMesh_m2424047928_MetadataUsageId;
-extern "C"  void PositionAsUV1_ModifyMesh_m2424047928 (PositionAsUV1_t826283646 * __this, VertexHelper_t1471929499 * ___vh, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (PositionAsUV1_ModifyMesh_m2424047928_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	UIVertex_t2260061605  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	int32_t V_1 = 0;
-	{
-		Initobj (UIVertex_t2260061605_il2cpp_TypeInfo_var, (&V_0));
-		V_1 = 0;
-		goto IL_0048;
-	}
-
-IL_000f:
-	{
-		VertexHelper_t1471929499 * L_0 = ___vh;
-		int32_t L_1 = V_1;
-		NullCheck(L_0);
-		VertexHelper_PopulateUIVertex_m910319817(L_0, (&V_0), L_1, /*hidden argument*/NULL);
-		Vector3_t3525329789 * L_2 = (&V_0)->get_address_of_position_0();
-		float L_3 = L_2->get_x_1();
-		Vector3_t3525329789 * L_4 = (&V_0)->get_address_of_position_0();
-		float L_5 = L_4->get_y_2();
-		Vector2_t3525329788  L_6;
-		memset(&L_6, 0, sizeof(L_6));
-		Vector2__ctor_m1517109030(&L_6, L_3, L_5, /*hidden argument*/NULL);
-		(&V_0)->set_uv1_4(L_6);
-		VertexHelper_t1471929499 * L_7 = ___vh;
-		UIVertex_t2260061605  L_8 = V_0;
-		int32_t L_9 = V_1;
-		NullCheck(L_7);
-		VertexHelper_SetUIVertex_m3429482805(L_7, L_8, L_9, /*hidden argument*/NULL);
-		int32_t L_10 = V_1;
-		V_1 = ((int32_t)((int32_t)L_10+(int32_t)1));
-	}
-
-IL_0048:
-	{
-		int32_t L_11 = V_1;
-		VertexHelper_t1471929499 * L_12 = ___vh;
-		NullCheck(L_12);
-		int32_t L_13 = VertexHelper_get_currentVertCount_m3425330353(L_12, /*hidden argument*/NULL);
-		if ((((int32_t)L_11) < ((int32_t)L_13)))
-		{
-			goto IL_000f;
-		}
-	}
-	{
-		return;
-	}
-}
-// System.Void UnityEngine.UI.RawImage::.ctor()
-extern "C"  void RawImage__ctor_m3149617176 (RawImage_t3831555132 * __this, const MethodInfo* method)
-{
-	{
-		Rect_t1525428817  L_0;
-		memset(&L_0, 0, sizeof(L_0));
-		Rect__ctor_m3291325233(&L_0, (0.0f), (0.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
-		__this->set_m_UVRect_29(L_0);
-		MaskableGraphic__ctor_m3514233785(__this, /*hidden argument*/NULL);
-		Graphic_set_useLegacyMeshGeneration_m693817504(__this, (bool)0, /*hidden argument*/NULL);
-		return;
-	}
-}
-// UnityEngine.Texture UnityEngine.UI.RawImage::get_mainTexture()
-extern TypeInfo* Graphic_t933884113_il2cpp_TypeInfo_var;
-extern const uint32_t RawImage_get_mainTexture_m3607327198_MetadataUsageId;
-extern "C"  Texture_t1769722184 * RawImage_get_mainTexture_m3607327198 (RawImage_t3831555132 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (RawImage_get_mainTexture_m3607327198_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		Texture_t1769722184 * L_0 = __this->get_m_Texture_28();
-		bool L_1 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_0, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_1)
-		{
-			goto IL_004a;
-		}
-	}
-	{
-		Material_t1886596500 * L_2 = VirtFuncInvoker0< Material_t1886596500 * >::Invoke(26 /* UnityEngine.Material UnityEngine.UI.Graphic::get_material() */, __this);
-		bool L_3 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_2, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_3)
-		{
-			goto IL_0044;
-		}
-	}
-	{
-		Material_t1886596500 * L_4 = VirtFuncInvoker0< Material_t1886596500 * >::Invoke(26 /* UnityEngine.Material UnityEngine.UI.Graphic::get_material() */, __this);
-		NullCheck(L_4);
-		Texture_t1769722184 * L_5 = Material_get_mainTexture_m1012267054(L_4, /*hidden argument*/NULL);
-		bool L_6 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_5, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_6)
-		{
-			goto IL_0044;
-		}
-	}
-	{
-		Material_t1886596500 * L_7 = VirtFuncInvoker0< Material_t1886596500 * >::Invoke(26 /* UnityEngine.Material UnityEngine.UI.Graphic::get_material() */, __this);
-		NullCheck(L_7);
-		Texture_t1769722184 * L_8 = Material_get_mainTexture_m1012267054(L_7, /*hidden argument*/NULL);
-		return L_8;
-	}
-
-IL_0044:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Graphic_t933884113_il2cpp_TypeInfo_var);
-		Texture2D_t2509538522 * L_9 = ((Graphic_t933884113_StaticFields*)Graphic_t933884113_il2cpp_TypeInfo_var->static_fields)->get_s_WhiteTexture_3();
-		return L_9;
-	}
-
-IL_004a:
-	{
-		Texture_t1769722184 * L_10 = __this->get_m_Texture_28();
-		return L_10;
-	}
-}
-// UnityEngine.Texture UnityEngine.UI.RawImage::get_texture()
-extern "C"  Texture_t1769722184 * RawImage_get_texture_m2545896727 (RawImage_t3831555132 * __this, const MethodInfo* method)
-{
-	{
-		Texture_t1769722184 * L_0 = __this->get_m_Texture_28();
-		return L_0;
-	}
-}
-// System.Void UnityEngine.UI.RawImage::set_texture(UnityEngine.Texture)
-extern "C"  void RawImage_set_texture_m153141914 (RawImage_t3831555132 * __this, Texture_t1769722184 * ___value, const MethodInfo* method)
-{
-	{
-		Texture_t1769722184 * L_0 = __this->get_m_Texture_28();
-		Texture_t1769722184 * L_1 = ___value;
-		bool L_2 = Object_op_Equality_m3964590952(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_0012;
-		}
-	}
-	{
-		return;
-	}
-
-IL_0012:
-	{
-		Texture_t1769722184 * L_3 = ___value;
-		__this->set_m_Texture_28(L_3);
-		VirtActionInvoker0::Invoke(23 /* System.Void UnityEngine.UI.Graphic::SetVerticesDirty() */, __this);
-		VirtActionInvoker0::Invoke(24 /* System.Void UnityEngine.UI.Graphic::SetMaterialDirty() */, __this);
-		return;
-	}
-}
-// UnityEngine.Rect UnityEngine.UI.RawImage::get_uvRect()
-extern "C"  Rect_t1525428817  RawImage_get_uvRect_m605244702 (RawImage_t3831555132 * __this, const MethodInfo* method)
-{
-	{
-		Rect_t1525428817  L_0 = __this->get_m_UVRect_29();
-		return L_0;
-	}
-}
-// System.Void UnityEngine.UI.RawImage::set_uvRect(UnityEngine.Rect)
-extern "C"  void RawImage_set_uvRect_m1381047731 (RawImage_t3831555132 * __this, Rect_t1525428817  ___value, const MethodInfo* method)
-{
-	{
-		Rect_t1525428817  L_0 = __this->get_m_UVRect_29();
-		Rect_t1525428817  L_1 = ___value;
-		bool L_2 = Rect_op_Equality_m1552341101(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_0012;
-		}
-	}
-	{
-		return;
-	}
-
-IL_0012:
-	{
-		Rect_t1525428817  L_3 = ___value;
-		__this->set_m_UVRect_29(L_3);
-		VirtActionInvoker0::Invoke(23 /* System.Void UnityEngine.UI.Graphic::SetVerticesDirty() */, __this);
-		return;
-	}
-}
-// System.Void UnityEngine.UI.RawImage::SetNativeSize()
-extern TypeInfo* Mathf_t1597001355_il2cpp_TypeInfo_var;
-extern const uint32_t RawImage_SetNativeSize_m131446896_MetadataUsageId;
-extern "C"  void RawImage_SetNativeSize_m131446896 (RawImage_t3831555132 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (RawImage_SetNativeSize_m131446896_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	Texture_t1769722184 * V_0 = NULL;
-	int32_t V_1 = 0;
-	int32_t V_2 = 0;
-	Rect_t1525428817  V_3;
-	memset(&V_3, 0, sizeof(V_3));
-	Rect_t1525428817  V_4;
-	memset(&V_4, 0, sizeof(V_4));
-	{
-		Texture_t1769722184 * L_0 = VirtFuncInvoker0< Texture_t1769722184 * >::Invoke(29 /* UnityEngine.Texture UnityEngine.UI.RawImage::get_mainTexture() */, __this);
-		V_0 = L_0;
-		Texture_t1769722184 * L_1 = V_0;
-		bool L_2 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_1, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_0076;
-		}
-	}
-	{
-		Texture_t1769722184 * L_3 = V_0;
-		NullCheck(L_3);
-		int32_t L_4 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_3);
-		Rect_t1525428817  L_5 = RawImage_get_uvRect_m605244702(__this, /*hidden argument*/NULL);
-		V_3 = L_5;
-		float L_6 = Rect_get_width_m2824209432((&V_3), /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t1597001355_il2cpp_TypeInfo_var);
-		int32_t L_7 = Mathf_RoundToInt_m3163545820(NULL /*static, unused*/, ((float)((float)(((float)((float)L_4)))*(float)L_6)), /*hidden argument*/NULL);
-		V_1 = L_7;
-		Texture_t1769722184 * L_8 = V_0;
-		NullCheck(L_8);
-		int32_t L_9 = VirtFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_height() */, L_8);
-		Rect_t1525428817  L_10 = RawImage_get_uvRect_m605244702(__this, /*hidden argument*/NULL);
-		V_4 = L_10;
-		float L_11 = Rect_get_height_m2154960823((&V_4), /*hidden argument*/NULL);
-		int32_t L_12 = Mathf_RoundToInt_m3163545820(NULL /*static, unused*/, ((float)((float)(((float)((float)L_9)))*(float)L_11)), /*hidden argument*/NULL);
-		V_2 = L_12;
-		RectTransform_t3317474837 * L_13 = Graphic_get_rectTransform_m4017371950(__this, /*hidden argument*/NULL);
-		RectTransform_t3317474837 * L_14 = Graphic_get_rectTransform_m4017371950(__this, /*hidden argument*/NULL);
-		NullCheck(L_14);
-		Vector2_t3525329788  L_15 = RectTransform_get_anchorMin_m688674174(L_14, /*hidden argument*/NULL);
-		NullCheck(L_13);
-		RectTransform_set_anchorMax_m715345817(L_13, L_15, /*hidden argument*/NULL);
-		RectTransform_t3317474837 * L_16 = Graphic_get_rectTransform_m4017371950(__this, /*hidden argument*/NULL);
-		int32_t L_17 = V_1;
-		int32_t L_18 = V_2;
-		Vector2_t3525329788  L_19;
-		memset(&L_19, 0, sizeof(L_19));
-		Vector2__ctor_m1517109030(&L_19, (((float)((float)L_17))), (((float)((float)L_18))), /*hidden argument*/NULL);
-		NullCheck(L_16);
-		RectTransform_set_sizeDelta_m1223846609(L_16, L_19, /*hidden argument*/NULL);
-	}
-
-IL_0076:
-	{
-		return;
-	}
-}
-// System.Void UnityEngine.UI.RawImage::OnPopulateMesh(UnityEngine.UI.VertexHelper)
-extern "C"  void RawImage_OnPopulateMesh_m1483685179 (RawImage_t3831555132 * __this, VertexHelper_t1471929499 * ___vh, const MethodInfo* method)
-{
-	Texture_t1769722184 * V_0 = NULL;
-	Rect_t1525428817  V_1;
-	memset(&V_1, 0, sizeof(V_1));
-	Vector4_t3525329790  V_2;
-	memset(&V_2, 0, sizeof(V_2));
-	Color_t1588175760  V_3;
-	memset(&V_3, 0, sizeof(V_3));
-	{
-		Texture_t1769722184 * L_0 = VirtFuncInvoker0< Texture_t1769722184 * >::Invoke(29 /* UnityEngine.Texture UnityEngine.UI.RawImage::get_mainTexture() */, __this);
-		V_0 = L_0;
-		VertexHelper_t1471929499 * L_1 = ___vh;
-		NullCheck(L_1);
-		VertexHelper_Clear_m412394180(L_1, /*hidden argument*/NULL);
-		Texture_t1769722184 * L_2 = V_0;
-		bool L_3 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_2, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
-		if (!L_3)
-		{
-			goto IL_0154;
-		}
-	}
-	{
-		Rect_t1525428817  L_4 = Graphic_GetPixelAdjustedRect_m517144655(__this, /*hidden argument*/NULL);
-		V_1 = L_4;
-		float L_5 = Rect_get_x_m982385354((&V_1), /*hidden argument*/NULL);
-		float L_6 = Rect_get_y_m982386315((&V_1), /*hidden argument*/NULL);
-		float L_7 = Rect_get_x_m982385354((&V_1), /*hidden argument*/NULL);
-		float L_8 = Rect_get_width_m2824209432((&V_1), /*hidden argument*/NULL);
-		float L_9 = Rect_get_y_m982386315((&V_1), /*hidden argument*/NULL);
-		float L_10 = Rect_get_height_m2154960823((&V_1), /*hidden argument*/NULL);
-		Vector4__ctor_m2441427762((&V_2), L_5, L_6, ((float)((float)L_7+(float)L_8)), ((float)((float)L_9+(float)L_10)), /*hidden argument*/NULL);
-		Color_t1588175760  L_11 = Graphic_get_color_m2048831972(__this, /*hidden argument*/NULL);
-		V_3 = L_11;
-		VertexHelper_t1471929499 * L_12 = ___vh;
-		float L_13 = (&V_2)->get_x_1();
-		float L_14 = (&V_2)->get_y_2();
-		Vector3_t3525329789  L_15;
-		memset(&L_15, 0, sizeof(L_15));
-		Vector3__ctor_m1846874791(&L_15, L_13, L_14, /*hidden argument*/NULL);
-		Color_t1588175760  L_16 = V_3;
-		Color32_t4137084207  L_17 = Color32_op_Implicit_m3684884838(NULL /*static, unused*/, L_16, /*hidden argument*/NULL);
-		Rect_t1525428817 * L_18 = __this->get_address_of_m_UVRect_29();
-		float L_19 = Rect_get_xMin_m371109962(L_18, /*hidden argument*/NULL);
-		Rect_t1525428817 * L_20 = __this->get_address_of_m_UVRect_29();
-		float L_21 = Rect_get_yMin_m399739113(L_20, /*hidden argument*/NULL);
-		Vector2_t3525329788  L_22;
-		memset(&L_22, 0, sizeof(L_22));
-		Vector2__ctor_m1517109030(&L_22, L_19, L_21, /*hidden argument*/NULL);
-		NullCheck(L_12);
-		VertexHelper_AddVert_m1490065189(L_12, L_15, L_17, L_22, /*hidden argument*/NULL);
-		VertexHelper_t1471929499 * L_23 = ___vh;
-		float L_24 = (&V_2)->get_x_1();
-		float L_25 = (&V_2)->get_w_4();
-		Vector3_t3525329789  L_26;
-		memset(&L_26, 0, sizeof(L_26));
-		Vector3__ctor_m1846874791(&L_26, L_24, L_25, /*hidden argument*/NULL);
-		Color_t1588175760  L_27 = V_3;
-		Color32_t4137084207  L_28 = Color32_op_Implicit_m3684884838(NULL /*static, unused*/, L_27, /*hidden argument*/NULL);
-		Rect_t1525428817 * L_29 = __this->get_address_of_m_UVRect_29();
-		float L_30 = Rect_get_xMin_m371109962(L_29, /*hidden argument*/NULL);
-		Rect_t1525428817 * L_31 = __this->get_address_of_m_UVRect_29();
-		float L_32 = Rect_get_yMax_m399510395(L_31, /*hidden argument*/NULL);
-		Vector2_t3525329788  L_33;
-		memset(&L_33, 0, sizeof(L_33));
-		Vector2__ctor_m1517109030(&L_33, L_30, L_32, /*hidden argument*/NULL);
-		NullCheck(L_23);
-		VertexHelper_AddVert_m1490065189(L_23, L_26, L_28, L_33, /*hidden argument*/NULL);
-		VertexHelper_t1471929499 * L_34 = ___vh;
-		float L_35 = (&V_2)->get_z_3();
-		float L_36 = (&V_2)->get_w_4();
-		Vector3_t3525329789  L_37;
-		memset(&L_37, 0, sizeof(L_37));
-		Vector3__ctor_m1846874791(&L_37, L_35, L_36, /*hidden argument*/NULL);
-		Color_t1588175760  L_38 = V_3;
-		Color32_t4137084207  L_39 = Color32_op_Implicit_m3684884838(NULL /*static, unused*/, L_38, /*hidden argument*/NULL);
-		Rect_t1525428817 * L_40 = __this->get_address_of_m_UVRect_29();
-		float L_41 = Rect_get_xMax_m370881244(L_40, /*hidden argument*/NULL);
-		Rect_t1525428817 * L_42 = __this->get_address_of_m_UVRect_29();
-		float L_43 = Rect_get_yMax_m399510395(L_42, /*hidden argument*/NULL);
-		Vector2_t3525329788  L_44;
-		memset(&L_44, 0, sizeof(L_44));
-		Vector2__ctor_m1517109030(&L_44, L_41, L_43, /*hidden argument*/NULL);
-		NullCheck(L_34);
-		VertexHelper_AddVert_m1490065189(L_34, L_37, L_39, L_44, /*hidden argument*/NULL);
-		VertexHelper_t1471929499 * L_45 = ___vh;
-		float L_46 = (&V_2)->get_z_3();
-		float L_47 = (&V_2)->get_y_2();
-		Vector3_t3525329789  L_48;
-		memset(&L_48, 0, sizeof(L_48));
-		Vector3__ctor_m1846874791(&L_48, L_46, L_47, /*hidden argument*/NULL);
-		Color_t1588175760  L_49 = V_3;
-		Color32_t4137084207  L_50 = Color32_op_Implicit_m3684884838(NULL /*static, unused*/, L_49, /*hidden argument*/NULL);
-		Rect_t1525428817 * L_51 = __this->get_address_of_m_UVRect_29();
-		float L_52 = Rect_get_xMax_m370881244(L_51, /*hidden argument*/NULL);
-		Rect_t1525428817 * L_53 = __this->get_address_of_m_UVRect_29();
-		float L_54 = Rect_get_yMin_m399739113(L_53, /*hidden argument*/NULL);
-		Vector2_t3525329788  L_55;
-		memset(&L_55, 0, sizeof(L_55));
-		Vector2__ctor_m1517109030(&L_55, L_52, L_54, /*hidden argument*/NULL);
-		NullCheck(L_45);
-		VertexHelper_AddVert_m1490065189(L_45, L_48, L_50, L_55, /*hidden argument*/NULL);
-		VertexHelper_t1471929499 * L_56 = ___vh;
-		NullCheck(L_56);
-		VertexHelper_AddTriangle_m514578993(L_56, 0, 1, 2, /*hidden argument*/NULL);
-		VertexHelper_t1471929499 * L_57 = ___vh;
-		NullCheck(L_57);
-		VertexHelper_AddTriangle_m514578993(L_57, 2, 3, 0, /*hidden argument*/NULL);
-	}
-
-IL_0154:
-	{
-		return;
 	}
 }
 #ifdef __clang__

@@ -31,6 +31,12 @@ extern "C"  int32_t ObjectPool_1_get_countAll_m3327915100_gshared (ObjectPool_1_
 // System.Void UnityEngine.UI.ObjectPool`1<System.Object>::set_countAll(System.Int32)
 extern "C"  void ObjectPool_1_set_countAll_m2125882937_gshared (ObjectPool_1_t2954595302 * __this, int32_t ___value, const MethodInfo* method);
 #define ObjectPool_1_set_countAll_m2125882937(__this, ___value, method) ((  void (*) (ObjectPool_1_t2954595302 *, int32_t, const MethodInfo*))ObjectPool_1_set_countAll_m2125882937_gshared)(__this, ___value, method)
+// System.Int32 UnityEngine.UI.ObjectPool`1<System.Object>::get_countActive()
+extern "C"  int32_t ObjectPool_1_get_countActive_m2082506317_gshared (ObjectPool_1_t2954595302 * __this, const MethodInfo* method);
+#define ObjectPool_1_get_countActive_m2082506317(__this, method) ((  int32_t (*) (ObjectPool_1_t2954595302 *, const MethodInfo*))ObjectPool_1_get_countActive_m2082506317_gshared)(__this, method)
+// System.Int32 UnityEngine.UI.ObjectPool`1<System.Object>::get_countInactive()
+extern "C"  int32_t ObjectPool_1_get_countInactive_m19645682_gshared (ObjectPool_1_t2954595302 * __this, const MethodInfo* method);
+#define ObjectPool_1_get_countInactive_m19645682(__this, method) ((  int32_t (*) (ObjectPool_1_t2954595302 *, const MethodInfo*))ObjectPool_1_get_countInactive_m19645682_gshared)(__this, method)
 // T UnityEngine.UI.ObjectPool`1<System.Object>::Get()
 extern "C"  Il2CppObject * ObjectPool_1_Get_m3052664832_gshared (ObjectPool_1_t2954595302 * __this, const MethodInfo* method);
 #define ObjectPool_1_Get_m3052664832(__this, method) ((  Il2CppObject * (*) (ObjectPool_1_t2954595302 *, const MethodInfo*))ObjectPool_1_Get_m3052664832_gshared)(__this, method)

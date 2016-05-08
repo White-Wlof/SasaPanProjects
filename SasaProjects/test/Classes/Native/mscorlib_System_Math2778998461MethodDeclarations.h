@@ -42,6 +42,8 @@ extern "C"  double Math_Sin_m1832281148 (Il2CppObject * __this /* static, unused
 extern "C"  double Math_Cos_m1877789613 (Il2CppObject * __this /* static, unused */, double ___d, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Acos(System.Double)
 extern "C"  double Math_Acos_m971391944 (Il2CppObject * __this /* static, unused */, double ___d, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Double System.Math::Atan2(System.Double,System.Double)
+extern "C"  double Math_Atan2_m2472972670 (Il2CppObject * __this /* static, unused */, double ___y, double ___x, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Log(System.Double)
 extern "C"  double Math_Log_m3325515856 (Il2CppObject * __this /* static, unused */, double ___d, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Pow(System.Double,System.Double)

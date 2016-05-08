@@ -22,6 +22,8 @@ struct Il2CppObject;
 struct IEnumerator_1_t2320212868;
 // System.Object[]
 struct ObjectU5BU5D_t11523773;
+// System.Predicate`1<System.Object>
+struct Predicate_1_t1408070318;
 // System.Comparison`1<System.Object>
 struct Comparison_1_t3540781296;
 
@@ -76,6 +78,9 @@ extern "C"  Il2CppObject * IndexedSet_1_get_Item_m2125208246_gshared (IndexedSet
 // System.Void UnityEngine.UI.Collections.IndexedSet`1<System.Object>::set_Item(System.Int32,T)
 extern "C"  void IndexedSet_1_set_Item_m1359327235_gshared (IndexedSet_1_t62850721 * __this, int32_t ___index, Il2CppObject * ___value, const MethodInfo* method);
 #define IndexedSet_1_set_Item_m1359327235(__this, ___index, ___value, method) ((  void (*) (IndexedSet_1_t62850721 *, int32_t, Il2CppObject *, const MethodInfo*))IndexedSet_1_set_Item_m1359327235_gshared)(__this, ___index, ___value, method)
+// System.Void UnityEngine.UI.Collections.IndexedSet`1<System.Object>::RemoveAll(System.Predicate`1<T>)
+extern "C"  void IndexedSet_1_RemoveAll_m4086301344_gshared (IndexedSet_1_t62850721 * __this, Predicate_1_t1408070318 * ___match, const MethodInfo* method);
+#define IndexedSet_1_RemoveAll_m4086301344(__this, ___match, method) ((  void (*) (IndexedSet_1_t62850721 *, Predicate_1_t1408070318 *, const MethodInfo*))IndexedSet_1_RemoveAll_m4086301344_gshared)(__this, ___match, method)
 // System.Void UnityEngine.UI.Collections.IndexedSet`1<System.Object>::Sort(System.Comparison`1<T>)
 extern "C"  void IndexedSet_1_Sort_m3752037115_gshared (IndexedSet_1_t62850721 * __this, Comparison_1_t3540781296 * ___sortLayoutFunction, const MethodInfo* method);
 #define IndexedSet_1_Sort_m3752037115(__this, ___sortLayoutFunction, method) ((  void (*) (IndexedSet_1_t62850721 *, Comparison_1_t3540781296 *, const MethodInfo*))IndexedSet_1_Sort_m3752037115_gshared)(__this, ___sortLayoutFunction, method)

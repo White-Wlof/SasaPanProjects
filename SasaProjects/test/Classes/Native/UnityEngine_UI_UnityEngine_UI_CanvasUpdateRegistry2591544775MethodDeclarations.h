@@ -46,6 +46,8 @@ extern "C"  bool CanvasUpdateRegistry_TryRegisterCanvasElementForLayoutRebuild_m
 extern "C"  bool CanvasUpdateRegistry_InternalRegisterCanvasElementForLayoutRebuild_m584808143 (CanvasUpdateRegistry_t2591544775 * __this, Il2CppObject * ___element, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.UI.CanvasUpdateRegistry::RegisterCanvasElementForGraphicRebuild(UnityEngine.UI.ICanvasElement)
 extern "C"  void CanvasUpdateRegistry_RegisterCanvasElementForGraphicRebuild_m1487849090 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___element, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.UI.CanvasUpdateRegistry::TryRegisterCanvasElementForGraphicRebuild(UnityEngine.UI.ICanvasElement)
+extern "C"  bool CanvasUpdateRegistry_TryRegisterCanvasElementForGraphicRebuild_m795284133 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___element, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.UI.CanvasUpdateRegistry::InternalRegisterCanvasElementForGraphicRebuild(UnityEngine.UI.ICanvasElement)
 extern "C"  bool CanvasUpdateRegistry_InternalRegisterCanvasElementForGraphicRebuild_m1322910355 (CanvasUpdateRegistry_t2591544775 * __this, Il2CppObject * ___element, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.UI.CanvasUpdateRegistry::UnRegisterCanvasElementForRebuild(UnityEngine.UI.ICanvasElement)

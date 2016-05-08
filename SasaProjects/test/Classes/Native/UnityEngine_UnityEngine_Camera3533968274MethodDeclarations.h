@@ -29,6 +29,10 @@ struct GameObject_t4012695102;
 #include "UnityEngine_UnityEngine_Ray1522967639.h"
 #include "UnityEngine_UnityEngine_QueryTriggerInteraction4085533775.h"
 
+// System.Single UnityEngine.Camera::get_fieldOfView()
+extern "C"  float Camera_get_fieldOfView_m65126887 (Camera_t3533968274 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Camera::set_fieldOfView(System.Single)
+extern "C"  void Camera_set_fieldOfView_m809388684 (Camera_t3533968274 * __this, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Camera::get_nearClipPlane()
 extern "C"  float Camera_get_nearClipPlane_m4074655061 (Camera_t3533968274 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Camera::get_farClipPlane()

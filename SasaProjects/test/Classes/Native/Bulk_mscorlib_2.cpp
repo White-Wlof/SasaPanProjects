@@ -34554,6 +34554,13 @@ extern "C"  double Math_Acos_m971391944 (Il2CppObject * __this /* static, unused
 	typedef double (*Math_Acos_m971391944_ftn) (double);
 	return  ((Math_Acos_m971391944_ftn)mscorlib::System::Math::Acos) (___d);
 }
+// System.Double System.Math::Atan2(System.Double,System.Double)
+extern "C"  double Math_Atan2_m2472972670 (Il2CppObject * __this /* static, unused */, double ___y, double ___x, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef double (*Math_Atan2_m2472972670_ftn) (double, double);
+	return  ((Math_Atan2_m2472972670_ftn)mscorlib::System::Math::Atan2) (___y, ___x);
+}
 // System.Double System.Math::Log(System.Double)
 extern "C"  double Math_Log_m3325515856 (Il2CppObject * __this /* static, unused */, double ___d, const MethodInfo* method)
 {

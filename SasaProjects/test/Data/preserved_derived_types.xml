@@ -1,5 +1,22 @@
 <linker>
 <assembly fullname="Assembly-CSharp">
+<type fullname="DetonatorSprayHelper" preserve="all"/>
+<type fullname="Detonator" preserve="all"/>
+<type fullname="DetonatorBurstEmitter" preserve="all"/>
+<type fullname="DetonatorCloudRing" preserve="all"/>
+<type fullname="DetonatorComponent" preserve="all"/>
+<type fullname="DetonatorFireball" preserve="all"/>
+<type fullname="DetonatorForce" preserve="all"/>
+<type fullname="DetonatorGlow" preserve="all"/>
+<type fullname="DetonatorHeatwave" preserve="all"/>
+<type fullname="DetonatorLight" preserve="all"/>
+<type fullname="DetonatorShockwave" preserve="all"/>
+<type fullname="DetonatorSmoke" preserve="all"/>
+<type fullname="DetonatorSound" preserve="all"/>
+<type fullname="DetonatorSparks" preserve="all"/>
+<type fullname="DetonatorSpray" preserve="all"/>
+<type fullname="DetonatorTest" preserve="all"/>
+<type fullname="TouchToMouse" preserve="all"/>
 <type fullname="Demo2DJumpAndRun" preserve="all"/>
 <type fullname="JumpAndRunMovement" preserve="all"/>
 <type fullname="ColorPerPlayer" preserve="all"/>
@@ -98,11 +115,17 @@
 <type fullname="ICurvePoint" preserve="all"/>
 <type fullname="IRiverTool" preserve="all"/>
 <type fullname="TextureAnimator" preserve="all"/>
-<type fullname="PlayerController" preserve="all"/>
-</assembly>
-<assembly fullname="RiverTools">
-<type fullname="CurvePoint" preserve="all"/>
-<type fullname="RiverTool" preserve="all"/>
+<type fullname="Cannon.CannonBallController" preserve="all"/>
+<type fullname="PLAYER.CharacterOperationMaster" preserve="all"/>
+<type fullname="PLAYER.GameUIButton" preserve="all"/>
+<type fullname="PLAYER.PlayerCameraController" preserve="all"/>
+<type fullname="PlayerCollider" preserve="all"/>
+<type fullname="PLAYER.PlayerController" preserve="all"/>
+<type fullname="PlayerStateManager" preserve="all"/>
+<type fullname="PLAYER.RivalController" preserve="all"/>
+<type fullname="UIController" preserve="all"/>
+<type fullname="PLAYER.BoatDirectionSystem" preserve="all"/>
+<type fullname="CannonPullSystem" preserve="all"/>
 </assembly>
 <assembly fullname="UnityEngine.UI">
 <type fullname="UnityEngine.EventSystems.EventSystem" preserve="all"/>
@@ -146,5 +169,9 @@
 <type fullname="UnityEngine.UI.Outline" preserve="all"/>
 <type fullname="UnityEngine.UI.PositionAsUV1" preserve="all"/>
 <type fullname="UnityEngine.UI.Shadow" preserve="all"/>
+</assembly>
+<assembly fullname="RiverTools">
+<type fullname="CurvePoint" preserve="all"/>
+<type fullname="RiverTool" preserve="all"/>
 </assembly>
 </linker>

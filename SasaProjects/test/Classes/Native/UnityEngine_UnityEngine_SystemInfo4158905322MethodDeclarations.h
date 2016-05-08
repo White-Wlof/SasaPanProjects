@@ -19,3 +19,5 @@ struct String_t;
 
 // System.String UnityEngine.SystemInfo::get_operatingSystem()
 extern "C"  String_t* SystemInfo_get_operatingSystem_m2538828082 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.SystemInfo::get_supportsImageEffects()
+extern "C"  bool SystemInfo_get_supportsImageEffects_m2392300814 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;

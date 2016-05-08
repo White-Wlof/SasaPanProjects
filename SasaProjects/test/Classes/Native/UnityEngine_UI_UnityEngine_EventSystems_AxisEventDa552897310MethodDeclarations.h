@@ -24,6 +24,8 @@ struct EventSystem_t409518532;
 
 // System.Void UnityEngine.EventSystems.AxisEventData::.ctor(UnityEngine.EventSystems.EventSystem)
 extern "C"  void AxisEventData__ctor_m3411840806 (AxisEventData_t552897310 * __this, EventSystem_t409518532 * ___eventSystem, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector2 UnityEngine.EventSystems.AxisEventData::get_moveVector()
+extern "C"  Vector2_t3525329788  AxisEventData_get_moveVector_m2997093594 (AxisEventData_t552897310 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.EventSystems.AxisEventData::set_moveVector(UnityEngine.Vector2)
 extern "C"  void AxisEventData_set_moveVector_m286185191 (AxisEventData_t552897310 * __this, Vector2_t3525329788  ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.EventSystems.MoveDirection UnityEngine.EventSystems.AxisEventData::get_moveDir()

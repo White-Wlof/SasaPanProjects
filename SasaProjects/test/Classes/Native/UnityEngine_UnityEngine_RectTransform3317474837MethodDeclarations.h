@@ -81,6 +81,10 @@ extern "C"  void RectTransform_SendReapplyDrivenProperties_m2261331528 (Il2CppOb
 extern "C"  void RectTransform_GetLocalCorners_m1867617311 (RectTransform_t3317474837 * __this, Vector3U5BU5D_t3227571696* ___fourCornersArray, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.RectTransform::GetWorldCorners(UnityEngine.Vector3[])
 extern "C"  void RectTransform_GetWorldCorners_m1829917190 (RectTransform_t3317474837 * __this, Vector3U5BU5D_t3227571696* ___fourCornersArray, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.RectTransform::set_offsetMin(UnityEngine.Vector2)
+extern "C"  void RectTransform_set_offsetMin_m951793481 (RectTransform_t3317474837 * __this, Vector2_t3525329788  ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.RectTransform::set_offsetMax(UnityEngine.Vector2)
+extern "C"  void RectTransform_set_offsetMax_m677885815 (RectTransform_t3317474837 * __this, Vector2_t3525329788  ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.RectTransform::SetInsetAndSizeFromParentEdge(UnityEngine.RectTransform/Edge,System.Single,System.Single)
 extern "C"  void RectTransform_SetInsetAndSizeFromParentEdge_m1924354604 (RectTransform_t3317474837 * __this, int32_t ___edge, float ___inset, float ___size, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.RectTransform::SetSizeWithCurrentAnchors(UnityEngine.RectTransform/Axis,System.Single)

@@ -20,6 +20,8 @@ struct Mesh_t1525280346;
 struct UIVertexU5BU5D_t684414504;
 // System.Collections.Generic.List`1<UnityEngine.UIVertex>
 struct List_1_t3057020574;
+// System.Collections.Generic.List`1<System.Int32>
+struct List_1_t3644373756;
 
 #include "codegen/il2cpp-codegen.h"
 #include "UnityEngine_UnityEngine_Mesh1525280346.h"
@@ -39,6 +41,8 @@ extern "C"  void VertexHelper__cctor_m2517678132 (Il2CppObject * __this /* stati
 extern "C"  void VertexHelper_Clear_m412394180 (VertexHelper_t1471929499 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.UI.VertexHelper::get_currentVertCount()
 extern "C"  int32_t VertexHelper_get_currentVertCount_m3425330353 (VertexHelper_t1471929499 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 UnityEngine.UI.VertexHelper::get_currentIndexCount()
+extern "C"  int32_t VertexHelper_get_currentIndexCount_m3847254668 (VertexHelper_t1471929499 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.UI.VertexHelper::PopulateUIVertex(UnityEngine.UIVertex&,System.Int32)
 extern "C"  void VertexHelper_PopulateUIVertex_m910319817 (VertexHelper_t1471929499 * __this, UIVertex_t2260061605 * ___vertex, int32_t ___i, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.UI.VertexHelper::SetUIVertex(UnityEngine.UIVertex,System.Int32)
@@ -57,6 +61,8 @@ extern "C"  void VertexHelper_AddVert_m1127238042 (VertexHelper_t1471929499 * __
 extern "C"  void VertexHelper_AddTriangle_m514578993 (VertexHelper_t1471929499 * __this, int32_t ___idx0, int32_t ___idx1, int32_t ___idx2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.UI.VertexHelper::AddUIVertexQuad(UnityEngine.UIVertex[])
 extern "C"  void VertexHelper_AddUIVertexQuad_m765809318 (VertexHelper_t1471929499 * __this, UIVertexU5BU5D_t684414504* ___verts, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.UI.VertexHelper::AddUIVertexStream(System.Collections.Generic.List`1<UnityEngine.UIVertex>,System.Collections.Generic.List`1<System.Int32>)
+extern "C"  void VertexHelper_AddUIVertexStream_m1704624332 (VertexHelper_t1471929499 * __this, List_1_t3057020574 * ___verts, List_1_t3644373756 * ___indices, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.UI.VertexHelper::AddUIVertexTriangleStream(System.Collections.Generic.List`1<UnityEngine.UIVertex>)
 extern "C"  void VertexHelper_AddUIVertexTriangleStream_m1263262953 (VertexHelper_t1471929499 * __this, List_1_t3057020574 * ___verts, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.UI.VertexHelper::GetUIVertexStream(System.Collections.Generic.List`1<UnityEngine.UIVertex>)

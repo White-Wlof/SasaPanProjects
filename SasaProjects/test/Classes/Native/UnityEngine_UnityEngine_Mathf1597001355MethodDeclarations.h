@@ -23,6 +23,8 @@ extern "C"  float Mathf_Sin_m2014639246 (Il2CppObject * __this /* static, unused
 extern "C"  float Mathf_Cos_m2060147711 (Il2CppObject * __this /* static, unused */, float ___f, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Acos(System.Single)
 extern "C"  float Mathf_Acos_m3432578408 (Il2CppObject * __this /* static, unused */, float ___f, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::Atan2(System.Single,System.Single)
+extern "C"  float Mathf_Atan2_m3138013817 (Il2CppObject * __this /* static, unused */, float ___y, float ___x, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Sqrt(System.Single)
 extern "C"  float Mathf_Sqrt_m3592270478 (Il2CppObject * __this /* static, unused */, float ___f, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Abs(System.Single)
@@ -39,6 +41,8 @@ extern "C"  int32_t Mathf_Max_m2911193737 (Il2CppObject * __this /* static, unus
 extern "C"  float Mathf_Pow_m2793367923 (Il2CppObject * __this /* static, unused */, float ___f, float ___p, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Log(System.Single,System.Single)
 extern "C"  float Mathf_Log_m2062790663 (Il2CppObject * __this /* static, unused */, float ___f, float ___p, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::Log(System.Single)
+extern "C"  float Mathf_Log_m3507873954 (Il2CppObject * __this /* static, unused */, float ___f, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Ceil(System.Single)
 extern "C"  float Mathf_Ceil_m3793305609 (Il2CppObject * __this /* static, unused */, float ___f, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Floor(System.Single)

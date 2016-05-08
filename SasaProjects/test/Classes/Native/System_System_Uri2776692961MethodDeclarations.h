@@ -48,7 +48,7 @@ extern "C"  String_t* Uri_get_AbsoluteUri_m2228269430 (Uri_t2776692961 * __this,
 // System.String System.Uri::get_Authority()
 extern "C"  String_t* Uri_get_Authority_m1914393796 (Uri_t2776692961 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Uri::get_Host()
-extern "C"  String_t* Uri_get_Host_m1446697833 (Uri_t2776692961 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  String_t* Uri_get_Host_m3136333645 (Uri_t2776692961 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Uri::get_IsFile()
 extern "C"  bool Uri_get_IsFile_m1860057402 (Uri_t2776692961 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Uri::get_IsLoopback()

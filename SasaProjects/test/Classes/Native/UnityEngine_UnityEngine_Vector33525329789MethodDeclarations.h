@@ -41,6 +41,8 @@ extern "C"  void Vector3_INTERNAL_CALL_RotateTowards_m3264305586 (Il2CppObject *
 extern "C"  float Vector3_get_Item_m108333500 (Vector3_t3525329789 * __this, int32_t ___index, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Vector3::set_Item(System.Int32,System.Single)
 extern "C"  void Vector3_set_Item_m1844835745 (Vector3_t3525329789 * __this, int32_t ___index, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Vector3::Scale(UnityEngine.Vector3,UnityEngine.Vector3)
+extern "C"  Vector3_t3525329789  Vector3_Scale_m3746402337 (Il2CppObject * __this /* static, unused */, Vector3_t3525329789  ___a, Vector3_t3525329789  ___b, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Vector3::Cross(UnityEngine.Vector3,UnityEngine.Vector3)
 extern "C"  Vector3_t3525329789  Vector3_Cross_m2894122475 (Il2CppObject * __this /* static, unused */, Vector3_t3525329789  ___lhs, Vector3_t3525329789  ___rhs, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Vector3::GetHashCode()
