@@ -5,9 +5,9 @@ public sealed class PlayerStateManager : MonoBehaviour
 {
     private static PlayerStateManager _singleInstance;
 
-    public int hp { get; set; }
+    public int ownHp { get; set; }
 
-    public int atk{ get; set; }
+    public int ownAtk{ get; set; }
 
     public bool cannonMode{ get; set; }
 
@@ -45,8 +45,8 @@ public sealed class PlayerStateManager : MonoBehaviour
     void Awake()
     {
         
-        hp = 300;
-        atk = 50;
+        ownHp = 300;
+        ownAtk = 50;
         cannonMode = false;
         boostFrag = false;
         boostLevel = 0;
