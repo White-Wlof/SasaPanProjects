@@ -12,11 +12,11 @@ namespace PLAYER
         {
             if (direction == LEFT)
             {
-                ownObj.transform.Rotate(new Vector3(0, 1, 0), -1);
+                ownObj.transform.Rotate(new Vector3(0, 1, 0), -0.1f);
             }
             else if (direction == RIGHT)
             {
-                ownObj.transform.Rotate(new Vector3(0, 1, 0), 1);
+                ownObj.transform.Rotate(new Vector3(0, 1, 0), 0.1f);
             }
         }
 
