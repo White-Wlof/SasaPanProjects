@@ -24,6 +24,7 @@ ExportedObj/
 
 # Unity3D generated meta files
 *.pidb.meta
+*.dll
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
@@ -40,6 +41,7 @@ sysinfo.txt
 *.exe
 *.o
 *.so
+*.dll
 
 # Packages #
 ############
@@ -53,6 +55,7 @@ sysinfo.txt
 *.rar
 *.tar
 *.zip
+*.dll
 
 # Logs and databases #
 ######################
