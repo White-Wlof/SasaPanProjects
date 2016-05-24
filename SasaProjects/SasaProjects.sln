@@ -7,6 +7,8 @@ Project("{BC0D5EAF-B3B6-3924-5669-4D1B72D07A48}") = "SasaProjects", "Assembly-CS
 EndProject
 Project("{BC0D5EAF-B3B6-3924-5669-4D1B72D07A48}") = "SasaProjects", "Assembly-CSharp-Editor.csproj", "{CEBFC0B7-BA78-3AEC-C629-56C5C97D6127}"
 EndProject
+Project("{BC0D5EAF-B3B6-3924-5669-4D1B72D07A48}") = "SasaProjects", "Assembly-UnityScript.unityproj", "{BC59C977-BAFA-7D43-ADB0-80C1535FF7CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{CEBFC0B7-BA78-3AEC-C629-56C5C97D6127}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEBFC0B7-BA78-3AEC-C629-56C5C97D6127}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEBFC0B7-BA78-3AEC-C629-56C5C97D6127}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC59C977-BAFA-7D43-ADB0-80C1535FF7CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC59C977-BAFA-7D43-ADB0-80C1535FF7CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC59C977-BAFA-7D43-ADB0-80C1535FF7CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC59C977-BAFA-7D43-ADB0-80C1535FF7CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
