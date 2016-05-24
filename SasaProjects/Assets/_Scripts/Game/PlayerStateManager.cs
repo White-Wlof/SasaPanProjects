@@ -45,7 +45,7 @@ public sealed class PlayerStateManager : MonoBehaviour
     void Awake()
     {
         
-        ownHp = 300;
+        ownHp = 600;
         ownAtk = 50;
         cannonMode = false;
         boostFrag = false;
