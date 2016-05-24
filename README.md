@@ -1,2 +1,0 @@
-# SasaPanProjects
-newProjects
