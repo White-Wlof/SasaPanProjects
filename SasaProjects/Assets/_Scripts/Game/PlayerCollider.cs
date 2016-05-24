@@ -1,15 +1,43 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerCollider : MonoBehaviour {
+namespace PLAYER
+{
+    public class PlayerCollider : MonoBehaviour
+    {
+        PlayerStateManager state;
+        const string CannonBall = "CannonBall";
+        const string Field = "Field";
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+        [SerializeField] int ballDamage = 10;
+        [SerializeField] int fieldDamage = 2;
+
+        void Start()
+        {
+            state = PlayerStateManager.Instance;
+        }
+
+        void OnCollisionEnter(Collision collision)
+        {
+            switch (collision.transform.tag)
+            {
+                case CannonBall:
+                    state.ownHp -= ballDamage;
+                    break;
+                case Field:
+                    state.ownHp -= fieldDamage;
+                    break;
+            }
+        }
+
+        void OnCollisionStay(Collision collision)
+        {
+            switch (collision.transform.tag)
+            {
+                case Field:
+                    state.ownHp -= fieldDamage;
+                    break;
+            }
+        }
+    }
 }

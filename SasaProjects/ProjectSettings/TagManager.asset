@@ -7,6 +7,7 @@ TagManager:
   - Rival
   - River
   - Field
+  - CannonBall
   layers:
   - Default
   - TransparentFX
