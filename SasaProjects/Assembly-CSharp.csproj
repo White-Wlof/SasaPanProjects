@@ -45,6 +45,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Detonator Explosion Framework\Sample Supporting Emitters\DetonatorSprayHelper.cs" />
+     <Compile Include="Assets\Detonator Explosion Framework\System\Detonator.cs" />
+     <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorBurstEmitter.cs" />
+     <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorCloudRing.cs" />
+     <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorComponent.cs" />
+     <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorFireball.cs" />
+     <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorForce.cs" />
+     <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorGlow.cs" />
+     <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorHeatwave.cs" />
+     <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorLight.cs" />
+     <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorShockwave.cs" />
+     <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorSmoke.cs" />
+     <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorSound.cs" />
+     <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorSparks.cs" />
+     <Compile Include="Assets\Detonator Explosion Framework\System\DetonatorSpray.cs" />
+     <Compile Include="Assets\Detonator Explosion Framework\TestScene\DetonatorTest.cs" />
+     <Compile Include="Assets\Detonator Explosion Framework\TestScene\TouchToMouse.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\Demo2DJumpAndRun.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\JumpAndRunMovement.cs" />
      <Compile Include="Assets\Photon Unity Networking\Demos\DemoBoxes\ColorPerPlayer.cs" />
@@ -176,21 +193,32 @@
      <Compile Include="Assets\RiverTool\ICurvePoint.cs" />
      <Compile Include="Assets\RiverTool\IRiverTool.cs" />
      <Compile Include="Assets\RiverTool\TextureAnimator.cs" />
+     <Compile Include="Assets\_Scripts\Game\CannonBallController.cs" />
+     <Compile Include="Assets\_Scripts\Game\CharactorOperationMaster.cs" />
+     <Compile Include="Assets\_Scripts\Game\GameUIButton.cs" />
+     <Compile Include="Assets\_Scripts\Game\PlayerCameraController.cs" />
+     <Compile Include="Assets\_Scripts\Game\PlayerCollider.cs" />
+     <Compile Include="Assets\_Scripts\Game\PlayerController.cs" />
+     <Compile Include="Assets\_Scripts\Game\PlayerStateManager.cs" />
+     <Compile Include="Assets\_Scripts\Game\RivalController.cs" />
+     <Compile Include="Assets\_Scripts\Game\UIController.cs" />
+     <Compile Include="Assets\_Scripts\System\BoatDirectionSystem.cs" />
+     <Compile Include="Assets\_Scripts\System\CannonPullSystem.cs" />
+     <Compile Include="Assets\_Scripts\System\OrbitPredictioner.cs" />
+     <Compile Include="Assets\_Scripts\System\Prefabs.cs" />
      <None Include="Assets\Fonts\test.txt" />
      <None Include="Assets\Animation\test.txt" />
      <None Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\marcopolo-readme.txt" />
      <None Include="Assets\Plugins\Photon3Unity3D.xml" />
      <None Include="Assets\Plugins\release_history.txt" />
      <None Include="Assets\Physics Materials\test.txt" />
-     <None Include="Assets\Prefabs\test.txt" />
-     <None Include="Assets\Scripts\test.txt" />
      <None Include="Assets\Photon Unity Networking\Demos\DemoBoxes\Resources\eurof_tt.txt" />
      <None Include="Assets\RiverTool\waterShader.shader" />
      <None Include="Assets\Audio\test.txt" />
      <None Include="Assets\Materials\test.txt" />
      <None Include="Assets\Photon Unity Networking\Demos\DemoPickup\Assets\3dFont\3dText.shader" />
      <None Include="Assets\Photon Unity Networking\readme.txt" />
-     <None Include="Assets\Scenes\test.txt" />
+     <None Include="Assets\Detonator Explosion Framework\Resources\Detonator\Textures\HeatDistort.shader" />
      <None Include="Assets\Photon Unity Networking\Demos\DemoRockPaperScissors\Assets\OpenSans\Apache License.txt" />
      <None Include="Assets\Resources\test.txt" />
      <None Include="Assets\Photon Unity Networking\changelog.txt" />
@@ -201,15 +229,19 @@
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
- <Reference Include="RiverTools">
- <HintPath>/Users/Sho/SasaPanProjects/SasaProjects/Assets/RiverTool/RiverTools.dll</HintPath>
+ <Reference Include="Photon3Unity3D">
+ <HintPath>/Users/Sho/SasaPanProjects/SasaProjects/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
  <HintPath>/Users/Sho/SasaPanProjects/SasaProjects/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
- <Reference Include="Photon3Unity3D">
- <HintPath>/Users/Sho/SasaPanProjects/SasaProjects/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ <Reference Include="RiverTools">
+ <HintPath>/Users/Sho/SasaPanProjects/SasaProjects/Assets/RiverTool/RiverTools.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{140D6703-FEC7-6746-4E6C-560A098710B4}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
