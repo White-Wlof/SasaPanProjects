@@ -14088,7 +14088,7 @@ IL_0033:
 }
 // System.Void System.Collections.Generic.HashSet`1/PrimeHelper<System.Int32>::.cctor()
 extern TypeInfo* Int32U5BU5D_t1809983122_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238936____U24U24fieldU2D0_0_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238935____U24U24fieldU2D0_0_FieldInfo_var;
 extern const uint32_t PrimeHelper__cctor_m4220999561_MetadataUsageId;
 extern "C"  void PrimeHelper__cctor_m4220999561_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -14100,7 +14100,7 @@ extern "C"  void PrimeHelper__cctor_m4220999561_gshared (Il2CppObject * __this /
 	}
 	{
 		Int32U5BU5D_t1809983122* L_0 = (Int32U5BU5D_t1809983122*)((Int32U5BU5D_t1809983122*)SZArrayNew(Int32U5BU5D_t1809983122_il2cpp_TypeInfo_var, (uint32_t)((int32_t)34)));
-		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, (RuntimeFieldHandle_t3184214143 )LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238936____U24U24fieldU2D0_0_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, (RuntimeFieldHandle_t3184214143 )LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238935____U24U24fieldU2D0_0_FieldInfo_var), /*hidden argument*/NULL);
 		((PrimeHelper_t868559341_StaticFields*)IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0)->static_fields)->set_primes_table_0(L_0);
 		return;
 	}
@@ -14266,7 +14266,7 @@ IL_0020:
 }
 // System.Void System.Collections.Generic.HashSet`1/PrimeHelper<System.Object>::.cctor()
 extern TypeInfo* Int32U5BU5D_t1809983122_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238936____U24U24fieldU2D0_0_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238935____U24U24fieldU2D0_0_FieldInfo_var;
 extern const uint32_t PrimeHelper__cctor_m1379025658_MetadataUsageId;
 extern "C"  void PrimeHelper__cctor_m1379025658_gshared (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -14278,7 +14278,7 @@ extern "C"  void PrimeHelper__cctor_m1379025658_gshared (Il2CppObject * __this /
 	}
 	{
 		Int32U5BU5D_t1809983122* L_0 = (Int32U5BU5D_t1809983122*)((Int32U5BU5D_t1809983122*)SZArrayNew(Int32U5BU5D_t1809983122_il2cpp_TypeInfo_var, (uint32_t)((int32_t)34)));
-		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, (RuntimeFieldHandle_t3184214143 )LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238936____U24U24fieldU2D0_0_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, (RuntimeFieldHandle_t3184214143 )LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238935____U24U24fieldU2D0_0_FieldInfo_var), /*hidden argument*/NULL);
 		((PrimeHelper_t3153218270_StaticFields*)IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0)->static_fields)->set_primes_table_0(L_0);
 		return;
 	}

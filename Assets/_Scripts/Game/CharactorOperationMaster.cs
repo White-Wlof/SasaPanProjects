@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace PLAYER
+namespace Game
 {
     public class CharacterOperationMaster : MonoBehaviour
     {
@@ -41,5 +41,12 @@ namespace PLAYER
             cannonBall.GetComponent<Rigidbody>().AddForce((center.transform.forward * 5 + center.transform.up * 1) * 200.0f);
         }
 
+        protected void endGame(Rigidbody playerRb)
+        {
+            if (playerRb.velocity.z > 1)
+            {
+                playerRb.velocity -= playerRb.velocity;
+            }
+        }
     }
 }

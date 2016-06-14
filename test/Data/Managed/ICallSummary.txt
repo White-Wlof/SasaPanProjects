@@ -365,6 +365,8 @@ UnityEngine.Light::INTERNAL_set_color
 UnityEngine.Light::set_intensity
 UnityEngine.Light::set_range
 UnityEngine.Light::set_type
+UnityEngine.LineRenderer::INTERNAL_CALL_SetVertexCount
+UnityEngine.LineRenderer::SetPositions
 UnityEngine.Material::HasProperty
 UnityEngine.Material::CopyPropertiesFromMaterial
 UnityEngine.Material::DisableKeyword

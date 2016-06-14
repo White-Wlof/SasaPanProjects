@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace PLAYER
+namespace Game
 {
 
     public class GameUIButton : CharacterOperationMaster

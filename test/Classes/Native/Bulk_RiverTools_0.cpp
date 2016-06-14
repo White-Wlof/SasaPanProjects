@@ -106,19 +106,19 @@ struct MeshFilter_t4177078322;
 #include "UnityEngine_UnityEngine_Vector23525329788MethodDeclarations.h"
 
 // !!0 UnityEngine.GameObject::AddComponent<System.Object>()
-extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
-#define GameObject_AddComponent_TisIl2CppObject_m1123549903(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m337943659_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
+#define GameObject_AddComponent_TisIl2CppObject_m337943659(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.MeshRenderer>()
-#define GameObject_AddComponent_TisMeshRenderer_t1217738301_m2779950442(__this, method) ((  MeshRenderer_t1217738301 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisMeshRenderer_t1217738301_m2779950442(__this, method) ((  MeshRenderer_t1217738301 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.MeshFilter>()
-#define GameObject_AddComponent_TisMeshFilter_t4177078322_m1840490005(__this, method) ((  MeshFilter_t4177078322 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisMeshFilter_t4177078322_m1840490005(__this, method) ((  MeshFilter_t4177078322 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<System.Object>()
-extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
-#define GameObject_GetComponent_TisIl2CppObject_m3233378628(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
+#define GameObject_GetComponent_TisIl2CppObject_m2447772384(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.MeshFilter>()
-#define GameObject_GetComponent_TisMeshFilter_t4177078322_m222210880(__this, method) ((  MeshFilter_t4177078322 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+#define GameObject_GetComponent_TisMeshFilter_t4177078322_m222210880(__this, method) ((  MeshFilter_t4177078322 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.MeshRenderer>()
-#define GameObject_GetComponent_TisMeshRenderer_t1217738301_m2391872469(__this, method) ((  MeshRenderer_t1217738301 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+#define GameObject_GetComponent_TisMeshRenderer_t1217738301_m2391872469(__this, method) ((  MeshRenderer_t1217738301 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gshared (Component_t2126946602 * __this, const MethodInfo* method);
 #define Component_GetComponent_TisIl2CppObject_m267839954(__this, method) ((  Il2CppObject * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
@@ -127,7 +127,7 @@ extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gsh
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.MeshRenderer>()
 #define Component_GetComponent_TisMeshRenderer_t1217738301_m2336630751(__this, method) ((  MeshRenderer_t1217738301 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<CurvePoint>()
-#define GameObject_GetComponent_TisCurvePoint_t131694081_m556656347(__this, method) ((  CurvePoint_t131694081 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+#define GameObject_GetComponent_TisCurvePoint_t131694081_m556656347(__this, method) ((  CurvePoint_t131694081 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -137,7 +137,7 @@ extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gsh
 extern TypeInfo* List_1_t514686775_il2cpp_TypeInfo_var;
 extern TypeInfo* List_1_t27321462_il2cpp_TypeInfo_var;
 extern TypeInfo* List_1_t1755167990_il2cpp_TypeInfo_var;
-extern const MethodInfo* List_1__ctor_m3330911122_MethodInfo_var;
+extern const MethodInfo* List_1__ctor_m2397334390_MethodInfo_var;
 extern const MethodInfo* List_1__ctor_m3666403801_MethodInfo_var;
 extern const MethodInfo* List_1__ctor_m3971247943_MethodInfo_var;
 extern const uint32_t CubicSpline__ctor_m3896546124_MetadataUsageId;
@@ -154,7 +154,7 @@ extern "C"  void CubicSpline__ctor_m3896546124 (CubicSpline_t67207067 * __this, 
 		__this->set_smoothness_1((0.5f));
 		__this->set_isLocal_2((bool)1);
 		List_1_t514686775 * L_0 = (List_1_t514686775 *)il2cpp_codegen_object_new(List_1_t514686775_il2cpp_TypeInfo_var);
-		List_1__ctor_m3330911122(L_0, /*hidden argument*/List_1__ctor_m3330911122_MethodInfo_var);
+		List_1__ctor_m2397334390(L_0, /*hidden argument*/List_1__ctor_m2397334390_MethodInfo_var);
 		__this->set_ep_3(L_0);
 		List_1_t27321462 * L_1 = (List_1_t27321462 *)il2cpp_codegen_object_new(List_1_t27321462_il2cpp_TypeInfo_var);
 		List_1__ctor_m3666403801(L_1, /*hidden argument*/List_1__ctor_m3666403801_MethodInfo_var);
@@ -269,59 +269,6 @@ IL_00da:
 		return;
 	}
 }
-// System.Void CubicSpline::.ctor(System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Int32,System.Single)
-extern TypeInfo* List_1_t514686775_il2cpp_TypeInfo_var;
-extern TypeInfo* List_1_t27321462_il2cpp_TypeInfo_var;
-extern TypeInfo* List_1_t1755167990_il2cpp_TypeInfo_var;
-extern const MethodInfo* List_1__ctor_m3330911122_MethodInfo_var;
-extern const MethodInfo* List_1__ctor_m3666403801_MethodInfo_var;
-extern const MethodInfo* List_1__ctor_m3971247943_MethodInfo_var;
-extern const uint32_t CubicSpline__ctor_m735402480_MetadataUsageId;
-extern "C"  void CubicSpline__ctor_m735402480 (CubicSpline_t67207067 * __this, List_1_t27321462 * ____cp, int32_t ____segment, float ____smoothness, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (CubicSpline__ctor_m735402480_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		__this->set_smoothness_1((0.5f));
-		__this->set_isLocal_2((bool)1);
-		List_1_t514686775 * L_0 = (List_1_t514686775 *)il2cpp_codegen_object_new(List_1_t514686775_il2cpp_TypeInfo_var);
-		List_1__ctor_m3330911122(L_0, /*hidden argument*/List_1__ctor_m3330911122_MethodInfo_var);
-		__this->set_ep_3(L_0);
-		List_1_t27321462 * L_1 = (List_1_t27321462 *)il2cpp_codegen_object_new(List_1_t27321462_il2cpp_TypeInfo_var);
-		List_1__ctor_m3666403801(L_1, /*hidden argument*/List_1__ctor_m3666403801_MethodInfo_var);
-		__this->set_cp_4(L_1);
-		List_1_t27321462 * L_2 = (List_1_t27321462 *)il2cpp_codegen_object_new(List_1_t27321462_il2cpp_TypeInfo_var);
-		List_1__ctor_m3666403801(L_2, /*hidden argument*/List_1__ctor_m3666403801_MethodInfo_var);
-		__this->set_lp_5(L_2);
-		List_1_t27321462 * L_3 = (List_1_t27321462 *)il2cpp_codegen_object_new(List_1_t27321462_il2cpp_TypeInfo_var);
-		List_1__ctor_m3666403801(L_3, /*hidden argument*/List_1__ctor_m3666403801_MethodInfo_var);
-		__this->set_np_6(L_3);
-		List_1_t27321462 * L_4 = (List_1_t27321462 *)il2cpp_codegen_object_new(List_1_t27321462_il2cpp_TypeInfo_var);
-		List_1__ctor_m3666403801(L_4, /*hidden argument*/List_1__ctor_m3666403801_MethodInfo_var);
-		__this->set_bp_7(L_4);
-		List_1_t1755167990 * L_5 = (List_1_t1755167990 *)il2cpp_codegen_object_new(List_1_t1755167990_il2cpp_TypeInfo_var);
-		List_1__ctor_m3971247943(L_5, /*hidden argument*/List_1__ctor_m3971247943_MethodInfo_var);
-		__this->set_t_8(L_5);
-		List_1_t1755167990 * L_6 = (List_1_t1755167990 *)il2cpp_codegen_object_new(List_1_t1755167990_il2cpp_TypeInfo_var);
-		List_1__ctor_m3971247943(L_6, /*hidden argument*/List_1__ctor_m3971247943_MethodInfo_var);
-		__this->set_z_9(L_6);
-		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
-		List_1_t27321462 * L_7 = __this->get_cp_4();
-		NullCheck(L_7);
-		VirtActionInvoker0::Invoke(23 /* System.Void System.Collections.Generic.List`1<UnityEngine.Vector3>::Clear() */, L_7);
-		List_1_t27321462 * L_8 = ____cp;
-		__this->set_cp_4(L_8);
-		int32_t L_9 = ____segment;
-		__this->set_segment_0(L_9);
-		float L_10 = ____smoothness;
-		__this->set_smoothness_1(L_10);
-		return;
-	}
-}
 // System.Void CubicSpline::updateSmoothness(System.Single)
 extern "C"  void CubicSpline_updateSmoothness_m4030420136 (CubicSpline_t67207067 * __this, float ____smoothness, const MethodInfo* method)
 {
@@ -337,18 +284,6 @@ extern "C"  void CubicSpline_updateSegment_m3471439432 (CubicSpline_t67207067 * 
 	{
 		int32_t L_0 = ____seg;
 		__this->set_segment_0(L_0);
-		return;
-	}
-}
-// System.Void CubicSpline::updatePointsByPoints(System.Collections.Generic.List`1<UnityEngine.Vector3>)
-extern "C"  void CubicSpline_updatePointsByPoints_m1863310584 (CubicSpline_t67207067 * __this, List_1_t27321462 * ____cp, const MethodInfo* method)
-{
-	{
-		List_1_t27321462 * L_0 = __this->get_cp_4();
-		NullCheck(L_0);
-		VirtActionInvoker0::Invoke(23 /* System.Void System.Collections.Generic.List`1<UnityEngine.Vector3>::Clear() */, L_0);
-		List_1_t27321462 * L_1 = ____cp;
-		__this->set_cp_4(L_1);
 		return;
 	}
 }
@@ -952,88 +887,6 @@ IL_0034:
 		return L_17;
 	}
 }
-// UnityEngine.Vector3 CubicSpline::q5(System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Single)
-extern TypeInfo* Mathf_t1597001355_il2cpp_TypeInfo_var;
-extern const uint32_t CubicSpline_q5_m712510657_MetadataUsageId;
-extern "C"  Vector3_t3525329789  CubicSpline_q5_m712510657 (CubicSpline_t67207067 * __this, List_1_t27321462 * ___p, float ___t, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (CubicSpline_q5_m712510657_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	Vector3_t3525329789  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	{
-		float L_0 = ___t;
-		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t1597001355_il2cpp_TypeInfo_var);
-		float L_1 = powf(((float)((float)(1.0f)-(float)L_0)), (5.0f));
-		List_1_t27321462 * L_2 = ___p;
-		NullCheck(L_2);
-		Vector3_t3525329789  L_3 = VirtFuncInvoker1< Vector3_t3525329789 , int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.Vector3>::get_Item(System.Int32) */, L_2, 0);
-		Vector3_t3525329789  L_4 = Vector3_op_Multiply_m3809076219(NULL /*static, unused*/, L_1, L_3, /*hidden argument*/NULL);
-		V_0 = L_4;
-		Vector3_t3525329789  L_5 = V_0;
-		int64_t L_6 = CubicSpline_BinomCoefficient_m1799399794(NULL /*static, unused*/, (((int64_t)((int64_t)5))), (((int64_t)((int64_t)1))), /*hidden argument*/NULL);
-		float L_7 = ___t;
-		float L_8 = ___t;
-		float L_9 = powf(((float)((float)(1.0f)-(float)L_8)), (4.0f));
-		List_1_t27321462 * L_10 = ___p;
-		NullCheck(L_10);
-		Vector3_t3525329789  L_11 = VirtFuncInvoker1< Vector3_t3525329789 , int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.Vector3>::get_Item(System.Int32) */, L_10, 1);
-		Vector3_t3525329789  L_12 = Vector3_op_Multiply_m3809076219(NULL /*static, unused*/, ((float)((float)((float)((float)(((float)((float)L_6)))*(float)L_7))*(float)L_9)), L_11, /*hidden argument*/NULL);
-		Vector3_t3525329789  L_13 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, L_5, L_12, /*hidden argument*/NULL);
-		V_0 = L_13;
-		Vector3_t3525329789  L_14 = V_0;
-		int64_t L_15 = CubicSpline_BinomCoefficient_m1799399794(NULL /*static, unused*/, (((int64_t)((int64_t)5))), (((int64_t)((int64_t)2))), /*hidden argument*/NULL);
-		float L_16 = ___t;
-		float L_17 = powf(L_16, (2.0f));
-		float L_18 = ___t;
-		float L_19 = powf(((float)((float)(1.0f)-(float)L_18)), (3.0f));
-		List_1_t27321462 * L_20 = ___p;
-		NullCheck(L_20);
-		Vector3_t3525329789  L_21 = VirtFuncInvoker1< Vector3_t3525329789 , int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.Vector3>::get_Item(System.Int32) */, L_20, 2);
-		Vector3_t3525329789  L_22 = Vector3_op_Multiply_m3809076219(NULL /*static, unused*/, ((float)((float)((float)((float)(((float)((float)L_15)))*(float)L_17))*(float)L_19)), L_21, /*hidden argument*/NULL);
-		Vector3_t3525329789  L_23 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, L_14, L_22, /*hidden argument*/NULL);
-		V_0 = L_23;
-		Vector3_t3525329789  L_24 = V_0;
-		int64_t L_25 = CubicSpline_BinomCoefficient_m1799399794(NULL /*static, unused*/, (((int64_t)((int64_t)5))), (((int64_t)((int64_t)3))), /*hidden argument*/NULL);
-		float L_26 = ___t;
-		float L_27 = powf(L_26, (3.0f));
-		float L_28 = ___t;
-		float L_29 = powf(((float)((float)(1.0f)-(float)L_28)), (2.0f));
-		List_1_t27321462 * L_30 = ___p;
-		NullCheck(L_30);
-		Vector3_t3525329789  L_31 = VirtFuncInvoker1< Vector3_t3525329789 , int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.Vector3>::get_Item(System.Int32) */, L_30, 3);
-		Vector3_t3525329789  L_32 = Vector3_op_Multiply_m3809076219(NULL /*static, unused*/, ((float)((float)((float)((float)(((float)((float)L_25)))*(float)L_27))*(float)L_29)), L_31, /*hidden argument*/NULL);
-		Vector3_t3525329789  L_33 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, L_24, L_32, /*hidden argument*/NULL);
-		V_0 = L_33;
-		Vector3_t3525329789  L_34 = V_0;
-		int64_t L_35 = CubicSpline_BinomCoefficient_m1799399794(NULL /*static, unused*/, (((int64_t)((int64_t)5))), (((int64_t)((int64_t)4))), /*hidden argument*/NULL);
-		float L_36 = ___t;
-		float L_37 = powf(L_36, (4.0f));
-		float L_38 = ___t;
-		float L_39 = powf(((float)((float)(1.0f)-(float)L_38)), (1.0f));
-		List_1_t27321462 * L_40 = ___p;
-		NullCheck(L_40);
-		Vector3_t3525329789  L_41 = VirtFuncInvoker1< Vector3_t3525329789 , int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.Vector3>::get_Item(System.Int32) */, L_40, 4);
-		Vector3_t3525329789  L_42 = Vector3_op_Multiply_m3809076219(NULL /*static, unused*/, ((float)((float)((float)((float)(((float)((float)L_35)))*(float)L_37))*(float)L_39)), L_41, /*hidden argument*/NULL);
-		Vector3_t3525329789  L_43 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, L_34, L_42, /*hidden argument*/NULL);
-		V_0 = L_43;
-		Vector3_t3525329789  L_44 = V_0;
-		float L_45 = ___t;
-		float L_46 = powf(L_45, (5.0f));
-		List_1_t27321462 * L_47 = ___p;
-		NullCheck(L_47);
-		Vector3_t3525329789  L_48 = VirtFuncInvoker1< Vector3_t3525329789 , int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.Vector3>::get_Item(System.Int32) */, L_47, 5);
-		Vector3_t3525329789  L_49 = Vector3_op_Multiply_m3809076219(NULL /*static, unused*/, L_46, L_48, /*hidden argument*/NULL);
-		Vector3_t3525329789  L_50 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, L_44, L_49, /*hidden argument*/NULL);
-		V_0 = L_50;
-		Vector3_t3525329789  L_51 = V_0;
-		return L_51;
-	}
-}
 // UnityEngine.Vector3 CubicSpline::QuadraticN(System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Single)
 extern TypeInfo* Mathf_t1597001355_il2cpp_TypeInfo_var;
 extern const uint32_t CubicSpline_QuadraticN_m878351283_MetadataUsageId;
@@ -1192,145 +1045,6 @@ IL_013d:
 		L_90->set_z_3(((float)((float)L_91+(float)((float)((float)L_94*(float)L_98)))));
 		Vector3_t3525329789  L_99 = V_1;
 		return L_99;
-	}
-}
-// UnityEngine.Vector3 CubicSpline::RationalN(System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Single)
-extern TypeInfo* Mathf_t1597001355_il2cpp_TypeInfo_var;
-extern const uint32_t CubicSpline_RationalN_m37718121_MetadataUsageId;
-extern "C"  Vector3_t3525329789  CubicSpline_RationalN_m37718121 (CubicSpline_t67207067 * __this, List_1_t27321462 * ___p, float ___t, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (CubicSpline_RationalN_m37718121_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	int32_t V_0 = 0;
-	Vector3_t3525329789  V_1;
-	memset(&V_1, 0, sizeof(V_1));
-	Vector3_t3525329789  V_2;
-	memset(&V_2, 0, sizeof(V_2));
-	Vector3_t3525329789  V_3;
-	memset(&V_3, 0, sizeof(V_3));
-	int32_t V_4 = 0;
-	{
-		List_1_t27321462 * L_0 = ___p;
-		NullCheck(L_0);
-		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Int32 System.Collections.Generic.List`1<UnityEngine.Vector3>::get_Count() */, L_0);
-		V_0 = ((int32_t)((int32_t)L_1-(int32_t)1));
-		Vector3_t3525329789  L_2 = Vector3_get_zero_m2017759730(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_1 = L_2;
-		Vector3_t3525329789  L_3 = Vector3_get_zero_m2017759730(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_2 = L_3;
-		Vector3_t3525329789  L_4 = Vector3_get_zero_m2017759730(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_3 = L_4;
-		V_4 = 0;
-		goto IL_0179;
-	}
-
-IL_0023:
-	{
-		Vector3_t3525329789 * L_5 = (&V_2);
-		float L_6 = L_5->get_x_1();
-		int32_t L_7 = V_0;
-		int32_t L_8 = V_4;
-		int64_t L_9 = CubicSpline_BinomCoefficient_m1799399794(NULL /*static, unused*/, (((int64_t)((int64_t)L_7))), (((int64_t)((int64_t)L_8))), /*hidden argument*/NULL);
-		float L_10 = ___t;
-		int32_t L_11 = V_0;
-		int32_t L_12 = V_4;
-		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t1597001355_il2cpp_TypeInfo_var);
-		float L_13 = powf(((float)((float)(1.0f)-(float)L_10)), (((float)((float)((int32_t)((int32_t)L_11-(int32_t)L_12))))));
-		List_1_t27321462 * L_14 = ___p;
-		int32_t L_15 = V_4;
-		NullCheck(L_14);
-		Vector3_t3525329789  L_16 = VirtFuncInvoker1< Vector3_t3525329789 , int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.Vector3>::get_Item(System.Int32) */, L_14, L_15);
-		float L_17 = L_16.get_x_1();
-		L_5->set_x_1(((float)((float)L_6+(float)((float)((float)((float)((float)((float)((float)(((float)((float)L_9)))*(float)L_13))*(float)L_17))*(float)(1.0f))))));
-		Vector3_t3525329789 * L_18 = (&V_2);
-		float L_19 = L_18->get_y_2();
-		int32_t L_20 = V_0;
-		int32_t L_21 = V_4;
-		int64_t L_22 = CubicSpline_BinomCoefficient_m1799399794(NULL /*static, unused*/, (((int64_t)((int64_t)L_20))), (((int64_t)((int64_t)L_21))), /*hidden argument*/NULL);
-		float L_23 = ___t;
-		int32_t L_24 = V_0;
-		int32_t L_25 = V_4;
-		float L_26 = powf(((float)((float)(1.0f)-(float)L_23)), (((float)((float)((int32_t)((int32_t)L_24-(int32_t)L_25))))));
-		List_1_t27321462 * L_27 = ___p;
-		int32_t L_28 = V_4;
-		NullCheck(L_27);
-		Vector3_t3525329789  L_29 = VirtFuncInvoker1< Vector3_t3525329789 , int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.Vector3>::get_Item(System.Int32) */, L_27, L_28);
-		float L_30 = L_29.get_y_2();
-		L_18->set_y_2(((float)((float)L_19+(float)((float)((float)((float)((float)((float)((float)(((float)((float)L_22)))*(float)L_26))*(float)L_30))*(float)(1.0f))))));
-		Vector3_t3525329789 * L_31 = (&V_2);
-		float L_32 = L_31->get_z_3();
-		int32_t L_33 = V_0;
-		int32_t L_34 = V_4;
-		int64_t L_35 = CubicSpline_BinomCoefficient_m1799399794(NULL /*static, unused*/, (((int64_t)((int64_t)L_33))), (((int64_t)((int64_t)L_34))), /*hidden argument*/NULL);
-		float L_36 = ___t;
-		int32_t L_37 = V_0;
-		int32_t L_38 = V_4;
-		float L_39 = powf(((float)((float)(1.0f)-(float)L_36)), (((float)((float)((int32_t)((int32_t)L_37-(int32_t)L_38))))));
-		List_1_t27321462 * L_40 = ___p;
-		int32_t L_41 = V_4;
-		NullCheck(L_40);
-		Vector3_t3525329789  L_42 = VirtFuncInvoker1< Vector3_t3525329789 , int32_t >::Invoke(31 /* !0 System.Collections.Generic.List`1<UnityEngine.Vector3>::get_Item(System.Int32) */, L_40, L_41);
-		float L_43 = L_42.get_z_3();
-		L_31->set_z_3(((float)((float)L_32+(float)((float)((float)((float)((float)((float)((float)(((float)((float)L_35)))*(float)L_39))*(float)L_43))*(float)(1.0f))))));
-		Vector3_t3525329789 * L_44 = (&V_3);
-		float L_45 = L_44->get_x_1();
-		int32_t L_46 = V_0;
-		int32_t L_47 = V_4;
-		int64_t L_48 = CubicSpline_BinomCoefficient_m1799399794(NULL /*static, unused*/, (((int64_t)((int64_t)L_46))), (((int64_t)((int64_t)L_47))), /*hidden argument*/NULL);
-		float L_49 = ___t;
-		int32_t L_50 = V_0;
-		int32_t L_51 = V_4;
-		float L_52 = powf(((float)((float)(1.0f)-(float)L_49)), (((float)((float)((int32_t)((int32_t)L_50-(int32_t)L_51))))));
-		L_44->set_x_1(((float)((float)L_45+(float)((float)((float)((float)((float)(((float)((float)L_48)))*(float)L_52))*(float)(1.0f))))));
-		Vector3_t3525329789 * L_53 = (&V_3);
-		float L_54 = L_53->get_y_2();
-		int32_t L_55 = V_0;
-		int32_t L_56 = V_4;
-		int64_t L_57 = CubicSpline_BinomCoefficient_m1799399794(NULL /*static, unused*/, (((int64_t)((int64_t)L_55))), (((int64_t)((int64_t)L_56))), /*hidden argument*/NULL);
-		float L_58 = ___t;
-		int32_t L_59 = V_0;
-		int32_t L_60 = V_4;
-		float L_61 = powf(((float)((float)(1.0f)-(float)L_58)), (((float)((float)((int32_t)((int32_t)L_59-(int32_t)L_60))))));
-		L_53->set_y_2(((float)((float)L_54+(float)((float)((float)((float)((float)(((float)((float)L_57)))*(float)L_61))*(float)(1.0f))))));
-		Vector3_t3525329789 * L_62 = (&V_3);
-		float L_63 = L_62->get_z_3();
-		int32_t L_64 = V_0;
-		int32_t L_65 = V_4;
-		int64_t L_66 = CubicSpline_BinomCoefficient_m1799399794(NULL /*static, unused*/, (((int64_t)((int64_t)L_64))), (((int64_t)((int64_t)L_65))), /*hidden argument*/NULL);
-		float L_67 = ___t;
-		int32_t L_68 = V_0;
-		int32_t L_69 = V_4;
-		float L_70 = powf(((float)((float)(1.0f)-(float)L_67)), (((float)((float)((int32_t)((int32_t)L_68-(int32_t)L_69))))));
-		L_62->set_z_3(((float)((float)L_63+(float)((float)((float)((float)((float)(((float)((float)L_66)))*(float)L_70))*(float)(1.0f))))));
-		int32_t L_71 = V_4;
-		V_4 = ((int32_t)((int32_t)L_71+(int32_t)1));
-	}
-
-IL_0179:
-	{
-		int32_t L_72 = V_4;
-		int32_t L_73 = V_0;
-		if ((((int32_t)L_72) < ((int32_t)L_73)))
-		{
-			goto IL_0023;
-		}
-	}
-	{
-		float L_74 = (&V_2)->get_x_1();
-		float L_75 = (&V_3)->get_x_1();
-		(&V_1)->set_x_1(((float)((float)L_74/(float)L_75)));
-		float L_76 = (&V_2)->get_x_1();
-		float L_77 = (&V_3)->get_y_2();
-		(&V_1)->set_y_2(((float)((float)L_76/(float)L_77)));
-		float L_78 = (&V_2)->get_x_1();
-		float L_79 = (&V_3)->get_z_3();
-		(&V_1)->set_z_3(((float)((float)L_78/(float)L_79)));
-		Vector3_t3525329789  L_80 = V_1;
-		return L_80;
 	}
 }
 // System.Void CurvePoint::Start()
@@ -2773,7 +2487,7 @@ extern TypeInfo* List_1_t27321462_il2cpp_TypeInfo_var;
 extern TypeInfo* List_1_t3644373756_il2cpp_TypeInfo_var;
 extern TypeInfo* List_1_t2385134729_il2cpp_TypeInfo_var;
 extern TypeInfo* List_1_t27321461_il2cpp_TypeInfo_var;
-extern const MethodInfo* List_1__ctor_m3330911122_MethodInfo_var;
+extern const MethodInfo* List_1__ctor_m2397334390_MethodInfo_var;
 extern const MethodInfo* List_1__ctor_m3807442832_MethodInfo_var;
 extern const MethodInfo* List_1__ctor_m3666403801_MethodInfo_var;
 extern const MethodInfo* List_1__ctor_m1339192537_MethodInfo_var;
@@ -2796,7 +2510,7 @@ extern "C"  void RiverTool__ctor_m816312422 (RiverTool_t774771108 * __this, cons
 		__this->set_gizmoSize_6((1.0f));
 		__this->set_UpdateMesh_7((bool)1);
 		List_1_t514686775 * L_0 = (List_1_t514686775 *)il2cpp_codegen_object_new(List_1_t514686775_il2cpp_TypeInfo_var);
-		List_1__ctor_m3330911122(L_0, /*hidden argument*/List_1__ctor_m3330911122_MethodInfo_var);
+		List_1__ctor_m2397334390(L_0, /*hidden argument*/List_1__ctor_m2397334390_MethodInfo_var);
 		__this->set_points_8(L_0);
 		List_1_t874251881 * L_1 = (List_1_t874251881 *)il2cpp_codegen_object_new(List_1_t874251881_il2cpp_TypeInfo_var);
 		List_1__ctor_m3807442832(L_1, /*hidden argument*/List_1__ctor_m3807442832_MethodInfo_var);

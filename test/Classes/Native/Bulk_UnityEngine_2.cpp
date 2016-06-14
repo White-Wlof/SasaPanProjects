@@ -13,13 +13,15 @@
 #include <limits>
 #include <assert.h>
 
+// UnityEngine.ResourceRequest
+struct ResourceRequest_t2256525006;
+// UnityEngine.Object
+struct Object_t3878351788;
+struct Object_t3878351788_marshaled_pinvoke;
 // UnityEngine.Object[]
 struct ObjectU5BU5D_t3051965477;
 // System.Type
 struct Type_t;
-// UnityEngine.Object
-struct Object_t3878351788;
-struct Object_t3878351788_marshaled_pinvoke;
 // System.String
 struct String_t;
 // UnityEngine.Rigidbody
@@ -194,18 +196,21 @@ struct TypeInferenceRuleAttribute_t471424957;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array2840145358.h"
-#include "UnityEngine_UnityEngine_Resources1543782994.h"
-#include "UnityEngine_UnityEngine_Resources1543782994MethodDeclarations.h"
-#include "mscorlib_System_Type2779229935.h"
-#include "UnityEngine_ArrayTypes.h"
+#include "UnityEngine_UnityEngine_ResourceRequest2256525006.h"
+#include "UnityEngine_UnityEngine_ResourceRequest2256525006MethodDeclarations.h"
+#include "mscorlib_System_Void2779279689.h"
+#include "UnityEngine_UnityEngine_AsyncOperation3374395064MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Object3878351788.h"
+#include "UnityEngine_UnityEngine_Resources1543782994MethodDeclarations.h"
 #include "mscorlib_System_String968488902.h"
+#include "mscorlib_System_Type2779229935.h"
+#include "UnityEngine_UnityEngine_Resources1543782994.h"
+#include "UnityEngine_ArrayTypes.h"
 #include "mscorlib_System_Type2779229935MethodDeclarations.h"
 #include "mscorlib_System_RuntimeTypeHandle1864875887.h"
 #include "UnityEngine_UnityEngine_Rigidbody1972007546.h"
 #include "UnityEngine_UnityEngine_Rigidbody1972007546MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector33525329789.h"
-#include "mscorlib_System_Void2779279689.h"
 #include "mscorlib_System_Boolean211005341.h"
 #include "UnityEngine_UnityEngine_ForceMode759713627.h"
 #include "mscorlib_System_Single958209021.h"
@@ -538,6 +543,24 @@ extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gsh
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UnityEngine.ResourceRequest::.ctor()
+extern "C"  void ResourceRequest__ctor_m2863879896 (ResourceRequest_t2256525006 * __this, const MethodInfo* method)
+{
+	{
+		AsyncOperation__ctor_m162101250(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// UnityEngine.Object UnityEngine.ResourceRequest::get_asset()
+extern "C"  Object_t3878351788 * ResourceRequest_get_asset_m670320982 (ResourceRequest_t2256525006 * __this, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = __this->get_m_Path_1();
+		Type_t * L_1 = __this->get_m_Type_2();
+		Object_t3878351788 * L_2 = Resources_Load_m3601699608(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
 // UnityEngine.Object[] UnityEngine.Resources::FindObjectsOfTypeAll(System.Type)
 extern "C"  ObjectU5BU5D_t3051965477* Resources_FindObjectsOfTypeAll_m1346325355 (Il2CppObject * __this /* static, unused */, Type_t * ___type, const MethodInfo* method)
 {

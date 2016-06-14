@@ -2,7 +2,7 @@
 using System.Collections;
 
 
-namespace PLAYER
+namespace Game
 {
     public class RivalController : CharacterOperationMaster
     {
@@ -16,6 +16,7 @@ namespace PLAYER
         // Use this for initialization
         void Start()
         {
+            
             state = PlayerStateManager.Instance;
             rivalRb = this.GetComponent<Rigidbody>();
             cannonBall = Prefabs.GameObj.CannonBall;
@@ -25,6 +26,7 @@ namespace PLAYER
         // Update is called once per frame
         void Update()
         {
+            rivalRb.AddForce(Vector3.forward * 2);
             timer += Time.deltaTime;
             //Debug.Log(rivalRb.velocity.z);
             if (this.transform.position.z + 5 < player.transform.position.z)

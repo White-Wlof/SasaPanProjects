@@ -119,13 +119,17 @@
 <type fullname="PLAYER.CharacterOperationMaster" preserve="all"/>
 <type fullname="PLAYER.GameUIButton" preserve="all"/>
 <type fullname="PLAYER.PlayerCameraController" preserve="all"/>
-<type fullname="PlayerCollider" preserve="all"/>
+<type fullname="PLAYER.PlayerCollider" preserve="all"/>
 <type fullname="PLAYER.PlayerController" preserve="all"/>
 <type fullname="PlayerStateManager" preserve="all"/>
 <type fullname="PLAYER.RivalController" preserve="all"/>
 <type fullname="UIController" preserve="all"/>
 <type fullname="PLAYER.BoatDirectionSystem" preserve="all"/>
 <type fullname="CannonPullSystem" preserve="all"/>
+<type fullname="PLAYER.OrbitPredictioner" preserve="all"/>
+</assembly>
+<assembly fullname="Assembly-UnityScript">
+<type fullname="ScrollUV" preserve="all"/>
 </assembly>
 <assembly fullname="UnityEngine.UI">
 <type fullname="UnityEngine.EventSystems.EventSystem" preserve="all"/>

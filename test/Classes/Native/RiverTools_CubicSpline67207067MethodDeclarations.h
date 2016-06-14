@@ -24,14 +24,10 @@ struct List_1_t27321462;
 
 // System.Void CubicSpline::.ctor(System.Collections.Generic.List`1<UnityEngine.GameObject>,System.Int32,System.Single,System.Boolean)
 extern "C"  void CubicSpline__ctor_m3896546124 (CubicSpline_t67207067 * __this, List_1_t514686775 * ____cp, int32_t ____segment, float ____smoothness, bool ____isLocal, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void CubicSpline::.ctor(System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Int32,System.Single)
-extern "C"  void CubicSpline__ctor_m735402480 (CubicSpline_t67207067 * __this, List_1_t27321462 * ____cp, int32_t ____segment, float ____smoothness, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void CubicSpline::updateSmoothness(System.Single)
 extern "C"  void CubicSpline_updateSmoothness_m4030420136 (CubicSpline_t67207067 * __this, float ____smoothness, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void CubicSpline::updateSegment(System.Int32)
 extern "C"  void CubicSpline_updateSegment_m3471439432 (CubicSpline_t67207067 * __this, int32_t ____seg, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void CubicSpline::updatePointsByPoints(System.Collections.Generic.List`1<UnityEngine.Vector3>)
-extern "C"  void CubicSpline_updatePointsByPoints_m1863310584 (CubicSpline_t67207067 * __this, List_1_t27321462 * ____cp, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void CubicSpline::updatePointsByGameobjects(System.Collections.Generic.List`1<UnityEngine.GameObject>)
 extern "C"  void CubicSpline_updatePointsByGameobjects_m1608620878 (CubicSpline_t67207067 * __this, List_1_t514686775 * ____cp, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.Generic.List`1<UnityEngine.Vector3> CubicSpline::GetCubicPoints()
@@ -50,9 +46,5 @@ extern "C"  Vector3_t3525329789  CubicSpline_Linear_m634855761 (CubicSpline_t672
 extern "C"  void CubicSpline_calculateNP_m835135605 (CubicSpline_t67207067 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int64 CubicSpline::BinomCoefficient(System.Int64,System.Int64)
 extern "C"  int64_t CubicSpline_BinomCoefficient_m1799399794 (Il2CppObject * __this /* static, unused */, int64_t ___n, int64_t ___k, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.Vector3 CubicSpline::q5(System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Single)
-extern "C"  Vector3_t3525329789  CubicSpline_q5_m712510657 (CubicSpline_t67207067 * __this, List_1_t27321462 * ___p, float ___t, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 CubicSpline::QuadraticN(System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Single)
 extern "C"  Vector3_t3525329789  CubicSpline_QuadraticN_m878351283 (CubicSpline_t67207067 * __this, List_1_t27321462 * ___p, float ___t, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// UnityEngine.Vector3 CubicSpline::RationalN(System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Single)
-extern "C"  Vector3_t3525329789  CubicSpline_RationalN_m37718121 (CubicSpline_t67207067 * __this, List_1_t27321462 * ___p, float ___t, const MethodInfo* method) IL2CPP_METHOD_ATTR;

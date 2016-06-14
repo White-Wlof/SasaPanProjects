@@ -25,10 +25,10 @@ struct PlayerStateManager_t4277940093;
 struct  PlayerStateManager_t4277940093  : public MonoBehaviour_t3012272455
 {
 public:
-	// System.Int32 PlayerStateManager::<hp>k__BackingField
-	int32_t ___U3ChpU3Ek__BackingField_3;
-	// System.Int32 PlayerStateManager::<atk>k__BackingField
-	int32_t ___U3CatkU3Ek__BackingField_4;
+	// System.Int32 PlayerStateManager::<ownHp>k__BackingField
+	int32_t ___U3CownHpU3Ek__BackingField_3;
+	// System.Int32 PlayerStateManager::<ownAtk>k__BackingField
+	int32_t ___U3CownAtkU3Ek__BackingField_4;
 	// System.Boolean PlayerStateManager::<cannonMode>k__BackingField
 	bool ___U3CcannonModeU3Ek__BackingField_5;
 	// System.Boolean PlayerStateManager::<boostFrag>k__BackingField
@@ -47,20 +47,20 @@ public:
 	int32_t ___U3CrevivalCannonU3Ek__BackingField_12;
 
 public:
-	inline static int32_t get_offset_of_U3ChpU3Ek__BackingField_3() { return static_cast<int32_t>(offsetof(PlayerStateManager_t4277940093, ___U3ChpU3Ek__BackingField_3)); }
-	inline int32_t get_U3ChpU3Ek__BackingField_3() const { return ___U3ChpU3Ek__BackingField_3; }
-	inline int32_t* get_address_of_U3ChpU3Ek__BackingField_3() { return &___U3ChpU3Ek__BackingField_3; }
-	inline void set_U3ChpU3Ek__BackingField_3(int32_t value)
+	inline static int32_t get_offset_of_U3CownHpU3Ek__BackingField_3() { return static_cast<int32_t>(offsetof(PlayerStateManager_t4277940093, ___U3CownHpU3Ek__BackingField_3)); }
+	inline int32_t get_U3CownHpU3Ek__BackingField_3() const { return ___U3CownHpU3Ek__BackingField_3; }
+	inline int32_t* get_address_of_U3CownHpU3Ek__BackingField_3() { return &___U3CownHpU3Ek__BackingField_3; }
+	inline void set_U3CownHpU3Ek__BackingField_3(int32_t value)
 	{
-		___U3ChpU3Ek__BackingField_3 = value;
+		___U3CownHpU3Ek__BackingField_3 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CatkU3Ek__BackingField_4() { return static_cast<int32_t>(offsetof(PlayerStateManager_t4277940093, ___U3CatkU3Ek__BackingField_4)); }
-	inline int32_t get_U3CatkU3Ek__BackingField_4() const { return ___U3CatkU3Ek__BackingField_4; }
-	inline int32_t* get_address_of_U3CatkU3Ek__BackingField_4() { return &___U3CatkU3Ek__BackingField_4; }
-	inline void set_U3CatkU3Ek__BackingField_4(int32_t value)
+	inline static int32_t get_offset_of_U3CownAtkU3Ek__BackingField_4() { return static_cast<int32_t>(offsetof(PlayerStateManager_t4277940093, ___U3CownAtkU3Ek__BackingField_4)); }
+	inline int32_t get_U3CownAtkU3Ek__BackingField_4() const { return ___U3CownAtkU3Ek__BackingField_4; }
+	inline int32_t* get_address_of_U3CownAtkU3Ek__BackingField_4() { return &___U3CownAtkU3Ek__BackingField_4; }
+	inline void set_U3CownAtkU3Ek__BackingField_4(int32_t value)
 	{
-		___U3CatkU3Ek__BackingField_4 = value;
+		___U3CownAtkU3Ek__BackingField_4 = value;
 	}
 
 	inline static int32_t get_offset_of_U3CcannonModeU3Ek__BackingField_5() { return static_cast<int32_t>(offsetof(PlayerStateManager_t4277940093, ___U3CcannonModeU3Ek__BackingField_5)); }

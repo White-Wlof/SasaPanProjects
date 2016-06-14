@@ -17106,7 +17106,7 @@ extern "C"  void PhotonPing_Init_m2854712352 (PhotonPing_t3684928106 * __this, c
 }
 // System.Void ExitGames.Client.Photon.PhotonPing::.ctor()
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238937____70AE3F6F18539B6C47CFF9F0D9672AEEBDBCDB4C_4_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238938____70AE3F6F18539B6C47CFF9F0D9672AEEBDBCDB4C_4_FieldInfo_var;
 extern Il2CppCodeGenString* _stringLiteral0;
 extern const uint32_t PhotonPing__ctor_m4099101620_MetadataUsageId;
 extern "C"  void PhotonPing__ctor_m4099101620 (PhotonPing_t3684928106 * __this, const MethodInfo* method)
@@ -17121,7 +17121,7 @@ extern "C"  void PhotonPing__ctor_m4099101620 (PhotonPing_t3684928106 * __this, 
 		__this->set_DebugString_0(_stringLiteral0);
 		__this->set_PingLength_3(((int32_t)13));
 		ByteU5BU5D_t58506160* L_0 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)13)));
-		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238937____70AE3F6F18539B6C47CFF9F0D9672AEEBDBCDB4C_4_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238938____70AE3F6F18539B6C47CFF9F0D9672AEEBDBCDB4C_4_FieldInfo_var), /*hidden argument*/NULL);
 		__this->set_PingBytes_4(L_0);
 		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
 		return;
@@ -30389,7 +30389,7 @@ IL_0086:
 // System.Void ExitGames.Client.Photon.TPeer::.cctor()
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
 extern TypeInfo* TPeer_t2266327570_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238937____6668D4903321030E42A6CE59AB96ADD9D0214FAC_3_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238938____6668D4903321030E42A6CE59AB96ADD9D0214FAC_3_FieldInfo_var;
 extern const uint32_t TPeer__cctor_m4078892799_MetadataUsageId;
 extern "C"  void TPeer__cctor_m4078892799 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -30401,7 +30401,7 @@ extern "C"  void TPeer__cctor_m4078892799 (Il2CppObject * __this /* static, unus
 	}
 	{
 		ByteU5BU5D_t58506160* L_0 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)9)));
-		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238937____6668D4903321030E42A6CE59AB96ADD9D0214FAC_3_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238938____6668D4903321030E42A6CE59AB96ADD9D0214FAC_3_FieldInfo_var), /*hidden argument*/NULL);
 		((TPeer_t2266327570_StaticFields*)TPeer_t2266327570_il2cpp_TypeInfo_var->static_fields)->set_tcpFramedMessageHead_76(L_0);
 		ByteU5BU5D_t58506160* L_1 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)2));
 		NullCheck(L_1);
@@ -31454,7 +31454,7 @@ extern "C"  void TrafficStatsGameLevel__ctor_m3983251828 (TrafficStatsGameLevel_
 // System.Void ExitGames.Client.Photon.Version::.cctor()
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
 extern TypeInfo* Version_t4202529524_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238937____5EC4804EF31B736575B8DD011AD418F4BBBD59A4_2_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238938____5EC4804EF31B736575B8DD011AD418F4BBBD59A4_2_FieldInfo_var;
 extern const uint32_t Version__cctor_m3267662241_MetadataUsageId;
 extern "C"  void Version__cctor_m3267662241 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -31466,7 +31466,7 @@ extern "C"  void Version__cctor_m3267662241 (Il2CppObject * __this /* static, un
 	}
 	{
 		ByteU5BU5D_t58506160* L_0 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)4));
-		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238937____5EC4804EF31B736575B8DD011AD418F4BBBD59A4_2_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238938____5EC4804EF31B736575B8DD011AD418F4BBBD59A4_2_FieldInfo_var), /*hidden argument*/NULL);
 		((Version_t4202529524_StaticFields*)Version_t4202529524_il2cpp_TypeInfo_var->static_fields)->set_clientVersion_0(L_0);
 		return;
 	}
@@ -37858,7 +37858,7 @@ IL_00c7:
 // System.Void Photon.SocketServer.Numeric.BigInteger::.cctor()
 extern TypeInfo* Int32U5BU5D_t1809983122_il2cpp_TypeInfo_var;
 extern TypeInfo* BigInteger_t2113513851_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238937____AEAF34DCCF141E917F02F7768DAEA80AA2B13B95_5_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238938____AEAF34DCCF141E917F02F7768DAEA80AA2B13B95_5_FieldInfo_var;
 extern const uint32_t BigInteger__cctor_m932190870_MetadataUsageId;
 extern "C"  void BigInteger__cctor_m932190870 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -37870,7 +37870,7 @@ extern "C"  void BigInteger__cctor_m932190870 (Il2CppObject * __this /* static, 
 	}
 	{
 		Int32U5BU5D_t1809983122* L_0 = ((Int32U5BU5D_t1809983122*)SZArrayNew(Int32U5BU5D_t1809983122_il2cpp_TypeInfo_var, (uint32_t)((int32_t)303)));
-		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238937____AEAF34DCCF141E917F02F7768DAEA80AA2B13B95_5_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238938____AEAF34DCCF141E917F02F7768DAEA80AA2B13B95_5_FieldInfo_var), /*hidden argument*/NULL);
 		((BigInteger_t2113513851_StaticFields*)BigInteger_t2113513851_il2cpp_TypeInfo_var->static_fields)->set_primesBelow2000_1(L_0);
 		return;
 	}
@@ -38390,9 +38390,9 @@ extern "C"  void DiffieHellmanCryptoProvider__cctor_m4094277463 (Il2CppObject * 
 // System.Void Photon.SocketServer.Security.OakleyGroups::.cctor()
 extern TypeInfo* OakleyGroups_t1401475037_il2cpp_TypeInfo_var;
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238937____4989E5469B40416DC5AFB739C747E32B40CC5C77_0_FieldInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238937____C033BD4351FBA3732545EA2E016D52B0FC3E69EC_6_FieldInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238937____49ECABA9727A1AF0636082C467485A1A9A04B669_1_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238938____4989E5469B40416DC5AFB739C747E32B40CC5C77_0_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238938____C033BD4351FBA3732545EA2E016D52B0FC3E69EC_6_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238938____49ECABA9727A1AF0636082C467485A1A9A04B669_1_FieldInfo_var;
 extern const uint32_t OakleyGroups__cctor_m519789702_MetadataUsageId;
 extern "C"  void OakleyGroups__cctor_m519789702 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -38405,13 +38405,13 @@ extern "C"  void OakleyGroups__cctor_m519789702 (Il2CppObject * __this /* static
 	{
 		((OakleyGroups_t1401475037_StaticFields*)OakleyGroups_t1401475037_il2cpp_TypeInfo_var->static_fields)->set_Generator_0(((int32_t)22));
 		ByteU5BU5D_t58506160* L_0 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)96)));
-		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238937____4989E5469B40416DC5AFB739C747E32B40CC5C77_0_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238938____4989E5469B40416DC5AFB739C747E32B40CC5C77_0_FieldInfo_var), /*hidden argument*/NULL);
 		((OakleyGroups_t1401475037_StaticFields*)OakleyGroups_t1401475037_il2cpp_TypeInfo_var->static_fields)->set_OakleyPrime768_1(L_0);
 		ByteU5BU5D_t58506160* L_1 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)128)));
-		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_1, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238937____C033BD4351FBA3732545EA2E016D52B0FC3E69EC_6_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_1, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238938____C033BD4351FBA3732545EA2E016D52B0FC3E69EC_6_FieldInfo_var), /*hidden argument*/NULL);
 		((OakleyGroups_t1401475037_StaticFields*)OakleyGroups_t1401475037_il2cpp_TypeInfo_var->static_fields)->set_OakleyPrime1024_2(L_1);
 		ByteU5BU5D_t58506160* L_2 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)192)));
-		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_2, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238937____49ECABA9727A1AF0636082C467485A1A9A04B669_1_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_2, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238938____49ECABA9727A1AF0636082C467485A1A9A04B669_1_FieldInfo_var), /*hidden argument*/NULL);
 		((OakleyGroups_t1401475037_StaticFields*)OakleyGroups_t1401475037_il2cpp_TypeInfo_var->static_fields)->set_OakleyPrime1536_3(L_2);
 		return;
 	}

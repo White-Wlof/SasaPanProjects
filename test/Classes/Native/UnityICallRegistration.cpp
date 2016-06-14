@@ -1,4 +1,4 @@
-//Generated on : 2016/05/04 15:43:49
+//Generated on : 2016/06/13 12:25:27
 void RegisterAllStrippedInternalCalls()
 {
 	//Start Registrations for type : UnityEngine.Animation
@@ -1644,6 +1644,18 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Light_set_type();
 
 	//End Registrations for type : UnityEngine.Light
+
+	//Start Registrations for type : UnityEngine.LineRenderer
+
+		//System.Void UnityEngine.LineRenderer::INTERNAL_CALL_SetVertexCount(UnityEngine.LineRenderer,System.Int32)
+		void Register_UnityEngine_LineRenderer_INTERNAL_CALL_SetVertexCount();
+		Register_UnityEngine_LineRenderer_INTERNAL_CALL_SetVertexCount();
+
+		//System.Void UnityEngine.LineRenderer::SetPositions(UnityEngine.Vector3[])
+		void Register_UnityEngine_LineRenderer_SetPositions();
+		Register_UnityEngine_LineRenderer_SetPositions();
+
+	//End Registrations for type : UnityEngine.LineRenderer
 
 	//Start Registrations for type : UnityEngine.Material
 
