@@ -13,6 +13,14 @@
 #include <limits>
 #include <assert.h>
 
+// PunTurnManager
+struct PunTurnManager_t2757607879;
+// System.Object
+struct Il2CppObject;
+// PhotonPlayer
+struct PhotonPlayer_t1400510109;
+// ExitGames.Client.Photon.Hashtable
+struct Hashtable_t223732124;
 // QuitOnEscapeOrBack
 struct QuitOnEscapeOrBack_t4132021529;
 // RaiseEventOptions
@@ -21,8 +29,6 @@ struct RaiseEventOptions_t2943657104;
 struct RandomMatchmaker_t662331106;
 // myThirdPersonController
 struct myThirdPersonController_t1717065228;
-// System.Object
-struct Il2CppObject;
 // PhotonView
 struct PhotonView_t1498838369;
 // Region
@@ -35,8 +41,6 @@ struct Room_t2553083;
 struct RoomOptions_t979675427;
 // System.String[]
 struct StringU5BU5D_t2956870243;
-// ExitGames.Client.Photon.Hashtable
-struct Hashtable_t223732124;
 // RoomInfo
 struct RoomInfo_t4185970761;
 // RPGCamera
@@ -51,12 +55,8 @@ struct Animator_t792326996;
 struct PhotonTransformView_t486317301;
 // RpsCore
 struct RpsCore_t3075633940;
-// PunTurnManager
-struct PunTurnManager_t2757607879;
 // RpsDemoConnect
 struct RpsDemoConnect_t3700857970;
-// PhotonPlayer
-struct PhotonPlayer_t1400510109;
 // System.Collections.IEnumerator
 struct IEnumerator_t287207039;
 // UnityEngine.Sprite
@@ -141,36 +141,58 @@ struct WorkerMenu_t1608960541;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array2840145358.h"
+#include "AssemblyU2DCSharp_PunTurnManager2757607879.h"
+#include "AssemblyU2DCSharp_PunTurnManager2757607879MethodDeclarations.h"
+#include "mscorlib_System_Void2779279689.h"
+#include "System_Core_System_Collections_Generic_HashSet_1_g4099198780MethodDeclarations.h"
+#include "AssemblyU2DCSharp_Photon_PunBehaviour1644375368MethodDeclarations.h"
+#include "System_Core_System_Collections_Generic_HashSet_1_g4099198780.h"
+#include "mscorlib_System_Int322847414787.h"
+#include "AssemblyU2DCSharp_PhotonNetwork2803193330MethodDeclarations.h"
+#include "AssemblyU2DCSharp_TurnExtensions2432752785MethodDeclarations.h"
+#include "AssemblyU2DCSharp_Room2553083.h"
+#include "AssemblyU2DCSharp_RoomInfo4185970761.h"
+#include "mscorlib_System_Boolean211005341.h"
+#include "mscorlib_System_Single958209021.h"
+#include "AssemblyU2DCSharp_Room2553083MethodDeclarations.h"
+#include "AssemblyU2DCSharp_PhotonPlayer1400510109.h"
+#include "AssemblyU2DCSharp_PhotonNetwork_EventCallback3012881631MethodDeclarations.h"
+#include "mscorlib_System_Byte2778693821.h"
+#include "mscorlib_System_Object837106420.h"
+#include "AssemblyU2DCSharp_PhotonNetwork_EventCallback3012881631.h"
+#include "mscorlib_System_IntPtr676692020.h"
+#include "AssemblyU2DCSharp_PhotonNetwork2803193330.h"
+#include "UnityEngine_UnityEngine_Debug1588791936MethodDeclarations.h"
+#include "mscorlib_System_String968488902.h"
+#include "Photon3Unity3D_ExitGames_Client_Photon_Hashtable223732124MethodDeclarations.h"
+#include "AssemblyU2DCSharp_RaiseEventOptions2943657104MethodDeclarations.h"
+#include "AssemblyU2DCSharp_PhotonPlayer1400510109MethodDeclarations.h"
+#include "Photon3Unity3D_ExitGames_Client_Photon_Hashtable223732124.h"
+#include "AssemblyU2DCSharp_RaiseEventOptions2943657104.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_g3824425150MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_g3824425150.h"
+#include "AssemblyU2DCSharp_ExitGames_Client_Photon_EventCac3799054881.h"
+#include "AssemblyU2DCSharp_Extensions184043572MethodDeclarations.h"
+#include "mscorlib_System_String968488902MethodDeclarations.h"
 #include "AssemblyU2DCSharp_QuitOnEscapeOrBack4132021529.h"
 #include "AssemblyU2DCSharp_QuitOnEscapeOrBack4132021529MethodDeclarations.h"
-#include "mscorlib_System_Void2779279689.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Input1593691127MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Application450040189MethodDeclarations.h"
-#include "mscorlib_System_Boolean211005341.h"
 #include "UnityEngine_UnityEngine_KeyCode2371581209.h"
-#include "AssemblyU2DCSharp_RaiseEventOptions2943657104.h"
-#include "AssemblyU2DCSharp_RaiseEventOptions2943657104MethodDeclarations.h"
 #include "mscorlib_System_Object837106420MethodDeclarations.h"
 #include "AssemblyU2DCSharp_RandomMatchmaker662331106.h"
 #include "AssemblyU2DCSharp_RandomMatchmaker662331106MethodDeclarations.h"
-#include "AssemblyU2DCSharp_Photon_PunBehaviour1644375368MethodDeclarations.h"
-#include "AssemblyU2DCSharp_PhotonNetwork2803193330MethodDeclarations.h"
-#include "mscorlib_System_String968488902.h"
-#include "UnityEngine_UnityEngine_Debug1588791936MethodDeclarations.h"
-#include "mscorlib_System_Object837106420.h"
 #include "UnityEngine_UnityEngine_Vector33525329789MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Quaternion1891715979MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_GameObject4012695102MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_GameObject4012695102.h"
 #include "UnityEngine_UnityEngine_Vector33525329789.h"
 #include "UnityEngine_UnityEngine_Quaternion1891715979.h"
-#include "mscorlib_System_Int322847414787.h"
 #include "AssemblyU2DCSharp_myThirdPersonController1717065228.h"
 #include "AssemblyU2DCSharp_ThirdPersonController973398072.h"
 #include "AssemblyU2DCSharp_PhotonView1498838369.h"
 #include "UnityEngine_UnityEngine_GUILayout2490032242MethodDeclarations.h"
-#include "AssemblyU2DCSharp_PhotonPlayer1400510109MethodDeclarations.h"
 #include "AssemblyU2DCSharp_PhotonView1498838369MethodDeclarations.h"
 #include "AssemblyU2DCSharp_PeerState4150202415.h"
 #include "mscorlib_System_Enum2778772662MethodDeclarations.h"
@@ -179,33 +201,21 @@ struct WorkerMenu_t1608960541;
 #include "UnityEngine_UnityEngine_GUILayoutOption3151226183.h"
 #include "AssemblyU2DCSharp_GameLogic2987424364.h"
 #include "AssemblyU2DCSharp_GameLogic2987424364MethodDeclarations.h"
-#include "AssemblyU2DCSharp_PhotonPlayer1400510109.h"
 #include "mscorlib_ArrayTypes.h"
 #include "AssemblyU2DCSharp_PhotonTargets3716398278.h"
 #include "AssemblyU2DCSharp_Region2444038932.h"
 #include "AssemblyU2DCSharp_Region2444038932MethodDeclarations.h"
 #include "AssemblyU2DCSharp_CloudRegionCode3866731254.h"
-#include "mscorlib_System_String968488902MethodDeclarations.h"
 #include "mscorlib_System_Type2779229935MethodDeclarations.h"
 #include "mscorlib_System_Type2779229935.h"
 #include "mscorlib_System_RuntimeTypeHandle1864875887.h"
 #include "AssemblyU2DCSharp_CloudRegionFlag3866817653.h"
-#include "AssemblyU2DCSharp_Room2553083.h"
-#include "AssemblyU2DCSharp_Room2553083MethodDeclarations.h"
 #include "AssemblyU2DCSharp_RoomOptions979675427.h"
 #include "AssemblyU2DCSharp_RoomInfo4185970761MethodDeclarations.h"
 #include "AssemblyU2DCSharp_RoomOptions979675427MethodDeclarations.h"
-#include "Photon3Unity3D_ExitGames_Client_Photon_Hashtable223732124.h"
-#include "AssemblyU2DCSharp_RoomInfo4185970761.h"
-#include "mscorlib_System_Byte2778693821.h"
 #include "Assembly-CSharp_ArrayTypes.h"
-#include "Photon3Unity3D_ExitGames_Client_Photon_Hashtable223732124MethodDeclarations.h"
 #include "AssemblyU2DCSharp_ExitGames_Client_Photon_Loadbala2012947601MethodDeclarations.h"
-#include "AssemblyU2DCSharp_PhotonNetwork2803193330.h"
 #include "AssemblyU2DCSharp_NetworkingPeer1870069398.h"
-#include "mscorlib_System_Collections_Generic_Dictionary_2_g3824425150MethodDeclarations.h"
-#include "mscorlib_System_Collections_Generic_Dictionary_2_g3824425150.h"
-#include "AssemblyU2DCSharp_Extensions184043572MethodDeclarations.h"
 #include "AssemblyU2DCSharp_NetworkingPeer1870069398MethodDeclarations.h"
 #include "AssemblyU2DCSharp_PhotonNetworkingMessage2409876791.h"
 #include "AssemblyU2DCSharp_RPGCamera402829902.h"
@@ -214,7 +224,6 @@ struct WorkerMenu_t1608960541;
 #include "UnityEngine_UnityEngine_Transform284553113MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Mathf1597001355MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Transform284553113.h"
-#include "mscorlib_System_Single958209021.h"
 #include "UnityEngine_UnityEngine_Object3878351788MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Object3878351788.h"
 #include "AssemblyU2DCSharp_RPGMovement618383768.h"
@@ -232,12 +241,10 @@ struct WorkerMenu_t1608960541;
 #include "AssemblyU2DCSharp_RpsCore3075633940MethodDeclarations.h"
 #include "AssemblyU2DCSharp_RpsDemoConnect3700857970MethodDeclarations.h"
 #include "AssemblyU2DCSharp_RpsDemoConnect3700857970.h"
-#include "AssemblyU2DCSharp_PunTurnManager2757607879.h"
 #include "UnityEngine_UI_UnityEngine_UI_Image3354615620.h"
 #include "UnityEngine_UnityEngine_Coroutine2246592261.h"
 #include "AssemblyU2DCSharp_PhotonHandler1652511502MethodDeclarations.h"
 #include "AssemblyU2DCSharp_GameObjectExtensions3462973669MethodDeclarations.h"
-#include "AssemblyU2DCSharp_PunTurnManager2757607879MethodDeclarations.h"
 #include "mscorlib_System_Int322847414787MethodDeclarations.h"
 #include "mscorlib_System_Single958209021MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Image3354615620MethodDeclarations.h"
@@ -372,7 +379,6 @@ struct WorkerMenu_t1608960541;
 #include "UnityEngine_UnityEngine_RaycastHit46221527.h"
 #include "UnityEngine_UnityEngine_TouchPhase1905076713.h"
 #include "AssemblyU2DCSharp_TurnExtensions2432752785.h"
-#include "AssemblyU2DCSharp_TurnExtensions2432752785MethodDeclarations.h"
 #include "AssemblyU2DCSharp_TypedLobby1020404140MethodDeclarations.h"
 #include "AssemblyU2DCSharp_LobbyType4246873104.h"
 #include "AssemblyU2DCSharp_TypedLobbyInfo1584678010.h"
@@ -400,12 +406,12 @@ struct WorkerMenu_t1608960541;
 #include "UnityEngine_UnityEngine_PlayerPrefs3733964924MethodDeclarations.h"
 
 // !!0 UnityEngine.GameObject::GetComponent<System.Object>()
-extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
-#define GameObject_GetComponent_TisIl2CppObject_m3233378628(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
+#define GameObject_GetComponent_TisIl2CppObject_m2447772384(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<myThirdPersonController>()
-#define GameObject_GetComponent_TismyThirdPersonController_t1717065228_m3335946581(__this, method) ((  myThirdPersonController_t1717065228 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+#define GameObject_GetComponent_TismyThirdPersonController_t1717065228_m3335946581(__this, method) ((  myThirdPersonController_t1717065228 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<PhotonView>()
-#define GameObject_GetComponent_TisPhotonView_t1498838369_m2250017884(__this, method) ((  PhotonView_t1498838369 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+#define GameObject_GetComponent_TisPhotonView_t1498838369_m2250017884(__this, method) ((  PhotonView_t1498838369 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gshared (Component_t2126946602 * __this, const MethodInfo* method);
 #define Component_GetComponent_TisIl2CppObject_m267839954(__this, method) ((  Il2CppObject * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
@@ -418,25 +424,25 @@ extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gsh
 // !!0 UnityEngine.Component::GetComponent<PhotonTransformView>()
 #define Component_GetComponent_TisPhotonTransformView_t486317301_m2415142948(__this, method) ((  PhotonTransformView_t486317301 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<System.Object>()
-extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
-#define GameObject_AddComponent_TisIl2CppObject_m1123549903(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m337943659_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
+#define GameObject_AddComponent_TisIl2CppObject_m337943659(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<PunTurnManager>()
-#define GameObject_AddComponent_TisPunTurnManager_t2757607879_m472956683(__this, method) ((  PunTurnManager_t2757607879 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisPunTurnManager_t2757607879_m472956683(__this, method) ((  PunTurnManager_t2757607879 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<RpsDemoConnect>()
-#define GameObject_AddComponent_TisRpsDemoConnect_t3700857970_m3160367232(__this, method) ((  RpsDemoConnect_t3700857970 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisRpsDemoConnect_t3700857970_m3160367232(__this, method) ((  RpsDemoConnect_t3700857970 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponentInChildren<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponentInChildren_TisIl2CppObject_m900797242_gshared (Component_t2126946602 * __this, const MethodInfo* method);
 #define Component_GetComponentInChildren_TisIl2CppObject_m900797242(__this, method) ((  Il2CppObject * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponentInChildren_TisIl2CppObject_m900797242_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponentInChildren<UnityEngine.UI.Text>()
 #define Component_GetComponentInChildren_TisText_t3286458198_m582470501(__this, method) ((  Text_t3286458198 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponentInChildren_TisIl2CppObject_m900797242_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.MeshRenderer>()
-#define GameObject_AddComponent_TisMeshRenderer_t1217738301_m2779950442(__this, method) ((  MeshRenderer_t1217738301 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisMeshRenderer_t1217738301_m2779950442(__this, method) ((  MeshRenderer_t1217738301 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.TextMesh>()
-#define GameObject_AddComponent_TisTextMesh_t583678247_m1773486945(__this, method) ((  TextMesh_t583678247 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisTextMesh_t583678247_m1773486945(__this, method) ((  TextMesh_t583678247 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<SupportLogging>()
-#define GameObject_AddComponent_TisSupportLogging_t982128816_m3993408386(__this, method) ((  SupportLogging_t982128816 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisSupportLogging_t982128816_m3993408386(__this, method) ((  SupportLogging_t982128816 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Renderer>()
-#define Component_GetComponent_TisRenderer_t1092684080_m500377675(__this, method) ((  Renderer_t1092684080 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
+#define Component_GetComponent_TisRenderer_t1092684080_m2901511552(__this, method) ((  Renderer_t1092684080 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Camera>()
 #define Component_GetComponent_TisCamera_t3533968274_m3804104198(__this, method) ((  Camera_t3533968274 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<ThirdPersonController>()
@@ -454,6 +460,559 @@ extern "C"  Il2CppObject * Component_GetComponentInChildren_TisIl2CppObject_m900
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void PunTurnManager::.ctor()
+extern TypeInfo* HashSet_1_t4099198780_il2cpp_TypeInfo_var;
+extern const MethodInfo* HashSet_1__ctor_m3722409696_MethodInfo_var;
+extern const uint32_t PunTurnManager__ctor_m2646088372_MetadataUsageId;
+extern "C"  void PunTurnManager__ctor_m2646088372 (PunTurnManager_t2757607879 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PunTurnManager__ctor_m2646088372_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		HashSet_1_t4099198780 * L_0 = (HashSet_1_t4099198780 *)il2cpp_codegen_object_new(HashSet_1_t4099198780_il2cpp_TypeInfo_var);
+		HashSet_1__ctor_m3722409696(L_0, /*hidden argument*/HashSet_1__ctor_m3722409696_MethodInfo_var);
+		__this->set_finishedPlayers_9(L_0);
+		PunBehaviour__ctor_m2830814789(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Int32 PunTurnManager::get_Turn()
+extern TypeInfo* PhotonNetwork_t2803193330_il2cpp_TypeInfo_var;
+extern TypeInfo* TurnExtensions_t2432752785_il2cpp_TypeInfo_var;
+extern const uint32_t PunTurnManager_get_Turn_m2080694116_MetadataUsageId;
+extern "C"  int32_t PunTurnManager_get_Turn_m2080694116 (PunTurnManager_t2757607879 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PunTurnManager_get_Turn_m2080694116_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		Room_t2553083 * L_0 = PhotonNetwork_get_room_m4104045837(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(TurnExtensions_t2432752785_il2cpp_TypeInfo_var);
+		int32_t L_1 = TurnExtensions_GetTurn_m3770286404(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.Void PunTurnManager::set_Turn(System.Int32)
+extern TypeInfo* PhotonNetwork_t2803193330_il2cpp_TypeInfo_var;
+extern TypeInfo* TurnExtensions_t2432752785_il2cpp_TypeInfo_var;
+extern const uint32_t PunTurnManager_set_Turn_m3825743515_MetadataUsageId;
+extern "C"  void PunTurnManager_set_Turn_m3825743515 (PunTurnManager_t2757607879 * __this, int32_t ___value, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PunTurnManager_set_Turn_m3825743515_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		Room_t2553083 * L_0 = PhotonNetwork_get_room_m4104045837(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_1 = ___value;
+		IL2CPP_RUNTIME_CLASS_INIT(TurnExtensions_t2432752785_il2cpp_TypeInfo_var);
+		TurnExtensions_SetTurn_m610819570(NULL /*static, unused*/, L_0, L_1, (bool)1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Single PunTurnManager::get_ElapsedTimeInTurn()
+extern TypeInfo* PhotonNetwork_t2803193330_il2cpp_TypeInfo_var;
+extern TypeInfo* TurnExtensions_t2432752785_il2cpp_TypeInfo_var;
+extern const uint32_t PunTurnManager_get_ElapsedTimeInTurn_m1907236200_MetadataUsageId;
+extern "C"  float PunTurnManager_get_ElapsedTimeInTurn_m1907236200 (PunTurnManager_t2757607879 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PunTurnManager_get_ElapsedTimeInTurn_m1907236200_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		int32_t L_0 = PhotonNetwork_get_ServerTimestamp_m3174588687(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Room_t2553083 * L_1 = PhotonNetwork_get_room_m4104045837(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(TurnExtensions_t2432752785_il2cpp_TypeInfo_var);
+		int32_t L_2 = TurnExtensions_GetTurnStart_m1276897198(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
+		return ((float)((float)(((float)((float)((int32_t)((int32_t)L_0-(int32_t)L_2)))))/(float)(1000.0f)));
+	}
+}
+// System.Boolean PunTurnManager::get_IsCompletedByAll()
+extern TypeInfo* PhotonNetwork_t2803193330_il2cpp_TypeInfo_var;
+extern const uint32_t PunTurnManager_get_IsCompletedByAll_m324115734_MetadataUsageId;
+extern "C"  bool PunTurnManager_get_IsCompletedByAll_m324115734 (PunTurnManager_t2757607879 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PunTurnManager_get_IsCompletedByAll_m324115734_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t G_B4_0 = 0;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		Room_t2553083 * L_0 = PhotonNetwork_get_room_m4104045837(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		int32_t L_1 = PunTurnManager_get_Turn_m2080694116(__this, /*hidden argument*/NULL);
+		if ((((int32_t)L_1) <= ((int32_t)0)))
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		HashSet_1_t4099198780 * L_2 = __this->get_finishedPlayers_9();
+		NullCheck(L_2);
+		int32_t L_3 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 System.Collections.Generic.HashSet`1<PhotonPlayer>::get_Count() */, L_2);
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		Room_t2553083 * L_4 = PhotonNetwork_get_room_m4104045837(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		int32_t L_5 = Room_get_playerCount_m2163219765(L_4, /*hidden argument*/NULL);
+		G_B4_0 = ((((int32_t)L_3) == ((int32_t)L_5))? 1 : 0);
+		goto IL_0030;
+	}
+
+IL_002f:
+	{
+		G_B4_0 = 0;
+	}
+
+IL_0030:
+	{
+		return (bool)G_B4_0;
+	}
+}
+// System.Boolean PunTurnManager::get_IsFinishedByMe()
+extern TypeInfo* PhotonNetwork_t2803193330_il2cpp_TypeInfo_var;
+extern const uint32_t PunTurnManager_get_IsFinishedByMe_m439410616_MetadataUsageId;
+extern "C"  bool PunTurnManager_get_IsFinishedByMe_m439410616 (PunTurnManager_t2757607879 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PunTurnManager_get_IsFinishedByMe_m439410616_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		HashSet_1_t4099198780 * L_0 = __this->get_finishedPlayers_9();
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		PhotonPlayer_t1400510109 * L_1 = PhotonNetwork_get_player_m2629430517(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		bool L_2 = VirtFuncInvoker1< bool, PhotonPlayer_t1400510109 * >::Invoke(8 /* System.Boolean System.Collections.Generic.HashSet`1<PhotonPlayer>::Contains(!0) */, L_0, L_1);
+		return L_2;
+	}
+}
+// System.Boolean PunTurnManager::get_IsOver()
+extern "C"  bool PunTurnManager_get_IsOver_m3778550251 (PunTurnManager_t2757607879 * __this, const MethodInfo* method)
+{
+	{
+		return (bool)1;
+	}
+}
+// System.Void PunTurnManager::Start()
+extern TypeInfo* EventCallback_t3012881631_il2cpp_TypeInfo_var;
+extern TypeInfo* PhotonNetwork_t2803193330_il2cpp_TypeInfo_var;
+extern const MethodInfo* PunTurnManager_OnEvent_m491970955_MethodInfo_var;
+extern const uint32_t PunTurnManager_Start_m1593226164_MetadataUsageId;
+extern "C"  void PunTurnManager_Start_m1593226164 (PunTurnManager_t2757607879 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PunTurnManager_Start_m1593226164_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IntPtr_t L_0;
+		L_0.set_m_value_0((void*)PunTurnManager_OnEvent_m491970955_MethodInfo_var);
+		EventCallback_t3012881631 * L_1 = (EventCallback_t3012881631 *)il2cpp_codegen_object_new(EventCallback_t3012881631_il2cpp_TypeInfo_var);
+		EventCallback__ctor_m2245100633(L_1, __this, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		((PhotonNetwork_t2803193330_StaticFields*)PhotonNetwork_t2803193330_il2cpp_TypeInfo_var->static_fields)->set_OnEventCall_29(L_1);
+		return;
+	}
+}
+// System.Void PunTurnManager::BeginTurn()
+extern TypeInfo* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1472103463;
+extern const uint32_t PunTurnManager_BeginTurn_m2308212376_MetadataUsageId;
+extern "C"  void PunTurnManager_BeginTurn_m2308212376 (PunTurnManager_t2757607879 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PunTurnManager_BeginTurn_m2308212376_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral1472103463, /*hidden argument*/NULL);
+		int32_t L_0 = PunTurnManager_get_Turn_m2080694116(__this, /*hidden argument*/NULL);
+		PunTurnManager_set_Turn_m3825743515(__this, ((int32_t)((int32_t)L_0+(int32_t)1)), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void PunTurnManager::SendMove(System.Object,System.Boolean)
+extern TypeInfo* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern TypeInfo* Hashtable_t223732124_il2cpp_TypeInfo_var;
+extern TypeInfo* Int32_t2847414787_il2cpp_TypeInfo_var;
+extern TypeInfo* RaiseEventOptions_t2943657104_il2cpp_TypeInfo_var;
+extern TypeInfo* PhotonNetwork_t2803193330_il2cpp_TypeInfo_var;
+extern TypeInfo* TurnExtensions_t2432752785_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3918827207;
+extern Il2CppCodeGenString* _stringLiteral3571837;
+extern Il2CppCodeGenString* _stringLiteral3357649;
+extern const uint32_t PunTurnManager_SendMove_m2147511730_MetadataUsageId;
+extern "C"  void PunTurnManager_SendMove_m2147511730 (PunTurnManager_t2757607879 * __this, Il2CppObject * ___move, bool ___finished, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PunTurnManager_SendMove_m2147511730_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Hashtable_t223732124 * V_0 = NULL;
+	uint8_t V_1 = 0x0;
+	RaiseEventOptions_t2943657104 * V_2 = NULL;
+	int32_t G_B5_0 = 0;
+	{
+		bool L_0 = PunTurnManager_get_IsFinishedByMe_m439410616(__this, /*hidden argument*/NULL);
+		if (!L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_LogWarning_m3123317694(NULL /*static, unused*/, _stringLiteral3918827207, /*hidden argument*/NULL);
+		return;
+	}
+
+IL_0016:
+	{
+		Hashtable_t223732124 * L_1 = (Hashtable_t223732124 *)il2cpp_codegen_object_new(Hashtable_t223732124_il2cpp_TypeInfo_var);
+		Hashtable__ctor_m1108942244(L_1, /*hidden argument*/NULL);
+		V_0 = L_1;
+		Hashtable_t223732124 * L_2 = V_0;
+		int32_t L_3 = PunTurnManager_get_Turn_m2080694116(__this, /*hidden argument*/NULL);
+		int32_t L_4 = L_3;
+		Il2CppObject * L_5 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_4);
+		NullCheck(L_2);
+		VirtActionInvoker2< Il2CppObject *, Il2CppObject * >::Invoke(28 /* System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Add(!0,!1) */, L_2, _stringLiteral3571837, L_5);
+		Hashtable_t223732124 * L_6 = V_0;
+		Il2CppObject * L_7 = ___move;
+		NullCheck(L_6);
+		VirtActionInvoker2< Il2CppObject *, Il2CppObject * >::Invoke(28 /* System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Add(!0,!1) */, L_6, _stringLiteral3357649, L_7);
+		bool L_8 = ___finished;
+		if (!L_8)
+		{
+			goto IL_004a;
+		}
+	}
+	{
+		G_B5_0 = 2;
+		goto IL_004b;
+	}
+
+IL_004a:
+	{
+		G_B5_0 = 1;
+	}
+
+IL_004b:
+	{
+		V_1 = G_B5_0;
+		uint8_t L_9 = V_1;
+		Hashtable_t223732124 * L_10 = V_0;
+		RaiseEventOptions_t2943657104 * L_11 = (RaiseEventOptions_t2943657104 *)il2cpp_codegen_object_new(RaiseEventOptions_t2943657104_il2cpp_TypeInfo_var);
+		RaiseEventOptions__ctor_m2158439131(L_11, /*hidden argument*/NULL);
+		V_2 = L_11;
+		RaiseEventOptions_t2943657104 * L_12 = V_2;
+		NullCheck(L_12);
+		L_12->set_CachingOption_1(4);
+		RaiseEventOptions_t2943657104 * L_13 = V_2;
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		PhotonNetwork_RaiseEvent_m633330501(NULL /*static, unused*/, L_9, L_10, (bool)1, L_13, /*hidden argument*/NULL);
+		bool L_14 = ___finished;
+		if (!L_14)
+		{
+			goto IL_0079;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		PhotonPlayer_t1400510109 * L_15 = PhotonNetwork_get_player_m2629430517(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_16 = PunTurnManager_get_Turn_m2080694116(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(TurnExtensions_t2432752785_il2cpp_TypeInfo_var);
+		TurnExtensions_SetFinishedTurn_m2963437691(NULL /*static, unused*/, L_15, L_16, /*hidden argument*/NULL);
+	}
+
+IL_0079:
+	{
+		uint8_t L_17 = V_1;
+		Hashtable_t223732124 * L_18 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		PhotonPlayer_t1400510109 * L_19 = PhotonNetwork_get_player_m2629430517(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_19);
+		int32_t L_20 = PhotonPlayer_get_ID_m2258525368(L_19, /*hidden argument*/NULL);
+		PunTurnManager_OnEvent_m491970955(__this, L_17, L_18, L_20, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Single PunTurnManager::GetRemainingSeconds()
+extern "C"  float PunTurnManager_GetRemainingSeconds_m1766768677 (PunTurnManager_t2757607879 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_TurnDuration_6();
+		float L_1 = PunTurnManager_get_ElapsedTimeInTurn_m1907236200(__this, /*hidden argument*/NULL);
+		return ((float)((float)(((float)((float)L_0)))-(float)L_1));
+	}
+}
+// System.Boolean PunTurnManager::GetPlayerFinishedTurn(PhotonPlayer)
+extern "C"  bool PunTurnManager_GetPlayerFinishedTurn_m448639783 (PunTurnManager_t2757607879 * __this, PhotonPlayer_t1400510109 * ___player, const MethodInfo* method)
+{
+	{
+		PhotonPlayer_t1400510109 * L_0 = ___player;
+		if (!L_0)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		HashSet_1_t4099198780 * L_1 = __this->get_finishedPlayers_9();
+		if (!L_1)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		HashSet_1_t4099198780 * L_2 = __this->get_finishedPlayers_9();
+		PhotonPlayer_t1400510109 * L_3 = ___player;
+		NullCheck(L_2);
+		bool L_4 = VirtFuncInvoker1< bool, PhotonPlayer_t1400510109 * >::Invoke(8 /* System.Boolean System.Collections.Generic.HashSet`1<PhotonPlayer>::Contains(!0) */, L_2, L_3);
+		if (!L_4)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		return (bool)1;
+	}
+
+IL_0024:
+	{
+		return (bool)0;
+	}
+}
+// System.Void PunTurnManager::OnTurnTimeEnds()
+extern "C"  void PunTurnManager_OnTurnTimeEnds_m4204681105 (PunTurnManager_t2757607879 * __this, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Void PunTurnManager::OnPlayerFinishedTurn()
+extern "C"  void PunTurnManager_OnPlayerFinishedTurn_m292993055 (PunTurnManager_t2757607879 * __this, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Void PunTurnManager::OnTurnComplete()
+extern "C"  void PunTurnManager_OnTurnComplete_m3276945509 (PunTurnManager_t2757607879 * __this, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Void PunTurnManager::OnTurnStarts()
+extern "C"  void PunTurnManager_OnTurnStarts_m176654397 (PunTurnManager_t2757607879 * __this, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Void PunTurnManager::OnEvent(System.Byte,System.Object,System.Int32)
+extern TypeInfo* Hashtable_t223732124_il2cpp_TypeInfo_var;
+extern TypeInfo* Int32_t2847414787_il2cpp_TypeInfo_var;
+extern TypeInfo* IPunTurnManagerCallbacks_t1296962654_il2cpp_TypeInfo_var;
+extern const MethodInfo* HashSet_1_Add_m3205765276_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3571837;
+extern Il2CppCodeGenString* _stringLiteral3357649;
+extern const uint32_t PunTurnManager_OnEvent_m491970955_MetadataUsageId;
+extern "C"  void PunTurnManager_OnEvent_m491970955 (PunTurnManager_t2757607879 * __this, uint8_t ___eventCode, Il2CppObject * ___content, int32_t ___senderId, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PunTurnManager_OnEvent_m491970955_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	PhotonPlayer_t1400510109 * V_0 = NULL;
+	Hashtable_t223732124 * V_1 = NULL;
+	int32_t V_2 = 0;
+	Il2CppObject * V_3 = NULL;
+	Hashtable_t223732124 * V_4 = NULL;
+	int32_t V_5 = 0;
+	Il2CppObject * V_6 = NULL;
+	uint8_t V_7 = 0x0;
+	{
+		int32_t L_0 = ___senderId;
+		PhotonPlayer_t1400510109 * L_1 = PhotonPlayer_Find_m3647164016(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		uint8_t L_2 = ___eventCode;
+		V_7 = L_2;
+		uint8_t L_3 = V_7;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		uint8_t L_4 = V_7;
+		if ((((int32_t)L_4) == ((int32_t)2)))
+		{
+			goto IL_0056;
+		}
+	}
+	{
+		goto IL_00ca;
+	}
+
+IL_001f:
+	{
+		Il2CppObject * L_5 = ___content;
+		V_1 = ((Hashtable_t223732124 *)IsInstClass(L_5, Hashtable_t223732124_il2cpp_TypeInfo_var));
+		Hashtable_t223732124 * L_6 = V_1;
+		NullCheck(L_6);
+		Il2CppObject * L_7 = Hashtable_get_Item_m721520845(L_6, _stringLiteral3571837, /*hidden argument*/NULL);
+		V_2 = ((*(int32_t*)((int32_t*)UnBox (L_7, Int32_t2847414787_il2cpp_TypeInfo_var))));
+		Hashtable_t223732124 * L_8 = V_1;
+		NullCheck(L_8);
+		Il2CppObject * L_9 = Hashtable_get_Item_m721520845(L_8, _stringLiteral3357649, /*hidden argument*/NULL);
+		V_3 = L_9;
+		Il2CppObject * L_10 = __this->get_TurnManagerListener_8();
+		PhotonPlayer_t1400510109 * L_11 = V_0;
+		int32_t L_12 = V_2;
+		Il2CppObject * L_13 = V_3;
+		NullCheck(L_10);
+		InterfaceActionInvoker3< PhotonPlayer_t1400510109 *, int32_t, Il2CppObject * >::Invoke(2 /* System.Void IPunTurnManagerCallbacks::OnPlayerMove(PhotonPlayer,System.Int32,System.Object) */, IPunTurnManagerCallbacks_t1296962654_il2cpp_TypeInfo_var, L_10, L_11, L_12, L_13);
+		goto IL_00ca;
+	}
+
+IL_0056:
+	{
+		Il2CppObject * L_14 = ___content;
+		V_4 = ((Hashtable_t223732124 *)IsInstClass(L_14, Hashtable_t223732124_il2cpp_TypeInfo_var));
+		Hashtable_t223732124 * L_15 = V_4;
+		NullCheck(L_15);
+		Il2CppObject * L_16 = Hashtable_get_Item_m721520845(L_15, _stringLiteral3571837, /*hidden argument*/NULL);
+		V_5 = ((*(int32_t*)((int32_t*)UnBox (L_16, Int32_t2847414787_il2cpp_TypeInfo_var))));
+		Hashtable_t223732124 * L_17 = V_4;
+		NullCheck(L_17);
+		Il2CppObject * L_18 = Hashtable_get_Item_m721520845(L_17, _stringLiteral3357649, /*hidden argument*/NULL);
+		V_6 = L_18;
+		int32_t L_19 = V_5;
+		int32_t L_20 = PunTurnManager_get_Turn_m2080694116(__this, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_19) == ((uint32_t)L_20))))
+		{
+			goto IL_00a9;
+		}
+	}
+	{
+		HashSet_1_t4099198780 * L_21 = __this->get_finishedPlayers_9();
+		PhotonPlayer_t1400510109 * L_22 = V_0;
+		NullCheck(L_21);
+		HashSet_1_Add_m3205765276(L_21, L_22, /*hidden argument*/HashSet_1_Add_m3205765276_MethodInfo_var);
+		Il2CppObject * L_23 = __this->get_TurnManagerListener_8();
+		PhotonPlayer_t1400510109 * L_24 = V_0;
+		int32_t L_25 = V_5;
+		Il2CppObject * L_26 = V_6;
+		NullCheck(L_23);
+		InterfaceActionInvoker3< PhotonPlayer_t1400510109 *, int32_t, Il2CppObject * >::Invoke(3 /* System.Void IPunTurnManagerCallbacks::OnPlayerFinished(PhotonPlayer,System.Int32,System.Object) */, IPunTurnManagerCallbacks_t1296962654_il2cpp_TypeInfo_var, L_23, L_24, L_25, L_26);
+	}
+
+IL_00a9:
+	{
+		bool L_27 = PunTurnManager_get_IsCompletedByAll_m324115734(__this, /*hidden argument*/NULL);
+		if (!L_27)
+		{
+			goto IL_00c5;
+		}
+	}
+	{
+		Il2CppObject * L_28 = __this->get_TurnManagerListener_8();
+		int32_t L_29 = PunTurnManager_get_Turn_m2080694116(__this, /*hidden argument*/NULL);
+		NullCheck(L_28);
+		InterfaceActionInvoker1< int32_t >::Invoke(1 /* System.Void IPunTurnManagerCallbacks::OnTurnCompleted(System.Int32) */, IPunTurnManagerCallbacks_t1296962654_il2cpp_TypeInfo_var, L_28, L_29);
+	}
+
+IL_00c5:
+	{
+		goto IL_00ca;
+	}
+
+IL_00ca:
+	{
+		return;
+	}
+}
+// System.Void PunTurnManager::OnPhotonCustomRoomPropertiesChanged(ExitGames.Client.Photon.Hashtable)
+extern TypeInfo* Extensions_t184043572_il2cpp_TypeInfo_var;
+extern TypeInfo* String_t_il2cpp_TypeInfo_var;
+extern TypeInfo* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern TypeInfo* IPunTurnManagerCallbacks_t1296962654_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3822092224;
+extern Il2CppCodeGenString* _stringLiteral2618525;
+extern const uint32_t PunTurnManager_OnPhotonCustomRoomPropertiesChanged_m3080571200_MetadataUsageId;
+extern "C"  void PunTurnManager_OnPhotonCustomRoomPropertiesChanged_m3080571200 (PunTurnManager_t2757607879 * __this, Hashtable_t223732124 * ___propertiesThatChanged, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PunTurnManager_OnPhotonCustomRoomPropertiesChanged_m3080571200_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Hashtable_t223732124 * L_0 = ___propertiesThatChanged;
+		IL2CPP_RUNTIME_CLASS_INIT(Extensions_t184043572_il2cpp_TypeInfo_var);
+		String_t* L_1 = Extensions_ToStringFull_m4175704948(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral3822092224, L_1, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		Hashtable_t223732124 * L_3 = ___propertiesThatChanged;
+		NullCheck(L_3);
+		bool L_4 = VirtFuncInvoker1< bool, Il2CppObject * >::Invoke(29 /* System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::ContainsKey(!0) */, L_3, _stringLiteral2618525);
+		if (!L_4)
+		{
+			goto IL_0041;
+		}
+	}
+	{
+		HashSet_1_t4099198780 * L_5 = __this->get_finishedPlayers_9();
+		NullCheck(L_5);
+		VirtActionInvoker0::Invoke(7 /* System.Void System.Collections.Generic.HashSet`1<PhotonPlayer>::Clear() */, L_5);
+		Il2CppObject * L_6 = __this->get_TurnManagerListener_8();
+		int32_t L_7 = PunTurnManager_get_Turn_m2080694116(__this, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		InterfaceActionInvoker1< int32_t >::Invoke(0 /* System.Void IPunTurnManagerCallbacks::OnTurnBegins(System.Int32) */, IPunTurnManagerCallbacks_t1296962654_il2cpp_TypeInfo_var, L_6, L_7);
+	}
+
+IL_0041:
+	{
+		return;
+	}
+}
 // System.Void QuitOnEscapeOrBack::.ctor()
 extern "C"  void QuitOnEscapeOrBack__ctor_m353503138 (QuitOnEscapeOrBack_t4132021529 * __this, const MethodInfo* method)
 {
@@ -6667,7 +7226,7 @@ extern "C"  void TextureAnimator__ctor_m786299049 (TextureAnimator_t186110210 * 
 	}
 }
 // System.Void TextureAnimator::Start()
-extern const MethodInfo* Component_GetComponent_TisRenderer_t1092684080_m500377675_MethodInfo_var;
+extern const MethodInfo* Component_GetComponent_TisRenderer_t1092684080_m2901511552_MethodInfo_var;
 extern const uint32_t TextureAnimator_Start_m4028404137_MetadataUsageId;
 extern "C"  void TextureAnimator_Start_m4028404137 (TextureAnimator_t186110210 * __this, const MethodInfo* method)
 {
@@ -6685,7 +7244,7 @@ extern "C"  void TextureAnimator_Start_m4028404137 (TextureAnimator_t186110210 *
 		}
 	}
 	{
-		Renderer_t1092684080 * L_1 = Component_GetComponent_TisRenderer_t1092684080_m500377675(__this, /*hidden argument*/Component_GetComponent_TisRenderer_t1092684080_m500377675_MethodInfo_var);
+		Renderer_t1092684080 * L_1 = Component_GetComponent_TisRenderer_t1092684080_m2901511552(__this, /*hidden argument*/Component_GetComponent_TisRenderer_t1092684080_m2901511552_MethodInfo_var);
 		NullCheck(L_1);
 		Material_t1886596500 * L_2 = Renderer_get_sharedMaterial_m835478880(L_1, /*hidden argument*/NULL);
 		Vector2_t3525329788  L_3 = Vector2_get_zero_m199872368(NULL /*static, unused*/, /*hidden argument*/NULL);
@@ -6695,15 +7254,15 @@ extern "C"  void TextureAnimator_Start_m4028404137 (TextureAnimator_t186110210 *
 
 IL_0020:
 	{
-		Renderer_t1092684080 * L_4 = Component_GetComponent_TisRenderer_t1092684080_m500377675(__this, /*hidden argument*/Component_GetComponent_TisRenderer_t1092684080_m500377675_MethodInfo_var);
+		Renderer_t1092684080 * L_4 = Component_GetComponent_TisRenderer_t1092684080_m2901511552(__this, /*hidden argument*/Component_GetComponent_TisRenderer_t1092684080_m2901511552_MethodInfo_var);
 		NullCheck(L_4);
 		Material_t1886596500 * L_5 = Renderer_get_material_m2720864603(L_4, /*hidden argument*/NULL);
 		__this->set__material_8(L_5);
-		Renderer_t1092684080 * L_6 = Component_GetComponent_TisRenderer_t1092684080_m500377675(__this, /*hidden argument*/Component_GetComponent_TisRenderer_t1092684080_m500377675_MethodInfo_var);
+		Renderer_t1092684080 * L_6 = Component_GetComponent_TisRenderer_t1092684080_m2901511552(__this, /*hidden argument*/Component_GetComponent_TisRenderer_t1092684080_m2901511552_MethodInfo_var);
 		Material_t1886596500 * L_7 = __this->get__material_8();
 		NullCheck(L_6);
 		Renderer_set_material_m1012580896(L_6, L_7, /*hidden argument*/NULL);
-		Renderer_t1092684080 * L_8 = Component_GetComponent_TisRenderer_t1092684080_m500377675(__this, /*hidden argument*/Component_GetComponent_TisRenderer_t1092684080_m500377675_MethodInfo_var);
+		Renderer_t1092684080 * L_8 = Component_GetComponent_TisRenderer_t1092684080_m2901511552(__this, /*hidden argument*/Component_GetComponent_TisRenderer_t1092684080_m2901511552_MethodInfo_var);
 		__this->set__renderer_7(L_8);
 		return;
 	}

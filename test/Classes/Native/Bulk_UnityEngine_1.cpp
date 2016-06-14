@@ -106,6 +106,10 @@ struct IDictionary_t1654916945;
 struct RemoteNotification_t1121285571;
 // UnityEngine.Light
 struct Light_t1596303683;
+// UnityEngine.LineRenderer
+struct LineRenderer_t305781060;
+// UnityEngine.Vector3[]
+struct Vector3U5BU5D_t3227571696;
 // UnityEngine.Logger
 struct Logger_t3804382717;
 // UnityEngine.ILogHandler
@@ -121,8 +125,6 @@ struct Material_t1886596500;
 struct Shader_t3998140498;
 // UnityEngine.Mesh
 struct Mesh_t1525280346;
-// UnityEngine.Vector3[]
-struct Vector3U5BU5D_t3227571696;
 // System.Collections.Generic.List`1<UnityEngine.Vector3>
 struct List_1_t27321462;
 // UnityEngine.Vector4[]
@@ -198,8 +200,6 @@ struct Renderer_t1092684080;
 struct RenderTexture_t12905170;
 // UnityEngine.RequireComponent
 struct RequireComponent_t3196495237;
-// UnityEngine.ResourceRequest
-struct ResourceRequest_t2256525006;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -387,6 +387,8 @@ struct ResourceRequest_t2256525006;
 #include "UnityEngine_UnityEngine_Light1596303683MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_LightType4212539805.h"
 #include "UnityEngine_UnityEngine_LightType4212539805MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_LineRenderer305781060.h"
+#include "UnityEngine_UnityEngine_LineRenderer305781060MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Logger3804382717.h"
 #include "UnityEngine_UnityEngine_Logger3804382717MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_LogType3529269451.h"
@@ -517,10 +519,6 @@ struct ResourceRequest_t2256525006;
 #include "UnityEngine_UnityEngine_RenderTexture12905170MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_RequireComponent3196495237.h"
 #include "UnityEngine_UnityEngine_RequireComponent3196495237MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_ResourceRequest2256525006.h"
-#include "UnityEngine_UnityEngine_ResourceRequest2256525006MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_AsyncOperation3374395064MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Resources1543782994MethodDeclarations.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -13526,6 +13524,33 @@ extern "C"  void Light_set_range_m1834313578 (Light_t1596303683 * __this, float 
 	_il2cpp_icall_func = (Light_set_range_m1834313578_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Light::set_range(System.Single)");
 	_il2cpp_icall_func(__this, ___value);
 }
+// System.Void UnityEngine.LineRenderer::SetVertexCount(System.Int32)
+extern "C"  void LineRenderer_SetVertexCount_m2812277096 (LineRenderer_t305781060 * __this, int32_t ___count, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = ___count;
+		LineRenderer_INTERNAL_CALL_SetVertexCount_m3210243855(NULL /*static, unused*/, __this, L_0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.LineRenderer::INTERNAL_CALL_SetVertexCount(UnityEngine.LineRenderer,System.Int32)
+extern "C"  void LineRenderer_INTERNAL_CALL_SetVertexCount_m3210243855 (Il2CppObject * __this /* static, unused */, LineRenderer_t305781060 * ___self, int32_t ___count, const MethodInfo* method)
+{
+	typedef void (*LineRenderer_INTERNAL_CALL_SetVertexCount_m3210243855_ftn) (LineRenderer_t305781060 *, int32_t);
+	static LineRenderer_INTERNAL_CALL_SetVertexCount_m3210243855_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (LineRenderer_INTERNAL_CALL_SetVertexCount_m3210243855_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.LineRenderer::INTERNAL_CALL_SetVertexCount(UnityEngine.LineRenderer,System.Int32)");
+	_il2cpp_icall_func(___self, ___count);
+}
+// System.Void UnityEngine.LineRenderer::SetPositions(UnityEngine.Vector3[])
+extern "C"  void LineRenderer_SetPositions_m386132545 (LineRenderer_t305781060 * __this, Vector3U5BU5D_t3227571696* ___positions, const MethodInfo* method)
+{
+	typedef void (*LineRenderer_SetPositions_m386132545_ftn) (LineRenderer_t305781060 *, Vector3U5BU5D_t3227571696*);
+	static LineRenderer_SetPositions_m386132545_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (LineRenderer_SetPositions_m386132545_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.LineRenderer::SetPositions(UnityEngine.Vector3[])");
+	_il2cpp_icall_func(__this, ___positions);
+}
 // System.Void UnityEngine.Logger::.ctor(UnityEngine.ILogHandler)
 extern "C"  void Logger__ctor_m654679389 (Logger_t3804382717 * __this, Il2CppObject * ___logHandler, const MethodInfo* method)
 {
@@ -21627,24 +21652,6 @@ extern "C"  void RequireComponent__ctor_m2023271172 (RequireComponent_t319649523
 		Type_t * L_0 = ___requiredComponent;
 		__this->set_m_Type0_0(L_0);
 		return;
-	}
-}
-// System.Void UnityEngine.ResourceRequest::.ctor()
-extern "C"  void ResourceRequest__ctor_m2863879896 (ResourceRequest_t2256525006 * __this, const MethodInfo* method)
-{
-	{
-		AsyncOperation__ctor_m162101250(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// UnityEngine.Object UnityEngine.ResourceRequest::get_asset()
-extern "C"  Object_t3878351788 * ResourceRequest_get_asset_m670320982 (ResourceRequest_t2256525006 * __this, const MethodInfo* method)
-{
-	{
-		String_t* L_0 = __this->get_m_Path_1();
-		Type_t * L_1 = __this->get_m_Type_2();
-		Object_t3878351788 * L_2 = Resources_Load_m3601699608(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
-		return L_2;
 	}
 }
 #ifdef __clang__

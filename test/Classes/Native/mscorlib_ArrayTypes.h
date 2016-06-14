@@ -197,12 +197,12 @@ struct MonoType_t;
 struct StrongName_t3441834685;
 // System.Reflection.CustomAttributeData
 struct CustomAttributeData_t2584644259;
-// System.Byte[]
-struct ByteU5BU5D_t58506160;
 // System.Security.Cryptography.X509Certificates.X509Certificate
 struct X509Certificate_t3432067208;
 // System.Runtime.Serialization.IDeserializationCallback
 struct IDeserializationCallback_t3135514852;
+// System.Byte[]
+struct ByteU5BU5D_t58506160;
 // System.IDisposable
 struct IDisposable_t1628921374;
 // System.Attribute
@@ -311,20 +311,15 @@ struct ObjectU5BU5D_t11523773;
 #include "mscorlib_System_MonoType2517050482.h"
 #include "mscorlib_System_Security_Policy_StrongName3441834685.h"
 #include "mscorlib_System_Reflection_CustomAttributeData2584644259.h"
-#include "mscorlib_System_Security_Cryptography_X509Certific3432067208.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_22686855369.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_21337234543.h"
+#include "mscorlib_System_Security_Cryptography_X509Certific3432067208.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_2_816448501.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23632373593.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_22133154421.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_21610370660.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23112817125.h"
 #include "mscorlib_System_Attribute498693649.h"
-#include "mscorlib_System_Collections_Generic_KeyValuePair_23359938835.h"
-#include "mscorlib_System_Collections_Generic_KeyValuePair_23280910938.h"
-#include "mscorlib_System_Collections_Generic_KeyValuePair_21378757382.h"
-#include "mscorlib_System_Collections_Generic_KeyValuePair_24199128972.h"
-#include "mscorlib_System_Collections_Generic_KeyValuePair_2_825915078.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen1916216126.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen1634065389.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen2923905571.h"
@@ -344,6 +339,11 @@ struct ObjectU5BU5D_t11523773;
 #include "mscorlib_System_Collections_Generic_List_1_gen27321463.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen3644373756.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen3057020574.h"
+#include "mscorlib_System_Collections_Generic_KeyValuePair_23359938835.h"
+#include "mscorlib_System_Collections_Generic_KeyValuePair_23280910938.h"
+#include "mscorlib_System_Collections_Generic_KeyValuePair_21378757382.h"
+#include "mscorlib_System_Collections_Generic_KeyValuePair_24199128972.h"
+#include "mscorlib_System_Collections_Generic_KeyValuePair_2_825915078.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23569626243.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23930985555.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen2197469078.h"
@@ -2292,19 +2292,32 @@ public:
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
-// System.Byte[][]
-struct ByteU5BU5DU5BU5D_t1952051089  : public Il2CppArray
+// System.Collections.Generic.KeyValuePair`2<System.Object,System.Boolean>[]
+struct KeyValuePair_2U5BU5D_t4139652596  : public Il2CppArray
 {
 public:
-	ALIGN_TYPE (8) ByteU5BU5D_t58506160* m_Items[1];
+	ALIGN_TYPE (8) KeyValuePair_2_t2686855369  m_Items[1];
 
 public:
-	inline ByteU5BU5D_t58506160* GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
-	inline ByteU5BU5D_t58506160** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
-	inline void SetAt(il2cpp_array_size_t index, ByteU5BU5D_t58506160* value)
+	inline KeyValuePair_2_t2686855369  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t2686855369 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t2686855369  value)
 	{
 		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// System.Collections.Generic.KeyValuePair`2<System.String,System.Boolean>[]
+struct KeyValuePair_2U5BU5D_t2379167990  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) KeyValuePair_2_t1337234543  m_Items[1];
+
+public:
+	inline KeyValuePair_2_t1337234543  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t1337234543 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t1337234543  value)
+	{
+		m_Items[index] = value;
 	}
 };
 // System.Security.Cryptography.X509Certificates.X509Certificate[]
@@ -2337,32 +2350,19 @@ public:
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
-// System.Collections.Generic.KeyValuePair`2<System.Object,System.Boolean>[]
-struct KeyValuePair_2U5BU5D_t4139652596  : public Il2CppArray
+// System.Byte[][]
+struct ByteU5BU5DU5BU5D_t1952051089  : public Il2CppArray
 {
 public:
-	ALIGN_TYPE (8) KeyValuePair_2_t2686855369  m_Items[1];
+	ALIGN_TYPE (8) ByteU5BU5D_t58506160* m_Items[1];
 
 public:
-	inline KeyValuePair_2_t2686855369  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
-	inline KeyValuePair_2_t2686855369 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
-	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t2686855369  value)
+	inline ByteU5BU5D_t58506160* GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline ByteU5BU5D_t58506160** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, ByteU5BU5D_t58506160* value)
 	{
 		m_Items[index] = value;
-	}
-};
-// System.Collections.Generic.KeyValuePair`2<System.String,System.Boolean>[]
-struct KeyValuePair_2U5BU5D_t2379167990  : public Il2CppArray
-{
-public:
-	ALIGN_TYPE (8) KeyValuePair_2_t1337234543  m_Items[1];
-
-public:
-	inline KeyValuePair_2_t1337234543  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
-	inline KeyValuePair_2_t1337234543 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
-	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t1337234543  value)
-	{
-		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
 	}
 };
 // System.IDisposable[]
@@ -2478,76 +2478,6 @@ public:
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
-	}
-};
-// System.Collections.Generic.KeyValuePair`2<System.Byte,System.Object>[]
-struct KeyValuePair_2U5BU5D_t1276836162  : public Il2CppArray
-{
-public:
-	ALIGN_TYPE (8) KeyValuePair_2_t3359938835  m_Items[1];
-
-public:
-	inline KeyValuePair_2_t3359938835  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
-	inline KeyValuePair_2_t3359938835 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
-	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t3359938835  value)
-	{
-		m_Items[index] = value;
-	}
-};
-// System.Collections.Generic.KeyValuePair`2<System.Int32,ExitGames.Client.Photon.NCommand>[]
-struct KeyValuePair_2U5BU5D_t1894407935  : public Il2CppArray
-{
-public:
-	ALIGN_TYPE (8) KeyValuePair_2_t3280910938  m_Items[1];
-
-public:
-	inline KeyValuePair_2_t3280910938  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
-	inline KeyValuePair_2_t3280910938 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
-	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t3280910938  value)
-	{
-		m_Items[index] = value;
-	}
-};
-// System.Collections.Generic.KeyValuePair`2<System.Byte,ExitGames.Client.Photon.EnetChannel>[]
-struct KeyValuePair_2U5BU5D_t815045155  : public Il2CppArray
-{
-public:
-	ALIGN_TYPE (8) KeyValuePair_2_t1378757382  m_Items[1];
-
-public:
-	inline KeyValuePair_2_t1378757382  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
-	inline KeyValuePair_2_t1378757382 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
-	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t1378757382  value)
-	{
-		m_Items[index] = value;
-	}
-};
-// System.Collections.Generic.KeyValuePair`2<System.Type,ExitGames.Client.Photon.CustomType>[]
-struct KeyValuePair_2U5BU5D_t3534361797  : public Il2CppArray
-{
-public:
-	ALIGN_TYPE (8) KeyValuePair_2_t4199128972  m_Items[1];
-
-public:
-	inline KeyValuePair_2_t4199128972  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
-	inline KeyValuePair_2_t4199128972 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
-	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t4199128972  value)
-	{
-		m_Items[index] = value;
-	}
-};
-// System.Collections.Generic.KeyValuePair`2<System.Byte,ExitGames.Client.Photon.CustomType>[]
-struct KeyValuePair_2U5BU5D_t3246974819  : public Il2CppArray
-{
-public:
-	ALIGN_TYPE (8) KeyValuePair_2_t825915078  m_Items[1];
-
-public:
-	inline KeyValuePair_2_t825915078  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
-	inline KeyValuePair_2_t825915078 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
-	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t825915078  value)
-	{
-		m_Items[index] = value;
 	}
 };
 // System.Collections.Generic.List`1<UnityEngine.EventSystems.IEventSystemHandler>[]
@@ -2827,6 +2757,76 @@ public:
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// System.Collections.Generic.KeyValuePair`2<System.Byte,System.Object>[]
+struct KeyValuePair_2U5BU5D_t1276836162  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) KeyValuePair_2_t3359938835  m_Items[1];
+
+public:
+	inline KeyValuePair_2_t3359938835  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t3359938835 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t3359938835  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.KeyValuePair`2<System.Int32,ExitGames.Client.Photon.NCommand>[]
+struct KeyValuePair_2U5BU5D_t1894407935  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) KeyValuePair_2_t3280910938  m_Items[1];
+
+public:
+	inline KeyValuePair_2_t3280910938  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t3280910938 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t3280910938  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.KeyValuePair`2<System.Byte,ExitGames.Client.Photon.EnetChannel>[]
+struct KeyValuePair_2U5BU5D_t815045155  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) KeyValuePair_2_t1378757382  m_Items[1];
+
+public:
+	inline KeyValuePair_2_t1378757382  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t1378757382 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t1378757382  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.KeyValuePair`2<System.Type,ExitGames.Client.Photon.CustomType>[]
+struct KeyValuePair_2U5BU5D_t3534361797  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) KeyValuePair_2_t4199128972  m_Items[1];
+
+public:
+	inline KeyValuePair_2_t4199128972  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t4199128972 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t4199128972  value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Collections.Generic.KeyValuePair`2<System.Byte,ExitGames.Client.Photon.CustomType>[]
+struct KeyValuePair_2U5BU5D_t3246974819  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) KeyValuePair_2_t825915078  m_Items[1];
+
+public:
+	inline KeyValuePair_2_t825915078  GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline KeyValuePair_2_t825915078 * GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, KeyValuePair_2_t825915078  value)
+	{
+		m_Items[index] = value;
 	}
 };
 // System.Collections.Generic.KeyValuePair`2<System.String,ExitGames.Client.Photon.Chat.ChatChannel>[]

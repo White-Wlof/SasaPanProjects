@@ -34,16 +34,16 @@ extern "C" void pinvoke_delegate_wrapper_ThreadStart_t2758142267 ();
 extern "C" void pinvoke_delegate_wrapper_TimerCallback_t4291881837 ();
 extern "C" void pinvoke_delegate_wrapper_WaitCallback_t827025885 ();
 extern "C" void pinvoke_delegate_wrapper_UnhandledExceptionEventHandler_t4230172209 ();
+extern "C" void pinvoke_delegate_wrapper_RemoteCertificateValidationCallback_t4087051103 ();
+extern "C" void pinvoke_delegate_wrapper_MatchAppendEvaluator_t2378778064 ();
+extern "C" void pinvoke_delegate_wrapper_CostDelegate_t3008899218 ();
+extern "C" void pinvoke_delegate_wrapper_MatchEvaluator_t510977541 ();
 extern "C" void pinvoke_delegate_wrapper_PrimalityTest_t397689820 ();
 extern "C" void pinvoke_delegate_wrapper_KeyGeneratedEventHandler_t1233396098 ();
 extern "C" void pinvoke_delegate_wrapper_CertificateSelectionCallback_t3257378130 ();
 extern "C" void pinvoke_delegate_wrapper_CertificateValidationCallback_t3726148045 ();
 extern "C" void pinvoke_delegate_wrapper_CertificateValidationCallback2_t1582269749 ();
 extern "C" void pinvoke_delegate_wrapper_PrivateKeySelectionCallback_t4199006061 ();
-extern "C" void pinvoke_delegate_wrapper_RemoteCertificateValidationCallback_t4087051103 ();
-extern "C" void pinvoke_delegate_wrapper_MatchAppendEvaluator_t2378778064 ();
-extern "C" void pinvoke_delegate_wrapper_CostDelegate_t3008899218 ();
-extern "C" void pinvoke_delegate_wrapper_MatchEvaluator_t510977541 ();
 extern "C" void pinvoke_delegate_wrapper_LogCallback_t3235662729 ();
 extern "C" void pinvoke_delegate_wrapper_PCMReaderCallback_t749510018 ();
 extern "C" void pinvoke_delegate_wrapper_PCMSetPositionCallback_t2977871350 ();
@@ -62,13 +62,13 @@ extern "C" void pinvoke_delegate_wrapper_BannerWasLoadedDelegate_t69910023 ();
 extern "C" void pinvoke_delegate_wrapper_InterstitialWasLoadedDelegate_t2963828231 ();
 extern "C" void pinvoke_delegate_wrapper_InterstitialWasViewedDelegate_t402653446 ();
 extern "C" void pinvoke_delegate_wrapper_ReapplyDrivenProperties_t3247703954 ();
+extern "C" void pinvoke_delegate_wrapper_OnValidateInput_t3303221397 ();
 extern "C" void pinvoke_delegate_wrapper_DeserializeMethod_t4182166364 ();
 extern "C" void pinvoke_delegate_wrapper_DeserializeStreamMethod_t2269051836 ();
 extern "C" void pinvoke_delegate_wrapper_MyAction_t3022056226 ();
 extern "C" void pinvoke_delegate_wrapper_SerializeMethod_t1378746877 ();
 extern "C" void pinvoke_delegate_wrapper_SerializeStreamMethod_t741406109 ();
 extern "C" void pinvoke_delegate_wrapper_IntegerMillisecondsDelegate_t3264453621 ();
-extern "C" void pinvoke_delegate_wrapper_OnValidateInput_t3303221397 ();
 extern "C" void pinvoke_delegate_wrapper_EventCallback_t3012881631 ();
 extern const methodPointerType g_DelegateWrappersManagedToNative[59] = 
 {
@@ -95,16 +95,16 @@ extern const methodPointerType g_DelegateWrappersManagedToNative[59] =
 	pinvoke_delegate_wrapper_TimerCallback_t4291881837,
 	pinvoke_delegate_wrapper_WaitCallback_t827025885,
 	pinvoke_delegate_wrapper_UnhandledExceptionEventHandler_t4230172209,
+	pinvoke_delegate_wrapper_RemoteCertificateValidationCallback_t4087051103,
+	pinvoke_delegate_wrapper_MatchAppendEvaluator_t2378778064,
+	pinvoke_delegate_wrapper_CostDelegate_t3008899218,
+	pinvoke_delegate_wrapper_MatchEvaluator_t510977541,
 	pinvoke_delegate_wrapper_PrimalityTest_t397689820,
 	pinvoke_delegate_wrapper_KeyGeneratedEventHandler_t1233396098,
 	pinvoke_delegate_wrapper_CertificateSelectionCallback_t3257378130,
 	pinvoke_delegate_wrapper_CertificateValidationCallback_t3726148045,
 	pinvoke_delegate_wrapper_CertificateValidationCallback2_t1582269749,
 	pinvoke_delegate_wrapper_PrivateKeySelectionCallback_t4199006061,
-	pinvoke_delegate_wrapper_RemoteCertificateValidationCallback_t4087051103,
-	pinvoke_delegate_wrapper_MatchAppendEvaluator_t2378778064,
-	pinvoke_delegate_wrapper_CostDelegate_t3008899218,
-	pinvoke_delegate_wrapper_MatchEvaluator_t510977541,
 	pinvoke_delegate_wrapper_LogCallback_t3235662729,
 	pinvoke_delegate_wrapper_PCMReaderCallback_t749510018,
 	pinvoke_delegate_wrapper_PCMSetPositionCallback_t2977871350,
@@ -123,12 +123,12 @@ extern const methodPointerType g_DelegateWrappersManagedToNative[59] =
 	pinvoke_delegate_wrapper_InterstitialWasLoadedDelegate_t2963828231,
 	pinvoke_delegate_wrapper_InterstitialWasViewedDelegate_t402653446,
 	pinvoke_delegate_wrapper_ReapplyDrivenProperties_t3247703954,
+	pinvoke_delegate_wrapper_OnValidateInput_t3303221397,
 	pinvoke_delegate_wrapper_DeserializeMethod_t4182166364,
 	pinvoke_delegate_wrapper_DeserializeStreamMethod_t2269051836,
 	pinvoke_delegate_wrapper_MyAction_t3022056226,
 	pinvoke_delegate_wrapper_SerializeMethod_t1378746877,
 	pinvoke_delegate_wrapper_SerializeStreamMethod_t741406109,
 	pinvoke_delegate_wrapper_IntegerMillisecondsDelegate_t3264453621,
-	pinvoke_delegate_wrapper_OnValidateInput_t3303221397,
 	pinvoke_delegate_wrapper_EventCallback_t3012881631,
 };

@@ -741,11 +741,11 @@ extern "C"  Il2CppObject * Component_GetComponentInParent_TisIl2CppObject_m12978
 extern "C"  Il2CppObject * ExecuteEvents_ValidateEventData_TisIl2CppObject_m1498065176_gshared (Il2CppObject * __this /* static, unused */, BaseEventData_t3547103726 * ___data, const MethodInfo* method);
 #define ExecuteEvents_ValidateEventData_TisIl2CppObject_m1498065176(__this /* static, unused */, ___data, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, BaseEventData_t3547103726 *, const MethodInfo*))ExecuteEvents_ValidateEventData_TisIl2CppObject_m1498065176_gshared)(__this /* static, unused */, ___data, method)
 // T UnityEngine.GameObject::AddComponent<System.Object>()
-extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
-#define GameObject_AddComponent_TisIl2CppObject_m1123549903(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m337943659_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
+#define GameObject_AddComponent_TisIl2CppObject_m337943659(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // T UnityEngine.GameObject::GetComponent<System.Object>()
-extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
-#define GameObject_GetComponent_TisIl2CppObject_m3233378628(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
+#define GameObject_GetComponent_TisIl2CppObject_m2447772384(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // T UnityEngine.GameObject::GetComponentInChildren<System.Object>()
 extern "C"  Il2CppObject * GameObject_GetComponentInChildren_TisIl2CppObject_m782999868_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
 #define GameObject_GetComponentInChildren_TisIl2CppObject_m782999868(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponentInChildren_TisIl2CppObject_m782999868_gshared)(__this, method)
@@ -5236,13 +5236,13 @@ IL_003a:
 // T UnityEngine.GameObject::AddComponent<System.Object>()
 // T UnityEngine.GameObject::AddComponent<System.Object>()
 extern TypeInfo* Type_t_il2cpp_TypeInfo_var;
-extern const uint32_t GameObject_AddComponent_TisIl2CppObject_m1123549903_MetadataUsageId;
-extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared (GameObject_t4012695102 * __this, const MethodInfo* method)
+extern const uint32_t GameObject_AddComponent_TisIl2CppObject_m337943659_MetadataUsageId;
+extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m337943659_gshared (GameObject_t4012695102 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (GameObject_AddComponent_TisIl2CppObject_m1123549903_MetadataUsageId);
+		il2cpp_codegen_initialize_method (GameObject_AddComponent_TisIl2CppObject_m337943659_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -5257,13 +5257,13 @@ extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m1123549903_g
 // T UnityEngine.GameObject::GetComponent<System.Object>()
 extern TypeInfo* CastHelper_1_t4244616972_il2cpp_TypeInfo_var;
 extern TypeInfo* Type_t_il2cpp_TypeInfo_var;
-extern const uint32_t GameObject_GetComponent_TisIl2CppObject_m3233378628_MetadataUsageId;
-extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared (GameObject_t4012695102 * __this, const MethodInfo* method)
+extern const uint32_t GameObject_GetComponent_TisIl2CppObject_m2447772384_MetadataUsageId;
+extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared (GameObject_t4012695102 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (GameObject_GetComponent_TisIl2CppObject_m3233378628_MetadataUsageId);
+		il2cpp_codegen_initialize_method (GameObject_GetComponent_TisIl2CppObject_m2447772384_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	CastHelper_1_t4244616972  V_0;

@@ -22,21 +22,25 @@ namespace PLAYER
 
         void Update()
         {
+            Debug.Log(state.initialVelocityCannon);
             DrawLine((state.initialVelocityCannon + playerRb.velocity.z) / 7.5f, 10);
         }
 
         private void DrawLine(float primarySpeed, int x)
         {
-            lengthOfLineRenderer = x;
+            lengthOfLineRenderer = x * 10;
             lineRenderer.SetVertexCount(lengthOfLineRenderer);
             Vector3[] points = new Vector3[lengthOfLineRenderer];
-            int t = 0;
-            while (t < lengthOfLineRenderer)
+            float t = 0;
+            int num = 0;
+            while (num < points.Length)
             {
-                pos.x = this.transform.position.z + primarySpeed * (5 * Mathf.Sqrt(26) / 26) * t;
-                pos.y = this.transform.position.y + (primarySpeed * (Mathf.Sqrt(26) / 26) * t) - (0.5f * gravity * t * t);
-                points[t] = new Vector3(this.transform.position.x, pos.y, pos.x);
-                t++;
+                
+                pos.x = primarySpeed * (5 * Mathf.Sqrt(26) / 26) * t;
+                pos.y = (primarySpeed * (Mathf.Sqrt(26) / 26) * t) - (0.5f * gravity * t * t);
+                points[num] = transform.position + transform.forward * pos.x + transform.up * pos.y;
+                t += 0.1f;
+                num++;
             }
             lineRenderer.SetPositions(points);
         }

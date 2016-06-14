@@ -50,11 +50,11 @@ public class CannonPullSystem : MonoBehaviour
                         Debug.Log("detachPos x:" + detachPos.x + " y:" + detachPos.y);
                         Debug.Log("degree:" + degree);
                         center.transform.eulerAngles = new Vector3(0, degree, 0);
+                        state.initialVelocityCannon = pullLength() * 100;
 			//Debug.LogFormat ("{0}:タッチしている", id);
                         break;
                     case TouchPhase.Ended:
                     case TouchPhase.Canceled:
-                        state.initialVelocityCannon = pullLength() * 100;
                         touchPos = Vector3.zero;
                         detachPos = Vector3.zero;
 
@@ -80,3 +80,4 @@ public class CannonPullSystem : MonoBehaviour
     }
 	
 }
+

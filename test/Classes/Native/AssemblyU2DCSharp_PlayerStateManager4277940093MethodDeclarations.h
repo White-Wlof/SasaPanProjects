@@ -19,14 +19,14 @@ struct PlayerStateManager_t4277940093;
 
 // System.Void PlayerStateManager::.ctor()
 extern "C"  void PlayerStateManager__ctor_m3091918270 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 PlayerStateManager::get_hp()
-extern "C"  int32_t PlayerStateManager_get_hp_m3344427461 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void PlayerStateManager::set_hp(System.Int32)
-extern "C"  void PlayerStateManager_set_hp_m1665052668 (PlayerStateManager_t4277940093 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 PlayerStateManager::get_atk()
-extern "C"  int32_t PlayerStateManager_get_atk_m591755101 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void PlayerStateManager::set_atk(System.Int32)
-extern "C"  void PlayerStateManager_set_atk_m2267645320 (PlayerStateManager_t4277940093 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 PlayerStateManager::get_ownHp()
+extern "C"  int32_t PlayerStateManager_get_ownHp_m1370799475 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerStateManager::set_ownHp(System.Int32)
+extern "C"  void PlayerStateManager_set_ownHp_m3929320478 (PlayerStateManager_t4277940093 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 PlayerStateManager::get_ownAtk()
+extern "C"  int32_t PlayerStateManager_get_ownAtk_m3833796975 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerStateManager::set_ownAtk(System.Int32)
+extern "C"  void PlayerStateManager_set_ownAtk_m3740470694 (PlayerStateManager_t4277940093 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean PlayerStateManager::get_cannonMode()
 extern "C"  bool PlayerStateManager_get_cannonMode_m4227638435 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void PlayerStateManager::set_cannonMode(System.Boolean)

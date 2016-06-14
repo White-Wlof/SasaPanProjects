@@ -14,7 +14,7 @@
 #include <assert.h>
 
 // <PrivateImplementationDetails>
-struct U3CPrivateImplementationDetailsU3E_t3053238938;
+struct U3CPrivateImplementationDetailsU3E_t3053238937;
 // UnityEngine.EventSystems.AbstractEventData
 struct AbstractEventData_t419992509;
 // UnityEngine.EventSystems.AxisEventData
@@ -881,10 +881,10 @@ extern "C"  Il2CppObject * ExecuteEvents_ValidateEventData_TisIl2CppObject_m1498
 // !!0 UnityEngine.EventSystems.ExecuteEvents::ValidateEventData<UnityEngine.EventSystems.AxisEventData>(UnityEngine.EventSystems.BaseEventData)
 #define ExecuteEvents_ValidateEventData_TisAxisEventData_t552897310_m3402980230(__this /* static, unused */, p0, method) ((  AxisEventData_t552897310 * (*) (Il2CppObject * /* static, unused */, BaseEventData_t3547103726 *, const MethodInfo*))ExecuteEvents_ValidateEventData_TisIl2CppObject_m1498065176_gshared)(__this /* static, unused */, p0, method)
 // !!0 UnityEngine.GameObject::GetComponent<System.Object>()
-extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
-#define GameObject_GetComponent_TisIl2CppObject_m3233378628(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
+#define GameObject_GetComponent_TisIl2CppObject_m2447772384(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.SpriteRenderer>()
-#define GameObject_GetComponent_TisSpriteRenderer_t2223784725_m3588502113(__this, method) ((  SpriteRenderer_t2223784725 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+#define GameObject_GetComponent_TisSpriteRenderer_t2223784725_m3588502113(__this, method) ((  SpriteRenderer_t2223784725 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Camera>()
 #define Component_GetComponent_TisCamera_t3533968274_m3804104198(__this, method) ((  Camera_t3533968274 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // System.Void System.Array::Sort<UnityEngine.RaycastHit>(!!0[],System.Comparison`1<!!0>)
@@ -948,43 +948,43 @@ extern "C"  bool SetPropertyUtility_SetStruct_TisSingle_t958209021_m1643007650_g
 extern "C"  bool SetPropertyUtility_SetStruct_TisFitMode_t816341300_m3401974325_gshared (Il2CppObject * __this /* static, unused */, int32_t* p0, int32_t p1, const MethodInfo* method);
 #define SetPropertyUtility_SetStruct_TisFitMode_t816341300_m3401974325(__this /* static, unused */, p0, p1, method) ((  bool (*) (Il2CppObject * /* static, unused */, int32_t*, int32_t, const MethodInfo*))SetPropertyUtility_SetStruct_TisFitMode_t816341300_m3401974325_gshared)(__this /* static, unused */, p0, p1, method)
 // !!0 UnityEngine.GameObject::AddComponent<System.Object>()
-extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
-#define GameObject_AddComponent_TisIl2CppObject_m1123549903(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m337943659_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
+#define GameObject_AddComponent_TisIl2CppObject_m337943659(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.RectTransform>()
-#define GameObject_AddComponent_TisRectTransform_t3317474837_m3846759000(__this, method) ((  RectTransform_t3317474837 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisRectTransform_t3317474837_m3846759000(__this, method) ((  RectTransform_t3317474837 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.RectTransform>()
-#define GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(__this, method) ((  RectTransform_t3317474837 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+#define GameObject_GetComponent_TisRectTransform_t3317474837_m406276429(__this, method) ((  RectTransform_t3317474837 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Image>()
-#define GameObject_AddComponent_TisImage_t3354615620_m3664949437(__this, method) ((  Image_t3354615620 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisImage_t3354615620_m3664949437(__this, method) ((  Image_t3354615620 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Button>()
-#define GameObject_AddComponent_TisButton_t990034267_m2834709044(__this, method) ((  Button_t990034267 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisButton_t990034267_m2834709044(__this, method) ((  Button_t990034267 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Text>()
-#define GameObject_AddComponent_TisText_t3286458198_m3161596953(__this, method) ((  Text_t3286458198 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisText_t3286458198_m3161596953(__this, method) ((  Text_t3286458198 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.RawImage>()
-#define GameObject_AddComponent_TisRawImage_t3831555132_m1228665331(__this, method) ((  RawImage_t3831555132 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisRawImage_t3831555132_m1228665331(__this, method) ((  RawImage_t3831555132 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Slider>()
-#define GameObject_AddComponent_TisSlider_t1468074762_m2027542053(__this, method) ((  Slider_t1468074762 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisSlider_t1468074762_m2027542053(__this, method) ((  Slider_t1468074762 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Scrollbar>()
-#define GameObject_AddComponent_TisScrollbar_t1410649103_m567367570(__this, method) ((  Scrollbar_t1410649103 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisScrollbar_t1410649103_m567367570(__this, method) ((  Scrollbar_t1410649103 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Toggle>()
-#define GameObject_AddComponent_TisToggle_t1499417981_m3765476050(__this, method) ((  Toggle_t1499417981 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisToggle_t1499417981_m3765476050(__this, method) ((  Toggle_t1499417981 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.InputField>()
-#define GameObject_AddComponent_TisInputField_t2345609593_m1532989910(__this, method) ((  InputField_t2345609593 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisInputField_t2345609593_m1532989910(__this, method) ((  InputField_t2345609593 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.UI.Scrollbar>()
-#define GameObject_GetComponent_TisScrollbar_t1410649103_m179289597(__this, method) ((  Scrollbar_t1410649103 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+#define GameObject_GetComponent_TisScrollbar_t1410649103_m179289597(__this, method) ((  Scrollbar_t1410649103 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.ScrollRect>()
-#define GameObject_AddComponent_TisScrollRect_t1048578170_m3490629429(__this, method) ((  ScrollRect_t1048578170 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisScrollRect_t1048578170_m3490629429(__this, method) ((  ScrollRect_t1048578170 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Mask>()
-#define GameObject_AddComponent_TisMask_t3286245653_m1124636154(__this, method) ((  Mask_t3286245653 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisMask_t3286245653_m1124636154(__this, method) ((  Mask_t3286245653 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Dropdown>()
-#define GameObject_AddComponent_TisDropdown_t2916437562_m3413532469(__this, method) ((  Dropdown_t2916437562 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisDropdown_t2916437562_m3413532469(__this, method) ((  Dropdown_t2916437562 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponentInChildren<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponentInChildren_TisIl2CppObject_m900797242_gshared (Component_t2126946602 * __this, const MethodInfo* method);
 #define Component_GetComponentInChildren_TisIl2CppObject_m900797242(__this, method) ((  Il2CppObject * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponentInChildren_TisIl2CppObject_m900797242_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponentInChildren<UnityEngine.UI.Toggle>()
 #define Component_GetComponentInChildren_TisToggle_t1499417981_m612160161(__this, method) ((  Toggle_t1499417981 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponentInChildren_TisIl2CppObject_m900797242_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.Dropdown/DropdownItem>()
-#define GameObject_AddComponent_TisDropdownItem_t2010846948_m1733990038(__this, method) ((  DropdownItem_t2010846948 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisDropdownItem_t2010846948_m1733990038(__this, method) ((  DropdownItem_t2010846948 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.UI.Dropdown::GetOrAddComponent<System.Object>(UnityEngine.GameObject)
 extern "C"  Il2CppObject * Dropdown_GetOrAddComponent_TisIl2CppObject_m4155558758_gshared (Il2CppObject * __this /* static, unused */, GameObject_t4012695102 * p0, const MethodInfo* method);
 #define Dropdown_GetOrAddComponent_TisIl2CppObject_m4155558758(__this /* static, unused */, p0, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, GameObject_t4012695102 *, const MethodInfo*))Dropdown_GetOrAddComponent_TisIl2CppObject_m4155558758_gshared)(__this /* static, unused */, p0, method)
@@ -1005,11 +1005,11 @@ extern "C"  Il2CppObject * GameObject_GetComponentInChildren_TisIl2CppObject_m78
 // !!0 UnityEngine.GameObject::GetComponentInChildren<UnityEngine.UI.Dropdown/DropdownItem>()
 #define GameObject_GetComponentInChildren_TisDropdownItem_t2010846948_m678737573(__this, method) ((  DropdownItem_t2010846948 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponentInChildren_TisIl2CppObject_m782999868_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.Canvas>()
-#define GameObject_AddComponent_TisCanvas_t3534013893_m2137401606(__this, method) ((  Canvas_t3534013893 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisCanvas_t3534013893_m2137401606(__this, method) ((  Canvas_t3534013893 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.Canvas>()
-#define GameObject_GetComponent_TisCanvas_t3534013893_m4009786289(__this, method) ((  Canvas_t3534013893 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+#define GameObject_GetComponent_TisCanvas_t3534013893_m4009786289(__this, method) ((  Canvas_t3534013893 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.GraphicRaycaster>()
-#define GameObject_AddComponent_TisGraphicRaycaster_t2033008887_m3633242200(__this, method) ((  GraphicRaycaster_t2033008887 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisGraphicRaycaster_t2033008887_m3633242200(__this, method) ((  GraphicRaycaster_t2033008887 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.Object::Instantiate<System.Object>(!!0)
 extern "C"  Il2CppObject * Object_Instantiate_TisIl2CppObject_m3133387403_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject * p0, const MethodInfo* method);
 #define Object_Instantiate_TisIl2CppObject_m3133387403(__this /* static, unused */, p0, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, Il2CppObject *, const MethodInfo*))Object_Instantiate_TisIl2CppObject_m3133387403_gshared)(__this /* static, unused */, p0, method)
@@ -1018,7 +1018,7 @@ extern "C"  Il2CppObject * Object_Instantiate_TisIl2CppObject_m3133387403_gshare
 // !!0 UnityEngine.Object::Instantiate<UnityEngine.UI.Dropdown/DropdownItem>(!!0)
 #define Object_Instantiate_TisDropdownItem_t2010846948_m3370007064(__this /* static, unused */, p0, method) ((  DropdownItem_t2010846948 * (*) (Il2CppObject * /* static, unused */, DropdownItem_t2010846948 *, const MethodInfo*))Object_Instantiate_TisIl2CppObject_m3133387403_gshared)(__this /* static, unused */, p0, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.CanvasGroup>()
-#define GameObject_GetComponent_TisCanvasGroup_t1295922228_m4071469134(__this, method) ((  CanvasGroup_t1295922228 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+#define GameObject_GetComponent_TisCanvasGroup_t1295922228_m4071469134(__this, method) ((  CanvasGroup_t1295922228 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponentInParent<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponentInParent_TisIl2CppObject_m1297875695_gshared (Component_t2126946602 * __this, const MethodInfo* method);
 #define Component_GetComponentInParent_TisIl2CppObject_m1297875695(__this, method) ((  Il2CppObject * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponentInParent_TisIl2CppObject_m1297875695_gshared)(__this, method)
@@ -1095,9 +1095,9 @@ extern "C"  bool SetPropertyUtility_SetStruct_TisCharacterValidation_t4120610914
 extern "C"  bool SetPropertyUtility_SetStruct_TisChar_t2778706699_m1002094612_gshared (Il2CppObject * __this /* static, unused */, uint16_t* p0, uint16_t p1, const MethodInfo* method);
 #define SetPropertyUtility_SetStruct_TisChar_t2778706699_m1002094612(__this /* static, unused */, p0, p1, method) ((  bool (*) (Il2CppObject * /* static, unused */, uint16_t*, uint16_t, const MethodInfo*))SetPropertyUtility_SetStruct_TisChar_t2778706699_m1002094612_gshared)(__this /* static, unused */, p0, p1, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.CanvasRenderer>()
-#define GameObject_AddComponent_TisCanvasRenderer_t3626201768_m833551939(__this, method) ((  CanvasRenderer_t3626201768 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisCanvasRenderer_t3626201768_m833551939(__this, method) ((  CanvasRenderer_t3626201768 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.UI.LayoutElement>()
-#define GameObject_AddComponent_TisLayoutElement_t2655817307_m1822846278(__this, method) ((  LayoutElement_t2655817307 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
+#define GameObject_AddComponent_TisLayoutElement_t2655817307_m1822846278(__this, method) ((  LayoutElement_t2655817307 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // System.Void UnityEngine.UI.LayoutGroup::SetProperty<System.Object>(!!0&,!!0)
 extern "C"  void LayoutGroup_SetProperty_TisIl2CppObject_m2605202953_gshared (LayoutGroup_t2646131550 * __this, Il2CppObject ** p0, Il2CppObject * p1, const MethodInfo* method);
 #define LayoutGroup_SetProperty_TisIl2CppObject_m2605202953(__this, p0, p1, method) ((  void (*) (LayoutGroup_t2646131550 *, Il2CppObject **, Il2CppObject *, const MethodInfo*))LayoutGroup_SetProperty_TisIl2CppObject_m2605202953_gshared)(__this, p0, p1, method)
@@ -1112,7 +1112,7 @@ extern "C"  void LayoutGroup_SetProperty_TisTextAnchor_t551935663_m3585160266_gs
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void <PrivateImplementationDetails>::.ctor()
-extern "C"  void U3CPrivateImplementationDetailsU3E__ctor_m2615655811 (U3CPrivateImplementationDetailsU3E_t3053238938 * __this, const MethodInfo* method)
+extern "C"  void U3CPrivateImplementationDetailsU3E__ctor_m2615655811 (U3CPrivateImplementationDetailsU3E_t3053238937 * __this, const MethodInfo* method)
 {
 	{
 		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
@@ -5038,7 +5038,7 @@ extern "C"  int32_t PhysicsRaycaster_U3CRaycastU3Em__1_m3832860601 (Il2CppObject
 }
 // System.Void UnityEngine.EventSystems.PointerEventData::.ctor(UnityEngine.EventSystems.EventSystem)
 extern TypeInfo* List_1_t514686775_il2cpp_TypeInfo_var;
-extern const MethodInfo* List_1__ctor_m3330911122_MethodInfo_var;
+extern const MethodInfo* List_1__ctor_m2397334390_MethodInfo_var;
 extern const uint32_t PointerEventData__ctor_m82194942_MetadataUsageId;
 extern "C"  void PointerEventData__ctor_m82194942 (PointerEventData_t3205101634 * __this, EventSystem_t409518532 * ___eventSystem, const MethodInfo* method)
 {
@@ -5050,7 +5050,7 @@ extern "C"  void PointerEventData__ctor_m82194942 (PointerEventData_t3205101634 
 	}
 	{
 		List_1_t514686775 * L_0 = (List_1_t514686775 *)il2cpp_codegen_object_new(List_1_t514686775_il2cpp_TypeInfo_var);
-		List_1__ctor_m3330911122(L_0, /*hidden argument*/List_1__ctor_m3330911122_MethodInfo_var);
+		List_1__ctor_m2397334390(L_0, /*hidden argument*/List_1__ctor_m2397334390_MethodInfo_var);
 		__this->set_hovered_3(L_0);
 		EventSystem_t409518532 * L_1 = ___eventSystem;
 		BaseEventData__ctor_m3246352982(__this, L_1, /*hidden argument*/NULL);
@@ -28639,7 +28639,7 @@ extern "C"  void InputField__ctor_m2020289915 (InputField_t2345609593 * __this, 
 // System.Void UnityEngine.UI.InputField::.cctor()
 extern TypeInfo* CharU5BU5D_t3416858730_il2cpp_TypeInfo_var;
 extern TypeInfo* InputField_t2345609593_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238938____U24U24fieldU2D0_0_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238937____U24U24fieldU2D0_0_FieldInfo_var;
 extern const uint32_t InputField__cctor_m2017349010_MetadataUsageId;
 extern "C"  void InputField__cctor_m2017349010 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -28651,7 +28651,7 @@ extern "C"  void InputField__cctor_m2017349010 (Il2CppObject * __this /* static,
 	}
 	{
 		CharU5BU5D_t3416858730* L_0 = ((CharU5BU5D_t3416858730*)SZArrayNew(CharU5BU5D_t3416858730_il2cpp_TypeInfo_var, (uint32_t)6));
-		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238938____U24U24fieldU2D0_0_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238937____U24U24fieldU2D0_0_FieldInfo_var), /*hidden argument*/NULL);
 		((InputField_t2345609593_StaticFields*)InputField_t2345609593_il2cpp_TypeInfo_var->static_fields)->set_kSeparators_20(L_0);
 		return;
 	}
