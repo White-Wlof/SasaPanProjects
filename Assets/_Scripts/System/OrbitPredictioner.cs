@@ -2,7 +2,7 @@
 using System.Collections;
 
 
-namespace PLAYER
+namespace Game
 {
     public class OrbitPredictioner : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace PLAYER
+namespace Game
 {
 
     public class PlayerController : CharacterOperationMaster
@@ -10,6 +10,7 @@ namespace PLAYER
 
         [SerializeField] Transform center;
         [SerializeField] GameObject cannon;
+        [SerializeField] GameState gameState;
         PlayerStateManager state;
 
         private Rigidbody playerRb;
@@ -47,6 +48,11 @@ namespace PLAYER
                 shotCannon(center, playerRb, cannon.transform.position, cannonBall, state.initialVelocityCannon);
                 //state.initialVelocityCannon = 0;
             }
+            if (gameState.getGameFinish())
+            {
+                endGame(playerRb);
+            }
+
 
             #if UNITY_IOS
             if (Input.touchCount > 0)
