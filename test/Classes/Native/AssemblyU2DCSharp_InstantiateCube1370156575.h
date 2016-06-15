@@ -13,7 +13,7 @@
 // UnityEngine.GameObject
 struct GameObject_t4012695102;
 
-#include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+#include "AssemblyU2DCSharp_Photon_MonoBehaviour4025988718.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -22,40 +22,40 @@ struct GameObject_t4012695102;
 #endif
 
 // InstantiateCube
-struct  InstantiateCube_t1370156575  : public MonoBehaviour_t3012272455
+struct  InstantiateCube_t1370156575  : public MonoBehaviour_t4025988718
 {
 public:
 	// UnityEngine.GameObject InstantiateCube::Prefab
-	GameObject_t4012695102 * ___Prefab_2;
+	GameObject_t4012695102 * ___Prefab_3;
 	// System.Int32 InstantiateCube::InstantiateType
-	int32_t ___InstantiateType_3;
+	int32_t ___InstantiateType_4;
 	// System.Boolean InstantiateCube::showGui
-	bool ___showGui_4;
+	bool ___showGui_5;
 
 public:
-	inline static int32_t get_offset_of_Prefab_2() { return static_cast<int32_t>(offsetof(InstantiateCube_t1370156575, ___Prefab_2)); }
-	inline GameObject_t4012695102 * get_Prefab_2() const { return ___Prefab_2; }
-	inline GameObject_t4012695102 ** get_address_of_Prefab_2() { return &___Prefab_2; }
-	inline void set_Prefab_2(GameObject_t4012695102 * value)
+	inline static int32_t get_offset_of_Prefab_3() { return static_cast<int32_t>(offsetof(InstantiateCube_t1370156575, ___Prefab_3)); }
+	inline GameObject_t4012695102 * get_Prefab_3() const { return ___Prefab_3; }
+	inline GameObject_t4012695102 ** get_address_of_Prefab_3() { return &___Prefab_3; }
+	inline void set_Prefab_3(GameObject_t4012695102 * value)
 	{
-		___Prefab_2 = value;
-		Il2CppCodeGenWriteBarrier(&___Prefab_2, value);
+		___Prefab_3 = value;
+		Il2CppCodeGenWriteBarrier(&___Prefab_3, value);
 	}
 
-	inline static int32_t get_offset_of_InstantiateType_3() { return static_cast<int32_t>(offsetof(InstantiateCube_t1370156575, ___InstantiateType_3)); }
-	inline int32_t get_InstantiateType_3() const { return ___InstantiateType_3; }
-	inline int32_t* get_address_of_InstantiateType_3() { return &___InstantiateType_3; }
-	inline void set_InstantiateType_3(int32_t value)
+	inline static int32_t get_offset_of_InstantiateType_4() { return static_cast<int32_t>(offsetof(InstantiateCube_t1370156575, ___InstantiateType_4)); }
+	inline int32_t get_InstantiateType_4() const { return ___InstantiateType_4; }
+	inline int32_t* get_address_of_InstantiateType_4() { return &___InstantiateType_4; }
+	inline void set_InstantiateType_4(int32_t value)
 	{
-		___InstantiateType_3 = value;
+		___InstantiateType_4 = value;
 	}
 
-	inline static int32_t get_offset_of_showGui_4() { return static_cast<int32_t>(offsetof(InstantiateCube_t1370156575, ___showGui_4)); }
-	inline bool get_showGui_4() const { return ___showGui_4; }
-	inline bool* get_address_of_showGui_4() { return &___showGui_4; }
-	inline void set_showGui_4(bool value)
+	inline static int32_t get_offset_of_showGui_5() { return static_cast<int32_t>(offsetof(InstantiateCube_t1370156575, ___showGui_5)); }
+	inline bool get_showGui_5() const { return ___showGui_5; }
+	inline bool* get_address_of_showGui_5() { return &___showGui_5; }
+	inline void set_showGui_5(bool value)
 	{
-		___showGui_4 = value;
+		___showGui_5 = value;
 	}
 };
 

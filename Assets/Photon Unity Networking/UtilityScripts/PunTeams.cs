@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using ExitGames.Client.Photon;
 using UnityEngine;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
+using System.Linq;
 
 
 /// <summary>
@@ -12,10 +13,16 @@ using Hashtable = ExitGames.Client.Photon.Hashtable;
 /// Teams are defined by enum Team. Change this to get more / different teams.
 /// There are no rules when / if you can join a team. You could add this in JoinTeam or something.
 /// </remarks>
-public class PunTeams : MonoBehaviour
+public class PunTeams : Photon.MonoBehaviour
 {
     /// <summary>Enum defining the teams available. First team should be neutral (it's the default value any field of this enum gets).</summary>
-    public enum Team : byte {none, red, blue};
+    public enum Team : byte
+    {
+none,
+        red,
+        blue}
+
+    ;
 
     /// <summary>The main list of teams with their player-lists. Automatically kept up to date.</summary>
     /// <remarks>Note that this is static. Can be accessed by PunTeam.PlayersPerTeam. You should not modify this.</remarks>
@@ -30,7 +37,7 @@ public class PunTeams : MonoBehaviour
     public void Start()
     {
         PlayersPerTeam = new Dictionary<Team, List<PhotonPlayer>>();
-        Array enumVals = Enum.GetValues(typeof (Team));
+        Array enumVals = Enum.GetValues(typeof(Team));
         foreach (var enumVal in enumVals)
         {
             PlayersPerTeam[(Team)enumVal] = new List<PhotonPlayer>();
@@ -52,9 +59,9 @@ public class PunTeams : MonoBehaviour
     {
         this.UpdateTeams();
     }
-    
+
     #endregion
-    
+
 
     public void UpdateTeams()
     {
@@ -64,7 +71,7 @@ public class PunTeams : MonoBehaviour
             PlayersPerTeam[(Team)enumVal].Clear();
         }
 
-        for (int i = 0; i < PhotonNetwork.playerList.Length; i++)
+        for (int i = 0; i < PhotonNetwork.playerList.Count(); i++)
         {
             PhotonPlayer player = PhotonNetwork.playerList[i];
             Team playerTeam = player.GetTeam();
@@ -103,7 +110,7 @@ public static class TeamExtensions
         PunTeams.Team currentTeam = PhotonNetwork.player.GetTeam();
         if (currentTeam != team)
         {
-            PhotonNetwork.player.SetCustomProperties(new Hashtable() {{PunTeams.TeamPlayerProp, (byte) team}});
+            PhotonNetwork.player.SetCustomProperties(new Hashtable() { { PunTeams.TeamPlayerProp, (byte)team } });
         }
     }
 }

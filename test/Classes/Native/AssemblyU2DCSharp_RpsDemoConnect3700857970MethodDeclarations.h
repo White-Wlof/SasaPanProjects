@@ -22,6 +22,8 @@ struct ObjectU5BU5D_t11523773;
 
 // System.Void RpsDemoConnect::.ctor()
 extern "C"  void RpsDemoConnect__ctor_m3689091177 (RpsDemoConnect_t3700857970 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void RpsDemoConnect::Start()
+extern "C"  void RpsDemoConnect_Start_m2636228969 (RpsDemoConnect_t3700857970 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void RpsDemoConnect::ApplyUserIdAndConnect()
 extern "C"  void RpsDemoConnect_ApplyUserIdAndConnect_m2595299662 (RpsDemoConnect_t3700857970 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void RpsDemoConnect::OnConnectedToMaster()

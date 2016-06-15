@@ -11,7 +11,7 @@
 #include <stdint.h>
 
 
-#include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+#include "AssemblyU2DCSharp_Photon_MonoBehaviour4025988718.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -20,7 +20,7 @@
 #endif
 
 // OnPickedUpScript
-struct  OnPickedUpScript_t1478427589  : public MonoBehaviour_t3012272455
+struct  OnPickedUpScript_t1478427589  : public MonoBehaviour_t4025988718
 {
 public:
 

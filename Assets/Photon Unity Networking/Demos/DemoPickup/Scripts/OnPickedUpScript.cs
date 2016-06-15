@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class OnPickedUpScript : MonoBehaviour {
+public class OnPickedUpScript : Photon.MonoBehaviour {
 
 	public void OnPickedUp(PickupItem item)
 	{

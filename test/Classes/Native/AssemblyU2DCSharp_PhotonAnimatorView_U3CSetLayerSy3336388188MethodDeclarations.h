@@ -22,5 +22,5 @@ struct SynchronizedLayer_t1918348413;
 
 // System.Void PhotonAnimatorView/<SetLayerSynchronized>c__AnonStoreyD::.ctor()
 extern "C"  void U3CSetLayerSynchronizedU3Ec__AnonStoreyD__ctor_m1392664488 (U3CSetLayerSynchronizedU3Ec__AnonStoreyD_t3336388188 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean PhotonAnimatorView/<SetLayerSynchronized>c__AnonStoreyD::<>m__5(PhotonAnimatorView/SynchronizedLayer)
-extern "C"  bool U3CSetLayerSynchronizedU3Ec__AnonStoreyD_U3CU3Em__5_m2208029052 (U3CSetLayerSynchronizedU3Ec__AnonStoreyD_t3336388188 * __this, SynchronizedLayer_t1918348413 * ___item, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean PhotonAnimatorView/<SetLayerSynchronized>c__AnonStoreyD::<>m__7(PhotonAnimatorView/SynchronizedLayer)
+extern "C"  bool U3CSetLayerSynchronizedU3Ec__AnonStoreyD_U3CU3Em__7_m362661886 (U3CSetLayerSynchronizedU3Ec__AnonStoreyD_t3336388188 * __this, SynchronizedLayer_t1918348413 * ___item, const MethodInfo* method) IL2CPP_METHOD_ATTR;

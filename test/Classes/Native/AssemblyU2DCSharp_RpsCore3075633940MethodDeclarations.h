@@ -77,6 +77,8 @@ extern "C"  void RpsCore_OnClickScissors_m590062869 (RpsCore_t3075633940 * __thi
 extern "C"  void RpsCore_OnClickConnect_m1762223630 (RpsCore_t3075633940 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void RpsCore::OnClickReConnectAndRejoin()
 extern "C"  void RpsCore_OnClickReConnectAndRejoin_m691822683 (RpsCore_t3075633940 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void RpsCore::RefreshUIViews()
+extern "C"  void RpsCore_RefreshUIViews_m3009654220 (RpsCore_t3075633940 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void RpsCore::OnLeftRoom()
 extern "C"  void RpsCore_OnLeftRoom_m3475679950 (RpsCore_t3075633940 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void RpsCore::OnJoinedRoom()

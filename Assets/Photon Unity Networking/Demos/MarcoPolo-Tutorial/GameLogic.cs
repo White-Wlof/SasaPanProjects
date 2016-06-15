@@ -1,7 +1,8 @@
 using UnityEngine;
 using System.Collections;
+using System.Linq;
 
-public class GameLogic : MonoBehaviour
+public class GameLogic : Photon.MonoBehaviour
 {
 
     public static int playerWhoIsIt = 0;
@@ -16,7 +17,7 @@ public class GameLogic : MonoBehaviour
     public void OnJoinedRoom()
     {
         // game logic: if this is the only player, we're "it"
-        if (PhotonNetwork.playerList.Length == 1)
+        if (PhotonNetwork.playerList.Count() == 1)
         {
             playerWhoIsIt = PhotonNetwork.player.ID;
         }

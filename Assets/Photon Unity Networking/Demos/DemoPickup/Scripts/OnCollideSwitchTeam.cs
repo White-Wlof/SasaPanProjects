@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 [RequireComponent(typeof(Collider))]
-public class OnCollideSwitchTeam : MonoBehaviour
+public class OnCollideSwitchTeam : Photon.MonoBehaviour
 {
     public PunTeams.Team TeamToSwitchTo;
     

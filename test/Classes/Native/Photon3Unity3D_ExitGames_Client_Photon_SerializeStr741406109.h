@@ -10,8 +10,8 @@
 
 #include <stdint.h>
 
-// System.IO.MemoryStream
-struct MemoryStream_t2881531048;
+// ExitGames.Client.Photon.StreamBuffer
+struct StreamBuffer_t433541692;
 // System.Object
 struct Il2CppObject;
 // System.IAsyncResult

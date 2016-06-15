@@ -17,7 +17,7 @@
 #include "mscorlib_System_Predicate_1_gen1408070318MethodDeclarations.h"
 
 // System.Void System.Predicate`1<UnityEngine.Rigidbody2D>::.ctor(System.Object,System.IntPtr)
-#define Predicate_1__ctor_m4132788727(__this, ___object, ___method, method) ((  void (*) (Predicate_1_t4203206982 *, Il2CppObject *, IntPtr_t, const MethodInfo*))Predicate_1__ctor_m982040097_gshared)(__this, ___object, ___method, method)
+#define Predicate_1__ctor_m3720622240(__this, ___object, ___method, method) ((  void (*) (Predicate_1_t4203206982 *, Il2CppObject *, IntPtr_t, const MethodInfo*))Predicate_1__ctor_m982040097_gshared)(__this, ___object, ___method, method)
 // System.Boolean System.Predicate`1<UnityEngine.Rigidbody2D>::Invoke(T)
 #define Predicate_1_Invoke_m2665374703(__this, ___obj, method) ((  bool (*) (Predicate_1_t4203206982 *, Rigidbody2D_t3632243084 *, const MethodInfo*))Predicate_1_Invoke_m4106178309_gshared)(__this, ___obj, method)
 // System.IAsyncResult System.Predicate`1<UnityEngine.Rigidbody2D>::BeginInvoke(T,System.AsyncCallback,System.Object)

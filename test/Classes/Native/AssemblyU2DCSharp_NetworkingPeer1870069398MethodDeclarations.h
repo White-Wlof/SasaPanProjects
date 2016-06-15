@@ -253,8 +253,8 @@ extern "C"  void NetworkingPeer_UpdatedActorList_m778388614 (NetworkingPeer_t187
 extern "C"  void NetworkingPeer_SendVacantViewIds_m348920383 (NetworkingPeer_t1870069398 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void NetworkingPeer::SendMonoMessage(PhotonNetworkingMessage,System.Object[])
 extern "C"  void NetworkingPeer_SendMonoMessage_m3756049992 (Il2CppObject * __this /* static, unused */, int32_t ___methodString, ObjectU5BU5D_t11523773* ___parameters, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void NetworkingPeer::ExecuteRpc(System.Object[],PhotonPlayer)
-extern "C"  void NetworkingPeer_ExecuteRpc_m170914982 (NetworkingPeer_t1870069398 * __this, ObjectU5BU5D_t11523773* ___rpcData, PhotonPlayer_t1400510109 * ___sender, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void NetworkingPeer::ExecuteRpc(ExitGames.Client.Photon.Hashtable,PhotonPlayer)
+extern "C"  void NetworkingPeer_ExecuteRpc_m1844326476 (NetworkingPeer_t1870069398 * __this, Hashtable_t223732124 * ___rpcData, PhotonPlayer_t1400510109 * ___sender, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean NetworkingPeer::CheckTypeMatch(System.Reflection.ParameterInfo[],System.Type[])
 extern "C"  bool NetworkingPeer_CheckTypeMatch_m2846991416 (NetworkingPeer_t1870069398 * __this, ParameterInfoU5BU5D_t1127461800* ___methodParameters, TypeU5BU5D_t3431720054* ___callParameterTypes, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // ExitGames.Client.Photon.Hashtable NetworkingPeer::SendInstantiate(System.String,UnityEngine.Vector3,UnityEngine.Quaternion,System.Int32,System.Int32[],System.Object[],System.Boolean)

@@ -14,8 +14,6 @@
 
 // ExitGames.Client.Photon.PeerBase
 struct PeerBase_t2319621551;
-// ExitGames.Client.IProtocol
-struct IProtocol_t2724506835;
 // System.String
 struct String_t;
 // ExitGames.Client.Photon.IPhotonPeerListener
@@ -38,8 +36,6 @@ struct ByteU5BU5D_t58506160;
 #include "Photon3Unity3D_ExitGames_Client_Photon_DebugLevel2321529677.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_StatusCode132272987.h"
 
-// ExitGames.Client.IProtocol ExitGames.Client.Photon.PeerBase::get_Protocol()
-extern "C"  IProtocol_t2724506835 * PeerBase_get_Protocol_m4217687564 (PeerBase_t2319621551 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int64 ExitGames.Client.Photon.PeerBase::get_TrafficStatsEnabledTime()
 extern "C"  int64_t PeerBase_get_TrafficStatsEnabledTime_m671856287 (PeerBase_t2319621551 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean ExitGames.Client.Photon.PeerBase::get_TrafficStatsEnabled()

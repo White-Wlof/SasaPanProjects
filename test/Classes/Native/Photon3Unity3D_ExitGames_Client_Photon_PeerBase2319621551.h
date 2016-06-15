@@ -30,8 +30,8 @@ struct String_t;
 struct IPhotonPeerListener_t753501495;
 // System.Collections.Generic.Queue`1<ExitGames.Client.Photon.PeerBase/MyAction>
 struct Queue_1_t435176470;
-// Photon.SocketServer.Security.DiffieHellmanCryptoProvider
-struct DiffieHellmanCryptoProvider_t3764219664;
+// Photon.SocketServer.Security.ICryptoProvider
+struct ICryptoProvider_t3810498269;
 // System.Random
 struct Random_t922188920;
 // System.Collections.Generic.LinkedList`1<ExitGames.Client.Photon.SimulationItem>
@@ -42,8 +42,8 @@ struct NetworkSimulationSet_t651747241;
 struct Queue_1_t67269933;
 // System.Byte[]
 struct ByteU5BU5D_t58506160;
-// System.IO.MemoryStream
-struct MemoryStream_t2881531048;
+// ExitGames.Client.Photon.StreamBuffer
+struct StreamBuffer_t433541692;
 
 #include "mscorlib_System_Object837106420.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_ConnectionP3367452146.h"
@@ -146,8 +146,8 @@ public:
 	int32_t ___limitOfUnreliableCommands_42;
 	// System.Byte ExitGames.Client.Photon.PeerBase::<QuickResendAttempts>k__BackingField
 	uint8_t ___U3CQuickResendAttemptsU3Ek__BackingField_43;
-	// Photon.SocketServer.Security.DiffieHellmanCryptoProvider ExitGames.Client.Photon.PeerBase::CryptoProvider
-	DiffieHellmanCryptoProvider_t3764219664 * ___CryptoProvider_44;
+	// Photon.SocketServer.Security.ICryptoProvider ExitGames.Client.Photon.PeerBase::CryptoProvider
+	Il2CppObject * ___CryptoProvider_44;
 	// System.Random ExitGames.Client.Photon.PeerBase::lagRandomizer
 	Random_t922188920 * ___lagRandomizer_45;
 	// System.Collections.Generic.LinkedList`1<ExitGames.Client.Photon.SimulationItem> ExitGames.Client.Photon.PeerBase::NetSimListOutgoing
@@ -192,8 +192,8 @@ public:
 	int32_t ___rhttpMinConnections_69;
 	// System.Int32 ExitGames.Client.Photon.PeerBase::rhttpMaxConnections
 	int32_t ___rhttpMaxConnections_70;
-	// System.IO.MemoryStream ExitGames.Client.Photon.PeerBase::SerializeMemStream
-	MemoryStream_t2881531048 * ___SerializeMemStream_71;
+	// ExitGames.Client.Photon.StreamBuffer ExitGames.Client.Photon.PeerBase::SerializeMemStream
+	StreamBuffer_t433541692 * ___SerializeMemStream_71;
 
 public:
 	inline static int32_t get_offset_of_protocol_0() { return static_cast<int32_t>(offsetof(PeerBase_t2319621551, ___protocol_0)); }
@@ -553,9 +553,9 @@ public:
 	}
 
 	inline static int32_t get_offset_of_CryptoProvider_44() { return static_cast<int32_t>(offsetof(PeerBase_t2319621551, ___CryptoProvider_44)); }
-	inline DiffieHellmanCryptoProvider_t3764219664 * get_CryptoProvider_44() const { return ___CryptoProvider_44; }
-	inline DiffieHellmanCryptoProvider_t3764219664 ** get_address_of_CryptoProvider_44() { return &___CryptoProvider_44; }
-	inline void set_CryptoProvider_44(DiffieHellmanCryptoProvider_t3764219664 * value)
+	inline Il2CppObject * get_CryptoProvider_44() const { return ___CryptoProvider_44; }
+	inline Il2CppObject ** get_address_of_CryptoProvider_44() { return &___CryptoProvider_44; }
+	inline void set_CryptoProvider_44(Il2CppObject * value)
 	{
 		___CryptoProvider_44 = value;
 		Il2CppCodeGenWriteBarrier(&___CryptoProvider_44, value);
@@ -746,9 +746,9 @@ public:
 	}
 
 	inline static int32_t get_offset_of_SerializeMemStream_71() { return static_cast<int32_t>(offsetof(PeerBase_t2319621551, ___SerializeMemStream_71)); }
-	inline MemoryStream_t2881531048 * get_SerializeMemStream_71() const { return ___SerializeMemStream_71; }
-	inline MemoryStream_t2881531048 ** get_address_of_SerializeMemStream_71() { return &___SerializeMemStream_71; }
-	inline void set_SerializeMemStream_71(MemoryStream_t2881531048 * value)
+	inline StreamBuffer_t433541692 * get_SerializeMemStream_71() const { return ___SerializeMemStream_71; }
+	inline StreamBuffer_t433541692 ** get_address_of_SerializeMemStream_71() { return &___SerializeMemStream_71; }
+	inline void set_SerializeMemStream_71(StreamBuffer_t433541692 * value)
 	{
 		___SerializeMemStream_71 = value;
 		Il2CppCodeGenWriteBarrier(&___SerializeMemStream_71, value);

@@ -1,7 +1,7 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 
-public class DemoBoxesGui : MonoBehaviour
+public class DemoBoxesGui : Photon.MonoBehaviour
 {
     public bool HideUI = false;
 

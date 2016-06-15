@@ -13,7 +13,7 @@
 // PhotonView
 struct PhotonView_t1498838369;
 
-#include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+#include "AssemblyU2DCSharp_Photon_MonoBehaviour4025988718.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -22,7 +22,7 @@ struct PhotonView_t1498838369;
 #endif
 
 // GameLogic
-struct  GameLogic_t2987424364  : public MonoBehaviour_t3012272455
+struct  GameLogic_t2987424364  : public MonoBehaviour_t4025988718
 {
 public:
 
@@ -33,26 +33,26 @@ struct GameLogic_t2987424364_StaticFields
 {
 public:
 	// System.Int32 GameLogic::playerWhoIsIt
-	int32_t ___playerWhoIsIt_2;
+	int32_t ___playerWhoIsIt_3;
 	// PhotonView GameLogic::ScenePhotonView
-	PhotonView_t1498838369 * ___ScenePhotonView_3;
+	PhotonView_t1498838369 * ___ScenePhotonView_4;
 
 public:
-	inline static int32_t get_offset_of_playerWhoIsIt_2() { return static_cast<int32_t>(offsetof(GameLogic_t2987424364_StaticFields, ___playerWhoIsIt_2)); }
-	inline int32_t get_playerWhoIsIt_2() const { return ___playerWhoIsIt_2; }
-	inline int32_t* get_address_of_playerWhoIsIt_2() { return &___playerWhoIsIt_2; }
-	inline void set_playerWhoIsIt_2(int32_t value)
+	inline static int32_t get_offset_of_playerWhoIsIt_3() { return static_cast<int32_t>(offsetof(GameLogic_t2987424364_StaticFields, ___playerWhoIsIt_3)); }
+	inline int32_t get_playerWhoIsIt_3() const { return ___playerWhoIsIt_3; }
+	inline int32_t* get_address_of_playerWhoIsIt_3() { return &___playerWhoIsIt_3; }
+	inline void set_playerWhoIsIt_3(int32_t value)
 	{
-		___playerWhoIsIt_2 = value;
+		___playerWhoIsIt_3 = value;
 	}
 
-	inline static int32_t get_offset_of_ScenePhotonView_3() { return static_cast<int32_t>(offsetof(GameLogic_t2987424364_StaticFields, ___ScenePhotonView_3)); }
-	inline PhotonView_t1498838369 * get_ScenePhotonView_3() const { return ___ScenePhotonView_3; }
-	inline PhotonView_t1498838369 ** get_address_of_ScenePhotonView_3() { return &___ScenePhotonView_3; }
-	inline void set_ScenePhotonView_3(PhotonView_t1498838369 * value)
+	inline static int32_t get_offset_of_ScenePhotonView_4() { return static_cast<int32_t>(offsetof(GameLogic_t2987424364_StaticFields, ___ScenePhotonView_4)); }
+	inline PhotonView_t1498838369 * get_ScenePhotonView_4() const { return ___ScenePhotonView_4; }
+	inline PhotonView_t1498838369 ** get_address_of_ScenePhotonView_4() { return &___ScenePhotonView_4; }
+	inline void set_ScenePhotonView_4(PhotonView_t1498838369 * value)
 	{
-		___ScenePhotonView_3 = value;
-		Il2CppCodeGenWriteBarrier(&___ScenePhotonView_3, value);
+		___ScenePhotonView_4 = value;
+		Il2CppCodeGenWriteBarrier(&___ScenePhotonView_4, value);
 	}
 };
 

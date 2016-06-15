@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class OnDoubleclickDestroy : Photon.MonoBehaviour
 {
@@ -13,7 +13,7 @@ public class OnDoubleclickDestroy : Photon.MonoBehaviour
     {
         if (!this.photonView.isMine)
         {
-            // this networkView (provided by Photon.MonoBehaviour) says the object is not ours.
+            // this photonView (provided by Photon.MonoBehaviour) says the object is not ours.
             // so this client can't destroy it.
             return;
         }

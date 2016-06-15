@@ -22,5 +22,5 @@ struct SynchronizedParameter_t3311342805;
 
 // System.Void PhotonAnimatorView/<GetParameterSynchronizeType>c__AnonStoreyC::.ctor()
 extern "C"  void U3CGetParameterSynchronizeTypeU3Ec__AnonStoreyC__ctor_m1385745827 (U3CGetParameterSynchronizeTypeU3Ec__AnonStoreyC_t3056155807 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean PhotonAnimatorView/<GetParameterSynchronizeType>c__AnonStoreyC::<>m__4(PhotonAnimatorView/SynchronizedParameter)
-extern "C"  bool U3CGetParameterSynchronizeTypeU3Ec__AnonStoreyC_U3CU3Em__4_m3923019952 (U3CGetParameterSynchronizeTypeU3Ec__AnonStoreyC_t3056155807 * __this, SynchronizedParameter_t3311342805 * ___item, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean PhotonAnimatorView/<GetParameterSynchronizeType>c__AnonStoreyC::<>m__6(PhotonAnimatorView/SynchronizedParameter)
+extern "C"  bool U3CGetParameterSynchronizeTypeU3Ec__AnonStoreyC_U3CU3Em__6_m3025626674 (U3CGetParameterSynchronizeTypeU3Ec__AnonStoreyC_t3056155807 * __this, SynchronizedParameter_t3311342805 * ___item, const MethodInfo* method) IL2CPP_METHOD_ATTR;

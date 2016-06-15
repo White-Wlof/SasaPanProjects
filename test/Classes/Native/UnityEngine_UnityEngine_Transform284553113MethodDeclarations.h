@@ -47,6 +47,10 @@ extern "C"  void Transform_INTERNAL_set_localPosition_m221305727 (Transform_t284
 extern "C"  Vector3_t3525329789  Transform_get_eulerAngles_m1058084741 (Transform_t284553113 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Transform::set_eulerAngles(UnityEngine.Vector3)
 extern "C"  void Transform_set_eulerAngles_m1704681314 (Transform_t284553113 * __this, Vector3_t3525329789  ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Transform::get_localEulerAngles()
+extern "C"  Vector3_t3525329789  Transform_get_localEulerAngles_m3489183428 (Transform_t284553113 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Transform::INTERNAL_get_localEulerAngles(UnityEngine.Vector3&)
+extern "C"  void Transform_INTERNAL_get_localEulerAngles_m2659489127 (Transform_t284553113 * __this, Vector3_t3525329789 * ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Transform::get_right()
 extern "C"  Vector3_t3525329789  Transform_get_right_m2070836824 (Transform_t284553113 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.Transform::get_up()

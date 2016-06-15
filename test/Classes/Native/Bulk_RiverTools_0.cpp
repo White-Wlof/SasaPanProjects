@@ -106,19 +106,19 @@ struct MeshFilter_t4177078322;
 #include "UnityEngine_UnityEngine_Vector23525329788MethodDeclarations.h"
 
 // !!0 UnityEngine.GameObject::AddComponent<System.Object>()
-extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m337943659_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
-#define GameObject_AddComponent_TisIl2CppObject_m337943659(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
+extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
+#define GameObject_AddComponent_TisIl2CppObject_m1123549903(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.MeshRenderer>()
-#define GameObject_AddComponent_TisMeshRenderer_t1217738301_m2779950442(__this, method) ((  MeshRenderer_t1217738301 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
+#define GameObject_AddComponent_TisMeshRenderer_t1217738301_m2779950442(__this, method) ((  MeshRenderer_t1217738301 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.MeshFilter>()
-#define GameObject_AddComponent_TisMeshFilter_t4177078322_m1840490005(__this, method) ((  MeshFilter_t4177078322 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
+#define GameObject_AddComponent_TisMeshFilter_t4177078322_m1840490005(__this, method) ((  MeshFilter_t4177078322 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m1123549903_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<System.Object>()
-extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
-#define GameObject_GetComponent_TisIl2CppObject_m2447772384(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
+extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
+#define GameObject_GetComponent_TisIl2CppObject_m3233378628(__this, method) ((  Il2CppObject * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.MeshFilter>()
-#define GameObject_GetComponent_TisMeshFilter_t4177078322_m222210880(__this, method) ((  MeshFilter_t4177078322 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
+#define GameObject_GetComponent_TisMeshFilter_t4177078322_m222210880(__this, method) ((  MeshFilter_t4177078322 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.MeshRenderer>()
-#define GameObject_GetComponent_TisMeshRenderer_t1217738301_m2391872469(__this, method) ((  MeshRenderer_t1217738301 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
+#define GameObject_GetComponent_TisMeshRenderer_t1217738301_m2391872469(__this, method) ((  MeshRenderer_t1217738301 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gshared (Component_t2126946602 * __this, const MethodInfo* method);
 #define Component_GetComponent_TisIl2CppObject_m267839954(__this, method) ((  Il2CppObject * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
@@ -127,7 +127,7 @@ extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gsh
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.MeshRenderer>()
 #define Component_GetComponent_TisMeshRenderer_t1217738301_m2336630751(__this, method) ((  MeshRenderer_t1217738301 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<CurvePoint>()
-#define GameObject_GetComponent_TisCurvePoint_t131694081_m556656347(__this, method) ((  CurvePoint_t131694081 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m2447772384_gshared)(__this, method)
+#define GameObject_GetComponent_TisCurvePoint_t131694081_m556656347(__this, method) ((  CurvePoint_t131694081 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -137,7 +137,7 @@ extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gsh
 extern TypeInfo* List_1_t514686775_il2cpp_TypeInfo_var;
 extern TypeInfo* List_1_t27321462_il2cpp_TypeInfo_var;
 extern TypeInfo* List_1_t1755167990_il2cpp_TypeInfo_var;
-extern const MethodInfo* List_1__ctor_m2397334390_MethodInfo_var;
+extern const MethodInfo* List_1__ctor_m3330911122_MethodInfo_var;
 extern const MethodInfo* List_1__ctor_m3666403801_MethodInfo_var;
 extern const MethodInfo* List_1__ctor_m3971247943_MethodInfo_var;
 extern const uint32_t CubicSpline__ctor_m3896546124_MetadataUsageId;
@@ -154,7 +154,7 @@ extern "C"  void CubicSpline__ctor_m3896546124 (CubicSpline_t67207067 * __this, 
 		__this->set_smoothness_1((0.5f));
 		__this->set_isLocal_2((bool)1);
 		List_1_t514686775 * L_0 = (List_1_t514686775 *)il2cpp_codegen_object_new(List_1_t514686775_il2cpp_TypeInfo_var);
-		List_1__ctor_m2397334390(L_0, /*hidden argument*/List_1__ctor_m2397334390_MethodInfo_var);
+		List_1__ctor_m3330911122(L_0, /*hidden argument*/List_1__ctor_m3330911122_MethodInfo_var);
 		__this->set_ep_3(L_0);
 		List_1_t27321462 * L_1 = (List_1_t27321462 *)il2cpp_codegen_object_new(List_1_t27321462_il2cpp_TypeInfo_var);
 		List_1__ctor_m3666403801(L_1, /*hidden argument*/List_1__ctor_m3666403801_MethodInfo_var);
@@ -2487,7 +2487,7 @@ extern TypeInfo* List_1_t27321462_il2cpp_TypeInfo_var;
 extern TypeInfo* List_1_t3644373756_il2cpp_TypeInfo_var;
 extern TypeInfo* List_1_t2385134729_il2cpp_TypeInfo_var;
 extern TypeInfo* List_1_t27321461_il2cpp_TypeInfo_var;
-extern const MethodInfo* List_1__ctor_m2397334390_MethodInfo_var;
+extern const MethodInfo* List_1__ctor_m3330911122_MethodInfo_var;
 extern const MethodInfo* List_1__ctor_m3807442832_MethodInfo_var;
 extern const MethodInfo* List_1__ctor_m3666403801_MethodInfo_var;
 extern const MethodInfo* List_1__ctor_m1339192537_MethodInfo_var;
@@ -2510,7 +2510,7 @@ extern "C"  void RiverTool__ctor_m816312422 (RiverTool_t774771108 * __this, cons
 		__this->set_gizmoSize_6((1.0f));
 		__this->set_UpdateMesh_7((bool)1);
 		List_1_t514686775 * L_0 = (List_1_t514686775 *)il2cpp_codegen_object_new(List_1_t514686775_il2cpp_TypeInfo_var);
-		List_1__ctor_m2397334390(L_0, /*hidden argument*/List_1__ctor_m2397334390_MethodInfo_var);
+		List_1__ctor_m3330911122(L_0, /*hidden argument*/List_1__ctor_m3330911122_MethodInfo_var);
 		__this->set_points_8(L_0);
 		List_1_t874251881 * L_1 = (List_1_t874251881 *)il2cpp_codegen_object_new(List_1_t874251881_il2cpp_TypeInfo_var);
 		List_1__ctor_m3807442832(L_1, /*hidden argument*/List_1__ctor_m3807442832_MethodInfo_var);

@@ -28,6 +28,8 @@
 #define Stack_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m227065240(__this, method) ((  Il2CppObject* (*) (Stack_1_t1199344310 *, const MethodInfo*))Stack_1_System_Collections_Generic_IEnumerableU3CTU3E_GetEnumerator_m625377314_gshared)(__this, method)
 // System.Collections.IEnumerator System.Collections.Generic.Stack`1<System.Collections.Generic.List`1<UnityEngine.Component>>::System.Collections.IEnumerable.GetEnumerator()
 #define Stack_1_System_Collections_IEnumerable_GetEnumerator_m2095728461(__this, method) ((  Il2CppObject * (*) (Stack_1_t1199344310 *, const MethodInfo*))Stack_1_System_Collections_IEnumerable_GetEnumerator_m4095051687_gshared)(__this, method)
+// System.Void System.Collections.Generic.Stack`1<System.Collections.Generic.List`1<UnityEngine.Component>>::Clear()
+#define Stack_1_Clear_m2069187569(__this, method) ((  void (*) (Stack_1_t1199344310 *, const MethodInfo*))Stack_1_Clear_m131822403_gshared)(__this, method)
 // T System.Collections.Generic.Stack`1<System.Collections.Generic.List`1<UnityEngine.Component>>::Peek()
 #define Stack_1_Peek_m1353289240(__this, method) ((  List_1_t2923905571 * (*) (Stack_1_t1199344310 *, const MethodInfo*))Stack_1_Peek_m3418768488_gshared)(__this, method)
 // T System.Collections.Generic.Stack`1<System.Collections.Generic.List`1<UnityEngine.Component>>::Pop()

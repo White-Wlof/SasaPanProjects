@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 namespace Game
@@ -8,6 +8,14 @@ namespace Game
     {
     
         [SerializeField] Camera mainCamera;
+
+        void Start()
+        {
+            if (!mainCamera)
+            {
+                mainCamera = Camera.main;
+            }
+        }
         // Update is called once per frame
         void Update()
         {

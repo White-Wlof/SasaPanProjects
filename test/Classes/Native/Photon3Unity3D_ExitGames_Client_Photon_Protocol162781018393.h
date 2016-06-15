@@ -39,10 +39,6 @@ public:
 	Int64U5BU5D_t753178071* ___memLongBlock_2;
 	// System.Byte[] ExitGames.Client.Photon.Protocol16::memLongBlockBytes
 	ByteU5BU5D_t58506160* ___memLongBlockBytes_3;
-	// System.Single[] ExitGames.Client.Photon.Protocol16::memFloatBlock
-	SingleU5BU5D_t1219431280* ___memFloatBlock_4;
-	// System.Byte[] ExitGames.Client.Photon.Protocol16::memFloatBlockBytes
-	ByteU5BU5D_t58506160* ___memFloatBlockBytes_5;
 	// System.Double[] ExitGames.Client.Photon.Protocol16::memDoubleBlock
 	DoubleU5BU5D_t1048280995* ___memDoubleBlock_6;
 	// System.Byte[] ExitGames.Client.Photon.Protocol16::memDoubleBlockBytes
@@ -53,10 +49,8 @@ public:
 	ByteU5BU5D_t58506160* ___memLong_9;
 	// System.Byte[] ExitGames.Client.Photon.Protocol16::memFloat
 	ByteU5BU5D_t58506160* ___memFloat_10;
-	// System.Byte[] ExitGames.Client.Photon.Protocol16::memDeserialize
-	ByteU5BU5D_t58506160* ___memDeserialize_11;
 	// System.Byte[] ExitGames.Client.Photon.Protocol16::memDouble
-	ByteU5BU5D_t58506160* ___memDouble_12;
+	ByteU5BU5D_t58506160* ___memDouble_11;
 
 public:
 	inline static int32_t get_offset_of_versionBytes_0() { return static_cast<int32_t>(offsetof(Protocol16_t2781018393, ___versionBytes_0)); }
@@ -93,24 +87,6 @@ public:
 	{
 		___memLongBlockBytes_3 = value;
 		Il2CppCodeGenWriteBarrier(&___memLongBlockBytes_3, value);
-	}
-
-	inline static int32_t get_offset_of_memFloatBlock_4() { return static_cast<int32_t>(offsetof(Protocol16_t2781018393, ___memFloatBlock_4)); }
-	inline SingleU5BU5D_t1219431280* get_memFloatBlock_4() const { return ___memFloatBlock_4; }
-	inline SingleU5BU5D_t1219431280** get_address_of_memFloatBlock_4() { return &___memFloatBlock_4; }
-	inline void set_memFloatBlock_4(SingleU5BU5D_t1219431280* value)
-	{
-		___memFloatBlock_4 = value;
-		Il2CppCodeGenWriteBarrier(&___memFloatBlock_4, value);
-	}
-
-	inline static int32_t get_offset_of_memFloatBlockBytes_5() { return static_cast<int32_t>(offsetof(Protocol16_t2781018393, ___memFloatBlockBytes_5)); }
-	inline ByteU5BU5D_t58506160* get_memFloatBlockBytes_5() const { return ___memFloatBlockBytes_5; }
-	inline ByteU5BU5D_t58506160** get_address_of_memFloatBlockBytes_5() { return &___memFloatBlockBytes_5; }
-	inline void set_memFloatBlockBytes_5(ByteU5BU5D_t58506160* value)
-	{
-		___memFloatBlockBytes_5 = value;
-		Il2CppCodeGenWriteBarrier(&___memFloatBlockBytes_5, value);
 	}
 
 	inline static int32_t get_offset_of_memDoubleBlock_6() { return static_cast<int32_t>(offsetof(Protocol16_t2781018393, ___memDoubleBlock_6)); }
@@ -158,22 +134,41 @@ public:
 		Il2CppCodeGenWriteBarrier(&___memFloat_10, value);
 	}
 
-	inline static int32_t get_offset_of_memDeserialize_11() { return static_cast<int32_t>(offsetof(Protocol16_t2781018393, ___memDeserialize_11)); }
-	inline ByteU5BU5D_t58506160* get_memDeserialize_11() const { return ___memDeserialize_11; }
-	inline ByteU5BU5D_t58506160** get_address_of_memDeserialize_11() { return &___memDeserialize_11; }
-	inline void set_memDeserialize_11(ByteU5BU5D_t58506160* value)
+	inline static int32_t get_offset_of_memDouble_11() { return static_cast<int32_t>(offsetof(Protocol16_t2781018393, ___memDouble_11)); }
+	inline ByteU5BU5D_t58506160* get_memDouble_11() const { return ___memDouble_11; }
+	inline ByteU5BU5D_t58506160** get_address_of_memDouble_11() { return &___memDouble_11; }
+	inline void set_memDouble_11(ByteU5BU5D_t58506160* value)
 	{
-		___memDeserialize_11 = value;
-		Il2CppCodeGenWriteBarrier(&___memDeserialize_11, value);
+		___memDouble_11 = value;
+		Il2CppCodeGenWriteBarrier(&___memDouble_11, value);
+	}
+};
+
+struct Protocol16_t2781018393_StaticFields
+{
+public:
+	// System.Single[] ExitGames.Client.Photon.Protocol16::memFloatBlock
+	SingleU5BU5D_t1219431280* ___memFloatBlock_4;
+	// System.Byte[] ExitGames.Client.Photon.Protocol16::memFloatBlockBytes
+	ByteU5BU5D_t58506160* ___memFloatBlockBytes_5;
+
+public:
+	inline static int32_t get_offset_of_memFloatBlock_4() { return static_cast<int32_t>(offsetof(Protocol16_t2781018393_StaticFields, ___memFloatBlock_4)); }
+	inline SingleU5BU5D_t1219431280* get_memFloatBlock_4() const { return ___memFloatBlock_4; }
+	inline SingleU5BU5D_t1219431280** get_address_of_memFloatBlock_4() { return &___memFloatBlock_4; }
+	inline void set_memFloatBlock_4(SingleU5BU5D_t1219431280* value)
+	{
+		___memFloatBlock_4 = value;
+		Il2CppCodeGenWriteBarrier(&___memFloatBlock_4, value);
 	}
 
-	inline static int32_t get_offset_of_memDouble_12() { return static_cast<int32_t>(offsetof(Protocol16_t2781018393, ___memDouble_12)); }
-	inline ByteU5BU5D_t58506160* get_memDouble_12() const { return ___memDouble_12; }
-	inline ByteU5BU5D_t58506160** get_address_of_memDouble_12() { return &___memDouble_12; }
-	inline void set_memDouble_12(ByteU5BU5D_t58506160* value)
+	inline static int32_t get_offset_of_memFloatBlockBytes_5() { return static_cast<int32_t>(offsetof(Protocol16_t2781018393_StaticFields, ___memFloatBlockBytes_5)); }
+	inline ByteU5BU5D_t58506160* get_memFloatBlockBytes_5() const { return ___memFloatBlockBytes_5; }
+	inline ByteU5BU5D_t58506160** get_address_of_memFloatBlockBytes_5() { return &___memFloatBlockBytes_5; }
+	inline void set_memFloatBlockBytes_5(ByteU5BU5D_t58506160* value)
 	{
-		___memDouble_12 = value;
-		Il2CppCodeGenWriteBarrier(&___memDouble_12, value);
+		___memFloatBlockBytes_5 = value;
+		Il2CppCodeGenWriteBarrier(&___memFloatBlockBytes_5, value);
 	}
 };
 

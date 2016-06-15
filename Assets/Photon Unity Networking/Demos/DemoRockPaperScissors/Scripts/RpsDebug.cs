@@ -1,8 +1,8 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class RpsDebug : MonoBehaviour {
+public class RpsDebug : Photon.MonoBehaviour {
 
     [SerializeField]
     private Button ConnectionDebugButton;

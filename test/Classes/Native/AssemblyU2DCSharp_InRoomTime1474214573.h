@@ -13,7 +13,7 @@
 // System.String
 struct String_t;
 
-#include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+#include "AssemblyU2DCSharp_Photon_MonoBehaviour4025988718.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -22,19 +22,19 @@ struct String_t;
 #endif
 
 // InRoomTime
-struct  InRoomTime_t1474214573  : public MonoBehaviour_t3012272455
+struct  InRoomTime_t1474214573  : public MonoBehaviour_t4025988718
 {
 public:
 	// System.Int32 InRoomTime::roomStartTimestamp
-	int32_t ___roomStartTimestamp_3;
+	int32_t ___roomStartTimestamp_4;
 
 public:
-	inline static int32_t get_offset_of_roomStartTimestamp_3() { return static_cast<int32_t>(offsetof(InRoomTime_t1474214573, ___roomStartTimestamp_3)); }
-	inline int32_t get_roomStartTimestamp_3() const { return ___roomStartTimestamp_3; }
-	inline int32_t* get_address_of_roomStartTimestamp_3() { return &___roomStartTimestamp_3; }
-	inline void set_roomStartTimestamp_3(int32_t value)
+	inline static int32_t get_offset_of_roomStartTimestamp_4() { return static_cast<int32_t>(offsetof(InRoomTime_t1474214573, ___roomStartTimestamp_4)); }
+	inline int32_t get_roomStartTimestamp_4() const { return ___roomStartTimestamp_4; }
+	inline int32_t* get_address_of_roomStartTimestamp_4() { return &___roomStartTimestamp_4; }
+	inline void set_roomStartTimestamp_4(int32_t value)
 	{
-		___roomStartTimestamp_3 = value;
+		___roomStartTimestamp_4 = value;
 	}
 };
 

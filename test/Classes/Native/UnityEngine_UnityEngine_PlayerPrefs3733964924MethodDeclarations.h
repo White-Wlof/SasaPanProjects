@@ -26,5 +26,7 @@ extern "C"  void PlayerPrefs_SetString_m989974275 (Il2CppObject * __this /* stat
 extern "C"  String_t* PlayerPrefs_GetString_m3230559948 (Il2CppObject * __this /* static, unused */, String_t* ___key, String_t* ___defaultValue, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String UnityEngine.PlayerPrefs::GetString(System.String)
 extern "C"  String_t* PlayerPrefs_GetString_m378864272 (Il2CppObject * __this /* static, unused */, String_t* ___key, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.PlayerPrefs::HasKey(System.String)
+extern "C"  bool PlayerPrefs_HasKey_m2032560073 (Il2CppObject * __this /* static, unused */, String_t* ___key, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.PlayerPrefs::DeleteKey(System.String)
 extern "C"  void PlayerPrefs_DeleteKey_m1547199302 (Il2CppObject * __this /* static, unused */, String_t* ___key, const MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -51,24 +51,26 @@ public:
 	int32_t ___fragmentOffset_26;
 	// System.Int32 ExitGames.Client.Photon.NCommand::fragmentsRemaining
 	int32_t ___fragmentsRemaining_27;
-	// System.Byte[] ExitGames.Client.Photon.NCommand::Payload
-	ByteU5BU5D_t58506160* ___Payload_28;
 	// System.Int32 ExitGames.Client.Photon.NCommand::commandSentTime
-	int32_t ___commandSentTime_29;
+	int32_t ___commandSentTime_28;
 	// System.Byte ExitGames.Client.Photon.NCommand::commandSentCount
-	uint8_t ___commandSentCount_30;
+	uint8_t ___commandSentCount_29;
 	// System.Int32 ExitGames.Client.Photon.NCommand::roundTripTimeout
-	int32_t ___roundTripTimeout_31;
+	int32_t ___roundTripTimeout_30;
 	// System.Int32 ExitGames.Client.Photon.NCommand::timeoutTime
-	int32_t ___timeoutTime_32;
+	int32_t ___timeoutTime_31;
 	// System.Int32 ExitGames.Client.Photon.NCommand::ackReceivedReliableSequenceNumber
-	int32_t ___ackReceivedReliableSequenceNumber_33;
+	int32_t ___ackReceivedReliableSequenceNumber_32;
 	// System.Int32 ExitGames.Client.Photon.NCommand::ackReceivedSentTime
-	int32_t ___ackReceivedSentTime_34;
-	// System.Byte[] ExitGames.Client.Photon.NCommand::completeCommand
-	ByteU5BU5D_t58506160* ___completeCommand_46;
+	int32_t ___ackReceivedSentTime_33;
 	// System.Int32 ExitGames.Client.Photon.NCommand::Size
-	int32_t ___Size_47;
+	int32_t ___Size_45;
+	// System.Byte[] ExitGames.Client.Photon.NCommand::commandHeader
+	ByteU5BU5D_t58506160* ___commandHeader_46;
+	// System.Int32 ExitGames.Client.Photon.NCommand::SizeOfHeader
+	int32_t ___SizeOfHeader_47;
+	// System.Byte[] ExitGames.Client.Photon.NCommand::Payload
+	ByteU5BU5D_t58506160* ___Payload_48;
 
 public:
 	inline static int32_t get_offset_of_commandFlags_0() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___commandFlags_0)); }
@@ -175,78 +177,86 @@ public:
 		___fragmentsRemaining_27 = value;
 	}
 
-	inline static int32_t get_offset_of_Payload_28() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___Payload_28)); }
-	inline ByteU5BU5D_t58506160* get_Payload_28() const { return ___Payload_28; }
-	inline ByteU5BU5D_t58506160** get_address_of_Payload_28() { return &___Payload_28; }
-	inline void set_Payload_28(ByteU5BU5D_t58506160* value)
+	inline static int32_t get_offset_of_commandSentTime_28() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___commandSentTime_28)); }
+	inline int32_t get_commandSentTime_28() const { return ___commandSentTime_28; }
+	inline int32_t* get_address_of_commandSentTime_28() { return &___commandSentTime_28; }
+	inline void set_commandSentTime_28(int32_t value)
 	{
-		___Payload_28 = value;
-		Il2CppCodeGenWriteBarrier(&___Payload_28, value);
+		___commandSentTime_28 = value;
 	}
 
-	inline static int32_t get_offset_of_commandSentTime_29() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___commandSentTime_29)); }
-	inline int32_t get_commandSentTime_29() const { return ___commandSentTime_29; }
-	inline int32_t* get_address_of_commandSentTime_29() { return &___commandSentTime_29; }
-	inline void set_commandSentTime_29(int32_t value)
+	inline static int32_t get_offset_of_commandSentCount_29() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___commandSentCount_29)); }
+	inline uint8_t get_commandSentCount_29() const { return ___commandSentCount_29; }
+	inline uint8_t* get_address_of_commandSentCount_29() { return &___commandSentCount_29; }
+	inline void set_commandSentCount_29(uint8_t value)
 	{
-		___commandSentTime_29 = value;
+		___commandSentCount_29 = value;
 	}
 
-	inline static int32_t get_offset_of_commandSentCount_30() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___commandSentCount_30)); }
-	inline uint8_t get_commandSentCount_30() const { return ___commandSentCount_30; }
-	inline uint8_t* get_address_of_commandSentCount_30() { return &___commandSentCount_30; }
-	inline void set_commandSentCount_30(uint8_t value)
+	inline static int32_t get_offset_of_roundTripTimeout_30() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___roundTripTimeout_30)); }
+	inline int32_t get_roundTripTimeout_30() const { return ___roundTripTimeout_30; }
+	inline int32_t* get_address_of_roundTripTimeout_30() { return &___roundTripTimeout_30; }
+	inline void set_roundTripTimeout_30(int32_t value)
 	{
-		___commandSentCount_30 = value;
+		___roundTripTimeout_30 = value;
 	}
 
-	inline static int32_t get_offset_of_roundTripTimeout_31() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___roundTripTimeout_31)); }
-	inline int32_t get_roundTripTimeout_31() const { return ___roundTripTimeout_31; }
-	inline int32_t* get_address_of_roundTripTimeout_31() { return &___roundTripTimeout_31; }
-	inline void set_roundTripTimeout_31(int32_t value)
+	inline static int32_t get_offset_of_timeoutTime_31() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___timeoutTime_31)); }
+	inline int32_t get_timeoutTime_31() const { return ___timeoutTime_31; }
+	inline int32_t* get_address_of_timeoutTime_31() { return &___timeoutTime_31; }
+	inline void set_timeoutTime_31(int32_t value)
 	{
-		___roundTripTimeout_31 = value;
+		___timeoutTime_31 = value;
 	}
 
-	inline static int32_t get_offset_of_timeoutTime_32() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___timeoutTime_32)); }
-	inline int32_t get_timeoutTime_32() const { return ___timeoutTime_32; }
-	inline int32_t* get_address_of_timeoutTime_32() { return &___timeoutTime_32; }
-	inline void set_timeoutTime_32(int32_t value)
+	inline static int32_t get_offset_of_ackReceivedReliableSequenceNumber_32() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___ackReceivedReliableSequenceNumber_32)); }
+	inline int32_t get_ackReceivedReliableSequenceNumber_32() const { return ___ackReceivedReliableSequenceNumber_32; }
+	inline int32_t* get_address_of_ackReceivedReliableSequenceNumber_32() { return &___ackReceivedReliableSequenceNumber_32; }
+	inline void set_ackReceivedReliableSequenceNumber_32(int32_t value)
 	{
-		___timeoutTime_32 = value;
+		___ackReceivedReliableSequenceNumber_32 = value;
 	}
 
-	inline static int32_t get_offset_of_ackReceivedReliableSequenceNumber_33() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___ackReceivedReliableSequenceNumber_33)); }
-	inline int32_t get_ackReceivedReliableSequenceNumber_33() const { return ___ackReceivedReliableSequenceNumber_33; }
-	inline int32_t* get_address_of_ackReceivedReliableSequenceNumber_33() { return &___ackReceivedReliableSequenceNumber_33; }
-	inline void set_ackReceivedReliableSequenceNumber_33(int32_t value)
+	inline static int32_t get_offset_of_ackReceivedSentTime_33() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___ackReceivedSentTime_33)); }
+	inline int32_t get_ackReceivedSentTime_33() const { return ___ackReceivedSentTime_33; }
+	inline int32_t* get_address_of_ackReceivedSentTime_33() { return &___ackReceivedSentTime_33; }
+	inline void set_ackReceivedSentTime_33(int32_t value)
 	{
-		___ackReceivedReliableSequenceNumber_33 = value;
+		___ackReceivedSentTime_33 = value;
 	}
 
-	inline static int32_t get_offset_of_ackReceivedSentTime_34() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___ackReceivedSentTime_34)); }
-	inline int32_t get_ackReceivedSentTime_34() const { return ___ackReceivedSentTime_34; }
-	inline int32_t* get_address_of_ackReceivedSentTime_34() { return &___ackReceivedSentTime_34; }
-	inline void set_ackReceivedSentTime_34(int32_t value)
+	inline static int32_t get_offset_of_Size_45() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___Size_45)); }
+	inline int32_t get_Size_45() const { return ___Size_45; }
+	inline int32_t* get_address_of_Size_45() { return &___Size_45; }
+	inline void set_Size_45(int32_t value)
 	{
-		___ackReceivedSentTime_34 = value;
+		___Size_45 = value;
 	}
 
-	inline static int32_t get_offset_of_completeCommand_46() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___completeCommand_46)); }
-	inline ByteU5BU5D_t58506160* get_completeCommand_46() const { return ___completeCommand_46; }
-	inline ByteU5BU5D_t58506160** get_address_of_completeCommand_46() { return &___completeCommand_46; }
-	inline void set_completeCommand_46(ByteU5BU5D_t58506160* value)
+	inline static int32_t get_offset_of_commandHeader_46() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___commandHeader_46)); }
+	inline ByteU5BU5D_t58506160* get_commandHeader_46() const { return ___commandHeader_46; }
+	inline ByteU5BU5D_t58506160** get_address_of_commandHeader_46() { return &___commandHeader_46; }
+	inline void set_commandHeader_46(ByteU5BU5D_t58506160* value)
 	{
-		___completeCommand_46 = value;
-		Il2CppCodeGenWriteBarrier(&___completeCommand_46, value);
+		___commandHeader_46 = value;
+		Il2CppCodeGenWriteBarrier(&___commandHeader_46, value);
 	}
 
-	inline static int32_t get_offset_of_Size_47() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___Size_47)); }
-	inline int32_t get_Size_47() const { return ___Size_47; }
-	inline int32_t* get_address_of_Size_47() { return &___Size_47; }
-	inline void set_Size_47(int32_t value)
+	inline static int32_t get_offset_of_SizeOfHeader_47() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___SizeOfHeader_47)); }
+	inline int32_t get_SizeOfHeader_47() const { return ___SizeOfHeader_47; }
+	inline int32_t* get_address_of_SizeOfHeader_47() { return &___SizeOfHeader_47; }
+	inline void set_SizeOfHeader_47(int32_t value)
 	{
-		___Size_47 = value;
+		___SizeOfHeader_47 = value;
+	}
+
+	inline static int32_t get_offset_of_Payload_48() { return static_cast<int32_t>(offsetof(NCommand_t3301568857, ___Payload_48)); }
+	inline ByteU5BU5D_t58506160* get_Payload_48() const { return ___Payload_48; }
+	inline ByteU5BU5D_t58506160** get_address_of_Payload_48() { return &___Payload_48; }
+	inline void set_Payload_48(ByteU5BU5D_t58506160* value)
+	{
+		___Payload_48 = value;
+		Il2CppCodeGenWriteBarrier(&___Payload_48, value);
 	}
 };
 

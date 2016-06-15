@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEditor;
 
 [InitializeOnLoad]
-public class PunStartup : MonoBehaviour
+public class PunStartup : Photon.MonoBehaviour
 { 
     // paths to demo scenes to setup (if needed)
     private const string demoBasePath = "Assets/Photon Unity Networking/Demos/";

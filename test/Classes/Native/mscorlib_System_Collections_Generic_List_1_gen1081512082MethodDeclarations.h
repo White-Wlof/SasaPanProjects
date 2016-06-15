@@ -17,7 +17,7 @@
 #include "mscorlib_System_Collections_Generic_List_1_gen1634065389MethodDeclarations.h"
 
 // System.Void System.Collections.Generic.List`1<UnityEngine.Transform>::.ctor()
-#define List_1__ctor_m3030514059(__this, method) ((  void (*) (List_1_t1081512082 *, const MethodInfo*))List_1__ctor_m574172797_gshared)(__this, method)
+#define List_1__ctor_m1640872948(__this, method) ((  void (*) (List_1_t1081512082 *, const MethodInfo*))List_1__ctor_m574172797_gshared)(__this, method)
 // System.Void System.Collections.Generic.List`1<UnityEngine.Transform>::.ctor(System.Collections.Generic.IEnumerable`1<T>)
 #define List_1__ctor_m2749336084(__this, ___collection, method) ((  void (*) (List_1_t1081512082 *, Il2CppObject*, const MethodInfo*))List_1__ctor_m1160795371_gshared)(__this, ___collection, method)
 // System.Void System.Collections.Generic.List`1<UnityEngine.Transform>::.ctor(System.Int32)
@@ -83,7 +83,7 @@
 // System.Int32 System.Collections.Generic.List`1<UnityEngine.Transform>::GetIndex(System.Int32,System.Int32,System.Predicate`1<T>)
 #define List_1_GetIndex_m830151940(__this, ___startIndex, ___count, ___match, method) ((  int32_t (*) (List_1_t1081512082 *, int32_t, int32_t, Predicate_1_t855517011 *, const MethodInfo*))List_1_GetIndex_m4275988045_gshared)(__this, ___startIndex, ___count, ___match, method)
 // System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<UnityEngine.Transform>::GetEnumerator()
-#define List_1_GetEnumerator_m3449449761(__this, method) ((  Enumerator_t3462262370  (*) (List_1_t1081512082 *, const MethodInfo*))List_1_GetEnumerator_m2326457258_gshared)(__this, method)
+#define List_1_GetEnumerator_m2397229751(__this, method) ((  Enumerator_t3462262370  (*) (List_1_t1081512082 *, const MethodInfo*))List_1_GetEnumerator_m2326457258_gshared)(__this, method)
 // System.Int32 System.Collections.Generic.List`1<UnityEngine.Transform>::IndexOf(T)
 #define List_1_IndexOf_m1734769928(__this, ___item, method) ((  int32_t (*) (List_1_t1081512082 *, Transform_t284553113 *, const MethodInfo*))List_1_IndexOf_m1752303327_gshared)(__this, ___item, method)
 // System.Void System.Collections.Generic.List`1<UnityEngine.Transform>::Shift(System.Int32,System.Int32)

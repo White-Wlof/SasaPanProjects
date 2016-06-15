@@ -2,11 +2,12 @@ using ExitGames.Client.Photon;
 using UnityEngine;
 using System.Collections;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
+using Photon;
 
 /// <summary>
 /// A minimal UI to show connection info in a demo.
 /// </summary>
-public class IELdemo : MonoBehaviour
+public class IELdemo : Photon.MonoBehaviour
 {
     public GUISkin Skin;
 

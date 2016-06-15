@@ -345,5 +345,5 @@ extern "C"  void PhotonNetwork_LoadLevel_m1678905958 (Il2CppObject * __this /* s
 extern "C"  void PhotonNetwork_LoadLevel_m963175565 (Il2CppObject * __this /* static, unused */, String_t* ___levelName, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean PhotonNetwork::WebRpc(System.String,System.Object)
 extern "C"  bool PhotonNetwork_WebRpc_m1783047400 (Il2CppObject * __this /* static, unused */, String_t* ___name, Il2CppObject * ___parameters, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 PhotonNetwork::<PhotonNetwork>m__0()
-extern "C"  int32_t PhotonNetwork_U3CPhotonNetworkU3Em__0_m1092822864 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 PhotonNetwork::<PhotonNetwork>m__2()
+extern "C"  int32_t PhotonNetwork_U3CPhotonNetworkU3Em__2_m1092824786 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;

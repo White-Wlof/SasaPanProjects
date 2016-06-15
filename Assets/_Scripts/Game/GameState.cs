@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
@@ -6,7 +6,7 @@ using DG.Tweening;
 
 namespace Game
 {
-    public class GameState : MonoBehaviour
+    public class GameState : Photon.MonoBehaviour
     {
         bool GameStart;
         bool GameFinish;
@@ -26,6 +26,8 @@ namespace Game
         {
             players.Add(GameObject.FindGameObjectWithTag("Player").transform);
             players.Add(GameObject.FindGameObjectWithTag("Rival").transform);
+            changeInitializePosition();
+
             //Ready
             Invoke("showSignText", 0.1f);
             Invoke("middleSignText", 0.4f);
@@ -97,6 +99,21 @@ namespace Game
                     break;
                 case 3:
                     GameFinish = true;
+                    break;
+            }
+        }
+
+        void changeInitializePosition()
+        {
+            var playerType = PlayerPrefs.GetString("PLAYER_TYPE", "null");
+            switch (playerType)
+            {
+                case "Parent":
+                    break;
+                case "Child":
+                    var pos = players[0].transform.position;
+                    players[0].transform.position = players[1].transform.position;
+                    players[1].transform.position = pos;
                     break;
             }
         }

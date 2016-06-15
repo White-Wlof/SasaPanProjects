@@ -39903,6 +39903,25 @@ extern "C"  int32_t Decimal_decimalCompare_m57377858 (Il2CppObject * __this /* s
 	typedef int32_t (*Decimal_decimalCompare_m57377858_ftn) (Decimal_t1688557254 *, Decimal_t1688557254 *);
 	return  ((Decimal_decimalCompare_m57377858_ftn)mscorlib::System::Decimal::decimalCompare) (___d1, ___d2);
 }
+// System.Decimal System.Decimal::op_Addition(System.Decimal,System.Decimal)
+extern TypeInfo* Decimal_t1688557254_il2cpp_TypeInfo_var;
+extern const uint32_t Decimal_op_Addition_m2934565287_MetadataUsageId;
+extern "C"  Decimal_t1688557254  Decimal_op_Addition_m2934565287 (Il2CppObject * __this /* static, unused */, Decimal_t1688557254  ___d1, Decimal_t1688557254  ___d2, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Decimal_op_Addition_m2934565287_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Decimal_t1688557254  L_0 = ___d1;
+		Decimal_t1688557254  L_1 = ___d2;
+		IL2CPP_RUNTIME_CLASS_INIT(Decimal_t1688557254_il2cpp_TypeInfo_var);
+		Decimal_t1688557254  L_2 = Decimal_Add_m228744192(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
 // System.Decimal System.Decimal::op_Increment(System.Decimal)
 extern TypeInfo* Decimal_t1688557254_il2cpp_TypeInfo_var;
 extern const uint32_t Decimal_op_Increment_m1999568348_MetadataUsageId;

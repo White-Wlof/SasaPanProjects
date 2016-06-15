@@ -34,6 +34,12 @@ extern "C"  float Rigidbody2D_get_angularVelocity_m3714473050 (Rigidbody2D_t3632
 extern "C"  void Rigidbody2D_set_angularVelocity_m1393720209 (Rigidbody2D_t3632243084 * __this, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Rigidbody2D::set_isKinematic(System.Boolean)
 extern "C"  void Rigidbody2D_set_isKinematic_m222467693 (Rigidbody2D_t3632243084 * __this, bool ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Rigidbody2D::IsSleeping()
+extern "C"  bool Rigidbody2D_IsSleeping_m4134977273 (Rigidbody2D_t3632243084 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Rigidbody2D::Sleep()
+extern "C"  void Rigidbody2D_Sleep_m1892894479 (Rigidbody2D_t3632243084 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Rigidbody2D::WakeUp()
+extern "C"  void Rigidbody2D_WakeUp_m224894601 (Rigidbody2D_t3632243084 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Rigidbody2D::AddForce(UnityEngine.Vector2)
 extern "C"  void Rigidbody2D_AddForce_m312397382 (Rigidbody2D_t3632243084 * __this, Vector2_t3525329788  ___force, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Rigidbody2D::INTERNAL_CALL_AddForce(UnityEngine.Rigidbody2D,UnityEngine.Vector2&,UnityEngine.ForceMode2D)

@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class GUIFriendFinding : MonoBehaviour
+public class GUIFriendFinding : Photon.MonoBehaviour
 {
     private string[] friendListOfSomeCommunity;
     public Rect GuiRect;

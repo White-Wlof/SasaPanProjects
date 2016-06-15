@@ -41,6 +41,8 @@ extern "C"  float Input_GetAxisRaw_m1900207208 (Il2CppObject * __this /* static,
 extern "C"  bool Input_GetButton_m4226175975 (Il2CppObject * __this /* static, unused */, String_t* ___buttonName, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Input::GetButtonDown(System.String)
 extern "C"  bool Input_GetButtonDown_m1879002085 (Il2CppObject * __this /* static, unused */, String_t* ___buttonName, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean UnityEngine.Input::GetButtonUp(System.String)
+extern "C"  bool Input_GetButtonUp_m2712347212 (Il2CppObject * __this /* static, unused */, String_t* ___buttonName, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Input::GetKey(UnityEngine.KeyCode)
 extern "C"  bool Input_GetKey_m1349175653 (Il2CppObject * __this /* static, unused */, int32_t ___key, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Input::GetKeyDown(UnityEngine.KeyCode)

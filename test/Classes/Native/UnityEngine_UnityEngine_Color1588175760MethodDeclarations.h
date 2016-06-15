@@ -52,6 +52,18 @@ extern "C"  Color_t1588175760  Color_get_cyan_m3697299923 (Il2CppObject * __this
 extern "C"  Color_t1588175760  Color_get_grey_m3805481615 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Color UnityEngine.Color::get_clear()
 extern "C"  Color_t1588175760  Color_get_clear_m2578346879 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Color::get_grayscale()
+extern "C"  float Color_get_grayscale_m2120682942 (Color_t1588175760 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.Color::get_linear()
+extern "C"  Color_t1588175760  Color_get_linear_m3018143125 (Color_t1588175760 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.Color::get_gamma()
+extern "C"  Color_t1588175760  Color_get_gamma_m1526202969 (Color_t1588175760 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Color::get_maxColorComponent()
+extern "C"  float Color_get_maxColorComponent_m1565460629 (Color_t1588175760 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.Color::op_Addition(UnityEngine.Color,UnityEngine.Color)
+extern "C"  Color_t1588175760  Color_op_Addition_m1421556689 (Il2CppObject * __this /* static, unused */, Color_t1588175760  ___a, Color_t1588175760  ___b, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.Color::op_Subtraction(UnityEngine.Color,UnityEngine.Color)
+extern "C"  Color_t1588175760  Color_op_Subtraction_m2751495817 (Il2CppObject * __this /* static, unused */, Color_t1588175760  ___a, Color_t1588175760  ___b, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Color UnityEngine.Color::op_Multiply(UnityEngine.Color,System.Single)
 extern "C"  Color_t1588175760  Color_op_Multiply_m204757678 (Il2CppObject * __this /* static, unused */, Color_t1588175760  ___a, float ___b, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Color::op_Equality(UnityEngine.Color,UnityEngine.Color)

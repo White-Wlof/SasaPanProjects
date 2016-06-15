@@ -13,7 +13,7 @@
 // UnityEngine.GameObject
 struct GameObject_t4012695102;
 
-#include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+#include "AssemblyU2DCSharp_Photon_MonoBehaviour4025988718.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -22,20 +22,20 @@ struct GameObject_t4012695102;
 #endif
 
 // ManualPhotonViewAllocator
-struct  ManualPhotonViewAllocator_t2386814980  : public MonoBehaviour_t3012272455
+struct  ManualPhotonViewAllocator_t2386814980  : public MonoBehaviour_t4025988718
 {
 public:
 	// UnityEngine.GameObject ManualPhotonViewAllocator::Prefab
-	GameObject_t4012695102 * ___Prefab_2;
+	GameObject_t4012695102 * ___Prefab_3;
 
 public:
-	inline static int32_t get_offset_of_Prefab_2() { return static_cast<int32_t>(offsetof(ManualPhotonViewAllocator_t2386814980, ___Prefab_2)); }
-	inline GameObject_t4012695102 * get_Prefab_2() const { return ___Prefab_2; }
-	inline GameObject_t4012695102 ** get_address_of_Prefab_2() { return &___Prefab_2; }
-	inline void set_Prefab_2(GameObject_t4012695102 * value)
+	inline static int32_t get_offset_of_Prefab_3() { return static_cast<int32_t>(offsetof(ManualPhotonViewAllocator_t2386814980, ___Prefab_3)); }
+	inline GameObject_t4012695102 * get_Prefab_3() const { return ___Prefab_3; }
+	inline GameObject_t4012695102 ** get_address_of_Prefab_3() { return &___Prefab_3; }
+	inline void set_Prefab_3(GameObject_t4012695102 * value)
 	{
-		___Prefab_2 = value;
-		Il2CppCodeGenWriteBarrier(&___Prefab_2, value);
+		___Prefab_3 = value;
+		Il2CppCodeGenWriteBarrier(&___Prefab_3, value);
 	}
 };
 

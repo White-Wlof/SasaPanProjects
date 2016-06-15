@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
-public class PickupDemoGui : MonoBehaviour
+public class PickupDemoGui : Photon.MonoBehaviour
 {
     public bool ShowScores;
     public bool ShowDropButton;

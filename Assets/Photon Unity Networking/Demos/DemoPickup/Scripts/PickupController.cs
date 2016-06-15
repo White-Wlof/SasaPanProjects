@@ -12,7 +12,7 @@ public enum PickupCharacterState
 }
 
 [RequireComponent(typeof(CharacterController))]
-public class PickupController : MonoBehaviour, IPunObservable
+public class PickupController : Photon.MonoBehaviour, IPunObservable
 {
 
     public AnimationClip idleAnimation;

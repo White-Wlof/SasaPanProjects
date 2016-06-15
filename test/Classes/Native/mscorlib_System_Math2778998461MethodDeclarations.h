@@ -36,12 +36,16 @@ extern "C"  int32_t Math_Min_m811624909 (Il2CppObject * __this /* static, unused
 extern "C"  Decimal_t1688557254  Math_Round_m2659396224 (Il2CppObject * __this /* static, unused */, Decimal_t1688557254  ___d, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Round(System.Double)
 extern "C"  double Math_Round_m2587388934 (Il2CppObject * __this /* static, unused */, double ___a, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Double System.Math::Truncate(System.Double)
+extern "C"  double Math_Truncate_m534017384 (Il2CppObject * __this /* static, unused */, double ___d, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Sin(System.Double)
 extern "C"  double Math_Sin_m1832281148 (Il2CppObject * __this /* static, unused */, double ___a, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Cos(System.Double)
 extern "C"  double Math_Cos_m1877789613 (Il2CppObject * __this /* static, unused */, double ___d, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Acos(System.Double)
 extern "C"  double Math_Acos_m971391944 (Il2CppObject * __this /* static, unused */, double ___d, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Double System.Math::Asin(System.Double)
+extern "C"  double Math_Asin_m925883479 (Il2CppObject * __this /* static, unused */, double ___d, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Atan2(System.Double,System.Double)
 extern "C"  double Math_Atan2_m2472972670 (Il2CppObject * __this /* static, unused */, double ___y, double ___x, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Math::Log(System.Double)

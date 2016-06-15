@@ -24,3 +24,5 @@ struct CharacterController_t2029520850;
 extern "C"  int32_t CharacterController_Move_m3043020731 (CharacterController_t2029520850 * __this, Vector3_t3525329789  ___motion, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.CollisionFlags UnityEngine.CharacterController::INTERNAL_CALL_Move(UnityEngine.CharacterController,UnityEngine.Vector3&)
 extern "C"  int32_t CharacterController_INTERNAL_CALL_Move_m985801042 (Il2CppObject * __this /* static, unused */, CharacterController_t2029520850 * ___self, Vector3_t3525329789 * ___motion, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.CharacterController::get_height()
+extern "C"  float CharacterController_get_height_m2077757108 (CharacterController_t2029520850 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

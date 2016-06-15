@@ -13,7 +13,7 @@
 // System.String
 struct String_t;
 
-#include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+#include "AssemblyU2DCSharp_Photon_MonoBehaviour4025988718.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -22,7 +22,7 @@ struct String_t;
 #endif
 
 // PunPlayerScores
-struct  PunPlayerScores_t3305973739  : public MonoBehaviour_t3012272455
+struct  PunPlayerScores_t3305973739  : public MonoBehaviour_t4025988718
 {
 public:
 

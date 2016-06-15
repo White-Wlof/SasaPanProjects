@@ -150,6 +150,8 @@ extern "C"  int32_t Decimal_decimalMult_m3364322611 (Il2CppObject * __this /* st
 extern "C"  int32_t Decimal_decimalDiv_m3855399918 (Il2CppObject * __this /* static, unused */, Decimal_t1688557254 * ___pc, Decimal_t1688557254 * ___pa, Decimal_t1688557254 * ___pb, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Decimal::decimalCompare(System.Decimal&,System.Decimal&)
 extern "C"  int32_t Decimal_decimalCompare_m57377858 (Il2CppObject * __this /* static, unused */, Decimal_t1688557254 * ___d1, Decimal_t1688557254 * ___d2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Decimal System.Decimal::op_Addition(System.Decimal,System.Decimal)
+extern "C"  Decimal_t1688557254  Decimal_op_Addition_m2934565287 (Il2CppObject * __this /* static, unused */, Decimal_t1688557254  ___d1, Decimal_t1688557254  ___d2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Decimal System.Decimal::op_Increment(System.Decimal)
 extern "C"  Decimal_t1688557254  Decimal_op_Increment_m1999568348 (Il2CppObject * __this /* static, unused */, Decimal_t1688557254  ___d, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Decimal System.Decimal::op_Subtraction(System.Decimal,System.Decimal)

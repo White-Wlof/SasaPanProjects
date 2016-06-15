@@ -8,7 +8,7 @@ using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class WorkerMenu : MonoBehaviour
+public class WorkerMenu : Photon.MonoBehaviour
 {
     public GUISkin Skin;
     public Vector2 WidthAndHeight = new Vector2(600, 400);

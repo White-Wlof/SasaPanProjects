@@ -12,8 +12,8 @@
 
 // System.Object
 struct Il2CppObject;
-// System.IO.MemoryStream
-struct MemoryStream_t2881531048;
+// ExitGames.Client.Photon.StreamBuffer
+struct StreamBuffer_t433541692;
 // System.IAsyncResult
 struct IAsyncResult_t537683269;
 // System.AsyncCallback

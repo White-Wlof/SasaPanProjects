@@ -13,7 +13,7 @@
 // UnityEngine.GUISkin
 struct GUISkin_t2614611333;
 
-#include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+#include "AssemblyU2DCSharp_Photon_MonoBehaviour4025988718.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -22,20 +22,20 @@ struct GUISkin_t2614611333;
 #endif
 
 // IELdemo
-struct  IELdemo_t2411937939  : public MonoBehaviour_t3012272455
+struct  IELdemo_t2411937939  : public MonoBehaviour_t4025988718
 {
 public:
 	// UnityEngine.GUISkin IELdemo::Skin
-	GUISkin_t2614611333 * ___Skin_2;
+	GUISkin_t2614611333 * ___Skin_3;
 
 public:
-	inline static int32_t get_offset_of_Skin_2() { return static_cast<int32_t>(offsetof(IELdemo_t2411937939, ___Skin_2)); }
-	inline GUISkin_t2614611333 * get_Skin_2() const { return ___Skin_2; }
-	inline GUISkin_t2614611333 ** get_address_of_Skin_2() { return &___Skin_2; }
-	inline void set_Skin_2(GUISkin_t2614611333 * value)
+	inline static int32_t get_offset_of_Skin_3() { return static_cast<int32_t>(offsetof(IELdemo_t2411937939, ___Skin_3)); }
+	inline GUISkin_t2614611333 * get_Skin_3() const { return ___Skin_3; }
+	inline GUISkin_t2614611333 ** get_address_of_Skin_3() { return &___Skin_3; }
+	inline void set_Skin_3(GUISkin_t2614611333 * value)
 	{
-		___Skin_2 = value;
-		Il2CppCodeGenWriteBarrier(&___Skin_2, value);
+		___Skin_3 = value;
+		Il2CppCodeGenWriteBarrier(&___Skin_3, value);
 	}
 };
 

@@ -1,8 +1,8 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 
 [RequireComponent(typeof(ChatGui))]
-public class NamePickGui : MonoBehaviour
+public class NamePickGui : Photon.MonoBehaviour
 {
     public Vector2 GuiSize = new Vector2(200, 300);
     public string InputLine = string.Empty;

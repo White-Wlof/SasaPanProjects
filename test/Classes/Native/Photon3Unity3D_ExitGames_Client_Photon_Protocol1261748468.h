@@ -16,6 +16,10 @@ struct IProtocol_t2724506835;
 struct Dictionary_2_t415630378;
 // System.Collections.Generic.Dictionary`2<System.Byte,ExitGames.Client.Photon.CustomType>
 struct Dictionary_2_t1337383780;
+// System.Single[]
+struct SingleU5BU5D_t1219431280;
+// System.Byte[]
+struct ByteU5BU5D_t58506160;
 
 #include "mscorlib_System_Object837106420.h"
 
@@ -44,6 +48,10 @@ public:
 	Dictionary_2_t415630378 * ___TypeDict_2;
 	// System.Collections.Generic.Dictionary`2<System.Byte,ExitGames.Client.Photon.CustomType> ExitGames.Client.Photon.Protocol::CodeDict
 	Dictionary_2_t1337383780 * ___CodeDict_3;
+	// System.Single[] ExitGames.Client.Photon.Protocol::memFloatBlock
+	SingleU5BU5D_t1219431280* ___memFloatBlock_4;
+	// System.Byte[] ExitGames.Client.Photon.Protocol::memDeserialize
+	ByteU5BU5D_t58506160* ___memDeserialize_5;
 
 public:
 	inline static int32_t get_offset_of_GpBinaryV16_0() { return static_cast<int32_t>(offsetof(Protocol_t1261748468_StaticFields, ___GpBinaryV16_0)); }
@@ -80,6 +88,24 @@ public:
 	{
 		___CodeDict_3 = value;
 		Il2CppCodeGenWriteBarrier(&___CodeDict_3, value);
+	}
+
+	inline static int32_t get_offset_of_memFloatBlock_4() { return static_cast<int32_t>(offsetof(Protocol_t1261748468_StaticFields, ___memFloatBlock_4)); }
+	inline SingleU5BU5D_t1219431280* get_memFloatBlock_4() const { return ___memFloatBlock_4; }
+	inline SingleU5BU5D_t1219431280** get_address_of_memFloatBlock_4() { return &___memFloatBlock_4; }
+	inline void set_memFloatBlock_4(SingleU5BU5D_t1219431280* value)
+	{
+		___memFloatBlock_4 = value;
+		Il2CppCodeGenWriteBarrier(&___memFloatBlock_4, value);
+	}
+
+	inline static int32_t get_offset_of_memDeserialize_5() { return static_cast<int32_t>(offsetof(Protocol_t1261748468_StaticFields, ___memDeserialize_5)); }
+	inline ByteU5BU5D_t58506160* get_memDeserialize_5() const { return ___memDeserialize_5; }
+	inline ByteU5BU5D_t58506160** get_address_of_memDeserialize_5() { return &___memDeserialize_5; }
+	inline void set_memDeserialize_5(ByteU5BU5D_t58506160* value)
+	{
+		___memDeserialize_5 = value;
+		Il2CppCodeGenWriteBarrier(&___memDeserialize_5, value);
 	}
 };
 

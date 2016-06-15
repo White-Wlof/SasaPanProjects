@@ -17,7 +17,7 @@ struct Rigidbody2D_t3632243084;
 // PhotonView
 struct PhotonView_t1498838369;
 
-#include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+#include "AssemblyU2DCSharp_Photon_MonoBehaviour4025988718.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -26,72 +26,72 @@ struct PhotonView_t1498838369;
 #endif
 
 // JumpAndRunMovement
-struct  JumpAndRunMovement_t3956238833  : public MonoBehaviour_t3012272455
+struct  JumpAndRunMovement_t3956238833  : public MonoBehaviour_t4025988718
 {
 public:
 	// System.Single JumpAndRunMovement::Speed
-	float ___Speed_2;
+	float ___Speed_3;
 	// System.Single JumpAndRunMovement::JumpForce
-	float ___JumpForce_3;
+	float ___JumpForce_4;
 	// UnityEngine.Animator JumpAndRunMovement::m_Animator
-	Animator_t792326996 * ___m_Animator_4;
+	Animator_t792326996 * ___m_Animator_5;
 	// UnityEngine.Rigidbody2D JumpAndRunMovement::m_Body
-	Rigidbody2D_t3632243084 * ___m_Body_5;
+	Rigidbody2D_t3632243084 * ___m_Body_6;
 	// PhotonView JumpAndRunMovement::m_PhotonView
-	PhotonView_t1498838369 * ___m_PhotonView_6;
+	PhotonView_t1498838369 * ___m_PhotonView_7;
 	// System.Boolean JumpAndRunMovement::m_IsGrounded
-	bool ___m_IsGrounded_7;
+	bool ___m_IsGrounded_8;
 
 public:
-	inline static int32_t get_offset_of_Speed_2() { return static_cast<int32_t>(offsetof(JumpAndRunMovement_t3956238833, ___Speed_2)); }
-	inline float get_Speed_2() const { return ___Speed_2; }
-	inline float* get_address_of_Speed_2() { return &___Speed_2; }
-	inline void set_Speed_2(float value)
+	inline static int32_t get_offset_of_Speed_3() { return static_cast<int32_t>(offsetof(JumpAndRunMovement_t3956238833, ___Speed_3)); }
+	inline float get_Speed_3() const { return ___Speed_3; }
+	inline float* get_address_of_Speed_3() { return &___Speed_3; }
+	inline void set_Speed_3(float value)
 	{
-		___Speed_2 = value;
+		___Speed_3 = value;
 	}
 
-	inline static int32_t get_offset_of_JumpForce_3() { return static_cast<int32_t>(offsetof(JumpAndRunMovement_t3956238833, ___JumpForce_3)); }
-	inline float get_JumpForce_3() const { return ___JumpForce_3; }
-	inline float* get_address_of_JumpForce_3() { return &___JumpForce_3; }
-	inline void set_JumpForce_3(float value)
+	inline static int32_t get_offset_of_JumpForce_4() { return static_cast<int32_t>(offsetof(JumpAndRunMovement_t3956238833, ___JumpForce_4)); }
+	inline float get_JumpForce_4() const { return ___JumpForce_4; }
+	inline float* get_address_of_JumpForce_4() { return &___JumpForce_4; }
+	inline void set_JumpForce_4(float value)
 	{
-		___JumpForce_3 = value;
+		___JumpForce_4 = value;
 	}
 
-	inline static int32_t get_offset_of_m_Animator_4() { return static_cast<int32_t>(offsetof(JumpAndRunMovement_t3956238833, ___m_Animator_4)); }
-	inline Animator_t792326996 * get_m_Animator_4() const { return ___m_Animator_4; }
-	inline Animator_t792326996 ** get_address_of_m_Animator_4() { return &___m_Animator_4; }
-	inline void set_m_Animator_4(Animator_t792326996 * value)
+	inline static int32_t get_offset_of_m_Animator_5() { return static_cast<int32_t>(offsetof(JumpAndRunMovement_t3956238833, ___m_Animator_5)); }
+	inline Animator_t792326996 * get_m_Animator_5() const { return ___m_Animator_5; }
+	inline Animator_t792326996 ** get_address_of_m_Animator_5() { return &___m_Animator_5; }
+	inline void set_m_Animator_5(Animator_t792326996 * value)
 	{
-		___m_Animator_4 = value;
-		Il2CppCodeGenWriteBarrier(&___m_Animator_4, value);
+		___m_Animator_5 = value;
+		Il2CppCodeGenWriteBarrier(&___m_Animator_5, value);
 	}
 
-	inline static int32_t get_offset_of_m_Body_5() { return static_cast<int32_t>(offsetof(JumpAndRunMovement_t3956238833, ___m_Body_5)); }
-	inline Rigidbody2D_t3632243084 * get_m_Body_5() const { return ___m_Body_5; }
-	inline Rigidbody2D_t3632243084 ** get_address_of_m_Body_5() { return &___m_Body_5; }
-	inline void set_m_Body_5(Rigidbody2D_t3632243084 * value)
+	inline static int32_t get_offset_of_m_Body_6() { return static_cast<int32_t>(offsetof(JumpAndRunMovement_t3956238833, ___m_Body_6)); }
+	inline Rigidbody2D_t3632243084 * get_m_Body_6() const { return ___m_Body_6; }
+	inline Rigidbody2D_t3632243084 ** get_address_of_m_Body_6() { return &___m_Body_6; }
+	inline void set_m_Body_6(Rigidbody2D_t3632243084 * value)
 	{
-		___m_Body_5 = value;
-		Il2CppCodeGenWriteBarrier(&___m_Body_5, value);
+		___m_Body_6 = value;
+		Il2CppCodeGenWriteBarrier(&___m_Body_6, value);
 	}
 
-	inline static int32_t get_offset_of_m_PhotonView_6() { return static_cast<int32_t>(offsetof(JumpAndRunMovement_t3956238833, ___m_PhotonView_6)); }
-	inline PhotonView_t1498838369 * get_m_PhotonView_6() const { return ___m_PhotonView_6; }
-	inline PhotonView_t1498838369 ** get_address_of_m_PhotonView_6() { return &___m_PhotonView_6; }
-	inline void set_m_PhotonView_6(PhotonView_t1498838369 * value)
+	inline static int32_t get_offset_of_m_PhotonView_7() { return static_cast<int32_t>(offsetof(JumpAndRunMovement_t3956238833, ___m_PhotonView_7)); }
+	inline PhotonView_t1498838369 * get_m_PhotonView_7() const { return ___m_PhotonView_7; }
+	inline PhotonView_t1498838369 ** get_address_of_m_PhotonView_7() { return &___m_PhotonView_7; }
+	inline void set_m_PhotonView_7(PhotonView_t1498838369 * value)
 	{
-		___m_PhotonView_6 = value;
-		Il2CppCodeGenWriteBarrier(&___m_PhotonView_6, value);
+		___m_PhotonView_7 = value;
+		Il2CppCodeGenWriteBarrier(&___m_PhotonView_7, value);
 	}
 
-	inline static int32_t get_offset_of_m_IsGrounded_7() { return static_cast<int32_t>(offsetof(JumpAndRunMovement_t3956238833, ___m_IsGrounded_7)); }
-	inline bool get_m_IsGrounded_7() const { return ___m_IsGrounded_7; }
-	inline bool* get_address_of_m_IsGrounded_7() { return &___m_IsGrounded_7; }
-	inline void set_m_IsGrounded_7(bool value)
+	inline static int32_t get_offset_of_m_IsGrounded_8() { return static_cast<int32_t>(offsetof(JumpAndRunMovement_t3956238833, ___m_IsGrounded_8)); }
+	inline bool get_m_IsGrounded_8() const { return ___m_IsGrounded_8; }
+	inline bool* get_address_of_m_IsGrounded_8() { return &___m_IsGrounded_8; }
+	inline void set_m_IsGrounded_8(bool value)
 	{
-		___m_IsGrounded_7 = value;
+		___m_IsGrounded_8 = value;
 	}
 };
 

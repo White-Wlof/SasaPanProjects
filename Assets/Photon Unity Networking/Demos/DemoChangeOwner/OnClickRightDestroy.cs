@@ -1,6 +1,6 @@
-﻿using UnityEngine;
+using UnityEngine;
 
-public class OnClickRightDestroy : MonoBehaviour
+public class OnClickRightDestroy : Photon.MonoBehaviour
 {
     public void OnPressRight()
     {

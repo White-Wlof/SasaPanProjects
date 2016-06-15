@@ -1,7 +1,7 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
-public class DemoRPGMovement : MonoBehaviour 
+public class DemoRPGMovement : Photon.MonoBehaviour 
 {
     public RPGCamera Camera;
 

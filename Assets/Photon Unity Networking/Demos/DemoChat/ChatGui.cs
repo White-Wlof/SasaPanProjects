@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using ExitGames.Client.Photon;
 using ExitGames.Client.Photon.Chat;
@@ -30,7 +30,7 @@ using AuthenticationValues = ExitGames.Client.Photon.Chat.AuthenticationValues;
 /// Note: 
 /// Don't forget to call ChatClient.Service(). Might later on be integrated into PUN but for now don't forget.
 /// </remarks>
-public class ChatGui : MonoBehaviour, IChatClientListener
+public class ChatGui : Photon.MonoBehaviour, IChatClientListener
 {
     public string ChatAppId;                    // set in inspector. Your Chat AppId (don't mix it with Realtime/Turnbased Apps).
     public string[] ChannelsToJoinOnConnect;    // set in inspector. Demo channels to join automatically.

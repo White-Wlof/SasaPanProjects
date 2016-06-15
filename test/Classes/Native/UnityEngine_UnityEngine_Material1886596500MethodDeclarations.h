@@ -34,6 +34,8 @@ struct String_t;
 extern "C"  void Material__ctor_m2685909642 (Material_t1886596500 * __this, Shader_t3998140498 * ___shader, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::.ctor(UnityEngine.Material)
 extern "C"  void Material__ctor_m2546967560 (Material_t1886596500 * __this, Material_t1886596500 * ___source, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.Material::get_color()
+extern "C"  Color_t1588175760  Material_get_color_m2268945527 (Material_t1886596500 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::set_color(UnityEngine.Color)
 extern "C"  void Material_set_color_m3296857020 (Material_t1886596500 * __this, Color_t1588175760  ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Texture UnityEngine.Material::get_mainTexture()
@@ -44,6 +46,8 @@ extern "C"  void Material_set_mainTexture_m3116438437 (Material_t1886596500 * __
 extern "C"  Vector2_t3525329788  Material_get_mainTextureOffset_m3247688085 (Material_t1886596500 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::set_mainTextureOffset(UnityEngine.Vector2)
 extern "C"  void Material_set_mainTextureOffset_m3397882654 (Material_t1886596500 * __this, Vector2_t3525329788  ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector2 UnityEngine.Material::get_mainTextureScale()
+extern "C"  Vector2_t3525329788  Material_get_mainTextureScale_m931663594 (Material_t1886596500 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::set_mainTextureScale(UnityEngine.Vector2)
 extern "C"  void Material_set_mainTextureScale_m2180744791 (Material_t1886596500 * __this, Vector2_t3525329788  ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::SetColor(System.String,UnityEngine.Color)
@@ -58,6 +62,10 @@ extern "C"  Color_t1588175760  Material_GetColor_m1709543664 (Material_t18865965
 extern "C"  Color_t1588175760  Material_GetColor_m317509027 (Material_t1886596500 * __this, int32_t ___nameID, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::INTERNAL_CALL_GetColor(UnityEngine.Material,System.Int32,UnityEngine.Color&)
 extern "C"  void Material_INTERNAL_CALL_GetColor_m3428345249 (Il2CppObject * __this /* static, unused */, Material_t1886596500 * ___self, int32_t ___nameID, Color_t1588175760 * ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Material::SetVector(System.String,UnityEngine.Vector4)
+extern "C"  void Material_SetVector_m3505096203 (Material_t1886596500 * __this, String_t* ___propertyName, Vector4_t3525329790  ___vector, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector4 UnityEngine.Material::GetVector(System.String)
+extern "C"  Vector4_t3525329790  Material_GetVector_m4092100414 (Material_t1886596500 * __this, String_t* ___propertyName, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::SetTexture(System.String,UnityEngine.Texture)
 extern "C"  void Material_SetTexture_m1833724755 (Material_t1886596500 * __this, String_t* ___propertyName, Texture_t1769722184 * ___texture, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::SetTexture(System.Int32,UnityEngine.Texture)
@@ -78,10 +86,16 @@ extern "C"  Vector2_t3525329788  Material_GetTextureOffset_m2266731153 (Material
 extern "C"  void Material_SetTextureScale_m1752758881 (Material_t1886596500 * __this, String_t* ___propertyName, Vector2_t3525329788  ___scale, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::INTERNAL_CALL_SetTextureScale(UnityEngine.Material,System.String,UnityEngine.Vector2&)
 extern "C"  void Material_INTERNAL_CALL_SetTextureScale_m708056228 (Il2CppObject * __this /* static, unused */, Material_t1886596500 * ___self, String_t* ___propertyName, Vector2_t3525329788 * ___scale, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector2 UnityEngine.Material::GetTextureScale(System.String)
+extern "C"  Vector2_t3525329788  Material_GetTextureScale_m1101752532 (Material_t1886596500 * __this, String_t* ___propertyName, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::SetFloat(System.String,System.Single)
 extern "C"  void Material_SetFloat_m981710063 (Material_t1886596500 * __this, String_t* ___propertyName, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::SetFloat(System.Int32,System.Single)
 extern "C"  void Material_SetFloat_m170145518 (Material_t1886596500 * __this, int32_t ___nameID, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Material::GetFloat(System.String)
+extern "C"  float Material_GetFloat_m2541456626 (Material_t1886596500 * __this, String_t* ___propertyName, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Material::GetFloat(System.Int32)
+extern "C"  float Material_GetFloat_m344344929 (Material_t1886596500 * __this, int32_t ___nameID, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Material::SetInt(System.String,System.Int32)
 extern "C"  void Material_SetInt_m2649395040 (Material_t1886596500 * __this, String_t* ___propertyName, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Material::HasProperty(System.String)

@@ -26,8 +26,6 @@ struct BigInteger_t2113513851;
 extern "C"  void DiffieHellmanCryptoProvider__ctor_m978908950 (DiffieHellmanCryptoProvider_t3764219664 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Byte[] Photon.SocketServer.Security.DiffieHellmanCryptoProvider::get_PublicKey()
 extern "C"  ByteU5BU5D_t58506160* DiffieHellmanCryptoProvider_get_PublicKey_m1904414615 (DiffieHellmanCryptoProvider_t3764219664 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Byte[] Photon.SocketServer.Security.DiffieHellmanCryptoProvider::get_SharedKey()
-extern "C"  ByteU5BU5D_t58506160* DiffieHellmanCryptoProvider_get_SharedKey_m3516199707 (DiffieHellmanCryptoProvider_t3764219664 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Photon.SocketServer.Security.DiffieHellmanCryptoProvider::DeriveSharedKey(System.Byte[])
 extern "C"  void DiffieHellmanCryptoProvider_DeriveSharedKey_m3746382626 (DiffieHellmanCryptoProvider_t3764219664 * __this, ByteU5BU5D_t58506160* ___otherPartyPublicKey, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Byte[] Photon.SocketServer.Security.DiffieHellmanCryptoProvider::Encrypt(System.Byte[])

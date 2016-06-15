@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
+using System.Linq;
 
 
 /// <summary>Finds out which PickupItems are not spawned at the moment and send this to new players.</summary>
@@ -20,14 +21,14 @@ public class PickupItemSyncer : Photon.MonoBehaviour
             this.SendPickedUpItems(newPlayer);
         }
     }
-    
+
     public void OnJoinedRoom()
     {
         Debug.Log("Joined Room. isMasterClient: " + PhotonNetwork.isMasterClient + " id: " + PhotonNetwork.player.ID);
         // this client joined the room. let's see if there are players and if someone has to inform us about pickups
         this.IsWaitingForPickupInit = !PhotonNetwork.isMasterClient;
 
-        if (PhotonNetwork.playerList.Length >= 2)
+        if (PhotonNetwork.playerList.Count() >= 2)
         {
             this.Invoke("AskForPickupItemSpawnTimes", 2.0f);
         }
@@ -38,7 +39,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
     {
         if (this.IsWaitingForPickupInit)
         {
-            if (PhotonNetwork.playerList.Length < 2)
+            if (PhotonNetwork.playerList.Count() < 2)
             {
                 Debug.Log("Cant ask anyone else for PickupItem spawn times.");
                 this.IsWaitingForPickupInit = false;
@@ -134,7 +135,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
         // if there are no inactive pickups, the sender will send a list of 0 items. this is not a problem...
         for (int i = 0; i < inactivePickupsAndTimes.Length / 2; i++)
         {
-            int arrayIndex = i*2;
+            int arrayIndex = i * 2;
             int viewIdOfPickup = (int)inactivePickupsAndTimes[arrayIndex];
             float timeUntilRespawnBasedOnTimeBase = inactivePickupsAndTimes[arrayIndex + 1];
 
@@ -157,7 +158,7 @@ public class PickupItemSyncer : Photon.MonoBehaviour
                     timeBeforeRespawn = 0.0f;
                 }
 
-                pi.PickedUp((float) timeBeforeRespawn);
+                pi.PickedUp((float)timeBeforeRespawn);
             }
         }
     }

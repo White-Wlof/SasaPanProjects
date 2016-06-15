@@ -21,13 +21,21 @@ struct Light_t1596303683;
 
 // System.Void UnityEngine.Light::set_type(UnityEngine.LightType)
 extern "C"  void Light_set_type_m1196490817 (Light_t1596303683 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Color UnityEngine.Light::get_color()
+extern "C"  Color_t1588175760  Light_get_color_m2336101442 (Light_t1596303683 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Light::set_color(UnityEngine.Color)
 extern "C"  void Light_set_color_m763171967 (Light_t1596303683 * __this, Color_t1588175760  ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Light::INTERNAL_get_color(UnityEngine.Color&)
+extern "C"  void Light_INTERNAL_get_color_m4212442015 (Light_t1596303683 * __this, Color_t1588175760 * ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Light::INTERNAL_set_color(UnityEngine.Color&)
 extern "C"  void Light_INTERNAL_set_color_m3939727787 (Light_t1596303683 * __this, Color_t1588175760 * ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Light::get_intensity()
 extern "C"  float Light_get_intensity_m2688167127 (Light_t1596303683 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Light::set_intensity(System.Single)
 extern "C"  void Light_set_intensity_m2689709876 (Light_t1596303683 * __this, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Light::get_shadowStrength()
+extern "C"  float Light_get_shadowStrength_m2533436351 (Light_t1596303683 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Light::set_shadowStrength(System.Single)
+extern "C"  void Light_set_shadowStrength_m561788748 (Light_t1596303683 * __this, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Light::set_range(System.Single)
 extern "C"  void Light_set_range_m1834313578 (Light_t1596303683 * __this, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;

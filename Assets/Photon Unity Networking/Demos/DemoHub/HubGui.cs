@@ -1,8 +1,8 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class HubGui : MonoBehaviour
+public class HubGui : Photon.MonoBehaviour
 {
 
     public GUISkin Skin;
@@ -55,6 +55,18 @@ public class HubGui : MonoBehaviour
             demoDescription = "<color=orange>Movement Smoothing</color>\n\nUses ConnectAndJoinRandom script.\nShows several basic ways to synchronize positions between controlling client and remote ones.\nThe TransformView is a good default to use.";
             demoBtn = new DemoBtn() { Text = "Start", Link = "DemoSynchronization-Scene" };
         }
+
+
+		if (GUILayout.Button("Basic Tutorial", GUILayout.Width(280)))
+		{
+			demoDescription = "<color=orange>Basic tutorial</color>\n\n" +
+				"All custom code for connection, player and scene management.\n" +
+				"Auto synchronization of room levels.\n" +
+				"Uses PhotonAnimatoView for Animator synch.\n" +
+				"New Unity UI all around, for Menus and player health HUD.\n" +
+				"Full step by step tutorial available online.";
+			demoBtn = new DemoBtn() { Text = "Start", Link = "PunBasics-Launcher" };
+		}
 
         GUILayout.Label("Advanced", m_Headline);
         if (GUILayout.Button("Ownership Transfer", GUILayout.Width(280)))

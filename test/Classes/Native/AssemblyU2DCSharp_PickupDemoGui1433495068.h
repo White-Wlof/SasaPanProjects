@@ -11,7 +11,7 @@
 #include <stdint.h>
 
 
-#include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+#include "AssemblyU2DCSharp_Photon_MonoBehaviour4025988718.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -20,49 +20,49 @@
 #endif
 
 // PickupDemoGui
-struct  PickupDemoGui_t1433495068  : public MonoBehaviour_t3012272455
+struct  PickupDemoGui_t1433495068  : public MonoBehaviour_t4025988718
 {
 public:
 	// System.Boolean PickupDemoGui::ShowScores
-	bool ___ShowScores_2;
+	bool ___ShowScores_3;
 	// System.Boolean PickupDemoGui::ShowDropButton
-	bool ___ShowDropButton_3;
+	bool ___ShowDropButton_4;
 	// System.Boolean PickupDemoGui::ShowTeams
-	bool ___ShowTeams_4;
+	bool ___ShowTeams_5;
 	// System.Single PickupDemoGui::DropOffset
-	float ___DropOffset_5;
+	float ___DropOffset_6;
 
 public:
-	inline static int32_t get_offset_of_ShowScores_2() { return static_cast<int32_t>(offsetof(PickupDemoGui_t1433495068, ___ShowScores_2)); }
-	inline bool get_ShowScores_2() const { return ___ShowScores_2; }
-	inline bool* get_address_of_ShowScores_2() { return &___ShowScores_2; }
-	inline void set_ShowScores_2(bool value)
+	inline static int32_t get_offset_of_ShowScores_3() { return static_cast<int32_t>(offsetof(PickupDemoGui_t1433495068, ___ShowScores_3)); }
+	inline bool get_ShowScores_3() const { return ___ShowScores_3; }
+	inline bool* get_address_of_ShowScores_3() { return &___ShowScores_3; }
+	inline void set_ShowScores_3(bool value)
 	{
-		___ShowScores_2 = value;
+		___ShowScores_3 = value;
 	}
 
-	inline static int32_t get_offset_of_ShowDropButton_3() { return static_cast<int32_t>(offsetof(PickupDemoGui_t1433495068, ___ShowDropButton_3)); }
-	inline bool get_ShowDropButton_3() const { return ___ShowDropButton_3; }
-	inline bool* get_address_of_ShowDropButton_3() { return &___ShowDropButton_3; }
-	inline void set_ShowDropButton_3(bool value)
+	inline static int32_t get_offset_of_ShowDropButton_4() { return static_cast<int32_t>(offsetof(PickupDemoGui_t1433495068, ___ShowDropButton_4)); }
+	inline bool get_ShowDropButton_4() const { return ___ShowDropButton_4; }
+	inline bool* get_address_of_ShowDropButton_4() { return &___ShowDropButton_4; }
+	inline void set_ShowDropButton_4(bool value)
 	{
-		___ShowDropButton_3 = value;
+		___ShowDropButton_4 = value;
 	}
 
-	inline static int32_t get_offset_of_ShowTeams_4() { return static_cast<int32_t>(offsetof(PickupDemoGui_t1433495068, ___ShowTeams_4)); }
-	inline bool get_ShowTeams_4() const { return ___ShowTeams_4; }
-	inline bool* get_address_of_ShowTeams_4() { return &___ShowTeams_4; }
-	inline void set_ShowTeams_4(bool value)
+	inline static int32_t get_offset_of_ShowTeams_5() { return static_cast<int32_t>(offsetof(PickupDemoGui_t1433495068, ___ShowTeams_5)); }
+	inline bool get_ShowTeams_5() const { return ___ShowTeams_5; }
+	inline bool* get_address_of_ShowTeams_5() { return &___ShowTeams_5; }
+	inline void set_ShowTeams_5(bool value)
 	{
-		___ShowTeams_4 = value;
+		___ShowTeams_5 = value;
 	}
 
-	inline static int32_t get_offset_of_DropOffset_5() { return static_cast<int32_t>(offsetof(PickupDemoGui_t1433495068, ___DropOffset_5)); }
-	inline float get_DropOffset_5() const { return ___DropOffset_5; }
-	inline float* get_address_of_DropOffset_5() { return &___DropOffset_5; }
-	inline void set_DropOffset_5(float value)
+	inline static int32_t get_offset_of_DropOffset_6() { return static_cast<int32_t>(offsetof(PickupDemoGui_t1433495068, ___DropOffset_6)); }
+	inline float get_DropOffset_6() const { return ___DropOffset_6; }
+	inline float* get_address_of_DropOffset_6() { return &___DropOffset_6; }
+	inline void set_DropOffset_6(float value)
 	{
-		___DropOffset_5 = value;
+		___DropOffset_6 = value;
 	}
 };
 

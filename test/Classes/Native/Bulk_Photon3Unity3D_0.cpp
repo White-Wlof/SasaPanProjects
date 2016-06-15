@@ -45,12 +45,8 @@ struct ByteU5BU5D_t58506160;
 struct IAsyncResult_t537683269;
 // System.AsyncCallback
 struct AsyncCallback_t1363551830;
-// System.IO.MemoryStream
-struct MemoryStream_t2881531048;
-// ExitGames.Client.Photon.DictionaryEntryEnumerator
-struct DictionaryEntryEnumerator_t92261500;
-// System.Collections.IDictionaryEnumerator
-struct IDictionaryEnumerator_t1541724277;
+// ExitGames.Client.Photon.StreamBuffer
+struct StreamBuffer_t433541692;
 // ExitGames.Client.Photon.EnetChannel
 struct EnetChannel_t3150892263;
 // ExitGames.Client.Photon.EnetPeer
@@ -69,8 +65,6 @@ struct U3CU3Ec__DisplayClass42_0_t2750164070;
 struct EventData_t4221167488;
 // ExitGames.Client.Photon.Hashtable
 struct Hashtable_t223732124;
-// System.Collections.Generic.IEnumerator`1<System.Collections.DictionaryEntry>
-struct IEnumerator_1_t1613133694;
 // ExitGames.Client.Photon.IPhotonSocket
 struct IPhotonSocket_t3731899444;
 // ExitGames.Client.Photon.IPhotonPeerListener
@@ -91,10 +85,10 @@ struct OperationRequest_t3861919108;
 struct OperationResponse_t2644772068;
 // ExitGames.Client.Photon.PeerBase/MyAction
 struct MyAction_t3022056226;
-// ExitGames.Client.Photon.PeerBase/<>c__DisplayClass138_0
-struct U3CU3Ec__DisplayClass138_0_t3647930800;
-// ExitGames.Client.Photon.PeerBase/<>c__DisplayClass139_0
-struct U3CU3Ec__DisplayClass139_0_t3647931761;
+// ExitGames.Client.Photon.PeerBase/<>c__DisplayClass136_0
+struct U3CU3Ec__DisplayClass136_0_t3647928878;
+// ExitGames.Client.Photon.PeerBase/<>c__DisplayClass137_0
+struct U3CU3Ec__DisplayClass137_0_t3647929839;
 // ExitGames.Client.Photon.PhotonPeer
 struct PhotonPeer_t3684923994;
 // ExitGames.Client.Photon.TrafficStats
@@ -207,11 +201,8 @@ struct DiffieHellmanCryptoProvider_t3764219664;
 #include "mscorlib_System_IntPtr676692020.h"
 #include "mscorlib_System_AsyncCallback1363551830.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_Deserialize2269051836MethodDeclarations.h"
-#include "mscorlib_System_IO_MemoryStream2881531048.h"
+#include "Photon3Unity3D_ExitGames_Client_Photon_StreamBuffer433541692.h"
 #include "mscorlib_System_Int162847414729.h"
-#include "Photon3Unity3D_ExitGames_Client_Photon_DictionaryEnt92261500.h"
-#include "Photon3Unity3D_ExitGames_Client_Photon_DictionaryEnt92261500MethodDeclarations.h"
-#include "mscorlib_System_Collections_DictionaryEntry130027246.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_EnetChannel3150892263.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_EnetChannel3150892263MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g3792379640MethodDeclarations.h"
@@ -268,13 +259,12 @@ struct DiffieHellmanCryptoProvider_t3764219664;
 #include "mscorlib_System_Collections_Generic_Dictionary_2_g3871407537.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_TrafficStat2447340108MethodDeclarations.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_TrafficStat2447340108.h"
-#include "Photon3Unity3D_Photon_SocketServer_Security_Diffie3764219664MethodDeclarations.h"
+#include "Photon3Unity3D_ExitGames_Client_Photon_StreamBuffer433541692MethodDeclarations.h"
 #include "mscorlib_System_IO_Stream219029575MethodDeclarations.h"
 #include "mscorlib_System_IO_Stream219029575.h"
 #include "mscorlib_System_Int642847414882.h"
-#include "mscorlib_System_IO_MemoryStream2881531048MethodDeclarations.h"
-#include "Photon3Unity3D_Photon_SocketServer_Security_Diffie3764219664.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_EnetPeer_U32750139085MethodDeclarations.h"
+#include "Photon3Unity3D_ExitGames_Client_Photon_Protocol1261748468MethodDeclarations.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_EnetPeer_U32750139084MethodDeclarations.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_EnetPeer_U32750139085.h"
 #include "mscorlib_System_UInt32985925326.h"
@@ -330,12 +320,15 @@ struct DiffieHellmanCryptoProvider_t3764219664;
 #include "System_System_Diagnostics_Stopwatch2509581612.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_Version4202529524.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_Version4202529524MethodDeclarations.h"
+#include "mscorlib_System_Boolean211005341MethodDeclarations.h"
+#include "Photon3Unity3D_Photon_SocketServer_Security_Diffie3764219664MethodDeclarations.h"
+#include "Photon3Unity3D_Photon_SocketServer_Security_Diffie3764219664.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_PhotonCodes1388247846.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_PhotonCodes1388247846MethodDeclarations.h"
-#include "Photon3Unity3D_ExitGames_Client_Photon_PeerBase_U33647930800MethodDeclarations.h"
-#include "Photon3Unity3D_ExitGames_Client_Photon_PeerBase_U33647930800.h"
-#include "Photon3Unity3D_ExitGames_Client_Photon_PeerBase_U33647931761MethodDeclarations.h"
-#include "Photon3Unity3D_ExitGames_Client_Photon_PeerBase_U33647931761.h"
+#include "Photon3Unity3D_ExitGames_Client_Photon_PeerBase_U33647928878MethodDeclarations.h"
+#include "Photon3Unity3D_ExitGames_Client_Photon_PeerBase_U33647928878.h"
+#include "Photon3Unity3D_ExitGames_Client_Photon_PeerBase_U33647929839MethodDeclarations.h"
+#include "Photon3Unity3D_ExitGames_Client_Photon_PeerBase_U33647929839.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_TPeer2266327570MethodDeclarations.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_TPeer2266327570.h"
 #include "mscorlib_System_IO_SeekOrigin3506139269.h"
@@ -347,7 +340,6 @@ struct DiffieHellmanCryptoProvider_t3764219664;
 #include "mscorlib_System_Threading_WaitHandle361062656MethodDeclarations.h"
 #include "mscorlib_System_Threading_WaitHandle361062656.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_Protocol1261748468.h"
-#include "Photon3Unity3D_ExitGames_Client_Photon_Protocol1261748468MethodDeclarations.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_PeerBase_Co2408653054MethodDeclarations.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_PeerBase_Eg2435422655MethodDeclarations.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_PeerStateVa4042794174.h"
@@ -382,6 +374,8 @@ struct DiffieHellmanCryptoProvider_t3764219664;
 #include "mscorlib_System_Collections_Generic_Dictionary_2_ge415630378.h"
 #include "mscorlib_System_Collections_Generic_Dictionary_2_ge415630378MethodDeclarations.h"
 #include "mscorlib_System_Single958209021.h"
+#include "mscorlib_System_BitConverter3338308296.h"
+#include "mscorlib_System_BitConverter3338308296MethodDeclarations.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_Protocol162781018393MethodDeclarations.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_Protocol162781018393.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_SerializeMe1378746877MethodDeclarations.h"
@@ -398,13 +392,12 @@ struct DiffieHellmanCryptoProvider_t3764219664;
 #include "mscorlib_System_Collections_Generic_Dictionary_2_E3638435478.h"
 #include "mscorlib_System_Collections_Generic_KeyValuePair_23359938835.h"
 #include "mscorlib_System_Double534516614.h"
-#include "mscorlib_System_BitConverter3338308296.h"
-#include "mscorlib_System_BitConverter3338308296MethodDeclarations.h"
 #include "mscorlib_System_Text_Encoding180559927MethodDeclarations.h"
 #include "mscorlib_System_NotSupportedException1374155497MethodDeclarations.h"
 #include "mscorlib_System_Text_Encoding180559927.h"
 #include "mscorlib_System_NotSupportedException1374155497.h"
 #include "mscorlib_System_Collections_DictionaryEntry130027246MethodDeclarations.h"
+#include "mscorlib_System_Collections_DictionaryEntry130027246.h"
 #include "mscorlib_System_Activator690001546MethodDeclarations.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_Protocol16_2138726371MethodDeclarations.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_SocketTcp3498507658.h"
@@ -718,7 +711,7 @@ extern "C"  void CmdLogReceivedAck__ctor_m1147551496 (CmdLogReceivedAck_t9861526
 		((CmdLogItem_t2654149689 *)__this)->set_Channel_1(L_2);
 		NCommand_t3301568857 * L_3 = ___command;
 		NullCheck(L_3);
-		int32_t L_4 = L_3->get_ackReceivedReliableSequenceNumber_33();
+		int32_t L_4 = L_3->get_ackReceivedReliableSequenceNumber_32();
 		((CmdLogItem_t2654149689 *)__this)->set_SequenceNumber_2(L_4);
 		int32_t L_5 = ___rtt;
 		((CmdLogItem_t2654149689 *)__this)->set_Rtt_3(L_5);
@@ -726,7 +719,7 @@ extern "C"  void CmdLogReceivedAck__ctor_m1147551496 (CmdLogReceivedAck_t9861526
 		((CmdLogItem_t2654149689 *)__this)->set_Variance_4(L_6);
 		NCommand_t3301568857 * L_7 = ___command;
 		NullCheck(L_7);
-		int32_t L_8 = L_7->get_ackReceivedSentTime_34();
+		int32_t L_8 = L_7->get_ackReceivedSentTime_33();
 		__this->set_ReceivedSentTime_5(L_8);
 		return;
 	}
@@ -887,15 +880,15 @@ extern "C"  void CmdLogSentReliable__ctor_m1035862053 (CmdLogSentReliable_t11311
 		((CmdLogItem_t2654149689 *)__this)->set_Variance_4(L_6);
 		NCommand_t3301568857 * L_7 = ___command;
 		NullCheck(L_7);
-		uint8_t L_8 = L_7->get_commandSentCount_30();
+		uint8_t L_8 = L_7->get_commandSentCount_29();
 		__this->set_Resend_5(L_8);
 		NCommand_t3301568857 * L_9 = ___command;
 		NullCheck(L_9);
-		int32_t L_10 = L_9->get_roundTripTimeout_31();
+		int32_t L_10 = L_9->get_roundTripTimeout_30();
 		__this->set_RoundtripTimeout_6(L_10);
 		NCommand_t3301568857 * L_11 = ___command;
 		NullCheck(L_11);
-		int32_t L_12 = L_11->get_timeoutTime_32();
+		int32_t L_12 = L_11->get_timeoutTime_31();
 		__this->set_Timeout_7(L_12);
 		bool L_13 = ___triggeredTimeout;
 		__this->set_TriggeredTimeout_8(L_13);
@@ -1133,23 +1126,23 @@ extern "C"  void DeserializeStreamMethod__ctor_m2638295006 (DeserializeStreamMet
 	__this->set_method_3(___method);
 	__this->set_m_target_2(___object);
 }
-// System.Object ExitGames.Client.Photon.DeserializeStreamMethod::Invoke(System.IO.MemoryStream,System.Int16)
-extern "C"  Il2CppObject * DeserializeStreamMethod_Invoke_m2833769592 (DeserializeStreamMethod_t2269051836 * __this, MemoryStream_t2881531048 * ___inStream, int16_t ___length, const MethodInfo* method)
+// System.Object ExitGames.Client.Photon.DeserializeStreamMethod::Invoke(ExitGames.Client.Photon.StreamBuffer,System.Int16)
+extern "C"  Il2CppObject * DeserializeStreamMethod_Invoke_m1171546632 (DeserializeStreamMethod_t2269051836 * __this, StreamBuffer_t433541692 * ___inStream, int16_t ___length, const MethodInfo* method)
 {
 	if(__this->get_prev_9() != NULL)
 	{
-		DeserializeStreamMethod_Invoke_m2833769592((DeserializeStreamMethod_t2269051836 *)__this->get_prev_9(),___inStream, ___length, method);
+		DeserializeStreamMethod_Invoke_m1171546632((DeserializeStreamMethod_t2269051836 *)__this->get_prev_9(),___inStream, ___length, method);
 	}
 	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
 	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
 	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
 	{
-		typedef Il2CppObject * (*FunctionPointerType) (Il2CppObject *, void* __this, MemoryStream_t2881531048 * ___inStream, int16_t ___length, const MethodInfo* method);
+		typedef Il2CppObject * (*FunctionPointerType) (Il2CppObject *, void* __this, StreamBuffer_t433541692 * ___inStream, int16_t ___length, const MethodInfo* method);
 		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,il2cpp_codegen_get_delegate_this(__this),___inStream, ___length,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
 	}
 	else if (__this->get_m_target_2() != NULL || ___methodIsStatic)
 	{
-		typedef Il2CppObject * (*FunctionPointerType) (void* __this, MemoryStream_t2881531048 * ___inStream, int16_t ___length, const MethodInfo* method);
+		typedef Il2CppObject * (*FunctionPointerType) (void* __this, StreamBuffer_t433541692 * ___inStream, int16_t ___length, const MethodInfo* method);
 		return ((FunctionPointerType)__this->get_method_ptr_0())(il2cpp_codegen_get_delegate_this(__this),___inStream, ___length,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
 	}
 	else
@@ -1158,20 +1151,20 @@ extern "C"  Il2CppObject * DeserializeStreamMethod_Invoke_m2833769592 (Deseriali
 		return ((FunctionPointerType)__this->get_method_ptr_0())(___inStream, ___length,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
 	}
 }
-extern "C" Il2CppObject * pinvoke_delegate_wrapper_DeserializeStreamMethod_t2269051836(Il2CppObject* delegate, MemoryStream_t2881531048 * ___inStream, int16_t ___length)
+extern "C" Il2CppObject * pinvoke_delegate_wrapper_DeserializeStreamMethod_t2269051836(Il2CppObject* delegate, StreamBuffer_t433541692 * ___inStream, int16_t ___length)
 {
 	// Marshaling of parameter '___inStream' to native representation
-	IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Cannot marshal type 'System.IO.MemoryStream'."));
+	IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Cannot marshal type 'ExitGames.Client.Photon.StreamBuffer'."));
 }
-// System.IAsyncResult ExitGames.Client.Photon.DeserializeStreamMethod::BeginInvoke(System.IO.MemoryStream,System.Int16,System.AsyncCallback,System.Object)
+// System.IAsyncResult ExitGames.Client.Photon.DeserializeStreamMethod::BeginInvoke(ExitGames.Client.Photon.StreamBuffer,System.Int16,System.AsyncCallback,System.Object)
 extern TypeInfo* Int16_t2847414729_il2cpp_TypeInfo_var;
-extern const uint32_t DeserializeStreamMethod_BeginInvoke_m183451582_MetadataUsageId;
-extern "C"  Il2CppObject * DeserializeStreamMethod_BeginInvoke_m183451582 (DeserializeStreamMethod_t2269051836 * __this, MemoryStream_t2881531048 * ___inStream, int16_t ___length, AsyncCallback_t1363551830 * ___callback, Il2CppObject * ___object, const MethodInfo* method)
+extern const uint32_t DeserializeStreamMethod_BeginInvoke_m1602691374_MetadataUsageId;
+extern "C"  Il2CppObject * DeserializeStreamMethod_BeginInvoke_m1602691374 (DeserializeStreamMethod_t2269051836 * __this, StreamBuffer_t433541692 * ___inStream, int16_t ___length, AsyncCallback_t1363551830 * ___callback, Il2CppObject * ___object, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (DeserializeStreamMethod_BeginInvoke_m183451582_MetadataUsageId);
+		il2cpp_codegen_initialize_method (DeserializeStreamMethod_BeginInvoke_m1602691374_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	void *__d_args[3] = {0};
@@ -1184,125 +1177,6 @@ extern "C"  Il2CppObject * DeserializeStreamMethod_EndInvoke_m2372751193 (Deseri
 {
 	Il2CppObject *__result = il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
 	return (Il2CppObject *)__result;
-}
-// System.Void ExitGames.Client.Photon.DictionaryEntryEnumerator::.ctor(System.Collections.IDictionaryEnumerator)
-extern "C"  void DictionaryEntryEnumerator__ctor_m768753625 (DictionaryEntryEnumerator_t92261500 * __this, Il2CppObject * ___original, const MethodInfo* method)
-{
-	{
-		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
-		Il2CppObject * L_0 = ___original;
-		__this->set_enumerator_0(L_0);
-		return;
-	}
-}
-// System.Boolean ExitGames.Client.Photon.DictionaryEntryEnumerator::MoveNext()
-extern TypeInfo* IEnumerator_t287207039_il2cpp_TypeInfo_var;
-extern const uint32_t DictionaryEntryEnumerator_MoveNext_m988637838_MetadataUsageId;
-extern "C"  bool DictionaryEntryEnumerator_MoveNext_m988637838 (DictionaryEntryEnumerator_t92261500 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (DictionaryEntryEnumerator_MoveNext_m988637838_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	bool V_0 = false;
-	{
-		Il2CppObject * L_0 = __this->get_enumerator_0();
-		NullCheck(L_0);
-		bool L_1 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t287207039_il2cpp_TypeInfo_var, L_0);
-		V_0 = L_1;
-		goto IL_000f;
-	}
-
-IL_000f:
-	{
-		bool L_2 = V_0;
-		return L_2;
-	}
-}
-// System.Void ExitGames.Client.Photon.DictionaryEntryEnumerator::Reset()
-extern TypeInfo* IEnumerator_t287207039_il2cpp_TypeInfo_var;
-extern const uint32_t DictionaryEntryEnumerator_Reset_m3587290993_MetadataUsageId;
-extern "C"  void DictionaryEntryEnumerator_Reset_m3587290993 (DictionaryEntryEnumerator_t92261500 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (DictionaryEntryEnumerator_Reset_m3587290993_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		Il2CppObject * L_0 = __this->get_enumerator_0();
-		NullCheck(L_0);
-		InterfaceActionInvoker0::Invoke(2 /* System.Void System.Collections.IEnumerator::Reset() */, IEnumerator_t287207039_il2cpp_TypeInfo_var, L_0);
-		return;
-	}
-}
-// System.Object ExitGames.Client.Photon.DictionaryEntryEnumerator::System.Collections.IEnumerator.get_Current()
-extern TypeInfo* IEnumerator_t287207039_il2cpp_TypeInfo_var;
-extern TypeInfo* DictionaryEntry_t130027246_il2cpp_TypeInfo_var;
-extern const uint32_t DictionaryEntryEnumerator_System_Collections_IEnumerator_get_Current_m527202210_MetadataUsageId;
-extern "C"  Il2CppObject * DictionaryEntryEnumerator_System_Collections_IEnumerator_get_Current_m527202210 (DictionaryEntryEnumerator_t92261500 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (DictionaryEntryEnumerator_System_Collections_IEnumerator_get_Current_m527202210_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	Il2CppObject * V_0 = NULL;
-	{
-		Il2CppObject * L_0 = __this->get_enumerator_0();
-		NullCheck(L_0);
-		Il2CppObject * L_1 = InterfaceFuncInvoker0< Il2CppObject * >::Invoke(0 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t287207039_il2cpp_TypeInfo_var, L_0);
-		DictionaryEntry_t130027246  L_2 = ((*(DictionaryEntry_t130027246 *)((DictionaryEntry_t130027246 *)UnBox (L_1, DictionaryEntry_t130027246_il2cpp_TypeInfo_var))));
-		Il2CppObject * L_3 = Box(DictionaryEntry_t130027246_il2cpp_TypeInfo_var, &L_2);
-		V_0 = L_3;
-		goto IL_0019;
-	}
-
-IL_0019:
-	{
-		Il2CppObject * L_4 = V_0;
-		return L_4;
-	}
-}
-// System.Collections.DictionaryEntry ExitGames.Client.Photon.DictionaryEntryEnumerator::get_Current()
-extern TypeInfo* IEnumerator_t287207039_il2cpp_TypeInfo_var;
-extern TypeInfo* DictionaryEntry_t130027246_il2cpp_TypeInfo_var;
-extern const uint32_t DictionaryEntryEnumerator_get_Current_m2344911309_MetadataUsageId;
-extern "C"  DictionaryEntry_t130027246  DictionaryEntryEnumerator_get_Current_m2344911309 (DictionaryEntryEnumerator_t92261500 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (DictionaryEntryEnumerator_get_Current_m2344911309_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	DictionaryEntry_t130027246  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	{
-		Il2CppObject * L_0 = __this->get_enumerator_0();
-		NullCheck(L_0);
-		Il2CppObject * L_1 = InterfaceFuncInvoker0< Il2CppObject * >::Invoke(0 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t287207039_il2cpp_TypeInfo_var, L_0);
-		V_0 = ((*(DictionaryEntry_t130027246 *)((DictionaryEntry_t130027246 *)UnBox (L_1, DictionaryEntry_t130027246_il2cpp_TypeInfo_var))));
-		goto IL_0014;
-	}
-
-IL_0014:
-	{
-		DictionaryEntry_t130027246  L_2 = V_0;
-		return L_2;
-	}
-}
-// System.Void ExitGames.Client.Photon.DictionaryEntryEnumerator::Dispose()
-extern "C"  void DictionaryEntryEnumerator_Dispose_m1051334657 (DictionaryEntryEnumerator_t92261500 * __this, const MethodInfo* method)
-{
-	{
-		__this->set_enumerator_0((Il2CppObject *)NULL);
-		return;
-	}
 }
 // System.Void ExitGames.Client.Photon.EnetChannel::.ctor(System.Byte,System.Int32)
 extern TypeInfo* Dictionary_2_t3792379640_il2cpp_TypeInfo_var;
@@ -1807,10 +1681,12 @@ IL_0185:
 extern TypeInfo* ConnectionStateValue_t2408653054_il2cpp_TypeInfo_var;
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
 extern TypeInfo* IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var;
+extern TypeInfo* Byte_t2778693821_il2cpp_TypeInfo_var;
 extern TypeInfo* SocketUdp_t3498508650_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1438201801;
 extern Il2CppCodeGenString* _stringLiteral1424755531;
 extern Il2CppCodeGenString* _stringLiteral2401169971;
+extern Il2CppCodeGenString* _stringLiteral1407336236;
 extern Il2CppCodeGenString* _stringLiteral3268217760;
 extern const uint32_t EnetPeer_Connect_m2080697764_MetadataUsageId;
 extern "C"  bool EnetPeer_Connect_m2080697764 (EnetPeer_t4023410422 * __this, String_t* ___ipport, String_t* ___appID, const MethodInfo* method)
@@ -1856,7 +1732,7 @@ extern "C"  bool EnetPeer_Connect_m2080697764 (EnetPeer_t4023410422 * __this, St
 		NullCheck(L_2);
 		InterfaceActionInvoker2< uint8_t, String_t* >::Invoke(0 /* System.Void ExitGames.Client.Photon.IPhotonPeerListener::DebugReturn(ExitGames.Client.Photon.DebugLevel,System.String) */, IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var, L_2, 2, L_6);
 		V_1 = (bool)0;
-		goto IL_014d;
+		goto IL_0171;
 	}
 
 IL_0038:
@@ -1953,80 +1829,91 @@ IL_00ab:
 		}
 	}
 	{
-		ByteU5BU5D_t58506160* L_24 = ((PeerBase_t2319621551 *)__this)->get_INIT_BYTES_52();
-		__this->set_initData_85(L_24);
-		SocketUdp_t3498508650 * L_25 = (SocketUdp_t3498508650 *)il2cpp_codegen_object_new(SocketUdp_t3498508650_il2cpp_TypeInfo_var);
-		SocketUdp__ctor_m2078809225(L_25, __this, /*hidden argument*/NULL);
-		((PeerBase_t2319621551 *)__this)->set_rt_2(L_25);
-		IPhotonSocket_t3731899444 * L_26 = ((PeerBase_t2319621551 *)__this)->get_rt_2();
-		V_6 = (bool)((((Il2CppObject*)(IPhotonSocket_t3731899444 *)L_26) == ((Il2CppObject*)(Il2CppObject *)NULL))? 1 : 0);
-		bool L_27 = V_6;
-		if (!L_27)
-		{
-			goto IL_00f5;
-		}
-	}
-	{
-		Il2CppObject * L_28 = PeerBase_get_Listener_m2440165892(__this, /*hidden argument*/NULL);
-		NullCheck(L_28);
-		InterfaceActionInvoker2< uint8_t, String_t* >::Invoke(0 /* System.Void ExitGames.Client.Photon.IPhotonPeerListener::DebugReturn(ExitGames.Client.Photon.DebugLevel,System.String) */, IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var, L_28, 1, _stringLiteral3268217760);
-		V_1 = (bool)0;
-		goto IL_014d;
-	}
-
-IL_00f5:
-	{
-		IPhotonSocket_t3731899444 * L_29 = ((PeerBase_t2319621551 *)__this)->get_rt_2();
-		NullCheck(L_29);
-		bool L_30 = VirtFuncInvoker0< bool >::Invoke(4 /* System.Boolean ExitGames.Client.Photon.IPhotonSocket::Connect() */, L_29);
-		V_7 = L_30;
-		bool L_31 = V_7;
-		if (!L_31)
-		{
-			goto IL_0149;
-		}
-	}
-	{
-		bool L_32 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
-		V_8 = L_32;
-		bool L_33 = V_8;
+		Il2CppObject * L_24 = PeerBase_get_Listener_m2440165892(__this, /*hidden argument*/NULL);
+		ByteU5BU5D_t58506160* L_25 = ((PeerBase_t2319621551 *)__this)->get_INIT_BYTES_52();
+		NullCheck(L_25);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_25, 5);
+		int32_t L_26 = 5;
+		uint8_t L_27 = ((L_25)->GetAt(static_cast<il2cpp_array_size_t>(L_26)));
+		Il2CppObject * L_28 = Box(Byte_t2778693821_il2cpp_TypeInfo_var, &L_27);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_29 = String_Concat_m389863537(NULL /*static, unused*/, _stringLiteral1407336236, L_28, /*hidden argument*/NULL);
+		NullCheck(L_24);
+		InterfaceActionInvoker2< uint8_t, String_t* >::Invoke(0 /* System.Void ExitGames.Client.Photon.IPhotonPeerListener::DebugReturn(ExitGames.Client.Photon.DebugLevel,System.String) */, IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var, L_24, 5, L_29);
+		ByteU5BU5D_t58506160* L_30 = ((PeerBase_t2319621551 *)__this)->get_INIT_BYTES_52();
+		__this->set_initData_85(L_30);
+		SocketUdp_t3498508650 * L_31 = (SocketUdp_t3498508650 *)il2cpp_codegen_object_new(SocketUdp_t3498508650_il2cpp_TypeInfo_var);
+		SocketUdp__ctor_m2078809225(L_31, __this, /*hidden argument*/NULL);
+		((PeerBase_t2319621551 *)__this)->set_rt_2(L_31);
+		IPhotonSocket_t3731899444 * L_32 = ((PeerBase_t2319621551 *)__this)->get_rt_2();
+		V_6 = (bool)((((Il2CppObject*)(IPhotonSocket_t3731899444 *)L_32) == ((Il2CppObject*)(Il2CppObject *)NULL))? 1 : 0);
+		bool L_33 = V_6;
 		if (!L_33)
 		{
-			goto IL_013e;
+			goto IL_0119;
 		}
 	}
 	{
-		TrafficStats_t3177679614 * L_34 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
-		TrafficStats_t3177679614 * L_35 = L_34;
-		NullCheck(L_35);
-		int32_t L_36 = TrafficStats_get_ControlCommandBytes_m3401744258(L_35, /*hidden argument*/NULL);
-		NullCheck(L_35);
-		TrafficStats_set_ControlCommandBytes_m1599686799(L_35, ((int32_t)((int32_t)L_36+(int32_t)((int32_t)44))), /*hidden argument*/NULL);
-		TrafficStats_t3177679614 * L_37 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
-		TrafficStats_t3177679614 * L_38 = L_37;
-		NullCheck(L_38);
-		int32_t L_39 = TrafficStats_get_ControlCommandCount_m4004149030(L_38, /*hidden argument*/NULL);
-		NullCheck(L_38);
-		TrafficStats_set_ControlCommandCount_m402057779(L_38, ((int32_t)((int32_t)L_39+(int32_t)1)), /*hidden argument*/NULL);
+		Il2CppObject * L_34 = PeerBase_get_Listener_m2440165892(__this, /*hidden argument*/NULL);
+		NullCheck(L_34);
+		InterfaceActionInvoker2< uint8_t, String_t* >::Invoke(0 /* System.Void ExitGames.Client.Photon.IPhotonPeerListener::DebugReturn(ExitGames.Client.Photon.DebugLevel,System.String) */, IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var, L_34, 1, _stringLiteral3268217760);
+		V_1 = (bool)0;
+		goto IL_0171;
 	}
 
-IL_013e:
+IL_0119:
+	{
+		IPhotonSocket_t3731899444 * L_35 = ((PeerBase_t2319621551 *)__this)->get_rt_2();
+		NullCheck(L_35);
+		bool L_36 = VirtFuncInvoker0< bool >::Invoke(4 /* System.Boolean ExitGames.Client.Photon.IPhotonSocket::Connect() */, L_35);
+		V_7 = L_36;
+		bool L_37 = V_7;
+		if (!L_37)
+		{
+			goto IL_016d;
+		}
+	}
+	{
+		bool L_38 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
+		V_8 = L_38;
+		bool L_39 = V_8;
+		if (!L_39)
+		{
+			goto IL_0162;
+		}
+	}
+	{
+		TrafficStats_t3177679614 * L_40 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
+		TrafficStats_t3177679614 * L_41 = L_40;
+		NullCheck(L_41);
+		int32_t L_42 = TrafficStats_get_ControlCommandBytes_m3401744258(L_41, /*hidden argument*/NULL);
+		NullCheck(L_41);
+		TrafficStats_set_ControlCommandBytes_m1599686799(L_41, ((int32_t)((int32_t)L_42+(int32_t)((int32_t)44))), /*hidden argument*/NULL);
+		TrafficStats_t3177679614 * L_43 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
+		TrafficStats_t3177679614 * L_44 = L_43;
+		NullCheck(L_44);
+		int32_t L_45 = TrafficStats_get_ControlCommandCount_m4004149030(L_44, /*hidden argument*/NULL);
+		NullCheck(L_44);
+		TrafficStats_set_ControlCommandCount_m402057779(L_44, ((int32_t)((int32_t)L_45+(int32_t)1)), /*hidden argument*/NULL);
+	}
+
+IL_0162:
 	{
 		((PeerBase_t2319621551 *)__this)->set_peerConnectionState_22(1);
 		V_1 = (bool)1;
-		goto IL_014d;
+		goto IL_0171;
 	}
 
-IL_0149:
+IL_016d:
 	{
 		V_1 = (bool)0;
-		goto IL_014d;
+		goto IL_0171;
 	}
 
-IL_014d:
+IL_0171:
 	{
-		bool L_40 = V_1;
-		return L_40;
+		bool L_46 = V_1;
+		return L_46;
 	}
 }
 // System.Void ExitGames.Client.Photon.EnetPeer::OnConnect()
@@ -2326,7 +2213,7 @@ IL_00f0:
 		TrafficStats_t3177679614 * L_31 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
 		NCommand_t3301568857 * L_32 = V_1;
 		NullCheck(L_32);
-		int32_t L_33 = L_32->get_Size_47();
+		int32_t L_33 = L_32->get_Size_45();
 		NullCheck(L_31);
 		TrafficStats_CountControlCommand_m3520535532(L_31, L_33, /*hidden argument*/NULL);
 	}
@@ -3069,14 +2956,14 @@ IL_02be:
 			V_24 = L_111;
 			NCommand_t3301568857 * L_112 = V_24;
 			NullCheck(L_112);
-			ByteU5BU5D_t58506160* L_113 = L_112->get_Payload_28();
+			ByteU5BU5D_t58506160* L_113 = L_112->get_Payload_48();
 			ByteU5BU5D_t58506160* L_114 = V_25;
 			NCommand_t3301568857 * L_115 = V_24;
 			NullCheck(L_115);
 			int32_t L_116 = L_115->get_fragmentOffset_26();
 			NCommand_t3301568857 * L_117 = V_24;
 			NullCheck(L_117);
-			ByteU5BU5D_t58506160* L_118 = L_117->get_Payload_28();
+			ByteU5BU5D_t58506160* L_118 = L_117->get_Payload_48();
 			NullCheck(L_118);
 			Buffer_BlockCopy_m1580643184(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_113, 0, (Il2CppArray *)(Il2CppArray *)L_114, L_116, (((int32_t)((int32_t)(((Il2CppArray *)L_118)->max_length)))), /*hidden argument*/NULL);
 			EnetChannel_t3150892263 * L_119 = V_7;
@@ -3150,7 +3037,7 @@ IL_0366:
 			NCommand_t3301568857 * L_139 = V_1;
 			ByteU5BU5D_t58506160* L_140 = V_25;
 			NullCheck(L_139);
-			L_139->set_Payload_28(L_140);
+			L_139->set_Payload_48(L_140);
 			NCommand_t3301568857 * L_141 = V_1;
 			NCommand_t3301568857 * L_142 = V_1;
 			NullCheck(L_142);
@@ -3159,7 +3046,7 @@ IL_0366:
 			NullCheck(L_144);
 			int32_t L_145 = L_144->get_totalLength_25();
 			NullCheck(L_141);
-			L_141->set_Size_47(((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)12)*(int32_t)L_143))+(int32_t)L_145)));
+			L_141->set_Size_45(((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)12)*(int32_t)L_143))+(int32_t)L_145)));
 			EnetChannel_t3150892263 * L_146 = V_7;
 			NCommand_t3301568857 * L_147 = V_1;
 			NullCheck(L_147);
@@ -3233,7 +3120,7 @@ IL_03c5:
 	{
 		NCommand_t3301568857 * L_157 = V_1;
 		NullCheck(L_157);
-		ByteU5BU5D_t58506160* L_158 = L_157->get_Payload_28();
+		ByteU5BU5D_t58506160* L_158 = L_157->get_Payload_48();
 		G_B67_0 = ((!(((Il2CppObject*)(ByteU5BU5D_t58506160*)L_158) <= ((Il2CppObject*)(Il2CppObject *)NULL)))? 1 : 0);
 		goto IL_03d4;
 	}
@@ -3255,13 +3142,13 @@ IL_03d4:
 	{
 		NCommand_t3301568857 * L_160 = V_1;
 		NullCheck(L_160);
-		int32_t L_161 = L_160->get_Size_47();
+		int32_t L_161 = L_160->get_Size_45();
 		((PeerBase_t2319621551 *)__this)->set_ByteCountCurrentDispatch_4(L_161);
 		NCommand_t3301568857 * L_162 = V_1;
 		((PeerBase_t2319621551 *)__this)->set_CommandInCurrentDispatch_5(L_162);
 		NCommand_t3301568857 * L_163 = V_1;
 		NullCheck(L_163);
-		ByteU5BU5D_t58506160* L_164 = L_163->get_Payload_28();
+		ByteU5BU5D_t58506160* L_164 = L_163->get_Payload_48();
 		bool L_165 = VirtFuncInvoker1< bool, ByteU5BU5D_t58506160* >::Invoke(17 /* System.Boolean ExitGames.Client.Photon.PeerBase::DeserializeMessageAndCallback(System.Byte[]) */, __this, L_164);
 		V_32 = L_165;
 		bool L_166 = V_32;
@@ -3546,7 +3433,7 @@ IL_012f:
 				{
 					NCommand_t3301568857 * L_33 = V_11;
 					NullCheck(L_33);
-					int32_t L_34 = L_33->get_roundTripTimeout_31();
+					int32_t L_34 = L_33->get_roundTripTimeout_30();
 					if (!L_34)
 					{
 						goto IL_0151;
@@ -3558,10 +3445,10 @@ IL_0138:
 					int32_t L_35 = ((PeerBase_t2319621551 *)__this)->get_timeInt_55();
 					NCommand_t3301568857 * L_36 = V_11;
 					NullCheck(L_36);
-					int32_t L_37 = L_36->get_commandSentTime_29();
+					int32_t L_37 = L_36->get_commandSentTime_28();
 					NCommand_t3301568857 * L_38 = V_11;
 					NullCheck(L_38);
-					int32_t L_39 = L_38->get_roundTripTimeout_31();
+					int32_t L_39 = L_38->get_roundTripTimeout_30();
 					G_B26_0 = ((((int32_t)((int32_t)((int32_t)L_35-(int32_t)L_37))) > ((int32_t)L_39))? 1 : 0);
 					goto IL_0152;
 				}
@@ -3585,17 +3472,17 @@ IL_0158:
 				{
 					NCommand_t3301568857 * L_41 = V_11;
 					NullCheck(L_41);
-					L_41->set_commandSentCount_30(1);
+					L_41->set_commandSentCount_29(1);
 					NCommand_t3301568857 * L_42 = V_11;
 					NullCheck(L_42);
-					L_42->set_roundTripTimeout_31(0);
+					L_42->set_roundTripTimeout_30(0);
 					NCommand_t3301568857 * L_43 = V_11;
 					NullCheck(L_43);
-					L_43->set_timeoutTime_32(((int32_t)2147483647LL));
+					L_43->set_timeoutTime_31(((int32_t)2147483647LL));
 					NCommand_t3301568857 * L_44 = V_11;
 					int32_t L_45 = ((PeerBase_t2319621551 *)__this)->get_timeInt_55();
 					NullCheck(L_44);
-					L_44->set_commandSentTime_29(L_45);
+					L_44->set_commandSentTime_28(L_45);
 				}
 
 IL_0183:
@@ -4023,10 +3910,10 @@ IL_0142:
 					int32_t L_35 = ((PeerBase_t2319621551 *)__this)->get_timeInt_55();
 					NCommand_t3301568857 * L_36 = V_12;
 					NullCheck(L_36);
-					int32_t L_37 = L_36->get_commandSentTime_29();
+					int32_t L_37 = L_36->get_commandSentTime_28();
 					NCommand_t3301568857 * L_38 = V_12;
 					NullCheck(L_38);
-					int32_t L_39 = L_38->get_roundTripTimeout_31();
+					int32_t L_39 = L_38->get_roundTripTimeout_30();
 					G_B23_0 = ((((int32_t)((int32_t)((int32_t)L_35-(int32_t)L_37))) > ((int32_t)L_39))? 1 : 0);
 					goto IL_015c;
 				}
@@ -4050,7 +3937,7 @@ IL_0165:
 				{
 					NCommand_t3301568857 * L_41 = V_12;
 					NullCheck(L_41);
-					uint8_t L_42 = L_41->get_commandSentCount_30();
+					uint8_t L_42 = L_41->get_commandSentCount_29();
 					int32_t L_43 = ((PeerBase_t2319621551 *)__this)->get_sentCountAllowance_38();
 					if ((((int32_t)L_42) > ((int32_t)L_43)))
 					{
@@ -4063,7 +3950,7 @@ IL_0175:
 					int32_t L_44 = ((PeerBase_t2319621551 *)__this)->get_timeInt_55();
 					NCommand_t3301568857 * L_45 = V_12;
 					NullCheck(L_45);
-					int32_t L_46 = L_45->get_timeoutTime_32();
+					int32_t L_46 = L_45->get_timeoutTime_31();
 					G_B27_0 = ((((int32_t)L_44) > ((int32_t)L_46))? 1 : 0);
 					goto IL_0187;
 				}
@@ -4260,7 +4147,7 @@ IL_02ce:
 				ObjectU5BU5D_t11523773* L_87 = L_85;
 				NCommand_t3301568857 * L_88 = V_17;
 				NullCheck(L_88);
-				int32_t L_89 = L_88->get_roundTripTimeout_31();
+				int32_t L_89 = L_88->get_roundTripTimeout_30();
 				int32_t L_90 = L_89;
 				Il2CppObject * L_91 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_90);
 				NullCheck(L_87);
@@ -4278,7 +4165,7 @@ IL_02ce:
 				ObjectU5BU5D_t11523773* L_96 = L_92;
 				NCommand_t3301568857 * L_97 = V_17;
 				NullCheck(L_97);
-				int32_t L_98 = L_97->get_commandSentTime_29();
+				int32_t L_98 = L_97->get_commandSentTime_28();
 				int32_t L_99 = L_98;
 				Il2CppObject * L_100 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_99);
 				NullCheck(L_96);
@@ -4465,7 +4352,7 @@ IL_03f4:
 			TrafficStats_t3177679614 * L_135 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
 			NCommand_t3301568857 * L_136 = V_21;
 			NullCheck(L_136);
-			int32_t L_137 = L_136->get_Size_47();
+			int32_t L_137 = L_136->get_Size_45();
 			NullCheck(L_135);
 			TrafficStats_CountControlCommand_m3520535532(L_135, L_137, /*hidden argument*/NULL);
 		}
@@ -5138,7 +5025,7 @@ IL_007b:
 		int32_t L_40 = ((PeerBase_t2319621551 *)__this)->get_ByteCountLastOperation_3();
 		NCommand_t3301568857 * L_41 = V_10;
 		NullCheck(L_41);
-		int32_t L_42 = L_41->get_Size_47();
+		int32_t L_42 = L_41->get_Size_45();
 		((PeerBase_t2319621551 *)__this)->set_ByteCountLastOperation_3(((int32_t)((int32_t)L_40+(int32_t)L_42)));
 		bool L_43 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
 		V_12 = L_43;
@@ -5152,13 +5039,13 @@ IL_007b:
 		TrafficStats_t3177679614 * L_45 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
 		NCommand_t3301568857 * L_46 = V_10;
 		NullCheck(L_46);
-		int32_t L_47 = L_46->get_Size_47();
+		int32_t L_47 = L_46->get_Size_45();
 		NullCheck(L_45);
 		TrafficStats_CountFragmentOpCommand_m906631456(L_45, L_47, /*hidden argument*/NULL);
 		TrafficStatsGameLevel_t2447340108 * L_48 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsGameLevel_9();
 		NCommand_t3301568857 * L_49 = V_10;
 		NullCheck(L_49);
-		int32_t L_50 = L_49->get_Size_47();
+		int32_t L_50 = L_49->get_Size_45();
 		NullCheck(L_48);
 		TrafficStatsGameLevel_CountOperation_m3394385657(L_48, L_50, /*hidden argument*/NULL);
 	}
@@ -5213,7 +5100,7 @@ IL_0143:
 		EnetPeer_QueueOutgoingReliableCommand_m1224485033(__this, L_65, /*hidden argument*/NULL);
 		NCommand_t3301568857 * L_66 = V_14;
 		NullCheck(L_66);
-		int32_t L_67 = L_66->get_Size_47();
+		int32_t L_67 = L_66->get_Size_45();
 		((PeerBase_t2319621551 *)__this)->set_ByteCountLastOperation_3(L_67);
 		bool L_68 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
 		V_16 = L_68;
@@ -5227,13 +5114,13 @@ IL_0143:
 		TrafficStats_t3177679614 * L_70 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
 		NCommand_t3301568857 * L_71 = V_14;
 		NullCheck(L_71);
-		int32_t L_72 = L_71->get_Size_47();
+		int32_t L_72 = L_71->get_Size_45();
 		NullCheck(L_70);
 		TrafficStats_CountReliableOpCommand_m1315891686(L_70, L_72, /*hidden argument*/NULL);
 		TrafficStatsGameLevel_t2447340108 * L_73 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsGameLevel_9();
 		NCommand_t3301568857 * L_74 = V_14;
 		NullCheck(L_74);
-		int32_t L_75 = L_74->get_Size_47();
+		int32_t L_75 = L_74->get_Size_45();
 		NullCheck(L_73);
 		TrafficStatsGameLevel_CountOperation_m3394385657(L_73, L_75, /*hidden argument*/NULL);
 	}
@@ -5249,7 +5136,7 @@ IL_01b2:
 		EnetPeer_QueueOutgoingUnreliableCommand_m1109076912(__this, L_76, /*hidden argument*/NULL);
 		NCommand_t3301568857 * L_77 = V_14;
 		NullCheck(L_77);
-		int32_t L_78 = L_77->get_Size_47();
+		int32_t L_78 = L_77->get_Size_45();
 		((PeerBase_t2319621551 *)__this)->set_ByteCountLastOperation_3(L_78);
 		bool L_79 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
 		V_17 = L_79;
@@ -5263,13 +5150,13 @@ IL_01b2:
 		TrafficStats_t3177679614 * L_81 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
 		NCommand_t3301568857 * L_82 = V_14;
 		NullCheck(L_82);
-		int32_t L_83 = L_82->get_Size_47();
+		int32_t L_83 = L_82->get_Size_45();
 		NullCheck(L_81);
 		TrafficStats_CountUnreliableOpCommand_m738104109(L_81, L_83, /*hidden argument*/NULL);
 		TrafficStatsGameLevel_t2447340108 * L_84 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsGameLevel_9();
 		NCommand_t3301568857 * L_85 = V_14;
 		NullCheck(L_85);
-		int32_t L_86 = L_85->get_Size_47();
+		int32_t L_86 = L_85->get_Size_45();
 		NullCheck(L_84);
 		TrafficStatsGameLevel_CountOperation_m3394385657(L_84, L_86, /*hidden argument*/NULL);
 	}
@@ -5296,6 +5183,7 @@ IL_0203:
 }
 // System.Byte[] ExitGames.Client.Photon.EnetPeer::SerializeOperationToMessage(System.Byte,System.Collections.Generic.Dictionary`2<System.Byte,System.Object>,ExitGames.Client.Photon.PeerBase/EgMessageType,System.Boolean)
 extern TypeInfo* EnetPeer_t4023410422_il2cpp_TypeInfo_var;
+extern TypeInfo* ICryptoProvider_t3810498269_il2cpp_TypeInfo_var;
 extern const uint32_t EnetPeer_SerializeOperationToMessage_m4111096294_MetadataUsageId;
 extern "C"  ByteU5BU5D_t58506160* EnetPeer_SerializeOperationToMessage_m4111096294 (EnetPeer_t4023410422 * __this, uint8_t ___opc, Dictionary_2_t3871407537 * ___parameters, uint8_t ___messageType, bool ___encrypt, const MethodInfo* method)
 {
@@ -5306,7 +5194,7 @@ extern "C"  ByteU5BU5D_t58506160* EnetPeer_SerializeOperationToMessage_m41110962
 		s_Il2CppMethodIntialized = true;
 	}
 	ByteU5BU5D_t58506160* V_0 = NULL;
-	MemoryStream_t2881531048 * V_1 = NULL;
+	StreamBuffer_t433541692 * V_1 = NULL;
 	bool V_2 = false;
 	bool V_3 = false;
 	ByteU5BU5D_t58506160* V_4 = NULL;
@@ -5320,9 +5208,9 @@ extern "C"  ByteU5BU5D_t58506160* EnetPeer_SerializeOperationToMessage_m41110962
 	int32_t __leave_target = 0;
 	NO_UNUSED_WARNING (__leave_target);
 	{
-		MemoryStream_t2881531048 * L_0 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+		StreamBuffer_t433541692 * L_0 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 		V_1 = L_0;
-		MemoryStream_t2881531048 * L_1 = V_1;
+		StreamBuffer_t433541692 * L_1 = V_1;
 		Monitor_Enter_m476686225(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
 	}
 
@@ -5330,10 +5218,10 @@ IL_000f:
 	try
 	{ // begin try (depth: 1)
 		{
-			MemoryStream_t2881531048 * L_2 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_2 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			NullCheck(L_2);
 			VirtActionInvoker1< int64_t >::Invoke(10 /* System.Void System.IO.Stream::set_Position(System.Int64) */, L_2, (((int64_t)((int64_t)0))));
-			MemoryStream_t2881531048 * L_3 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_3 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			NullCheck(L_3);
 			VirtActionInvoker1< int64_t >::Invoke(17 /* System.Void System.IO.Stream::SetLength(System.Int64) */, L_3, (((int64_t)((int64_t)0))));
 			bool L_4 = ___encrypt;
@@ -5347,7 +5235,7 @@ IL_000f:
 
 IL_0035:
 		{
-			MemoryStream_t2881531048 * L_6 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_6 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			IL2CPP_RUNTIME_CLASS_INIT(EnetPeer_t4023410422_il2cpp_TypeInfo_var);
 			ByteU5BU5D_t58506160* L_7 = ((EnetPeer_t4023410422_StaticFields*)EnetPeer_t4023410422_il2cpp_TypeInfo_var->static_fields)->get_messageHeader_84();
 			ByteU5BU5D_t58506160* L_8 = ((EnetPeer_t4023410422_StaticFields*)EnetPeer_t4023410422_il2cpp_TypeInfo_var->static_fields)->get_messageHeader_84();
@@ -5358,12 +5246,12 @@ IL_0035:
 
 IL_0050:
 		{
-			IProtocol_t2724506835 * L_9 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
-			MemoryStream_t2881531048 * L_10 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			IProtocol_t2724506835 * L_9 = ((PeerBase_t2319621551 *)__this)->get_protocol_0();
+			StreamBuffer_t433541692 * L_10 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			uint8_t L_11 = ___opc;
 			Dictionary_2_t3871407537 * L_12 = ___parameters;
 			NullCheck(L_9);
-			VirtActionInvoker4< MemoryStream_t2881531048 *, uint8_t, Dictionary_2_t3871407537 *, bool >::Invoke(12 /* System.Void ExitGames.Client.IProtocol::SerializeOperationRequest(System.IO.MemoryStream,System.Byte,System.Collections.Generic.Dictionary`2<System.Byte,System.Object>,System.Boolean) */, L_9, L_10, L_11, L_12, (bool)0);
+			VirtActionInvoker4< StreamBuffer_t433541692 *, uint8_t, Dictionary_2_t3871407537 *, bool >::Invoke(9 /* System.Void ExitGames.Client.IProtocol::SerializeOperationRequest(ExitGames.Client.Photon.StreamBuffer,System.Byte,System.Collections.Generic.Dictionary`2<System.Byte,System.Object>,System.Boolean) */, L_9, L_10, L_11, L_12, (bool)0);
 			bool L_13 = ___encrypt;
 			V_3 = L_13;
 			bool L_14 = V_3;
@@ -5375,29 +5263,29 @@ IL_0050:
 
 IL_006b:
 		{
-			MemoryStream_t2881531048 * L_15 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_15 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			NullCheck(L_15);
-			ByteU5BU5D_t58506160* L_16 = VirtFuncInvoker0< ByteU5BU5D_t58506160* >::Invoke(25 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_15);
+			ByteU5BU5D_t58506160* L_16 = StreamBuffer_ToArray_m4001605236(L_15, /*hidden argument*/NULL);
 			V_4 = L_16;
-			DiffieHellmanCryptoProvider_t3764219664 * L_17 = ((PeerBase_t2319621551 *)__this)->get_CryptoProvider_44();
+			Il2CppObject * L_17 = ((PeerBase_t2319621551 *)__this)->get_CryptoProvider_44();
 			ByteU5BU5D_t58506160* L_18 = V_4;
 			NullCheck(L_17);
-			ByteU5BU5D_t58506160* L_19 = DiffieHellmanCryptoProvider_Encrypt_m2616640250(L_17, L_18, /*hidden argument*/NULL);
+			ByteU5BU5D_t58506160* L_19 = InterfaceFuncInvoker1< ByteU5BU5D_t58506160*, ByteU5BU5D_t58506160* >::Invoke(2 /* System.Byte[] Photon.SocketServer.Security.ICryptoProvider::Encrypt(System.Byte[]) */, ICryptoProvider_t3810498269_il2cpp_TypeInfo_var, L_17, L_18);
 			V_4 = L_19;
-			MemoryStream_t2881531048 * L_20 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_20 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			NullCheck(L_20);
 			VirtActionInvoker1< int64_t >::Invoke(10 /* System.Void System.IO.Stream::set_Position(System.Int64) */, L_20, (((int64_t)((int64_t)0))));
-			MemoryStream_t2881531048 * L_21 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_21 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			NullCheck(L_21);
 			VirtActionInvoker1< int64_t >::Invoke(17 /* System.Void System.IO.Stream::SetLength(System.Int64) */, L_21, (((int64_t)((int64_t)0))));
-			MemoryStream_t2881531048 * L_22 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_22 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			IL2CPP_RUNTIME_CLASS_INIT(EnetPeer_t4023410422_il2cpp_TypeInfo_var);
 			ByteU5BU5D_t58506160* L_23 = ((EnetPeer_t4023410422_StaticFields*)EnetPeer_t4023410422_il2cpp_TypeInfo_var->static_fields)->get_messageHeader_84();
 			ByteU5BU5D_t58506160* L_24 = ((EnetPeer_t4023410422_StaticFields*)EnetPeer_t4023410422_il2cpp_TypeInfo_var->static_fields)->get_messageHeader_84();
 			NullCheck(L_24);
 			NullCheck(L_22);
 			VirtActionInvoker3< ByteU5BU5D_t58506160*, int32_t, int32_t >::Invoke(18 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_22, L_23, 0, (((int32_t)((int32_t)(((Il2CppArray *)L_24)->max_length)))));
-			MemoryStream_t2881531048 * L_25 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_25 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			ByteU5BU5D_t58506160* L_26 = V_4;
 			ByteU5BU5D_t58506160* L_27 = V_4;
 			NullCheck(L_27);
@@ -5407,9 +5295,9 @@ IL_006b:
 
 IL_00d1:
 		{
-			MemoryStream_t2881531048 * L_28 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_28 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			NullCheck(L_28);
-			ByteU5BU5D_t58506160* L_29 = VirtFuncInvoker0< ByteU5BU5D_t58506160* >::Invoke(25 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_28);
+			ByteU5BU5D_t58506160* L_29 = StreamBuffer_ToArray_m4001605236(L_28, /*hidden argument*/NULL);
 			V_0 = L_29;
 			IL2CPP_LEAVE(0xE8, FINALLY_00e0);
 		}
@@ -5422,7 +5310,7 @@ IL_00d1:
 
 FINALLY_00e0:
 	{ // begin finally (depth: 1)
-		MemoryStream_t2881531048 * L_30 = V_1;
+		StreamBuffer_t433541692 * L_30 = V_1;
 		Monitor_Exit_m2088237919(NULL /*static, unused*/, L_30, /*hidden argument*/NULL);
 		IL2CPP_END_FINALLY(224)
 	} // end finally (depth: 1)
@@ -5520,9 +5408,10 @@ extern "C"  int32_t EnetPeer_SerializeToBuffer_m3005635315 (EnetPeer_t4023410422
 	bool V_4 = false;
 	bool V_5 = false;
 	bool V_6 = false;
-	int32_t V_7 = 0;
+	bool V_7 = false;
+	int32_t V_8 = 0;
 	{
-		goto IL_0141;
+		goto IL_017e;
 	}
 
 IL_0006:
@@ -5543,7 +5432,7 @@ IL_0006:
 		Queue_1_t714689101 * L_4 = ___commandList;
 		NullCheck(L_4);
 		Queue_1_Dequeue_m2254011292(L_4, /*hidden argument*/Queue_1_Dequeue_m2254011292_MethodInfo_var);
-		goto IL_0141;
+		goto IL_017e;
 	}
 
 IL_0023:
@@ -5551,7 +5440,7 @@ IL_0023:
 		int32_t L_5 = __this->get_udpBufferIndex_78();
 		NCommand_t3301568857 * L_6 = V_0;
 		NullCheck(L_6);
-		int32_t L_7 = L_6->get_Size_47();
+		int32_t L_7 = L_6->get_Size_45();
 		ByteU5BU5D_t58506160* L_8 = __this->get_udpBuffer_77();
 		NullCheck(L_8);
 		V_2 = (bool)((((int32_t)((int32_t)((int32_t)L_5+(int32_t)L_7))) > ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_8)->max_length))))))? 1 : 0);
@@ -5608,103 +5497,132 @@ IL_0023:
 
 IL_0095:
 	{
-		goto IL_0153;
+		goto IL_0190;
 	}
 
 IL_009a:
 	{
 		NCommand_t3301568857 * L_25 = V_0;
-		IProtocol_t2724506835 * L_26 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
 		NullCheck(L_25);
-		ByteU5BU5D_t58506160* L_27 = NCommand_Serialize_m2068484208(L_25, L_26, /*hidden argument*/NULL);
-		ByteU5BU5D_t58506160* L_28 = __this->get_udpBuffer_77();
-		int32_t L_29 = __this->get_udpBufferIndex_78();
-		NCommand_t3301568857 * L_30 = V_0;
-		NullCheck(L_30);
-		int32_t L_31 = L_30->get_Size_47();
-		Buffer_BlockCopy_m1580643184(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_27, 0, (Il2CppArray *)(Il2CppArray *)L_28, L_29, L_31, /*hidden argument*/NULL);
-		int32_t L_32 = __this->get_udpBufferIndex_78();
-		NCommand_t3301568857 * L_33 = V_0;
-		NullCheck(L_33);
-		int32_t L_34 = L_33->get_Size_47();
-		__this->set_udpBufferIndex_78(((int32_t)((int32_t)L_32+(int32_t)L_34)));
-		uint8_t L_35 = __this->get_udpCommandCount_76();
-		__this->set_udpCommandCount_76((((int32_t)((uint8_t)((int32_t)((int32_t)L_35+(int32_t)1))))));
-		NCommand_t3301568857 * L_36 = V_0;
-		NullCheck(L_36);
-		uint8_t L_37 = L_36->get_commandFlags_0();
-		V_4 = (bool)((((int32_t)((int32_t)((int32_t)L_37&(int32_t)1))) > ((int32_t)0))? 1 : 0);
-		bool L_38 = V_4;
-		if (!L_38)
+		ByteU5BU5D_t58506160* L_26 = NCommand_SerializeHeader_m1281700582(L_25, /*hidden argument*/NULL);
+		ByteU5BU5D_t58506160* L_27 = __this->get_udpBuffer_77();
+		int32_t L_28 = __this->get_udpBufferIndex_78();
+		NCommand_t3301568857 * L_29 = V_0;
+		NullCheck(L_29);
+		int32_t L_30 = L_29->get_SizeOfHeader_47();
+		Buffer_BlockCopy_m1580643184(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_26, 0, (Il2CppArray *)(Il2CppArray *)L_27, L_28, L_30, /*hidden argument*/NULL);
+		int32_t L_31 = __this->get_udpBufferIndex_78();
+		NCommand_t3301568857 * L_32 = V_0;
+		NullCheck(L_32);
+		int32_t L_33 = L_32->get_SizeOfHeader_47();
+		__this->set_udpBufferIndex_78(((int32_t)((int32_t)L_31+(int32_t)L_33)));
+		NCommand_t3301568857 * L_34 = V_0;
+		NullCheck(L_34);
+		int32_t L_35 = NCommand_get_SizeOfPayload_m3675985696(L_34, /*hidden argument*/NULL);
+		V_4 = (bool)((((int32_t)L_35) > ((int32_t)0))? 1 : 0);
+		bool L_36 = V_4;
+		if (!L_36)
 		{
-			goto IL_0139;
+			goto IL_010f;
 		}
 	}
 	{
-		NCommand_t3301568857 * L_39 = V_0;
-		EnetPeer_QueueSentCommand_m4193205799(__this, L_39, /*hidden argument*/NULL);
-		Queue_1_t67269933 * L_40 = ((PeerBase_t2319621551 *)__this)->get_CommandLog_50();
-		V_5 = (bool)((!(((Il2CppObject*)(Queue_1_t67269933 *)L_40) <= ((Il2CppObject*)(Il2CppObject *)NULL)))? 1 : 0);
-		bool L_41 = V_5;
-		if (!L_41)
+		NCommand_t3301568857 * L_37 = V_0;
+		NullCheck(L_37);
+		ByteU5BU5D_t58506160* L_38 = NCommand_Serialize_m3770979705(L_37, /*hidden argument*/NULL);
+		ByteU5BU5D_t58506160* L_39 = __this->get_udpBuffer_77();
+		int32_t L_40 = __this->get_udpBufferIndex_78();
+		NCommand_t3301568857 * L_41 = V_0;
+		NullCheck(L_41);
+		int32_t L_42 = NCommand_get_SizeOfPayload_m3675985696(L_41, /*hidden argument*/NULL);
+		Buffer_BlockCopy_m1580643184(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_38, 0, (Il2CppArray *)(Il2CppArray *)L_39, L_40, L_42, /*hidden argument*/NULL);
+		int32_t L_43 = __this->get_udpBufferIndex_78();
+		NCommand_t3301568857 * L_44 = V_0;
+		NullCheck(L_44);
+		int32_t L_45 = NCommand_get_SizeOfPayload_m3675985696(L_44, /*hidden argument*/NULL);
+		__this->set_udpBufferIndex_78(((int32_t)((int32_t)L_43+(int32_t)L_45)));
+	}
+
+IL_010f:
+	{
+		uint8_t L_46 = __this->get_udpCommandCount_76();
+		__this->set_udpCommandCount_76((((int32_t)((uint8_t)((int32_t)((int32_t)L_46+(int32_t)1))))));
+		NCommand_t3301568857 * L_47 = V_0;
+		NullCheck(L_47);
+		uint8_t L_48 = L_47->get_commandFlags_0();
+		V_5 = (bool)((((int32_t)((int32_t)((int32_t)L_48&(int32_t)1))) > ((int32_t)0))? 1 : 0);
+		bool L_49 = V_5;
+		if (!L_49)
 		{
-			goto IL_0138;
+			goto IL_0176;
 		}
 	}
 	{
-		Queue_1_t67269933 * L_42 = ((PeerBase_t2319621551 *)__this)->get_CommandLog_50();
-		NCommand_t3301568857 * L_43 = V_0;
-		int32_t L_44 = ((PeerBase_t2319621551 *)__this)->get_timeInt_55();
-		int32_t L_45 = ((PeerBase_t2319621551 *)__this)->get_roundTripTime_25();
-		int32_t L_46 = ((PeerBase_t2319621551 *)__this)->get_roundTripTimeVariance_26();
-		CmdLogSentReliable_t1131162408 * L_47 = (CmdLogSentReliable_t1131162408 *)il2cpp_codegen_object_new(CmdLogSentReliable_t1131162408_il2cpp_TypeInfo_var);
-		CmdLogSentReliable__ctor_m1035862053(L_47, L_43, L_44, L_45, L_46, (bool)0, /*hidden argument*/NULL);
-		NullCheck(L_42);
-		Queue_1_Enqueue_m3913812821(L_42, L_47, /*hidden argument*/Queue_1_Enqueue_m3913812821_MethodInfo_var);
+		NCommand_t3301568857 * L_50 = V_0;
+		EnetPeer_QueueSentCommand_m4193205799(__this, L_50, /*hidden argument*/NULL);
+		Queue_1_t67269933 * L_51 = ((PeerBase_t2319621551 *)__this)->get_CommandLog_50();
+		V_6 = (bool)((!(((Il2CppObject*)(Queue_1_t67269933 *)L_51) <= ((Il2CppObject*)(Il2CppObject *)NULL)))? 1 : 0);
+		bool L_52 = V_6;
+		if (!L_52)
+		{
+			goto IL_0175;
+		}
+	}
+	{
+		Queue_1_t67269933 * L_53 = ((PeerBase_t2319621551 *)__this)->get_CommandLog_50();
+		NCommand_t3301568857 * L_54 = V_0;
+		int32_t L_55 = ((PeerBase_t2319621551 *)__this)->get_timeInt_55();
+		int32_t L_56 = ((PeerBase_t2319621551 *)__this)->get_roundTripTime_25();
+		int32_t L_57 = ((PeerBase_t2319621551 *)__this)->get_roundTripTimeVariance_26();
+		CmdLogSentReliable_t1131162408 * L_58 = (CmdLogSentReliable_t1131162408 *)il2cpp_codegen_object_new(CmdLogSentReliable_t1131162408_il2cpp_TypeInfo_var);
+		CmdLogSentReliable__ctor_m1035862053(L_58, L_54, L_55, L_56, L_57, (bool)0, /*hidden argument*/NULL);
+		NullCheck(L_53);
+		Queue_1_Enqueue_m3913812821(L_53, L_58, /*hidden argument*/Queue_1_Enqueue_m3913812821_MethodInfo_var);
 		PeerBase_CommandLogResize_m3387006562(__this, /*hidden argument*/NULL);
 	}
 
-IL_0138:
+IL_0175:
 	{
 	}
 
-IL_0139:
+IL_0176:
 	{
-		Queue_1_t714689101 * L_48 = ___commandList;
-		NullCheck(L_48);
-		Queue_1_Dequeue_m2254011292(L_48, /*hidden argument*/Queue_1_Dequeue_m2254011292_MethodInfo_var);
+		Queue_1_t714689101 * L_59 = ___commandList;
+		NullCheck(L_59);
+		Queue_1_Dequeue_m2254011292(L_59, /*hidden argument*/Queue_1_Dequeue_m2254011292_MethodInfo_var);
 	}
 
-IL_0141:
+IL_017e:
 	{
-		Queue_1_t714689101 * L_49 = ___commandList;
-		NullCheck(L_49);
-		int32_t L_50 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 System.Collections.Generic.Queue`1<ExitGames.Client.Photon.NCommand>::get_Count() */, L_49);
-		V_6 = (bool)((((int32_t)L_50) > ((int32_t)0))? 1 : 0);
-		bool L_51 = V_6;
-		if (L_51)
+		Queue_1_t714689101 * L_60 = ___commandList;
+		NullCheck(L_60);
+		int32_t L_61 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 System.Collections.Generic.Queue`1<ExitGames.Client.Photon.NCommand>::get_Count() */, L_60);
+		V_7 = (bool)((((int32_t)L_61) > ((int32_t)0))? 1 : 0);
+		bool L_62 = V_7;
+		if (L_62)
 		{
 			goto IL_0006;
 		}
 	}
 
-IL_0153:
+IL_0190:
 	{
-		Queue_1_t714689101 * L_52 = ___commandList;
-		NullCheck(L_52);
-		int32_t L_53 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 System.Collections.Generic.Queue`1<ExitGames.Client.Photon.NCommand>::get_Count() */, L_52);
-		V_7 = L_53;
-		goto IL_015d;
+		Queue_1_t714689101 * L_63 = ___commandList;
+		NullCheck(L_63);
+		int32_t L_64 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 System.Collections.Generic.Queue`1<ExitGames.Client.Photon.NCommand>::get_Count() */, L_63);
+		V_8 = L_64;
+		goto IL_019a;
 	}
 
-IL_015d:
+IL_019a:
 	{
-		int32_t L_54 = V_7;
-		return L_54;
+		int32_t L_65 = V_8;
+		return L_65;
 	}
 }
 // System.Void ExitGames.Client.Photon.EnetPeer::SendData(System.Byte[],System.Int32)
 extern TypeInfo* U3CU3Ec__DisplayClass37_1_t2750139085_il2cpp_TypeInfo_var;
+extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
 extern TypeInfo* SupportClass_t780002629_il2cpp_TypeInfo_var;
 extern TypeInfo* U3CU3Ec__DisplayClass37_0_t2750139084_il2cpp_TypeInfo_var;
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
@@ -5760,201 +5678,194 @@ IL_0015:
 	{ // begin try (depth: 1)
 		{
 			V_1 = 0;
-			IProtocol_t2724506835 * L_4 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
-			int16_t L_5 = ((PeerBase_t2319621551 *)__this)->get_peerID_21();
+			int16_t L_4 = ((PeerBase_t2319621551 *)__this)->get_peerID_21();
+			ByteU5BU5D_t58506160* L_5 = ___data;
+			IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+			Protocol_Serialize_m1344711179(NULL /*static, unused*/, L_4, L_5, (&V_1), /*hidden argument*/NULL);
 			ByteU5BU5D_t58506160* L_6 = ___data;
-			NullCheck(L_4);
-			VirtActionInvoker3< int16_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(6 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int16,System.Byte[],System.Int32&) */, L_4, L_5, L_6, (&V_1));
-			ByteU5BU5D_t58506160* L_7 = ___data;
-			bool L_8 = ((PeerBase_t2319621551 *)__this)->get_crcEnabled_15();
+			bool L_7 = ((PeerBase_t2319621551 *)__this)->get_crcEnabled_15();
 			G_B2_0 = 2;
-			G_B2_1 = L_7;
-			if (L_8)
+			G_B2_1 = L_6;
+			if (L_7)
 			{
 				G_B3_0 = 2;
-				G_B3_1 = L_7;
-				goto IL_003a;
+				G_B3_1 = L_6;
+				goto IL_0034;
 			}
 		}
 
-IL_0037:
+IL_0031:
 		{
 			G_B4_0 = 0;
 			G_B4_1 = G_B2_0;
 			G_B4_2 = G_B2_1;
-			goto IL_003f;
+			goto IL_0039;
 		}
 
-IL_003a:
+IL_0034:
 		{
 			G_B4_0 = ((int32_t)204);
 			G_B4_1 = G_B3_0;
 			G_B4_2 = G_B3_1;
 		}
 
-IL_003f:
+IL_0039:
 		{
 			NullCheck(G_B4_2);
 			IL2CPP_ARRAY_BOUNDS_CHECK(G_B4_2, G_B4_1);
 			(G_B4_2)->SetAt(static_cast<il2cpp_array_size_t>(G_B4_1), (uint8_t)G_B4_0);
-			ByteU5BU5D_t58506160* L_9 = ___data;
-			uint8_t L_10 = __this->get_udpCommandCount_76();
-			NullCheck(L_9);
-			IL2CPP_ARRAY_BOUNDS_CHECK(L_9, 3);
-			(L_9)->SetAt(static_cast<il2cpp_array_size_t>(3), (uint8_t)L_10);
+			ByteU5BU5D_t58506160* L_8 = ___data;
+			uint8_t L_9 = __this->get_udpCommandCount_76();
+			NullCheck(L_8);
+			IL2CPP_ARRAY_BOUNDS_CHECK(L_8, 3);
+			(L_8)->SetAt(static_cast<il2cpp_array_size_t>(3), (uint8_t)L_9);
 			V_1 = 4;
-			IProtocol_t2724506835 * L_11 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
-			int32_t L_12 = ((PeerBase_t2319621551 *)__this)->get_timeInt_55();
+			int32_t L_10 = ((PeerBase_t2319621551 *)__this)->get_timeInt_55();
+			ByteU5BU5D_t58506160* L_11 = ___data;
+			IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+			Protocol_Serialize_m2001046545(NULL /*static, unused*/, L_10, L_11, (&V_1), /*hidden argument*/NULL);
+			int32_t L_12 = __this->get_challenge_79();
 			ByteU5BU5D_t58506160* L_13 = ___data;
-			NullCheck(L_11);
-			VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_11, L_12, L_13, (&V_1));
-			IProtocol_t2724506835 * L_14 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
-			int32_t L_15 = __this->get_challenge_79();
+			Protocol_Serialize_m2001046545(NULL /*static, unused*/, L_12, L_13, (&V_1), /*hidden argument*/NULL);
+			bool L_14 = ((PeerBase_t2319621551 *)__this)->get_crcEnabled_15();
+			V_2 = L_14;
+			bool L_15 = V_2;
+			if (!L_15)
+			{
+				goto IL_0094;
+			}
+		}
+
+IL_006d:
+		{
 			ByteU5BU5D_t58506160* L_16 = ___data;
-			NullCheck(L_14);
-			VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_14, L_15, L_16, (&V_1));
-			bool L_17 = ((PeerBase_t2319621551 *)__this)->get_crcEnabled_15();
-			V_2 = L_17;
-			bool L_18 = V_2;
-			if (!L_18)
-			{
-				goto IL_00b2;
-			}
-		}
-
-IL_007f:
-		{
-			IProtocol_t2724506835 * L_19 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
-			ByteU5BU5D_t58506160* L_20 = ___data;
-			NullCheck(L_19);
-			VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_19, 0, L_20, (&V_1));
-			ByteU5BU5D_t58506160* L_21 = ___data;
-			U3CU3Ec__DisplayClass37_1_t2750139085 * L_22 = V_0;
-			NullCheck(L_22);
-			int32_t L_23 = L_22->get_length_0();
+			IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+			Protocol_Serialize_m2001046545(NULL /*static, unused*/, 0, L_16, (&V_1), /*hidden argument*/NULL);
+			ByteU5BU5D_t58506160* L_17 = ___data;
+			U3CU3Ec__DisplayClass37_1_t2750139085 * L_18 = V_0;
+			NullCheck(L_18);
+			int32_t L_19 = L_18->get_length_0();
 			IL2CPP_RUNTIME_CLASS_INIT(SupportClass_t780002629_il2cpp_TypeInfo_var);
-			uint32_t L_24 = SupportClass_CalculateCrc_m3683502402(NULL /*static, unused*/, L_21, L_23, /*hidden argument*/NULL);
-			V_3 = L_24;
-			int32_t L_25 = V_1;
-			V_1 = ((int32_t)((int32_t)L_25-(int32_t)4));
-			IProtocol_t2724506835 * L_26 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
-			uint32_t L_27 = V_3;
-			ByteU5BU5D_t58506160* L_28 = ___data;
-			NullCheck(L_26);
-			VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_26, L_27, L_28, (&V_1));
+			uint32_t L_20 = SupportClass_CalculateCrc_m3683502402(NULL /*static, unused*/, L_17, L_19, /*hidden argument*/NULL);
+			V_3 = L_20;
+			int32_t L_21 = V_1;
+			V_1 = ((int32_t)((int32_t)L_21-(int32_t)4));
+			uint32_t L_22 = V_3;
+			ByteU5BU5D_t58506160* L_23 = ___data;
+			Protocol_Serialize_m2001046545(NULL /*static, unused*/, L_22, L_23, (&V_1), /*hidden argument*/NULL);
 		}
 
-IL_00b2:
+IL_0094:
 		{
-			int64_t L_29 = ((PeerBase_t2319621551 *)__this)->get_bytesOut_34();
-			U3CU3Ec__DisplayClass37_1_t2750139085 * L_30 = V_0;
-			NullCheck(L_30);
-			int32_t L_31 = L_30->get_length_0();
-			((PeerBase_t2319621551 *)__this)->set_bytesOut_34(((int64_t)((int64_t)L_29+(int64_t)(((int64_t)((int64_t)L_31))))));
-			NetworkSimulationSet_t651747241 * L_32 = PeerBase_get_NetworkSimulationSettings_m2442487428(__this, /*hidden argument*/NULL);
-			NullCheck(L_32);
-			bool L_33 = NetworkSimulationSet_get_IsSimulationEnabled_m1216022116(L_32, /*hidden argument*/NULL);
-			V_4 = L_33;
-			bool L_34 = V_4;
-			if (!L_34)
+			int64_t L_24 = ((PeerBase_t2319621551 *)__this)->get_bytesOut_34();
+			U3CU3Ec__DisplayClass37_1_t2750139085 * L_25 = V_0;
+			NullCheck(L_25);
+			int32_t L_26 = L_25->get_length_0();
+			((PeerBase_t2319621551 *)__this)->set_bytesOut_34(((int64_t)((int64_t)L_24+(int64_t)(((int64_t)((int64_t)L_26))))));
+			NetworkSimulationSet_t651747241 * L_27 = PeerBase_get_NetworkSimulationSettings_m2442487428(__this, /*hidden argument*/NULL);
+			NullCheck(L_27);
+			bool L_28 = NetworkSimulationSet_get_IsSimulationEnabled_m1216022116(L_27, /*hidden argument*/NULL);
+			V_4 = L_28;
+			bool L_29 = V_4;
+			if (!L_29)
 			{
-				goto IL_0132;
+				goto IL_0114;
 			}
 		}
 
-IL_00d7:
+IL_00b9:
 		{
-			U3CU3Ec__DisplayClass37_0_t2750139084 * L_35 = (U3CU3Ec__DisplayClass37_0_t2750139084 *)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass37_0_t2750139084_il2cpp_TypeInfo_var);
-			U3CU3Ec__DisplayClass37_0__ctor_m1310747979(L_35, /*hidden argument*/NULL);
-			V_5 = L_35;
-			U3CU3Ec__DisplayClass37_0_t2750139084 * L_36 = V_5;
-			U3CU3Ec__DisplayClass37_1_t2750139085 * L_37 = V_0;
-			NullCheck(L_36);
-			L_36->set_CSU24U3CU3E8__locals1_1(L_37);
+			U3CU3Ec__DisplayClass37_0_t2750139084 * L_30 = (U3CU3Ec__DisplayClass37_0_t2750139084 *)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass37_0_t2750139084_il2cpp_TypeInfo_var);
+			U3CU3Ec__DisplayClass37_0__ctor_m1310747979(L_30, /*hidden argument*/NULL);
+			V_5 = L_30;
+			U3CU3Ec__DisplayClass37_0_t2750139084 * L_31 = V_5;
+			U3CU3Ec__DisplayClass37_1_t2750139085 * L_32 = V_0;
+			NullCheck(L_31);
+			L_31->set_CSU24U3CU3E8__locals1_1(L_32);
+			U3CU3Ec__DisplayClass37_0_t2750139084 * L_33 = V_5;
+			U3CU3Ec__DisplayClass37_0_t2750139084 * L_34 = V_5;
+			NullCheck(L_34);
+			U3CU3Ec__DisplayClass37_1_t2750139085 * L_35 = L_34->get_CSU24U3CU3E8__locals1_1();
+			NullCheck(L_35);
+			int32_t L_36 = L_35->get_length_0();
+			NullCheck(L_33);
+			L_33->set_dataCopy_0(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)L_36)));
+			ByteU5BU5D_t58506160* L_37 = ___data;
 			U3CU3Ec__DisplayClass37_0_t2750139084 * L_38 = V_5;
-			U3CU3Ec__DisplayClass37_0_t2750139084 * L_39 = V_5;
-			NullCheck(L_39);
-			U3CU3Ec__DisplayClass37_1_t2750139085 * L_40 = L_39->get_CSU24U3CU3E8__locals1_1();
-			NullCheck(L_40);
-			int32_t L_41 = L_40->get_length_0();
 			NullCheck(L_38);
-			L_38->set_dataCopy_0(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)L_41)));
-			ByteU5BU5D_t58506160* L_42 = ___data;
+			ByteU5BU5D_t58506160* L_39 = L_38->get_dataCopy_0();
+			U3CU3Ec__DisplayClass37_0_t2750139084 * L_40 = V_5;
+			NullCheck(L_40);
+			U3CU3Ec__DisplayClass37_1_t2750139085 * L_41 = L_40->get_CSU24U3CU3E8__locals1_1();
+			NullCheck(L_41);
+			int32_t L_42 = L_41->get_length_0();
+			Buffer_BlockCopy_m1580643184(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_37, 0, (Il2CppArray *)(Il2CppArray *)L_39, 0, L_42, /*hidden argument*/NULL);
 			U3CU3Ec__DisplayClass37_0_t2750139084 * L_43 = V_5;
-			NullCheck(L_43);
-			ByteU5BU5D_t58506160* L_44 = L_43->get_dataCopy_0();
-			U3CU3Ec__DisplayClass37_0_t2750139084 * L_45 = V_5;
-			NullCheck(L_45);
-			U3CU3Ec__DisplayClass37_1_t2750139085 * L_46 = L_45->get_CSU24U3CU3E8__locals1_1();
+			IntPtr_t L_44;
+			L_44.set_m_value_0((void*)U3CU3Ec__DisplayClass37_0_U3CSendDataU3Eb__0_m1332048887_MethodInfo_var);
+			MyAction_t3022056226 * L_45 = (MyAction_t3022056226 *)il2cpp_codegen_object_new(MyAction_t3022056226_il2cpp_TypeInfo_var);
+			MyAction__ctor_m4194094300(L_45, L_43, L_44, /*hidden argument*/NULL);
+			PeerBase_SendNetworkSimulated_m3835487327(__this, L_45, /*hidden argument*/NULL);
+			goto IL_0129;
+		}
+
+IL_0114:
+		{
+			IPhotonSocket_t3731899444 * L_46 = ((PeerBase_t2319621551 *)__this)->get_rt_2();
+			ByteU5BU5D_t58506160* L_47 = ___data;
+			U3CU3Ec__DisplayClass37_1_t2750139085 * L_48 = V_0;
+			NullCheck(L_48);
+			int32_t L_49 = L_48->get_length_0();
 			NullCheck(L_46);
-			int32_t L_47 = L_46->get_length_0();
-			Buffer_BlockCopy_m1580643184(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_42, 0, (Il2CppArray *)(Il2CppArray *)L_44, 0, L_47, /*hidden argument*/NULL);
-			U3CU3Ec__DisplayClass37_0_t2750139084 * L_48 = V_5;
-			IntPtr_t L_49;
-			L_49.set_m_value_0((void*)U3CU3Ec__DisplayClass37_0_U3CSendDataU3Eb__0_m1332048887_MethodInfo_var);
-			MyAction_t3022056226 * L_50 = (MyAction_t3022056226 *)il2cpp_codegen_object_new(MyAction_t3022056226_il2cpp_TypeInfo_var);
-			MyAction__ctor_m4194094300(L_50, L_48, L_49, /*hidden argument*/NULL);
-			PeerBase_SendNetworkSimulated_m3835487327(__this, L_50, /*hidden argument*/NULL);
-			goto IL_0147;
+			VirtFuncInvoker2< int32_t, ByteU5BU5D_t58506160*, int32_t >::Invoke(6 /* ExitGames.Client.Photon.PhotonSocketError ExitGames.Client.Photon.IPhotonSocket::Send(System.Byte[],System.Int32) */, L_46, L_47, L_49);
 		}
 
-IL_0132:
+IL_0129:
 		{
-			IPhotonSocket_t3731899444 * L_51 = ((PeerBase_t2319621551 *)__this)->get_rt_2();
-			ByteU5BU5D_t58506160* L_52 = ___data;
-			U3CU3Ec__DisplayClass37_1_t2750139085 * L_53 = V_0;
-			NullCheck(L_53);
-			int32_t L_54 = L_53->get_length_0();
-			NullCheck(L_51);
-			VirtFuncInvoker2< int32_t, ByteU5BU5D_t58506160*, int32_t >::Invoke(6 /* ExitGames.Client.Photon.PhotonSocketError ExitGames.Client.Photon.IPhotonSocket::Send(System.Byte[],System.Int32) */, L_51, L_52, L_54);
-		}
-
-IL_0147:
-		{
-			goto IL_0180;
+			goto IL_0162;
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__exception_local = (Exception_t1967233988 *)e.ex;
 		if(il2cpp_codegen_class_is_assignable_from (Exception_t1967233988_il2cpp_TypeInfo_var, e.ex->object.klass))
-			goto CATCH_014a;
+			goto CATCH_012c;
 		throw e;
 	}
 
-CATCH_014a:
+CATCH_012c:
 	{ // begin catch(System.Exception)
 		{
 			V_6 = ((Exception_t1967233988 *)__exception_local);
-			uint8_t L_55 = ((PeerBase_t2319621551 *)__this)->get_debugOut_19();
-			V_7 = (bool)((((int32_t)((((int32_t)L_55) < ((int32_t)1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-			bool L_56 = V_7;
-			if (!L_56)
+			uint8_t L_50 = ((PeerBase_t2319621551 *)__this)->get_debugOut_19();
+			V_7 = (bool)((((int32_t)((((int32_t)L_50) < ((int32_t)1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+			bool L_51 = V_7;
+			if (!L_51)
 			{
-				goto IL_0175;
+				goto IL_0157;
 			}
 		}
 
-IL_015f:
+IL_0141:
 		{
-			Il2CppObject * L_57 = PeerBase_get_Listener_m2440165892(__this, /*hidden argument*/NULL);
-			Exception_t1967233988 * L_58 = V_6;
-			NullCheck(L_58);
-			String_t* L_59 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_58);
-			NullCheck(L_57);
-			InterfaceActionInvoker2< uint8_t, String_t* >::Invoke(0 /* System.Void ExitGames.Client.Photon.IPhotonPeerListener::DebugReturn(ExitGames.Client.Photon.DebugLevel,System.String) */, IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var, L_57, 1, L_59);
+			Il2CppObject * L_52 = PeerBase_get_Listener_m2440165892(__this, /*hidden argument*/NULL);
+			Exception_t1967233988 * L_53 = V_6;
+			NullCheck(L_53);
+			String_t* L_54 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_53);
+			NullCheck(L_52);
+			InterfaceActionInvoker2< uint8_t, String_t* >::Invoke(0 /* System.Void ExitGames.Client.Photon.IPhotonPeerListener::DebugReturn(ExitGames.Client.Photon.DebugLevel,System.String) */, IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var, L_52, 1, L_54);
 		}
 
-IL_0175:
+IL_0157:
 		{
-			Exception_t1967233988 * L_60 = V_6;
+			Exception_t1967233988 * L_55 = V_6;
 			IL2CPP_RUNTIME_CLASS_INIT(SupportClass_t780002629_il2cpp_TypeInfo_var);
-			SupportClass_WriteStackTrace_m2805806499(NULL /*static, unused*/, L_60, /*hidden argument*/NULL);
-			goto IL_0180;
+			SupportClass_WriteStackTrace_m2805806499(NULL /*static, unused*/, L_55, /*hidden argument*/NULL);
+			goto IL_0162;
 		}
 	} // end catch (depth: 1)
 
-IL_0180:
+IL_0162:
 	{
 		return;
 	}
@@ -5988,16 +5899,16 @@ extern "C"  void EnetPeer_QueueSentCommand_m4193205799 (EnetPeer_t4023410422 * _
 		NCommand_t3301568857 * L_0 = ___command;
 		int32_t L_1 = ((PeerBase_t2319621551 *)__this)->get_timeInt_55();
 		NullCheck(L_0);
-		L_0->set_commandSentTime_29(L_1);
+		L_0->set_commandSentTime_28(L_1);
 		NCommand_t3301568857 * L_2 = ___command;
 		NCommand_t3301568857 * L_3 = L_2;
 		NullCheck(L_3);
-		uint8_t L_4 = L_3->get_commandSentCount_30();
+		uint8_t L_4 = L_3->get_commandSentCount_29();
 		NullCheck(L_3);
-		L_3->set_commandSentCount_30((((int32_t)((uint8_t)((int32_t)((int32_t)L_4+(int32_t)1))))));
+		L_3->set_commandSentCount_29((((int32_t)((uint8_t)((int32_t)((int32_t)L_4+(int32_t)1))))));
 		NCommand_t3301568857 * L_5 = ___command;
 		NullCheck(L_5);
-		int32_t L_6 = L_5->get_roundTripTimeout_31();
+		int32_t L_6 = L_5->get_roundTripTimeout_30();
 		V_0 = (bool)((((int32_t)L_6) == ((int32_t)0))? 1 : 0);
 		bool L_7 = V_0;
 		if (!L_7)
@@ -6010,12 +5921,12 @@ extern "C"  void EnetPeer_QueueSentCommand_m4193205799 (EnetPeer_t4023410422 * _
 		int32_t L_9 = ((PeerBase_t2319621551 *)__this)->get_roundTripTime_25();
 		int32_t L_10 = ((PeerBase_t2319621551 *)__this)->get_roundTripTimeVariance_26();
 		NullCheck(L_8);
-		L_8->set_roundTripTimeout_31(((int32_t)((int32_t)L_9+(int32_t)((int32_t)((int32_t)4*(int32_t)L_10)))));
+		L_8->set_roundTripTimeout_30(((int32_t)((int32_t)L_9+(int32_t)((int32_t)((int32_t)4*(int32_t)L_10)))));
 		NCommand_t3301568857 * L_11 = ___command;
 		int32_t L_12 = ((PeerBase_t2319621551 *)__this)->get_timeInt_55();
 		int32_t L_13 = ((PeerBase_t2319621551 *)__this)->get_DisconnectTimeout_39();
 		NullCheck(L_11);
-		L_11->set_timeoutTime_32(((int32_t)((int32_t)L_12+(int32_t)L_13)));
+		L_11->set_timeoutTime_31(((int32_t)((int32_t)L_12+(int32_t)L_13)));
 		goto IL_0082;
 	}
 
@@ -6023,7 +5934,7 @@ IL_0055:
 	{
 		NCommand_t3301568857 * L_14 = ___command;
 		NullCheck(L_14);
-		uint8_t L_15 = L_14->get_commandSentCount_30();
+		uint8_t L_15 = L_14->get_commandSentCount_29();
 		uint8_t L_16 = PeerBase_get_QuickResendAttempts_m4022294950(__this, /*hidden argument*/NULL);
 		V_1 = (bool)((((int32_t)((((int32_t)L_15) > ((int32_t)((int32_t)((int32_t)L_16+(int32_t)1))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_17 = V_1;
@@ -6041,9 +5952,9 @@ IL_0071:
 		NCommand_t3301568857 * L_18 = ___command;
 		NCommand_t3301568857 * L_19 = L_18;
 		NullCheck(L_19);
-		int32_t L_20 = L_19->get_roundTripTimeout_31();
+		int32_t L_20 = L_19->get_roundTripTimeout_30();
 		NullCheck(L_19);
-		L_19->set_roundTripTimeout_31(((int32_t)((int32_t)L_20*(int32_t)2)));
+		L_19->set_roundTripTimeout_30(((int32_t)((int32_t)L_20*(int32_t)2)));
 	}
 
 IL_0081:
@@ -6077,10 +5988,10 @@ IL_00a3:
 		{
 			NCommand_t3301568857 * L_26 = ___command;
 			NullCheck(L_26);
-			int32_t L_27 = L_26->get_commandSentTime_29();
+			int32_t L_27 = L_26->get_commandSentTime_28();
 			NCommand_t3301568857 * L_28 = ___command;
 			NullCheck(L_28);
-			int32_t L_29 = L_28->get_roundTripTimeout_31();
+			int32_t L_29 = L_28->get_roundTripTimeout_30();
 			V_4 = ((int32_t)((int32_t)L_27+(int32_t)L_29));
 			int32_t L_30 = V_4;
 			int32_t L_31 = ((PeerBase_t2319621551 *)__this)->get_timeoutInt_56();
@@ -6533,6 +6444,7 @@ IL_006a:
 }
 // System.Void ExitGames.Client.Photon.EnetPeer::ReceiveIncomingCommands(System.Byte[],System.Int32)
 extern TypeInfo* SupportClass_t780002629_il2cpp_TypeInfo_var;
+extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
 extern TypeInfo* UInt32_t985925326_il2cpp_TypeInfo_var;
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
 extern TypeInfo* ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var;
@@ -6606,528 +6518,520 @@ IL_000c:
 	{ // begin try (depth: 1)
 		{
 			V_0 = 0;
-			IProtocol_t2724506835 * L_1 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
+			ByteU5BU5D_t58506160* L_1 = ___inBuff;
+			IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+			Protocol_Deserialize_m3746144530(NULL /*static, unused*/, (&V_1), L_1, (&V_0), /*hidden argument*/NULL);
 			ByteU5BU5D_t58506160* L_2 = ___inBuff;
-			NullCheck(L_1);
-			VirtActionInvoker3< int16_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(15 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int16&,System.Byte[],System.Int32&) */, L_1, (&V_1), L_2, (&V_0));
-			ByteU5BU5D_t58506160* L_3 = ___inBuff;
-			int32_t L_4 = V_0;
+			int32_t L_3 = V_0;
+			int32_t L_4 = L_3;
+			V_0 = ((int32_t)((int32_t)L_4+(int32_t)1));
+			NullCheck(L_2);
+			IL2CPP_ARRAY_BOUNDS_CHECK(L_2, L_4);
 			int32_t L_5 = L_4;
-			V_0 = ((int32_t)((int32_t)L_5+(int32_t)1));
-			NullCheck(L_3);
-			IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_5);
-			int32_t L_6 = L_5;
-			V_2 = ((L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_6)));
-			ByteU5BU5D_t58506160* L_7 = ___inBuff;
-			int32_t L_8 = V_0;
+			V_2 = ((L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_5)));
+			ByteU5BU5D_t58506160* L_6 = ___inBuff;
+			int32_t L_7 = V_0;
+			int32_t L_8 = L_7;
+			V_0 = ((int32_t)((int32_t)L_8+(int32_t)1));
+			NullCheck(L_6);
+			IL2CPP_ARRAY_BOUNDS_CHECK(L_6, L_8);
 			int32_t L_9 = L_8;
-			V_0 = ((int32_t)((int32_t)L_9+(int32_t)1));
-			NullCheck(L_7);
-			IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_9);
-			int32_t L_10 = L_9;
-			V_3 = ((L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_10)));
-			IProtocol_t2724506835 * L_11 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
-			int32_t* L_12 = __this->get_address_of_serverSentTime_82();
-			ByteU5BU5D_t58506160* L_13 = ___inBuff;
-			NullCheck(L_11);
-			VirtActionInvoker3< int32_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(16 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int32&,System.Byte[],System.Int32&) */, L_11, L_12, L_13, (&V_0));
-			IProtocol_t2724506835 * L_14 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
+			V_3 = ((L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_9)));
+			int32_t* L_10 = __this->get_address_of_serverSentTime_82();
+			ByteU5BU5D_t58506160* L_11 = ___inBuff;
+			Protocol_Deserialize_m2617704396(NULL /*static, unused*/, L_10, L_11, (&V_0), /*hidden argument*/NULL);
+			ByteU5BU5D_t58506160* L_12 = ___inBuff;
+			Protocol_Deserialize_m2617704396(NULL /*static, unused*/, (&V_4), L_12, (&V_0), /*hidden argument*/NULL);
+			uint8_t L_13 = V_2;
+			V_5 = (bool)((((int32_t)L_13) == ((int32_t)((int32_t)204)))? 1 : 0);
+			bool L_14 = V_5;
+			if (!L_14)
+			{
+				goto IL_00ea;
+			}
+		}
+
+IL_0055:
+		{
 			ByteU5BU5D_t58506160* L_15 = ___inBuff;
-			NullCheck(L_14);
-			VirtActionInvoker3< int32_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(16 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int32&,System.Byte[],System.Int32&) */, L_14, (&V_4), L_15, (&V_0));
-			uint8_t L_16 = V_2;
-			V_5 = (bool)((((int32_t)L_16) == ((int32_t)((int32_t)204)))? 1 : 0);
-			bool L_17 = V_5;
-			if (!L_17)
-			{
-				goto IL_0108;
-			}
-		}
-
-IL_0067:
-		{
-			IProtocol_t2724506835 * L_18 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
+			IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+			Protocol_Deserialize_m2617704396(NULL /*static, unused*/, (&V_6), L_15, (&V_0), /*hidden argument*/NULL);
+			int64_t L_16 = ((PeerBase_t2319621551 *)__this)->get_bytesIn_35();
+			((PeerBase_t2319621551 *)__this)->set_bytesIn_35(((int64_t)((int64_t)L_16+(int64_t)(((int64_t)((int64_t)4))))));
+			int32_t L_17 = V_0;
+			V_0 = ((int32_t)((int32_t)L_17-(int32_t)4));
+			ByteU5BU5D_t58506160* L_18 = ___inBuff;
+			Protocol_Serialize_m2001046545(NULL /*static, unused*/, 0, L_18, (&V_0), /*hidden argument*/NULL);
 			ByteU5BU5D_t58506160* L_19 = ___inBuff;
-			NullCheck(L_18);
-			VirtActionInvoker3< int32_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(16 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int32&,System.Byte[],System.Int32&) */, L_18, (&V_6), L_19, (&V_0));
-			int64_t L_20 = ((PeerBase_t2319621551 *)__this)->get_bytesIn_35();
-			((PeerBase_t2319621551 *)__this)->set_bytesIn_35(((int64_t)((int64_t)L_20+(int64_t)(((int64_t)((int64_t)4))))));
-			int32_t L_21 = V_0;
-			V_0 = ((int32_t)((int32_t)L_21-(int32_t)4));
-			IProtocol_t2724506835 * L_22 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
-			ByteU5BU5D_t58506160* L_23 = ___inBuff;
-			NullCheck(L_22);
-			VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_22, 0, L_23, (&V_0));
-			ByteU5BU5D_t58506160* L_24 = ___inBuff;
-			int32_t L_25 = ___dataLength;
+			int32_t L_20 = ___dataLength;
 			IL2CPP_RUNTIME_CLASS_INIT(SupportClass_t780002629_il2cpp_TypeInfo_var);
-			uint32_t L_26 = SupportClass_CalculateCrc_m3683502402(NULL /*static, unused*/, L_24, L_25, /*hidden argument*/NULL);
-			V_7 = L_26;
-			int32_t L_27 = V_6;
-			uint32_t L_28 = V_7;
-			V_8 = (bool)((((int32_t)((((int32_t)L_27) == ((int32_t)L_28))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-			bool L_29 = V_8;
-			if (!L_29)
+			uint32_t L_21 = SupportClass_CalculateCrc_m3683502402(NULL /*static, unused*/, L_19, L_20, /*hidden argument*/NULL);
+			V_7 = L_21;
+			int32_t L_22 = V_6;
+			uint32_t L_23 = V_7;
+			V_8 = (bool)((((int32_t)((((int32_t)L_22) == ((int32_t)L_23))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+			bool L_24 = V_8;
+			if (!L_24)
 			{
-				goto IL_0107;
+				goto IL_00e9;
 			}
 		}
 
-IL_00b4:
+IL_0096:
 		{
-			int32_t L_30 = ((PeerBase_t2319621551 *)__this)->get_packetLossByCrc_16();
-			((PeerBase_t2319621551 *)__this)->set_packetLossByCrc_16(((int32_t)((int32_t)L_30+(int32_t)1)));
-			uint8_t L_31 = ((PeerBase_t2319621551 *)__this)->get_peerConnectionState_22();
-			if (!L_31)
+			int32_t L_25 = ((PeerBase_t2319621551 *)__this)->get_packetLossByCrc_16();
+			((PeerBase_t2319621551 *)__this)->set_packetLossByCrc_16(((int32_t)((int32_t)L_25+(int32_t)1)));
+			uint8_t L_26 = ((PeerBase_t2319621551 *)__this)->get_peerConnectionState_22();
+			if (!L_26)
 			{
-				goto IL_00d9;
+				goto IL_00bb;
 			}
 		}
 
-IL_00cb:
+IL_00ad:
 		{
-			uint8_t L_32 = ((PeerBase_t2319621551 *)__this)->get_debugOut_19();
-			G_B6_0 = ((((int32_t)((((int32_t)L_32) < ((int32_t)3))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-			goto IL_00da;
+			uint8_t L_27 = ((PeerBase_t2319621551 *)__this)->get_debugOut_19();
+			G_B6_0 = ((((int32_t)((((int32_t)L_27) < ((int32_t)3))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+			goto IL_00bc;
 		}
 
-IL_00d9:
+IL_00bb:
 		{
 			G_B6_0 = 0;
 		}
 
-IL_00da:
+IL_00bc:
 		{
 			V_9 = (bool)G_B6_0;
-			bool L_33 = V_9;
-			if (!L_33)
+			bool L_28 = V_9;
+			if (!L_28)
 			{
-				goto IL_0102;
+				goto IL_00e4;
 			}
 		}
 
-IL_00e0:
+IL_00c2:
 		{
-			int32_t L_34 = V_6;
-			uint32_t L_35 = ((uint32_t)L_34);
-			Il2CppObject * L_36 = Box(UInt32_t985925326_il2cpp_TypeInfo_var, &L_35);
-			uint32_t L_37 = V_7;
-			uint32_t L_38 = L_37;
-			Il2CppObject * L_39 = Box(UInt32_t985925326_il2cpp_TypeInfo_var, &L_38);
+			int32_t L_29 = V_6;
+			uint32_t L_30 = ((uint32_t)L_29);
+			Il2CppObject * L_31 = Box(UInt32_t985925326_il2cpp_TypeInfo_var, &L_30);
+			uint32_t L_32 = V_7;
+			uint32_t L_33 = L_32;
+			Il2CppObject * L_34 = Box(UInt32_t985925326_il2cpp_TypeInfo_var, &L_33);
 			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-			String_t* L_40 = String_Format_m2398979370(NULL /*static, unused*/, _stringLiteral2873184160, L_36, L_39, /*hidden argument*/NULL);
-			PeerBase_EnqueueDebugReturn_m588616545(__this, 3, L_40, /*hidden argument*/NULL);
+			String_t* L_35 = String_Format_m2398979370(NULL /*static, unused*/, _stringLiteral2873184160, L_31, L_34, /*hidden argument*/NULL);
+			PeerBase_EnqueueDebugReturn_m588616545(__this, 3, L_35, /*hidden argument*/NULL);
 		}
 
-IL_0102:
+IL_00e4:
 		{
-			goto IL_03da;
+			goto IL_03bc;
 		}
 
-IL_0107:
+IL_00e9:
 		{
 		}
 
-IL_0108:
+IL_00ea:
 		{
-			int64_t L_41 = ((PeerBase_t2319621551 *)__this)->get_bytesIn_35();
-			((PeerBase_t2319621551 *)__this)->set_bytesIn_35(((int64_t)((int64_t)L_41+(int64_t)(((int64_t)((int64_t)((int32_t)12)))))));
-			bool L_42 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
-			V_10 = L_42;
-			bool L_43 = V_10;
-			if (!L_43)
+			int64_t L_36 = ((PeerBase_t2319621551 *)__this)->get_bytesIn_35();
+			((PeerBase_t2319621551 *)__this)->set_bytesIn_35(((int64_t)((int64_t)L_36+(int64_t)(((int64_t)((int64_t)((int32_t)12)))))));
+			bool L_37 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
+			V_10 = L_37;
+			bool L_38 = V_10;
+			if (!L_38)
 			{
-				goto IL_0152;
+				goto IL_0134;
 			}
 		}
 
-IL_0124:
+IL_0106:
 		{
-			TrafficStats_t3177679614 * L_44 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsIncoming_7();
-			TrafficStats_t3177679614 * L_45 = L_44;
-			NullCheck(L_45);
-			int32_t L_46 = TrafficStats_get_TotalPacketCount_m823934560(L_45, /*hidden argument*/NULL);
-			V_11 = L_46;
-			int32_t L_47 = V_11;
-			NullCheck(L_45);
-			TrafficStats_set_TotalPacketCount_m1026618997(L_45, ((int32_t)((int32_t)L_47+(int32_t)1)), /*hidden argument*/NULL);
-			TrafficStats_t3177679614 * L_48 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsIncoming_7();
-			TrafficStats_t3177679614 * L_49 = L_48;
-			NullCheck(L_49);
-			int32_t L_50 = TrafficStats_get_TotalCommandsInPackets_m1353327511(L_49, /*hidden argument*/NULL);
-			uint8_t L_51 = V_3;
-			NullCheck(L_49);
-			TrafficStats_set_TotalCommandsInPackets_m2441453100(L_49, ((int32_t)((int32_t)L_50+(int32_t)L_51)), /*hidden argument*/NULL);
+			TrafficStats_t3177679614 * L_39 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsIncoming_7();
+			TrafficStats_t3177679614 * L_40 = L_39;
+			NullCheck(L_40);
+			int32_t L_41 = TrafficStats_get_TotalPacketCount_m823934560(L_40, /*hidden argument*/NULL);
+			V_11 = L_41;
+			int32_t L_42 = V_11;
+			NullCheck(L_40);
+			TrafficStats_set_TotalPacketCount_m1026618997(L_40, ((int32_t)((int32_t)L_42+(int32_t)1)), /*hidden argument*/NULL);
+			TrafficStats_t3177679614 * L_43 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsIncoming_7();
+			TrafficStats_t3177679614 * L_44 = L_43;
+			NullCheck(L_44);
+			int32_t L_45 = TrafficStats_get_TotalCommandsInPackets_m1353327511(L_44, /*hidden argument*/NULL);
+			uint8_t L_46 = V_3;
+			NullCheck(L_44);
+			TrafficStats_set_TotalCommandsInPackets_m2441453100(L_44, ((int32_t)((int32_t)L_45+(int32_t)L_46)), /*hidden argument*/NULL);
 		}
 
-IL_0152:
+IL_0134:
 		{
-			uint8_t L_52 = V_3;
-			int32_t L_53 = ((PeerBase_t2319621551 *)__this)->get_commandBufferSize_36();
-			if ((((int32_t)L_52) > ((int32_t)L_53)))
+			uint8_t L_47 = V_3;
+			int32_t L_48 = ((PeerBase_t2319621551 *)__this)->get_commandBufferSize_36();
+			if ((((int32_t)L_47) > ((int32_t)L_48)))
 			{
-				goto IL_0164;
+				goto IL_0146;
 			}
 		}
 
-IL_015b:
+IL_013d:
 		{
-			uint8_t L_54 = V_3;
-			G_B15_0 = ((((int32_t)((((int32_t)L_54) > ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-			goto IL_0165;
+			uint8_t L_49 = V_3;
+			G_B15_0 = ((((int32_t)((((int32_t)L_49) > ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+			goto IL_0147;
 		}
 
-IL_0164:
+IL_0146:
 		{
 			G_B15_0 = 1;
 		}
 
-IL_0165:
+IL_0147:
 		{
 			V_12 = (bool)G_B15_0;
-			bool L_55 = V_12;
-			if (!L_55)
+			bool L_50 = V_12;
+			if (!L_50)
 			{
-				goto IL_01a7;
+				goto IL_0189;
 			}
 		}
 
-IL_016b:
+IL_014d:
 		{
-			ObjectU5BU5D_t11523773* L_56 = ((ObjectU5BU5D_t11523773*)SZArrayNew(ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var, (uint32_t)4));
+			ObjectU5BU5D_t11523773* L_51 = ((ObjectU5BU5D_t11523773*)SZArrayNew(ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var, (uint32_t)4));
+			NullCheck(L_51);
+			IL2CPP_ARRAY_BOUNDS_CHECK(L_51, 0);
+			ArrayElementTypeCheck (L_51, _stringLiteral416191291);
+			(L_51)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)_stringLiteral416191291);
+			ObjectU5BU5D_t11523773* L_52 = L_51;
+			uint8_t L_53 = V_3;
+			uint8_t L_54 = L_53;
+			Il2CppObject * L_55 = Box(Byte_t2778693821_il2cpp_TypeInfo_var, &L_54);
+			NullCheck(L_52);
+			IL2CPP_ARRAY_BOUNDS_CHECK(L_52, 1);
+			ArrayElementTypeCheck (L_52, L_55);
+			(L_52)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_55);
+			ObjectU5BU5D_t11523773* L_56 = L_52;
 			NullCheck(L_56);
-			IL2CPP_ARRAY_BOUNDS_CHECK(L_56, 0);
-			ArrayElementTypeCheck (L_56, _stringLiteral416191291);
-			(L_56)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)_stringLiteral416191291);
+			IL2CPP_ARRAY_BOUNDS_CHECK(L_56, 2);
+			ArrayElementTypeCheck (L_56, _stringLiteral32706);
+			(L_56)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)_stringLiteral32706);
 			ObjectU5BU5D_t11523773* L_57 = L_56;
-			uint8_t L_58 = V_3;
-			uint8_t L_59 = L_58;
-			Il2CppObject * L_60 = Box(Byte_t2778693821_il2cpp_TypeInfo_var, &L_59);
+			int32_t L_58 = ((PeerBase_t2319621551 *)__this)->get_commandBufferSize_36();
+			int32_t L_59 = L_58;
+			Il2CppObject * L_60 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_59);
 			NullCheck(L_57);
-			IL2CPP_ARRAY_BOUNDS_CHECK(L_57, 1);
+			IL2CPP_ARRAY_BOUNDS_CHECK(L_57, 3);
 			ArrayElementTypeCheck (L_57, L_60);
-			(L_57)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_60);
-			ObjectU5BU5D_t11523773* L_61 = L_57;
-			NullCheck(L_61);
-			IL2CPP_ARRAY_BOUNDS_CHECK(L_61, 2);
-			ArrayElementTypeCheck (L_61, _stringLiteral32706);
-			(L_61)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)_stringLiteral32706);
-			ObjectU5BU5D_t11523773* L_62 = L_61;
-			int32_t L_63 = ((PeerBase_t2319621551 *)__this)->get_commandBufferSize_36();
-			int32_t L_64 = L_63;
-			Il2CppObject * L_65 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_64);
-			NullCheck(L_62);
-			IL2CPP_ARRAY_BOUNDS_CHECK(L_62, 3);
-			ArrayElementTypeCheck (L_62, L_65);
-			(L_62)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_65);
+			(L_57)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_60);
 			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-			String_t* L_66 = String_Concat_m3016520001(NULL /*static, unused*/, L_62, /*hidden argument*/NULL);
-			PeerBase_EnqueueDebugReturn_m588616545(__this, 1, L_66, /*hidden argument*/NULL);
+			String_t* L_61 = String_Concat_m3016520001(NULL /*static, unused*/, L_57, /*hidden argument*/NULL);
+			PeerBase_EnqueueDebugReturn_m588616545(__this, 1, L_61, /*hidden argument*/NULL);
 		}
 
-IL_01a7:
+IL_0189:
 		{
-			int32_t L_67 = V_4;
-			int32_t L_68 = __this->get_challenge_79();
-			V_13 = (bool)((((int32_t)((((int32_t)L_67) == ((int32_t)L_68))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-			bool L_69 = V_13;
-			if (!L_69)
+			int32_t L_62 = V_4;
+			int32_t L_63 = __this->get_challenge_79();
+			V_13 = (bool)((((int32_t)((((int32_t)L_62) == ((int32_t)L_63))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+			bool L_64 = V_13;
+			if (!L_64)
 			{
-				goto IL_0239;
+				goto IL_021b;
 			}
 		}
 
-IL_01ba:
+IL_019c:
 		{
-			int32_t L_70 = ((PeerBase_t2319621551 *)__this)->get_packetLossByChallenge_17();
-			((PeerBase_t2319621551 *)__this)->set_packetLossByChallenge_17(((int32_t)((int32_t)L_70+(int32_t)1)));
-			uint8_t L_71 = ((PeerBase_t2319621551 *)__this)->get_peerConnectionState_22();
-			if (!L_71)
+			int32_t L_65 = ((PeerBase_t2319621551 *)__this)->get_packetLossByChallenge_17();
+			((PeerBase_t2319621551 *)__this)->set_packetLossByChallenge_17(((int32_t)((int32_t)L_65+(int32_t)1)));
+			uint8_t L_66 = ((PeerBase_t2319621551 *)__this)->get_peerConnectionState_22();
+			if (!L_66)
 			{
-				goto IL_01df;
+				goto IL_01c1;
 			}
 		}
 
-IL_01d1:
+IL_01b3:
 		{
-			uint8_t L_72 = ((PeerBase_t2319621551 *)__this)->get_debugOut_19();
-			G_B21_0 = ((((int32_t)((((int32_t)L_72) < ((int32_t)5))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-			goto IL_01e0;
+			uint8_t L_67 = ((PeerBase_t2319621551 *)__this)->get_debugOut_19();
+			G_B21_0 = ((((int32_t)((((int32_t)L_67) < ((int32_t)5))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+			goto IL_01c2;
 		}
 
-IL_01df:
+IL_01c1:
 		{
 			G_B21_0 = 0;
 		}
 
-IL_01e0:
+IL_01c2:
 		{
 			V_14 = (bool)G_B21_0;
-			bool L_73 = V_14;
-			if (!L_73)
+			bool L_68 = V_14;
+			if (!L_68)
 			{
-				goto IL_0234;
+				goto IL_0216;
 			}
 		}
 
-IL_01e6:
+IL_01c8:
 		{
-			ObjectU5BU5D_t11523773* L_74 = ((ObjectU5BU5D_t11523773*)SZArrayNew(ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var, (uint32_t)6));
+			ObjectU5BU5D_t11523773* L_69 = ((ObjectU5BU5D_t11523773*)SZArrayNew(ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var, (uint32_t)6));
+			NullCheck(L_69);
+			IL2CPP_ARRAY_BOUNDS_CHECK(L_69, 0);
+			ArrayElementTypeCheck (L_69, _stringLiteral3515962347);
+			(L_69)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)_stringLiteral3515962347);
+			ObjectU5BU5D_t11523773* L_70 = L_69;
+			int32_t L_71 = V_4;
+			int32_t L_72 = L_71;
+			Il2CppObject * L_73 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_72);
+			NullCheck(L_70);
+			IL2CPP_ARRAY_BOUNDS_CHECK(L_70, 1);
+			ArrayElementTypeCheck (L_70, L_73);
+			(L_70)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_73);
+			ObjectU5BU5D_t11523773* L_74 = L_70;
 			NullCheck(L_74);
-			IL2CPP_ARRAY_BOUNDS_CHECK(L_74, 0);
-			ArrayElementTypeCheck (L_74, _stringLiteral3515962347);
-			(L_74)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)_stringLiteral3515962347);
+			IL2CPP_ARRAY_BOUNDS_CHECK(L_74, 2);
+			ArrayElementTypeCheck (L_74, _stringLiteral1084);
+			(L_74)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)_stringLiteral1084);
 			ObjectU5BU5D_t11523773* L_75 = L_74;
-			int32_t L_76 = V_4;
+			int32_t L_76 = __this->get_challenge_79();
 			int32_t L_77 = L_76;
 			Il2CppObject * L_78 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_77);
 			NullCheck(L_75);
-			IL2CPP_ARRAY_BOUNDS_CHECK(L_75, 1);
+			IL2CPP_ARRAY_BOUNDS_CHECK(L_75, 3);
 			ArrayElementTypeCheck (L_75, L_78);
-			(L_75)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_78);
+			(L_75)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_78);
 			ObjectU5BU5D_t11523773* L_79 = L_75;
 			NullCheck(L_79);
-			IL2CPP_ARRAY_BOUNDS_CHECK(L_79, 2);
-			ArrayElementTypeCheck (L_79, _stringLiteral1084);
-			(L_79)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)_stringLiteral1084);
+			IL2CPP_ARRAY_BOUNDS_CHECK(L_79, 4);
+			ArrayElementTypeCheck (L_79, _stringLiteral637823572);
+			(L_79)->SetAt(static_cast<il2cpp_array_size_t>(4), (Il2CppObject *)_stringLiteral637823572);
 			ObjectU5BU5D_t11523773* L_80 = L_79;
-			int32_t L_81 = __this->get_challenge_79();
-			int32_t L_82 = L_81;
-			Il2CppObject * L_83 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_82);
+			uint8_t L_81 = V_3;
+			uint8_t L_82 = L_81;
+			Il2CppObject * L_83 = Box(Byte_t2778693821_il2cpp_TypeInfo_var, &L_82);
 			NullCheck(L_80);
-			IL2CPP_ARRAY_BOUNDS_CHECK(L_80, 3);
+			IL2CPP_ARRAY_BOUNDS_CHECK(L_80, 5);
 			ArrayElementTypeCheck (L_80, L_83);
-			(L_80)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_83);
-			ObjectU5BU5D_t11523773* L_84 = L_80;
-			NullCheck(L_84);
-			IL2CPP_ARRAY_BOUNDS_CHECK(L_84, 4);
-			ArrayElementTypeCheck (L_84, _stringLiteral637823572);
-			(L_84)->SetAt(static_cast<il2cpp_array_size_t>(4), (Il2CppObject *)_stringLiteral637823572);
-			ObjectU5BU5D_t11523773* L_85 = L_84;
-			uint8_t L_86 = V_3;
-			uint8_t L_87 = L_86;
-			Il2CppObject * L_88 = Box(Byte_t2778693821_il2cpp_TypeInfo_var, &L_87);
-			NullCheck(L_85);
-			IL2CPP_ARRAY_BOUNDS_CHECK(L_85, 5);
-			ArrayElementTypeCheck (L_85, L_88);
-			(L_85)->SetAt(static_cast<il2cpp_array_size_t>(5), (Il2CppObject *)L_88);
+			(L_80)->SetAt(static_cast<il2cpp_array_size_t>(5), (Il2CppObject *)L_83);
 			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-			String_t* L_89 = String_Concat_m3016520001(NULL /*static, unused*/, L_85, /*hidden argument*/NULL);
-			PeerBase_EnqueueDebugReturn_m588616545(__this, 5, L_89, /*hidden argument*/NULL);
+			String_t* L_84 = String_Concat_m3016520001(NULL /*static, unused*/, L_80, /*hidden argument*/NULL);
+			PeerBase_EnqueueDebugReturn_m588616545(__this, 5, L_84, /*hidden argument*/NULL);
 		}
 
-IL_0234:
+IL_0216:
 		{
-			goto IL_03da;
+			goto IL_03bc;
 		}
 
-IL_0239:
+IL_021b:
 		{
 			IL2CPP_RUNTIME_CLASS_INIT(SupportClass_t780002629_il2cpp_TypeInfo_var);
-			int32_t L_90 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
-			int32_t L_91 = ((PeerBase_t2319621551 *)__this)->get_timeBase_54();
-			((PeerBase_t2319621551 *)__this)->set_timeInt_55(((int32_t)((int32_t)L_90-(int32_t)L_91)));
+			int32_t L_85 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
+			int32_t L_86 = ((PeerBase_t2319621551 *)__this)->get_timeBase_54();
+			((PeerBase_t2319621551 *)__this)->set_timeInt_55(((int32_t)((int32_t)L_85-(int32_t)L_86)));
 			V_15 = 0;
-			goto IL_0393;
+			goto IL_0375;
 		}
 
-IL_0253:
+IL_0235:
 		{
-			U3CU3Ec__DisplayClass42_0_t2750164070 * L_92 = (U3CU3Ec__DisplayClass42_0_t2750164070 *)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass42_0_t2750164070_il2cpp_TypeInfo_var);
-			U3CU3Ec__DisplayClass42_0__ctor_m371931377(L_92, /*hidden argument*/NULL);
-			V_16 = L_92;
-			U3CU3Ec__DisplayClass42_0_t2750164070 * L_93 = V_16;
+			U3CU3Ec__DisplayClass42_0_t2750164070 * L_87 = (U3CU3Ec__DisplayClass42_0_t2750164070 *)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass42_0_t2750164070_il2cpp_TypeInfo_var);
+			U3CU3Ec__DisplayClass42_0__ctor_m371931377(L_87, /*hidden argument*/NULL);
+			V_16 = L_87;
+			U3CU3Ec__DisplayClass42_0_t2750164070 * L_88 = V_16;
+			NullCheck(L_88);
+			L_88->set_U3CU3E4__this_1(__this);
+			U3CU3Ec__DisplayClass42_0_t2750164070 * L_89 = V_16;
+			ByteU5BU5D_t58506160* L_90 = ___inBuff;
+			NCommand_t3301568857 * L_91 = (NCommand_t3301568857 *)il2cpp_codegen_object_new(NCommand_t3301568857_il2cpp_TypeInfo_var);
+			NCommand__ctor_m4058016265(L_91, __this, L_90, (&V_0), /*hidden argument*/NULL);
+			NullCheck(L_89);
+			L_89->set_readCommand_0(L_91);
+			U3CU3Ec__DisplayClass42_0_t2750164070 * L_92 = V_16;
+			NullCheck(L_92);
+			NCommand_t3301568857 * L_93 = L_92->get_readCommand_0();
 			NullCheck(L_93);
-			L_93->set_U3CU3E4__this_1(__this);
-			U3CU3Ec__DisplayClass42_0_t2750164070 * L_94 = V_16;
-			ByteU5BU5D_t58506160* L_95 = ___inBuff;
-			NCommand_t3301568857 * L_96 = (NCommand_t3301568857 *)il2cpp_codegen_object_new(NCommand_t3301568857_il2cpp_TypeInfo_var);
-			NCommand__ctor_m4058016265(L_96, __this, L_95, (&V_0), /*hidden argument*/NULL);
-			NullCheck(L_94);
-			L_94->set_readCommand_0(L_96);
-			U3CU3Ec__DisplayClass42_0_t2750164070 * L_97 = V_16;
-			NullCheck(L_97);
-			NCommand_t3301568857 * L_98 = L_97->get_readCommand_0();
-			NullCheck(L_98);
-			uint8_t L_99 = L_98->get_commandType_6();
-			V_17 = (bool)((((int32_t)((((int32_t)L_99) == ((int32_t)1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-			bool L_100 = V_17;
-			if (!L_100)
+			uint8_t L_94 = L_93->get_commandType_6();
+			V_17 = (bool)((((int32_t)((((int32_t)L_94) == ((int32_t)1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+			bool L_95 = V_17;
+			if (!L_95)
 			{
-				goto IL_02a3;
+				goto IL_0285;
 			}
 		}
 
-IL_028b:
+IL_026d:
 		{
-			U3CU3Ec__DisplayClass42_0_t2750164070 * L_101 = V_16;
-			IntPtr_t L_102;
-			L_102.set_m_value_0((void*)U3CU3Ec__DisplayClass42_0_U3CReceiveIncomingCommandsU3Eb__0_m3304541062_MethodInfo_var);
-			MyAction_t3022056226 * L_103 = (MyAction_t3022056226 *)il2cpp_codegen_object_new(MyAction_t3022056226_il2cpp_TypeInfo_var);
-			MyAction__ctor_m4194094300(L_103, L_101, L_102, /*hidden argument*/NULL);
-			PeerBase_EnqueueActionForDispatch_m3802104372(__this, L_103, /*hidden argument*/NULL);
-			goto IL_02c4;
+			U3CU3Ec__DisplayClass42_0_t2750164070 * L_96 = V_16;
+			IntPtr_t L_97;
+			L_97.set_m_value_0((void*)U3CU3Ec__DisplayClass42_0_U3CReceiveIncomingCommandsU3Eb__0_m3304541062_MethodInfo_var);
+			MyAction_t3022056226 * L_98 = (MyAction_t3022056226 *)il2cpp_codegen_object_new(MyAction_t3022056226_il2cpp_TypeInfo_var);
+			MyAction__ctor_m4194094300(L_98, L_96, L_97, /*hidden argument*/NULL);
+			PeerBase_EnqueueActionForDispatch_m3802104372(__this, L_98, /*hidden argument*/NULL);
+			goto IL_02a6;
 		}
 
-IL_02a3:
+IL_0285:
 		{
-			TrafficStats_t3177679614 * L_104 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsIncoming_7();
+			TrafficStats_t3177679614 * L_99 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsIncoming_7();
 			IL2CPP_RUNTIME_CLASS_INIT(SupportClass_t780002629_il2cpp_TypeInfo_var);
-			int32_t L_105 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
+			int32_t L_100 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
+			NullCheck(L_99);
+			TrafficStats_set_TimestampOfLastAck_m2642784632(L_99, L_100, /*hidden argument*/NULL);
+			U3CU3Ec__DisplayClass42_0_t2750164070 * L_101 = V_16;
+			NullCheck(L_101);
+			NCommand_t3301568857 * L_102 = L_101->get_readCommand_0();
+			EnetPeer_ExecuteCommand_m4052653265(__this, L_102, /*hidden argument*/NULL);
+		}
+
+IL_02a6:
+		{
+			U3CU3Ec__DisplayClass42_0_t2750164070 * L_103 = V_16;
+			NullCheck(L_103);
+			NCommand_t3301568857 * L_104 = L_103->get_readCommand_0();
 			NullCheck(L_104);
-			TrafficStats_set_TimestampOfLastAck_m2642784632(L_104, L_105, /*hidden argument*/NULL);
-			U3CU3Ec__DisplayClass42_0_t2750164070 * L_106 = V_16;
-			NullCheck(L_106);
-			NCommand_t3301568857 * L_107 = L_106->get_readCommand_0();
-			EnetPeer_ExecuteCommand_m4052653265(__this, L_107, /*hidden argument*/NULL);
-		}
-
-IL_02c4:
-		{
-			U3CU3Ec__DisplayClass42_0_t2750164070 * L_108 = V_16;
-			NullCheck(L_108);
-			NCommand_t3301568857 * L_109 = L_108->get_readCommand_0();
-			NullCheck(L_109);
-			uint8_t L_110 = L_109->get_commandFlags_0();
-			V_18 = (bool)((((int32_t)((int32_t)((int32_t)L_110&(int32_t)1))) > ((int32_t)0))? 1 : 0);
-			bool L_111 = V_18;
-			if (!L_111)
+			uint8_t L_105 = L_104->get_commandFlags_0();
+			V_18 = (bool)((((int32_t)((int32_t)((int32_t)L_105&(int32_t)1))) > ((int32_t)0))? 1 : 0);
+			bool L_106 = V_18;
+			if (!L_106)
 			{
-				goto IL_038c;
+				goto IL_036e;
 			}
 		}
 
-IL_02de:
+IL_02c0:
 		{
-			Queue_1_t67269933 * L_112 = ((PeerBase_t2319621551 *)__this)->get_InReliableLog_51();
-			V_20 = (bool)((!(((Il2CppObject*)(Queue_1_t67269933 *)L_112) <= ((Il2CppObject*)(Il2CppObject *)NULL)))? 1 : 0);
-			bool L_113 = V_20;
-			if (!L_113)
+			Queue_1_t67269933 * L_107 = ((PeerBase_t2319621551 *)__this)->get_InReliableLog_51();
+			V_20 = (bool)((!(((Il2CppObject*)(Queue_1_t67269933 *)L_107) <= ((Il2CppObject*)(Il2CppObject *)NULL)))? 1 : 0);
+			bool L_108 = V_20;
+			if (!L_108)
 			{
-				goto IL_033b;
+				goto IL_031d;
 			}
 		}
 
-IL_02ee:
+IL_02d0:
 		{
-			Queue_1_t67269933 * L_114 = ((PeerBase_t2319621551 *)__this)->get_InReliableLog_51();
-			U3CU3Ec__DisplayClass42_0_t2750164070 * L_115 = V_16;
-			NullCheck(L_115);
-			NCommand_t3301568857 * L_116 = L_115->get_readCommand_0();
+			Queue_1_t67269933 * L_109 = ((PeerBase_t2319621551 *)__this)->get_InReliableLog_51();
+			U3CU3Ec__DisplayClass42_0_t2750164070 * L_110 = V_16;
+			NullCheck(L_110);
+			NCommand_t3301568857 * L_111 = L_110->get_readCommand_0();
+			int32_t L_112 = ((PeerBase_t2319621551 *)__this)->get_timeInt_55();
+			int32_t L_113 = ((PeerBase_t2319621551 *)__this)->get_roundTripTime_25();
+			int32_t L_114 = ((PeerBase_t2319621551 *)__this)->get_roundTripTimeVariance_26();
+			int32_t L_115 = ((PeerBase_t2319621551 *)__this)->get_timeInt_55();
+			int32_t L_116 = ((PeerBase_t2319621551 *)__this)->get_timeLastSendOutgoing_59();
 			int32_t L_117 = ((PeerBase_t2319621551 *)__this)->get_timeInt_55();
-			int32_t L_118 = ((PeerBase_t2319621551 *)__this)->get_roundTripTime_25();
-			int32_t L_119 = ((PeerBase_t2319621551 *)__this)->get_roundTripTimeVariance_26();
-			int32_t L_120 = ((PeerBase_t2319621551 *)__this)->get_timeInt_55();
-			int32_t L_121 = ((PeerBase_t2319621551 *)__this)->get_timeLastSendOutgoing_59();
-			int32_t L_122 = ((PeerBase_t2319621551 *)__this)->get_timeInt_55();
-			int32_t L_123 = ((PeerBase_t2319621551 *)__this)->get_timeLastSendAck_58();
-			CmdLogReceivedReliable_t1825138545 * L_124 = (CmdLogReceivedReliable_t1825138545 *)il2cpp_codegen_object_new(CmdLogReceivedReliable_t1825138545_il2cpp_TypeInfo_var);
-			CmdLogReceivedReliable__ctor_m2843586625(L_124, L_116, L_117, L_118, L_119, ((int32_t)((int32_t)L_120-(int32_t)L_121)), ((int32_t)((int32_t)L_122-(int32_t)L_123)), /*hidden argument*/NULL);
-			NullCheck(L_114);
-			Queue_1_Enqueue_m3913812821(L_114, L_124, /*hidden argument*/Queue_1_Enqueue_m3913812821_MethodInfo_var);
+			int32_t L_118 = ((PeerBase_t2319621551 *)__this)->get_timeLastSendAck_58();
+			CmdLogReceivedReliable_t1825138545 * L_119 = (CmdLogReceivedReliable_t1825138545 *)il2cpp_codegen_object_new(CmdLogReceivedReliable_t1825138545_il2cpp_TypeInfo_var);
+			CmdLogReceivedReliable__ctor_m2843586625(L_119, L_111, L_112, L_113, L_114, ((int32_t)((int32_t)L_115-(int32_t)L_116)), ((int32_t)((int32_t)L_117-(int32_t)L_118)), /*hidden argument*/NULL);
+			NullCheck(L_109);
+			Queue_1_Enqueue_m3913812821(L_109, L_119, /*hidden argument*/Queue_1_Enqueue_m3913812821_MethodInfo_var);
 			PeerBase_CommandLogResize_m3387006562(__this, /*hidden argument*/NULL);
 		}
 
-IL_033b:
+IL_031d:
 		{
-			U3CU3Ec__DisplayClass42_0_t2750164070 * L_125 = V_16;
-			NullCheck(L_125);
-			NCommand_t3301568857 * L_126 = L_125->get_readCommand_0();
-			int32_t L_127 = __this->get_serverSentTime_82();
-			NCommand_t3301568857 * L_128 = NCommand_CreateAck_m2365736060(NULL /*static, unused*/, __this, L_126, L_127, /*hidden argument*/NULL);
-			V_19 = L_128;
-			NCommand_t3301568857 * L_129 = V_19;
-			EnetPeer_QueueOutgoingAcknowledgement_m1428694210(__this, L_129, /*hidden argument*/NULL);
-			bool L_130 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
-			V_21 = L_130;
-			bool L_131 = V_21;
-			if (!L_131)
+			U3CU3Ec__DisplayClass42_0_t2750164070 * L_120 = V_16;
+			NullCheck(L_120);
+			NCommand_t3301568857 * L_121 = L_120->get_readCommand_0();
+			int32_t L_122 = __this->get_serverSentTime_82();
+			NCommand_t3301568857 * L_123 = NCommand_CreateAck_m2365736060(NULL /*static, unused*/, __this, L_121, L_122, /*hidden argument*/NULL);
+			V_19 = L_123;
+			NCommand_t3301568857 * L_124 = V_19;
+			EnetPeer_QueueOutgoingAcknowledgement_m1428694210(__this, L_124, /*hidden argument*/NULL);
+			bool L_125 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
+			V_21 = L_125;
+			bool L_126 = V_21;
+			if (!L_126)
 			{
-				goto IL_038b;
+				goto IL_036d;
 			}
 		}
 
-IL_0365:
+IL_0347:
 		{
-			TrafficStats_t3177679614 * L_132 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsIncoming_7();
+			TrafficStats_t3177679614 * L_127 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsIncoming_7();
 			IL2CPP_RUNTIME_CLASS_INIT(SupportClass_t780002629_il2cpp_TypeInfo_var);
-			int32_t L_133 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
-			NullCheck(L_132);
-			TrafficStats_set_TimestampOfLastReliableCommand_m1525318416(L_132, L_133, /*hidden argument*/NULL);
-			TrafficStats_t3177679614 * L_134 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
-			NCommand_t3301568857 * L_135 = V_19;
-			NullCheck(L_135);
-			int32_t L_136 = L_135->get_Size_47();
-			NullCheck(L_134);
-			TrafficStats_CountControlCommand_m3520535532(L_134, L_136, /*hidden argument*/NULL);
+			int32_t L_128 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
+			NullCheck(L_127);
+			TrafficStats_set_TimestampOfLastReliableCommand_m1525318416(L_127, L_128, /*hidden argument*/NULL);
+			TrafficStats_t3177679614 * L_129 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
+			NCommand_t3301568857 * L_130 = V_19;
+			NullCheck(L_130);
+			int32_t L_131 = L_130->get_Size_45();
+			NullCheck(L_129);
+			TrafficStats_CountControlCommand_m3520535532(L_129, L_131, /*hidden argument*/NULL);
 		}
 
-IL_038b:
+IL_036d:
 		{
 		}
 
-IL_038c:
+IL_036e:
 		{
-			int32_t L_137 = V_15;
-			V_15 = ((int32_t)((int32_t)L_137+(int32_t)1));
+			int32_t L_132 = V_15;
+			V_15 = ((int32_t)((int32_t)L_132+(int32_t)1));
 		}
 
-IL_0393:
+IL_0375:
 		{
-			int32_t L_138 = V_15;
-			uint8_t L_139 = V_3;
-			V_22 = (bool)((((int32_t)L_138) < ((int32_t)L_139))? 1 : 0);
-			bool L_140 = V_22;
-			if (L_140)
+			int32_t L_133 = V_15;
+			uint8_t L_134 = V_3;
+			V_22 = (bool)((((int32_t)L_133) < ((int32_t)L_134))? 1 : 0);
+			bool L_135 = V_22;
+			if (L_135)
 			{
-				goto IL_0253;
+				goto IL_0235;
 			}
 		}
 
-IL_03a1:
+IL_0383:
 		{
-			goto IL_03da;
+			goto IL_03bc;
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__exception_local = (Exception_t1967233988 *)e.ex;
 		if(il2cpp_codegen_class_is_assignable_from (Exception_t1967233988_il2cpp_TypeInfo_var, e.ex->object.klass))
-			goto CATCH_03a4;
+			goto CATCH_0386;
 		throw e;
 	}
 
-CATCH_03a4:
+CATCH_0386:
 	{ // begin catch(System.Exception)
 		{
 			V_23 = ((Exception_t1967233988 *)__exception_local);
-			uint8_t L_141 = ((PeerBase_t2319621551 *)__this)->get_debugOut_19();
-			V_24 = (bool)((((int32_t)((((int32_t)L_141) < ((int32_t)1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-			bool L_142 = V_24;
-			if (!L_142)
+			uint8_t L_136 = ((PeerBase_t2319621551 *)__this)->get_debugOut_19();
+			V_24 = (bool)((((int32_t)((((int32_t)L_136) < ((int32_t)1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+			bool L_137 = V_24;
+			if (!L_137)
 			{
-				goto IL_03cf;
+				goto IL_03b1;
 			}
 		}
 
-IL_03b9:
+IL_039b:
 		{
-			Exception_t1967233988 * L_143 = V_23;
+			Exception_t1967233988 * L_138 = V_23;
 			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-			String_t* L_144 = String_Format_m2471250780(NULL /*static, unused*/, _stringLiteral572977168, L_143, /*hidden argument*/NULL);
-			PeerBase_EnqueueDebugReturn_m588616545(__this, 1, L_144, /*hidden argument*/NULL);
+			String_t* L_139 = String_Format_m2471250780(NULL /*static, unused*/, _stringLiteral572977168, L_138, /*hidden argument*/NULL);
+			PeerBase_EnqueueDebugReturn_m588616545(__this, 1, L_139, /*hidden argument*/NULL);
 		}
 
-IL_03cf:
+IL_03b1:
 		{
-			Exception_t1967233988 * L_145 = V_23;
+			Exception_t1967233988 * L_140 = V_23;
 			IL2CPP_RUNTIME_CLASS_INIT(SupportClass_t780002629_il2cpp_TypeInfo_var);
-			SupportClass_WriteStackTrace_m2805806499(NULL /*static, unused*/, L_145, /*hidden argument*/NULL);
-			goto IL_03da;
+			SupportClass_WriteStackTrace_m2805806499(NULL /*static, unused*/, L_140, /*hidden argument*/NULL);
+			goto IL_03bc;
 		}
 	} // end catch (depth: 1)
 
-IL_03da:
+IL_03bc:
 	{
 		return;
 	}
@@ -7260,7 +7164,7 @@ IL_0037:
 		TrafficStats_t3177679614 * L_5 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsIncoming_7();
 		NCommand_t3301568857 * L_6 = ___command;
 		NullCheck(L_6);
-		int32_t L_7 = L_6->get_Size_47();
+		int32_t L_7 = L_6->get_Size_45();
 		NullCheck(L_5);
 		TrafficStats_CountControlCommand_m3520535532(L_5, L_7, /*hidden argument*/NULL);
 	}
@@ -7284,7 +7188,7 @@ IL_005c:
 		TrafficStats_t3177679614 * L_10 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsIncoming_7();
 		NCommand_t3301568857 * L_11 = ___command;
 		NullCheck(L_11);
-		int32_t L_12 = L_11->get_Size_47();
+		int32_t L_12 = L_11->get_Size_45();
 		NullCheck(L_10);
 		TrafficStats_CountControlCommand_m3520535532(L_10, L_12, /*hidden argument*/NULL);
 	}
@@ -7435,7 +7339,7 @@ IL_017b:
 		TrafficStats_t3177679614 * L_53 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsIncoming_7();
 		NCommand_t3301568857 * L_54 = ___command;
 		NullCheck(L_54);
-		int32_t L_55 = L_54->get_Size_47();
+		int32_t L_55 = L_54->get_Size_45();
 		NullCheck(L_53);
 		TrafficStats_CountControlCommand_m3520535532(L_53, L_55, /*hidden argument*/NULL);
 	}
@@ -7447,11 +7351,11 @@ IL_019b:
 		int32_t L_57 = ((PeerBase_t2319621551 *)__this)->get_timeInt_55();
 		NCommand_t3301568857 * L_58 = ___command;
 		NullCheck(L_58);
-		int32_t L_59 = L_58->get_ackReceivedSentTime_34();
+		int32_t L_59 = L_58->get_ackReceivedSentTime_33();
 		((PeerBase_t2319621551 *)__this)->set_lastRoundTripTime_27(((int32_t)((int32_t)L_57-(int32_t)L_59)));
 		NCommand_t3301568857 * L_60 = ___command;
 		NullCheck(L_60);
-		int32_t L_61 = L_60->get_ackReceivedReliableSequenceNumber_33();
+		int32_t L_61 = L_60->get_ackReceivedReliableSequenceNumber_32();
 		NCommand_t3301568857 * L_62 = ___command;
 		NullCheck(L_62);
 		uint8_t L_63 = L_62->get_commandChannelID_17();
@@ -7628,7 +7532,7 @@ IL_02fe:
 		TrafficStats_t3177679614 * L_99 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsIncoming_7();
 		NCommand_t3301568857 * L_100 = ___command;
 		NullCheck(L_100);
-		int32_t L_101 = L_100->get_Size_47();
+		int32_t L_101 = L_100->get_Size_45();
 		NullCheck(L_99);
 		TrafficStats_CountReliableOpCommand_m1315891686(L_99, L_101, /*hidden argument*/NULL);
 	}
@@ -7668,7 +7572,7 @@ IL_033c:
 		TrafficStats_t3177679614 * L_108 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsIncoming_7();
 		NCommand_t3301568857 * L_109 = ___command;
 		NullCheck(L_109);
-		int32_t L_110 = L_109->get_Size_47();
+		int32_t L_110 = L_109->get_Size_45();
 		NullCheck(L_108);
 		TrafficStats_CountUnreliableOpCommand_m738104109(L_108, L_110, /*hidden argument*/NULL);
 	}
@@ -7708,7 +7612,7 @@ IL_037a:
 		TrafficStats_t3177679614 * L_117 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsIncoming_7();
 		NCommand_t3301568857 * L_118 = ___command;
 		NullCheck(L_118);
-		int32_t L_119 = L_118->get_Size_47();
+		int32_t L_119 = L_118->get_Size_45();
 		NullCheck(L_117);
 		TrafficStats_CountFragmentOpCommand_m906631456(L_117, L_119, /*hidden argument*/NULL);
 	}
@@ -7753,7 +7657,7 @@ IL_039a:
 		int32_t L_131 = L_130->get_fragmentOffset_26();
 		NCommand_t3301568857 * L_132 = ___command;
 		NullCheck(L_132);
-		ByteU5BU5D_t58506160* L_133 = L_132->get_Payload_28();
+		ByteU5BU5D_t58506160* L_133 = L_132->get_Payload_48();
 		NullCheck(L_133);
 		NCommand_t3301568857 * L_134 = ___command;
 		NullCheck(L_134);
@@ -7973,7 +7877,7 @@ IL_04f3:
 		TrafficStats_t3177679614 * L_190 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsIncoming_7();
 		NCommand_t3301568857 * L_191 = ___command;
 		NullCheck(L_191);
-		int32_t L_192 = L_191->get_Size_47();
+		int32_t L_192 = L_191->get_Size_45();
 		NullCheck(L_190);
 		TrafficStats_CountControlCommand_m3520535532(L_190, L_192, /*hidden argument*/NULL);
 	}
@@ -8007,7 +7911,7 @@ IL_0513:
 		TrafficStats_t3177679614 * L_200 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
 		NCommand_t3301568857 * L_201 = ___command;
 		NullCheck(L_201);
-		int32_t L_202 = L_201->get_Size_47();
+		int32_t L_202 = L_201->get_Size_45();
 		NullCheck(L_200);
 		TrafficStats_CountControlCommand_m3520535532(L_200, L_202, /*hidden argument*/NULL);
 	}
@@ -9163,33 +9067,6 @@ extern "C"  void Hashtable_set_Item_m2793361138 (Hashtable_t223732124 * __this, 
 		Il2CppObject * L_1 = ___value;
 		Dictionary_2_set_Item_m4164044378(__this, L_0, L_1, /*hidden argument*/Dictionary_2_set_Item_m4164044378_MethodInfo_var);
 		return;
-	}
-}
-// System.Collections.Generic.IEnumerator`1<System.Collections.DictionaryEntry> ExitGames.Client.Photon.Hashtable::GetEnumerator()
-extern TypeInfo* IDictionary_t1654916945_il2cpp_TypeInfo_var;
-extern TypeInfo* DictionaryEntryEnumerator_t92261500_il2cpp_TypeInfo_var;
-extern const uint32_t Hashtable_GetEnumerator_m816483662_MetadataUsageId;
-extern "C"  Il2CppObject* Hashtable_GetEnumerator_m816483662 (Hashtable_t223732124 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Hashtable_GetEnumerator_m816483662_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	Il2CppObject* V_0 = NULL;
-	{
-		Il2CppObject * L_0 = InterfaceFuncInvoker0< Il2CppObject * >::Invoke(5 /* System.Collections.IDictionaryEnumerator System.Collections.IDictionary::GetEnumerator() */, IDictionary_t1654916945_il2cpp_TypeInfo_var, __this);
-		DictionaryEntryEnumerator_t92261500 * L_1 = (DictionaryEntryEnumerator_t92261500 *)il2cpp_codegen_object_new(DictionaryEntryEnumerator_t92261500_il2cpp_TypeInfo_var);
-		DictionaryEntryEnumerator__ctor_m768753625(L_1, L_0, /*hidden argument*/NULL);
-		V_0 = L_1;
-		goto IL_000f;
-	}
-
-IL_000f:
-	{
-		Il2CppObject* L_2 = V_0;
-		return L_2;
 	}
 }
 // System.String ExitGames.Client.Photon.Hashtable::ToString()
@@ -10372,8 +10249,45 @@ extern "C"  void U3CU3Ec__DisplayClass37_1_U3CHandleReceivedDatagramU3Eb__1_m130
 		return;
 	}
 }
+// System.Int32 ExitGames.Client.Photon.NCommand::get_SizeOfPayload()
+extern "C"  int32_t NCommand_get_SizeOfPayload_m3675985696 (NCommand_t3301568857 * __this, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	int32_t G_B3_0 = 0;
+	{
+		ByteU5BU5D_t58506160* L_0 = __this->get_Payload_48();
+		if (L_0)
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		G_B3_0 = 0;
+		goto IL_0014;
+	}
+
+IL_000c:
+	{
+		ByteU5BU5D_t58506160* L_1 = __this->get_Payload_48();
+		NullCheck(L_1);
+		G_B3_0 = (((int32_t)((int32_t)(((Il2CppArray *)L_1)->max_length))));
+	}
+
+IL_0014:
+	{
+		V_0 = G_B3_0;
+		goto IL_0017;
+	}
+
+IL_0017:
+	{
+		int32_t L_2 = V_0;
+		return L_2;
+	}
+}
 // System.Void ExitGames.Client.Photon.NCommand::.ctor(ExitGames.Client.Photon.EnetPeer,System.Byte,System.Byte[],System.Byte)
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
+extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
 extern const uint32_t NCommand__ctor_m3294593470_MetadataUsageId;
 extern "C"  void NCommand__ctor_m3294593470 (NCommand_t3301568857 * __this, EnetPeer_t4023410422 * ___peer, uint8_t ___commandType, ByteU5BU5D_t58506160* ___payload, uint8_t ___channel, const MethodInfo* method)
 {
@@ -10396,14 +10310,14 @@ extern "C"  void NCommand__ctor_m3294593470 (NCommand_t3301568857 * __this, Enet
 		uint8_t L_1 = ___channel;
 		__this->set_commandChannelID_17(L_1);
 		ByteU5BU5D_t58506160* L_2 = ___payload;
-		__this->set_Payload_28(L_2);
-		__this->set_Size_47(((int32_t)12));
+		__this->set_Payload_48(L_2);
+		__this->set_Size_45(((int32_t)12));
 		uint8_t L_3 = __this->get_commandType_6();
 		V_0 = L_3;
 		uint8_t L_4 = V_0;
 		if (((int32_t)((int32_t)L_4-(int32_t)1)) == 0)
 		{
-			goto IL_0190;
+			goto IL_018a;
 		}
 		if (((int32_t)((int32_t)L_4-(int32_t)1)) == 1)
 		{
@@ -10411,182 +10325,180 @@ extern "C"  void NCommand__ctor_m3294593470 (NCommand_t3301568857 * __this, Enet
 		}
 		if (((int32_t)((int32_t)L_4-(int32_t)1)) == 2)
 		{
-			goto IL_01a1;
+			goto IL_019b;
 		}
 		if (((int32_t)((int32_t)L_4-(int32_t)1)) == 3)
 		{
-			goto IL_0126;
+			goto IL_0120;
 		}
 		if (((int32_t)((int32_t)L_4-(int32_t)1)) == 4)
 		{
-			goto IL_01a1;
+			goto IL_019b;
 		}
 		if (((int32_t)((int32_t)L_4-(int32_t)1)) == 5)
 		{
-			goto IL_015f;
+			goto IL_0159;
 		}
 		if (((int32_t)((int32_t)L_4-(int32_t)1)) == 6)
 		{
-			goto IL_016d;
+			goto IL_0167;
 		}
 		if (((int32_t)((int32_t)L_4-(int32_t)1)) == 7)
 		{
-			goto IL_0182;
+			goto IL_017c;
 		}
 	}
 	{
-		goto IL_01a1;
+		goto IL_019b;
 	}
 
 IL_0068:
 	{
-		__this->set_Size_47(((int32_t)44));
-		__this->set_Payload_28(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)32))));
-		ByteU5BU5D_t58506160* L_5 = __this->get_Payload_28();
+		__this->set_Size_45(((int32_t)44));
+		__this->set_Payload_48(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)32))));
+		ByteU5BU5D_t58506160* L_5 = __this->get_Payload_48();
 		NullCheck(L_5);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, 0);
 		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(0), (uint8_t)0);
-		ByteU5BU5D_t58506160* L_6 = __this->get_Payload_28();
+		ByteU5BU5D_t58506160* L_6 = __this->get_Payload_48();
 		NullCheck(L_6);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, 1);
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(1), (uint8_t)0);
 		V_1 = 2;
 		EnetPeer_t4023410422 * L_7 = ___peer;
 		NullCheck(L_7);
-		IProtocol_t2724506835 * L_8 = PeerBase_get_Protocol_m4217687564(L_7, /*hidden argument*/NULL);
-		EnetPeer_t4023410422 * L_9 = ___peer;
-		NullCheck(L_9);
-		int32_t L_10 = ((PeerBase_t2319621551 *)L_9)->get_mtu_68();
-		ByteU5BU5D_t58506160* L_11 = __this->get_Payload_28();
-		NullCheck(L_8);
-		VirtActionInvoker3< int16_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(6 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int16,System.Byte[],System.Int32&) */, L_8, (((int16_t)((int16_t)L_10))), L_11, (&V_1));
-		ByteU5BU5D_t58506160* L_12 = __this->get_Payload_28();
+		int32_t L_8 = ((PeerBase_t2319621551 *)L_7)->get_mtu_68();
+		ByteU5BU5D_t58506160* L_9 = __this->get_Payload_48();
+		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+		Protocol_Serialize_m1344711179(NULL /*static, unused*/, (((int16_t)((int16_t)L_8))), L_9, (&V_1), /*hidden argument*/NULL);
+		ByteU5BU5D_t58506160* L_10 = __this->get_Payload_48();
+		NullCheck(L_10);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_10, 4);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(4), (uint8_t)0);
+		ByteU5BU5D_t58506160* L_11 = __this->get_Payload_48();
+		NullCheck(L_11);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_11, 5);
+		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(5), (uint8_t)0);
+		ByteU5BU5D_t58506160* L_12 = __this->get_Payload_48();
 		NullCheck(L_12);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_12, 4);
-		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(4), (uint8_t)0);
-		ByteU5BU5D_t58506160* L_13 = __this->get_Payload_28();
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_12, 6);
+		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(6), (uint8_t)((int32_t)128));
+		ByteU5BU5D_t58506160* L_13 = __this->get_Payload_48();
 		NullCheck(L_13);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_13, 5);
-		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(5), (uint8_t)0);
-		ByteU5BU5D_t58506160* L_14 = __this->get_Payload_28();
-		NullCheck(L_14);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_14, 6);
-		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(6), (uint8_t)((int32_t)128));
-		ByteU5BU5D_t58506160* L_15 = __this->get_Payload_28();
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_13, 7);
+		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(7), (uint8_t)0);
+		ByteU5BU5D_t58506160* L_14 = __this->get_Payload_48();
+		EnetPeer_t4023410422 * L_15 = ___peer;
 		NullCheck(L_15);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_15, 7);
-		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(7), (uint8_t)0);
-		ByteU5BU5D_t58506160* L_16 = __this->get_Payload_28();
-		EnetPeer_t4023410422 * L_17 = ___peer;
+		uint8_t L_16 = ((PeerBase_t2319621551 *)L_15)->get_ChannelCount_41();
+		NullCheck(L_14);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_14, ((int32_t)11));
+		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (uint8_t)L_16);
+		ByteU5BU5D_t58506160* L_17 = __this->get_Payload_48();
 		NullCheck(L_17);
-		uint8_t L_18 = ((PeerBase_t2319621551 *)L_17)->get_ChannelCount_41();
-		NullCheck(L_16);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_16, ((int32_t)11));
-		(L_16)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (uint8_t)L_18);
-		ByteU5BU5D_t58506160* L_19 = __this->get_Payload_28();
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_17, ((int32_t)15));
+		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)15)), (uint8_t)0);
+		ByteU5BU5D_t58506160* L_18 = __this->get_Payload_48();
+		NullCheck(L_18);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_18, ((int32_t)19));
+		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)19)), (uint8_t)0);
+		ByteU5BU5D_t58506160* L_19 = __this->get_Payload_48();
 		NullCheck(L_19);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_19, ((int32_t)15));
-		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)15)), (uint8_t)0);
-		ByteU5BU5D_t58506160* L_20 = __this->get_Payload_28();
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_19, ((int32_t)22));
+		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)22)), (uint8_t)((int32_t)19));
+		ByteU5BU5D_t58506160* L_20 = __this->get_Payload_48();
 		NullCheck(L_20);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_20, ((int32_t)19));
-		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)19)), (uint8_t)0);
-		ByteU5BU5D_t58506160* L_21 = __this->get_Payload_28();
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_20, ((int32_t)23));
+		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)23)), (uint8_t)((int32_t)136));
+		ByteU5BU5D_t58506160* L_21 = __this->get_Payload_48();
 		NullCheck(L_21);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_21, ((int32_t)22));
-		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)22)), (uint8_t)((int32_t)19));
-		ByteU5BU5D_t58506160* L_22 = __this->get_Payload_28();
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_21, ((int32_t)27));
+		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)27)), (uint8_t)2);
+		ByteU5BU5D_t58506160* L_22 = __this->get_Payload_48();
 		NullCheck(L_22);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_22, ((int32_t)23));
-		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)23)), (uint8_t)((int32_t)136));
-		ByteU5BU5D_t58506160* L_23 = __this->get_Payload_28();
-		NullCheck(L_23);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_23, ((int32_t)27));
-		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)27)), (uint8_t)2);
-		ByteU5BU5D_t58506160* L_24 = __this->get_Payload_28();
-		NullCheck(L_24);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_24, ((int32_t)31));
-		(L_24)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)31)), (uint8_t)2);
-		goto IL_01a1;
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_22, ((int32_t)31));
+		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)31)), (uint8_t)2);
+		goto IL_019b;
 	}
 
-IL_0126:
+IL_0120:
 	{
-		__this->set_Size_47(((int32_t)12));
-		EnetPeer_t4023410422 * L_25 = ___peer;
-		NullCheck(L_25);
-		uint8_t L_26 = ((PeerBase_t2319621551 *)L_25)->get_peerConnectionState_22();
-		V_2 = (bool)((((int32_t)((((int32_t)L_26) == ((int32_t)3))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		bool L_27 = V_2;
-		if (!L_27)
+		__this->set_Size_45(((int32_t)12));
+		EnetPeer_t4023410422 * L_23 = ___peer;
+		NullCheck(L_23);
+		uint8_t L_24 = ((PeerBase_t2319621551 *)L_23)->get_peerConnectionState_22();
+		V_2 = (bool)((((int32_t)((((int32_t)L_24) == ((int32_t)3))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_25 = V_2;
+		if (!L_25)
 		{
-			goto IL_015d;
+			goto IL_0157;
 		}
 	}
 	{
 		__this->set_commandFlags_0(2);
-		EnetPeer_t4023410422 * L_28 = ___peer;
-		NullCheck(L_28);
-		uint8_t L_29 = ((PeerBase_t2319621551 *)L_28)->get_peerConnectionState_22();
-		V_3 = (bool)((((int32_t)L_29) == ((int32_t)6))? 1 : 0);
-		bool L_30 = V_3;
-		if (!L_30)
+		EnetPeer_t4023410422 * L_26 = ___peer;
+		NullCheck(L_26);
+		uint8_t L_27 = ((PeerBase_t2319621551 *)L_26)->get_peerConnectionState_22();
+		V_3 = (bool)((((int32_t)L_27) == ((int32_t)6))? 1 : 0);
+		bool L_28 = V_3;
+		if (!L_28)
 		{
-			goto IL_015c;
+			goto IL_0156;
 		}
 	}
 	{
 		__this->set_reservedByte_21(2);
 	}
 
-IL_015c:
+IL_0156:
 	{
 	}
 
-IL_015d:
+IL_0157:
 	{
-		goto IL_01a1;
+		goto IL_019b;
 	}
 
-IL_015f:
+IL_0159:
+	{
+		ByteU5BU5D_t58506160* L_29 = ___payload;
+		NullCheck(L_29);
+		__this->set_Size_45(((int32_t)((int32_t)((int32_t)12)+(int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_29)->max_length)))))));
+		goto IL_019b;
+	}
+
+IL_0167:
+	{
+		ByteU5BU5D_t58506160* L_30 = ___payload;
+		NullCheck(L_30);
+		__this->set_Size_45(((int32_t)((int32_t)((int32_t)16)+(int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_30)->max_length)))))));
+		__this->set_commandFlags_0(0);
+		goto IL_019b;
+	}
+
+IL_017c:
 	{
 		ByteU5BU5D_t58506160* L_31 = ___payload;
 		NullCheck(L_31);
-		__this->set_Size_47(((int32_t)((int32_t)((int32_t)12)+(int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_31)->max_length)))))));
-		goto IL_01a1;
+		__this->set_Size_45(((int32_t)((int32_t)((int32_t)32)+(int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_31)->max_length)))))));
+		goto IL_019b;
 	}
 
-IL_016d:
+IL_018a:
 	{
-		ByteU5BU5D_t58506160* L_32 = ___payload;
-		NullCheck(L_32);
-		__this->set_Size_47(((int32_t)((int32_t)((int32_t)16)+(int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_32)->max_length)))))));
+		__this->set_Size_45(((int32_t)20));
 		__this->set_commandFlags_0(0);
-		goto IL_01a1;
+		goto IL_019b;
 	}
 
-IL_0182:
-	{
-		ByteU5BU5D_t58506160* L_33 = ___payload;
-		NullCheck(L_33);
-		__this->set_Size_47(((int32_t)((int32_t)((int32_t)32)+(int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_33)->max_length)))))));
-		goto IL_01a1;
-	}
-
-IL_0190:
-	{
-		__this->set_Size_47(((int32_t)20));
-		__this->set_commandFlags_0(0);
-		goto IL_01a1;
-	}
-
-IL_01a1:
+IL_019b:
 	{
 		return;
 	}
 }
 // ExitGames.Client.Photon.NCommand ExitGames.Client.Photon.NCommand::CreateAck(ExitGames.Client.Photon.EnetPeer,ExitGames.Client.Photon.NCommand,System.Int32)
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
+extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
 extern TypeInfo* NCommand_t3301568857_il2cpp_TypeInfo_var;
 extern const uint32_t NCommand_CreateAck_m2365736060_MetadataUsageId;
 extern "C"  NCommand_t3301568857 * NCommand_CreateAck_m2365736060 (Il2CppObject * __this /* static, unused */, EnetPeer_t4023410422 * ___peer, NCommand_t3301568857 * ___commandToAck, int32_t ___sentTime, const MethodInfo* method)
@@ -10604,52 +10516,46 @@ extern "C"  NCommand_t3301568857 * NCommand_CreateAck_m2365736060 (Il2CppObject 
 	{
 		V_0 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)8));
 		V_1 = 0;
-		EnetPeer_t4023410422 * L_0 = ___peer;
+		NCommand_t3301568857 * L_0 = ___commandToAck;
 		NullCheck(L_0);
-		IProtocol_t2724506835 * L_1 = PeerBase_get_Protocol_m4217687564(L_0, /*hidden argument*/NULL);
-		NCommand_t3301568857 * L_2 = ___commandToAck;
-		NullCheck(L_2);
-		int32_t L_3 = L_2->get_reliableSequenceNumber_18();
+		int32_t L_1 = L_0->get_reliableSequenceNumber_18();
+		ByteU5BU5D_t58506160* L_2 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+		Protocol_Serialize_m2001046545(NULL /*static, unused*/, L_1, L_2, (&V_1), /*hidden argument*/NULL);
+		int32_t L_3 = ___sentTime;
 		ByteU5BU5D_t58506160* L_4 = V_0;
-		NullCheck(L_1);
-		VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_1, L_3, L_4, (&V_1));
+		Protocol_Serialize_m2001046545(NULL /*static, unused*/, L_3, L_4, (&V_1), /*hidden argument*/NULL);
 		EnetPeer_t4023410422 * L_5 = ___peer;
-		NullCheck(L_5);
-		IProtocol_t2724506835 * L_6 = PeerBase_get_Protocol_m4217687564(L_5, /*hidden argument*/NULL);
-		int32_t L_7 = ___sentTime;
-		ByteU5BU5D_t58506160* L_8 = V_0;
-		NullCheck(L_6);
-		VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_6, L_7, L_8, (&V_1));
-		EnetPeer_t4023410422 * L_9 = ___peer;
-		ByteU5BU5D_t58506160* L_10 = V_0;
+		ByteU5BU5D_t58506160* L_6 = V_0;
+		NCommand_t3301568857 * L_7 = ___commandToAck;
+		NullCheck(L_7);
+		uint8_t L_8 = L_7->get_commandChannelID_17();
+		NCommand_t3301568857 * L_9 = (NCommand_t3301568857 *)il2cpp_codegen_object_new(NCommand_t3301568857_il2cpp_TypeInfo_var);
+		NCommand__ctor_m3294593470(L_9, L_5, 1, L_6, L_8, /*hidden argument*/NULL);
+		V_2 = L_9;
+		NCommand_t3301568857 * L_10 = V_2;
 		NCommand_t3301568857 * L_11 = ___commandToAck;
 		NullCheck(L_11);
-		uint8_t L_12 = L_11->get_commandChannelID_17();
-		NCommand_t3301568857 * L_13 = (NCommand_t3301568857 *)il2cpp_codegen_object_new(NCommand_t3301568857_il2cpp_TypeInfo_var);
-		NCommand__ctor_m3294593470(L_13, L_9, 1, L_10, L_12, /*hidden argument*/NULL);
-		V_2 = L_13;
-		NCommand_t3301568857 * L_14 = V_2;
-		NCommand_t3301568857 * L_15 = ___commandToAck;
-		NullCheck(L_15);
-		int32_t L_16 = L_15->get_reliableSequenceNumber_18();
-		NullCheck(L_14);
-		L_14->set_ackReceivedReliableSequenceNumber_33(L_16);
-		NCommand_t3301568857 * L_17 = V_2;
-		int32_t L_18 = ___sentTime;
-		NullCheck(L_17);
-		L_17->set_ackReceivedSentTime_34(L_18);
-		NCommand_t3301568857 * L_19 = V_2;
-		V_3 = L_19;
-		goto IL_0055;
+		int32_t L_12 = L_11->get_reliableSequenceNumber_18();
+		NullCheck(L_10);
+		L_10->set_ackReceivedReliableSequenceNumber_32(L_12);
+		NCommand_t3301568857 * L_13 = V_2;
+		int32_t L_14 = ___sentTime;
+		NullCheck(L_13);
+		L_13->set_ackReceivedSentTime_33(L_14);
+		NCommand_t3301568857 * L_15 = V_2;
+		V_3 = L_15;
+		goto IL_0049;
 	}
 
-IL_0055:
+IL_0049:
 	{
-		NCommand_t3301568857 * L_20 = V_3;
-		return L_20;
+		NCommand_t3301568857 * L_16 = V_3;
+		return L_16;
 	}
 }
 // System.Void ExitGames.Client.Photon.NCommand::.ctor(ExitGames.Client.Photon.EnetPeer,System.Byte[],System.Int32&)
+extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
 extern const uint32_t NCommand__ctor_m4058016265_MetadataUsageId;
 extern "C"  void NCommand__ctor_m4058016265 (NCommand_t3301568857 * __this, EnetPeer_t4023410422 * ___peer, ByteU5BU5D_t58506160* ___inBuff, int32_t* ___readingOffset, const MethodInfo* method)
@@ -10712,436 +10618,355 @@ extern "C"  void NCommand__ctor_m4058016265 (NCommand_t3301568857 * __this, Enet
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_18, L_22);
 		int32_t L_23 = L_22;
 		__this->set_reservedByte_21(((L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_23))));
-		EnetPeer_t4023410422 * L_24 = ___peer;
-		NullCheck(L_24);
-		IProtocol_t2724506835 * L_25 = PeerBase_get_Protocol_m4217687564(L_24, /*hidden argument*/NULL);
-		int32_t* L_26 = __this->get_address_of_Size_47();
-		ByteU5BU5D_t58506160* L_27 = ___inBuff;
-		int32_t* L_28 = ___readingOffset;
-		NullCheck(L_25);
-		VirtActionInvoker3< int32_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(16 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int32&,System.Byte[],System.Int32&) */, L_25, L_26, L_27, L_28);
-		EnetPeer_t4023410422 * L_29 = ___peer;
-		NullCheck(L_29);
-		IProtocol_t2724506835 * L_30 = PeerBase_get_Protocol_m4217687564(L_29, /*hidden argument*/NULL);
-		int32_t* L_31 = __this->get_address_of_reliableSequenceNumber_18();
-		ByteU5BU5D_t58506160* L_32 = ___inBuff;
-		int32_t* L_33 = ___readingOffset;
-		NullCheck(L_30);
-		VirtActionInvoker3< int32_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(16 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int32&,System.Byte[],System.Int32&) */, L_30, L_31, L_32, L_33);
-		EnetPeer_t4023410422 * L_34 = ___peer;
-		EnetPeer_t4023410422 * L_35 = L_34;
-		NullCheck(L_35);
-		int64_t L_36 = ((PeerBase_t2319621551 *)L_35)->get_bytesIn_35();
-		int32_t L_37 = __this->get_Size_47();
-		NullCheck(L_35);
-		((PeerBase_t2319621551 *)L_35)->set_bytesIn_35(((int64_t)((int64_t)L_36+(int64_t)(((int64_t)((int64_t)L_37))))));
-		uint8_t L_38 = __this->get_commandType_6();
-		V_1 = L_38;
-		uint8_t L_39 = V_1;
-		if (((int32_t)((int32_t)L_39-(int32_t)1)) == 0)
+		int32_t* L_24 = __this->get_address_of_Size_45();
+		ByteU5BU5D_t58506160* L_25 = ___inBuff;
+		int32_t* L_26 = ___readingOffset;
+		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+		Protocol_Deserialize_m2617704396(NULL /*static, unused*/, L_24, L_25, L_26, /*hidden argument*/NULL);
+		int32_t* L_27 = __this->get_address_of_reliableSequenceNumber_18();
+		ByteU5BU5D_t58506160* L_28 = ___inBuff;
+		int32_t* L_29 = ___readingOffset;
+		Protocol_Deserialize_m2617704396(NULL /*static, unused*/, L_27, L_28, L_29, /*hidden argument*/NULL);
+		EnetPeer_t4023410422 * L_30 = ___peer;
+		EnetPeer_t4023410422 * L_31 = L_30;
+		NullCheck(L_31);
+		int64_t L_32 = ((PeerBase_t2319621551 *)L_31)->get_bytesIn_35();
+		int32_t L_33 = __this->get_Size_45();
+		NullCheck(L_31);
+		((PeerBase_t2319621551 *)L_31)->set_bytesIn_35(((int64_t)((int64_t)L_32+(int64_t)(((int64_t)((int64_t)L_33))))));
+		uint8_t L_34 = __this->get_commandType_6();
+		V_1 = L_34;
+		uint8_t L_35 = V_1;
+		if (((int32_t)((int32_t)L_35-(int32_t)1)) == 0)
 		{
-			goto IL_00c3;
+			goto IL_00b7;
 		}
-		if (((int32_t)((int32_t)L_39-(int32_t)1)) == 1)
+		if (((int32_t)((int32_t)L_35-(int32_t)1)) == 1)
 		{
-			goto IL_01eb;
+			goto IL_01a9;
 		}
-		if (((int32_t)((int32_t)L_39-(int32_t)1)) == 2)
+		if (((int32_t)((int32_t)L_35-(int32_t)1)) == 2)
 		{
-			goto IL_01bc;
+			goto IL_0180;
 		}
-		if (((int32_t)((int32_t)L_39-(int32_t)1)) == 3)
+		if (((int32_t)((int32_t)L_35-(int32_t)1)) == 3)
 		{
-			goto IL_01eb;
+			goto IL_01a9;
 		}
-		if (((int32_t)((int32_t)L_39-(int32_t)1)) == 4)
+		if (((int32_t)((int32_t)L_35-(int32_t)1)) == 4)
 		{
-			goto IL_01eb;
+			goto IL_01a9;
 		}
-		if (((int32_t)((int32_t)L_39-(int32_t)1)) == 5)
+		if (((int32_t)((int32_t)L_35-(int32_t)1)) == 5)
 		{
-			goto IL_00f0;
+			goto IL_00d8;
 		}
-		if (((int32_t)((int32_t)L_39-(int32_t)1)) == 6)
+		if (((int32_t)((int32_t)L_35-(int32_t)1)) == 6)
 		{
-			goto IL_0109;
+			goto IL_00f1;
 		}
-		if (((int32_t)((int32_t)L_39-(int32_t)1)) == 7)
+		if (((int32_t)((int32_t)L_35-(int32_t)1)) == 7)
 		{
-			goto IL_0136;
+			goto IL_0118;
 		}
 	}
 	{
-		goto IL_01eb;
+		goto IL_01a9;
 	}
 
-IL_00c3:
+IL_00b7:
 	{
-		EnetPeer_t4023410422 * L_40 = ___peer;
-		NullCheck(L_40);
-		IProtocol_t2724506835 * L_41 = PeerBase_get_Protocol_m4217687564(L_40, /*hidden argument*/NULL);
-		int32_t* L_42 = __this->get_address_of_ackReceivedReliableSequenceNumber_33();
-		ByteU5BU5D_t58506160* L_43 = ___inBuff;
-		int32_t* L_44 = ___readingOffset;
-		NullCheck(L_41);
-		VirtActionInvoker3< int32_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(16 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int32&,System.Byte[],System.Int32&) */, L_41, L_42, L_43, L_44);
-		EnetPeer_t4023410422 * L_45 = ___peer;
-		NullCheck(L_45);
-		IProtocol_t2724506835 * L_46 = PeerBase_get_Protocol_m4217687564(L_45, /*hidden argument*/NULL);
-		int32_t* L_47 = __this->get_address_of_ackReceivedSentTime_34();
+		int32_t* L_36 = __this->get_address_of_ackReceivedReliableSequenceNumber_32();
+		ByteU5BU5D_t58506160* L_37 = ___inBuff;
+		int32_t* L_38 = ___readingOffset;
+		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+		Protocol_Deserialize_m2617704396(NULL /*static, unused*/, L_36, L_37, L_38, /*hidden argument*/NULL);
+		int32_t* L_39 = __this->get_address_of_ackReceivedSentTime_33();
+		ByteU5BU5D_t58506160* L_40 = ___inBuff;
+		int32_t* L_41 = ___readingOffset;
+		Protocol_Deserialize_m2617704396(NULL /*static, unused*/, L_39, L_40, L_41, /*hidden argument*/NULL);
+		goto IL_01a9;
+	}
+
+IL_00d8:
+	{
+		int32_t L_42 = __this->get_Size_45();
+		__this->set_Payload_48(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)((int32_t)L_42-(int32_t)((int32_t)12))))));
+		goto IL_01a9;
+	}
+
+IL_00f1:
+	{
+		int32_t* L_43 = __this->get_address_of_unreliableSequenceNumber_19();
+		ByteU5BU5D_t58506160* L_44 = ___inBuff;
+		int32_t* L_45 = ___readingOffset;
+		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+		Protocol_Deserialize_m2617704396(NULL /*static, unused*/, L_43, L_44, L_45, /*hidden argument*/NULL);
+		int32_t L_46 = __this->get_Size_45();
+		__this->set_Payload_48(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)((int32_t)L_46-(int32_t)((int32_t)16))))));
+		goto IL_01a9;
+	}
+
+IL_0118:
+	{
+		int32_t* L_47 = __this->get_address_of_startSequenceNumber_22();
 		ByteU5BU5D_t58506160* L_48 = ___inBuff;
 		int32_t* L_49 = ___readingOffset;
-		NullCheck(L_46);
-		VirtActionInvoker3< int32_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(16 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int32&,System.Byte[],System.Int32&) */, L_46, L_47, L_48, L_49);
-		goto IL_01eb;
-	}
-
-IL_00f0:
-	{
-		int32_t L_50 = __this->get_Size_47();
-		__this->set_Payload_28(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)((int32_t)L_50-(int32_t)((int32_t)12))))));
-		goto IL_01eb;
-	}
-
-IL_0109:
-	{
-		EnetPeer_t4023410422 * L_51 = ___peer;
-		NullCheck(L_51);
-		IProtocol_t2724506835 * L_52 = PeerBase_get_Protocol_m4217687564(L_51, /*hidden argument*/NULL);
-		int32_t* L_53 = __this->get_address_of_unreliableSequenceNumber_19();
+		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+		Protocol_Deserialize_m2617704396(NULL /*static, unused*/, L_47, L_48, L_49, /*hidden argument*/NULL);
+		int32_t* L_50 = __this->get_address_of_fragmentCount_23();
+		ByteU5BU5D_t58506160* L_51 = ___inBuff;
+		int32_t* L_52 = ___readingOffset;
+		Protocol_Deserialize_m2617704396(NULL /*static, unused*/, L_50, L_51, L_52, /*hidden argument*/NULL);
+		int32_t* L_53 = __this->get_address_of_fragmentNumber_24();
 		ByteU5BU5D_t58506160* L_54 = ___inBuff;
 		int32_t* L_55 = ___readingOffset;
-		NullCheck(L_52);
-		VirtActionInvoker3< int32_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(16 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int32&,System.Byte[],System.Int32&) */, L_52, L_53, L_54, L_55);
-		int32_t L_56 = __this->get_Size_47();
-		__this->set_Payload_28(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)((int32_t)L_56-(int32_t)((int32_t)16))))));
-		goto IL_01eb;
-	}
-
-IL_0136:
-	{
-		EnetPeer_t4023410422 * L_57 = ___peer;
-		NullCheck(L_57);
-		IProtocol_t2724506835 * L_58 = PeerBase_get_Protocol_m4217687564(L_57, /*hidden argument*/NULL);
-		int32_t* L_59 = __this->get_address_of_startSequenceNumber_22();
+		Protocol_Deserialize_m2617704396(NULL /*static, unused*/, L_53, L_54, L_55, /*hidden argument*/NULL);
+		int32_t* L_56 = __this->get_address_of_totalLength_25();
+		ByteU5BU5D_t58506160* L_57 = ___inBuff;
+		int32_t* L_58 = ___readingOffset;
+		Protocol_Deserialize_m2617704396(NULL /*static, unused*/, L_56, L_57, L_58, /*hidden argument*/NULL);
+		int32_t* L_59 = __this->get_address_of_fragmentOffset_26();
 		ByteU5BU5D_t58506160* L_60 = ___inBuff;
 		int32_t* L_61 = ___readingOffset;
-		NullCheck(L_58);
-		VirtActionInvoker3< int32_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(16 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int32&,System.Byte[],System.Int32&) */, L_58, L_59, L_60, L_61);
-		EnetPeer_t4023410422 * L_62 = ___peer;
-		NullCheck(L_62);
-		IProtocol_t2724506835 * L_63 = PeerBase_get_Protocol_m4217687564(L_62, /*hidden argument*/NULL);
-		int32_t* L_64 = __this->get_address_of_fragmentCount_23();
-		ByteU5BU5D_t58506160* L_65 = ___inBuff;
+		Protocol_Deserialize_m2617704396(NULL /*static, unused*/, L_59, L_60, L_61, /*hidden argument*/NULL);
+		int32_t L_62 = __this->get_Size_45();
+		__this->set_Payload_48(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)((int32_t)L_62-(int32_t)((int32_t)32))))));
+		int32_t L_63 = __this->get_fragmentCount_23();
+		__this->set_fragmentsRemaining_27(L_63);
+		goto IL_01a9;
+	}
+
+IL_0180:
+	{
+		ByteU5BU5D_t58506160* L_64 = ___inBuff;
+		int32_t* L_65 = ___readingOffset;
+		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+		Protocol_Deserialize_m3746144530(NULL /*static, unused*/, (&V_2), L_64, L_65, /*hidden argument*/NULL);
 		int32_t* L_66 = ___readingOffset;
-		NullCheck(L_63);
-		VirtActionInvoker3< int32_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(16 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int32&,System.Byte[],System.Int32&) */, L_63, L_64, L_65, L_66);
-		EnetPeer_t4023410422 * L_67 = ___peer;
-		NullCheck(L_67);
-		IProtocol_t2724506835 * L_68 = PeerBase_get_Protocol_m4217687564(L_67, /*hidden argument*/NULL);
-		int32_t* L_69 = __this->get_address_of_fragmentNumber_24();
-		ByteU5BU5D_t58506160* L_70 = ___inBuff;
-		int32_t* L_71 = ___readingOffset;
+		int32_t* L_67 = ___readingOffset;
+		*((int32_t*)(L_66)) = (int32_t)((int32_t)((int32_t)(*((int32_t*)L_67))+(int32_t)((int32_t)30)));
+		EnetPeer_t4023410422 * L_68 = ___peer;
 		NullCheck(L_68);
-		VirtActionInvoker3< int32_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(16 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int32&,System.Byte[],System.Int32&) */, L_68, L_69, L_70, L_71);
-		EnetPeer_t4023410422 * L_72 = ___peer;
-		NullCheck(L_72);
-		IProtocol_t2724506835 * L_73 = PeerBase_get_Protocol_m4217687564(L_72, /*hidden argument*/NULL);
-		int32_t* L_74 = __this->get_address_of_totalLength_25();
+		int16_t L_69 = ((PeerBase_t2319621551 *)L_68)->get_peerID_21();
+		V_3 = (bool)((((int32_t)L_69) == ((int32_t)(-1)))? 1 : 0);
+		bool L_70 = V_3;
+		if (!L_70)
+		{
+			goto IL_01a7;
+		}
+	}
+	{
+		EnetPeer_t4023410422 * L_71 = ___peer;
+		int16_t L_72 = V_2;
+		NullCheck(L_71);
+		((PeerBase_t2319621551 *)L_71)->set_peerID_21(L_72);
+	}
+
+IL_01a7:
+	{
+		goto IL_01a9;
+	}
+
+IL_01a9:
+	{
+		ByteU5BU5D_t58506160* L_73 = __this->get_Payload_48();
+		V_4 = (bool)((!(((Il2CppObject*)(ByteU5BU5D_t58506160*)L_73) <= ((Il2CppObject*)(Il2CppObject *)NULL)))? 1 : 0);
+		bool L_74 = V_4;
+		if (!L_74)
+		{
+			goto IL_01df;
+		}
+	}
+	{
 		ByteU5BU5D_t58506160* L_75 = ___inBuff;
 		int32_t* L_76 = ___readingOffset;
-		NullCheck(L_73);
-		VirtActionInvoker3< int32_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(16 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int32&,System.Byte[],System.Int32&) */, L_73, L_74, L_75, L_76);
-		EnetPeer_t4023410422 * L_77 = ___peer;
-		NullCheck(L_77);
-		IProtocol_t2724506835 * L_78 = PeerBase_get_Protocol_m4217687564(L_77, /*hidden argument*/NULL);
-		int32_t* L_79 = __this->get_address_of_fragmentOffset_26();
-		ByteU5BU5D_t58506160* L_80 = ___inBuff;
-		int32_t* L_81 = ___readingOffset;
+		ByteU5BU5D_t58506160* L_77 = __this->get_Payload_48();
+		ByteU5BU5D_t58506160* L_78 = __this->get_Payload_48();
 		NullCheck(L_78);
-		VirtActionInvoker3< int32_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(16 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int32&,System.Byte[],System.Int32&) */, L_78, L_79, L_80, L_81);
-		int32_t L_82 = __this->get_Size_47();
-		__this->set_Payload_28(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)((int32_t)L_82-(int32_t)((int32_t)32))))));
-		int32_t L_83 = __this->get_fragmentCount_23();
-		__this->set_fragmentsRemaining_27(L_83);
-		goto IL_01eb;
+		Buffer_BlockCopy_m1580643184(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_75, (*((int32_t*)L_76)), (Il2CppArray *)(Il2CppArray *)L_77, 0, (((int32_t)((int32_t)(((Il2CppArray *)L_78)->max_length)))), /*hidden argument*/NULL);
+		int32_t* L_79 = ___readingOffset;
+		int32_t* L_80 = ___readingOffset;
+		ByteU5BU5D_t58506160* L_81 = __this->get_Payload_48();
+		NullCheck(L_81);
+		*((int32_t*)(L_79)) = (int32_t)((int32_t)((int32_t)(*((int32_t*)L_80))+(int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_81)->max_length))))));
 	}
 
-IL_01bc:
-	{
-		EnetPeer_t4023410422 * L_84 = ___peer;
-		NullCheck(L_84);
-		IProtocol_t2724506835 * L_85 = PeerBase_get_Protocol_m4217687564(L_84, /*hidden argument*/NULL);
-		ByteU5BU5D_t58506160* L_86 = ___inBuff;
-		int32_t* L_87 = ___readingOffset;
-		NullCheck(L_85);
-		VirtActionInvoker3< int16_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(15 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int16&,System.Byte[],System.Int32&) */, L_85, (&V_2), L_86, L_87);
-		int32_t* L_88 = ___readingOffset;
-		int32_t* L_89 = ___readingOffset;
-		*((int32_t*)(L_88)) = (int32_t)((int32_t)((int32_t)(*((int32_t*)L_89))+(int32_t)((int32_t)30)));
-		EnetPeer_t4023410422 * L_90 = ___peer;
-		NullCheck(L_90);
-		int16_t L_91 = ((PeerBase_t2319621551 *)L_90)->get_peerID_21();
-		V_3 = (bool)((((int32_t)L_91) == ((int32_t)(-1)))? 1 : 0);
-		bool L_92 = V_3;
-		if (!L_92)
-		{
-			goto IL_01e9;
-		}
-	}
-	{
-		EnetPeer_t4023410422 * L_93 = ___peer;
-		int16_t L_94 = V_2;
-		NullCheck(L_93);
-		((PeerBase_t2319621551 *)L_93)->set_peerID_21(L_94);
-	}
-
-IL_01e9:
-	{
-		goto IL_01eb;
-	}
-
-IL_01eb:
-	{
-		ByteU5BU5D_t58506160* L_95 = __this->get_Payload_28();
-		V_4 = (bool)((!(((Il2CppObject*)(ByteU5BU5D_t58506160*)L_95) <= ((Il2CppObject*)(Il2CppObject *)NULL)))? 1 : 0);
-		bool L_96 = V_4;
-		if (!L_96)
-		{
-			goto IL_0221;
-		}
-	}
-	{
-		ByteU5BU5D_t58506160* L_97 = ___inBuff;
-		int32_t* L_98 = ___readingOffset;
-		ByteU5BU5D_t58506160* L_99 = __this->get_Payload_28();
-		ByteU5BU5D_t58506160* L_100 = __this->get_Payload_28();
-		NullCheck(L_100);
-		Buffer_BlockCopy_m1580643184(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_97, (*((int32_t*)L_98)), (Il2CppArray *)(Il2CppArray *)L_99, 0, (((int32_t)((int32_t)(((Il2CppArray *)L_100)->max_length)))), /*hidden argument*/NULL);
-		int32_t* L_101 = ___readingOffset;
-		int32_t* L_102 = ___readingOffset;
-		ByteU5BU5D_t58506160* L_103 = __this->get_Payload_28();
-		NullCheck(L_103);
-		*((int32_t*)(L_101)) = (int32_t)((int32_t)((int32_t)(*((int32_t*)L_102))+(int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_103)->max_length))))));
-	}
-
-IL_0221:
+IL_01df:
 	{
 		return;
 	}
 }
-// System.Byte[] ExitGames.Client.Photon.NCommand::Serialize(ExitGames.Client.IProtocol)
+// System.Byte[] ExitGames.Client.Photon.NCommand::SerializeHeader()
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
-extern const uint32_t NCommand_Serialize_m2068484208_MetadataUsageId;
-extern "C"  ByteU5BU5D_t58506160* NCommand_Serialize_m2068484208 (NCommand_t3301568857 * __this, IProtocol_t2724506835 * ___protocol, const MethodInfo* method)
+extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
+extern const uint32_t NCommand_SerializeHeader_m1281700582_MetadataUsageId;
+extern "C"  ByteU5BU5D_t58506160* NCommand_SerializeHeader_m1281700582 (NCommand_t3301568857 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (NCommand_Serialize_m2068484208_MetadataUsageId);
+		il2cpp_codegen_initialize_method (NCommand_SerializeHeader_m1281700582_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	int32_t V_0 = 0;
-	int32_t V_1 = 0;
-	int32_t V_2 = 0;
+	bool V_1 = false;
+	ByteU5BU5D_t58506160* V_2 = NULL;
 	bool V_3 = false;
-	ByteU5BU5D_t58506160* V_4 = NULL;
+	bool V_4 = false;
 	bool V_5 = false;
 	bool V_6 = false;
-	bool V_7 = false;
-	bool V_8 = false;
-	bool V_9 = false;
-	int32_t G_B5_0 = 0;
 	{
-		ByteU5BU5D_t58506160* L_0 = __this->get_completeCommand_46();
-		V_3 = (bool)((!(((Il2CppObject*)(ByteU5BU5D_t58506160*)L_0) <= ((Il2CppObject*)(Il2CppObject *)NULL)))? 1 : 0);
-		bool L_1 = V_3;
+		ByteU5BU5D_t58506160* L_0 = __this->get_commandHeader_46();
+		V_1 = (bool)((!(((Il2CppObject*)(ByteU5BU5D_t58506160*)L_0) <= ((Il2CppObject*)(Il2CppObject *)NULL)))? 1 : 0);
+		bool L_1 = V_1;
 		if (!L_1)
 		{
-			goto IL_001c;
+			goto IL_001b;
 		}
 	}
 	{
-		ByteU5BU5D_t58506160* L_2 = __this->get_completeCommand_46();
-		V_4 = L_2;
-		goto IL_01ab;
+		ByteU5BU5D_t58506160* L_2 = __this->get_commandHeader_46();
+		V_2 = L_2;
+		goto IL_0173;
 	}
 
-IL_001c:
+IL_001b:
 	{
-		ByteU5BU5D_t58506160* L_3 = __this->get_Payload_28();
-		if (!L_3)
+		__this->set_SizeOfHeader_47(((int32_t)12));
+		uint8_t L_3 = __this->get_commandType_6();
+		V_3 = (bool)((((int32_t)L_3) == ((int32_t)7))? 1 : 0);
+		bool L_4 = V_3;
+		if (!L_4)
 		{
-			goto IL_002e;
+			goto IL_003c;
 		}
 	}
 	{
-		ByteU5BU5D_t58506160* L_4 = __this->get_Payload_28();
-		NullCheck(L_4);
-		G_B5_0 = (((int32_t)((int32_t)(((Il2CppArray *)L_4)->max_length))));
-		goto IL_002f;
+		__this->set_SizeOfHeader_47(((int32_t)16));
+		goto IL_0055;
 	}
 
-IL_002e:
+IL_003c:
 	{
-		G_B5_0 = 0;
-	}
-
-IL_002f:
-	{
-		V_0 = G_B5_0;
-		V_1 = ((int32_t)12);
 		uint8_t L_5 = __this->get_commandType_6();
-		V_5 = (bool)((((int32_t)L_5) == ((int32_t)7))? 1 : 0);
-		bool L_6 = V_5;
+		V_4 = (bool)((((int32_t)L_5) == ((int32_t)8))? 1 : 0);
+		bool L_6 = V_4;
 		if (!L_6)
 		{
-			goto IL_0049;
+			goto IL_0055;
 		}
 	}
 	{
-		V_1 = ((int32_t)16);
-		goto IL_005d;
+		__this->set_SizeOfHeader_47(((int32_t)32));
 	}
 
-IL_0049:
+IL_0055:
 	{
-		uint8_t L_7 = __this->get_commandType_6();
-		V_6 = (bool)((((int32_t)L_7) == ((int32_t)8))? 1 : 0);
-		bool L_8 = V_6;
-		if (!L_8)
+		int32_t L_7 = __this->get_SizeOfHeader_47();
+		__this->set_commandHeader_46(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)L_7)));
+		ByteU5BU5D_t58506160* L_8 = __this->get_commandHeader_46();
+		uint8_t L_9 = __this->get_commandType_6();
+		NullCheck(L_8);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_8, 0);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(0), (uint8_t)L_9);
+		ByteU5BU5D_t58506160* L_10 = __this->get_commandHeader_46();
+		uint8_t L_11 = __this->get_commandChannelID_17();
+		NullCheck(L_10);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_10, 1);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(1), (uint8_t)L_11);
+		ByteU5BU5D_t58506160* L_12 = __this->get_commandHeader_46();
+		uint8_t L_13 = __this->get_commandFlags_0();
+		NullCheck(L_12);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_12, 2);
+		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(2), (uint8_t)L_13);
+		ByteU5BU5D_t58506160* L_14 = __this->get_commandHeader_46();
+		uint8_t L_15 = __this->get_reservedByte_21();
+		NullCheck(L_14);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_14, 3);
+		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(3), (uint8_t)L_15);
+		V_0 = 4;
+		int32_t L_16 = __this->get_Size_45();
+		ByteU5BU5D_t58506160* L_17 = __this->get_commandHeader_46();
+		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+		Protocol_Serialize_m2001046545(NULL /*static, unused*/, L_16, L_17, (&V_0), /*hidden argument*/NULL);
+		int32_t L_18 = __this->get_reliableSequenceNumber_18();
+		ByteU5BU5D_t58506160* L_19 = __this->get_commandHeader_46();
+		Protocol_Serialize_m2001046545(NULL /*static, unused*/, L_18, L_19, (&V_0), /*hidden argument*/NULL);
+		uint8_t L_20 = __this->get_commandType_6();
+		V_5 = (bool)((((int32_t)L_20) == ((int32_t)7))? 1 : 0);
+		bool L_21 = V_5;
+		if (!L_21)
 		{
-			goto IL_005d;
+			goto IL_00f2;
 		}
 	}
 	{
-		V_1 = ((int32_t)32);
+		V_0 = ((int32_t)12);
+		int32_t L_22 = __this->get_unreliableSequenceNumber_19();
+		ByteU5BU5D_t58506160* L_23 = __this->get_commandHeader_46();
+		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+		Protocol_Serialize_m2001046545(NULL /*static, unused*/, L_22, L_23, (&V_0), /*hidden argument*/NULL);
+		goto IL_016a;
 	}
 
-IL_005d:
+IL_00f2:
 	{
-		int32_t L_9 = V_1;
-		int32_t L_10 = V_0;
-		__this->set_completeCommand_46(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)((int32_t)L_9+(int32_t)L_10)))));
-		ByteU5BU5D_t58506160* L_11 = __this->get_completeCommand_46();
-		uint8_t L_12 = __this->get_commandType_6();
-		NullCheck(L_11);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_11, 0);
-		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(0), (uint8_t)L_12);
-		ByteU5BU5D_t58506160* L_13 = __this->get_completeCommand_46();
-		uint8_t L_14 = __this->get_commandChannelID_17();
-		NullCheck(L_13);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_13, 1);
-		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(1), (uint8_t)L_14);
-		ByteU5BU5D_t58506160* L_15 = __this->get_completeCommand_46();
-		uint8_t L_16 = __this->get_commandFlags_0();
-		NullCheck(L_15);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_15, 2);
-		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(2), (uint8_t)L_16);
-		ByteU5BU5D_t58506160* L_17 = __this->get_completeCommand_46();
-		uint8_t L_18 = __this->get_reservedByte_21();
-		NullCheck(L_17);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_17, 3);
-		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(3), (uint8_t)L_18);
-		V_2 = 4;
-		IProtocol_t2724506835 * L_19 = ___protocol;
-		ByteU5BU5D_t58506160* L_20 = __this->get_completeCommand_46();
-		NullCheck(L_20);
-		ByteU5BU5D_t58506160* L_21 = __this->get_completeCommand_46();
-		NullCheck(L_19);
-		VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_19, (((int32_t)((int32_t)(((Il2CppArray *)L_20)->max_length)))), L_21, (&V_2));
-		IProtocol_t2724506835 * L_22 = ___protocol;
-		int32_t L_23 = __this->get_reliableSequenceNumber_18();
-		ByteU5BU5D_t58506160* L_24 = __this->get_completeCommand_46();
-		NullCheck(L_22);
-		VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_22, L_23, L_24, (&V_2));
-		uint8_t L_25 = __this->get_commandType_6();
-		V_7 = (bool)((((int32_t)L_25) == ((int32_t)7))? 1 : 0);
-		bool L_26 = V_7;
-		if (!L_26)
+		uint8_t L_24 = __this->get_commandType_6();
+		V_6 = (bool)((((int32_t)L_24) == ((int32_t)8))? 1 : 0);
+		bool L_25 = V_6;
+		if (!L_25)
 		{
-			goto IL_00fc;
+			goto IL_016a;
 		}
 	}
 	{
-		V_2 = ((int32_t)12);
-		IProtocol_t2724506835 * L_27 = ___protocol;
-		int32_t L_28 = __this->get_unreliableSequenceNumber_19();
-		ByteU5BU5D_t58506160* L_29 = __this->get_completeCommand_46();
-		NullCheck(L_27);
-		VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_27, L_28, L_29, (&V_2));
-		goto IL_0179;
+		V_0 = ((int32_t)12);
+		int32_t L_26 = __this->get_startSequenceNumber_22();
+		ByteU5BU5D_t58506160* L_27 = __this->get_commandHeader_46();
+		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+		Protocol_Serialize_m2001046545(NULL /*static, unused*/, L_26, L_27, (&V_0), /*hidden argument*/NULL);
+		int32_t L_28 = __this->get_fragmentCount_23();
+		ByteU5BU5D_t58506160* L_29 = __this->get_commandHeader_46();
+		Protocol_Serialize_m2001046545(NULL /*static, unused*/, L_28, L_29, (&V_0), /*hidden argument*/NULL);
+		int32_t L_30 = __this->get_fragmentNumber_24();
+		ByteU5BU5D_t58506160* L_31 = __this->get_commandHeader_46();
+		Protocol_Serialize_m2001046545(NULL /*static, unused*/, L_30, L_31, (&V_0), /*hidden argument*/NULL);
+		int32_t L_32 = __this->get_totalLength_25();
+		ByteU5BU5D_t58506160* L_33 = __this->get_commandHeader_46();
+		Protocol_Serialize_m2001046545(NULL /*static, unused*/, L_32, L_33, (&V_0), /*hidden argument*/NULL);
+		int32_t L_34 = __this->get_fragmentOffset_26();
+		ByteU5BU5D_t58506160* L_35 = __this->get_commandHeader_46();
+		Protocol_Serialize_m2001046545(NULL /*static, unused*/, L_34, L_35, (&V_0), /*hidden argument*/NULL);
 	}
 
-IL_00fc:
+IL_016a:
 	{
-		uint8_t L_30 = __this->get_commandType_6();
-		V_8 = (bool)((((int32_t)L_30) == ((int32_t)8))? 1 : 0);
-		bool L_31 = V_8;
-		if (!L_31)
-		{
-			goto IL_0179;
-		}
-	}
-	{
-		V_2 = ((int32_t)12);
-		IProtocol_t2724506835 * L_32 = ___protocol;
-		int32_t L_33 = __this->get_startSequenceNumber_22();
-		ByteU5BU5D_t58506160* L_34 = __this->get_completeCommand_46();
-		NullCheck(L_32);
-		VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_32, L_33, L_34, (&V_2));
-		IProtocol_t2724506835 * L_35 = ___protocol;
-		int32_t L_36 = __this->get_fragmentCount_23();
-		ByteU5BU5D_t58506160* L_37 = __this->get_completeCommand_46();
-		NullCheck(L_35);
-		VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_35, L_36, L_37, (&V_2));
-		IProtocol_t2724506835 * L_38 = ___protocol;
-		int32_t L_39 = __this->get_fragmentNumber_24();
-		ByteU5BU5D_t58506160* L_40 = __this->get_completeCommand_46();
-		NullCheck(L_38);
-		VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_38, L_39, L_40, (&V_2));
-		IProtocol_t2724506835 * L_41 = ___protocol;
-		int32_t L_42 = __this->get_totalLength_25();
-		ByteU5BU5D_t58506160* L_43 = __this->get_completeCommand_46();
-		NullCheck(L_41);
-		VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_41, L_42, L_43, (&V_2));
-		IProtocol_t2724506835 * L_44 = ___protocol;
-		int32_t L_45 = __this->get_fragmentOffset_26();
-		ByteU5BU5D_t58506160* L_46 = __this->get_completeCommand_46();
-		NullCheck(L_44);
-		VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_44, L_45, L_46, (&V_2));
+		ByteU5BU5D_t58506160* L_36 = __this->get_commandHeader_46();
+		V_2 = L_36;
+		goto IL_0173;
 	}
 
-IL_0179:
+IL_0173:
 	{
-		int32_t L_47 = V_0;
-		V_9 = (bool)((((int32_t)L_47) > ((int32_t)0))? 1 : 0);
-		bool L_48 = V_9;
-		if (!L_48)
-		{
-			goto IL_019a;
-		}
+		ByteU5BU5D_t58506160* L_37 = V_2;
+		return L_37;
 	}
+}
+// System.Byte[] ExitGames.Client.Photon.NCommand::Serialize()
+extern "C"  ByteU5BU5D_t58506160* NCommand_Serialize_m3770979705 (NCommand_t3301568857 * __this, const MethodInfo* method)
+{
+	ByteU5BU5D_t58506160* V_0 = NULL;
 	{
-		ByteU5BU5D_t58506160* L_49 = __this->get_Payload_28();
-		ByteU5BU5D_t58506160* L_50 = __this->get_completeCommand_46();
-		int32_t L_51 = V_1;
-		int32_t L_52 = V_0;
-		Buffer_BlockCopy_m1580643184(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_49, 0, (Il2CppArray *)(Il2CppArray *)L_50, L_51, L_52, /*hidden argument*/NULL);
+		ByteU5BU5D_t58506160* L_0 = __this->get_Payload_48();
+		V_0 = L_0;
+		goto IL_000a;
 	}
 
-IL_019a:
+IL_000a:
 	{
-		__this->set_Payload_28((ByteU5BU5D_t58506160*)NULL);
-		ByteU5BU5D_t58506160* L_53 = __this->get_completeCommand_46();
-		V_4 = L_53;
-		goto IL_01ab;
-	}
-
-IL_01ab:
-	{
-		ByteU5BU5D_t58506160* L_54 = V_4;
-		return L_54;
+		ByteU5BU5D_t58506160* L_1 = V_0;
+		return L_1;
 	}
 }
 // System.Int32 ExitGames.Client.Photon.NCommand::CompareTo(ExitGames.Client.Photon.NCommand)
@@ -11228,7 +11053,7 @@ extern "C"  String_t* NCommand_ToString_m3839616398 (NCommand_t3301568857 * __th
 		ArrayElementTypeCheck (L_6, L_9);
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_9);
 		ObjectU5BU5D_t11523773* L_10 = L_6;
-		int32_t L_11 = __this->get_ackReceivedReliableSequenceNumber_33();
+		int32_t L_11 = __this->get_ackReceivedReliableSequenceNumber_32();
 		int32_t L_12 = L_11;
 		Il2CppObject * L_13 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_12);
 		NullCheck(L_10);
@@ -11236,7 +11061,7 @@ extern "C"  String_t* NCommand_ToString_m3839616398 (NCommand_t3301568857 * __th
 		ArrayElementTypeCheck (L_10, L_13);
 		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)L_13);
 		ObjectU5BU5D_t11523773* L_14 = L_10;
-		int32_t L_15 = __this->get_ackReceivedSentTime_34();
+		int32_t L_15 = __this->get_ackReceivedSentTime_33();
 		int32_t L_16 = L_15;
 		Il2CppObject * L_17 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_16);
 		NullCheck(L_14);
@@ -11284,7 +11109,7 @@ IL_005a:
 		ArrayElementTypeCheck (L_31, L_34);
 		(L_31)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_34);
 		ObjectU5BU5D_t11523773* L_35 = L_31;
-		int32_t L_36 = __this->get_commandSentTime_29();
+		int32_t L_36 = __this->get_commandSentTime_28();
 		int32_t L_37 = L_36;
 		Il2CppObject * L_38 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_37);
 		NullCheck(L_35);
@@ -11292,7 +11117,7 @@ IL_005a:
 		ArrayElementTypeCheck (L_35, L_38);
 		(L_35)->SetAt(static_cast<il2cpp_array_size_t>(4), (Il2CppObject *)L_38);
 		ObjectU5BU5D_t11523773* L_39 = L_35;
-		uint8_t L_40 = __this->get_commandSentCount_30();
+		uint8_t L_40 = __this->get_commandSentCount_29();
 		uint8_t L_41 = L_40;
 		Il2CppObject * L_42 = Box(Byte_t2778693821_il2cpp_TypeInfo_var, &L_41);
 		NullCheck(L_39);
@@ -11300,7 +11125,7 @@ IL_005a:
 		ArrayElementTypeCheck (L_39, L_42);
 		(L_39)->SetAt(static_cast<il2cpp_array_size_t>(5), (Il2CppObject *)L_42);
 		ObjectU5BU5D_t11523773* L_43 = L_39;
-		int32_t L_44 = __this->get_timeoutTime_32();
+		int32_t L_44 = __this->get_timeoutTime_31();
 		int32_t L_45 = L_44;
 		Il2CppObject * L_46 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_45);
 		NullCheck(L_43);
@@ -12116,22 +11941,6 @@ extern "C"  void OperationResponse__ctor_m713693788 (OperationResponse_t26447720
 		return;
 	}
 }
-// ExitGames.Client.IProtocol ExitGames.Client.Photon.PeerBase::get_Protocol()
-extern "C"  IProtocol_t2724506835 * PeerBase_get_Protocol_m4217687564 (PeerBase_t2319621551 * __this, const MethodInfo* method)
-{
-	IProtocol_t2724506835 * V_0 = NULL;
-	{
-		IProtocol_t2724506835 * L_0 = __this->get_protocol_0();
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		IProtocol_t2724506835 * L_1 = V_0;
-		return L_1;
-	}
-}
 // System.Int64 ExitGames.Client.Photon.PeerBase::get_TrafficStatsEnabledTime()
 extern "C"  int64_t PeerBase_get_TrafficStatsEnabledTime_m671856287 (PeerBase_t2319621551 * __this, const MethodInfo* method)
 {
@@ -12647,37 +12456,53 @@ extern "C"  void PeerBase_InitOnce_m3044186886 (PeerBase_t2319621551 * __this, c
 	}
 }
 // System.Void ExitGames.Client.Photon.PeerBase::SetInitIPV6Bit(System.Boolean)
+extern TypeInfo* String_t_il2cpp_TypeInfo_var;
+extern TypeInfo* IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1189581148;
+extern const uint32_t PeerBase_SetInitIPV6Bit_m4010002944_MetadataUsageId;
 extern "C"  void PeerBase_SetInitIPV6Bit_m4010002944 (PeerBase_t2319621551 * __this, bool ___isV6, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PeerBase_SetInitIPV6Bit_m4010002944_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
 	bool V_0 = false;
 	{
-		bool L_0 = ___isV6;
-		V_0 = L_0;
-		bool L_1 = V_0;
-		if (!L_1)
+		Il2CppObject * L_0 = PeerBase_get_Listener_m2440165892(__this, /*hidden argument*/NULL);
+		String_t* L_1 = Boolean_ToString_m2512358154((&___isV6), /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_2 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral1189581148, L_1, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		InterfaceActionInvoker2< uint8_t, String_t* >::Invoke(0 /* System.Void ExitGames.Client.Photon.IPhotonPeerListener::DebugReturn(ExitGames.Client.Photon.DebugLevel,System.String) */, IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var, L_0, 5, L_2);
+		bool L_3 = ___isV6;
+		V_0 = L_3;
+		bool L_4 = V_0;
+		if (!L_4)
 		{
-			goto IL_0020;
+			goto IL_003e;
 		}
 	}
 	{
-		ByteU5BU5D_t58506160* L_2 = __this->get_INIT_BYTES_52();
-		NullCheck(L_2);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_2, 5);
-		uint8_t* L_3 = ((L_2)->GetAddressAt(static_cast<il2cpp_array_size_t>(5)));
-		*((int8_t*)(L_3)) = (int8_t)(((int32_t)((uint8_t)((int32_t)((int32_t)(*((uint8_t*)L_3))|(int32_t)((int32_t)128))))));
-		goto IL_0035;
+		ByteU5BU5D_t58506160* L_5 = __this->get_INIT_BYTES_52();
+		NullCheck(L_5);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, 5);
+		uint8_t* L_6 = ((L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(5)));
+		*((int8_t*)(L_6)) = (int8_t)(((int32_t)((uint8_t)((int32_t)((int32_t)(*((uint8_t*)L_6))|(int32_t)((int32_t)128))))));
+		goto IL_0053;
 	}
 
-IL_0020:
+IL_003e:
 	{
-		ByteU5BU5D_t58506160* L_4 = __this->get_INIT_BYTES_52();
-		NullCheck(L_4);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, 5);
-		uint8_t* L_5 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(5)));
-		*((int8_t*)(L_5)) = (int8_t)(((int32_t)((uint8_t)((int32_t)((int32_t)(*((uint8_t*)L_5))&(int32_t)((int32_t)127))))));
+		ByteU5BU5D_t58506160* L_7 = __this->get_INIT_BYTES_52();
+		NullCheck(L_7);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, 5);
+		uint8_t* L_8 = ((L_7)->GetAddressAt(static_cast<il2cpp_array_size_t>(5)));
+		*((int8_t*)(L_8)) = (int8_t)(((int32_t)((uint8_t)((int32_t)((int32_t)(*((uint8_t*)L_8))&(int32_t)((int32_t)127))))));
 	}
 
-IL_0035:
+IL_0053:
 	{
 		return;
 	}
@@ -12771,9 +12596,11 @@ extern "C"  void PeerBase_set_IsSendingOnlyAcks_m2704684749 (PeerBase_t231962155
 	}
 }
 // System.Boolean ExitGames.Client.Photon.PeerBase::ExchangeKeysForEncryption()
+extern TypeInfo* IDisposable_t1628921374_il2cpp_TypeInfo_var;
 extern TypeInfo* DiffieHellmanCryptoProvider_t3764219664_il2cpp_TypeInfo_var;
 extern TypeInfo* Dictionary_2_t3871407537_il2cpp_TypeInfo_var;
 extern TypeInfo* PhotonCodes_t1388247846_il2cpp_TypeInfo_var;
+extern TypeInfo* ICryptoProvider_t3810498269_il2cpp_TypeInfo_var;
 extern const MethodInfo* Dictionary_2__ctor_m124985283_MethodInfo_var;
 extern const uint32_t PeerBase_ExchangeKeysForEncryption_m140803084_MetadataUsageId;
 extern "C"  bool PeerBase_ExchangeKeysForEncryption_m140803084 (PeerBase_t2319621551 * __this, const MethodInfo* method)
@@ -12786,39 +12613,72 @@ extern "C"  bool PeerBase_ExchangeKeysForEncryption_m140803084 (PeerBase_t231962
 	}
 	Dictionary_2_t3871407537 * V_0 = NULL;
 	bool V_1 = false;
+	bool V_2 = false;
+	bool V_3 = false;
 	{
 		__this->set_isEncryptionAvailable_64((bool)0);
-		DiffieHellmanCryptoProvider_t3764219664 * L_0 = (DiffieHellmanCryptoProvider_t3764219664 *)il2cpp_codegen_object_new(DiffieHellmanCryptoProvider_t3764219664_il2cpp_TypeInfo_var);
-		DiffieHellmanCryptoProvider__ctor_m978908950(L_0, /*hidden argument*/NULL);
-		__this->set_CryptoProvider_44(L_0);
-		Dictionary_2_t3871407537 * L_1 = (Dictionary_2_t3871407537 *)il2cpp_codegen_object_new(Dictionary_2_t3871407537_il2cpp_TypeInfo_var);
-		Dictionary_2__ctor_m124985283(L_1, 1, /*hidden argument*/Dictionary_2__ctor_m124985283_MethodInfo_var);
-		V_0 = L_1;
-		Dictionary_2_t3871407537 * L_2 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(PhotonCodes_t1388247846_il2cpp_TypeInfo_var);
-		uint8_t L_3 = ((PhotonCodes_t1388247846_StaticFields*)PhotonCodes_t1388247846_il2cpp_TypeInfo_var->static_fields)->get_ClientKey_0();
-		DiffieHellmanCryptoProvider_t3764219664 * L_4 = __this->get_CryptoProvider_44();
-		NullCheck(L_4);
-		ByteU5BU5D_t58506160* L_5 = DiffieHellmanCryptoProvider_get_PublicKey_m1904414615(L_4, /*hidden argument*/NULL);
+		Il2CppObject * L_0 = __this->get_CryptoProvider_44();
+		V_1 = (bool)((!(((Il2CppObject*)(Il2CppObject *)L_0) <= ((Il2CppObject*)(Il2CppObject *)NULL)))? 1 : 0);
+		bool L_1 = V_1;
+		if (!L_1)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		Il2CppObject * L_2 = __this->get_CryptoProvider_44();
 		NullCheck(L_2);
-		VirtActionInvoker2< uint8_t, Il2CppObject * >::Invoke(27 /* System.Void System.Collections.Generic.Dictionary`2<System.Byte,System.Object>::set_Item(!0,!1) */, L_2, L_3, (Il2CppObject *)(Il2CppObject *)L_5);
-		Dictionary_2_t3871407537 * L_6 = V_0;
-		uint8_t L_7 = ((PhotonCodes_t1388247846_StaticFields*)PhotonCodes_t1388247846_il2cpp_TypeInfo_var->static_fields)->get_InitEncryption_3();
-		bool L_8 = VirtFuncInvoker6< bool, Dictionary_2_t3871407537 *, uint8_t, bool, uint8_t, bool, uint8_t >::Invoke(10 /* System.Boolean ExitGames.Client.Photon.PeerBase::EnqueueOperation(System.Collections.Generic.Dictionary`2<System.Byte,System.Object>,System.Byte,System.Boolean,System.Byte,System.Boolean,ExitGames.Client.Photon.PeerBase/EgMessageType) */, __this, L_6, L_7, (bool)1, 0, (bool)0, 6);
-		V_1 = L_8;
-		goto IL_0044;
+		InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t1628921374_il2cpp_TypeInfo_var, L_2);
+		__this->set_CryptoProvider_44((Il2CppObject *)NULL);
+	}
+
+IL_002a:
+	{
+		Il2CppObject * L_3 = __this->get_CryptoProvider_44();
+		V_2 = (bool)((((Il2CppObject*)(Il2CppObject *)L_3) == ((Il2CppObject*)(Il2CppObject *)NULL))? 1 : 0);
+		bool L_4 = V_2;
+		if (!L_4)
+		{
+			goto IL_0044;
+		}
+	}
+	{
+		DiffieHellmanCryptoProvider_t3764219664 * L_5 = (DiffieHellmanCryptoProvider_t3764219664 *)il2cpp_codegen_object_new(DiffieHellmanCryptoProvider_t3764219664_il2cpp_TypeInfo_var);
+		DiffieHellmanCryptoProvider__ctor_m978908950(L_5, /*hidden argument*/NULL);
+		__this->set_CryptoProvider_44(L_5);
 	}
 
 IL_0044:
 	{
-		bool L_9 = V_1;
-		return L_9;
+		Dictionary_2_t3871407537 * L_6 = (Dictionary_2_t3871407537 *)il2cpp_codegen_object_new(Dictionary_2_t3871407537_il2cpp_TypeInfo_var);
+		Dictionary_2__ctor_m124985283(L_6, 1, /*hidden argument*/Dictionary_2__ctor_m124985283_MethodInfo_var);
+		V_0 = L_6;
+		Dictionary_2_t3871407537 * L_7 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonCodes_t1388247846_il2cpp_TypeInfo_var);
+		uint8_t L_8 = ((PhotonCodes_t1388247846_StaticFields*)PhotonCodes_t1388247846_il2cpp_TypeInfo_var->static_fields)->get_ClientKey_0();
+		Il2CppObject * L_9 = __this->get_CryptoProvider_44();
+		NullCheck(L_9);
+		ByteU5BU5D_t58506160* L_10 = InterfaceFuncInvoker0< ByteU5BU5D_t58506160* >::Invoke(0 /* System.Byte[] Photon.SocketServer.Security.ICryptoProvider::get_PublicKey() */, ICryptoProvider_t3810498269_il2cpp_TypeInfo_var, L_9);
+		NullCheck(L_7);
+		VirtActionInvoker2< uint8_t, Il2CppObject * >::Invoke(27 /* System.Void System.Collections.Generic.Dictionary`2<System.Byte,System.Object>::set_Item(!0,!1) */, L_7, L_8, (Il2CppObject *)(Il2CppObject *)L_10);
+		Dictionary_2_t3871407537 * L_11 = V_0;
+		uint8_t L_12 = ((PhotonCodes_t1388247846_StaticFields*)PhotonCodes_t1388247846_il2cpp_TypeInfo_var->static_fields)->get_InitEncryption_3();
+		bool L_13 = VirtFuncInvoker6< bool, Dictionary_2_t3871407537 *, uint8_t, bool, uint8_t, bool, uint8_t >::Invoke(10 /* System.Boolean ExitGames.Client.Photon.PeerBase::EnqueueOperation(System.Collections.Generic.Dictionary`2<System.Byte,System.Object>,System.Byte,System.Boolean,System.Byte,System.Boolean,ExitGames.Client.Photon.PeerBase/EgMessageType) */, __this, L_11, L_12, (bool)1, 0, (bool)0, 6);
+		V_3 = L_13;
+		goto IL_0075;
+	}
+
+IL_0075:
+	{
+		bool L_14 = V_3;
+		return L_14;
 	}
 }
 // System.Void ExitGames.Client.Photon.PeerBase::DeriveSharedKey(ExitGames.Client.Photon.OperationResponse)
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
 extern TypeInfo* PhotonCodes_t1388247846_il2cpp_TypeInfo_var;
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
+extern TypeInfo* ICryptoProvider_t3810498269_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral4176531861;
 extern Il2CppCodeGenString* _stringLiteral2262860801;
 extern const uint32_t PeerBase_DeriveSharedKey_m2466133956_MetadataUsageId;
@@ -12904,10 +12764,10 @@ IL_0051:
 
 IL_007c:
 	{
-		DiffieHellmanCryptoProvider_t3764219664 * L_15 = __this->get_CryptoProvider_44();
+		Il2CppObject * L_15 = __this->get_CryptoProvider_44();
 		ByteU5BU5D_t58506160* L_16 = V_0;
 		NullCheck(L_15);
-		DiffieHellmanCryptoProvider_DeriveSharedKey_m3746382626(L_15, L_16, /*hidden argument*/NULL);
+		InterfaceActionInvoker1< ByteU5BU5D_t58506160* >::Invoke(1 /* System.Void Photon.SocketServer.Security.ICryptoProvider::DeriveSharedKey(System.Byte[]) */, ICryptoProvider_t3810498269_il2cpp_TypeInfo_var, L_15, L_16);
 		__this->set_isEncryptionAvailable_64((bool)1);
 		PeerBase_EnqueueStatusCallback_m919368243(__this, ((int32_t)1048), /*hidden argument*/NULL);
 	}
@@ -12975,9 +12835,9 @@ IL_0028:
 	}
 }
 // System.Void ExitGames.Client.Photon.PeerBase::EnqueueDebugReturn(ExitGames.Client.Photon.DebugLevel,System.String)
-extern TypeInfo* U3CU3Ec__DisplayClass138_0_t3647930800_il2cpp_TypeInfo_var;
+extern TypeInfo* U3CU3Ec__DisplayClass136_0_t3647928878_il2cpp_TypeInfo_var;
 extern TypeInfo* MyAction_t3022056226_il2cpp_TypeInfo_var;
-extern const MethodInfo* U3CU3Ec__DisplayClass138_0_U3CEnqueueDebugReturnU3Eb__0_m3493722657_MethodInfo_var;
+extern const MethodInfo* U3CU3Ec__DisplayClass136_0_U3CEnqueueDebugReturnU3Eb__0_m2792122783_MethodInfo_var;
 extern const MethodInfo* Queue_1_Enqueue_m1447805406_MethodInfo_var;
 extern const uint32_t PeerBase_EnqueueDebugReturn_m588616545_MetadataUsageId;
 extern "C"  void PeerBase_EnqueueDebugReturn_m588616545 (PeerBase_t2319621551 * __this, uint8_t ___level, String_t* ___debugReturn, const MethodInfo* method)
@@ -12988,7 +12848,7 @@ extern "C"  void PeerBase_EnqueueDebugReturn_m588616545 (PeerBase_t2319621551 * 
 		il2cpp_codegen_initialize_method (PeerBase_EnqueueDebugReturn_m588616545_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
-	U3CU3Ec__DisplayClass138_0_t3647930800 * V_0 = NULL;
+	U3CU3Ec__DisplayClass136_0_t3647928878 * V_0 = NULL;
 	Queue_1_t435176470 * V_1 = NULL;
 	Exception_t1967233988 * __last_unhandled_exception = 0;
 	NO_UNUSED_WARNING (__last_unhandled_exception);
@@ -12997,17 +12857,17 @@ extern "C"  void PeerBase_EnqueueDebugReturn_m588616545 (PeerBase_t2319621551 * 
 	int32_t __leave_target = 0;
 	NO_UNUSED_WARNING (__leave_target);
 	{
-		U3CU3Ec__DisplayClass138_0_t3647930800 * L_0 = (U3CU3Ec__DisplayClass138_0_t3647930800 *)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass138_0_t3647930800_il2cpp_TypeInfo_var);
-		U3CU3Ec__DisplayClass138_0__ctor_m3896279032(L_0, /*hidden argument*/NULL);
+		U3CU3Ec__DisplayClass136_0_t3647928878 * L_0 = (U3CU3Ec__DisplayClass136_0_t3647928878 *)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass136_0_t3647928878_il2cpp_TypeInfo_var);
+		U3CU3Ec__DisplayClass136_0__ctor_m3638113594(L_0, /*hidden argument*/NULL);
 		V_0 = L_0;
-		U3CU3Ec__DisplayClass138_0_t3647930800 * L_1 = V_0;
+		U3CU3Ec__DisplayClass136_0_t3647928878 * L_1 = V_0;
 		NullCheck(L_1);
 		L_1->set_U3CU3E4__this_2(__this);
-		U3CU3Ec__DisplayClass138_0_t3647930800 * L_2 = V_0;
+		U3CU3Ec__DisplayClass136_0_t3647928878 * L_2 = V_0;
 		uint8_t L_3 = ___level;
 		NullCheck(L_2);
 		L_2->set_level_0(L_3);
-		U3CU3Ec__DisplayClass138_0_t3647930800 * L_4 = V_0;
+		U3CU3Ec__DisplayClass136_0_t3647928878 * L_4 = V_0;
 		String_t* L_5 = ___debugReturn;
 		NullCheck(L_4);
 		L_4->set_debugReturn_1(L_5);
@@ -13021,9 +12881,9 @@ IL_002a:
 	try
 	{ // begin try (depth: 1)
 		Queue_1_t435176470 * L_8 = __this->get_ActionQueue_20();
-		U3CU3Ec__DisplayClass138_0_t3647930800 * L_9 = V_0;
+		U3CU3Ec__DisplayClass136_0_t3647928878 * L_9 = V_0;
 		IntPtr_t L_10;
-		L_10.set_m_value_0((void*)U3CU3Ec__DisplayClass138_0_U3CEnqueueDebugReturnU3Eb__0_m3493722657_MethodInfo_var);
+		L_10.set_m_value_0((void*)U3CU3Ec__DisplayClass136_0_U3CEnqueueDebugReturnU3Eb__0_m2792122783_MethodInfo_var);
 		MyAction_t3022056226 * L_11 = (MyAction_t3022056226 *)il2cpp_codegen_object_new(MyAction_t3022056226_il2cpp_TypeInfo_var);
 		MyAction__ctor_m4194094300(L_11, L_9, L_10, /*hidden argument*/NULL);
 		NullCheck(L_8);
@@ -13054,9 +12914,9 @@ IL_004e:
 	}
 }
 // System.Void ExitGames.Client.Photon.PeerBase::EnqueueStatusCallback(ExitGames.Client.Photon.StatusCode)
-extern TypeInfo* U3CU3Ec__DisplayClass139_0_t3647931761_il2cpp_TypeInfo_var;
+extern TypeInfo* U3CU3Ec__DisplayClass137_0_t3647929839_il2cpp_TypeInfo_var;
 extern TypeInfo* MyAction_t3022056226_il2cpp_TypeInfo_var;
-extern const MethodInfo* U3CU3Ec__DisplayClass139_0_U3CEnqueueStatusCallbackU3Eb__0_m4115555710_MethodInfo_var;
+extern const MethodInfo* U3CU3Ec__DisplayClass137_0_U3CEnqueueStatusCallbackU3Eb__0_m2064571712_MethodInfo_var;
 extern const MethodInfo* Queue_1_Enqueue_m1447805406_MethodInfo_var;
 extern const uint32_t PeerBase_EnqueueStatusCallback_m919368243_MetadataUsageId;
 extern "C"  void PeerBase_EnqueueStatusCallback_m919368243 (PeerBase_t2319621551 * __this, int32_t ___statusValue, const MethodInfo* method)
@@ -13067,7 +12927,7 @@ extern "C"  void PeerBase_EnqueueStatusCallback_m919368243 (PeerBase_t2319621551
 		il2cpp_codegen_initialize_method (PeerBase_EnqueueStatusCallback_m919368243_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
-	U3CU3Ec__DisplayClass139_0_t3647931761 * V_0 = NULL;
+	U3CU3Ec__DisplayClass137_0_t3647929839 * V_0 = NULL;
 	Queue_1_t435176470 * V_1 = NULL;
 	Exception_t1967233988 * __last_unhandled_exception = 0;
 	NO_UNUSED_WARNING (__last_unhandled_exception);
@@ -13076,13 +12936,13 @@ extern "C"  void PeerBase_EnqueueStatusCallback_m919368243 (PeerBase_t2319621551
 	int32_t __leave_target = 0;
 	NO_UNUSED_WARNING (__leave_target);
 	{
-		U3CU3Ec__DisplayClass139_0_t3647931761 * L_0 = (U3CU3Ec__DisplayClass139_0_t3647931761 *)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass139_0_t3647931761_il2cpp_TypeInfo_var);
-		U3CU3Ec__DisplayClass139_0__ctor_m4025361751(L_0, /*hidden argument*/NULL);
+		U3CU3Ec__DisplayClass137_0_t3647929839 * L_0 = (U3CU3Ec__DisplayClass137_0_t3647929839 *)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass137_0_t3647929839_il2cpp_TypeInfo_var);
+		U3CU3Ec__DisplayClass137_0__ctor_m3767196313(L_0, /*hidden argument*/NULL);
 		V_0 = L_0;
-		U3CU3Ec__DisplayClass139_0_t3647931761 * L_1 = V_0;
+		U3CU3Ec__DisplayClass137_0_t3647929839 * L_1 = V_0;
 		NullCheck(L_1);
 		L_1->set_U3CU3E4__this_1(__this);
-		U3CU3Ec__DisplayClass139_0_t3647931761 * L_2 = V_0;
+		U3CU3Ec__DisplayClass137_0_t3647929839 * L_2 = V_0;
 		int32_t L_3 = ___statusValue;
 		NullCheck(L_2);
 		L_2->set_statusValue_0(L_3);
@@ -13096,9 +12956,9 @@ IL_0023:
 	try
 	{ // begin try (depth: 1)
 		Queue_1_t435176470 * L_6 = __this->get_ActionQueue_20();
-		U3CU3Ec__DisplayClass139_0_t3647931761 * L_7 = V_0;
+		U3CU3Ec__DisplayClass137_0_t3647929839 * L_7 = V_0;
 		IntPtr_t L_8;
-		L_8.set_m_value_0((void*)U3CU3Ec__DisplayClass139_0_U3CEnqueueStatusCallbackU3Eb__0_m4115555710_MethodInfo_var);
+		L_8.set_m_value_0((void*)U3CU3Ec__DisplayClass137_0_U3CEnqueueStatusCallbackU3Eb__0_m2064571712_MethodInfo_var);
 		MyAction_t3022056226 * L_9 = (MyAction_t3022056226 *)il2cpp_codegen_object_new(MyAction_t3022056226_il2cpp_TypeInfo_var);
 		MyAction__ctor_m4194094300(L_9, L_7, L_8, /*hidden argument*/NULL);
 		NullCheck(L_6);
@@ -13260,7 +13120,8 @@ extern TypeInfo* Int32_t2847414787_il2cpp_TypeInfo_var;
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
 extern TypeInfo* IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var;
 extern TypeInfo* Byte_t2778693821_il2cpp_TypeInfo_var;
-extern TypeInfo* MemoryStream_t2881531048_il2cpp_TypeInfo_var;
+extern TypeInfo* ICryptoProvider_t3810498269_il2cpp_TypeInfo_var;
+extern TypeInfo* StreamBuffer_t433541692_il2cpp_TypeInfo_var;
 extern TypeInfo* Exception_t1967233988_il2cpp_TypeInfo_var;
 extern TypeInfo* SupportClass_t780002629_il2cpp_TypeInfo_var;
 extern TypeInfo* PhotonCodes_t1388247846_il2cpp_TypeInfo_var;
@@ -13281,7 +13142,7 @@ extern "C"  bool PeerBase_DeserializeMessageAndCallback_m2440894846 (PeerBase_t2
 	}
 	uint8_t V_0 = 0x0;
 	bool V_1 = false;
-	MemoryStream_t2881531048 * V_2 = NULL;
+	StreamBuffer_t433541692 * V_2 = NULL;
 	int32_t V_3 = 0;
 	bool V_4 = false;
 	bool V_5 = false;
@@ -13346,7 +13207,7 @@ extern "C"  bool PeerBase_DeserializeMessageAndCallback_m2440894846 (PeerBase_t2
 IL_0041:
 	{
 		V_6 = (bool)0;
-		goto IL_0372;
+		goto IL_0365;
 	}
 
 IL_0049:
@@ -13409,7 +13270,7 @@ IL_0063:
 IL_009d:
 	{
 		V_6 = (bool)0;
-		goto IL_0372;
+		goto IL_0365;
 	}
 
 IL_00a5:
@@ -13424,19 +13285,19 @@ IL_00a5:
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_24, 1);
 		int32_t L_25 = 1;
 		V_1 = (bool)((((int32_t)((int32_t)((int32_t)((L_24)->GetAt(static_cast<il2cpp_array_size_t>(L_25)))&(int32_t)((int32_t)128)))) > ((int32_t)0))? 1 : 0);
-		V_2 = (MemoryStream_t2881531048 *)NULL;
+		V_2 = (StreamBuffer_t433541692 *)NULL;
 		uint8_t L_26 = V_0;
 		V_9 = (bool)((((int32_t)((((int32_t)L_26) == ((int32_t)1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_27 = V_9;
 		if (!L_27)
 		{
-			goto IL_0150;
+			goto IL_0143;
 		}
 	}
 	{
 	}
 
-IL_00cd:
+IL_00ca:
 	try
 	{ // begin try (depth: 1)
 		{
@@ -13445,398 +13306,394 @@ IL_00cd:
 			bool L_29 = V_10;
 			if (!L_29)
 			{
-				goto IL_00f9;
+				goto IL_00f1;
 			}
 		}
 
-IL_00d5:
+IL_00d2:
 		{
-			DiffieHellmanCryptoProvider_t3764219664 * L_30 = __this->get_CryptoProvider_44();
+			Il2CppObject * L_30 = __this->get_CryptoProvider_44();
 			ByteU5BU5D_t58506160* L_31 = ___inBuff;
 			ByteU5BU5D_t58506160* L_32 = ___inBuff;
 			NullCheck(L_32);
 			NullCheck(L_30);
-			ByteU5BU5D_t58506160* L_33 = DiffieHellmanCryptoProvider_Decrypt_m3849222578(L_30, L_31, 2, ((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_32)->max_length))))-(int32_t)2)), /*hidden argument*/NULL);
+			ByteU5BU5D_t58506160* L_33 = InterfaceFuncInvoker3< ByteU5BU5D_t58506160*, ByteU5BU5D_t58506160*, int32_t, int32_t >::Invoke(3 /* System.Byte[] Photon.SocketServer.Security.ICryptoProvider::Decrypt(System.Byte[],System.Int32,System.Int32) */, ICryptoProvider_t3810498269_il2cpp_TypeInfo_var, L_30, L_31, 2, ((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_32)->max_length))))-(int32_t)2)));
 			___inBuff = L_33;
 			ByteU5BU5D_t58506160* L_34 = ___inBuff;
-			ByteU5BU5D_t58506160* L_35 = ___inBuff;
-			NullCheck(L_35);
-			MemoryStream_t2881531048 * L_36 = (MemoryStream_t2881531048 *)il2cpp_codegen_object_new(MemoryStream_t2881531048_il2cpp_TypeInfo_var);
-			MemoryStream__ctor_m3748180860(L_36, L_34, 0, (((int32_t)((int32_t)(((Il2CppArray *)L_35)->max_length)))), (bool)1, /*hidden argument*/NULL);
-			V_2 = L_36;
-			goto IL_0111;
+			StreamBuffer_t433541692 * L_35 = (StreamBuffer_t433541692 *)il2cpp_codegen_object_new(StreamBuffer_t433541692_il2cpp_TypeInfo_var);
+			StreamBuffer__ctor_m3353141927(L_35, L_34, /*hidden argument*/NULL);
+			V_2 = L_35;
+			goto IL_0104;
 		}
 
-IL_00f9:
+IL_00f1:
 		{
-			ByteU5BU5D_t58506160* L_37 = ___inBuff;
-			ByteU5BU5D_t58506160* L_38 = ___inBuff;
+			ByteU5BU5D_t58506160* L_36 = ___inBuff;
+			StreamBuffer_t433541692 * L_37 = (StreamBuffer_t433541692 *)il2cpp_codegen_object_new(StreamBuffer_t433541692_il2cpp_TypeInfo_var);
+			StreamBuffer__ctor_m3353141927(L_37, L_36, /*hidden argument*/NULL);
+			V_2 = L_37;
+			StreamBuffer_t433541692 * L_38 = V_2;
 			NullCheck(L_38);
-			MemoryStream_t2881531048 * L_39 = (MemoryStream_t2881531048 *)il2cpp_codegen_object_new(MemoryStream_t2881531048_il2cpp_TypeInfo_var);
-			MemoryStream__ctor_m3748180860(L_39, L_37, 0, (((int32_t)((int32_t)(((Il2CppArray *)L_38)->max_length)))), (bool)1, /*hidden argument*/NULL);
-			V_2 = L_39;
-			MemoryStream_t2881531048 * L_40 = V_2;
-			NullCheck(L_40);
-			VirtFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(16 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_40, (((int64_t)((int64_t)2))), 0);
+			VirtFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(16 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_38, (((int64_t)((int64_t)2))), 0);
 		}
 
-IL_0111:
+IL_0104:
 		{
-			goto IL_014f;
+			goto IL_0142;
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__exception_local = (Exception_t1967233988 *)e.ex;
 		if(il2cpp_codegen_class_is_assignable_from (Exception_t1967233988_il2cpp_TypeInfo_var, e.ex->object.klass))
-			goto CATCH_0114;
+			goto CATCH_0107;
 		throw e;
 	}
 
-CATCH_0114:
+CATCH_0107:
 	{ // begin catch(System.Exception)
 		{
 			V_11 = ((Exception_t1967233988 *)__exception_local);
-			uint8_t L_41 = __this->get_debugOut_19();
-			V_12 = (bool)((((int32_t)((((int32_t)L_41) < ((int32_t)1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-			bool L_42 = V_12;
-			if (!L_42)
+			uint8_t L_39 = __this->get_debugOut_19();
+			V_12 = (bool)((((int32_t)((((int32_t)L_39) < ((int32_t)1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+			bool L_40 = V_12;
+			if (!L_40)
 			{
-				goto IL_013f;
+				goto IL_0132;
 			}
 		}
 
-IL_0129:
+IL_011c:
 		{
-			Il2CppObject * L_43 = PeerBase_get_Listener_m2440165892(__this, /*hidden argument*/NULL);
-			Exception_t1967233988 * L_44 = V_11;
-			NullCheck(L_44);
-			String_t* L_45 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_44);
-			NullCheck(L_43);
-			InterfaceActionInvoker2< uint8_t, String_t* >::Invoke(0 /* System.Void ExitGames.Client.Photon.IPhotonPeerListener::DebugReturn(ExitGames.Client.Photon.DebugLevel,System.String) */, IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var, L_43, 1, L_45);
+			Il2CppObject * L_41 = PeerBase_get_Listener_m2440165892(__this, /*hidden argument*/NULL);
+			Exception_t1967233988 * L_42 = V_11;
+			NullCheck(L_42);
+			String_t* L_43 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_42);
+			NullCheck(L_41);
+			InterfaceActionInvoker2< uint8_t, String_t* >::Invoke(0 /* System.Void ExitGames.Client.Photon.IPhotonPeerListener::DebugReturn(ExitGames.Client.Photon.DebugLevel,System.String) */, IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var, L_41, 1, L_43);
 		}
 
-IL_013f:
+IL_0132:
 		{
-			Exception_t1967233988 * L_46 = V_11;
+			Exception_t1967233988 * L_44 = V_11;
 			IL2CPP_RUNTIME_CLASS_INIT(SupportClass_t780002629_il2cpp_TypeInfo_var);
-			SupportClass_WriteStackTrace_m2805806499(NULL /*static, unused*/, L_46, /*hidden argument*/NULL);
+			SupportClass_WriteStackTrace_m2805806499(NULL /*static, unused*/, L_44, /*hidden argument*/NULL);
 			V_6 = (bool)0;
-			goto IL_0372;
+			goto IL_0365;
 		}
 	} // end catch (depth: 1)
 
-IL_014f:
+IL_0142:
 	{
 	}
 
-IL_0150:
+IL_0143:
 	{
 		V_3 = 0;
-		uint8_t L_47 = V_0;
-		V_13 = L_47;
-		uint8_t L_48 = V_13;
-		if (((int32_t)((int32_t)L_48-(int32_t)1)) == 0)
+		uint8_t L_45 = V_0;
+		V_13 = L_45;
+		uint8_t L_46 = V_13;
+		if (((int32_t)((int32_t)L_46-(int32_t)1)) == 0)
 		{
-			goto IL_025d;
+			goto IL_0250;
 		}
-		if (((int32_t)((int32_t)L_48-(int32_t)1)) == 1)
+		if (((int32_t)((int32_t)L_46-(int32_t)1)) == 1)
 		{
-			goto IL_0353;
+			goto IL_0346;
 		}
-		if (((int32_t)((int32_t)L_48-(int32_t)1)) == 2)
+		if (((int32_t)((int32_t)L_46-(int32_t)1)) == 2)
 		{
-			goto IL_017f;
+			goto IL_0172;
 		}
-		if (((int32_t)((int32_t)L_48-(int32_t)1)) == 3)
+		if (((int32_t)((int32_t)L_46-(int32_t)1)) == 3)
 		{
-			goto IL_01ee;
+			goto IL_01e1;
 		}
-		if (((int32_t)((int32_t)L_48-(int32_t)1)) == 4)
+		if (((int32_t)((int32_t)L_46-(int32_t)1)) == 4)
 		{
-			goto IL_0353;
+			goto IL_0346;
 		}
-		if (((int32_t)((int32_t)L_48-(int32_t)1)) == 5)
+		if (((int32_t)((int32_t)L_46-(int32_t)1)) == 5)
 		{
-			goto IL_0353;
+			goto IL_0346;
 		}
-		if (((int32_t)((int32_t)L_48-(int32_t)1)) == 6)
+		if (((int32_t)((int32_t)L_46-(int32_t)1)) == 6)
 		{
-			goto IL_0269;
+			goto IL_025c;
 		}
 	}
 	{
-		goto IL_0353;
+		goto IL_0346;
 	}
 
-IL_017f:
+IL_0172:
 	{
-		IProtocol_t2724506835 * L_49 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
-		MemoryStream_t2881531048 * L_50 = V_2;
-		NullCheck(L_49);
-		OperationResponse_t2644772068 * L_51 = VirtFuncInvoker1< OperationResponse_t2644772068 *, MemoryStream_t2881531048 * >::Invoke(22 /* ExitGames.Client.Photon.OperationResponse ExitGames.Client.IProtocol::DeserializeOperationResponse(System.IO.MemoryStream) */, L_49, L_50);
-		V_14 = L_51;
-		bool L_52 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
-		V_16 = L_52;
-		bool L_53 = V_16;
-		if (!L_53)
+		IProtocol_t2724506835 * L_47 = __this->get_protocol_0();
+		StreamBuffer_t433541692 * L_48 = V_2;
+		NullCheck(L_47);
+		OperationResponse_t2644772068 * L_49 = VirtFuncInvoker1< OperationResponse_t2644772068 *, StreamBuffer_t433541692 * >::Invoke(16 /* ExitGames.Client.Photon.OperationResponse ExitGames.Client.IProtocol::DeserializeOperationResponse(ExitGames.Client.Photon.StreamBuffer) */, L_47, L_48);
+		V_14 = L_49;
+		bool L_50 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
+		V_16 = L_50;
+		bool L_51 = V_16;
+		if (!L_51)
 		{
-			goto IL_01b3;
+			goto IL_01a6;
 		}
 	}
 	{
-		TrafficStatsGameLevel_t2447340108 * L_54 = __this->get_TrafficStatsGameLevel_9();
-		int32_t L_55 = __this->get_ByteCountCurrentDispatch_4();
-		NullCheck(L_54);
-		TrafficStatsGameLevel_CountResult_m3892351279(L_54, L_55, /*hidden argument*/NULL);
+		TrafficStatsGameLevel_t2447340108 * L_52 = __this->get_TrafficStatsGameLevel_9();
+		int32_t L_53 = __this->get_ByteCountCurrentDispatch_4();
+		NullCheck(L_52);
+		TrafficStatsGameLevel_CountResult_m3892351279(L_52, L_53, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(SupportClass_t780002629_il2cpp_TypeInfo_var);
-		int32_t L_56 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_3 = L_56;
+		int32_t L_54 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_3 = L_54;
 	}
 
-IL_01b3:
+IL_01a6:
 	{
-		Il2CppObject * L_57 = PeerBase_get_Listener_m2440165892(__this, /*hidden argument*/NULL);
-		OperationResponse_t2644772068 * L_58 = V_14;
-		NullCheck(L_57);
-		InterfaceActionInvoker1< OperationResponse_t2644772068 * >::Invoke(1 /* System.Void ExitGames.Client.Photon.IPhotonPeerListener::OnOperationResponse(ExitGames.Client.Photon.OperationResponse) */, IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var, L_57, L_58);
-		bool L_59 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
-		V_17 = L_59;
-		bool L_60 = V_17;
-		if (!L_60)
+		Il2CppObject * L_55 = PeerBase_get_Listener_m2440165892(__this, /*hidden argument*/NULL);
+		OperationResponse_t2644772068 * L_56 = V_14;
+		NullCheck(L_55);
+		InterfaceActionInvoker1< OperationResponse_t2644772068 * >::Invoke(1 /* System.Void ExitGames.Client.Photon.IPhotonPeerListener::OnOperationResponse(ExitGames.Client.Photon.OperationResponse) */, IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var, L_55, L_56);
+		bool L_57 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
+		V_17 = L_57;
+		bool L_58 = V_17;
+		if (!L_58)
 		{
-			goto IL_01e9;
+			goto IL_01dc;
 		}
 	}
 	{
-		TrafficStatsGameLevel_t2447340108 * L_61 = __this->get_TrafficStatsGameLevel_9();
-		OperationResponse_t2644772068 * L_62 = V_14;
-		NullCheck(L_62);
-		uint8_t L_63 = L_62->get_OperationCode_0();
+		TrafficStatsGameLevel_t2447340108 * L_59 = __this->get_TrafficStatsGameLevel_9();
+		OperationResponse_t2644772068 * L_60 = V_14;
+		NullCheck(L_60);
+		uint8_t L_61 = L_60->get_OperationCode_0();
 		IL2CPP_RUNTIME_CLASS_INIT(SupportClass_t780002629_il2cpp_TypeInfo_var);
-		int32_t L_64 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
-		int32_t L_65 = V_3;
-		NullCheck(L_61);
-		TrafficStatsGameLevel_TimeForResponseCallback_m2694834592(L_61, L_63, ((int32_t)((int32_t)L_64-(int32_t)L_65)), /*hidden argument*/NULL);
+		int32_t L_62 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_63 = V_3;
+		NullCheck(L_59);
+		TrafficStatsGameLevel_TimeForResponseCallback_m2694834592(L_59, L_61, ((int32_t)((int32_t)L_62-(int32_t)L_63)), /*hidden argument*/NULL);
 	}
 
-IL_01e9:
+IL_01dc:
 	{
-		goto IL_036d;
+		goto IL_0360;
 	}
 
-IL_01ee:
+IL_01e1:
 	{
-		IProtocol_t2724506835 * L_66 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
-		MemoryStream_t2881531048 * L_67 = V_2;
-		NullCheck(L_66);
-		EventData_t4221167488 * L_68 = VirtFuncInvoker1< EventData_t4221167488 *, MemoryStream_t2881531048 * >::Invoke(20 /* ExitGames.Client.Photon.EventData ExitGames.Client.IProtocol::DeserializeEventData(System.IO.MemoryStream) */, L_66, L_67);
-		V_15 = L_68;
-		bool L_69 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
-		V_18 = L_69;
-		bool L_70 = V_18;
-		if (!L_70)
+		IProtocol_t2724506835 * L_64 = __this->get_protocol_0();
+		StreamBuffer_t433541692 * L_65 = V_2;
+		NullCheck(L_64);
+		EventData_t4221167488 * L_66 = VirtFuncInvoker1< EventData_t4221167488 *, StreamBuffer_t433541692 * >::Invoke(14 /* ExitGames.Client.Photon.EventData ExitGames.Client.IProtocol::DeserializeEventData(ExitGames.Client.Photon.StreamBuffer) */, L_64, L_65);
+		V_15 = L_66;
+		bool L_67 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
+		V_18 = L_67;
+		bool L_68 = V_18;
+		if (!L_68)
 		{
-			goto IL_0222;
+			goto IL_0215;
 		}
 	}
 	{
-		TrafficStatsGameLevel_t2447340108 * L_71 = __this->get_TrafficStatsGameLevel_9();
-		int32_t L_72 = __this->get_ByteCountCurrentDispatch_4();
-		NullCheck(L_71);
-		TrafficStatsGameLevel_CountEvent_m1599454956(L_71, L_72, /*hidden argument*/NULL);
+		TrafficStatsGameLevel_t2447340108 * L_69 = __this->get_TrafficStatsGameLevel_9();
+		int32_t L_70 = __this->get_ByteCountCurrentDispatch_4();
+		NullCheck(L_69);
+		TrafficStatsGameLevel_CountEvent_m1599454956(L_69, L_70, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(SupportClass_t780002629_il2cpp_TypeInfo_var);
-		int32_t L_73 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_3 = L_73;
+		int32_t L_71 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_3 = L_71;
 	}
 
-IL_0222:
+IL_0215:
 	{
-		Il2CppObject * L_74 = PeerBase_get_Listener_m2440165892(__this, /*hidden argument*/NULL);
-		EventData_t4221167488 * L_75 = V_15;
-		NullCheck(L_74);
-		InterfaceActionInvoker1< EventData_t4221167488 * >::Invoke(3 /* System.Void ExitGames.Client.Photon.IPhotonPeerListener::OnEvent(ExitGames.Client.Photon.EventData) */, IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var, L_74, L_75);
-		bool L_76 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
-		V_19 = L_76;
-		bool L_77 = V_19;
-		if (!L_77)
+		Il2CppObject * L_72 = PeerBase_get_Listener_m2440165892(__this, /*hidden argument*/NULL);
+		EventData_t4221167488 * L_73 = V_15;
+		NullCheck(L_72);
+		InterfaceActionInvoker1< EventData_t4221167488 * >::Invoke(3 /* System.Void ExitGames.Client.Photon.IPhotonPeerListener::OnEvent(ExitGames.Client.Photon.EventData) */, IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var, L_72, L_73);
+		bool L_74 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
+		V_19 = L_74;
+		bool L_75 = V_19;
+		if (!L_75)
 		{
-			goto IL_0258;
+			goto IL_024b;
 		}
 	}
 	{
-		TrafficStatsGameLevel_t2447340108 * L_78 = __this->get_TrafficStatsGameLevel_9();
-		EventData_t4221167488 * L_79 = V_15;
-		NullCheck(L_79);
-		uint8_t L_80 = L_79->get_Code_0();
+		TrafficStatsGameLevel_t2447340108 * L_76 = __this->get_TrafficStatsGameLevel_9();
+		EventData_t4221167488 * L_77 = V_15;
+		NullCheck(L_77);
+		uint8_t L_78 = L_77->get_Code_0();
 		IL2CPP_RUNTIME_CLASS_INIT(SupportClass_t780002629_il2cpp_TypeInfo_var);
-		int32_t L_81 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
-		int32_t L_82 = V_3;
-		NullCheck(L_78);
-		TrafficStatsGameLevel_TimeForEventCallback_m3871307903(L_78, L_80, ((int32_t)((int32_t)L_81-(int32_t)L_82)), /*hidden argument*/NULL);
+		int32_t L_79 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_80 = V_3;
+		NullCheck(L_76);
+		TrafficStatsGameLevel_TimeForEventCallback_m3871307903(L_76, L_78, ((int32_t)((int32_t)L_79-(int32_t)L_80)), /*hidden argument*/NULL);
 	}
 
-IL_0258:
+IL_024b:
 	{
-		goto IL_036d;
+		goto IL_0360;
 	}
 
-IL_025d:
+IL_0250:
 	{
 		PeerBase_InitCallback_m3112810954(__this, /*hidden argument*/NULL);
-		goto IL_036d;
+		goto IL_0360;
 	}
 
-IL_0269:
+IL_025c:
 	{
-		IProtocol_t2724506835 * L_83 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
-		MemoryStream_t2881531048 * L_84 = V_2;
-		NullCheck(L_83);
-		OperationResponse_t2644772068 * L_85 = VirtFuncInvoker1< OperationResponse_t2644772068 *, MemoryStream_t2881531048 * >::Invoke(22 /* ExitGames.Client.Photon.OperationResponse ExitGames.Client.IProtocol::DeserializeOperationResponse(System.IO.MemoryStream) */, L_83, L_84);
-		V_14 = L_85;
-		bool L_86 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
-		V_20 = L_86;
-		bool L_87 = V_20;
-		if (!L_87)
+		IProtocol_t2724506835 * L_81 = __this->get_protocol_0();
+		StreamBuffer_t433541692 * L_82 = V_2;
+		NullCheck(L_81);
+		OperationResponse_t2644772068 * L_83 = VirtFuncInvoker1< OperationResponse_t2644772068 *, StreamBuffer_t433541692 * >::Invoke(16 /* ExitGames.Client.Photon.OperationResponse ExitGames.Client.IProtocol::DeserializeOperationResponse(ExitGames.Client.Photon.StreamBuffer) */, L_81, L_82);
+		V_14 = L_83;
+		bool L_84 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
+		V_20 = L_84;
+		bool L_85 = V_20;
+		if (!L_85)
 		{
-			goto IL_029d;
+			goto IL_0290;
 		}
 	}
 	{
-		TrafficStatsGameLevel_t2447340108 * L_88 = __this->get_TrafficStatsGameLevel_9();
-		int32_t L_89 = __this->get_ByteCountCurrentDispatch_4();
-		NullCheck(L_88);
-		TrafficStatsGameLevel_CountResult_m3892351279(L_88, L_89, /*hidden argument*/NULL);
+		TrafficStatsGameLevel_t2447340108 * L_86 = __this->get_TrafficStatsGameLevel_9();
+		int32_t L_87 = __this->get_ByteCountCurrentDispatch_4();
+		NullCheck(L_86);
+		TrafficStatsGameLevel_CountResult_m3892351279(L_86, L_87, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(SupportClass_t780002629_il2cpp_TypeInfo_var);
-		int32_t L_90 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_3 = L_90;
+		int32_t L_88 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_3 = L_88;
 	}
 
-IL_029d:
+IL_0290:
 	{
-		OperationResponse_t2644772068 * L_91 = V_14;
-		NullCheck(L_91);
-		uint8_t L_92 = L_91->get_OperationCode_0();
+		OperationResponse_t2644772068 * L_89 = V_14;
+		NullCheck(L_89);
+		uint8_t L_90 = L_89->get_OperationCode_0();
 		IL2CPP_RUNTIME_CLASS_INIT(PhotonCodes_t1388247846_il2cpp_TypeInfo_var);
-		uint8_t L_93 = ((PhotonCodes_t1388247846_StaticFields*)PhotonCodes_t1388247846_il2cpp_TypeInfo_var->static_fields)->get_InitEncryption_3();
-		V_21 = (bool)((((int32_t)L_92) == ((int32_t)L_93))? 1 : 0);
-		bool L_94 = V_21;
-		if (!L_94)
+		uint8_t L_91 = ((PhotonCodes_t1388247846_StaticFields*)PhotonCodes_t1388247846_il2cpp_TypeInfo_var->static_fields)->get_InitEncryption_3();
+		V_21 = (bool)((((int32_t)L_90) == ((int32_t)L_91))? 1 : 0);
+		bool L_92 = V_21;
+		if (!L_92)
 		{
-			goto IL_02be;
+			goto IL_02b1;
 		}
 	}
 	{
-		OperationResponse_t2644772068 * L_95 = V_14;
-		PeerBase_DeriveSharedKey_m2466133956(__this, L_95, /*hidden argument*/NULL);
-		goto IL_0329;
+		OperationResponse_t2644772068 * L_93 = V_14;
+		PeerBase_DeriveSharedKey_m2466133956(__this, L_93, /*hidden argument*/NULL);
+		goto IL_031c;
 	}
 
-IL_02be:
+IL_02b1:
 	{
-		OperationResponse_t2644772068 * L_96 = V_14;
-		NullCheck(L_96);
-		uint8_t L_97 = L_96->get_OperationCode_0();
+		OperationResponse_t2644772068 * L_94 = V_14;
+		NullCheck(L_94);
+		uint8_t L_95 = L_94->get_OperationCode_0();
 		IL2CPP_RUNTIME_CLASS_INIT(PhotonCodes_t1388247846_il2cpp_TypeInfo_var);
-		uint8_t L_98 = ((PhotonCodes_t1388247846_StaticFields*)PhotonCodes_t1388247846_il2cpp_TypeInfo_var->static_fields)->get_Ping_4();
-		V_22 = (bool)((((int32_t)L_97) == ((int32_t)L_98))? 1 : 0);
-		bool L_99 = V_22;
-		if (!L_99)
+		uint8_t L_96 = ((PhotonCodes_t1388247846_StaticFields*)PhotonCodes_t1388247846_il2cpp_TypeInfo_var->static_fields)->get_Ping_4();
+		V_22 = (bool)((((int32_t)L_95) == ((int32_t)L_96))? 1 : 0);
+		bool L_97 = V_22;
+		if (!L_97)
 		{
-			goto IL_030e;
+			goto IL_0301;
 		}
 	}
 	{
 		V_23 = ((TPeer_t2266327570 *)IsInstClass(__this, TPeer_t2266327570_il2cpp_TypeInfo_var));
+		TPeer_t2266327570 * L_98 = V_23;
+		V_24 = (bool)((!(((Il2CppObject*)(TPeer_t2266327570 *)L_98) <= ((Il2CppObject*)(Il2CppObject *)NULL)))? 1 : 0);
+		bool L_99 = V_24;
+		if (!L_99)
+		{
+			goto IL_02e5;
+		}
+	}
+	{
 		TPeer_t2266327570 * L_100 = V_23;
-		V_24 = (bool)((!(((Il2CppObject*)(TPeer_t2266327570 *)L_100) <= ((Il2CppObject*)(Il2CppObject *)NULL)))? 1 : 0);
-		bool L_101 = V_24;
-		if (!L_101)
-		{
-			goto IL_02f2;
-		}
+		OperationResponse_t2644772068 * L_101 = V_14;
+		NullCheck(L_100);
+		TPeer_ReadPingResult_m76216745(L_100, L_101, /*hidden argument*/NULL);
+		goto IL_02fe;
 	}
+
+IL_02e5:
 	{
-		TPeer_t2266327570 * L_102 = V_23;
-		OperationResponse_t2644772068 * L_103 = V_14;
+		OperationResponse_t2644772068 * L_102 = V_14;
 		NullCheck(L_102);
-		TPeer_ReadPingResult_m76216745(L_102, L_103, /*hidden argument*/NULL);
-		goto IL_030b;
-	}
-
-IL_02f2:
-	{
-		OperationResponse_t2644772068 * L_104 = V_14;
-		NullCheck(L_104);
-		String_t* L_105 = OperationResponse_ToStringFull_m1399610304(L_104, /*hidden argument*/NULL);
+		String_t* L_103 = OperationResponse_ToStringFull_m1399610304(L_102, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_106 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral2647356877, L_105, /*hidden argument*/NULL);
-		PeerBase_EnqueueDebugReturn_m588616545(__this, 1, L_106, /*hidden argument*/NULL);
+		String_t* L_104 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral2647356877, L_103, /*hidden argument*/NULL);
+		PeerBase_EnqueueDebugReturn_m588616545(__this, 1, L_104, /*hidden argument*/NULL);
 	}
 
-IL_030b:
+IL_02fe:
 	{
-		goto IL_0329;
+		goto IL_031c;
 	}
 
-IL_030e:
+IL_0301:
 	{
-		OperationResponse_t2644772068 * L_107 = V_14;
-		NullCheck(L_107);
-		String_t* L_108 = OperationResponse_ToStringFull_m1399610304(L_107, /*hidden argument*/NULL);
+		OperationResponse_t2644772068 * L_105 = V_14;
+		NullCheck(L_105);
+		String_t* L_106 = OperationResponse_ToStringFull_m1399610304(L_105, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_109 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral159678539, L_108, /*hidden argument*/NULL);
-		PeerBase_EnqueueDebugReturn_m588616545(__this, 1, L_109, /*hidden argument*/NULL);
+		String_t* L_107 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral159678539, L_106, /*hidden argument*/NULL);
+		PeerBase_EnqueueDebugReturn_m588616545(__this, 1, L_107, /*hidden argument*/NULL);
 	}
 
-IL_0329:
+IL_031c:
 	{
-		bool L_110 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
-		V_25 = L_110;
-		bool L_111 = V_25;
-		if (!L_111)
+		bool L_108 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
+		V_25 = L_108;
+		bool L_109 = V_25;
+		if (!L_109)
 		{
-			goto IL_0351;
+			goto IL_0344;
 		}
 	}
 	{
-		TrafficStatsGameLevel_t2447340108 * L_112 = __this->get_TrafficStatsGameLevel_9();
-		OperationResponse_t2644772068 * L_113 = V_14;
-		NullCheck(L_113);
-		uint8_t L_114 = L_113->get_OperationCode_0();
+		TrafficStatsGameLevel_t2447340108 * L_110 = __this->get_TrafficStatsGameLevel_9();
+		OperationResponse_t2644772068 * L_111 = V_14;
+		NullCheck(L_111);
+		uint8_t L_112 = L_111->get_OperationCode_0();
 		IL2CPP_RUNTIME_CLASS_INIT(SupportClass_t780002629_il2cpp_TypeInfo_var);
-		int32_t L_115 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
-		int32_t L_116 = V_3;
-		NullCheck(L_112);
-		TrafficStatsGameLevel_TimeForResponseCallback_m2694834592(L_112, L_114, ((int32_t)((int32_t)L_115-(int32_t)L_116)), /*hidden argument*/NULL);
+		int32_t L_113 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_114 = V_3;
+		NullCheck(L_110);
+		TrafficStatsGameLevel_TimeForResponseCallback_m2694834592(L_110, L_112, ((int32_t)((int32_t)L_113-(int32_t)L_114)), /*hidden argument*/NULL);
 	}
 
-IL_0351:
+IL_0344:
 	{
-		goto IL_036d;
+		goto IL_0360;
 	}
 
-IL_0353:
+IL_0346:
 	{
-		uint8_t L_117 = V_0;
-		uint8_t L_118 = L_117;
-		Il2CppObject * L_119 = Box(Byte_t2778693821_il2cpp_TypeInfo_var, &L_118);
+		uint8_t L_115 = V_0;
+		uint8_t L_116 = L_115;
+		Il2CppObject * L_117 = Box(Byte_t2778693821_il2cpp_TypeInfo_var, &L_116);
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_120 = String_Concat_m389863537(NULL /*static, unused*/, _stringLiteral2432485396, L_119, /*hidden argument*/NULL);
-		PeerBase_EnqueueDebugReturn_m588616545(__this, 1, L_120, /*hidden argument*/NULL);
-		goto IL_036d;
+		String_t* L_118 = String_Concat_m389863537(NULL /*static, unused*/, _stringLiteral2432485396, L_117, /*hidden argument*/NULL);
+		PeerBase_EnqueueDebugReturn_m588616545(__this, 1, L_118, /*hidden argument*/NULL);
+		goto IL_0360;
 	}
 
-IL_036d:
+IL_0360:
 	{
 		V_6 = (bool)1;
-		goto IL_0372;
+		goto IL_0365;
 	}
 
-IL_0372:
+IL_0365:
 	{
-		bool L_121 = V_6;
-		return L_121;
+		bool L_119 = V_6;
+		return L_119;
 	}
 }
 // System.Void ExitGames.Client.Photon.PeerBase::SendNetworkSimulated(ExitGames.Client.Photon.PeerBase/MyAction)
@@ -14925,7 +14782,7 @@ extern TypeInfo* Random_t922188920_il2cpp_TypeInfo_var;
 extern TypeInfo* LinkedList_1_t282237216_il2cpp_TypeInfo_var;
 extern TypeInfo* NetworkSimulationSet_t651747241_il2cpp_TypeInfo_var;
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
-extern TypeInfo* MemoryStream_t2881531048_il2cpp_TypeInfo_var;
+extern TypeInfo* StreamBuffer_t433541692_il2cpp_TypeInfo_var;
 extern const MethodInfo* Queue_1__ctor_m102471943_MethodInfo_var;
 extern const MethodInfo* LinkedList_1__ctor_m1580883781_MethodInfo_var;
 extern const uint32_t PeerBase__ctor_m2261481935_MetadataUsageId;
@@ -14974,8 +14831,8 @@ extern "C"  void PeerBase__ctor_m2261481935 (PeerBase_t2319621551 * __this, cons
 		__this->set_mtu_68(((int32_t)1200));
 		__this->set_rhttpMinConnections_69(2);
 		__this->set_rhttpMaxConnections_70(6);
-		MemoryStream_t2881531048 * L_6 = (MemoryStream_t2881531048 *)il2cpp_codegen_object_new(MemoryStream_t2881531048_il2cpp_TypeInfo_var);
-		MemoryStream__ctor_m3603177736(L_6, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_6 = (StreamBuffer_t433541692 *)il2cpp_codegen_object_new(StreamBuffer_t433541692_il2cpp_TypeInfo_var);
+		StreamBuffer__ctor_m3207855795(L_6, 0, /*hidden argument*/NULL);
 		__this->set_SerializeMemStream_71(L_6);
 		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
 		return;
@@ -14997,23 +14854,23 @@ extern "C"  void PeerBase__cctor_m904367038 (Il2CppObject * __this /* static, un
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.PeerBase/<>c__DisplayClass138_0::.ctor()
-extern "C"  void U3CU3Ec__DisplayClass138_0__ctor_m3896279032 (U3CU3Ec__DisplayClass138_0_t3647930800 * __this, const MethodInfo* method)
+// System.Void ExitGames.Client.Photon.PeerBase/<>c__DisplayClass136_0::.ctor()
+extern "C"  void U3CU3Ec__DisplayClass136_0__ctor_m3638113594 (U3CU3Ec__DisplayClass136_0_t3647928878 * __this, const MethodInfo* method)
 {
 	{
 		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.PeerBase/<>c__DisplayClass138_0::<EnqueueDebugReturn>b__0()
+// System.Void ExitGames.Client.Photon.PeerBase/<>c__DisplayClass136_0::<EnqueueDebugReturn>b__0()
 extern TypeInfo* IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var;
-extern const uint32_t U3CU3Ec__DisplayClass138_0_U3CEnqueueDebugReturnU3Eb__0_m3493722657_MetadataUsageId;
-extern "C"  void U3CU3Ec__DisplayClass138_0_U3CEnqueueDebugReturnU3Eb__0_m3493722657 (U3CU3Ec__DisplayClass138_0_t3647930800 * __this, const MethodInfo* method)
+extern const uint32_t U3CU3Ec__DisplayClass136_0_U3CEnqueueDebugReturnU3Eb__0_m2792122783_MetadataUsageId;
+extern "C"  void U3CU3Ec__DisplayClass136_0_U3CEnqueueDebugReturnU3Eb__0_m2792122783 (U3CU3Ec__DisplayClass136_0_t3647928878 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (U3CU3Ec__DisplayClass138_0_U3CEnqueueDebugReturnU3Eb__0_m3493722657_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U3CU3Ec__DisplayClass136_0_U3CEnqueueDebugReturnU3Eb__0_m2792122783_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -15027,23 +14884,23 @@ extern "C"  void U3CU3Ec__DisplayClass138_0_U3CEnqueueDebugReturnU3Eb__0_m349372
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.PeerBase/<>c__DisplayClass139_0::.ctor()
-extern "C"  void U3CU3Ec__DisplayClass139_0__ctor_m4025361751 (U3CU3Ec__DisplayClass139_0_t3647931761 * __this, const MethodInfo* method)
+// System.Void ExitGames.Client.Photon.PeerBase/<>c__DisplayClass137_0::.ctor()
+extern "C"  void U3CU3Ec__DisplayClass137_0__ctor_m3767196313 (U3CU3Ec__DisplayClass137_0_t3647929839 * __this, const MethodInfo* method)
 {
 	{
 		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.PeerBase/<>c__DisplayClass139_0::<EnqueueStatusCallback>b__0()
+// System.Void ExitGames.Client.Photon.PeerBase/<>c__DisplayClass137_0::<EnqueueStatusCallback>b__0()
 extern TypeInfo* IPhotonPeerListener_t753501495_il2cpp_TypeInfo_var;
-extern const uint32_t U3CU3Ec__DisplayClass139_0_U3CEnqueueStatusCallbackU3Eb__0_m4115555710_MetadataUsageId;
-extern "C"  void U3CU3Ec__DisplayClass139_0_U3CEnqueueStatusCallbackU3Eb__0_m4115555710 (U3CU3Ec__DisplayClass139_0_t3647931761 * __this, const MethodInfo* method)
+extern const uint32_t U3CU3Ec__DisplayClass137_0_U3CEnqueueStatusCallbackU3Eb__0_m2064571712_MetadataUsageId;
+extern "C"  void U3CU3Ec__DisplayClass137_0_U3CEnqueueStatusCallbackU3Eb__0_m2064571712 (U3CU3Ec__DisplayClass137_0_t3647929839 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (U3CU3Ec__DisplayClass139_0_U3CEnqueueStatusCallbackU3Eb__0_m4115555710_MetadataUsageId);
+		il2cpp_codegen_initialize_method (U3CU3Ec__DisplayClass137_0_U3CEnqueueStatusCallbackU3Eb__0_m2064571712_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	{
@@ -17106,7 +16963,7 @@ extern "C"  void PhotonPing_Init_m2854712352 (PhotonPing_t3684928106 * __this, c
 }
 // System.Void ExitGames.Client.Photon.PhotonPing::.ctor()
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238938____70AE3F6F18539B6C47CFF9F0D9672AEEBDBCDB4C_4_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238937____70AE3F6F18539B6C47CFF9F0D9672AEEBDBCDB4C_4_FieldInfo_var;
 extern Il2CppCodeGenString* _stringLiteral0;
 extern const uint32_t PhotonPing__ctor_m4099101620_MetadataUsageId;
 extern "C"  void PhotonPing__ctor_m4099101620 (PhotonPing_t3684928106 * __this, const MethodInfo* method)
@@ -17121,7 +16978,7 @@ extern "C"  void PhotonPing__ctor_m4099101620 (PhotonPing_t3684928106 * __this, 
 		__this->set_DebugString_0(_stringLiteral0);
 		__this->set_PingLength_3(((int32_t)13));
 		ByteU5BU5D_t58506160* L_0 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)13)));
-		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238938____70AE3F6F18539B6C47CFF9F0D9672AEEBDBCDB4C_4_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238937____70AE3F6F18539B6C47CFF9F0D9672AEEBDBCDB4C_4_FieldInfo_var), /*hidden argument*/NULL);
 		__this->set_PingBytes_4(L_0);
 		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
 		return;
@@ -17539,30 +17396,91 @@ IL_004d:
 		return L_18;
 	}
 }
+// System.Void ExitGames.Client.Photon.Protocol::Serialize(System.Int16,System.Byte[],System.Int32&)
+extern "C"  void Protocol_Serialize_m1344711179 (Il2CppObject * __this /* static, unused */, int16_t ___value, ByteU5BU5D_t58506160* ___target, int32_t* ___targetOffset, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		ByteU5BU5D_t58506160* L_0 = ___target;
+		int32_t* L_1 = ___targetOffset;
+		int32_t* L_2 = ___targetOffset;
+		V_0 = (*((int32_t*)L_2));
+		int32_t L_3 = V_0;
+		*((int32_t*)(L_1)) = (int32_t)((int32_t)((int32_t)L_3+(int32_t)1));
+		int32_t L_4 = V_0;
+		int16_t L_5 = ___value;
+		NullCheck(L_0);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, L_4);
+		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(L_4), (uint8_t)(((int32_t)((uint8_t)((int32_t)((int32_t)L_5>>(int32_t)8))))));
+		ByteU5BU5D_t58506160* L_6 = ___target;
+		int32_t* L_7 = ___targetOffset;
+		int32_t* L_8 = ___targetOffset;
+		V_0 = (*((int32_t*)L_8));
+		int32_t L_9 = V_0;
+		*((int32_t*)(L_7)) = (int32_t)((int32_t)((int32_t)L_9+(int32_t)1));
+		int32_t L_10 = V_0;
+		int16_t L_11 = ___value;
+		NullCheck(L_6);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, L_10);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_10), (uint8_t)(((int32_t)((uint8_t)L_11))));
+		return;
+	}
+}
 // System.Void ExitGames.Client.Photon.Protocol::Serialize(System.Int32,System.Byte[],System.Int32&)
-extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol_Serialize_m2001046545_MetadataUsageId;
 extern "C"  void Protocol_Serialize_m2001046545 (Il2CppObject * __this /* static, unused */, int32_t ___value, ByteU5BU5D_t58506160* ___target, int32_t* ___targetOffset, const MethodInfo* method)
 {
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
+	int32_t V_0 = 0;
 	{
-		il2cpp_codegen_initialize_method (Protocol_Serialize_m2001046545_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
-		IProtocol_t2724506835 * L_0 = ((Protocol_t1261748468_StaticFields*)Protocol_t1261748468_il2cpp_TypeInfo_var->static_fields)->get_ProtocolDefault_1();
-		int32_t L_1 = ___value;
-		ByteU5BU5D_t58506160* L_2 = ___target;
-		int32_t* L_3 = ___targetOffset;
+		ByteU5BU5D_t58506160* L_0 = ___target;
+		int32_t* L_1 = ___targetOffset;
+		int32_t* L_2 = ___targetOffset;
+		V_0 = (*((int32_t*)L_2));
+		int32_t L_3 = V_0;
+		*((int32_t*)(L_1)) = (int32_t)((int32_t)((int32_t)L_3+(int32_t)1));
+		int32_t L_4 = V_0;
+		int32_t L_5 = ___value;
 		NullCheck(L_0);
-		VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_0, L_1, L_2, L_3);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, L_4);
+		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(L_4), (uint8_t)(((int32_t)((uint8_t)((int32_t)((int32_t)L_5>>(int32_t)((int32_t)24)))))));
+		ByteU5BU5D_t58506160* L_6 = ___target;
+		int32_t* L_7 = ___targetOffset;
+		int32_t* L_8 = ___targetOffset;
+		V_0 = (*((int32_t*)L_8));
+		int32_t L_9 = V_0;
+		*((int32_t*)(L_7)) = (int32_t)((int32_t)((int32_t)L_9+(int32_t)1));
+		int32_t L_10 = V_0;
+		int32_t L_11 = ___value;
+		NullCheck(L_6);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, L_10);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_10), (uint8_t)(((int32_t)((uint8_t)((int32_t)((int32_t)L_11>>(int32_t)((int32_t)16)))))));
+		ByteU5BU5D_t58506160* L_12 = ___target;
+		int32_t* L_13 = ___targetOffset;
+		int32_t* L_14 = ___targetOffset;
+		V_0 = (*((int32_t*)L_14));
+		int32_t L_15 = V_0;
+		*((int32_t*)(L_13)) = (int32_t)((int32_t)((int32_t)L_15+(int32_t)1));
+		int32_t L_16 = V_0;
+		int32_t L_17 = ___value;
+		NullCheck(L_12);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_12, L_16);
+		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(L_16), (uint8_t)(((int32_t)((uint8_t)((int32_t)((int32_t)L_17>>(int32_t)8))))));
+		ByteU5BU5D_t58506160* L_18 = ___target;
+		int32_t* L_19 = ___targetOffset;
+		int32_t* L_20 = ___targetOffset;
+		V_0 = (*((int32_t*)L_20));
+		int32_t L_21 = V_0;
+		*((int32_t*)(L_19)) = (int32_t)((int32_t)((int32_t)L_21+(int32_t)1));
+		int32_t L_22 = V_0;
+		int32_t L_23 = ___value;
+		NullCheck(L_18);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_18, L_22);
+		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(L_22), (uint8_t)(((int32_t)((uint8_t)L_23))));
 		return;
 	}
 }
 // System.Void ExitGames.Client.Photon.Protocol::Serialize(System.Single,System.Byte[],System.Int32&)
 extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
+extern TypeInfo* BitConverter_t3338308296_il2cpp_TypeInfo_var;
 extern const uint32_t Protocol_Serialize_m729069851_MetadataUsageId;
 extern "C"  void Protocol_Serialize_m729069851 (Il2CppObject * __this /* static, unused */, float ___value, ByteU5BU5D_t58506160* ___target, int32_t* ___targetOffset, const MethodInfo* method)
 {
@@ -17572,40 +17490,205 @@ extern "C"  void Protocol_Serialize_m729069851 (Il2CppObject * __this /* static,
 		il2cpp_codegen_initialize_method (Protocol_Serialize_m729069851_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
+	SingleU5BU5D_t1219431280* V_0 = NULL;
+	bool V_1 = false;
+	uint8_t V_2 = 0x0;
+	uint8_t V_3 = 0x0;
+	Exception_t1967233988 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1967233988 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
-		IProtocol_t2724506835 * L_0 = ((Protocol_t1261748468_StaticFields*)Protocol_t1261748468_il2cpp_TypeInfo_var->static_fields)->get_ProtocolDefault_1();
-		float L_1 = ___value;
-		ByteU5BU5D_t58506160* L_2 = ___target;
-		int32_t* L_3 = ___targetOffset;
-		NullCheck(L_0);
-		VirtActionInvoker3< float, ByteU5BU5D_t58506160*, int32_t* >::Invoke(8 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Single,System.Byte[],System.Int32&) */, L_0, L_1, L_2, L_3);
+		SingleU5BU5D_t1219431280* L_0 = ((Protocol_t1261748468_StaticFields*)Protocol_t1261748468_il2cpp_TypeInfo_var->static_fields)->get_memFloatBlock_4();
+		V_0 = L_0;
+		SingleU5BU5D_t1219431280* L_1 = V_0;
+		Monitor_Enter_m476686225(NULL /*static, unused*/, (Il2CppObject *)(Il2CppObject *)L_1, /*hidden argument*/NULL);
+	}
+
+IL_000e:
+	try
+	{ // begin try (depth: 1)
+		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+		SingleU5BU5D_t1219431280* L_2 = ((Protocol_t1261748468_StaticFields*)Protocol_t1261748468_il2cpp_TypeInfo_var->static_fields)->get_memFloatBlock_4();
+		float L_3 = ___value;
+		NullCheck(L_2);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_2, 0);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (float)L_3);
+		SingleU5BU5D_t1219431280* L_4 = ((Protocol_t1261748468_StaticFields*)Protocol_t1261748468_il2cpp_TypeInfo_var->static_fields)->get_memFloatBlock_4();
+		ByteU5BU5D_t58506160* L_5 = ___target;
+		int32_t* L_6 = ___targetOffset;
+		Buffer_BlockCopy_m1580643184(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_4, 0, (Il2CppArray *)(Il2CppArray *)L_5, (*((int32_t*)L_6)), 4, /*hidden argument*/NULL);
+		IL2CPP_LEAVE(0x32, FINALLY_002a);
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1967233988 *)e.ex;
+		goto FINALLY_002a;
+	}
+
+FINALLY_002a:
+	{ // begin finally (depth: 1)
+		SingleU5BU5D_t1219431280* L_7 = V_0;
+		Monitor_Exit_m2088237919(NULL /*static, unused*/, (Il2CppObject *)(Il2CppObject *)L_7, /*hidden argument*/NULL);
+		IL2CPP_END_FINALLY(42)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(42)
+	{
+		IL2CPP_JUMP_TBL(0x32, IL_0032)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1967233988 *)
+	}
+
+IL_0032:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(BitConverter_t3338308296_il2cpp_TypeInfo_var);
+		bool L_8 = ((BitConverter_t3338308296_StaticFields*)BitConverter_t3338308296_il2cpp_TypeInfo_var->static_fields)->get_IsLittleEndian_1();
+		V_1 = L_8;
+		bool L_9 = V_1;
+		if (!L_9)
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		ByteU5BU5D_t58506160* L_10 = ___target;
+		int32_t* L_11 = ___targetOffset;
+		NullCheck(L_10);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_10, (*((int32_t*)L_11)));
+		int32_t L_12 = (*((int32_t*)L_11));
+		V_2 = ((L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12)));
+		ByteU5BU5D_t58506160* L_13 = ___target;
+		int32_t* L_14 = ___targetOffset;
+		NullCheck(L_13);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_13, ((int32_t)((int32_t)(*((int32_t*)L_14))+(int32_t)1)));
+		int32_t L_15 = ((int32_t)((int32_t)(*((int32_t*)L_14))+(int32_t)1));
+		V_3 = ((L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_15)));
+		ByteU5BU5D_t58506160* L_16 = ___target;
+		int32_t* L_17 = ___targetOffset;
+		ByteU5BU5D_t58506160* L_18 = ___target;
+		int32_t* L_19 = ___targetOffset;
+		NullCheck(L_18);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_18, ((int32_t)((int32_t)(*((int32_t*)L_19))+(int32_t)3)));
+		int32_t L_20 = ((int32_t)((int32_t)(*((int32_t*)L_19))+(int32_t)3));
+		NullCheck(L_16);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_16, (*((int32_t*)L_17)));
+		(L_16)->SetAt(static_cast<il2cpp_array_size_t>((*((int32_t*)L_17))), (uint8_t)((L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_20))));
+		ByteU5BU5D_t58506160* L_21 = ___target;
+		int32_t* L_22 = ___targetOffset;
+		ByteU5BU5D_t58506160* L_23 = ___target;
+		int32_t* L_24 = ___targetOffset;
+		NullCheck(L_23);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_23, ((int32_t)((int32_t)(*((int32_t*)L_24))+(int32_t)2)));
+		int32_t L_25 = ((int32_t)((int32_t)(*((int32_t*)L_24))+(int32_t)2));
+		NullCheck(L_21);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_21, ((int32_t)((int32_t)(*((int32_t*)L_22))+(int32_t)1)));
+		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)((int32_t)(*((int32_t*)L_22))+(int32_t)1))), (uint8_t)((L_23)->GetAt(static_cast<il2cpp_array_size_t>(L_25))));
+		ByteU5BU5D_t58506160* L_26 = ___target;
+		int32_t* L_27 = ___targetOffset;
+		uint8_t L_28 = V_3;
+		NullCheck(L_26);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_26, ((int32_t)((int32_t)(*((int32_t*)L_27))+(int32_t)2)));
+		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)((int32_t)(*((int32_t*)L_27))+(int32_t)2))), (uint8_t)L_28);
+		ByteU5BU5D_t58506160* L_29 = ___target;
+		int32_t* L_30 = ___targetOffset;
+		uint8_t L_31 = V_2;
+		NullCheck(L_29);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_29, ((int32_t)((int32_t)(*((int32_t*)L_30))+(int32_t)3)));
+		(L_29)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)((int32_t)(*((int32_t*)L_30))+(int32_t)3))), (uint8_t)L_31);
+	}
+
+IL_006d:
+	{
+		int32_t* L_32 = ___targetOffset;
+		int32_t* L_33 = ___targetOffset;
+		*((int32_t*)(L_32)) = (int32_t)((int32_t)((int32_t)(*((int32_t*)L_33))+(int32_t)4));
 		return;
 	}
 }
 // System.Void ExitGames.Client.Photon.Protocol::Deserialize(System.Int32&,System.Byte[],System.Int32&)
-extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol_Deserialize_m2617704396_MetadataUsageId;
 extern "C"  void Protocol_Deserialize_m2617704396 (Il2CppObject * __this /* static, unused */, int32_t* ___value, ByteU5BU5D_t58506160* ___source, int32_t* ___offset, const MethodInfo* method)
 {
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
+	int32_t V_0 = 0;
 	{
-		il2cpp_codegen_initialize_method (Protocol_Deserialize_m2617704396_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
-		IProtocol_t2724506835 * L_0 = ((Protocol_t1261748468_StaticFields*)Protocol_t1261748468_il2cpp_TypeInfo_var->static_fields)->get_ProtocolDefault_1();
-		int32_t* L_1 = ___value;
-		ByteU5BU5D_t58506160* L_2 = ___source;
+		int32_t* L_0 = ___value;
+		ByteU5BU5D_t58506160* L_1 = ___source;
+		int32_t* L_2 = ___offset;
 		int32_t* L_3 = ___offset;
-		NullCheck(L_0);
-		VirtActionInvoker3< int32_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(16 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int32&,System.Byte[],System.Int32&) */, L_0, L_1, L_2, L_3);
+		V_0 = (*((int32_t*)L_3));
+		int32_t L_4 = V_0;
+		*((int32_t*)(L_2)) = (int32_t)((int32_t)((int32_t)L_4+(int32_t)1));
+		int32_t L_5 = V_0;
+		NullCheck(L_1);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_1, L_5);
+		int32_t L_6 = L_5;
+		ByteU5BU5D_t58506160* L_7 = ___source;
+		int32_t* L_8 = ___offset;
+		int32_t* L_9 = ___offset;
+		V_0 = (*((int32_t*)L_9));
+		int32_t L_10 = V_0;
+		*((int32_t*)(L_8)) = (int32_t)((int32_t)((int32_t)L_10+(int32_t)1));
+		int32_t L_11 = V_0;
+		NullCheck(L_7);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_11);
+		int32_t L_12 = L_11;
+		ByteU5BU5D_t58506160* L_13 = ___source;
+		int32_t* L_14 = ___offset;
+		int32_t* L_15 = ___offset;
+		V_0 = (*((int32_t*)L_15));
+		int32_t L_16 = V_0;
+		*((int32_t*)(L_14)) = (int32_t)((int32_t)((int32_t)L_16+(int32_t)1));
+		int32_t L_17 = V_0;
+		NullCheck(L_13);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_13, L_17);
+		int32_t L_18 = L_17;
+		ByteU5BU5D_t58506160* L_19 = ___source;
+		int32_t* L_20 = ___offset;
+		int32_t* L_21 = ___offset;
+		V_0 = (*((int32_t*)L_21));
+		int32_t L_22 = V_0;
+		*((int32_t*)(L_20)) = (int32_t)((int32_t)((int32_t)L_22+(int32_t)1));
+		int32_t L_23 = V_0;
+		NullCheck(L_19);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_19, L_23);
+		int32_t L_24 = L_23;
+		*((int32_t*)(L_0)) = (int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_6)))<<(int32_t)((int32_t)24)))|(int32_t)((int32_t)((int32_t)((L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_12)))<<(int32_t)((int32_t)16)))))|(int32_t)((int32_t)((int32_t)((L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_18)))<<(int32_t)8))))|(int32_t)((L_19)->GetAt(static_cast<il2cpp_array_size_t>(L_24)))));
+		return;
+	}
+}
+// System.Void ExitGames.Client.Photon.Protocol::Deserialize(System.Int16&,System.Byte[],System.Int32&)
+extern "C"  void Protocol_Deserialize_m3746144530 (Il2CppObject * __this /* static, unused */, int16_t* ___value, ByteU5BU5D_t58506160* ___source, int32_t* ___offset, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		int16_t* L_0 = ___value;
+		ByteU5BU5D_t58506160* L_1 = ___source;
+		int32_t* L_2 = ___offset;
+		int32_t* L_3 = ___offset;
+		V_0 = (*((int32_t*)L_3));
+		int32_t L_4 = V_0;
+		*((int32_t*)(L_2)) = (int32_t)((int32_t)((int32_t)L_4+(int32_t)1));
+		int32_t L_5 = V_0;
+		NullCheck(L_1);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_1, L_5);
+		int32_t L_6 = L_5;
+		ByteU5BU5D_t58506160* L_7 = ___source;
+		int32_t* L_8 = ___offset;
+		int32_t* L_9 = ___offset;
+		V_0 = (*((int32_t*)L_9));
+		int32_t L_10 = V_0;
+		*((int32_t*)(L_8)) = (int32_t)((int32_t)((int32_t)L_10+(int32_t)1));
+		int32_t L_11 = V_0;
+		NullCheck(L_7);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_11);
+		int32_t L_12 = L_11;
+		*((int16_t*)(L_0)) = (int16_t)(((int16_t)((int16_t)((int32_t)((int32_t)((int32_t)((int32_t)((L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_6)))<<(int32_t)8))|(int32_t)((L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_12))))))));
 		return;
 	}
 }
 // System.Void ExitGames.Client.Photon.Protocol::Deserialize(System.Single&,System.Byte[],System.Int32&)
+extern TypeInfo* BitConverter_t3338308296_il2cpp_TypeInfo_var;
 extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
 extern const uint32_t Protocol_Deserialize_m3616978080_MetadataUsageId;
 extern "C"  void Protocol_Deserialize_m3616978080 (Il2CppObject * __this /* static, unused */, float* ___value, ByteU5BU5D_t58506160* ___source, int32_t* ___offset, const MethodInfo* method)
@@ -17616,14 +17699,141 @@ extern "C"  void Protocol_Deserialize_m3616978080 (Il2CppObject * __this /* stat
 		il2cpp_codegen_initialize_method (Protocol_Deserialize_m3616978080_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
+	bool V_0 = false;
+	ByteU5BU5D_t58506160* V_1 = NULL;
+	ByteU5BU5D_t58506160* V_2 = NULL;
+	int32_t V_3 = 0;
+	Exception_t1967233988 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1967233988 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(BitConverter_t3338308296_il2cpp_TypeInfo_var);
+		bool L_0 = ((BitConverter_t3338308296_StaticFields*)BitConverter_t3338308296_il2cpp_TypeInfo_var->static_fields)->get_IsLittleEndian_1();
+		V_0 = L_0;
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_006e;
+		}
+	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
-		IProtocol_t2724506835 * L_0 = ((Protocol_t1261748468_StaticFields*)Protocol_t1261748468_il2cpp_TypeInfo_var->static_fields)->get_ProtocolDefault_1();
-		float* L_1 = ___value;
-		ByteU5BU5D_t58506160* L_2 = ___source;
-		int32_t* L_3 = ___offset;
-		NullCheck(L_0);
-		VirtActionInvoker3< float*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(17 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Single&,System.Byte[],System.Int32&) */, L_0, L_1, L_2, L_3);
+		ByteU5BU5D_t58506160* L_2 = ((Protocol_t1261748468_StaticFields*)Protocol_t1261748468_il2cpp_TypeInfo_var->static_fields)->get_memDeserialize_5();
+		V_1 = L_2;
+		ByteU5BU5D_t58506160* L_3 = V_1;
+		Monitor_Enter_m476686225(NULL /*static, unused*/, (Il2CppObject *)(Il2CppObject *)L_3, /*hidden argument*/NULL);
+	}
+
+IL_0018:
+	try
+	{ // begin try (depth: 1)
+		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+		ByteU5BU5D_t58506160* L_4 = ((Protocol_t1261748468_StaticFields*)Protocol_t1261748468_il2cpp_TypeInfo_var->static_fields)->get_memDeserialize_5();
+		V_2 = L_4;
+		ByteU5BU5D_t58506160* L_5 = V_2;
+		ByteU5BU5D_t58506160* L_6 = ___source;
+		int32_t* L_7 = ___offset;
+		int32_t* L_8 = ___offset;
+		V_3 = (*((int32_t*)L_8));
+		int32_t L_9 = V_3;
+		*((int32_t*)(L_7)) = (int32_t)((int32_t)((int32_t)L_9+(int32_t)1));
+		int32_t L_10 = V_3;
+		NullCheck(L_6);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, L_10);
+		int32_t L_11 = L_10;
+		NullCheck(L_5);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, 3);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(3), (uint8_t)((L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_11))));
+		ByteU5BU5D_t58506160* L_12 = V_2;
+		ByteU5BU5D_t58506160* L_13 = ___source;
+		int32_t* L_14 = ___offset;
+		int32_t* L_15 = ___offset;
+		V_3 = (*((int32_t*)L_15));
+		int32_t L_16 = V_3;
+		*((int32_t*)(L_14)) = (int32_t)((int32_t)((int32_t)L_16+(int32_t)1));
+		int32_t L_17 = V_3;
+		NullCheck(L_13);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_13, L_17);
+		int32_t L_18 = L_17;
+		NullCheck(L_12);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_12, 2);
+		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(2), (uint8_t)((L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_18))));
+		ByteU5BU5D_t58506160* L_19 = V_2;
+		ByteU5BU5D_t58506160* L_20 = ___source;
+		int32_t* L_21 = ___offset;
+		int32_t* L_22 = ___offset;
+		V_3 = (*((int32_t*)L_22));
+		int32_t L_23 = V_3;
+		*((int32_t*)(L_21)) = (int32_t)((int32_t)((int32_t)L_23+(int32_t)1));
+		int32_t L_24 = V_3;
+		NullCheck(L_20);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_20, L_24);
+		int32_t L_25 = L_24;
+		NullCheck(L_19);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_19, 1);
+		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(1), (uint8_t)((L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_25))));
+		ByteU5BU5D_t58506160* L_26 = V_2;
+		ByteU5BU5D_t58506160* L_27 = ___source;
+		int32_t* L_28 = ___offset;
+		int32_t* L_29 = ___offset;
+		V_3 = (*((int32_t*)L_29));
+		int32_t L_30 = V_3;
+		*((int32_t*)(L_28)) = (int32_t)((int32_t)((int32_t)L_30+(int32_t)1));
+		int32_t L_31 = V_3;
+		NullCheck(L_27);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_27, L_31);
+		int32_t L_32 = L_31;
+		NullCheck(L_26);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_26, 0);
+		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(0), (uint8_t)((L_27)->GetAt(static_cast<il2cpp_array_size_t>(L_32))));
+		float* L_33 = ___value;
+		ByteU5BU5D_t58506160* L_34 = V_2;
+		IL2CPP_RUNTIME_CLASS_INIT(BitConverter_t3338308296_il2cpp_TypeInfo_var);
+		float L_35 = BitConverter_ToSingle_m1394719111(NULL /*static, unused*/, L_34, 0, /*hidden argument*/NULL);
+		*((float*)(L_33)) = (float)L_35;
+		IL2CPP_LEAVE(0x6B, FINALLY_0063);
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1967233988 *)e.ex;
+		goto FINALLY_0063;
+	}
+
+FINALLY_0063:
+	{ // begin finally (depth: 1)
+		ByteU5BU5D_t58506160* L_36 = V_1;
+		Monitor_Exit_m2088237919(NULL /*static, unused*/, (Il2CppObject *)(Il2CppObject *)L_36, /*hidden argument*/NULL);
+		IL2CPP_END_FINALLY(99)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(99)
+	{
+		IL2CPP_JUMP_TBL(0x6B, IL_006b)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1967233988 *)
+	}
+
+IL_006b:
+	{
+		goto IL_0080;
+	}
+
+IL_006e:
+	{
+		float* L_37 = ___value;
+		ByteU5BU5D_t58506160* L_38 = ___source;
+		int32_t* L_39 = ___offset;
+		IL2CPP_RUNTIME_CLASS_INIT(BitConverter_t3338308296_il2cpp_TypeInfo_var);
+		float L_40 = BitConverter_ToSingle_m1394719111(NULL /*static, unused*/, L_38, (*((int32_t*)L_39)), /*hidden argument*/NULL);
+		*((float*)(L_37)) = (float)L_40;
+		int32_t* L_41 = ___offset;
+		int32_t* L_42 = ___offset;
+		*((int32_t*)(L_41)) = (int32_t)((int32_t)((int32_t)(*((int32_t*)L_42))+(int32_t)4));
+	}
+
+IL_0080:
+	{
 		return;
 	}
 }
@@ -17632,6 +17842,8 @@ extern TypeInfo* Protocol16_t2781018393_il2cpp_TypeInfo_var;
 extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
 extern TypeInfo* Dictionary_2_t415630378_il2cpp_TypeInfo_var;
 extern TypeInfo* Dictionary_2_t1337383780_il2cpp_TypeInfo_var;
+extern TypeInfo* SingleU5BU5D_t1219431280_il2cpp_TypeInfo_var;
+extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
 extern const MethodInfo* Dictionary_2__ctor_m835135561_MethodInfo_var;
 extern const MethodInfo* Dictionary_2__ctor_m268627259_MethodInfo_var;
 extern const uint32_t Protocol__cctor_m1450056899_MetadataUsageId;
@@ -17655,6 +17867,8 @@ extern "C"  void Protocol__cctor_m1450056899 (Il2CppObject * __this /* static, u
 		Dictionary_2_t1337383780 * L_3 = (Dictionary_2_t1337383780 *)il2cpp_codegen_object_new(Dictionary_2_t1337383780_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m268627259(L_3, /*hidden argument*/Dictionary_2__ctor_m268627259_MethodInfo_var);
 		((Protocol_t1261748468_StaticFields*)Protocol_t1261748468_il2cpp_TypeInfo_var->static_fields)->set_CodeDict_3(L_3);
+		((Protocol_t1261748468_StaticFields*)Protocol_t1261748468_il2cpp_TypeInfo_var->static_fields)->set_memFloatBlock_4(((SingleU5BU5D_t1219431280*)SZArrayNew(SingleU5BU5D_t1219431280_il2cpp_TypeInfo_var, (uint32_t)1)));
+		((Protocol_t1261748468_StaticFields*)Protocol_t1261748468_il2cpp_TypeInfo_var->static_fields)->set_memDeserialize_5(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)4)));
 		return;
 	}
 }
@@ -17674,7 +17888,7 @@ IL_000a:
 		return L_1;
 	}
 }
-// System.Boolean ExitGames.Client.Photon.Protocol16::SerializeCustom(System.IO.MemoryStream,System.Object)
+// System.Boolean ExitGames.Client.Photon.Protocol16::SerializeCustom(ExitGames.Client.Photon.StreamBuffer,System.Object)
 extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
 extern TypeInfo* ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var;
 extern TypeInfo* Int64_t2847414882_il2cpp_TypeInfo_var;
@@ -17684,13 +17898,13 @@ extern TypeInfo* Exception_t1967233988_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1120395320;
 extern Il2CppCodeGenString* _stringLiteral607342118;
 extern Il2CppCodeGenString* _stringLiteral938569296;
-extern const uint32_t Protocol16_SerializeCustom_m924802690_MetadataUsageId;
-extern "C"  bool Protocol16_SerializeCustom_m924802690 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___dout, Il2CppObject * ___serObject, const MethodInfo* method)
+extern const uint32_t Protocol16_SerializeCustom_m1972625330_MetadataUsageId;
+extern "C"  bool Protocol16_SerializeCustom_m1972625330 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___dout, Il2CppObject * ___serObject, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_SerializeCustom_m924802690_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_SerializeCustom_m1972625330_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	CustomType_t2598049959 * V_0 = NULL;
@@ -17736,20 +17950,20 @@ extern "C"  bool Protocol16_SerializeCustom_m924802690 (Protocol16_t2781018393 *
 		NullCheck(L_9);
 		ByteU5BU5D_t58506160* L_11 = SerializeMethod_Invoke_m996346405(L_9, L_10, /*hidden argument*/NULL);
 		V_3 = L_11;
-		MemoryStream_t2881531048 * L_12 = ___dout;
+		StreamBuffer_t433541692 * L_12 = ___dout;
 		NullCheck(L_12);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_12, ((int32_t)99));
-		MemoryStream_t2881531048 * L_13 = ___dout;
+		StreamBuffer_t433541692 * L_13 = ___dout;
 		CustomType_t2598049959 * L_14 = V_0;
 		NullCheck(L_14);
 		uint8_t L_15 = L_14->get_Code_0();
 		NullCheck(L_13);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_13, L_15);
-		MemoryStream_t2881531048 * L_16 = ___dout;
+		StreamBuffer_t433541692 * L_16 = ___dout;
 		ByteU5BU5D_t58506160* L_17 = V_3;
 		NullCheck(L_17);
-		VirtActionInvoker3< MemoryStream_t2881531048 *, int16_t, bool >::Invoke(9 /* System.Void ExitGames.Client.IProtocol::SerializeShort(System.IO.MemoryStream,System.Int16,System.Boolean) */, __this, L_16, (((int16_t)((int16_t)(((int32_t)((int32_t)(((Il2CppArray *)L_17)->max_length))))))), (bool)0);
-		MemoryStream_t2881531048 * L_18 = ___dout;
+		VirtActionInvoker3< StreamBuffer_t433541692 *, int16_t, bool >::Invoke(6 /* System.Void ExitGames.Client.IProtocol::SerializeShort(ExitGames.Client.Photon.StreamBuffer,System.Int16,System.Boolean) */, __this, L_16, (((int16_t)((int16_t)(((int32_t)((int32_t)(((Il2CppArray *)L_17)->max_length))))))), (bool)0);
+		StreamBuffer_t433541692 * L_18 = ___dout;
 		ByteU5BU5D_t58506160* L_19 = V_3;
 		ByteU5BU5D_t58506160* L_20 = V_3;
 		NullCheck(L_20);
@@ -17761,21 +17975,21 @@ extern "C"  bool Protocol16_SerializeCustom_m924802690 (Protocol16_t2781018393 *
 
 IL_006d:
 	{
-		MemoryStream_t2881531048 * L_21 = ___dout;
+		StreamBuffer_t433541692 * L_21 = ___dout;
 		NullCheck(L_21);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_21, ((int32_t)99));
-		MemoryStream_t2881531048 * L_22 = ___dout;
+		StreamBuffer_t433541692 * L_22 = ___dout;
 		CustomType_t2598049959 * L_23 = V_0;
 		NullCheck(L_23);
 		uint8_t L_24 = L_23->get_Code_0();
 		NullCheck(L_22);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_22, L_24);
-		MemoryStream_t2881531048 * L_25 = ___dout;
+		StreamBuffer_t433541692 * L_25 = ___dout;
 		NullCheck(L_25);
 		int64_t L_26 = VirtFuncInvoker0< int64_t >::Invoke(9 /* System.Int64 System.IO.Stream::get_Position() */, L_25);
 		V_5 = L_26;
-		MemoryStream_t2881531048 * L_27 = ___dout;
-		MemoryStream_t2881531048 * L_28 = ___dout;
+		StreamBuffer_t433541692 * L_27 = ___dout;
+		StreamBuffer_t433541692 * L_28 = ___dout;
 		NullCheck(L_28);
 		int64_t L_29 = VirtFuncInvoker0< int64_t >::Invoke(9 /* System.Int64 System.IO.Stream::get_Position() */, L_28);
 		NullCheck(L_27);
@@ -17783,30 +17997,30 @@ IL_006d:
 		CustomType_t2598049959 * L_30 = V_0;
 		NullCheck(L_30);
 		SerializeStreamMethod_t741406109 * L_31 = L_30->get_SerializeStreamFunction_4();
-		MemoryStream_t2881531048 * L_32 = ___dout;
+		StreamBuffer_t433541692 * L_32 = ___dout;
 		Il2CppObject * L_33 = ___serObject;
 		NullCheck(L_31);
-		int16_t L_34 = SerializeStreamMethod_Invoke_m2691836883(L_31, L_32, L_33, /*hidden argument*/NULL);
+		int16_t L_34 = SerializeStreamMethod_Invoke_m1239976771(L_31, L_32, L_33, /*hidden argument*/NULL);
 		V_6 = L_34;
-		MemoryStream_t2881531048 * L_35 = ___dout;
+		StreamBuffer_t433541692 * L_35 = ___dout;
 		NullCheck(L_35);
 		int64_t L_36 = VirtFuncInvoker0< int64_t >::Invoke(9 /* System.Int64 System.IO.Stream::get_Position() */, L_35);
 		V_7 = L_36;
-		MemoryStream_t2881531048 * L_37 = ___dout;
+		StreamBuffer_t433541692 * L_37 = ___dout;
 		int64_t L_38 = V_5;
 		NullCheck(L_37);
 		VirtActionInvoker1< int64_t >::Invoke(10 /* System.Void System.IO.Stream::set_Position(System.Int64) */, L_37, L_38);
-		MemoryStream_t2881531048 * L_39 = ___dout;
+		StreamBuffer_t433541692 * L_39 = ___dout;
 		int16_t L_40 = V_6;
-		VirtActionInvoker3< MemoryStream_t2881531048 *, int16_t, bool >::Invoke(9 /* System.Void ExitGames.Client.IProtocol::SerializeShort(System.IO.MemoryStream,System.Int16,System.Boolean) */, __this, L_39, L_40, (bool)0);
-		MemoryStream_t2881531048 * L_41 = ___dout;
-		MemoryStream_t2881531048 * L_42 = ___dout;
+		VirtActionInvoker3< StreamBuffer_t433541692 *, int16_t, bool >::Invoke(6 /* System.Void ExitGames.Client.IProtocol::SerializeShort(ExitGames.Client.Photon.StreamBuffer,System.Int16,System.Boolean) */, __this, L_39, L_40, (bool)0);
+		StreamBuffer_t433541692 * L_41 = ___dout;
+		StreamBuffer_t433541692 * L_42 = ___dout;
 		NullCheck(L_42);
 		int64_t L_43 = VirtFuncInvoker0< int64_t >::Invoke(9 /* System.Int64 System.IO.Stream::get_Position() */, L_42);
 		int16_t L_44 = V_6;
 		NullCheck(L_41);
 		VirtActionInvoker1< int64_t >::Invoke(10 /* System.Void System.IO.Stream::set_Position(System.Int64) */, L_41, ((int64_t)((int64_t)L_43+(int64_t)(((int64_t)((int64_t)L_44))))));
-		MemoryStream_t2881531048 * L_45 = ___dout;
+		StreamBuffer_t433541692 * L_45 = ___dout;
 		NullCheck(L_45);
 		int64_t L_46 = VirtFuncInvoker0< int64_t >::Invoke(9 /* System.Int64 System.IO.Stream::get_Position() */, L_45);
 		int64_t L_47 = V_7;
@@ -17837,7 +18051,7 @@ IL_006d:
 		ArrayElementTypeCheck (L_54, _stringLiteral607342118);
 		(L_54)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)_stringLiteral607342118);
 		ObjectU5BU5D_t11523773* L_55 = L_54;
-		MemoryStream_t2881531048 * L_56 = ___dout;
+		StreamBuffer_t433541692 * L_56 = ___dout;
 		NullCheck(L_56);
 		int64_t L_57 = VirtFuncInvoker0< int64_t >::Invoke(9 /* System.Int64 System.IO.Stream::get_Position() */, L_56);
 		int64_t L_58 = L_57;
@@ -17884,16 +18098,16 @@ IL_0141:
 		return L_67;
 	}
 }
-// System.Object ExitGames.Client.Photon.Protocol16::DeserializeCustom(System.IO.MemoryStream,System.Byte)
+// System.Object ExitGames.Client.Photon.Protocol16::DeserializeCustom(ExitGames.Client.Photon.StreamBuffer,System.Byte)
 extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_DeserializeCustom_m2392697273_MetadataUsageId;
-extern "C"  Il2CppObject * Protocol16_DeserializeCustom_m2392697273 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, uint8_t ___customTypeCode, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeCustom_m1272442601_MetadataUsageId;
+extern "C"  Il2CppObject * Protocol16_DeserializeCustom_m1272442601 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, uint8_t ___customTypeCode, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeCustom_m2392697273_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeCustom_m1272442601_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	int16_t V_0 = 0;
@@ -17907,8 +18121,8 @@ extern "C"  Il2CppObject * Protocol16_DeserializeCustom_m2392697273 (Protocol16_
 	int32_t V_8 = 0;
 	bool V_9 = false;
 	{
-		MemoryStream_t2881531048 * L_0 = ___din;
-		int16_t L_1 = VirtFuncInvoker1< int16_t, MemoryStream_t2881531048 * >::Invoke(18 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(System.IO.MemoryStream) */, __this, L_0);
+		StreamBuffer_t433541692 * L_0 = ___din;
+		int16_t L_1 = VirtFuncInvoker1< int16_t, StreamBuffer_t433541692 * >::Invoke(12 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(ExitGames.Client.Photon.StreamBuffer) */, __this, L_0);
 		V_0 = L_1;
 		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
 		Dictionary_2_t1337383780 * L_2 = ((Protocol_t1261748468_StaticFields*)Protocol_t1261748468_il2cpp_TypeInfo_var->static_fields)->get_CodeDict_3();
@@ -17936,7 +18150,7 @@ extern "C"  Il2CppObject * Protocol16_DeserializeCustom_m2392697273 (Protocol16_
 	{
 		int16_t L_9 = V_0;
 		V_4 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)L_9));
-		MemoryStream_t2881531048 * L_10 = ___din;
+		StreamBuffer_t433541692 * L_10 = ___din;
 		ByteU5BU5D_t58506160* L_11 = V_4;
 		int16_t L_12 = V_0;
 		NullCheck(L_10);
@@ -17953,19 +18167,19 @@ extern "C"  Il2CppObject * Protocol16_DeserializeCustom_m2392697273 (Protocol16_
 
 IL_004d:
 	{
-		MemoryStream_t2881531048 * L_17 = ___din;
+		StreamBuffer_t433541692 * L_17 = ___din;
 		NullCheck(L_17);
 		int64_t L_18 = VirtFuncInvoker0< int64_t >::Invoke(9 /* System.Int64 System.IO.Stream::get_Position() */, L_17);
 		V_6 = L_18;
 		CustomType_t2598049959 * L_19 = V_1;
 		NullCheck(L_19);
 		DeserializeStreamMethod_t2269051836 * L_20 = L_19->get_DeserializeStreamFunction_5();
-		MemoryStream_t2881531048 * L_21 = ___din;
+		StreamBuffer_t433541692 * L_21 = ___din;
 		int16_t L_22 = V_0;
 		NullCheck(L_20);
-		Il2CppObject * L_23 = DeserializeStreamMethod_Invoke_m2833769592(L_20, L_21, L_22, /*hidden argument*/NULL);
+		Il2CppObject * L_23 = DeserializeStreamMethod_Invoke_m1171546632(L_20, L_21, L_22, /*hidden argument*/NULL);
 		V_7 = L_23;
-		MemoryStream_t2881531048 * L_24 = ___din;
+		StreamBuffer_t433541692 * L_24 = ___din;
 		NullCheck(L_24);
 		int64_t L_25 = VirtFuncInvoker0< int64_t >::Invoke(9 /* System.Int64 System.IO.Stream::get_Position() */, L_24);
 		int64_t L_26 = V_6;
@@ -17980,7 +18194,7 @@ IL_004d:
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_30 = ___din;
+		StreamBuffer_t433541692 * L_30 = ___din;
 		int64_t L_31 = V_6;
 		int16_t L_32 = V_0;
 		NullCheck(L_30);
@@ -18704,11 +18918,11 @@ IL_0011:
 		return L_4;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeOperationRequest(System.IO.MemoryStream,ExitGames.Client.Photon.OperationRequest,System.Boolean)
-extern "C"  void Protocol16_SerializeOperationRequest_m3894482042 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___memStream, OperationRequest_t3861919108 * ___serObject, bool ___setType, const MethodInfo* method)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeOperationRequest(ExitGames.Client.Photon.StreamBuffer,ExitGames.Client.Photon.OperationRequest,System.Boolean)
+extern "C"  void Protocol16_SerializeOperationRequest_m2069561066 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___stream, OperationRequest_t3861919108 * ___serObject, bool ___setType, const MethodInfo* method)
 {
 	{
-		MemoryStream_t2881531048 * L_0 = ___memStream;
+		StreamBuffer_t433541692 * L_0 = ___stream;
 		OperationRequest_t3861919108 * L_1 = ___serObject;
 		NullCheck(L_1);
 		uint8_t L_2 = L_1->get_OperationCode_0();
@@ -18716,12 +18930,12 @@ extern "C"  void Protocol16_SerializeOperationRequest_m3894482042 (Protocol16_t2
 		NullCheck(L_3);
 		Dictionary_2_t3871407537 * L_4 = L_3->get_Parameters_1();
 		bool L_5 = ___setType;
-		VirtActionInvoker4< MemoryStream_t2881531048 *, uint8_t, Dictionary_2_t3871407537 *, bool >::Invoke(12 /* System.Void ExitGames.Client.IProtocol::SerializeOperationRequest(System.IO.MemoryStream,System.Byte,System.Collections.Generic.Dictionary`2<System.Byte,System.Object>,System.Boolean) */, __this, L_0, L_2, L_4, L_5);
+		VirtActionInvoker4< StreamBuffer_t433541692 *, uint8_t, Dictionary_2_t3871407537 *, bool >::Invoke(9 /* System.Void ExitGames.Client.IProtocol::SerializeOperationRequest(ExitGames.Client.Photon.StreamBuffer,System.Byte,System.Collections.Generic.Dictionary`2<System.Byte,System.Object>,System.Boolean) */, __this, L_0, L_2, L_4, L_5);
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeOperationRequest(System.IO.MemoryStream,System.Byte,System.Collections.Generic.Dictionary`2<System.Byte,System.Object>,System.Boolean)
-extern "C"  void Protocol16_SerializeOperationRequest_m429765319 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___memStream, uint8_t ___operationCode, Dictionary_2_t3871407537 * ___parameters, bool ___setType, const MethodInfo* method)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeOperationRequest(ExitGames.Client.Photon.StreamBuffer,System.Byte,System.Collections.Generic.Dictionary`2<System.Byte,System.Object>,System.Boolean)
+extern "C"  void Protocol16_SerializeOperationRequest_m1283737911 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___stream, uint8_t ___operationCode, Dictionary_2_t3871407537 * ___parameters, bool ___setType, const MethodInfo* method)
 {
 	bool V_0 = false;
 	{
@@ -18734,32 +18948,32 @@ extern "C"  void Protocol16_SerializeOperationRequest_m429765319 (Protocol16_t27
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_2 = ___memStream;
+		StreamBuffer_t433541692 * L_2 = ___stream;
 		NullCheck(L_2);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, ((int32_t)113));
 	}
 
 IL_0012:
 	{
-		MemoryStream_t2881531048 * L_3 = ___memStream;
+		StreamBuffer_t433541692 * L_3 = ___stream;
 		uint8_t L_4 = ___operationCode;
 		NullCheck(L_3);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_3, L_4);
-		MemoryStream_t2881531048 * L_5 = ___memStream;
+		StreamBuffer_t433541692 * L_5 = ___stream;
 		Dictionary_2_t3871407537 * L_6 = ___parameters;
-		Protocol16_SerializeParameterTable_m4066339998(__this, L_5, L_6, /*hidden argument*/NULL);
+		Protocol16_SerializeParameterTable_m2833470190(__this, L_5, L_6, /*hidden argument*/NULL);
 		return;
 	}
 }
-// ExitGames.Client.Photon.OperationRequest ExitGames.Client.Photon.Protocol16::DeserializeOperationRequest(System.IO.MemoryStream)
+// ExitGames.Client.Photon.OperationRequest ExitGames.Client.Photon.Protocol16::DeserializeOperationRequest(ExitGames.Client.Photon.StreamBuffer)
 extern TypeInfo* OperationRequest_t3861919108_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_DeserializeOperationRequest_m2714285731_MetadataUsageId;
-extern "C"  OperationRequest_t3861919108 * Protocol16_DeserializeOperationRequest_m2714285731 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeOperationRequest_m3068525971_MetadataUsageId;
+extern "C"  OperationRequest_t3861919108 * Protocol16_DeserializeOperationRequest_m3068525971 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeOperationRequest_m2714285731_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeOperationRequest_m3068525971_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	OperationRequest_t3861919108 * V_0 = NULL;
@@ -18769,13 +18983,13 @@ extern "C"  OperationRequest_t3861919108 * Protocol16_DeserializeOperationReques
 		OperationRequest__ctor_m4080603802(L_0, /*hidden argument*/NULL);
 		V_0 = L_0;
 		OperationRequest_t3861919108 * L_1 = V_0;
-		MemoryStream_t2881531048 * L_2 = ___din;
-		uint8_t L_3 = VirtFuncInvoker1< uint8_t, MemoryStream_t2881531048 * >::Invoke(19 /* System.Byte ExitGames.Client.IProtocol::DeserializeByte(System.IO.MemoryStream) */, __this, L_2);
+		StreamBuffer_t433541692 * L_2 = ___din;
+		uint8_t L_3 = VirtFuncInvoker1< uint8_t, StreamBuffer_t433541692 * >::Invoke(13 /* System.Byte ExitGames.Client.IProtocol::DeserializeByte(ExitGames.Client.Photon.StreamBuffer) */, __this, L_2);
 		NullCheck(L_1);
 		L_1->set_OperationCode_0(L_3);
 		OperationRequest_t3861919108 * L_4 = V_0;
-		MemoryStream_t2881531048 * L_5 = ___din;
-		Dictionary_2_t3871407537 * L_6 = Protocol16_DeserializeParameterTable_m1932292488(__this, L_5, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_5 = ___din;
+		Dictionary_2_t3871407537 * L_6 = Protocol16_DeserializeParameterTable_m2877440952(__this, L_5, /*hidden argument*/NULL);
 		NullCheck(L_4);
 		L_4->set_Parameters_1(L_6);
 		OperationRequest_t3861919108 * L_7 = V_0;
@@ -18789,15 +19003,15 @@ IL_0025:
 		return L_8;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeOperationResponse(System.IO.MemoryStream,ExitGames.Client.Photon.OperationResponse,System.Boolean)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeOperationResponse(ExitGames.Client.Photon.StreamBuffer,ExitGames.Client.Photon.OperationResponse,System.Boolean)
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_SerializeOperationResponse_m3075154498_MetadataUsageId;
-extern "C"  void Protocol16_SerializeOperationResponse_m3075154498 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___memStream, OperationResponse_t2644772068 * ___serObject, bool ___setType, const MethodInfo* method)
+extern const uint32_t Protocol16_SerializeOperationResponse_m3607533266_MetadataUsageId;
+extern "C"  void Protocol16_SerializeOperationResponse_m3607533266 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___stream, OperationResponse_t2644772068 * ___serObject, bool ___setType, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_SerializeOperationResponse_m3075154498_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_SerializeOperationResponse_m3607533266_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	bool V_0 = false;
@@ -18812,24 +19026,24 @@ extern "C"  void Protocol16_SerializeOperationResponse_m3075154498 (Protocol16_t
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_2 = ___memStream;
+		StreamBuffer_t433541692 * L_2 = ___stream;
 		NullCheck(L_2);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, ((int32_t)112));
 	}
 
 IL_0011:
 	{
-		MemoryStream_t2881531048 * L_3 = ___memStream;
+		StreamBuffer_t433541692 * L_3 = ___stream;
 		OperationResponse_t2644772068 * L_4 = ___serObject;
 		NullCheck(L_4);
 		uint8_t L_5 = L_4->get_OperationCode_0();
 		NullCheck(L_3);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_3, L_5);
-		MemoryStream_t2881531048 * L_6 = ___memStream;
+		StreamBuffer_t433541692 * L_6 = ___stream;
 		OperationResponse_t2644772068 * L_7 = ___serObject;
 		NullCheck(L_7);
 		int16_t L_8 = L_7->get_ReturnCode_1();
-		VirtActionInvoker3< MemoryStream_t2881531048 *, int16_t, bool >::Invoke(9 /* System.Void ExitGames.Client.IProtocol::SerializeShort(System.IO.MemoryStream,System.Int16,System.Boolean) */, __this, L_6, L_8, (bool)0);
+		VirtActionInvoker3< StreamBuffer_t433541692 *, int16_t, bool >::Invoke(6 /* System.Void ExitGames.Client.IProtocol::SerializeShort(ExitGames.Client.Photon.StreamBuffer,System.Int16,System.Boolean) */, __this, L_6, L_8, (bool)0);
 		OperationResponse_t2644772068 * L_9 = ___serObject;
 		NullCheck(L_9);
 		String_t* L_10 = L_9->get_DebugMessage_2();
@@ -18843,7 +19057,7 @@ IL_0011:
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_13 = ___memStream;
+		StreamBuffer_t433541692 * L_13 = ___stream;
 		NullCheck(L_13);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_13, ((int32_t)42));
 		goto IL_005a;
@@ -18851,33 +19065,33 @@ IL_0011:
 
 IL_0049:
 	{
-		MemoryStream_t2881531048 * L_14 = ___memStream;
+		StreamBuffer_t433541692 * L_14 = ___stream;
 		OperationResponse_t2644772068 * L_15 = ___serObject;
 		NullCheck(L_15);
 		String_t* L_16 = L_15->get_DebugMessage_2();
-		VirtActionInvoker3< MemoryStream_t2881531048 *, String_t*, bool >::Invoke(10 /* System.Void ExitGames.Client.IProtocol::SerializeString(System.IO.MemoryStream,System.String,System.Boolean) */, __this, L_14, L_16, (bool)0);
+		VirtActionInvoker3< StreamBuffer_t433541692 *, String_t*, bool >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::SerializeString(ExitGames.Client.Photon.StreamBuffer,System.String,System.Boolean) */, __this, L_14, L_16, (bool)0);
 	}
 
 IL_005a:
 	{
-		MemoryStream_t2881531048 * L_17 = ___memStream;
+		StreamBuffer_t433541692 * L_17 = ___stream;
 		OperationResponse_t2644772068 * L_18 = ___serObject;
 		NullCheck(L_18);
 		Dictionary_2_t3871407537 * L_19 = L_18->get_Parameters_3();
-		Protocol16_SerializeParameterTable_m4066339998(__this, L_17, L_19, /*hidden argument*/NULL);
+		Protocol16_SerializeParameterTable_m2833470190(__this, L_17, L_19, /*hidden argument*/NULL);
 		return;
 	}
 }
-// ExitGames.Client.Photon.OperationResponse ExitGames.Client.Photon.Protocol16::DeserializeOperationResponse(System.IO.MemoryStream)
+// ExitGames.Client.Photon.OperationResponse ExitGames.Client.Photon.Protocol16::DeserializeOperationResponse(ExitGames.Client.Photon.StreamBuffer)
 extern TypeInfo* OperationResponse_t2644772068_il2cpp_TypeInfo_var;
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_DeserializeOperationResponse_m2758114691_MetadataUsageId;
-extern "C"  OperationResponse_t2644772068 * Protocol16_DeserializeOperationResponse_m2758114691 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___memoryStream, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeOperationResponse_m1286421619_MetadataUsageId;
+extern "C"  OperationResponse_t2644772068 * Protocol16_DeserializeOperationResponse_m1286421619 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___stream, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeOperationResponse_m2758114691_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeOperationResponse_m1286421619_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	OperationResponse_t2644772068 * V_0 = NULL;
@@ -18887,25 +19101,25 @@ extern "C"  OperationResponse_t2644772068 * Protocol16_DeserializeOperationRespo
 		OperationResponse__ctor_m713693788(L_0, /*hidden argument*/NULL);
 		V_0 = L_0;
 		OperationResponse_t2644772068 * L_1 = V_0;
-		MemoryStream_t2881531048 * L_2 = ___memoryStream;
-		uint8_t L_3 = VirtFuncInvoker1< uint8_t, MemoryStream_t2881531048 * >::Invoke(19 /* System.Byte ExitGames.Client.IProtocol::DeserializeByte(System.IO.MemoryStream) */, __this, L_2);
+		StreamBuffer_t433541692 * L_2 = ___stream;
+		uint8_t L_3 = VirtFuncInvoker1< uint8_t, StreamBuffer_t433541692 * >::Invoke(13 /* System.Byte ExitGames.Client.IProtocol::DeserializeByte(ExitGames.Client.Photon.StreamBuffer) */, __this, L_2);
 		NullCheck(L_1);
 		L_1->set_OperationCode_0(L_3);
 		OperationResponse_t2644772068 * L_4 = V_0;
-		MemoryStream_t2881531048 * L_5 = ___memoryStream;
-		int16_t L_6 = VirtFuncInvoker1< int16_t, MemoryStream_t2881531048 * >::Invoke(18 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(System.IO.MemoryStream) */, __this, L_5);
+		StreamBuffer_t433541692 * L_5 = ___stream;
+		int16_t L_6 = VirtFuncInvoker1< int16_t, StreamBuffer_t433541692 * >::Invoke(12 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(ExitGames.Client.Photon.StreamBuffer) */, __this, L_5);
 		NullCheck(L_4);
 		L_4->set_ReturnCode_1(L_6);
 		OperationResponse_t2644772068 * L_7 = V_0;
-		MemoryStream_t2881531048 * L_8 = ___memoryStream;
-		MemoryStream_t2881531048 * L_9 = ___memoryStream;
-		uint8_t L_10 = VirtFuncInvoker1< uint8_t, MemoryStream_t2881531048 * >::Invoke(19 /* System.Byte ExitGames.Client.IProtocol::DeserializeByte(System.IO.MemoryStream) */, __this, L_9);
-		Il2CppObject * L_11 = VirtFuncInvoker2< Il2CppObject *, MemoryStream_t2881531048 *, uint8_t >::Invoke(14 /* System.Object ExitGames.Client.IProtocol::Deserialize(System.IO.MemoryStream,System.Byte) */, __this, L_8, L_10);
+		StreamBuffer_t433541692 * L_8 = ___stream;
+		StreamBuffer_t433541692 * L_9 = ___stream;
+		uint8_t L_10 = VirtFuncInvoker1< uint8_t, StreamBuffer_t433541692 * >::Invoke(13 /* System.Byte ExitGames.Client.IProtocol::DeserializeByte(ExitGames.Client.Photon.StreamBuffer) */, __this, L_9);
+		Il2CppObject * L_11 = VirtFuncInvoker2< Il2CppObject *, StreamBuffer_t433541692 *, uint8_t >::Invoke(11 /* System.Object ExitGames.Client.IProtocol::Deserialize(ExitGames.Client.Photon.StreamBuffer,System.Byte) */, __this, L_8, L_10);
 		NullCheck(L_7);
 		L_7->set_DebugMessage_2(((String_t*)IsInstSealed(L_11, String_t_il2cpp_TypeInfo_var)));
 		OperationResponse_t2644772068 * L_12 = V_0;
-		MemoryStream_t2881531048 * L_13 = ___memoryStream;
-		Dictionary_2_t3871407537 * L_14 = Protocol16_DeserializeParameterTable_m1932292488(__this, L_13, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_13 = ___stream;
+		Dictionary_2_t3871407537 * L_14 = Protocol16_DeserializeParameterTable_m2877440952(__this, L_13, /*hidden argument*/NULL);
 		NullCheck(L_12);
 		L_12->set_Parameters_3(L_14);
 		OperationResponse_t2644772068 * L_15 = V_0;
@@ -18919,8 +19133,8 @@ IL_004b:
 		return L_16;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeEventData(System.IO.MemoryStream,ExitGames.Client.Photon.EventData,System.Boolean)
-extern "C"  void Protocol16_SerializeEventData_m516571586 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___memStream, EventData_t4221167488 * ___serObject, bool ___setType, const MethodInfo* method)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeEventData(ExitGames.Client.Photon.StreamBuffer,ExitGames.Client.Photon.EventData,System.Boolean)
+extern "C"  void Protocol16_SerializeEventData_m1007511378 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___stream, EventData_t4221167488 * ___serObject, bool ___setType, const MethodInfo* method)
 {
 	bool V_0 = false;
 	{
@@ -18933,36 +19147,36 @@ extern "C"  void Protocol16_SerializeEventData_m516571586 (Protocol16_t278101839
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_2 = ___memStream;
+		StreamBuffer_t433541692 * L_2 = ___stream;
 		NullCheck(L_2);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, ((int32_t)101));
 	}
 
 IL_0011:
 	{
-		MemoryStream_t2881531048 * L_3 = ___memStream;
+		StreamBuffer_t433541692 * L_3 = ___stream;
 		EventData_t4221167488 * L_4 = ___serObject;
 		NullCheck(L_4);
 		uint8_t L_5 = L_4->get_Code_0();
 		NullCheck(L_3);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_3, L_5);
-		MemoryStream_t2881531048 * L_6 = ___memStream;
+		StreamBuffer_t433541692 * L_6 = ___stream;
 		EventData_t4221167488 * L_7 = ___serObject;
 		NullCheck(L_7);
 		Dictionary_2_t3871407537 * L_8 = L_7->get_Parameters_1();
-		Protocol16_SerializeParameterTable_m4066339998(__this, L_6, L_8, /*hidden argument*/NULL);
+		Protocol16_SerializeParameterTable_m2833470190(__this, L_6, L_8, /*hidden argument*/NULL);
 		return;
 	}
 }
-// ExitGames.Client.Photon.EventData ExitGames.Client.Photon.Protocol16::DeserializeEventData(System.IO.MemoryStream)
+// ExitGames.Client.Photon.EventData ExitGames.Client.Photon.Protocol16::DeserializeEventData(ExitGames.Client.Photon.StreamBuffer)
 extern TypeInfo* EventData_t4221167488_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_DeserializeEventData_m1655360771_MetadataUsageId;
-extern "C"  EventData_t4221167488 * Protocol16_DeserializeEventData_m1655360771 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeEventData_m3518065651_MetadataUsageId;
+extern "C"  EventData_t4221167488 * Protocol16_DeserializeEventData_m3518065651 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeEventData_m1655360771_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeEventData_m3518065651_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	EventData_t4221167488 * V_0 = NULL;
@@ -18972,13 +19186,13 @@ extern "C"  EventData_t4221167488 * Protocol16_DeserializeEventData_m1655360771 
 		EventData__ctor_m552826944(L_0, /*hidden argument*/NULL);
 		V_0 = L_0;
 		EventData_t4221167488 * L_1 = V_0;
-		MemoryStream_t2881531048 * L_2 = ___din;
-		uint8_t L_3 = VirtFuncInvoker1< uint8_t, MemoryStream_t2881531048 * >::Invoke(19 /* System.Byte ExitGames.Client.IProtocol::DeserializeByte(System.IO.MemoryStream) */, __this, L_2);
+		StreamBuffer_t433541692 * L_2 = ___din;
+		uint8_t L_3 = VirtFuncInvoker1< uint8_t, StreamBuffer_t433541692 * >::Invoke(13 /* System.Byte ExitGames.Client.IProtocol::DeserializeByte(ExitGames.Client.Photon.StreamBuffer) */, __this, L_2);
 		NullCheck(L_1);
 		L_1->set_Code_0(L_3);
 		EventData_t4221167488 * L_4 = V_0;
-		MemoryStream_t2881531048 * L_5 = ___din;
-		Dictionary_2_t3871407537 * L_6 = Protocol16_DeserializeParameterTable_m1932292488(__this, L_5, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_5 = ___din;
+		Dictionary_2_t3871407537 * L_6 = Protocol16_DeserializeParameterTable_m2877440952(__this, L_5, /*hidden argument*/NULL);
 		NullCheck(L_4);
 		L_4->set_Parameters_1(L_6);
 		EventData_t4221167488 * L_7 = V_0;
@@ -18992,20 +19206,20 @@ IL_0025:
 		return L_8;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeParameterTable(System.IO.MemoryStream,System.Collections.Generic.Dictionary`2<System.Byte,System.Object>)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeParameterTable(ExitGames.Client.Photon.StreamBuffer,System.Collections.Generic.Dictionary`2<System.Byte,System.Object>)
 extern const MethodInfo* Dictionary_2_GetEnumerator_m1804505000_MethodInfo_var;
 extern const MethodInfo* Enumerator_get_Current_m3448776946_MethodInfo_var;
 extern const MethodInfo* KeyValuePair_2_get_Key_m2332219628_MethodInfo_var;
 extern const MethodInfo* KeyValuePair_2_get_Value_m3148482111_MethodInfo_var;
 extern const MethodInfo* Enumerator_MoveNext_m1035473293_MethodInfo_var;
 extern const MethodInfo* Enumerator_Dispose_m2865896460_MethodInfo_var;
-extern const uint32_t Protocol16_SerializeParameterTable_m4066339998_MetadataUsageId;
-extern "C"  void Protocol16_SerializeParameterTable_m4066339998 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___memStream, Dictionary_2_t3871407537 * ___parameters, const MethodInfo* method)
+extern const uint32_t Protocol16_SerializeParameterTable_m2833470190_MetadataUsageId;
+extern "C"  void Protocol16_SerializeParameterTable_m2833470190 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___stream, Dictionary_2_t3871407537 * ___parameters, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_SerializeParameterTable_m4066339998_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_SerializeParameterTable_m2833470190_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	bool V_0 = false;
@@ -19050,18 +19264,18 @@ IL_0010:
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_4 = ___memStream;
-		VirtActionInvoker3< MemoryStream_t2881531048 *, int16_t, bool >::Invoke(9 /* System.Void ExitGames.Client.IProtocol::SerializeShort(System.IO.MemoryStream,System.Int16,System.Boolean) */, __this, L_4, 0, (bool)0);
+		StreamBuffer_t433541692 * L_4 = ___stream;
+		VirtActionInvoker3< StreamBuffer_t433541692 *, int16_t, bool >::Invoke(6 /* System.Void ExitGames.Client.IProtocol::SerializeShort(ExitGames.Client.Photon.StreamBuffer,System.Int16,System.Boolean) */, __this, L_4, 0, (bool)0);
 		goto IL_007d;
 	}
 
 IL_0021:
 	{
-		MemoryStream_t2881531048 * L_5 = ___memStream;
+		StreamBuffer_t433541692 * L_5 = ___stream;
 		Dictionary_2_t3871407537 * L_6 = ___parameters;
 		NullCheck(L_6);
 		int32_t L_7 = VirtFuncInvoker0< int32_t >::Invoke(10 /* System.Int32 System.Collections.Generic.Dictionary`2<System.Byte,System.Object>::get_Count() */, L_6);
-		VirtActionInvoker3< MemoryStream_t2881531048 *, int16_t, bool >::Invoke(9 /* System.Void ExitGames.Client.IProtocol::SerializeShort(System.IO.MemoryStream,System.Int16,System.Boolean) */, __this, L_5, (((int16_t)((int16_t)L_7))), (bool)0);
+		VirtActionInvoker3< StreamBuffer_t433541692 *, int16_t, bool >::Invoke(6 /* System.Void ExitGames.Client.IProtocol::SerializeShort(ExitGames.Client.Photon.StreamBuffer,System.Int16,System.Boolean) */, __this, L_5, (((int16_t)((int16_t)L_7))), (bool)0);
 		Dictionary_2_t3871407537 * L_8 = ___parameters;
 		NullCheck(L_8);
 		Enumerator_t3638435478  L_9 = Dictionary_2_GetEnumerator_m1804505000(L_8, /*hidden argument*/Dictionary_2_GetEnumerator_m1804505000_MethodInfo_var);
@@ -19079,13 +19293,13 @@ IL_003b:
 		{
 			KeyValuePair_2_t3359938835  L_10 = Enumerator_get_Current_m3448776946((&V_1), /*hidden argument*/Enumerator_get_Current_m3448776946_MethodInfo_var);
 			V_2 = L_10;
-			MemoryStream_t2881531048 * L_11 = ___memStream;
+			StreamBuffer_t433541692 * L_11 = ___stream;
 			uint8_t L_12 = KeyValuePair_2_get_Key_m2332219628((&V_2), /*hidden argument*/KeyValuePair_2_get_Key_m2332219628_MethodInfo_var);
 			NullCheck(L_11);
 			VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_11, L_12);
-			MemoryStream_t2881531048 * L_13 = ___memStream;
+			StreamBuffer_t433541692 * L_13 = ___stream;
 			Il2CppObject * L_14 = KeyValuePair_2_get_Value_m3148482111((&V_2), /*hidden argument*/KeyValuePair_2_get_Value_m3148482111_MethodInfo_var);
-			VirtActionInvoker3< MemoryStream_t2881531048 *, Il2CppObject *, bool >::Invoke(5 /* System.Void ExitGames.Client.IProtocol::Serialize(System.IO.MemoryStream,System.Object,System.Boolean) */, __this, L_13, L_14, (bool)1);
+			VirtActionInvoker3< StreamBuffer_t433541692 *, Il2CppObject *, bool >::Invoke(5 /* System.Void ExitGames.Client.IProtocol::Serialize(ExitGames.Client.Photon.StreamBuffer,System.Object,System.Boolean) */, __this, L_13, L_14, (bool)1);
 		}
 
 IL_0063:
@@ -19124,16 +19338,16 @@ IL_007d:
 		return;
 	}
 }
-// System.Collections.Generic.Dictionary`2<System.Byte,System.Object> ExitGames.Client.Photon.Protocol16::DeserializeParameterTable(System.IO.MemoryStream)
+// System.Collections.Generic.Dictionary`2<System.Byte,System.Object> ExitGames.Client.Photon.Protocol16::DeserializeParameterTable(ExitGames.Client.Photon.StreamBuffer)
 extern TypeInfo* Dictionary_2_t3871407537_il2cpp_TypeInfo_var;
 extern const MethodInfo* Dictionary_2__ctor_m124985283_MethodInfo_var;
-extern const uint32_t Protocol16_DeserializeParameterTable_m1932292488_MetadataUsageId;
-extern "C"  Dictionary_2_t3871407537 * Protocol16_DeserializeParameterTable_m1932292488 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___memoryStream, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeParameterTable_m2877440952_MetadataUsageId;
+extern "C"  Dictionary_2_t3871407537 * Protocol16_DeserializeParameterTable_m2877440952 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___stream, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeParameterTable_m1932292488_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeParameterTable_m2877440952_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	int16_t V_0 = 0;
@@ -19144,8 +19358,8 @@ extern "C"  Dictionary_2_t3871407537 * Protocol16_DeserializeParameterTable_m193
 	bool V_5 = false;
 	Dictionary_2_t3871407537 * V_6 = NULL;
 	{
-		MemoryStream_t2881531048 * L_0 = ___memoryStream;
-		int16_t L_1 = VirtFuncInvoker1< int16_t, MemoryStream_t2881531048 * >::Invoke(18 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(System.IO.MemoryStream) */, __this, L_0);
+		StreamBuffer_t433541692 * L_0 = ___stream;
+		int16_t L_1 = VirtFuncInvoker1< int16_t, StreamBuffer_t433541692 * >::Invoke(12 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(ExitGames.Client.Photon.StreamBuffer) */, __this, L_0);
 		V_0 = L_1;
 		int16_t L_2 = V_0;
 		Dictionary_2_t3871407537 * L_3 = (Dictionary_2_t3871407537 *)il2cpp_codegen_object_new(Dictionary_2_t3871407537_il2cpp_TypeInfo_var);
@@ -19157,15 +19371,15 @@ extern "C"  Dictionary_2_t3871407537 * Protocol16_DeserializeParameterTable_m193
 
 IL_0015:
 	{
-		MemoryStream_t2881531048 * L_4 = ___memoryStream;
+		StreamBuffer_t433541692 * L_4 = ___stream;
 		NullCheck(L_4);
 		int32_t L_5 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_4);
 		V_3 = (((int32_t)((uint8_t)L_5)));
-		MemoryStream_t2881531048 * L_6 = ___memoryStream;
-		MemoryStream_t2881531048 * L_7 = ___memoryStream;
+		StreamBuffer_t433541692 * L_6 = ___stream;
+		StreamBuffer_t433541692 * L_7 = ___stream;
 		NullCheck(L_7);
 		int32_t L_8 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_7);
-		Il2CppObject * L_9 = VirtFuncInvoker2< Il2CppObject *, MemoryStream_t2881531048 *, uint8_t >::Invoke(14 /* System.Object ExitGames.Client.IProtocol::Deserialize(System.IO.MemoryStream,System.Byte) */, __this, L_6, (((int32_t)((uint8_t)L_8))));
+		Il2CppObject * L_9 = VirtFuncInvoker2< Il2CppObject *, StreamBuffer_t433541692 *, uint8_t >::Invoke(11 /* System.Object ExitGames.Client.IProtocol::Deserialize(ExitGames.Client.Photon.StreamBuffer,System.Byte) */, __this, L_6, (((int32_t)((uint8_t)L_8))));
 		V_2 = L_9;
 		Dictionary_2_t3871407537 * L_10 = V_1;
 		uint8_t L_11 = V_3;
@@ -19199,7 +19413,7 @@ IL_004d:
 		return L_18;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::Serialize(System.IO.MemoryStream,System.Object,System.Boolean)
+// System.Void ExitGames.Client.Photon.Protocol16::Serialize(ExitGames.Client.Photon.StreamBuffer,System.Object,System.Boolean)
 extern const Il2CppType* Il2CppObject_0_0_0_var;
 extern TypeInfo* Byte_t2778693821_il2cpp_TypeInfo_var;
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
@@ -19221,13 +19435,13 @@ extern TypeInfo* OperationResponse_t2644772068_il2cpp_TypeInfo_var;
 extern TypeInfo* OperationRequest_t3861919108_il2cpp_TypeInfo_var;
 extern TypeInfo* Exception_t1967233988_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral2571883114;
-extern const uint32_t Protocol16_Serialize_m3669576982_MetadataUsageId;
-extern "C"  void Protocol16_Serialize_m3669576982 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___dout, Il2CppObject * ___serObject, bool ___setType, const MethodInfo* method)
+extern const uint32_t Protocol16_Serialize_m285084326_MetadataUsageId;
+extern "C"  void Protocol16_Serialize_m285084326 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___dout, Il2CppObject * ___serObject, bool ___setType, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_Serialize_m3669576982_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_Serialize_m285084326_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	uint8_t V_0 = 0;
@@ -19256,7 +19470,7 @@ extern "C"  void Protocol16_Serialize_m3669576982 (Protocol16_t2781018393 * __th
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_4 = ___dout;
+		StreamBuffer_t433541692 * L_4 = ___dout;
 		NullCheck(L_4);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_4, ((int32_t)42));
 	}
@@ -19391,91 +19605,91 @@ IL_0038:
 
 IL_00a6:
 	{
-		MemoryStream_t2881531048 * L_11 = ___dout;
+		StreamBuffer_t433541692 * L_11 = ___dout;
 		Il2CppObject * L_12 = ___serObject;
 		bool L_13 = ___setType;
-		Protocol16_SerializeByte_m2147987575(__this, L_11, ((*(uint8_t*)((uint8_t*)UnBox (L_12, Byte_t2778693821_il2cpp_TypeInfo_var)))), L_13, /*hidden argument*/NULL);
+		Protocol16_SerializeByte_m1526118407(__this, L_11, ((*(uint8_t*)((uint8_t*)UnBox (L_12, Byte_t2778693821_il2cpp_TypeInfo_var)))), L_13, /*hidden argument*/NULL);
 		goto IL_0241;
 	}
 
 IL_00ba:
 	{
-		MemoryStream_t2881531048 * L_14 = ___dout;
+		StreamBuffer_t433541692 * L_14 = ___dout;
 		Il2CppObject * L_15 = ___serObject;
 		bool L_16 = ___setType;
-		VirtActionInvoker3< MemoryStream_t2881531048 *, String_t*, bool >::Invoke(10 /* System.Void ExitGames.Client.IProtocol::SerializeString(System.IO.MemoryStream,System.String,System.Boolean) */, __this, L_14, ((String_t*)CastclassSealed(L_15, String_t_il2cpp_TypeInfo_var)), L_16);
+		VirtActionInvoker3< StreamBuffer_t433541692 *, String_t*, bool >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::SerializeString(ExitGames.Client.Photon.StreamBuffer,System.String,System.Boolean) */, __this, L_14, ((String_t*)CastclassSealed(L_15, String_t_il2cpp_TypeInfo_var)), L_16);
 		goto IL_0241;
 	}
 
 IL_00ce:
 	{
-		MemoryStream_t2881531048 * L_17 = ___dout;
+		StreamBuffer_t433541692 * L_17 = ___dout;
 		Il2CppObject * L_18 = ___serObject;
 		bool L_19 = ___setType;
-		Protocol16_SerializeBoolean_m232552221(__this, L_17, ((*(bool*)((bool*)UnBox (L_18, Boolean_t211005341_il2cpp_TypeInfo_var)))), L_19, /*hidden argument*/NULL);
+		Protocol16_SerializeBoolean_m2013697165(__this, L_17, ((*(bool*)((bool*)UnBox (L_18, Boolean_t211005341_il2cpp_TypeInfo_var)))), L_19, /*hidden argument*/NULL);
 		goto IL_0241;
 	}
 
 IL_00e2:
 	{
-		MemoryStream_t2881531048 * L_20 = ___dout;
+		StreamBuffer_t433541692 * L_20 = ___dout;
 		Il2CppObject * L_21 = ___serObject;
 		bool L_22 = ___setType;
-		VirtActionInvoker3< MemoryStream_t2881531048 *, int16_t, bool >::Invoke(9 /* System.Void ExitGames.Client.IProtocol::SerializeShort(System.IO.MemoryStream,System.Int16,System.Boolean) */, __this, L_20, ((*(int16_t*)((int16_t*)UnBox (L_21, Int16_t2847414729_il2cpp_TypeInfo_var)))), L_22);
+		VirtActionInvoker3< StreamBuffer_t433541692 *, int16_t, bool >::Invoke(6 /* System.Void ExitGames.Client.IProtocol::SerializeShort(ExitGames.Client.Photon.StreamBuffer,System.Int16,System.Boolean) */, __this, L_20, ((*(int16_t*)((int16_t*)UnBox (L_21, Int16_t2847414729_il2cpp_TypeInfo_var)))), L_22);
 		goto IL_0241;
 	}
 
 IL_00f6:
 	{
-		MemoryStream_t2881531048 * L_23 = ___dout;
+		StreamBuffer_t433541692 * L_23 = ___dout;
 		Il2CppObject * L_24 = ___serObject;
 		bool L_25 = ___setType;
-		Protocol16_SerializeInteger_m4179521497(__this, L_23, ((*(int32_t*)((int32_t*)UnBox (L_24, Int32_t2847414787_il2cpp_TypeInfo_var)))), L_25, /*hidden argument*/NULL);
+		Protocol16_SerializeInteger_m2646461129(__this, L_23, ((*(int32_t*)((int32_t*)UnBox (L_24, Int32_t2847414787_il2cpp_TypeInfo_var)))), L_25, /*hidden argument*/NULL);
 		goto IL_0241;
 	}
 
 IL_010a:
 	{
-		MemoryStream_t2881531048 * L_26 = ___dout;
+		StreamBuffer_t433541692 * L_26 = ___dout;
 		Il2CppObject * L_27 = ___serObject;
 		bool L_28 = ___setType;
-		Protocol16_SerializeLong_m19134650(__this, L_26, ((*(int64_t*)((int64_t*)UnBox (L_27, Int64_t2847414882_il2cpp_TypeInfo_var)))), L_28, /*hidden argument*/NULL);
+		Protocol16_SerializeLong_m1878313002(__this, L_26, ((*(int64_t*)((int64_t*)UnBox (L_27, Int64_t2847414882_il2cpp_TypeInfo_var)))), L_28, /*hidden argument*/NULL);
 		goto IL_0241;
 	}
 
 IL_011e:
 	{
-		MemoryStream_t2881531048 * L_29 = ___dout;
+		StreamBuffer_t433541692 * L_29 = ___dout;
 		Il2CppObject * L_30 = ___serObject;
 		bool L_31 = ___setType;
-		Protocol16_SerializeFloat_m482816103(__this, L_29, ((*(float*)((float*)UnBox (L_30, Single_t958209021_il2cpp_TypeInfo_var)))), L_31, /*hidden argument*/NULL);
+		Protocol16_SerializeFloat_m4028026871(__this, L_29, ((*(float*)((float*)UnBox (L_30, Single_t958209021_il2cpp_TypeInfo_var)))), L_31, /*hidden argument*/NULL);
 		goto IL_0241;
 	}
 
 IL_0132:
 	{
-		MemoryStream_t2881531048 * L_32 = ___dout;
+		StreamBuffer_t433541692 * L_32 = ___dout;
 		Il2CppObject * L_33 = ___serObject;
 		bool L_34 = ___setType;
-		Protocol16_SerializeDouble_m3957084119(__this, L_32, ((*(double*)((double*)UnBox (L_33, Double_t534516614_il2cpp_TypeInfo_var)))), L_34, /*hidden argument*/NULL);
+		Protocol16_SerializeDouble_m51973927(__this, L_32, ((*(double*)((double*)UnBox (L_33, Double_t534516614_il2cpp_TypeInfo_var)))), L_34, /*hidden argument*/NULL);
 		goto IL_0241;
 	}
 
 IL_0146:
 	{
-		MemoryStream_t2881531048 * L_35 = ___dout;
+		StreamBuffer_t433541692 * L_35 = ___dout;
 		Il2CppObject * L_36 = ___serObject;
 		bool L_37 = ___setType;
-		Protocol16_SerializeHashTable_m805623138(__this, L_35, ((Hashtable_t223732124 *)CastclassClass(L_36, Hashtable_t223732124_il2cpp_TypeInfo_var)), L_37, /*hidden argument*/NULL);
+		Protocol16_SerializeHashTable_m2190017522(__this, L_35, ((Hashtable_t223732124 *)CastclassClass(L_36, Hashtable_t223732124_il2cpp_TypeInfo_var)), L_37, /*hidden argument*/NULL);
 		goto IL_0241;
 	}
 
 IL_015a:
 	{
-		MemoryStream_t2881531048 * L_38 = ___dout;
+		StreamBuffer_t433541692 * L_38 = ___dout;
 		Il2CppObject * L_39 = ___serObject;
 		bool L_40 = ___setType;
-		Protocol16_SerializeByteArray_m2131196116(__this, L_38, ((ByteU5BU5D_t58506160*)Castclass(L_39, ByteU5BU5D_t58506160_il2cpp_TypeInfo_var)), L_40, /*hidden argument*/NULL);
+		Protocol16_SerializeByteArray_m4275878180(__this, L_38, ((ByteU5BU5D_t58506160*)Castclass(L_39, ByteU5BU5D_t58506160_il2cpp_TypeInfo_var)), L_40, /*hidden argument*/NULL);
 		goto IL_0241;
 	}
 
@@ -19490,10 +19704,10 @@ IL_016e:
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_43 = ___dout;
+		StreamBuffer_t433541692 * L_43 = ___dout;
 		Il2CppObject * L_44 = ___serObject;
 		bool L_45 = ___setType;
-		Protocol16_SerializeIntArrayOptimized_m1730662042(__this, L_43, ((Int32U5BU5D_t1809983122*)Castclass(L_44, Int32U5BU5D_t1809983122_il2cpp_TypeInfo_var)), L_45, /*hidden argument*/NULL);
+		Protocol16_SerializeIntArrayOptimized_m193342282(__this, L_43, ((Int32U5BU5D_t1809983122*)Castclass(L_44, Int32U5BU5D_t1809983122_il2cpp_TypeInfo_var)), L_45, /*hidden argument*/NULL);
 		goto IL_01d1;
 	}
 
@@ -19514,19 +19728,19 @@ IL_0190:
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_51 = ___dout;
+		StreamBuffer_t433541692 * L_51 = ___dout;
 		Il2CppObject * L_52 = ___serObject;
 		bool L_53 = ___setType;
-		Protocol16_SerializeObjectArray_m1478699778(__this, L_51, ((ObjectU5BU5D_t11523773*)IsInst(L_52, ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var)), L_53, /*hidden argument*/NULL);
+		Protocol16_SerializeObjectArray_m3725110034(__this, L_51, ((ObjectU5BU5D_t11523773*)IsInst(L_52, ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var)), L_53, /*hidden argument*/NULL);
 		goto IL_01d1;
 	}
 
 IL_01c0:
 	{
-		MemoryStream_t2881531048 * L_54 = ___dout;
+		StreamBuffer_t433541692 * L_54 = ___dout;
 		Il2CppObject * L_55 = ___serObject;
 		bool L_56 = ___setType;
-		Protocol16_SerializeArray_m1498623679(__this, L_54, ((Il2CppArray *)CastclassClass(L_55, Il2CppArray_il2cpp_TypeInfo_var)), L_56, /*hidden argument*/NULL);
+		Protocol16_SerializeArray_m1869151855(__this, L_54, ((Il2CppArray *)CastclassClass(L_55, Il2CppArray_il2cpp_TypeInfo_var)), L_56, /*hidden argument*/NULL);
 	}
 
 IL_01d1:
@@ -19536,45 +19750,45 @@ IL_01d1:
 
 IL_01d3:
 	{
-		MemoryStream_t2881531048 * L_57 = ___dout;
+		StreamBuffer_t433541692 * L_57 = ___dout;
 		Il2CppObject * L_58 = ___serObject;
 		bool L_59 = ___setType;
-		Protocol16_SerializeDictionary_m324793229(__this, L_57, ((Il2CppObject *)Castclass(L_58, IDictionary_t1654916945_il2cpp_TypeInfo_var)), L_59, /*hidden argument*/NULL);
+		Protocol16_SerializeDictionary_m2547110269(__this, L_57, ((Il2CppObject *)Castclass(L_58, IDictionary_t1654916945_il2cpp_TypeInfo_var)), L_59, /*hidden argument*/NULL);
 		goto IL_0241;
 	}
 
 IL_01e4:
 	{
-		MemoryStream_t2881531048 * L_60 = ___dout;
+		StreamBuffer_t433541692 * L_60 = ___dout;
 		Il2CppObject * L_61 = ___serObject;
 		bool L_62 = ___setType;
-		VirtActionInvoker3< MemoryStream_t2881531048 *, EventData_t4221167488 *, bool >::Invoke(11 /* System.Void ExitGames.Client.IProtocol::SerializeEventData(System.IO.MemoryStream,ExitGames.Client.Photon.EventData,System.Boolean) */, __this, L_60, ((EventData_t4221167488 *)CastclassClass(L_61, EventData_t4221167488_il2cpp_TypeInfo_var)), L_62);
+		VirtActionInvoker3< StreamBuffer_t433541692 *, EventData_t4221167488 *, bool >::Invoke(8 /* System.Void ExitGames.Client.IProtocol::SerializeEventData(ExitGames.Client.Photon.StreamBuffer,ExitGames.Client.Photon.EventData,System.Boolean) */, __this, L_60, ((EventData_t4221167488 *)CastclassClass(L_61, EventData_t4221167488_il2cpp_TypeInfo_var)), L_62);
 		goto IL_0241;
 	}
 
 IL_01f5:
 	{
-		MemoryStream_t2881531048 * L_63 = ___dout;
+		StreamBuffer_t433541692 * L_63 = ___dout;
 		Il2CppObject * L_64 = ___serObject;
 		bool L_65 = ___setType;
-		VirtActionInvoker3< MemoryStream_t2881531048 *, OperationResponse_t2644772068 *, bool >::Invoke(13 /* System.Void ExitGames.Client.IProtocol::SerializeOperationResponse(System.IO.MemoryStream,ExitGames.Client.Photon.OperationResponse,System.Boolean) */, __this, L_63, ((OperationResponse_t2644772068 *)CastclassClass(L_64, OperationResponse_t2644772068_il2cpp_TypeInfo_var)), L_65);
+		VirtActionInvoker3< StreamBuffer_t433541692 *, OperationResponse_t2644772068 *, bool >::Invoke(10 /* System.Void ExitGames.Client.IProtocol::SerializeOperationResponse(ExitGames.Client.Photon.StreamBuffer,ExitGames.Client.Photon.OperationResponse,System.Boolean) */, __this, L_63, ((OperationResponse_t2644772068 *)CastclassClass(L_64, OperationResponse_t2644772068_il2cpp_TypeInfo_var)), L_65);
 		goto IL_0241;
 	}
 
 IL_0206:
 	{
-		MemoryStream_t2881531048 * L_66 = ___dout;
+		StreamBuffer_t433541692 * L_66 = ___dout;
 		Il2CppObject * L_67 = ___serObject;
 		bool L_68 = ___setType;
-		Protocol16_SerializeOperationRequest_m3894482042(__this, L_66, ((OperationRequest_t3861919108 *)CastclassClass(L_67, OperationRequest_t3861919108_il2cpp_TypeInfo_var)), L_68, /*hidden argument*/NULL);
+		Protocol16_SerializeOperationRequest_m2069561066(__this, L_66, ((OperationRequest_t3861919108 *)CastclassClass(L_67, OperationRequest_t3861919108_il2cpp_TypeInfo_var)), L_68, /*hidden argument*/NULL);
 		goto IL_0241;
 	}
 
 IL_0217:
 	{
-		MemoryStream_t2881531048 * L_69 = ___dout;
+		StreamBuffer_t433541692 * L_69 = ___dout;
 		Il2CppObject * L_70 = ___serObject;
-		bool L_71 = Protocol16_SerializeCustom_m924802690(__this, L_69, L_70, /*hidden argument*/NULL);
+		bool L_71 = Protocol16_SerializeCustom_m1972625330(__this, L_69, L_70, /*hidden argument*/NULL);
 		V_6 = (bool)((((int32_t)L_71) == ((int32_t)0))? 1 : 0);
 		bool L_72 = V_6;
 		if (!L_72)
@@ -19603,8 +19817,8 @@ IL_0241:
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeByte(System.IO.MemoryStream,System.Byte,System.Boolean)
-extern "C"  void Protocol16_SerializeByte_m2147987575 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___dout, uint8_t ___serObject, bool ___setType, const MethodInfo* method)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeByte(ExitGames.Client.Photon.StreamBuffer,System.Byte,System.Boolean)
+extern "C"  void Protocol16_SerializeByte_m1526118407 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___dout, uint8_t ___serObject, bool ___setType, const MethodInfo* method)
 {
 	bool V_0 = false;
 	{
@@ -19617,28 +19831,28 @@ extern "C"  void Protocol16_SerializeByte_m2147987575 (Protocol16_t2781018393 * 
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_2 = ___dout;
+		StreamBuffer_t433541692 * L_2 = ___dout;
 		NullCheck(L_2);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, ((int32_t)98));
 	}
 
 IL_0011:
 	{
-		MemoryStream_t2881531048 * L_3 = ___dout;
+		StreamBuffer_t433541692 * L_3 = ___dout;
 		uint8_t L_4 = ___serObject;
 		NullCheck(L_3);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_3, L_4);
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeBoolean(System.IO.MemoryStream,System.Boolean,System.Boolean)
-extern "C"  void Protocol16_SerializeBoolean_m232552221 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___dout, bool ___serObject, bool ___setType, const MethodInfo* method)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeBoolean(ExitGames.Client.Photon.StreamBuffer,System.Boolean,System.Boolean)
+extern "C"  void Protocol16_SerializeBoolean_m2013697165 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___dout, bool ___serObject, bool ___setType, const MethodInfo* method)
 {
 	bool V_0 = false;
-	MemoryStream_t2881531048 * G_B4_0 = NULL;
-	MemoryStream_t2881531048 * G_B3_0 = NULL;
+	StreamBuffer_t433541692 * G_B4_0 = NULL;
+	StreamBuffer_t433541692 * G_B3_0 = NULL;
 	int32_t G_B5_0 = 0;
-	MemoryStream_t2881531048 * G_B5_1 = NULL;
+	StreamBuffer_t433541692 * G_B5_1 = NULL;
 	{
 		bool L_0 = ___setType;
 		V_0 = L_0;
@@ -19649,14 +19863,14 @@ extern "C"  void Protocol16_SerializeBoolean_m232552221 (Protocol16_t2781018393 
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_2 = ___dout;
+		StreamBuffer_t433541692 * L_2 = ___dout;
 		NullCheck(L_2);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, ((int32_t)111));
 	}
 
 IL_0011:
 	{
-		MemoryStream_t2881531048 * L_3 = ___dout;
+		StreamBuffer_t433541692 * L_3 = ___dout;
 		bool L_4 = ___serObject;
 		G_B3_0 = L_3;
 		if (L_4)
@@ -19684,8 +19898,8 @@ IL_0019:
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeShort(System.IO.MemoryStream,System.Int16,System.Boolean)
-extern "C"  void Protocol16_SerializeShort_m3641908061 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___dout, int16_t ___serObject, bool ___setType, const MethodInfo* method)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeShort(ExitGames.Client.Photon.StreamBuffer,System.Int16,System.Boolean)
+extern "C"  void Protocol16_SerializeShort_m3725529549 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___dout, int16_t ___serObject, bool ___setType, const MethodInfo* method)
 {
 	bool V_0 = false;
 	ByteU5BU5D_t58506160* V_1 = NULL;
@@ -19706,7 +19920,7 @@ extern "C"  void Protocol16_SerializeShort_m3641908061 (Protocol16_t2781018393 *
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_2 = ___dout;
+		StreamBuffer_t433541692 * L_2 = ___dout;
 		NullCheck(L_2);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, ((int32_t)107));
 	}
@@ -19734,7 +19948,7 @@ IL_001f:
 		NullCheck(L_8);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_8, 1);
 		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(1), (uint8_t)(((int32_t)((uint8_t)L_9))));
-		MemoryStream_t2881531048 * L_10 = ___dout;
+		StreamBuffer_t433541692 * L_10 = ___dout;
 		ByteU5BU5D_t58506160* L_11 = V_2;
 		NullCheck(L_10);
 		VirtActionInvoker3< ByteU5BU5D_t58506160*, int32_t, int32_t >::Invoke(18 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_10, L_11, 0, 2);
@@ -19763,38 +19977,8 @@ IL_0048:
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::Serialize(System.Int16,System.Byte[],System.Int32&)
-extern "C"  void Protocol16_Serialize_m474547014 (Protocol16_t2781018393 * __this, int16_t ___value, ByteU5BU5D_t58506160* ___target, int32_t* ___targetOffset, const MethodInfo* method)
-{
-	int32_t V_0 = 0;
-	{
-		ByteU5BU5D_t58506160* L_0 = ___target;
-		int32_t* L_1 = ___targetOffset;
-		int32_t* L_2 = ___targetOffset;
-		V_0 = (*((int32_t*)L_2));
-		int32_t L_3 = V_0;
-		*((int32_t*)(L_1)) = (int32_t)((int32_t)((int32_t)L_3+(int32_t)1));
-		int32_t L_4 = V_0;
-		int16_t L_5 = ___value;
-		NullCheck(L_0);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, L_4);
-		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(L_4), (uint8_t)(((int32_t)((uint8_t)((int32_t)((int32_t)L_5>>(int32_t)8))))));
-		ByteU5BU5D_t58506160* L_6 = ___target;
-		int32_t* L_7 = ___targetOffset;
-		int32_t* L_8 = ___targetOffset;
-		V_0 = (*((int32_t*)L_8));
-		int32_t L_9 = V_0;
-		*((int32_t*)(L_7)) = (int32_t)((int32_t)((int32_t)L_9+(int32_t)1));
-		int32_t L_10 = V_0;
-		int16_t L_11 = ___value;
-		NullCheck(L_6);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, L_10);
-		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_10), (uint8_t)(((int32_t)((uint8_t)L_11))));
-		return;
-	}
-}
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeInteger(System.IO.MemoryStream,System.Int32,System.Boolean)
-extern "C"  void Protocol16_SerializeInteger_m4179521497 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___dout, int32_t ___serObject, bool ___setType, const MethodInfo* method)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeInteger(ExitGames.Client.Photon.StreamBuffer,System.Int32,System.Boolean)
+extern "C"  void Protocol16_SerializeInteger_m2646461129 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___dout, int32_t ___serObject, bool ___setType, const MethodInfo* method)
 {
 	bool V_0 = false;
 	ByteU5BU5D_t58506160* V_1 = NULL;
@@ -19815,7 +19999,7 @@ extern "C"  void Protocol16_SerializeInteger_m4179521497 (Protocol16_t2781018393
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_2 = ___dout;
+		StreamBuffer_t433541692 * L_2 = ___dout;
 		NullCheck(L_2);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, ((int32_t)105));
 	}
@@ -19853,7 +20037,7 @@ IL_001f:
 		NullCheck(L_12);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_12, 3);
 		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(3), (uint8_t)(((int32_t)((uint8_t)L_13))));
-		MemoryStream_t2881531048 * L_14 = ___dout;
+		StreamBuffer_t433541692 * L_14 = ___dout;
 		ByteU5BU5D_t58506160* L_15 = V_2;
 		NullCheck(L_14);
 		VirtActionInvoker3< ByteU5BU5D_t58506160*, int32_t, int32_t >::Invoke(18 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_14, L_15, 0, 4);
@@ -19882,67 +20066,15 @@ IL_0058:
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::Serialize(System.Int32,System.Byte[],System.Int32&)
-extern "C"  void Protocol16_Serialize_m1130882380 (Protocol16_t2781018393 * __this, int32_t ___value, ByteU5BU5D_t58506160* ___target, int32_t* ___targetOffset, const MethodInfo* method)
-{
-	int32_t V_0 = 0;
-	{
-		ByteU5BU5D_t58506160* L_0 = ___target;
-		int32_t* L_1 = ___targetOffset;
-		int32_t* L_2 = ___targetOffset;
-		V_0 = (*((int32_t*)L_2));
-		int32_t L_3 = V_0;
-		*((int32_t*)(L_1)) = (int32_t)((int32_t)((int32_t)L_3+(int32_t)1));
-		int32_t L_4 = V_0;
-		int32_t L_5 = ___value;
-		NullCheck(L_0);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_0, L_4);
-		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(L_4), (uint8_t)(((int32_t)((uint8_t)((int32_t)((int32_t)L_5>>(int32_t)((int32_t)24)))))));
-		ByteU5BU5D_t58506160* L_6 = ___target;
-		int32_t* L_7 = ___targetOffset;
-		int32_t* L_8 = ___targetOffset;
-		V_0 = (*((int32_t*)L_8));
-		int32_t L_9 = V_0;
-		*((int32_t*)(L_7)) = (int32_t)((int32_t)((int32_t)L_9+(int32_t)1));
-		int32_t L_10 = V_0;
-		int32_t L_11 = ___value;
-		NullCheck(L_6);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, L_10);
-		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_10), (uint8_t)(((int32_t)((uint8_t)((int32_t)((int32_t)L_11>>(int32_t)((int32_t)16)))))));
-		ByteU5BU5D_t58506160* L_12 = ___target;
-		int32_t* L_13 = ___targetOffset;
-		int32_t* L_14 = ___targetOffset;
-		V_0 = (*((int32_t*)L_14));
-		int32_t L_15 = V_0;
-		*((int32_t*)(L_13)) = (int32_t)((int32_t)((int32_t)L_15+(int32_t)1));
-		int32_t L_16 = V_0;
-		int32_t L_17 = ___value;
-		NullCheck(L_12);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_12, L_16);
-		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(L_16), (uint8_t)(((int32_t)((uint8_t)((int32_t)((int32_t)L_17>>(int32_t)8))))));
-		ByteU5BU5D_t58506160* L_18 = ___target;
-		int32_t* L_19 = ___targetOffset;
-		int32_t* L_20 = ___targetOffset;
-		V_0 = (*((int32_t*)L_20));
-		int32_t L_21 = V_0;
-		*((int32_t*)(L_19)) = (int32_t)((int32_t)((int32_t)L_21+(int32_t)1));
-		int32_t L_22 = V_0;
-		int32_t L_23 = ___value;
-		NullCheck(L_18);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_18, L_22);
-		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(L_22), (uint8_t)(((int32_t)((uint8_t)L_23))));
-		return;
-	}
-}
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeLong(System.IO.MemoryStream,System.Int64,System.Boolean)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeLong(ExitGames.Client.Photon.StreamBuffer,System.Int64,System.Boolean)
 extern TypeInfo* BitConverter_t3338308296_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_SerializeLong_m19134650_MetadataUsageId;
-extern "C"  void Protocol16_SerializeLong_m19134650 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___dout, int64_t ___serObject, bool ___setType, const MethodInfo* method)
+extern const uint32_t Protocol16_SerializeLong_m1878313002_MetadataUsageId;
+extern "C"  void Protocol16_SerializeLong_m1878313002 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___dout, int64_t ___serObject, bool ___setType, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_SerializeLong_m19134650_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_SerializeLong_m1878313002_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	bool V_0 = false;
@@ -19969,7 +20101,7 @@ extern "C"  void Protocol16_SerializeLong_m19134650 (Protocol16_t2781018393 * __
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_2 = ___dout;
+		StreamBuffer_t433541692 * L_2 = ___dout;
 		NullCheck(L_2);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, ((int32_t)108));
 	}
@@ -20084,7 +20216,7 @@ IL_004e:
 
 IL_0090:
 		{
-			MemoryStream_t2881531048 * L_40 = ___dout;
+			StreamBuffer_t433541692 * L_40 = ___dout;
 			ByteU5BU5D_t58506160* L_41 = V_2;
 			NullCheck(L_40);
 			VirtActionInvoker3< ByteU5BU5D_t58506160*, int32_t, int32_t >::Invoke(18 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_40, L_41, 0, 8);
@@ -20114,15 +20246,16 @@ IL_00a5:
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeFloat(System.IO.MemoryStream,System.Single,System.Boolean)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeFloat(ExitGames.Client.Photon.StreamBuffer,System.Single,System.Boolean)
+extern TypeInfo* Protocol16_t2781018393_il2cpp_TypeInfo_var;
 extern TypeInfo* BitConverter_t3338308296_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_SerializeFloat_m482816103_MetadataUsageId;
-extern "C"  void Protocol16_SerializeFloat_m482816103 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___dout, float ___serObject, bool ___setType, const MethodInfo* method)
+extern const uint32_t Protocol16_SerializeFloat_m4028026871_MetadataUsageId;
+extern "C"  void Protocol16_SerializeFloat_m4028026871 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___dout, float ___serObject, bool ___setType, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_SerializeFloat_m482816103_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_SerializeFloat_m4028026871_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	bool V_0 = false;
@@ -20146,30 +20279,32 @@ extern "C"  void Protocol16_SerializeFloat_m482816103 (Protocol16_t2781018393 * 
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_2 = ___dout;
+		StreamBuffer_t433541692 * L_2 = ___dout;
 		NullCheck(L_2);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, ((int32_t)102));
 	}
 
 IL_0011:
 	{
-		ByteU5BU5D_t58506160* L_3 = __this->get_memFloatBlockBytes_5();
+		IL2CPP_RUNTIME_CLASS_INIT(Protocol16_t2781018393_il2cpp_TypeInfo_var);
+		ByteU5BU5D_t58506160* L_3 = ((Protocol16_t2781018393_StaticFields*)Protocol16_t2781018393_il2cpp_TypeInfo_var->static_fields)->get_memFloatBlockBytes_5();
 		V_1 = L_3;
 		ByteU5BU5D_t58506160* L_4 = V_1;
 		Monitor_Enter_m476686225(NULL /*static, unused*/, (Il2CppObject *)(Il2CppObject *)L_4, /*hidden argument*/NULL);
 	}
 
-IL_001f:
+IL_001e:
 	try
 	{ // begin try (depth: 1)
 		{
-			SingleU5BU5D_t1219431280* L_5 = __this->get_memFloatBlock_4();
+			IL2CPP_RUNTIME_CLASS_INIT(Protocol16_t2781018393_il2cpp_TypeInfo_var);
+			SingleU5BU5D_t1219431280* L_5 = ((Protocol16_t2781018393_StaticFields*)Protocol16_t2781018393_il2cpp_TypeInfo_var->static_fields)->get_memFloatBlock_4();
 			float L_6 = ___serObject;
 			NullCheck(L_5);
 			IL2CPP_ARRAY_BOUNDS_CHECK(L_5, 0);
 			(L_5)->SetAt(static_cast<il2cpp_array_size_t>(0), (float)L_6);
-			SingleU5BU5D_t1219431280* L_7 = __this->get_memFloatBlock_4();
-			ByteU5BU5D_t58506160* L_8 = __this->get_memFloatBlockBytes_5();
+			SingleU5BU5D_t1219431280* L_7 = ((Protocol16_t2781018393_StaticFields*)Protocol16_t2781018393_il2cpp_TypeInfo_var->static_fields)->get_memFloatBlock_4();
+			ByteU5BU5D_t58506160* L_8 = ((Protocol16_t2781018393_StaticFields*)Protocol16_t2781018393_il2cpp_TypeInfo_var->static_fields)->get_memFloatBlockBytes_5();
 			Buffer_BlockCopy_m1580643184(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_7, 0, (Il2CppArray *)(Il2CppArray *)L_8, 0, 4, /*hidden argument*/NULL);
 			IL2CPP_RUNTIME_CLASS_INIT(BitConverter_t3338308296_il2cpp_TypeInfo_var);
 			bool L_9 = ((BitConverter_t3338308296_StaticFields*)BitConverter_t3338308296_il2cpp_TypeInfo_var->static_fields)->get_IsLittleEndian_1();
@@ -20177,217 +20312,93 @@ IL_001f:
 			bool L_10 = V_2;
 			if (!L_10)
 			{
-				goto IL_008f;
+				goto IL_0083;
 			}
 		}
 
-IL_0047:
+IL_0043:
 		{
-			ByteU5BU5D_t58506160* L_11 = __this->get_memFloatBlockBytes_5();
+			IL2CPP_RUNTIME_CLASS_INIT(Protocol16_t2781018393_il2cpp_TypeInfo_var);
+			ByteU5BU5D_t58506160* L_11 = ((Protocol16_t2781018393_StaticFields*)Protocol16_t2781018393_il2cpp_TypeInfo_var->static_fields)->get_memFloatBlockBytes_5();
 			NullCheck(L_11);
 			IL2CPP_ARRAY_BOUNDS_CHECK(L_11, 0);
 			int32_t L_12 = 0;
 			V_3 = ((L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_12)));
-			ByteU5BU5D_t58506160* L_13 = __this->get_memFloatBlockBytes_5();
+			ByteU5BU5D_t58506160* L_13 = ((Protocol16_t2781018393_StaticFields*)Protocol16_t2781018393_il2cpp_TypeInfo_var->static_fields)->get_memFloatBlockBytes_5();
 			NullCheck(L_13);
 			IL2CPP_ARRAY_BOUNDS_CHECK(L_13, 1);
 			int32_t L_14 = 1;
 			V_4 = ((L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_14)));
-			ByteU5BU5D_t58506160* L_15 = __this->get_memFloatBlockBytes_5();
-			ByteU5BU5D_t58506160* L_16 = __this->get_memFloatBlockBytes_5();
+			ByteU5BU5D_t58506160* L_15 = ((Protocol16_t2781018393_StaticFields*)Protocol16_t2781018393_il2cpp_TypeInfo_var->static_fields)->get_memFloatBlockBytes_5();
+			ByteU5BU5D_t58506160* L_16 = ((Protocol16_t2781018393_StaticFields*)Protocol16_t2781018393_il2cpp_TypeInfo_var->static_fields)->get_memFloatBlockBytes_5();
 			NullCheck(L_16);
 			IL2CPP_ARRAY_BOUNDS_CHECK(L_16, 3);
 			int32_t L_17 = 3;
 			NullCheck(L_15);
 			IL2CPP_ARRAY_BOUNDS_CHECK(L_15, 0);
 			(L_15)->SetAt(static_cast<il2cpp_array_size_t>(0), (uint8_t)((L_16)->GetAt(static_cast<il2cpp_array_size_t>(L_17))));
-			ByteU5BU5D_t58506160* L_18 = __this->get_memFloatBlockBytes_5();
-			ByteU5BU5D_t58506160* L_19 = __this->get_memFloatBlockBytes_5();
+			ByteU5BU5D_t58506160* L_18 = ((Protocol16_t2781018393_StaticFields*)Protocol16_t2781018393_il2cpp_TypeInfo_var->static_fields)->get_memFloatBlockBytes_5();
+			ByteU5BU5D_t58506160* L_19 = ((Protocol16_t2781018393_StaticFields*)Protocol16_t2781018393_il2cpp_TypeInfo_var->static_fields)->get_memFloatBlockBytes_5();
 			NullCheck(L_19);
 			IL2CPP_ARRAY_BOUNDS_CHECK(L_19, 2);
 			int32_t L_20 = 2;
 			NullCheck(L_18);
 			IL2CPP_ARRAY_BOUNDS_CHECK(L_18, 1);
 			(L_18)->SetAt(static_cast<il2cpp_array_size_t>(1), (uint8_t)((L_19)->GetAt(static_cast<il2cpp_array_size_t>(L_20))));
-			ByteU5BU5D_t58506160* L_21 = __this->get_memFloatBlockBytes_5();
+			ByteU5BU5D_t58506160* L_21 = ((Protocol16_t2781018393_StaticFields*)Protocol16_t2781018393_il2cpp_TypeInfo_var->static_fields)->get_memFloatBlockBytes_5();
 			uint8_t L_22 = V_4;
 			NullCheck(L_21);
 			IL2CPP_ARRAY_BOUNDS_CHECK(L_21, 2);
 			(L_21)->SetAt(static_cast<il2cpp_array_size_t>(2), (uint8_t)L_22);
-			ByteU5BU5D_t58506160* L_23 = __this->get_memFloatBlockBytes_5();
+			ByteU5BU5D_t58506160* L_23 = ((Protocol16_t2781018393_StaticFields*)Protocol16_t2781018393_il2cpp_TypeInfo_var->static_fields)->get_memFloatBlockBytes_5();
 			uint8_t L_24 = V_3;
 			NullCheck(L_23);
 			IL2CPP_ARRAY_BOUNDS_CHECK(L_23, 3);
 			(L_23)->SetAt(static_cast<il2cpp_array_size_t>(3), (uint8_t)L_24);
 		}
 
-IL_008f:
+IL_0083:
 		{
-			MemoryStream_t2881531048 * L_25 = ___dout;
-			ByteU5BU5D_t58506160* L_26 = __this->get_memFloatBlockBytes_5();
+			StreamBuffer_t433541692 * L_25 = ___dout;
+			IL2CPP_RUNTIME_CLASS_INIT(Protocol16_t2781018393_il2cpp_TypeInfo_var);
+			ByteU5BU5D_t58506160* L_26 = ((Protocol16_t2781018393_StaticFields*)Protocol16_t2781018393_il2cpp_TypeInfo_var->static_fields)->get_memFloatBlockBytes_5();
 			NullCheck(L_25);
 			VirtActionInvoker3< ByteU5BU5D_t58506160*, int32_t, int32_t >::Invoke(18 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_25, L_26, 0, 4);
-			IL2CPP_LEAVE(0xA9, FINALLY_00a1);
+			IL2CPP_LEAVE(0x9C, FINALLY_0094);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t1967233988 *)e.ex;
-		goto FINALLY_00a1;
+		goto FINALLY_0094;
 	}
 
-FINALLY_00a1:
+FINALLY_0094:
 	{ // begin finally (depth: 1)
 		ByteU5BU5D_t58506160* L_27 = V_1;
 		Monitor_Exit_m2088237919(NULL /*static, unused*/, (Il2CppObject *)(Il2CppObject *)L_27, /*hidden argument*/NULL);
-		IL2CPP_END_FINALLY(161)
+		IL2CPP_END_FINALLY(148)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(161)
+	IL2CPP_CLEANUP(148)
 	{
-		IL2CPP_JUMP_TBL(0xA9, IL_00a9)
+		IL2CPP_JUMP_TBL(0x9C, IL_009c)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1967233988 *)
 	}
 
-IL_00a9:
+IL_009c:
 	{
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::Serialize(System.Single,System.Byte[],System.Int32&)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeDouble(ExitGames.Client.Photon.StreamBuffer,System.Double,System.Boolean)
 extern TypeInfo* BitConverter_t3338308296_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_Serialize_m3818751808_MetadataUsageId;
-extern "C"  void Protocol16_Serialize_m3818751808 (Protocol16_t2781018393 * __this, float ___value, ByteU5BU5D_t58506160* ___target, int32_t* ___targetOffset, const MethodInfo* method)
+extern const uint32_t Protocol16_SerializeDouble_m51973927_MetadataUsageId;
+extern "C"  void Protocol16_SerializeDouble_m51973927 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___dout, double ___serObject, bool ___setType, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_Serialize_m3818751808_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	SingleU5BU5D_t1219431280* V_0 = NULL;
-	bool V_1 = false;
-	uint8_t V_2 = 0x0;
-	uint8_t V_3 = 0x0;
-	Exception_t1967233988 * __last_unhandled_exception = 0;
-	NO_UNUSED_WARNING (__last_unhandled_exception);
-	Exception_t1967233988 * __exception_local = 0;
-	NO_UNUSED_WARNING (__exception_local);
-	int32_t __leave_target = 0;
-	NO_UNUSED_WARNING (__leave_target);
-	{
-		SingleU5BU5D_t1219431280* L_0 = __this->get_memFloatBlock_4();
-		V_0 = L_0;
-		SingleU5BU5D_t1219431280* L_1 = V_0;
-		Monitor_Enter_m476686225(NULL /*static, unused*/, (Il2CppObject *)(Il2CppObject *)L_1, /*hidden argument*/NULL);
-	}
-
-IL_000f:
-	try
-	{ // begin try (depth: 1)
-		SingleU5BU5D_t1219431280* L_2 = __this->get_memFloatBlock_4();
-		float L_3 = ___value;
-		NullCheck(L_2);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_2, 0);
-		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (float)L_3);
-		SingleU5BU5D_t1219431280* L_4 = __this->get_memFloatBlock_4();
-		ByteU5BU5D_t58506160* L_5 = ___target;
-		int32_t* L_6 = ___targetOffset;
-		Buffer_BlockCopy_m1580643184(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_4, 0, (Il2CppArray *)(Il2CppArray *)L_5, (*((int32_t*)L_6)), 4, /*hidden argument*/NULL);
-		IL2CPP_LEAVE(0x35, FINALLY_002d);
-	} // end try (depth: 1)
-	catch(Il2CppExceptionWrapper& e)
-	{
-		__last_unhandled_exception = (Exception_t1967233988 *)e.ex;
-		goto FINALLY_002d;
-	}
-
-FINALLY_002d:
-	{ // begin finally (depth: 1)
-		SingleU5BU5D_t1219431280* L_7 = V_0;
-		Monitor_Exit_m2088237919(NULL /*static, unused*/, (Il2CppObject *)(Il2CppObject *)L_7, /*hidden argument*/NULL);
-		IL2CPP_END_FINALLY(45)
-	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(45)
-	{
-		IL2CPP_JUMP_TBL(0x35, IL_0035)
-		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1967233988 *)
-	}
-
-IL_0035:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(BitConverter_t3338308296_il2cpp_TypeInfo_var);
-		bool L_8 = ((BitConverter_t3338308296_StaticFields*)BitConverter_t3338308296_il2cpp_TypeInfo_var->static_fields)->get_IsLittleEndian_1();
-		V_1 = L_8;
-		bool L_9 = V_1;
-		if (!L_9)
-		{
-			goto IL_0070;
-		}
-	}
-	{
-		ByteU5BU5D_t58506160* L_10 = ___target;
-		int32_t* L_11 = ___targetOffset;
-		NullCheck(L_10);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_10, (*((int32_t*)L_11)));
-		int32_t L_12 = (*((int32_t*)L_11));
-		V_2 = ((L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12)));
-		ByteU5BU5D_t58506160* L_13 = ___target;
-		int32_t* L_14 = ___targetOffset;
-		NullCheck(L_13);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_13, ((int32_t)((int32_t)(*((int32_t*)L_14))+(int32_t)1)));
-		int32_t L_15 = ((int32_t)((int32_t)(*((int32_t*)L_14))+(int32_t)1));
-		V_3 = ((L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_15)));
-		ByteU5BU5D_t58506160* L_16 = ___target;
-		int32_t* L_17 = ___targetOffset;
-		ByteU5BU5D_t58506160* L_18 = ___target;
-		int32_t* L_19 = ___targetOffset;
-		NullCheck(L_18);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_18, ((int32_t)((int32_t)(*((int32_t*)L_19))+(int32_t)3)));
-		int32_t L_20 = ((int32_t)((int32_t)(*((int32_t*)L_19))+(int32_t)3));
-		NullCheck(L_16);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_16, (*((int32_t*)L_17)));
-		(L_16)->SetAt(static_cast<il2cpp_array_size_t>((*((int32_t*)L_17))), (uint8_t)((L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_20))));
-		ByteU5BU5D_t58506160* L_21 = ___target;
-		int32_t* L_22 = ___targetOffset;
-		ByteU5BU5D_t58506160* L_23 = ___target;
-		int32_t* L_24 = ___targetOffset;
-		NullCheck(L_23);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_23, ((int32_t)((int32_t)(*((int32_t*)L_24))+(int32_t)2)));
-		int32_t L_25 = ((int32_t)((int32_t)(*((int32_t*)L_24))+(int32_t)2));
-		NullCheck(L_21);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_21, ((int32_t)((int32_t)(*((int32_t*)L_22))+(int32_t)1)));
-		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)((int32_t)(*((int32_t*)L_22))+(int32_t)1))), (uint8_t)((L_23)->GetAt(static_cast<il2cpp_array_size_t>(L_25))));
-		ByteU5BU5D_t58506160* L_26 = ___target;
-		int32_t* L_27 = ___targetOffset;
-		uint8_t L_28 = V_3;
-		NullCheck(L_26);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_26, ((int32_t)((int32_t)(*((int32_t*)L_27))+(int32_t)2)));
-		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)((int32_t)(*((int32_t*)L_27))+(int32_t)2))), (uint8_t)L_28);
-		ByteU5BU5D_t58506160* L_29 = ___target;
-		int32_t* L_30 = ___targetOffset;
-		uint8_t L_31 = V_2;
-		NullCheck(L_29);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_29, ((int32_t)((int32_t)(*((int32_t*)L_30))+(int32_t)3)));
-		(L_29)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)((int32_t)(*((int32_t*)L_30))+(int32_t)3))), (uint8_t)L_31);
-	}
-
-IL_0070:
-	{
-		int32_t* L_32 = ___targetOffset;
-		int32_t* L_33 = ___targetOffset;
-		*((int32_t*)(L_32)) = (int32_t)((int32_t)((int32_t)(*((int32_t*)L_33))+(int32_t)4));
-		return;
-	}
-}
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeDouble(System.IO.MemoryStream,System.Double,System.Boolean)
-extern TypeInfo* BitConverter_t3338308296_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_SerializeDouble_m3957084119_MetadataUsageId;
-extern "C"  void Protocol16_SerializeDouble_m3957084119 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___dout, double ___serObject, bool ___setType, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Protocol16_SerializeDouble_m3957084119_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_SerializeDouble_m51973927_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	bool V_0 = false;
@@ -20414,7 +20425,7 @@ extern "C"  void Protocol16_SerializeDouble_m3957084119 (Protocol16_t2781018393 
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_2 = ___dout;
+		StreamBuffer_t433541692 * L_2 = ___dout;
 		NullCheck(L_2);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, ((int32_t)100));
 	}
@@ -20529,7 +20540,7 @@ IL_004e:
 
 IL_0090:
 		{
-			MemoryStream_t2881531048 * L_40 = ___dout;
+			StreamBuffer_t433541692 * L_40 = ___dout;
 			ByteU5BU5D_t58506160* L_41 = V_2;
 			NullCheck(L_40);
 			VirtActionInvoker3< ByteU5BU5D_t58506160*, int32_t, int32_t >::Invoke(18 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_40, L_41, 0, 8);
@@ -20559,19 +20570,19 @@ IL_00a5:
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeString(System.IO.MemoryStream,System.String,System.Boolean)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeString(ExitGames.Client.Photon.StreamBuffer,System.String,System.Boolean)
 extern TypeInfo* Encoding_t180559927_il2cpp_TypeInfo_var;
 extern TypeInfo* Int32_t2847414787_il2cpp_TypeInfo_var;
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
 extern TypeInfo* NotSupportedException_t1374155497_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1015864982;
-extern const uint32_t Protocol16_SerializeString_m4191287255_MetadataUsageId;
-extern "C"  void Protocol16_SerializeString_m4191287255 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___dout, String_t* ___serObject, bool ___setType, const MethodInfo* method)
+extern const uint32_t Protocol16_SerializeString_m1819092775_MetadataUsageId;
+extern "C"  void Protocol16_SerializeString_m1819092775 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___dout, String_t* ___serObject, bool ___setType, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_SerializeString_m4191287255_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_SerializeString_m1819092775_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	ByteU5BU5D_t58506160* V_0 = NULL;
@@ -20587,7 +20598,7 @@ extern "C"  void Protocol16_SerializeString_m4191287255 (Protocol16_t2781018393 
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_2 = ___dout;
+		StreamBuffer_t433541692 * L_2 = ___dout;
 		NullCheck(L_2);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, ((int32_t)115));
 	}
@@ -20623,11 +20634,11 @@ IL_0011:
 
 IL_0044:
 	{
-		MemoryStream_t2881531048 * L_13 = ___dout;
+		StreamBuffer_t433541692 * L_13 = ___dout;
 		ByteU5BU5D_t58506160* L_14 = V_0;
 		NullCheck(L_14);
-		VirtActionInvoker3< MemoryStream_t2881531048 *, int16_t, bool >::Invoke(9 /* System.Void ExitGames.Client.IProtocol::SerializeShort(System.IO.MemoryStream,System.Int16,System.Boolean) */, __this, L_13, (((int16_t)((int16_t)(((int32_t)((int32_t)(((Il2CppArray *)L_14)->max_length))))))), (bool)0);
-		MemoryStream_t2881531048 * L_15 = ___dout;
+		VirtActionInvoker3< StreamBuffer_t433541692 *, int16_t, bool >::Invoke(6 /* System.Void ExitGames.Client.IProtocol::SerializeShort(ExitGames.Client.Photon.StreamBuffer,System.Int16,System.Boolean) */, __this, L_13, (((int16_t)((int16_t)(((int32_t)((int32_t)(((Il2CppArray *)L_14)->max_length))))))), (bool)0);
+		StreamBuffer_t433541692 * L_15 = ___dout;
 		ByteU5BU5D_t58506160* L_16 = V_0;
 		ByteU5BU5D_t58506160* L_17 = V_0;
 		NullCheck(L_17);
@@ -20636,7 +20647,7 @@ IL_0044:
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeArray(System.IO.MemoryStream,System.Array,System.Boolean)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeArray(ExitGames.Client.Photon.StreamBuffer,System.Array,System.Boolean)
 extern TypeInfo* Int32_t2847414787_il2cpp_TypeInfo_var;
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
 extern TypeInfo* NotSupportedException_t1374155497_il2cpp_TypeInfo_var;
@@ -20650,13 +20661,13 @@ extern Il2CppCodeGenString* _stringLiteral1120395320;
 extern Il2CppCodeGenString* _stringLiteral607342118;
 extern Il2CppCodeGenString* _stringLiteral938569296;
 extern Il2CppCodeGenString* _stringLiteral633676865;
-extern const uint32_t Protocol16_SerializeArray_m1498623679_MetadataUsageId;
-extern "C"  void Protocol16_SerializeArray_m1498623679 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___dout, Il2CppArray * ___serObject, bool ___setType, const MethodInfo* method)
+extern const uint32_t Protocol16_SerializeArray_m1869151855_MetadataUsageId;
+extern "C"  void Protocol16_SerializeArray_m1869151855 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___dout, Il2CppArray * ___serObject, bool ___setType, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_SerializeArray_m1498623679_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_SerializeArray_m1869151855_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	Type_t * V_0 = NULL;
@@ -20694,7 +20705,7 @@ extern "C"  void Protocol16_SerializeArray_m1498623679 (Protocol16_t2781018393 *
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_2 = ___dout;
+		StreamBuffer_t433541692 * L_2 = ___dout;
 		NullCheck(L_2);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, ((int32_t)121));
 	}
@@ -20726,11 +20737,11 @@ IL_0011:
 
 IL_003e:
 	{
-		MemoryStream_t2881531048 * L_12 = ___dout;
+		StreamBuffer_t433541692 * L_12 = ___dout;
 		Il2CppArray * L_13 = ___serObject;
 		NullCheck(L_13);
 		int32_t L_14 = Array_get_Length_m1203127607(L_13, /*hidden argument*/NULL);
-		VirtActionInvoker3< MemoryStream_t2881531048 *, int16_t, bool >::Invoke(9 /* System.Void ExitGames.Client.IProtocol::SerializeShort(System.IO.MemoryStream,System.Int16,System.Boolean) */, __this, L_12, (((int16_t)((int16_t)L_14))), (bool)0);
+		VirtActionInvoker3< StreamBuffer_t433541692 *, int16_t, bool >::Invoke(6 /* System.Void ExitGames.Client.IProtocol::SerializeShort(ExitGames.Client.Photon.StreamBuffer,System.Int16,System.Boolean) */, __this, L_12, (((int16_t)((int16_t)L_14))), (bool)0);
 		Il2CppArray * L_15 = ___serObject;
 		NullCheck(L_15);
 		Type_t * L_16 = Object_GetType_m2022236990(L_15, /*hidden argument*/NULL);
@@ -20749,7 +20760,7 @@ IL_003e:
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_22 = ___dout;
+		StreamBuffer_t433541692 * L_22 = ___dout;
 		uint8_t L_23 = V_1;
 		NullCheck(L_22);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_22, L_23);
@@ -20762,9 +20773,9 @@ IL_003e:
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_26 = ___dout;
+		StreamBuffer_t433541692 * L_26 = ___dout;
 		Il2CppArray * L_27 = ___serObject;
-		Protocol16_SerializeDictionaryHeader_m899247624(__this, L_26, L_27, (&V_6), (&V_7), /*hidden argument*/NULL);
+		Protocol16_SerializeDictionaryHeader_m960768312(__this, L_26, L_27, (&V_6), (&V_7), /*hidden argument*/NULL);
 		V_8 = 0;
 		goto IL_00b6;
 	}
@@ -20776,11 +20787,11 @@ IL_0096:
 		NullCheck(L_28);
 		Il2CppObject * L_30 = Array_GetValue_m244209261(L_28, L_29, /*hidden argument*/NULL);
 		V_9 = L_30;
-		MemoryStream_t2881531048 * L_31 = ___dout;
+		StreamBuffer_t433541692 * L_31 = ___dout;
 		Il2CppObject * L_32 = V_9;
 		bool L_33 = V_6;
 		bool L_34 = V_7;
-		Protocol16_SerializeDictionaryElements_m258336884(__this, L_31, L_32, L_33, L_34, /*hidden argument*/NULL);
+		Protocol16_SerializeDictionaryElements_m2532077092(__this, L_31, L_32, L_33, L_34, /*hidden argument*/NULL);
 		int32_t L_35 = V_8;
 		V_8 = ((int32_t)((int32_t)L_35+(int32_t)1));
 	}
@@ -20815,9 +20826,9 @@ IL_00cf:
 		NullCheck(L_40);
 		Il2CppObject * L_42 = Array_GetValue_m244209261(L_40, L_41, /*hidden argument*/NULL);
 		V_12 = L_42;
-		MemoryStream_t2881531048 * L_43 = ___dout;
+		StreamBuffer_t433541692 * L_43 = ___dout;
 		Il2CppObject * L_44 = V_12;
-		VirtActionInvoker3< MemoryStream_t2881531048 *, Il2CppObject *, bool >::Invoke(5 /* System.Void ExitGames.Client.IProtocol::Serialize(System.IO.MemoryStream,System.Object,System.Boolean) */, __this, L_43, L_44, (bool)0);
+		VirtActionInvoker3< StreamBuffer_t433541692 *, Il2CppObject *, bool >::Invoke(5 /* System.Void ExitGames.Client.IProtocol::Serialize(ExitGames.Client.Photon.StreamBuffer,System.Object,System.Boolean) */, __this, L_43, L_44, (bool)0);
 		int32_t L_45 = V_11;
 		V_11 = ((int32_t)((int32_t)L_45+(int32_t)1));
 	}
@@ -20858,10 +20869,10 @@ IL_0103:
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_54 = ___dout;
+		StreamBuffer_t433541692 * L_54 = ___dout;
 		NullCheck(L_54);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_54, ((int32_t)99));
-		MemoryStream_t2881531048 * L_55 = ___dout;
+		StreamBuffer_t433541692 * L_55 = ___dout;
 		CustomType_t2598049959 * L_56 = V_14;
 		NullCheck(L_56);
 		uint8_t L_57 = L_56->get_Code_0();
@@ -20896,11 +20907,11 @@ IL_013a:
 		NullCheck(L_65);
 		ByteU5BU5D_t58506160* L_67 = SerializeMethod_Invoke_m996346405(L_65, L_66, /*hidden argument*/NULL);
 		V_19 = L_67;
-		MemoryStream_t2881531048 * L_68 = ___dout;
+		StreamBuffer_t433541692 * L_68 = ___dout;
 		ByteU5BU5D_t58506160* L_69 = V_19;
 		NullCheck(L_69);
-		VirtActionInvoker3< MemoryStream_t2881531048 *, int16_t, bool >::Invoke(9 /* System.Void ExitGames.Client.IProtocol::SerializeShort(System.IO.MemoryStream,System.Int16,System.Boolean) */, __this, L_68, (((int16_t)((int16_t)(((int32_t)((int32_t)(((Il2CppArray *)L_69)->max_length))))))), (bool)0);
-		MemoryStream_t2881531048 * L_70 = ___dout;
+		VirtActionInvoker3< StreamBuffer_t433541692 *, int16_t, bool >::Invoke(6 /* System.Void ExitGames.Client.IProtocol::SerializeShort(ExitGames.Client.Photon.StreamBuffer,System.Int16,System.Boolean) */, __this, L_68, (((int16_t)((int16_t)(((int32_t)((int32_t)(((Il2CppArray *)L_69)->max_length))))))), (bool)0);
+		StreamBuffer_t433541692 * L_70 = ___dout;
 		ByteU5BU5D_t58506160* L_71 = V_19;
 		ByteU5BU5D_t58506160* L_72 = V_19;
 		NullCheck(L_72);
@@ -20911,12 +20922,12 @@ IL_013a:
 
 IL_0188:
 	{
-		MemoryStream_t2881531048 * L_73 = ___dout;
+		StreamBuffer_t433541692 * L_73 = ___dout;
 		NullCheck(L_73);
 		int64_t L_74 = VirtFuncInvoker0< int64_t >::Invoke(9 /* System.Int64 System.IO.Stream::get_Position() */, L_73);
 		V_20 = L_74;
-		MemoryStream_t2881531048 * L_75 = ___dout;
-		MemoryStream_t2881531048 * L_76 = ___dout;
+		StreamBuffer_t433541692 * L_75 = ___dout;
+		StreamBuffer_t433541692 * L_76 = ___dout;
 		NullCheck(L_76);
 		int64_t L_77 = VirtFuncInvoker0< int64_t >::Invoke(9 /* System.Int64 System.IO.Stream::get_Position() */, L_76);
 		NullCheck(L_75);
@@ -20924,30 +20935,30 @@ IL_0188:
 		CustomType_t2598049959 * L_78 = V_14;
 		NullCheck(L_78);
 		SerializeStreamMethod_t741406109 * L_79 = L_78->get_SerializeStreamFunction_4();
-		MemoryStream_t2881531048 * L_80 = ___dout;
+		StreamBuffer_t433541692 * L_80 = ___dout;
 		Il2CppObject * L_81 = V_17;
 		NullCheck(L_79);
-		int16_t L_82 = SerializeStreamMethod_Invoke_m2691836883(L_79, L_80, L_81, /*hidden argument*/NULL);
+		int16_t L_82 = SerializeStreamMethod_Invoke_m1239976771(L_79, L_80, L_81, /*hidden argument*/NULL);
 		V_21 = L_82;
-		MemoryStream_t2881531048 * L_83 = ___dout;
+		StreamBuffer_t433541692 * L_83 = ___dout;
 		NullCheck(L_83);
 		int64_t L_84 = VirtFuncInvoker0< int64_t >::Invoke(9 /* System.Int64 System.IO.Stream::get_Position() */, L_83);
 		V_22 = L_84;
-		MemoryStream_t2881531048 * L_85 = ___dout;
+		StreamBuffer_t433541692 * L_85 = ___dout;
 		int64_t L_86 = V_20;
 		NullCheck(L_85);
 		VirtActionInvoker1< int64_t >::Invoke(10 /* System.Void System.IO.Stream::set_Position(System.Int64) */, L_85, L_86);
-		MemoryStream_t2881531048 * L_87 = ___dout;
+		StreamBuffer_t433541692 * L_87 = ___dout;
 		int16_t L_88 = V_21;
-		VirtActionInvoker3< MemoryStream_t2881531048 *, int16_t, bool >::Invoke(9 /* System.Void ExitGames.Client.IProtocol::SerializeShort(System.IO.MemoryStream,System.Int16,System.Boolean) */, __this, L_87, L_88, (bool)0);
-		MemoryStream_t2881531048 * L_89 = ___dout;
-		MemoryStream_t2881531048 * L_90 = ___dout;
+		VirtActionInvoker3< StreamBuffer_t433541692 *, int16_t, bool >::Invoke(6 /* System.Void ExitGames.Client.IProtocol::SerializeShort(ExitGames.Client.Photon.StreamBuffer,System.Int16,System.Boolean) */, __this, L_87, L_88, (bool)0);
+		StreamBuffer_t433541692 * L_89 = ___dout;
+		StreamBuffer_t433541692 * L_90 = ___dout;
 		NullCheck(L_90);
 		int64_t L_91 = VirtFuncInvoker0< int64_t >::Invoke(9 /* System.Int64 System.IO.Stream::get_Position() */, L_90);
 		int16_t L_92 = V_21;
 		NullCheck(L_89);
 		VirtActionInvoker1< int64_t >::Invoke(10 /* System.Void System.IO.Stream::set_Position(System.Int64) */, L_89, ((int64_t)((int64_t)L_91+(int64_t)(((int64_t)((int64_t)L_92))))));
-		MemoryStream_t2881531048 * L_93 = ___dout;
+		StreamBuffer_t433541692 * L_93 = ___dout;
 		NullCheck(L_93);
 		int64_t L_94 = VirtFuncInvoker0< int64_t >::Invoke(9 /* System.Int64 System.IO.Stream::get_Position() */, L_93);
 		int64_t L_95 = V_22;
@@ -20978,7 +20989,7 @@ IL_0188:
 		ArrayElementTypeCheck (L_102, _stringLiteral607342118);
 		(L_102)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)_stringLiteral607342118);
 		ObjectU5BU5D_t11523773* L_103 = L_102;
-		MemoryStream_t2881531048 * L_104 = ___dout;
+		StreamBuffer_t433541692 * L_104 = ___dout;
 		NullCheck(L_104);
 		int64_t L_105 = VirtFuncInvoker0< int64_t >::Invoke(9 /* System.Int64 System.IO.Stream::get_Position() */, L_104);
 		int64_t L_106 = L_105;
@@ -21053,8 +21064,8 @@ IL_026f:
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeByteArray(System.IO.MemoryStream,System.Byte[],System.Boolean)
-extern "C"  void Protocol16_SerializeByteArray_m2131196116 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___dout, ByteU5BU5D_t58506160* ___serObject, bool ___setType, const MethodInfo* method)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeByteArray(ExitGames.Client.Photon.StreamBuffer,System.Byte[],System.Boolean)
+extern "C"  void Protocol16_SerializeByteArray_m4275878180 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___dout, ByteU5BU5D_t58506160* ___serObject, bool ___setType, const MethodInfo* method)
 {
 	bool V_0 = false;
 	{
@@ -21067,18 +21078,18 @@ extern "C"  void Protocol16_SerializeByteArray_m2131196116 (Protocol16_t27810183
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_2 = ___dout;
+		StreamBuffer_t433541692 * L_2 = ___dout;
 		NullCheck(L_2);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, ((int32_t)120));
 	}
 
 IL_0011:
 	{
-		MemoryStream_t2881531048 * L_3 = ___dout;
+		StreamBuffer_t433541692 * L_3 = ___dout;
 		ByteU5BU5D_t58506160* L_4 = ___serObject;
 		NullCheck(L_4);
-		Protocol16_SerializeInteger_m4179521497(__this, L_3, (((int32_t)((int32_t)(((Il2CppArray *)L_4)->max_length)))), (bool)0, /*hidden argument*/NULL);
-		MemoryStream_t2881531048 * L_5 = ___dout;
+		Protocol16_SerializeInteger_m2646461129(__this, L_3, (((int32_t)((int32_t)(((Il2CppArray *)L_4)->max_length)))), (bool)0, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_5 = ___dout;
 		ByteU5BU5D_t58506160* L_6 = ___serObject;
 		ByteU5BU5D_t58506160* L_7 = ___serObject;
 		NullCheck(L_7);
@@ -21087,15 +21098,15 @@ IL_0011:
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeIntArrayOptimized(System.IO.MemoryStream,System.Int32[],System.Boolean)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeIntArrayOptimized(ExitGames.Client.Photon.StreamBuffer,System.Int32[],System.Boolean)
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_SerializeIntArrayOptimized_m1730662042_MetadataUsageId;
-extern "C"  void Protocol16_SerializeIntArrayOptimized_m1730662042 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___inWriter, Int32U5BU5D_t1809983122* ___serObject, bool ___setType, const MethodInfo* method)
+extern const uint32_t Protocol16_SerializeIntArrayOptimized_m193342282_MetadataUsageId;
+extern "C"  void Protocol16_SerializeIntArrayOptimized_m193342282 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___inWriter, Int32U5BU5D_t1809983122* ___serObject, bool ___setType, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_SerializeIntArrayOptimized_m1730662042_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_SerializeIntArrayOptimized_m193342282_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	ByteU5BU5D_t58506160* V_0 = NULL;
@@ -21113,18 +21124,18 @@ extern "C"  void Protocol16_SerializeIntArrayOptimized_m1730662042 (Protocol16_t
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_2 = ___inWriter;
+		StreamBuffer_t433541692 * L_2 = ___inWriter;
 		NullCheck(L_2);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, ((int32_t)121));
 	}
 
 IL_0011:
 	{
-		MemoryStream_t2881531048 * L_3 = ___inWriter;
+		StreamBuffer_t433541692 * L_3 = ___inWriter;
 		Int32U5BU5D_t1809983122* L_4 = ___serObject;
 		NullCheck(L_4);
-		VirtActionInvoker3< MemoryStream_t2881531048 *, int16_t, bool >::Invoke(9 /* System.Void ExitGames.Client.IProtocol::SerializeShort(System.IO.MemoryStream,System.Int16,System.Boolean) */, __this, L_3, (((int16_t)((int16_t)(((int32_t)((int32_t)(((Il2CppArray *)L_4)->max_length))))))), (bool)0);
-		MemoryStream_t2881531048 * L_5 = ___inWriter;
+		VirtActionInvoker3< StreamBuffer_t433541692 *, int16_t, bool >::Invoke(6 /* System.Void ExitGames.Client.IProtocol::SerializeShort(ExitGames.Client.Photon.StreamBuffer,System.Int16,System.Boolean) */, __this, L_3, (((int16_t)((int16_t)(((int32_t)((int32_t)(((Il2CppArray *)L_4)->max_length))))))), (bool)0);
+		StreamBuffer_t433541692 * L_5 = ___inWriter;
 		NullCheck(L_5);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_5, ((int32_t)105));
 		Int32U5BU5D_t1809983122* L_6 = ___serObject;
@@ -21202,7 +21213,7 @@ IL_0072:
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_35 = ___inWriter;
+		StreamBuffer_t433541692 * L_35 = ___inWriter;
 		ByteU5BU5D_t58506160* L_36 = V_0;
 		ByteU5BU5D_t58506160* L_37 = V_0;
 		NullCheck(L_37);
@@ -21211,8 +21222,8 @@ IL_0072:
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeObjectArray(System.IO.MemoryStream,System.Object[],System.Boolean)
-extern "C"  void Protocol16_SerializeObjectArray_m1478699778 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___dout, ObjectU5BU5D_t11523773* ___objects, bool ___setType, const MethodInfo* method)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeObjectArray(ExitGames.Client.Photon.StreamBuffer,System.Object[],System.Boolean)
+extern "C"  void Protocol16_SerializeObjectArray_m3725110034 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___dout, ObjectU5BU5D_t11523773* ___objects, bool ___setType, const MethodInfo* method)
 {
 	bool V_0 = false;
 	int32_t V_1 = 0;
@@ -21228,17 +21239,17 @@ extern "C"  void Protocol16_SerializeObjectArray_m1478699778 (Protocol16_t278101
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_2 = ___dout;
+		StreamBuffer_t433541692 * L_2 = ___dout;
 		NullCheck(L_2);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, ((int32_t)122));
 	}
 
 IL_0011:
 	{
-		MemoryStream_t2881531048 * L_3 = ___dout;
+		StreamBuffer_t433541692 * L_3 = ___dout;
 		ObjectU5BU5D_t11523773* L_4 = ___objects;
 		NullCheck(L_4);
-		VirtActionInvoker3< MemoryStream_t2881531048 *, int16_t, bool >::Invoke(9 /* System.Void ExitGames.Client.IProtocol::SerializeShort(System.IO.MemoryStream,System.Int16,System.Boolean) */, __this, L_3, (((int16_t)((int16_t)(((int32_t)((int32_t)(((Il2CppArray *)L_4)->max_length))))))), (bool)0);
+		VirtActionInvoker3< StreamBuffer_t433541692 *, int16_t, bool >::Invoke(6 /* System.Void ExitGames.Client.IProtocol::SerializeShort(ExitGames.Client.Photon.StreamBuffer,System.Int16,System.Boolean) */, __this, L_3, (((int16_t)((int16_t)(((int32_t)((int32_t)(((Il2CppArray *)L_4)->max_length))))))), (bool)0);
 		V_1 = 0;
 		goto IL_0036;
 	}
@@ -21251,9 +21262,9 @@ IL_0022:
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, L_6);
 		int32_t L_7 = L_6;
 		V_2 = ((L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7)));
-		MemoryStream_t2881531048 * L_8 = ___dout;
+		StreamBuffer_t433541692 * L_8 = ___dout;
 		Il2CppObject * L_9 = V_2;
-		VirtActionInvoker3< MemoryStream_t2881531048 *, Il2CppObject *, bool >::Invoke(5 /* System.Void ExitGames.Client.IProtocol::Serialize(System.IO.MemoryStream,System.Object,System.Boolean) */, __this, L_8, L_9, (bool)1);
+		VirtActionInvoker3< StreamBuffer_t433541692 *, Il2CppObject *, bool >::Invoke(5 /* System.Void ExitGames.Client.IProtocol::Serialize(ExitGames.Client.Photon.StreamBuffer,System.Object,System.Boolean) */, __this, L_8, L_9, (bool)1);
 		int32_t L_10 = V_1;
 		V_1 = ((int32_t)((int32_t)L_10+(int32_t)1));
 	}
@@ -21274,23 +21285,26 @@ IL_0036:
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeHashTable(System.IO.MemoryStream,ExitGames.Client.Photon.Hashtable,System.Boolean)
-extern TypeInfo* IEnumerator_1_t1613133694_il2cpp_TypeInfo_var;
-extern TypeInfo* IEnumerator_t287207039_il2cpp_TypeInfo_var;
-extern TypeInfo* IDisposable_t1628921374_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_SerializeHashTable_m805623138_MetadataUsageId;
-extern "C"  void Protocol16_SerializeHashTable_m805623138 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___dout, Hashtable_t223732124 * ___serObject, bool ___setType, const MethodInfo* method)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeHashTable(ExitGames.Client.Photon.StreamBuffer,ExitGames.Client.Photon.Hashtable,System.Boolean)
+extern const MethodInfo* Dictionary_2_get_Keys_m3490704655_MethodInfo_var;
+extern const MethodInfo* KeyCollection_GetEnumerator_m864019515_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m2600391852_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m430398948_MethodInfo_var;
+extern const MethodInfo* Enumerator_Dispose_m2264940757_MethodInfo_var;
+extern const uint32_t Protocol16_SerializeHashTable_m2190017522_MetadataUsageId;
+extern "C"  void Protocol16_SerializeHashTable_m2190017522 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___dout, Hashtable_t223732124 * ___serObject, bool ___setType, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_SerializeHashTable_m805623138_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_SerializeHashTable_m2190017522_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
-	bool V_0 = false;
-	Il2CppObject* V_1 = NULL;
-	DictionaryEntry_t130027246  V_2;
+	KeyCollection_t1852733134 * V_0 = NULL;
+	bool V_1 = false;
+	Enumerator_t3591453091  V_2;
 	memset(&V_2, 0, sizeof(V_2));
+	Il2CppObject * V_3 = NULL;
 	Exception_t1967233988 * __last_unhandled_exception = 0;
 	NO_UNUSED_WARNING (__last_unhandled_exception);
 	Exception_t1967233988 * __exception_local = 0;
@@ -21299,110 +21313,96 @@ extern "C"  void Protocol16_SerializeHashTable_m805623138 (Protocol16_t278101839
 	NO_UNUSED_WARNING (__leave_target);
 	{
 		bool L_0 = ___setType;
-		V_0 = L_0;
-		bool L_1 = V_0;
+		V_1 = L_0;
+		bool L_1 = V_1;
 		if (!L_1)
 		{
 			goto IL_0011;
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_2 = ___dout;
+		StreamBuffer_t433541692 * L_2 = ___dout;
 		NullCheck(L_2);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, ((int32_t)104));
 	}
 
 IL_0011:
 	{
-		MemoryStream_t2881531048 * L_3 = ___dout;
+		StreamBuffer_t433541692 * L_3 = ___dout;
 		Hashtable_t223732124 * L_4 = ___serObject;
 		NullCheck(L_4);
 		int32_t L_5 = VirtFuncInvoker0< int32_t >::Invoke(10 /* System.Int32 System.Collections.Generic.Dictionary`2<System.Object,System.Object>::get_Count() */, L_4);
-		VirtActionInvoker3< MemoryStream_t2881531048 *, int16_t, bool >::Invoke(9 /* System.Void ExitGames.Client.IProtocol::SerializeShort(System.IO.MemoryStream,System.Int16,System.Boolean) */, __this, L_3, (((int16_t)((int16_t)L_5))), (bool)0);
+		VirtActionInvoker3< StreamBuffer_t433541692 *, int16_t, bool >::Invoke(6 /* System.Void ExitGames.Client.IProtocol::SerializeShort(ExitGames.Client.Photon.StreamBuffer,System.Int16,System.Boolean) */, __this, L_3, (((int16_t)((int16_t)L_5))), (bool)0);
 		Hashtable_t223732124 * L_6 = ___serObject;
 		NullCheck(L_6);
-		Il2CppObject* L_7 = Hashtable_GetEnumerator_m816483662(L_6, /*hidden argument*/NULL);
-		V_1 = L_7;
+		KeyCollection_t1852733134 * L_7 = Dictionary_2_get_Keys_m3490704655(L_6, /*hidden argument*/Dictionary_2_get_Keys_m3490704655_MethodInfo_var);
+		V_0 = L_7;
+		KeyCollection_t1852733134 * L_8 = V_0;
+		NullCheck(L_8);
+		Enumerator_t3591453091  L_9 = KeyCollection_GetEnumerator_m864019515(L_8, /*hidden argument*/KeyCollection_GetEnumerator_m864019515_MethodInfo_var);
+		V_2 = L_9;
 	}
 
-IL_0029:
+IL_0030:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_0054;
+			goto IL_0056;
 		}
 
-IL_002b:
+IL_0032:
 		{
-			Il2CppObject* L_8 = V_1;
-			NullCheck(L_8);
-			DictionaryEntry_t130027246  L_9 = InterfaceFuncInvoker0< DictionaryEntry_t130027246  >::Invoke(0 /* !0 System.Collections.Generic.IEnumerator`1<System.Collections.DictionaryEntry>::get_Current() */, IEnumerator_1_t1613133694_il2cpp_TypeInfo_var, L_8);
-			V_2 = L_9;
-			MemoryStream_t2881531048 * L_10 = ___dout;
-			Il2CppObject * L_11 = DictionaryEntry_get_Key_m3516209325((&V_2), /*hidden argument*/NULL);
-			VirtActionInvoker3< MemoryStream_t2881531048 *, Il2CppObject *, bool >::Invoke(5 /* System.Void ExitGames.Client.IProtocol::Serialize(System.IO.MemoryStream,System.Object,System.Boolean) */, __this, L_10, L_11, (bool)1);
-			MemoryStream_t2881531048 * L_12 = ___dout;
-			Il2CppObject * L_13 = DictionaryEntry_get_Value_m4281303039((&V_2), /*hidden argument*/NULL);
-			VirtActionInvoker3< MemoryStream_t2881531048 *, Il2CppObject *, bool >::Invoke(5 /* System.Void ExitGames.Client.IProtocol::Serialize(System.IO.MemoryStream,System.Object,System.Boolean) */, __this, L_12, L_13, (bool)1);
-		}
-
-IL_0054:
-		{
-			Il2CppObject* L_14 = V_1;
+			Il2CppObject * L_10 = Enumerator_get_Current_m2600391852((&V_2), /*hidden argument*/Enumerator_get_Current_m2600391852_MethodInfo_var);
+			V_3 = L_10;
+			StreamBuffer_t433541692 * L_11 = ___dout;
+			Il2CppObject * L_12 = V_3;
+			VirtActionInvoker3< StreamBuffer_t433541692 *, Il2CppObject *, bool >::Invoke(5 /* System.Void ExitGames.Client.IProtocol::Serialize(ExitGames.Client.Photon.StreamBuffer,System.Object,System.Boolean) */, __this, L_11, L_12, (bool)1);
+			StreamBuffer_t433541692 * L_13 = ___dout;
+			Hashtable_t223732124 * L_14 = ___serObject;
+			Il2CppObject * L_15 = V_3;
 			NullCheck(L_14);
-			bool L_15 = InterfaceFuncInvoker0< bool >::Invoke(1 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t287207039_il2cpp_TypeInfo_var, L_14);
-			if (L_15)
+			Il2CppObject * L_16 = Hashtable_get_Item_m721520845(L_14, L_15, /*hidden argument*/NULL);
+			VirtActionInvoker3< StreamBuffer_t433541692 *, Il2CppObject *, bool >::Invoke(5 /* System.Void ExitGames.Client.IProtocol::Serialize(ExitGames.Client.Photon.StreamBuffer,System.Object,System.Boolean) */, __this, L_13, L_16, (bool)1);
+		}
+
+IL_0056:
+		{
+			bool L_17 = Enumerator_MoveNext_m430398948((&V_2), /*hidden argument*/Enumerator_MoveNext_m430398948_MethodInfo_var);
+			if (L_17)
 			{
-				goto IL_002b;
+				goto IL_0032;
 			}
 		}
 
-IL_005c:
+IL_005f:
 		{
-			IL2CPP_LEAVE(0x69, FINALLY_005e);
+			IL2CPP_LEAVE(0x70, FINALLY_0061);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t1967233988 *)e.ex;
-		goto FINALLY_005e;
+		goto FINALLY_0061;
 	}
 
-FINALLY_005e:
+FINALLY_0061:
 	{ // begin finally (depth: 1)
-		{
-			Il2CppObject* L_16 = V_1;
-			if (!L_16)
-			{
-				goto IL_0068;
-			}
-		}
-
-IL_0061:
-		{
-			Il2CppObject* L_17 = V_1;
-			NullCheck(L_17);
-			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t1628921374_il2cpp_TypeInfo_var, L_17);
-		}
-
-IL_0068:
-		{
-			IL2CPP_END_FINALLY(94)
-		}
+		Enumerator_Dispose_m2264940757((&V_2), /*hidden argument*/Enumerator_Dispose_m2264940757_MethodInfo_var);
+		IL2CPP_END_FINALLY(97)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(94)
+	IL2CPP_CLEANUP(97)
 	{
-		IL2CPP_JUMP_TBL(0x69, IL_0069)
+		IL2CPP_JUMP_TBL(0x70, IL_0070)
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1967233988 *)
 	}
 
-IL_0069:
+IL_0070:
 	{
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeDictionary(System.IO.MemoryStream,System.Collections.IDictionary,System.Boolean)
-extern "C"  void Protocol16_SerializeDictionary_m324793229 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___dout, Il2CppObject * ___serObject, bool ___setType, const MethodInfo* method)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeDictionary(ExitGames.Client.Photon.StreamBuffer,System.Collections.IDictionary,System.Boolean)
+extern "C"  void Protocol16_SerializeDictionary_m2547110269 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___dout, Il2CppObject * ___serObject, bool ___setType, const MethodInfo* method)
 {
 	bool V_0 = false;
 	bool V_1 = false;
@@ -21417,50 +21417,50 @@ extern "C"  void Protocol16_SerializeDictionary_m324793229 (Protocol16_t27810183
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_2 = ___dout;
+		StreamBuffer_t433541692 * L_2 = ___dout;
 		NullCheck(L_2);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, ((int32_t)68));
 	}
 
 IL_0011:
 	{
-		MemoryStream_t2881531048 * L_3 = ___dout;
+		StreamBuffer_t433541692 * L_3 = ___dout;
 		Il2CppObject * L_4 = ___serObject;
-		Protocol16_SerializeDictionaryHeader_m899247624(__this, L_3, L_4, (&V_0), (&V_1), /*hidden argument*/NULL);
-		MemoryStream_t2881531048 * L_5 = ___dout;
+		Protocol16_SerializeDictionaryHeader_m960768312(__this, L_3, L_4, (&V_0), (&V_1), /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_5 = ___dout;
 		Il2CppObject * L_6 = ___serObject;
 		bool L_7 = V_0;
 		bool L_8 = V_1;
-		Protocol16_SerializeDictionaryElements_m258336884(__this, L_5, L_6, L_7, L_8, /*hidden argument*/NULL);
+		Protocol16_SerializeDictionaryElements_m2532077092(__this, L_5, L_6, L_7, L_8, /*hidden argument*/NULL);
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeDictionaryHeader(System.IO.MemoryStream,System.Type)
-extern "C"  void Protocol16_SerializeDictionaryHeader_m3531999119 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___writer, Type_t * ___dictType, const MethodInfo* method)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeDictionaryHeader(ExitGames.Client.Photon.StreamBuffer,System.Type)
+extern "C"  void Protocol16_SerializeDictionaryHeader_m980324031 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___writer, Type_t * ___dictType, const MethodInfo* method)
 {
 	bool V_0 = false;
 	bool V_1 = false;
 	{
-		MemoryStream_t2881531048 * L_0 = ___writer;
+		StreamBuffer_t433541692 * L_0 = ___writer;
 		Type_t * L_1 = ___dictType;
-		Protocol16_SerializeDictionaryHeader_m899247624(__this, L_0, L_1, (&V_0), (&V_1), /*hidden argument*/NULL);
+		Protocol16_SerializeDictionaryHeader_m960768312(__this, L_0, L_1, (&V_0), (&V_1), /*hidden argument*/NULL);
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeDictionaryHeader(System.IO.MemoryStream,System.Object,System.Boolean&,System.Boolean&)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeDictionaryHeader(ExitGames.Client.Photon.StreamBuffer,System.Object,System.Boolean&,System.Boolean&)
 extern const Il2CppType* Il2CppObject_0_0_0_var;
 extern TypeInfo* Type_t_il2cpp_TypeInfo_var;
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
 extern TypeInfo* Exception_t1967233988_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1401371212;
 extern Il2CppCodeGenString* _stringLiteral4034517050;
-extern const uint32_t Protocol16_SerializeDictionaryHeader_m899247624_MetadataUsageId;
-extern "C"  void Protocol16_SerializeDictionaryHeader_m899247624 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___writer, Il2CppObject * ___dict, bool* ___setKeyType, bool* ___setValueType, const MethodInfo* method)
+extern const uint32_t Protocol16_SerializeDictionaryHeader_m960768312_MetadataUsageId;
+extern "C"  void Protocol16_SerializeDictionaryHeader_m960768312 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___writer, Il2CppObject * ___dict, bool* ___setKeyType, bool* ___setValueType, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_SerializeDictionaryHeader_m899247624_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_SerializeDictionaryHeader_m960768312_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	TypeU5BU5D_t3431720054* V_0 = NULL;
@@ -21503,7 +21503,7 @@ extern "C"  void Protocol16_SerializeDictionaryHeader_m899247624 (Protocol16_t27
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_13 = ___writer;
+		StreamBuffer_t433541692 * L_13 = ___writer;
 		NullCheck(L_13);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_13, 0);
 		goto IL_0079;
@@ -21557,7 +21557,7 @@ IL_0058:
 
 IL_0070:
 	{
-		MemoryStream_t2881531048 * L_24 = ___writer;
+		StreamBuffer_t433541692 * L_24 = ___writer;
 		uint8_t L_25 = V_2;
 		NullCheck(L_24);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_24, L_25);
@@ -21574,7 +21574,7 @@ IL_0079:
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_28 = ___writer;
+		StreamBuffer_t433541692 * L_28 = ___writer;
 		NullCheck(L_28);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_28, 0);
 		goto IL_00dc;
@@ -21610,7 +21610,7 @@ IL_008e:
 
 IL_00b9:
 	{
-		MemoryStream_t2881531048 * L_38 = ___writer;
+		StreamBuffer_t433541692 * L_38 = ___writer;
 		uint8_t L_39 = V_5;
 		NullCheck(L_38);
 		VirtActionInvoker1< uint8_t >::Invoke(19 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_38, L_39);
@@ -21623,12 +21623,12 @@ IL_00b9:
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_42 = ___writer;
+		StreamBuffer_t433541692 * L_42 = ___writer;
 		TypeU5BU5D_t3431720054* L_43 = V_0;
 		NullCheck(L_43);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_43, 1);
 		int32_t L_44 = 1;
-		Protocol16_SerializeDictionaryHeader_m3531999119(__this, L_42, ((L_43)->GetAt(static_cast<il2cpp_array_size_t>(L_44))), /*hidden argument*/NULL);
+		Protocol16_SerializeDictionaryHeader_m980324031(__this, L_42, ((L_43)->GetAt(static_cast<il2cpp_array_size_t>(L_44))), /*hidden argument*/NULL);
 	}
 
 IL_00db:
@@ -21640,7 +21640,7 @@ IL_00dc:
 		return;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::SerializeDictionaryElements(System.IO.MemoryStream,System.Object,System.Boolean,System.Boolean)
+// System.Void ExitGames.Client.Photon.Protocol16::SerializeDictionaryElements(ExitGames.Client.Photon.StreamBuffer,System.Object,System.Boolean,System.Boolean)
 extern TypeInfo* IDictionary_t1654916945_il2cpp_TypeInfo_var;
 extern TypeInfo* ICollection_t3761522009_il2cpp_TypeInfo_var;
 extern TypeInfo* IEnumerator_t287207039_il2cpp_TypeInfo_var;
@@ -21649,13 +21649,13 @@ extern TypeInfo* Exception_t1967233988_il2cpp_TypeInfo_var;
 extern TypeInfo* IDisposable_t1628921374_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral3323743103;
 extern Il2CppCodeGenString* _stringLiteral3549096877;
-extern const uint32_t Protocol16_SerializeDictionaryElements_m258336884_MetadataUsageId;
-extern "C"  void Protocol16_SerializeDictionaryElements_m258336884 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___writer, Il2CppObject * ___dict, bool ___setKeyType, bool ___setValueType, const MethodInfo* method)
+extern const uint32_t Protocol16_SerializeDictionaryElements_m2532077092_MetadataUsageId;
+extern "C"  void Protocol16_SerializeDictionaryElements_m2532077092 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___writer, Il2CppObject * ___dict, bool ___setKeyType, bool ___setValueType, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_SerializeDictionaryElements_m258336884_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_SerializeDictionaryElements_m2532077092_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	Il2CppObject * V_0 = NULL;
@@ -21676,11 +21676,11 @@ extern "C"  void Protocol16_SerializeDictionaryElements_m258336884 (Protocol16_t
 	{
 		Il2CppObject * L_0 = ___dict;
 		V_0 = ((Il2CppObject *)Castclass(L_0, IDictionary_t1654916945_il2cpp_TypeInfo_var));
-		MemoryStream_t2881531048 * L_1 = ___writer;
+		StreamBuffer_t433541692 * L_1 = ___writer;
 		Il2CppObject * L_2 = V_0;
 		NullCheck(L_2);
 		int32_t L_3 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.ICollection::get_Count() */, ICollection_t3761522009_il2cpp_TypeInfo_var, L_2);
-		VirtActionInvoker3< MemoryStream_t2881531048 *, int16_t, bool >::Invoke(9 /* System.Void ExitGames.Client.IProtocol::SerializeShort(System.IO.MemoryStream,System.Int16,System.Boolean) */, __this, L_1, (((int16_t)((int16_t)L_3))), (bool)0);
+		VirtActionInvoker3< StreamBuffer_t433541692 *, int16_t, bool >::Invoke(6 /* System.Void ExitGames.Client.IProtocol::SerializeShort(ExitGames.Client.Photon.StreamBuffer,System.Int16,System.Boolean) */, __this, L_1, (((int16_t)((int16_t)L_3))), (bool)0);
 		Il2CppObject * L_4 = V_0;
 		NullCheck(L_4);
 		Il2CppObject * L_5 = InterfaceFuncInvoker0< Il2CppObject * >::Invoke(5 /* System.Collections.IDictionaryEnumerator System.Collections.IDictionary::GetEnumerator() */, IDictionary_t1654916945_il2cpp_TypeInfo_var, L_4);
@@ -21776,14 +21776,14 @@ IL_0066:
 
 IL_0072:
 		{
-			MemoryStream_t2881531048 * L_16 = ___writer;
+			StreamBuffer_t433541692 * L_16 = ___writer;
 			Il2CppObject * L_17 = DictionaryEntry_get_Key_m3516209325((&V_2), /*hidden argument*/NULL);
 			bool L_18 = ___setKeyType;
-			VirtActionInvoker3< MemoryStream_t2881531048 *, Il2CppObject *, bool >::Invoke(5 /* System.Void ExitGames.Client.IProtocol::Serialize(System.IO.MemoryStream,System.Object,System.Boolean) */, __this, L_16, L_17, L_18);
-			MemoryStream_t2881531048 * L_19 = ___writer;
+			VirtActionInvoker3< StreamBuffer_t433541692 *, Il2CppObject *, bool >::Invoke(5 /* System.Void ExitGames.Client.IProtocol::Serialize(ExitGames.Client.Photon.StreamBuffer,System.Object,System.Boolean) */, __this, L_16, L_17, L_18);
+			StreamBuffer_t433541692 * L_19 = ___writer;
 			Il2CppObject * L_20 = DictionaryEntry_get_Value_m4281303039((&V_2), /*hidden argument*/NULL);
 			bool L_21 = ___setValueType;
-			VirtActionInvoker3< MemoryStream_t2881531048 *, Il2CppObject *, bool >::Invoke(5 /* System.Void ExitGames.Client.IProtocol::Serialize(System.IO.MemoryStream,System.Object,System.Boolean) */, __this, L_19, L_20, L_21);
+			VirtActionInvoker3< StreamBuffer_t433541692 *, Il2CppObject *, bool >::Invoke(5 /* System.Void ExitGames.Client.IProtocol::Serialize(ExitGames.Client.Photon.StreamBuffer,System.Object,System.Boolean) */, __this, L_19, L_20, L_21);
 		}
 
 IL_0094:
@@ -21843,7 +21843,7 @@ IL_00b3:
 		return;
 	}
 }
-// System.Object ExitGames.Client.Photon.Protocol16::Deserialize(System.IO.MemoryStream,System.Byte)
+// System.Object ExitGames.Client.Photon.Protocol16::Deserialize(ExitGames.Client.Photon.StreamBuffer,System.Byte)
 extern TypeInfo* Int32_t2847414787_il2cpp_TypeInfo_var;
 extern TypeInfo* Boolean_t211005341_il2cpp_TypeInfo_var;
 extern TypeInfo* Int16_t2847414729_il2cpp_TypeInfo_var;
@@ -21855,13 +21855,13 @@ extern TypeInfo* String_t_il2cpp_TypeInfo_var;
 extern TypeInfo* Exception_t1967233988_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral1936545754;
 extern Il2CppCodeGenString* _stringLiteral1833685990;
-extern const uint32_t Protocol16_Deserialize_m2839955368_MetadataUsageId;
-extern "C"  Il2CppObject * Protocol16_Deserialize_m2839955368 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, uint8_t ___type, const MethodInfo* method)
+extern const uint32_t Protocol16_Deserialize_m344063640_MetadataUsageId;
+extern "C"  Il2CppObject * Protocol16_Deserialize_m344063640 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, uint8_t ___type, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_Deserialize_m2839955368_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_Deserialize_m344063640_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	uint8_t V_0 = 0x0;
@@ -22025,8 +22025,8 @@ IL_0027:
 
 IL_009d:
 	{
-		MemoryStream_t2881531048 * L_6 = ___din;
-		int32_t L_7 = Protocol16_DeserializeInteger_m2312251204(__this, L_6, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_6 = ___din;
+		int32_t L_7 = Protocol16_DeserializeInteger_m3702079604(__this, L_6, /*hidden argument*/NULL);
 		int32_t L_8 = L_7;
 		Il2CppObject * L_9 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_8);
 		V_2 = L_9;
@@ -22035,56 +22035,56 @@ IL_009d:
 
 IL_00af:
 	{
-		MemoryStream_t2881531048 * L_10 = ___din;
-		String_t* L_11 = Protocol16_DeserializeString_m2022455942(__this, L_10, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_10 = ___din;
+		String_t* L_11 = Protocol16_DeserializeString_m4049041462(__this, L_10, /*hidden argument*/NULL);
 		V_2 = L_11;
 		goto IL_01db;
 	}
 
 IL_00bc:
 	{
-		MemoryStream_t2881531048 * L_12 = ___din;
-		StringU5BU5D_t2956870243* L_13 = Protocol16_DeserializeStringArray_m813426975(__this, L_12, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_12 = ___din;
+		StringU5BU5D_t2956870243* L_13 = Protocol16_DeserializeStringArray_m1902192399(__this, L_12, /*hidden argument*/NULL);
 		V_2 = (Il2CppObject *)L_13;
 		goto IL_01db;
 	}
 
 IL_00c9:
 	{
-		MemoryStream_t2881531048 * L_14 = ___din;
-		ByteU5BU5D_t58506160* L_15 = Protocol16_DeserializeByteArray_m3322699761(__this, L_14, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_14 = ___din;
+		ByteU5BU5D_t58506160* L_15 = Protocol16_DeserializeByteArray_m3823650401(__this, L_14, /*hidden argument*/NULL);
 		V_2 = (Il2CppObject *)L_15;
 		goto IL_01db;
 	}
 
 IL_00d6:
 	{
-		MemoryStream_t2881531048 * L_16 = ___din;
-		Int32U5BU5D_t1809983122* L_17 = Protocol16_DeserializeIntArray_m2839987412(__this, L_16, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_16 = ___din;
+		Int32U5BU5D_t1809983122* L_17 = Protocol16_DeserializeIntArray_m4239581700(__this, L_16, /*hidden argument*/NULL);
 		V_2 = (Il2CppObject *)L_17;
 		goto IL_01db;
 	}
 
 IL_00e3:
 	{
-		MemoryStream_t2881531048 * L_18 = ___din;
-		Hashtable_t223732124 * L_19 = Protocol16_DeserializeHashTable_m445875299(__this, L_18, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_18 = ___din;
+		Hashtable_t223732124 * L_19 = Protocol16_DeserializeHashTable_m517323603(__this, L_18, /*hidden argument*/NULL);
 		V_2 = L_19;
 		goto IL_01db;
 	}
 
 IL_00f0:
 	{
-		MemoryStream_t2881531048 * L_20 = ___din;
-		Il2CppObject * L_21 = Protocol16_DeserializeDictionary_m1957832182(__this, L_20, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_20 = ___din;
+		Il2CppObject * L_21 = Protocol16_DeserializeDictionary_m54828966(__this, L_20, /*hidden argument*/NULL);
 		V_2 = L_21;
 		goto IL_01db;
 	}
 
 IL_00fd:
 	{
-		MemoryStream_t2881531048 * L_22 = ___din;
-		bool L_23 = Protocol16_DeserializeBoolean_m2158385684(__this, L_22, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_22 = ___din;
+		bool L_23 = Protocol16_DeserializeBoolean_m763643716(__this, L_22, /*hidden argument*/NULL);
 		bool L_24 = L_23;
 		Il2CppObject * L_25 = Box(Boolean_t211005341_il2cpp_TypeInfo_var, &L_24);
 		V_2 = L_25;
@@ -22093,8 +22093,8 @@ IL_00fd:
 
 IL_010f:
 	{
-		MemoryStream_t2881531048 * L_26 = ___din;
-		int16_t L_27 = VirtFuncInvoker1< int16_t, MemoryStream_t2881531048 * >::Invoke(18 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(System.IO.MemoryStream) */, __this, L_26);
+		StreamBuffer_t433541692 * L_26 = ___din;
+		int16_t L_27 = VirtFuncInvoker1< int16_t, StreamBuffer_t433541692 * >::Invoke(12 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(ExitGames.Client.Photon.StreamBuffer) */, __this, L_26);
 		int16_t L_28 = L_27;
 		Il2CppObject * L_29 = Box(Int16_t2847414729_il2cpp_TypeInfo_var, &L_28);
 		V_2 = L_29;
@@ -22103,8 +22103,8 @@ IL_010f:
 
 IL_0121:
 	{
-		MemoryStream_t2881531048 * L_30 = ___din;
-		int64_t L_31 = Protocol16_DeserializeLong_m3233621731(__this, L_30, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_30 = ___din;
+		int64_t L_31 = Protocol16_DeserializeLong_m271646163(__this, L_30, /*hidden argument*/NULL);
 		int64_t L_32 = L_31;
 		Il2CppObject * L_33 = Box(Int64_t2847414882_il2cpp_TypeInfo_var, &L_32);
 		V_2 = L_33;
@@ -22113,8 +22113,8 @@ IL_0121:
 
 IL_0133:
 	{
-		MemoryStream_t2881531048 * L_34 = ___din;
-		uint8_t L_35 = VirtFuncInvoker1< uint8_t, MemoryStream_t2881531048 * >::Invoke(19 /* System.Byte ExitGames.Client.IProtocol::DeserializeByte(System.IO.MemoryStream) */, __this, L_34);
+		StreamBuffer_t433541692 * L_34 = ___din;
+		uint8_t L_35 = VirtFuncInvoker1< uint8_t, StreamBuffer_t433541692 * >::Invoke(13 /* System.Byte ExitGames.Client.IProtocol::DeserializeByte(ExitGames.Client.Photon.StreamBuffer) */, __this, L_34);
 		uint8_t L_36 = L_35;
 		Il2CppObject * L_37 = Box(Byte_t2778693821_il2cpp_TypeInfo_var, &L_36);
 		V_2 = L_37;
@@ -22123,8 +22123,8 @@ IL_0133:
 
 IL_0145:
 	{
-		MemoryStream_t2881531048 * L_38 = ___din;
-		float L_39 = Protocol16_DeserializeFloat_m4006860414(__this, L_38, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_38 = ___din;
+		float L_39 = Protocol16_DeserializeFloat_m1162002990(__this, L_38, /*hidden argument*/NULL);
 		float L_40 = L_39;
 		Il2CppObject * L_41 = Box(Single_t958209021_il2cpp_TypeInfo_var, &L_40);
 		V_2 = L_41;
@@ -22133,8 +22133,8 @@ IL_0145:
 
 IL_0157:
 	{
-		MemoryStream_t2881531048 * L_42 = ___din;
-		double L_43 = Protocol16_DeserializeDouble_m4130316806(__this, L_42, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_42 = ___din;
+		double L_43 = Protocol16_DeserializeDouble_m2335162294(__this, L_42, /*hidden argument*/NULL);
 		double L_44 = L_43;
 		Il2CppObject * L_45 = Box(Double_t534516614_il2cpp_TypeInfo_var, &L_44);
 		V_2 = L_45;
@@ -22143,53 +22143,53 @@ IL_0157:
 
 IL_0166:
 	{
-		MemoryStream_t2881531048 * L_46 = ___din;
-		Il2CppArray * L_47 = Protocol16_DeserializeArray_m4188302644(__this, L_46, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_46 = ___din;
+		Il2CppArray * L_47 = Protocol16_DeserializeArray_m2521981540(__this, L_46, /*hidden argument*/NULL);
 		V_2 = L_47;
 		goto IL_01db;
 	}
 
 IL_0170:
 	{
-		MemoryStream_t2881531048 * L_48 = ___din;
+		StreamBuffer_t433541692 * L_48 = ___din;
 		NullCheck(L_48);
 		int32_t L_49 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_48);
 		V_1 = (((int32_t)((uint8_t)L_49)));
-		MemoryStream_t2881531048 * L_50 = ___din;
+		StreamBuffer_t433541692 * L_50 = ___din;
 		uint8_t L_51 = V_1;
-		Il2CppObject * L_52 = Protocol16_DeserializeCustom_m2392697273(__this, L_50, L_51, /*hidden argument*/NULL);
+		Il2CppObject * L_52 = Protocol16_DeserializeCustom_m1272442601(__this, L_50, L_51, /*hidden argument*/NULL);
 		V_2 = L_52;
 		goto IL_01db;
 	}
 
 IL_0183:
 	{
-		MemoryStream_t2881531048 * L_53 = ___din;
-		ObjectU5BU5D_t11523773* L_54 = Protocol16_DeserializeObjectArray_m1279324739(__this, L_53, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_53 = ___din;
+		ObjectU5BU5D_t11523773* L_54 = Protocol16_DeserializeObjectArray_m1778213171(__this, L_53, /*hidden argument*/NULL);
 		V_2 = (Il2CppObject *)L_54;
 		goto IL_01db;
 	}
 
 IL_018d:
 	{
-		MemoryStream_t2881531048 * L_55 = ___din;
-		EventData_t4221167488 * L_56 = VirtFuncInvoker1< EventData_t4221167488 *, MemoryStream_t2881531048 * >::Invoke(20 /* ExitGames.Client.Photon.EventData ExitGames.Client.IProtocol::DeserializeEventData(System.IO.MemoryStream) */, __this, L_55);
+		StreamBuffer_t433541692 * L_55 = ___din;
+		EventData_t4221167488 * L_56 = VirtFuncInvoker1< EventData_t4221167488 *, StreamBuffer_t433541692 * >::Invoke(14 /* ExitGames.Client.Photon.EventData ExitGames.Client.IProtocol::DeserializeEventData(ExitGames.Client.Photon.StreamBuffer) */, __this, L_55);
 		V_2 = L_56;
 		goto IL_01db;
 	}
 
 IL_0197:
 	{
-		MemoryStream_t2881531048 * L_57 = ___din;
-		OperationRequest_t3861919108 * L_58 = VirtFuncInvoker1< OperationRequest_t3861919108 *, MemoryStream_t2881531048 * >::Invoke(21 /* ExitGames.Client.Photon.OperationRequest ExitGames.Client.IProtocol::DeserializeOperationRequest(System.IO.MemoryStream) */, __this, L_57);
+		StreamBuffer_t433541692 * L_57 = ___din;
+		OperationRequest_t3861919108 * L_58 = VirtFuncInvoker1< OperationRequest_t3861919108 *, StreamBuffer_t433541692 * >::Invoke(15 /* ExitGames.Client.Photon.OperationRequest ExitGames.Client.IProtocol::DeserializeOperationRequest(ExitGames.Client.Photon.StreamBuffer) */, __this, L_57);
 		V_2 = L_58;
 		goto IL_01db;
 	}
 
 IL_01a1:
 	{
-		MemoryStream_t2881531048 * L_59 = ___din;
-		OperationResponse_t2644772068 * L_60 = VirtFuncInvoker1< OperationResponse_t2644772068 *, MemoryStream_t2881531048 * >::Invoke(22 /* ExitGames.Client.Photon.OperationResponse ExitGames.Client.IProtocol::DeserializeOperationResponse(System.IO.MemoryStream) */, __this, L_59);
+		StreamBuffer_t433541692 * L_59 = ___din;
+		OperationResponse_t2644772068 * L_60 = VirtFuncInvoker1< OperationResponse_t2644772068 *, StreamBuffer_t433541692 * >::Invoke(16 /* ExitGames.Client.Photon.OperationResponse ExitGames.Client.IProtocol::DeserializeOperationResponse(ExitGames.Client.Photon.StreamBuffer) */, __this, L_59);
 		V_2 = L_60;
 		goto IL_01db;
 	}
@@ -22223,12 +22223,12 @@ IL_01db:
 		return L_70;
 	}
 }
-// System.Byte ExitGames.Client.Photon.Protocol16::DeserializeByte(System.IO.MemoryStream)
-extern "C"  uint8_t Protocol16_DeserializeByte_m3601738164 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, const MethodInfo* method)
+// System.Byte ExitGames.Client.Photon.Protocol16::DeserializeByte(ExitGames.Client.Photon.StreamBuffer)
+extern "C"  uint8_t Protocol16_DeserializeByte_m2136489700 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, const MethodInfo* method)
 {
 	uint8_t V_0 = 0x0;
 	{
-		MemoryStream_t2881531048 * L_0 = ___din;
+		StreamBuffer_t433541692 * L_0 = ___din;
 		NullCheck(L_0);
 		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_0);
 		V_0 = (((int32_t)((uint8_t)L_1)));
@@ -22241,12 +22241,12 @@ IL_000b:
 		return L_2;
 	}
 }
-// System.Boolean ExitGames.Client.Photon.Protocol16::DeserializeBoolean(System.IO.MemoryStream)
-extern "C"  bool Protocol16_DeserializeBoolean_m2158385684 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, const MethodInfo* method)
+// System.Boolean ExitGames.Client.Photon.Protocol16::DeserializeBoolean(ExitGames.Client.Photon.StreamBuffer)
+extern "C"  bool Protocol16_DeserializeBoolean_m763643716 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, const MethodInfo* method)
 {
 	bool V_0 = false;
 	{
-		MemoryStream_t2881531048 * L_0 = ___din;
+		StreamBuffer_t433541692 * L_0 = ___din;
 		NullCheck(L_0);
 		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_0);
 		V_0 = (bool)((!(((uint32_t)L_1) <= ((uint32_t)0)))? 1 : 0);
@@ -22259,8 +22259,8 @@ IL_000d:
 		return L_2;
 	}
 }
-// System.Int16 ExitGames.Client.Photon.Protocol16::DeserializeShort(System.IO.MemoryStream)
-extern "C"  int16_t Protocol16_DeserializeShort_m606863932 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, const MethodInfo* method)
+// System.Int16 ExitGames.Client.Photon.Protocol16::DeserializeShort(ExitGames.Client.Photon.StreamBuffer)
+extern "C"  int16_t Protocol16_DeserializeShort_m3427567980 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, const MethodInfo* method)
 {
 	ByteU5BU5D_t58506160* V_0 = NULL;
 	ByteU5BU5D_t58506160* V_1 = NULL;
@@ -22283,7 +22283,7 @@ IL_000f:
 	{ // begin try (depth: 1)
 		ByteU5BU5D_t58506160* L_2 = __this->get_memShort_1();
 		V_1 = L_2;
-		MemoryStream_t2881531048 * L_3 = ___din;
+		StreamBuffer_t433541692 * L_3 = ___din;
 		ByteU5BU5D_t58506160* L_4 = V_1;
 		NullCheck(L_3);
 		VirtFuncInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t, int32_t >::Invoke(14 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_3, L_4, 0, 2);
@@ -22322,38 +22322,8 @@ IL_0036:
 		return L_10;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::Deserialize(System.Int16&,System.Byte[],System.Int32&)
-extern "C"  void Protocol16_Deserialize_m813136375 (Protocol16_t2781018393 * __this, int16_t* ___value, ByteU5BU5D_t58506160* ___source, int32_t* ___offset, const MethodInfo* method)
-{
-	int32_t V_0 = 0;
-	{
-		int16_t* L_0 = ___value;
-		ByteU5BU5D_t58506160* L_1 = ___source;
-		int32_t* L_2 = ___offset;
-		int32_t* L_3 = ___offset;
-		V_0 = (*((int32_t*)L_3));
-		int32_t L_4 = V_0;
-		*((int32_t*)(L_2)) = (int32_t)((int32_t)((int32_t)L_4+(int32_t)1));
-		int32_t L_5 = V_0;
-		NullCheck(L_1);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_1, L_5);
-		int32_t L_6 = L_5;
-		ByteU5BU5D_t58506160* L_7 = ___source;
-		int32_t* L_8 = ___offset;
-		int32_t* L_9 = ___offset;
-		V_0 = (*((int32_t*)L_9));
-		int32_t L_10 = V_0;
-		*((int32_t*)(L_8)) = (int32_t)((int32_t)((int32_t)L_10+(int32_t)1));
-		int32_t L_11 = V_0;
-		NullCheck(L_7);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_11);
-		int32_t L_12 = L_11;
-		*((int16_t*)(L_0)) = (int16_t)(((int16_t)((int16_t)((int32_t)((int32_t)((int32_t)((int32_t)((L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_6)))<<(int32_t)8))|(int32_t)((L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_12))))))));
-		return;
-	}
-}
-// System.Int32 ExitGames.Client.Photon.Protocol16::DeserializeInteger(System.IO.MemoryStream)
-extern "C"  int32_t Protocol16_DeserializeInteger_m2312251204 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, const MethodInfo* method)
+// System.Int32 ExitGames.Client.Photon.Protocol16::DeserializeInteger(ExitGames.Client.Photon.StreamBuffer)
+extern "C"  int32_t Protocol16_DeserializeInteger_m3702079604 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, const MethodInfo* method)
 {
 	ByteU5BU5D_t58506160* V_0 = NULL;
 	ByteU5BU5D_t58506160* V_1 = NULL;
@@ -22376,7 +22346,7 @@ IL_000f:
 	{ // begin try (depth: 1)
 		ByteU5BU5D_t58506160* L_2 = __this->get_memInteger_8();
 		V_1 = L_2;
-		MemoryStream_t2881531048 * L_3 = ___din;
+		StreamBuffer_t433541692 * L_3 = ___din;
 		ByteU5BU5D_t58506160* L_4 = V_1;
 		NullCheck(L_3);
 		VirtFuncInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t, int32_t >::Invoke(14 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_3, L_4, 0, 4);
@@ -22423,65 +22393,15 @@ IL_0043:
 		return L_14;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::Deserialize(System.Int32&,System.Byte[],System.Int32&)
-extern "C"  void Protocol16_Deserialize_m3979663537 (Protocol16_t2781018393 * __this, int32_t* ___value, ByteU5BU5D_t58506160* ___source, int32_t* ___offset, const MethodInfo* method)
-{
-	int32_t V_0 = 0;
-	{
-		int32_t* L_0 = ___value;
-		ByteU5BU5D_t58506160* L_1 = ___source;
-		int32_t* L_2 = ___offset;
-		int32_t* L_3 = ___offset;
-		V_0 = (*((int32_t*)L_3));
-		int32_t L_4 = V_0;
-		*((int32_t*)(L_2)) = (int32_t)((int32_t)((int32_t)L_4+(int32_t)1));
-		int32_t L_5 = V_0;
-		NullCheck(L_1);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_1, L_5);
-		int32_t L_6 = L_5;
-		ByteU5BU5D_t58506160* L_7 = ___source;
-		int32_t* L_8 = ___offset;
-		int32_t* L_9 = ___offset;
-		V_0 = (*((int32_t*)L_9));
-		int32_t L_10 = V_0;
-		*((int32_t*)(L_8)) = (int32_t)((int32_t)((int32_t)L_10+(int32_t)1));
-		int32_t L_11 = V_0;
-		NullCheck(L_7);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_7, L_11);
-		int32_t L_12 = L_11;
-		ByteU5BU5D_t58506160* L_13 = ___source;
-		int32_t* L_14 = ___offset;
-		int32_t* L_15 = ___offset;
-		V_0 = (*((int32_t*)L_15));
-		int32_t L_16 = V_0;
-		*((int32_t*)(L_14)) = (int32_t)((int32_t)((int32_t)L_16+(int32_t)1));
-		int32_t L_17 = V_0;
-		NullCheck(L_13);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_13, L_17);
-		int32_t L_18 = L_17;
-		ByteU5BU5D_t58506160* L_19 = ___source;
-		int32_t* L_20 = ___offset;
-		int32_t* L_21 = ___offset;
-		V_0 = (*((int32_t*)L_21));
-		int32_t L_22 = V_0;
-		*((int32_t*)(L_20)) = (int32_t)((int32_t)((int32_t)L_22+(int32_t)1));
-		int32_t L_23 = V_0;
-		NullCheck(L_19);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_19, L_23);
-		int32_t L_24 = L_23;
-		*((int32_t*)(L_0)) = (int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)((L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_6)))<<(int32_t)((int32_t)24)))|(int32_t)((int32_t)((int32_t)((L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_12)))<<(int32_t)((int32_t)16)))))|(int32_t)((int32_t)((int32_t)((L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_18)))<<(int32_t)8))))|(int32_t)((L_19)->GetAt(static_cast<il2cpp_array_size_t>(L_24)))));
-		return;
-	}
-}
-// System.Int64 ExitGames.Client.Photon.Protocol16::DeserializeLong(System.IO.MemoryStream)
+// System.Int64 ExitGames.Client.Photon.Protocol16::DeserializeLong(ExitGames.Client.Photon.StreamBuffer)
 extern TypeInfo* BitConverter_t3338308296_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_DeserializeLong_m3233621731_MetadataUsageId;
-extern "C"  int64_t Protocol16_DeserializeLong_m3233621731 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeLong_m271646163_MetadataUsageId;
+extern "C"  int64_t Protocol16_DeserializeLong_m271646163 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeLong_m3233621731_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeLong_m271646163_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	ByteU5BU5D_t58506160* V_0 = NULL;
@@ -22507,7 +22427,7 @@ IL_000f:
 		{
 			ByteU5BU5D_t58506160* L_2 = __this->get_memLong_9();
 			V_1 = L_2;
-			MemoryStream_t2881531048 * L_3 = ___din;
+			StreamBuffer_t433541692 * L_3 = ___din;
 			ByteU5BU5D_t58506160* L_4 = V_1;
 			NullCheck(L_3);
 			VirtFuncInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t, int32_t >::Invoke(14 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_3, L_4, 0, 8);
@@ -22592,15 +22512,15 @@ IL_007c:
 		return L_26;
 	}
 }
-// System.Single ExitGames.Client.Photon.Protocol16::DeserializeFloat(System.IO.MemoryStream)
+// System.Single ExitGames.Client.Photon.Protocol16::DeserializeFloat(ExitGames.Client.Photon.StreamBuffer)
 extern TypeInfo* BitConverter_t3338308296_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_DeserializeFloat_m4006860414_MetadataUsageId;
-extern "C"  float Protocol16_DeserializeFloat_m4006860414 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeFloat_m1162002990_MetadataUsageId;
+extern "C"  float Protocol16_DeserializeFloat_m1162002990 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeFloat_m4006860414_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeFloat_m1162002990_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	ByteU5BU5D_t58506160* V_0 = NULL;
@@ -22628,7 +22548,7 @@ IL_000f:
 		{
 			ByteU5BU5D_t58506160* L_2 = __this->get_memFloat_10();
 			V_1 = L_2;
-			MemoryStream_t2881531048 * L_3 = ___din;
+			StreamBuffer_t433541692 * L_3 = ___din;
 			ByteU5BU5D_t58506160* L_4 = V_1;
 			NullCheck(L_3);
 			VirtFuncInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t, int32_t >::Invoke(14 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_3, L_4, 0, 4);
@@ -22715,162 +22635,15 @@ IL_005d:
 		return L_24;
 	}
 }
-// System.Void ExitGames.Client.Photon.Protocol16::Deserialize(System.Single&,System.Byte[],System.Int32&)
+// System.Double ExitGames.Client.Photon.Protocol16::DeserializeDouble(ExitGames.Client.Photon.StreamBuffer)
 extern TypeInfo* BitConverter_t3338308296_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_Deserialize_m2888038491_MetadataUsageId;
-extern "C"  void Protocol16_Deserialize_m2888038491 (Protocol16_t2781018393 * __this, float* ___value, ByteU5BU5D_t58506160* ___source, int32_t* ___offset, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeDouble_m2335162294_MetadataUsageId;
+extern "C"  double Protocol16_DeserializeDouble_m2335162294 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_Deserialize_m2888038491_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	bool V_0 = false;
-	ByteU5BU5D_t58506160* V_1 = NULL;
-	ByteU5BU5D_t58506160* V_2 = NULL;
-	int32_t V_3 = 0;
-	Exception_t1967233988 * __last_unhandled_exception = 0;
-	NO_UNUSED_WARNING (__last_unhandled_exception);
-	Exception_t1967233988 * __exception_local = 0;
-	NO_UNUSED_WARNING (__exception_local);
-	int32_t __leave_target = 0;
-	NO_UNUSED_WARNING (__leave_target);
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(BitConverter_t3338308296_il2cpp_TypeInfo_var);
-		bool L_0 = ((BitConverter_t3338308296_StaticFields*)BitConverter_t3338308296_il2cpp_TypeInfo_var->static_fields)->get_IsLittleEndian_1();
-		V_0 = L_0;
-		bool L_1 = V_0;
-		if (!L_1)
-		{
-			goto IL_0070;
-		}
-	}
-	{
-		ByteU5BU5D_t58506160* L_2 = __this->get_memDeserialize_11();
-		V_1 = L_2;
-		ByteU5BU5D_t58506160* L_3 = V_1;
-		Monitor_Enter_m476686225(NULL /*static, unused*/, (Il2CppObject *)(Il2CppObject *)L_3, /*hidden argument*/NULL);
-	}
-
-IL_0019:
-	try
-	{ // begin try (depth: 1)
-		ByteU5BU5D_t58506160* L_4 = __this->get_memDeserialize_11();
-		V_2 = L_4;
-		ByteU5BU5D_t58506160* L_5 = V_2;
-		ByteU5BU5D_t58506160* L_6 = ___source;
-		int32_t* L_7 = ___offset;
-		int32_t* L_8 = ___offset;
-		V_3 = (*((int32_t*)L_8));
-		int32_t L_9 = V_3;
-		*((int32_t*)(L_7)) = (int32_t)((int32_t)((int32_t)L_9+(int32_t)1));
-		int32_t L_10 = V_3;
-		NullCheck(L_6);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, L_10);
-		int32_t L_11 = L_10;
-		NullCheck(L_5);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, 3);
-		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(3), (uint8_t)((L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_11))));
-		ByteU5BU5D_t58506160* L_12 = V_2;
-		ByteU5BU5D_t58506160* L_13 = ___source;
-		int32_t* L_14 = ___offset;
-		int32_t* L_15 = ___offset;
-		V_3 = (*((int32_t*)L_15));
-		int32_t L_16 = V_3;
-		*((int32_t*)(L_14)) = (int32_t)((int32_t)((int32_t)L_16+(int32_t)1));
-		int32_t L_17 = V_3;
-		NullCheck(L_13);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_13, L_17);
-		int32_t L_18 = L_17;
-		NullCheck(L_12);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_12, 2);
-		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(2), (uint8_t)((L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_18))));
-		ByteU5BU5D_t58506160* L_19 = V_2;
-		ByteU5BU5D_t58506160* L_20 = ___source;
-		int32_t* L_21 = ___offset;
-		int32_t* L_22 = ___offset;
-		V_3 = (*((int32_t*)L_22));
-		int32_t L_23 = V_3;
-		*((int32_t*)(L_21)) = (int32_t)((int32_t)((int32_t)L_23+(int32_t)1));
-		int32_t L_24 = V_3;
-		NullCheck(L_20);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_20, L_24);
-		int32_t L_25 = L_24;
-		NullCheck(L_19);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_19, 1);
-		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(1), (uint8_t)((L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_25))));
-		ByteU5BU5D_t58506160* L_26 = V_2;
-		ByteU5BU5D_t58506160* L_27 = ___source;
-		int32_t* L_28 = ___offset;
-		int32_t* L_29 = ___offset;
-		V_3 = (*((int32_t*)L_29));
-		int32_t L_30 = V_3;
-		*((int32_t*)(L_28)) = (int32_t)((int32_t)((int32_t)L_30+(int32_t)1));
-		int32_t L_31 = V_3;
-		NullCheck(L_27);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_27, L_31);
-		int32_t L_32 = L_31;
-		NullCheck(L_26);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_26, 0);
-		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(0), (uint8_t)((L_27)->GetAt(static_cast<il2cpp_array_size_t>(L_32))));
-		float* L_33 = ___value;
-		ByteU5BU5D_t58506160* L_34 = V_2;
-		IL2CPP_RUNTIME_CLASS_INIT(BitConverter_t3338308296_il2cpp_TypeInfo_var);
-		float L_35 = BitConverter_ToSingle_m1394719111(NULL /*static, unused*/, L_34, 0, /*hidden argument*/NULL);
-		*((float*)(L_33)) = (float)L_35;
-		IL2CPP_LEAVE(0x6D, FINALLY_0065);
-	} // end try (depth: 1)
-	catch(Il2CppExceptionWrapper& e)
-	{
-		__last_unhandled_exception = (Exception_t1967233988 *)e.ex;
-		goto FINALLY_0065;
-	}
-
-FINALLY_0065:
-	{ // begin finally (depth: 1)
-		ByteU5BU5D_t58506160* L_36 = V_1;
-		Monitor_Exit_m2088237919(NULL /*static, unused*/, (Il2CppObject *)(Il2CppObject *)L_36, /*hidden argument*/NULL);
-		IL2CPP_END_FINALLY(101)
-	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(101)
-	{
-		IL2CPP_JUMP_TBL(0x6D, IL_006d)
-		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1967233988 *)
-	}
-
-IL_006d:
-	{
-		goto IL_0082;
-	}
-
-IL_0070:
-	{
-		float* L_37 = ___value;
-		ByteU5BU5D_t58506160* L_38 = ___source;
-		int32_t* L_39 = ___offset;
-		IL2CPP_RUNTIME_CLASS_INIT(BitConverter_t3338308296_il2cpp_TypeInfo_var);
-		float L_40 = BitConverter_ToSingle_m1394719111(NULL /*static, unused*/, L_38, (*((int32_t*)L_39)), /*hidden argument*/NULL);
-		*((float*)(L_37)) = (float)L_40;
-		int32_t* L_41 = ___offset;
-		int32_t* L_42 = ___offset;
-		*((int32_t*)(L_41)) = (int32_t)((int32_t)((int32_t)(*((int32_t*)L_42))+(int32_t)4));
-	}
-
-IL_0082:
-	{
-		return;
-	}
-}
-// System.Double ExitGames.Client.Photon.Protocol16::DeserializeDouble(System.IO.MemoryStream)
-extern TypeInfo* BitConverter_t3338308296_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_DeserializeDouble_m4130316806_MetadataUsageId;
-extern "C"  double Protocol16_DeserializeDouble_m4130316806 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeDouble_m4130316806_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeDouble_m2335162294_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	ByteU5BU5D_t58506160* V_0 = NULL;
@@ -22888,7 +22661,7 @@ extern "C"  double Protocol16_DeserializeDouble_m4130316806 (Protocol16_t2781018
 	int32_t __leave_target = 0;
 	NO_UNUSED_WARNING (__leave_target);
 	{
-		ByteU5BU5D_t58506160* L_0 = __this->get_memDouble_12();
+		ByteU5BU5D_t58506160* L_0 = __this->get_memDouble_11();
 		V_0 = L_0;
 		ByteU5BU5D_t58506160* L_1 = V_0;
 		Monitor_Enter_m476686225(NULL /*static, unused*/, (Il2CppObject *)(Il2CppObject *)L_1, /*hidden argument*/NULL);
@@ -22898,9 +22671,9 @@ IL_000f:
 	try
 	{ // begin try (depth: 1)
 		{
-			ByteU5BU5D_t58506160* L_2 = __this->get_memDouble_12();
+			ByteU5BU5D_t58506160* L_2 = __this->get_memDouble_11();
 			V_1 = L_2;
-			MemoryStream_t2881531048 * L_3 = ___din;
+			StreamBuffer_t433541692 * L_3 = ___din;
 			ByteU5BU5D_t58506160* L_4 = V_1;
 			NullCheck(L_3);
 			VirtFuncInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t, int32_t >::Invoke(14 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_3, L_4, 0, 8);
@@ -23023,17 +22796,17 @@ IL_007d:
 		return L_38;
 	}
 }
-// System.String ExitGames.Client.Photon.Protocol16::DeserializeString(System.IO.MemoryStream)
+// System.String ExitGames.Client.Photon.Protocol16::DeserializeString(ExitGames.Client.Photon.StreamBuffer)
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
 extern TypeInfo* Encoding_t180559927_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral0;
-extern const uint32_t Protocol16_DeserializeString_m2022455942_MetadataUsageId;
-extern "C"  String_t* Protocol16_DeserializeString_m2022455942 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeString_m4049041462_MetadataUsageId;
+extern "C"  String_t* Protocol16_DeserializeString_m4049041462 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeString_m2022455942_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeString_m4049041462_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	int16_t V_0 = 0;
@@ -23041,8 +22814,8 @@ extern "C"  String_t* Protocol16_DeserializeString_m2022455942 (Protocol16_t2781
 	bool V_2 = false;
 	String_t* V_3 = NULL;
 	{
-		MemoryStream_t2881531048 * L_0 = ___din;
-		int16_t L_1 = VirtFuncInvoker1< int16_t, MemoryStream_t2881531048 * >::Invoke(18 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(System.IO.MemoryStream) */, __this, L_0);
+		StreamBuffer_t433541692 * L_0 = ___din;
+		int16_t L_1 = VirtFuncInvoker1< int16_t, StreamBuffer_t433541692 * >::Invoke(12 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(ExitGames.Client.Photon.StreamBuffer) */, __this, L_0);
 		V_0 = L_1;
 		int16_t L_2 = V_0;
 		V_2 = (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0);
@@ -23061,7 +22834,7 @@ IL_0019:
 	{
 		int16_t L_4 = V_0;
 		V_1 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)L_4));
-		MemoryStream_t2881531048 * L_5 = ___din;
+		StreamBuffer_t433541692 * L_5 = ___din;
 		ByteU5BU5D_t58506160* L_6 = V_1;
 		ByteU5BU5D_t58506160* L_7 = V_1;
 		NullCheck(L_7);
@@ -23084,7 +22857,7 @@ IL_003e:
 		return L_12;
 	}
 }
-// System.Array ExitGames.Client.Photon.Protocol16::DeserializeArray(System.IO.MemoryStream)
+// System.Array ExitGames.Client.Photon.Protocol16::DeserializeArray(ExitGames.Client.Photon.StreamBuffer)
 extern const Il2CppType* ByteU5BU5D_t58506160_0_0_0_var;
 extern TypeInfo* Type_t_il2cpp_TypeInfo_var;
 extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
@@ -23093,13 +22866,13 @@ extern TypeInfo* Byte_t2778693821_il2cpp_TypeInfo_var;
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
 extern TypeInfo* Exception_t1967233988_il2cpp_TypeInfo_var;
 extern Il2CppCodeGenString* _stringLiteral4081707285;
-extern const uint32_t Protocol16_DeserializeArray_m4188302644_MetadataUsageId;
-extern "C"  Il2CppArray * Protocol16_DeserializeArray_m4188302644 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeArray_m2521981540_MetadataUsageId;
+extern "C"  Il2CppArray * Protocol16_DeserializeArray_m2521981540 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeArray_m4188302644_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeArray_m2521981540_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	int16_t V_0 = 0;
@@ -23129,10 +22902,10 @@ extern "C"  Il2CppArray * Protocol16_DeserializeArray_m4188302644 (Protocol16_t2
 	int16_t V_24 = 0;
 	bool V_25 = false;
 	{
-		MemoryStream_t2881531048 * L_0 = ___din;
-		int16_t L_1 = VirtFuncInvoker1< int16_t, MemoryStream_t2881531048 * >::Invoke(18 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(System.IO.MemoryStream) */, __this, L_0);
+		StreamBuffer_t433541692 * L_0 = ___din;
+		int16_t L_1 = VirtFuncInvoker1< int16_t, StreamBuffer_t433541692 * >::Invoke(12 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(ExitGames.Client.Photon.StreamBuffer) */, __this, L_0);
 		V_0 = L_1;
-		MemoryStream_t2881531048 * L_2 = ___din;
+		StreamBuffer_t433541692 * L_2 = ___din;
 		NullCheck(L_2);
 		int32_t L_3 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_2);
 		V_1 = (((int32_t)((uint8_t)L_3)));
@@ -23145,8 +22918,8 @@ extern "C"  Il2CppArray * Protocol16_DeserializeArray_m4188302644 (Protocol16_t2
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_6 = ___din;
-		Il2CppArray * L_7 = Protocol16_DeserializeArray_m4188302644(__this, L_6, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_6 = ___din;
+		Il2CppArray * L_7 = Protocol16_DeserializeArray_m2521981540(__this, L_6, /*hidden argument*/NULL);
 		V_4 = L_7;
 		Il2CppArray * L_8 = V_4;
 		NullCheck(L_8);
@@ -23166,8 +22939,8 @@ extern "C"  Il2CppArray * Protocol16_DeserializeArray_m4188302644 (Protocol16_t2
 
 IL_0045:
 	{
-		MemoryStream_t2881531048 * L_15 = ___din;
-		Il2CppArray * L_16 = Protocol16_DeserializeArray_m4188302644(__this, L_15, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_15 = ___din;
+		Il2CppArray * L_16 = Protocol16_DeserializeArray_m2521981540(__this, L_15, /*hidden argument*/NULL);
 		V_4 = L_16;
 		Il2CppArray * L_17 = V_2;
 		Il2CppArray * L_18 = V_4;
@@ -23215,8 +22988,8 @@ IL_0073:
 
 IL_0095:
 	{
-		MemoryStream_t2881531048 * L_29 = ___din;
-		ByteU5BU5D_t58506160* L_30 = Protocol16_DeserializeByteArray_m3322699761(__this, L_29, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_29 = ___din;
+		ByteU5BU5D_t58506160* L_30 = Protocol16_DeserializeByteArray_m3823650401(__this, L_29, /*hidden argument*/NULL);
 		V_9 = (Il2CppArray *)L_30;
 		Il2CppArray * L_31 = V_2;
 		Il2CppArray * L_32 = V_9;
@@ -23253,7 +23026,7 @@ IL_00c3:
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_40 = ___din;
+		StreamBuffer_t433541692 * L_40 = ___din;
 		NullCheck(L_40);
 		int32_t L_41 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_40);
 		V_13 = (((int32_t)((uint8_t)L_41)));
@@ -23282,8 +23055,8 @@ IL_00c3:
 
 IL_0106:
 	{
-		MemoryStream_t2881531048 * L_50 = ___din;
-		int16_t L_51 = VirtFuncInvoker1< int16_t, MemoryStream_t2881531048 * >::Invoke(18 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(System.IO.MemoryStream) */, __this, L_50);
+		StreamBuffer_t433541692 * L_50 = ___din;
+		int16_t L_51 = VirtFuncInvoker1< int16_t, StreamBuffer_t433541692 * >::Invoke(12 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(ExitGames.Client.Photon.StreamBuffer) */, __this, L_50);
 		V_17 = L_51;
 		CustomType_t2598049959 * L_52 = V_14;
 		NullCheck(L_52);
@@ -23298,7 +23071,7 @@ IL_0106:
 	{
 		int16_t L_55 = V_17;
 		V_19 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)L_55));
-		MemoryStream_t2881531048 * L_56 = ___din;
+		StreamBuffer_t433541692 * L_56 = ___din;
 		ByteU5BU5D_t58506160* L_57 = V_19;
 		int16_t L_58 = V_17;
 		NullCheck(L_56);
@@ -23322,10 +23095,10 @@ IL_0150:
 		CustomType_t2598049959 * L_66 = V_14;
 		NullCheck(L_66);
 		DeserializeStreamMethod_t2269051836 * L_67 = L_66->get_DeserializeStreamFunction_5();
-		MemoryStream_t2881531048 * L_68 = ___din;
+		StreamBuffer_t433541692 * L_68 = ___din;
 		int16_t L_69 = V_17;
 		NullCheck(L_67);
-		Il2CppObject * L_70 = DeserializeStreamMethod_Invoke_m2833769592(L_67, L_68, L_69, /*hidden argument*/NULL);
+		Il2CppObject * L_70 = DeserializeStreamMethod_Invoke_m1171546632(L_67, L_68, L_69, /*hidden argument*/NULL);
 		int32_t L_71 = V_16;
 		NullCheck(L_65);
 		Array_SetValue_m3564402974(L_65, L_70, L_71, /*hidden argument*/NULL);
@@ -23381,9 +23154,9 @@ IL_019a:
 	}
 	{
 		V_22 = (Il2CppArray *)NULL;
-		MemoryStream_t2881531048 * L_83 = ___din;
+		StreamBuffer_t433541692 * L_83 = ___din;
 		int16_t L_84 = V_0;
-		Protocol16_DeserializeDictionaryArray_m3987390018(__this, L_83, L_84, (&V_22), /*hidden argument*/NULL);
+		Protocol16_DeserializeDictionaryArray_m201547346(__this, L_83, L_84, (&V_22), /*hidden argument*/NULL);
 		Il2CppArray * L_85 = V_22;
 		V_23 = L_85;
 		goto IL_01f4;
@@ -23402,9 +23175,9 @@ IL_01ba:
 IL_01c9:
 	{
 		Il2CppArray * L_89 = V_2;
-		MemoryStream_t2881531048 * L_90 = ___din;
+		StreamBuffer_t433541692 * L_90 = ___din;
 		uint8_t L_91 = V_1;
-		Il2CppObject * L_92 = VirtFuncInvoker2< Il2CppObject *, MemoryStream_t2881531048 *, uint8_t >::Invoke(14 /* System.Object ExitGames.Client.IProtocol::Deserialize(System.IO.MemoryStream,System.Byte) */, __this, L_90, L_91);
+		Il2CppObject * L_92 = VirtFuncInvoker2< Il2CppObject *, StreamBuffer_t433541692 *, uint8_t >::Invoke(11 /* System.Object ExitGames.Client.IProtocol::Deserialize(ExitGames.Client.Photon.StreamBuffer,System.Byte) */, __this, L_90, L_91);
 		int16_t L_93 = V_24;
 		NullCheck(L_89);
 		Array_SetValue_m3564402974(L_89, L_92, L_93, /*hidden argument*/NULL);
@@ -23439,27 +23212,27 @@ IL_01f4:
 		return L_99;
 	}
 }
-// System.Byte[] ExitGames.Client.Photon.Protocol16::DeserializeByteArray(System.IO.MemoryStream)
+// System.Byte[] ExitGames.Client.Photon.Protocol16::DeserializeByteArray(ExitGames.Client.Photon.StreamBuffer)
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_DeserializeByteArray_m3322699761_MetadataUsageId;
-extern "C"  ByteU5BU5D_t58506160* Protocol16_DeserializeByteArray_m3322699761 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeByteArray_m3823650401_MetadataUsageId;
+extern "C"  ByteU5BU5D_t58506160* Protocol16_DeserializeByteArray_m3823650401 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeByteArray_m3322699761_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeByteArray_m3823650401_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	int32_t V_0 = 0;
 	ByteU5BU5D_t58506160* V_1 = NULL;
 	ByteU5BU5D_t58506160* V_2 = NULL;
 	{
-		MemoryStream_t2881531048 * L_0 = ___din;
-		int32_t L_1 = Protocol16_DeserializeInteger_m2312251204(__this, L_0, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_0 = ___din;
+		int32_t L_1 = Protocol16_DeserializeInteger_m3702079604(__this, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
 		int32_t L_2 = V_0;
 		V_1 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)L_2));
-		MemoryStream_t2881531048 * L_3 = ___din;
+		StreamBuffer_t433541692 * L_3 = ___din;
 		ByteU5BU5D_t58506160* L_4 = V_1;
 		int32_t L_5 = V_0;
 		NullCheck(L_3);
@@ -23475,15 +23248,15 @@ IL_001e:
 		return L_7;
 	}
 }
-// System.Int32[] ExitGames.Client.Photon.Protocol16::DeserializeIntArray(System.IO.MemoryStream)
+// System.Int32[] ExitGames.Client.Photon.Protocol16::DeserializeIntArray(ExitGames.Client.Photon.StreamBuffer)
 extern TypeInfo* Int32U5BU5D_t1809983122_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_DeserializeIntArray_m2839987412_MetadataUsageId;
-extern "C"  Int32U5BU5D_t1809983122* Protocol16_DeserializeIntArray_m2839987412 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeIntArray_m4239581700_MetadataUsageId;
+extern "C"  Int32U5BU5D_t1809983122* Protocol16_DeserializeIntArray_m4239581700 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeIntArray_m2839987412_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeIntArray_m4239581700_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	int32_t V_0 = 0;
@@ -23492,8 +23265,8 @@ extern "C"  Int32U5BU5D_t1809983122* Protocol16_DeserializeIntArray_m2839987412 
 	bool V_3 = false;
 	Int32U5BU5D_t1809983122* V_4 = NULL;
 	{
-		MemoryStream_t2881531048 * L_0 = ___din;
-		int32_t L_1 = Protocol16_DeserializeInteger_m2312251204(__this, L_0, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_0 = ___din;
+		int32_t L_1 = Protocol16_DeserializeInteger_m3702079604(__this, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
 		int32_t L_2 = V_0;
 		V_1 = ((Int32U5BU5D_t1809983122*)SZArrayNew(Int32U5BU5D_t1809983122_il2cpp_TypeInfo_var, (uint32_t)L_2));
@@ -23505,8 +23278,8 @@ IL_0014:
 	{
 		Int32U5BU5D_t1809983122* L_3 = V_1;
 		int32_t L_4 = V_2;
-		MemoryStream_t2881531048 * L_5 = ___din;
-		int32_t L_6 = Protocol16_DeserializeInteger_m2312251204(__this, L_5, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_5 = ___din;
+		int32_t L_6 = Protocol16_DeserializeInteger_m3702079604(__this, L_5, /*hidden argument*/NULL);
 		NullCheck(L_3);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_4);
 		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(L_4), (int32_t)L_6);
@@ -23537,15 +23310,15 @@ IL_002f:
 		return L_12;
 	}
 }
-// System.String[] ExitGames.Client.Photon.Protocol16::DeserializeStringArray(System.IO.MemoryStream)
+// System.String[] ExitGames.Client.Photon.Protocol16::DeserializeStringArray(ExitGames.Client.Photon.StreamBuffer)
 extern TypeInfo* StringU5BU5D_t2956870243_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_DeserializeStringArray_m813426975_MetadataUsageId;
-extern "C"  StringU5BU5D_t2956870243* Protocol16_DeserializeStringArray_m813426975 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeStringArray_m1902192399_MetadataUsageId;
+extern "C"  StringU5BU5D_t2956870243* Protocol16_DeserializeStringArray_m1902192399 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeStringArray_m813426975_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeStringArray_m1902192399_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	int32_t V_0 = 0;
@@ -23554,8 +23327,8 @@ extern "C"  StringU5BU5D_t2956870243* Protocol16_DeserializeStringArray_m8134269
 	bool V_3 = false;
 	StringU5BU5D_t2956870243* V_4 = NULL;
 	{
-		MemoryStream_t2881531048 * L_0 = ___din;
-		int16_t L_1 = VirtFuncInvoker1< int16_t, MemoryStream_t2881531048 * >::Invoke(18 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(System.IO.MemoryStream) */, __this, L_0);
+		StreamBuffer_t433541692 * L_0 = ___din;
+		int16_t L_1 = VirtFuncInvoker1< int16_t, StreamBuffer_t433541692 * >::Invoke(12 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(ExitGames.Client.Photon.StreamBuffer) */, __this, L_0);
 		V_0 = L_1;
 		int32_t L_2 = V_0;
 		V_1 = ((StringU5BU5D_t2956870243*)SZArrayNew(StringU5BU5D_t2956870243_il2cpp_TypeInfo_var, (uint32_t)L_2));
@@ -23567,8 +23340,8 @@ IL_0014:
 	{
 		StringU5BU5D_t2956870243* L_3 = V_1;
 		int32_t L_4 = V_2;
-		MemoryStream_t2881531048 * L_5 = ___din;
-		String_t* L_6 = Protocol16_DeserializeString_m2022455942(__this, L_5, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_5 = ___din;
+		String_t* L_6 = Protocol16_DeserializeString_m4049041462(__this, L_5, /*hidden argument*/NULL);
 		NullCheck(L_3);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_4);
 		ArrayElementTypeCheck (L_3, L_6);
@@ -23600,15 +23373,15 @@ IL_0031:
 		return L_12;
 	}
 }
-// System.Object[] ExitGames.Client.Photon.Protocol16::DeserializeObjectArray(System.IO.MemoryStream)
+// System.Object[] ExitGames.Client.Photon.Protocol16::DeserializeObjectArray(ExitGames.Client.Photon.StreamBuffer)
 extern TypeInfo* ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_DeserializeObjectArray_m1279324739_MetadataUsageId;
-extern "C"  ObjectU5BU5D_t11523773* Protocol16_DeserializeObjectArray_m1279324739 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeObjectArray_m1778213171_MetadataUsageId;
+extern "C"  ObjectU5BU5D_t11523773* Protocol16_DeserializeObjectArray_m1778213171 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeObjectArray_m1279324739_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeObjectArray_m1778213171_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	int16_t V_0 = 0;
@@ -23618,8 +23391,8 @@ extern "C"  ObjectU5BU5D_t11523773* Protocol16_DeserializeObjectArray_m127932473
 	bool V_4 = false;
 	ObjectU5BU5D_t11523773* V_5 = NULL;
 	{
-		MemoryStream_t2881531048 * L_0 = ___din;
-		int16_t L_1 = VirtFuncInvoker1< int16_t, MemoryStream_t2881531048 * >::Invoke(18 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(System.IO.MemoryStream) */, __this, L_0);
+		StreamBuffer_t433541692 * L_0 = ___din;
+		int16_t L_1 = VirtFuncInvoker1< int16_t, StreamBuffer_t433541692 * >::Invoke(12 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(ExitGames.Client.Photon.StreamBuffer) */, __this, L_0);
 		V_0 = L_1;
 		int16_t L_2 = V_0;
 		V_1 = ((ObjectU5BU5D_t11523773*)SZArrayNew(ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var, (uint32_t)L_2));
@@ -23629,15 +23402,15 @@ extern "C"  ObjectU5BU5D_t11523773* Protocol16_DeserializeObjectArray_m127932473
 
 IL_0014:
 	{
-		MemoryStream_t2881531048 * L_3 = ___din;
+		StreamBuffer_t433541692 * L_3 = ___din;
 		NullCheck(L_3);
 		int32_t L_4 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_3);
 		V_3 = (((int32_t)((uint8_t)L_4)));
 		ObjectU5BU5D_t11523773* L_5 = V_1;
 		int32_t L_6 = V_2;
-		MemoryStream_t2881531048 * L_7 = ___din;
+		StreamBuffer_t433541692 * L_7 = ___din;
 		uint8_t L_8 = V_3;
-		Il2CppObject * L_9 = VirtFuncInvoker2< Il2CppObject *, MemoryStream_t2881531048 *, uint8_t >::Invoke(14 /* System.Object ExitGames.Client.IProtocol::Deserialize(System.IO.MemoryStream,System.Byte) */, __this, L_7, L_8);
+		Il2CppObject * L_9 = VirtFuncInvoker2< Il2CppObject *, StreamBuffer_t433541692 *, uint8_t >::Invoke(11 /* System.Object ExitGames.Client.IProtocol::Deserialize(ExitGames.Client.Photon.StreamBuffer,System.Byte) */, __this, L_7, L_8);
 		NullCheck(L_5);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, L_6);
 		ArrayElementTypeCheck (L_5, L_9);
@@ -23669,15 +23442,15 @@ IL_003c:
 		return L_15;
 	}
 }
-// ExitGames.Client.Photon.Hashtable ExitGames.Client.Photon.Protocol16::DeserializeHashTable(System.IO.MemoryStream)
+// ExitGames.Client.Photon.Hashtable ExitGames.Client.Photon.Protocol16::DeserializeHashTable(ExitGames.Client.Photon.StreamBuffer)
 extern TypeInfo* Hashtable_t223732124_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_DeserializeHashTable_m445875299_MetadataUsageId;
-extern "C"  Hashtable_t223732124 * Protocol16_DeserializeHashTable_m445875299 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeHashTable_m517323603_MetadataUsageId;
+extern "C"  Hashtable_t223732124 * Protocol16_DeserializeHashTable_m517323603 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeHashTable_m445875299_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeHashTable_m517323603_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	int32_t V_0 = 0;
@@ -23688,8 +23461,8 @@ extern "C"  Hashtable_t223732124 * Protocol16_DeserializeHashTable_m445875299 (P
 	bool V_5 = false;
 	Hashtable_t223732124 * V_6 = NULL;
 	{
-		MemoryStream_t2881531048 * L_0 = ___din;
-		int16_t L_1 = VirtFuncInvoker1< int16_t, MemoryStream_t2881531048 * >::Invoke(18 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(System.IO.MemoryStream) */, __this, L_0);
+		StreamBuffer_t433541692 * L_0 = ___din;
+		int16_t L_1 = VirtFuncInvoker1< int16_t, StreamBuffer_t433541692 * >::Invoke(12 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(ExitGames.Client.Photon.StreamBuffer) */, __this, L_0);
 		V_0 = L_1;
 		int32_t L_2 = V_0;
 		Hashtable_t223732124 * L_3 = (Hashtable_t223732124 *)il2cpp_codegen_object_new(Hashtable_t223732124_il2cpp_TypeInfo_var);
@@ -23701,17 +23474,17 @@ extern "C"  Hashtable_t223732124 * Protocol16_DeserializeHashTable_m445875299 (P
 
 IL_0014:
 	{
-		MemoryStream_t2881531048 * L_4 = ___din;
-		MemoryStream_t2881531048 * L_5 = ___din;
+		StreamBuffer_t433541692 * L_4 = ___din;
+		StreamBuffer_t433541692 * L_5 = ___din;
 		NullCheck(L_5);
 		int32_t L_6 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_5);
-		Il2CppObject * L_7 = VirtFuncInvoker2< Il2CppObject *, MemoryStream_t2881531048 *, uint8_t >::Invoke(14 /* System.Object ExitGames.Client.IProtocol::Deserialize(System.IO.MemoryStream,System.Byte) */, __this, L_4, (((int32_t)((uint8_t)L_6))));
+		Il2CppObject * L_7 = VirtFuncInvoker2< Il2CppObject *, StreamBuffer_t433541692 *, uint8_t >::Invoke(11 /* System.Object ExitGames.Client.IProtocol::Deserialize(ExitGames.Client.Photon.StreamBuffer,System.Byte) */, __this, L_4, (((int32_t)((uint8_t)L_6))));
 		V_3 = L_7;
-		MemoryStream_t2881531048 * L_8 = ___din;
-		MemoryStream_t2881531048 * L_9 = ___din;
+		StreamBuffer_t433541692 * L_8 = ___din;
+		StreamBuffer_t433541692 * L_9 = ___din;
 		NullCheck(L_9);
 		int32_t L_10 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_9);
-		Il2CppObject * L_11 = VirtFuncInvoker2< Il2CppObject *, MemoryStream_t2881531048 *, uint8_t >::Invoke(14 /* System.Object ExitGames.Client.IProtocol::Deserialize(System.IO.MemoryStream,System.Byte) */, __this, L_8, (((int32_t)((uint8_t)L_10))));
+		Il2CppObject * L_11 = VirtFuncInvoker2< Il2CppObject *, StreamBuffer_t433541692 *, uint8_t >::Invoke(11 /* System.Object ExitGames.Client.IProtocol::Deserialize(ExitGames.Client.Photon.StreamBuffer,System.Byte) */, __this, L_8, (((int32_t)((uint8_t)L_10))));
 		V_4 = L_11;
 		Hashtable_t223732124 * L_12 = V_1;
 		Il2CppObject * L_13 = V_3;
@@ -23745,18 +23518,18 @@ IL_0052:
 		return L_20;
 	}
 }
-// System.Collections.IDictionary ExitGames.Client.Photon.Protocol16::DeserializeDictionary(System.IO.MemoryStream)
+// System.Collections.IDictionary ExitGames.Client.Photon.Protocol16::DeserializeDictionary(ExitGames.Client.Photon.StreamBuffer)
 extern const Il2CppType* Dictionary_2_t2776849293_0_0_0_var;
 extern TypeInfo* Type_t_il2cpp_TypeInfo_var;
 extern TypeInfo* TypeU5BU5D_t3431720054_il2cpp_TypeInfo_var;
 extern TypeInfo* IDictionary_t1654916945_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_DeserializeDictionary_m1957832182_MetadataUsageId;
-extern "C"  Il2CppObject * Protocol16_DeserializeDictionary_m1957832182 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeDictionary_m54828966_MetadataUsageId;
+extern "C"  Il2CppObject * Protocol16_DeserializeDictionary_m54828966 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeDictionary_m1957832182_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeDictionary_m54828966_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	uint8_t V_0 = 0x0;
@@ -23775,31 +23548,31 @@ extern "C"  Il2CppObject * Protocol16_DeserializeDictionary_m1957832182 (Protoco
 	Il2CppObject * V_13 = NULL;
 	int32_t G_B3_0 = 0;
 	int32_t G_B6_0 = 0;
-	MemoryStream_t2881531048 * G_B9_0 = NULL;
+	StreamBuffer_t433541692 * G_B9_0 = NULL;
 	Protocol16_t2781018393 * G_B9_1 = NULL;
-	MemoryStream_t2881531048 * G_B8_0 = NULL;
+	StreamBuffer_t433541692 * G_B8_0 = NULL;
 	Protocol16_t2781018393 * G_B8_1 = NULL;
 	int32_t G_B10_0 = 0;
-	MemoryStream_t2881531048 * G_B10_1 = NULL;
+	StreamBuffer_t433541692 * G_B10_1 = NULL;
 	Protocol16_t2781018393 * G_B10_2 = NULL;
-	MemoryStream_t2881531048 * G_B12_0 = NULL;
+	StreamBuffer_t433541692 * G_B12_0 = NULL;
 	Protocol16_t2781018393 * G_B12_1 = NULL;
-	MemoryStream_t2881531048 * G_B11_0 = NULL;
+	StreamBuffer_t433541692 * G_B11_0 = NULL;
 	Protocol16_t2781018393 * G_B11_1 = NULL;
 	int32_t G_B13_0 = 0;
-	MemoryStream_t2881531048 * G_B13_1 = NULL;
+	StreamBuffer_t433541692 * G_B13_1 = NULL;
 	Protocol16_t2781018393 * G_B13_2 = NULL;
 	{
-		MemoryStream_t2881531048 * L_0 = ___din;
+		StreamBuffer_t433541692 * L_0 = ___din;
 		NullCheck(L_0);
 		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_0);
 		V_0 = (((int32_t)((uint8_t)L_1)));
-		MemoryStream_t2881531048 * L_2 = ___din;
+		StreamBuffer_t433541692 * L_2 = ___din;
 		NullCheck(L_2);
 		int32_t L_3 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_2);
 		V_1 = (((int32_t)((uint8_t)L_3)));
-		MemoryStream_t2881531048 * L_4 = ___din;
-		int16_t L_5 = VirtFuncInvoker1< int16_t, MemoryStream_t2881531048 * >::Invoke(18 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(System.IO.MemoryStream) */, __this, L_4);
+		StreamBuffer_t433541692 * L_4 = ___din;
+		int16_t L_5 = VirtFuncInvoker1< int16_t, StreamBuffer_t433541692 * >::Invoke(12 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(ExitGames.Client.Photon.StreamBuffer) */, __this, L_4);
 		V_2 = L_5;
 		uint8_t L_6 = V_0;
 		if (!L_6)
@@ -23873,7 +23646,7 @@ IL_0030:
 
 IL_0078:
 	{
-		MemoryStream_t2881531048 * L_22 = ___din;
+		StreamBuffer_t433541692 * L_22 = ___din;
 		bool L_23 = V_3;
 		G_B8_0 = L_22;
 		G_B8_1 = __this;
@@ -23894,7 +23667,7 @@ IL_0078:
 
 IL_0081:
 	{
-		MemoryStream_t2881531048 * L_25 = ___din;
+		StreamBuffer_t433541692 * L_25 = ___din;
 		NullCheck(L_25);
 		int32_t L_26 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_25);
 		G_B10_0 = (((int32_t)((uint8_t)L_26)));
@@ -23905,9 +23678,9 @@ IL_0081:
 IL_0088:
 	{
 		NullCheck(G_B10_2);
-		Il2CppObject * L_27 = VirtFuncInvoker2< Il2CppObject *, MemoryStream_t2881531048 *, uint8_t >::Invoke(14 /* System.Object ExitGames.Client.IProtocol::Deserialize(System.IO.MemoryStream,System.Byte) */, G_B10_2, G_B10_1, G_B10_0);
+		Il2CppObject * L_27 = VirtFuncInvoker2< Il2CppObject *, StreamBuffer_t433541692 *, uint8_t >::Invoke(11 /* System.Object ExitGames.Client.IProtocol::Deserialize(ExitGames.Client.Photon.StreamBuffer,System.Byte) */, G_B10_2, G_B10_1, G_B10_0);
 		V_10 = L_27;
-		MemoryStream_t2881531048 * L_28 = ___din;
+		StreamBuffer_t433541692 * L_28 = ___din;
 		bool L_29 = V_4;
 		G_B11_0 = L_28;
 		G_B11_1 = __this;
@@ -23928,7 +23701,7 @@ IL_0088:
 
 IL_0098:
 	{
-		MemoryStream_t2881531048 * L_31 = ___din;
+		StreamBuffer_t433541692 * L_31 = ___din;
 		NullCheck(L_31);
 		int32_t L_32 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_31);
 		G_B13_0 = (((int32_t)((uint8_t)L_32)));
@@ -23939,7 +23712,7 @@ IL_0098:
 IL_009f:
 	{
 		NullCheck(G_B13_2);
-		Il2CppObject * L_33 = VirtFuncInvoker2< Il2CppObject *, MemoryStream_t2881531048 *, uint8_t >::Invoke(14 /* System.Object ExitGames.Client.IProtocol::Deserialize(System.IO.MemoryStream,System.Byte) */, G_B13_2, G_B13_1, G_B13_0);
+		Il2CppObject * L_33 = VirtFuncInvoker2< Il2CppObject *, StreamBuffer_t433541692 *, uint8_t >::Invoke(11 /* System.Object ExitGames.Client.IProtocol::Deserialize(ExitGames.Client.Photon.StreamBuffer,System.Byte) */, G_B13_2, G_B13_1, G_B13_0);
 		V_11 = L_33;
 		Il2CppObject * L_34 = V_8;
 		Il2CppObject * L_35 = V_10;
@@ -23973,15 +23746,15 @@ IL_00ca:
 		return L_42;
 	}
 }
-// System.Boolean ExitGames.Client.Photon.Protocol16::DeserializeDictionaryArray(System.IO.MemoryStream,System.Int16,System.Array&)
+// System.Boolean ExitGames.Client.Photon.Protocol16::DeserializeDictionaryArray(ExitGames.Client.Photon.StreamBuffer,System.Int16,System.Array&)
 extern TypeInfo* IDictionary_t1654916945_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_DeserializeDictionaryArray_m3987390018_MetadataUsageId;
-extern "C"  bool Protocol16_DeserializeDictionaryArray_m3987390018 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___din, int16_t ___size, Il2CppArray ** ___arrayResult, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeDictionaryArray_m201547346_MetadataUsageId;
+extern "C"  bool Protocol16_DeserializeDictionaryArray_m201547346 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___din, int16_t ___size, Il2CppArray ** ___arrayResult, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeDictionaryArray_m3987390018_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeDictionaryArray_m201547346_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	uint8_t V_0 = 0x0;
@@ -24002,8 +23775,8 @@ extern "C"  bool Protocol16_DeserializeDictionaryArray_m3987390018 (Protocol16_t
 	bool V_15 = false;
 	bool V_16 = false;
 	{
-		MemoryStream_t2881531048 * L_0 = ___din;
-		Type_t * L_1 = Protocol16_DeserializeDictionaryType_m1921275374(__this, L_0, (&V_0), (&V_1), /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_0 = ___din;
+		Type_t * L_1 = Protocol16_DeserializeDictionaryType_m1952057758(__this, L_0, (&V_0), (&V_1), /*hidden argument*/NULL);
 		V_2 = L_1;
 		Il2CppArray ** L_2 = ___arrayResult;
 		Type_t * L_3 = V_2;
@@ -24035,8 +23808,8 @@ IL_001d:
 
 IL_003f:
 	{
-		MemoryStream_t2881531048 * L_10 = ___din;
-		int16_t L_11 = VirtFuncInvoker1< int16_t, MemoryStream_t2881531048 * >::Invoke(18 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(System.IO.MemoryStream) */, __this, L_10);
+		StreamBuffer_t433541692 * L_10 = ___din;
+		int16_t L_11 = VirtFuncInvoker1< int16_t, StreamBuffer_t433541692 * >::Invoke(12 /* System.Int16 ExitGames.Client.IProtocol::DeserializeShort(ExitGames.Client.Photon.StreamBuffer) */, __this, L_10);
 		V_5 = L_11;
 		V_8 = 0;
 		goto IL_00bd;
@@ -24053,22 +23826,22 @@ IL_004d:
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_14 = ___din;
+		StreamBuffer_t433541692 * L_14 = ___din;
 		uint8_t L_15 = V_0;
-		Il2CppObject * L_16 = VirtFuncInvoker2< Il2CppObject *, MemoryStream_t2881531048 *, uint8_t >::Invoke(14 /* System.Object ExitGames.Client.IProtocol::Deserialize(System.IO.MemoryStream,System.Byte) */, __this, L_14, L_15);
+		Il2CppObject * L_16 = VirtFuncInvoker2< Il2CppObject *, StreamBuffer_t433541692 *, uint8_t >::Invoke(11 /* System.Object ExitGames.Client.IProtocol::Deserialize(ExitGames.Client.Photon.StreamBuffer,System.Byte) */, __this, L_14, L_15);
 		V_9 = L_16;
 		goto IL_007c;
 	}
 
 IL_0066:
 	{
-		MemoryStream_t2881531048 * L_17 = ___din;
+		StreamBuffer_t433541692 * L_17 = ___din;
 		NullCheck(L_17);
 		int32_t L_18 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_17);
 		V_12 = (((int32_t)((uint8_t)L_18)));
-		MemoryStream_t2881531048 * L_19 = ___din;
+		StreamBuffer_t433541692 * L_19 = ___din;
 		uint8_t L_20 = V_12;
-		Il2CppObject * L_21 = VirtFuncInvoker2< Il2CppObject *, MemoryStream_t2881531048 *, uint8_t >::Invoke(14 /* System.Object ExitGames.Client.IProtocol::Deserialize(System.IO.MemoryStream,System.Byte) */, __this, L_19, L_20);
+		Il2CppObject * L_21 = VirtFuncInvoker2< Il2CppObject *, StreamBuffer_t433541692 *, uint8_t >::Invoke(11 /* System.Object ExitGames.Client.IProtocol::Deserialize(ExitGames.Client.Photon.StreamBuffer,System.Byte) */, __this, L_19, L_20);
 		V_9 = L_21;
 	}
 
@@ -24083,22 +23856,22 @@ IL_007c:
 		}
 	}
 	{
-		MemoryStream_t2881531048 * L_24 = ___din;
+		StreamBuffer_t433541692 * L_24 = ___din;
 		uint8_t L_25 = V_1;
-		Il2CppObject * L_26 = VirtFuncInvoker2< Il2CppObject *, MemoryStream_t2881531048 *, uint8_t >::Invoke(14 /* System.Object ExitGames.Client.IProtocol::Deserialize(System.IO.MemoryStream,System.Byte) */, __this, L_24, L_25);
+		Il2CppObject * L_26 = VirtFuncInvoker2< Il2CppObject *, StreamBuffer_t433541692 *, uint8_t >::Invoke(11 /* System.Object ExitGames.Client.IProtocol::Deserialize(ExitGames.Client.Photon.StreamBuffer,System.Byte) */, __this, L_24, L_25);
 		V_10 = L_26;
 		goto IL_00aa;
 	}
 
 IL_0094:
 	{
-		MemoryStream_t2881531048 * L_27 = ___din;
+		StreamBuffer_t433541692 * L_27 = ___din;
 		NullCheck(L_27);
 		int32_t L_28 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_27);
 		V_14 = (((int32_t)((uint8_t)L_28)));
-		MemoryStream_t2881531048 * L_29 = ___din;
+		StreamBuffer_t433541692 * L_29 = ___din;
 		uint8_t L_30 = V_14;
-		Il2CppObject * L_31 = VirtFuncInvoker2< Il2CppObject *, MemoryStream_t2881531048 *, uint8_t >::Invoke(14 /* System.Object ExitGames.Client.IProtocol::Deserialize(System.IO.MemoryStream,System.Byte) */, __this, L_29, L_30);
+		Il2CppObject * L_31 = VirtFuncInvoker2< Il2CppObject *, StreamBuffer_t433541692 *, uint8_t >::Invoke(11 /* System.Object ExitGames.Client.IProtocol::Deserialize(ExitGames.Client.Photon.StreamBuffer,System.Byte) */, __this, L_29, L_30);
 		V_10 = L_31;
 	}
 
@@ -24156,18 +23929,18 @@ IL_00ec:
 		return L_46;
 	}
 }
-// System.Type ExitGames.Client.Photon.Protocol16::DeserializeDictionaryType(System.IO.MemoryStream,System.Byte&,System.Byte&)
+// System.Type ExitGames.Client.Photon.Protocol16::DeserializeDictionaryType(ExitGames.Client.Photon.StreamBuffer,System.Byte&,System.Byte&)
 extern const Il2CppType* Il2CppObject_0_0_0_var;
 extern const Il2CppType* Dictionary_2_t2776849293_0_0_0_var;
 extern TypeInfo* Type_t_il2cpp_TypeInfo_var;
 extern TypeInfo* TypeU5BU5D_t3431720054_il2cpp_TypeInfo_var;
-extern const uint32_t Protocol16_DeserializeDictionaryType_m1921275374_MetadataUsageId;
-extern "C"  Type_t * Protocol16_DeserializeDictionaryType_m1921275374 (Protocol16_t2781018393 * __this, MemoryStream_t2881531048 * ___reader, uint8_t* ___keyTypeCode, uint8_t* ___valTypeCode, const MethodInfo* method)
+extern const uint32_t Protocol16_DeserializeDictionaryType_m1952057758_MetadataUsageId;
+extern "C"  Type_t * Protocol16_DeserializeDictionaryType_m1952057758 (Protocol16_t2781018393 * __this, StreamBuffer_t433541692 * ___reader, uint8_t* ___keyTypeCode, uint8_t* ___valTypeCode, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Protocol16_DeserializeDictionaryType_m1921275374_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Protocol16_DeserializeDictionaryType_m1952057758_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	uint8_t V_0 = 0;
@@ -24179,12 +23952,12 @@ extern "C"  Type_t * Protocol16_DeserializeDictionaryType_m1921275374 (Protocol1
 	Type_t * V_6 = NULL;
 	{
 		uint8_t* L_0 = ___keyTypeCode;
-		MemoryStream_t2881531048 * L_1 = ___reader;
+		StreamBuffer_t433541692 * L_1 = ___reader;
 		NullCheck(L_1);
 		int32_t L_2 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_1);
 		*((int8_t*)(L_0)) = (int8_t)(((int32_t)((uint8_t)L_2)));
 		uint8_t* L_3 = ___valTypeCode;
-		MemoryStream_t2881531048 * L_4 = ___reader;
+		StreamBuffer_t433541692 * L_4 = ___reader;
 		NullCheck(L_4);
 		int32_t L_5 = VirtFuncInvoker0< int32_t >::Invoke(15 /* System.Int32 System.IO.Stream::ReadByte() */, L_4);
 		*((int8_t*)(L_3)) = (int8_t)(((int32_t)((uint8_t)L_5)));
@@ -24269,7 +24042,6 @@ IL_0082:
 // System.Void ExitGames.Client.Photon.Protocol16::.ctor()
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
 extern TypeInfo* Int64U5BU5D_t753178071_il2cpp_TypeInfo_var;
-extern TypeInfo* SingleU5BU5D_t1219431280_il2cpp_TypeInfo_var;
 extern TypeInfo* DoubleU5BU5D_t1048280995_il2cpp_TypeInfo_var;
 extern const uint32_t Protocol16__ctor_m2850290149_MetadataUsageId;
 extern "C"  void Protocol16__ctor_m2850290149 (Protocol16_t2781018393 * __this, const MethodInfo* method)
@@ -24293,16 +24065,32 @@ extern "C"  void Protocol16__ctor_m2850290149 (Protocol16_t2781018393 * __this, 
 		__this->set_memShort_1(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)2)));
 		__this->set_memLongBlock_2(((Int64U5BU5D_t753178071*)SZArrayNew(Int64U5BU5D_t753178071_il2cpp_TypeInfo_var, (uint32_t)1)));
 		__this->set_memLongBlockBytes_3(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)8)));
-		__this->set_memFloatBlock_4(((SingleU5BU5D_t1219431280*)SZArrayNew(SingleU5BU5D_t1219431280_il2cpp_TypeInfo_var, (uint32_t)1)));
-		__this->set_memFloatBlockBytes_5(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)4)));
 		__this->set_memDoubleBlock_6(((DoubleU5BU5D_t1048280995*)SZArrayNew(DoubleU5BU5D_t1048280995_il2cpp_TypeInfo_var, (uint32_t)1)));
 		__this->set_memDoubleBlockBytes_7(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)8)));
 		__this->set_memInteger_8(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)4)));
 		__this->set_memLong_9(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)8)));
 		__this->set_memFloat_10(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)4)));
-		__this->set_memDeserialize_11(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)4)));
-		__this->set_memDouble_12(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)8)));
+		__this->set_memDouble_11(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)8)));
 		IProtocol__ctor_m564740243(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void ExitGames.Client.Photon.Protocol16::.cctor()
+extern TypeInfo* SingleU5BU5D_t1219431280_il2cpp_TypeInfo_var;
+extern TypeInfo* Protocol16_t2781018393_il2cpp_TypeInfo_var;
+extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
+extern const uint32_t Protocol16__cctor_m1977552488_MetadataUsageId;
+extern "C"  void Protocol16__cctor_m1977552488 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Protocol16__cctor_m1977552488_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		((Protocol16_t2781018393_StaticFields*)Protocol16_t2781018393_il2cpp_TypeInfo_var->static_fields)->set_memFloatBlock_4(((SingleU5BU5D_t1219431280*)SZArrayNew(SingleU5BU5D_t1219431280_il2cpp_TypeInfo_var, (uint32_t)1)));
+		((Protocol16_t2781018393_StaticFields*)Protocol16_t2781018393_il2cpp_TypeInfo_var->static_fields)->set_memFloatBlockBytes_5(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)4)));
 		return;
 	}
 }
@@ -24363,23 +24151,23 @@ extern "C"  void SerializeStreamMethod__ctor_m1029384447 (SerializeStreamMethod_
 	__this->set_method_3(___method);
 	__this->set_m_target_2(___object);
 }
-// System.Int16 ExitGames.Client.Photon.SerializeStreamMethod::Invoke(System.IO.MemoryStream,System.Object)
-extern "C"  int16_t SerializeStreamMethod_Invoke_m2691836883 (SerializeStreamMethod_t741406109 * __this, MemoryStream_t2881531048 * ___outStream, Il2CppObject * ___customObject, const MethodInfo* method)
+// System.Int16 ExitGames.Client.Photon.SerializeStreamMethod::Invoke(ExitGames.Client.Photon.StreamBuffer,System.Object)
+extern "C"  int16_t SerializeStreamMethod_Invoke_m1239976771 (SerializeStreamMethod_t741406109 * __this, StreamBuffer_t433541692 * ___outStream, Il2CppObject * ___customObject, const MethodInfo* method)
 {
 	if(__this->get_prev_9() != NULL)
 	{
-		SerializeStreamMethod_Invoke_m2691836883((SerializeStreamMethod_t741406109 *)__this->get_prev_9(),___outStream, ___customObject, method);
+		SerializeStreamMethod_Invoke_m1239976771((SerializeStreamMethod_t741406109 *)__this->get_prev_9(),___outStream, ___customObject, method);
 	}
 	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
 	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
 	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
 	{
-		typedef int16_t (*FunctionPointerType) (Il2CppObject *, void* __this, MemoryStream_t2881531048 * ___outStream, Il2CppObject * ___customObject, const MethodInfo* method);
+		typedef int16_t (*FunctionPointerType) (Il2CppObject *, void* __this, StreamBuffer_t433541692 * ___outStream, Il2CppObject * ___customObject, const MethodInfo* method);
 		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,il2cpp_codegen_get_delegate_this(__this),___outStream, ___customObject,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
 	}
 	else if (__this->get_m_target_2() != NULL || ___methodIsStatic)
 	{
-		typedef int16_t (*FunctionPointerType) (void* __this, MemoryStream_t2881531048 * ___outStream, Il2CppObject * ___customObject, const MethodInfo* method);
+		typedef int16_t (*FunctionPointerType) (void* __this, StreamBuffer_t433541692 * ___outStream, Il2CppObject * ___customObject, const MethodInfo* method);
 		return ((FunctionPointerType)__this->get_method_ptr_0())(il2cpp_codegen_get_delegate_this(__this),___outStream, ___customObject,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
 	}
 	else
@@ -24388,13 +24176,13 @@ extern "C"  int16_t SerializeStreamMethod_Invoke_m2691836883 (SerializeStreamMet
 		return ((FunctionPointerType)__this->get_method_ptr_0())(___outStream, ___customObject,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
 	}
 }
-extern "C" int16_t pinvoke_delegate_wrapper_SerializeStreamMethod_t741406109(Il2CppObject* delegate, MemoryStream_t2881531048 * ___outStream, Il2CppObject * ___customObject)
+extern "C" int16_t pinvoke_delegate_wrapper_SerializeStreamMethod_t741406109(Il2CppObject* delegate, StreamBuffer_t433541692 * ___outStream, Il2CppObject * ___customObject)
 {
 	// Marshaling of parameter '___outStream' to native representation
-	IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Cannot marshal type 'System.IO.MemoryStream'."));
+	IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_not_supported_exception("Cannot marshal type 'ExitGames.Client.Photon.StreamBuffer'."));
 }
-// System.IAsyncResult ExitGames.Client.Photon.SerializeStreamMethod::BeginInvoke(System.IO.MemoryStream,System.Object,System.AsyncCallback,System.Object)
-extern "C"  Il2CppObject * SerializeStreamMethod_BeginInvoke_m2292229672 (SerializeStreamMethod_t741406109 * __this, MemoryStream_t2881531048 * ___outStream, Il2CppObject * ___customObject, AsyncCallback_t1363551830 * ___callback, Il2CppObject * ___object, const MethodInfo* method)
+// System.IAsyncResult ExitGames.Client.Photon.SerializeStreamMethod::BeginInvoke(ExitGames.Client.Photon.StreamBuffer,System.Object,System.AsyncCallback,System.Object)
+extern "C"  Il2CppObject * SerializeStreamMethod_BeginInvoke_m2560005368 (SerializeStreamMethod_t741406109 * __this, StreamBuffer_t433541692 * ___outStream, Il2CppObject * ___customObject, AsyncCallback_t1363551830 * ___callback, Il2CppObject * ___object, const MethodInfo* method)
 {
 	void *__d_args[3] = {0};
 	__d_args[0] = ___outStream;
@@ -25161,7 +24949,7 @@ IL_01d3:
 	}
 }
 // System.Void ExitGames.Client.Photon.SocketTcp::ReceiveLoop()
-extern TypeInfo* MemoryStream_t2881531048_il2cpp_TypeInfo_var;
+extern TypeInfo* StreamBuffer_t433541692_il2cpp_TypeInfo_var;
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
 extern TypeInfo* SocketException_t964769420_il2cpp_TypeInfo_var;
 extern TypeInfo* Int32_t2847414787_il2cpp_TypeInfo_var;
@@ -25188,7 +24976,7 @@ extern "C"  void SocketTcp_ReceiveLoop_m2049658555 (SocketTcp_t3498507658 * __th
 		il2cpp_codegen_initialize_method (SocketTcp_ReceiveLoop_m2049658555_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
-	MemoryStream_t2881531048 * V_0 = NULL;
+	StreamBuffer_t433541692 * V_0 = NULL;
 	int32_t V_1 = 0;
 	int32_t V_2 = 0;
 	ByteU5BU5D_t58506160* V_3 = NULL;
@@ -25236,18 +25024,18 @@ extern "C"  void SocketTcp_ReceiveLoop_m2049658555 (SocketTcp_t3498507658 * __th
 	int32_t G_B46_0 = 0;
 	{
 		int32_t L_0 = IPhotonSocket_get_MTU_m373835039(__this, /*hidden argument*/NULL);
-		MemoryStream_t2881531048 * L_1 = (MemoryStream_t2881531048 *)il2cpp_codegen_object_new(MemoryStream_t2881531048_il2cpp_TypeInfo_var);
-		MemoryStream__ctor_m1061194329(L_1, L_0, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_1 = (StreamBuffer_t433541692 *)il2cpp_codegen_object_new(StreamBuffer_t433541692_il2cpp_TypeInfo_var);
+		StreamBuffer__ctor_m3207855795(L_1, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
 		goto IL_0311;
 	}
 
 IL_0012:
 	{
-		MemoryStream_t2881531048 * L_2 = V_0;
+		StreamBuffer_t433541692 * L_2 = V_0;
 		NullCheck(L_2);
 		VirtActionInvoker1< int64_t >::Invoke(10 /* System.Void System.IO.Stream::set_Position(System.Int64) */, L_2, (((int64_t)((int64_t)0))));
-		MemoryStream_t2881531048 * L_3 = V_0;
+		StreamBuffer_t433541692 * L_3 = V_0;
 		NullCheck(L_3);
 		VirtActionInvoker1< int64_t >::Invoke(17 /* System.Void System.IO.Stream::SetLength(System.Int64) */, L_3, (((int64_t)((int64_t)0))));
 	}
@@ -25422,7 +25210,7 @@ IL_0105:
 
 IL_0120:
 		{
-			MemoryStream_t2881531048 * L_48 = V_0;
+			StreamBuffer_t433541692 * L_48 = V_0;
 			ByteU5BU5D_t58506160* L_49 = V_3;
 			int32_t L_50 = V_1;
 			NullCheck(L_48);
@@ -25482,12 +25270,12 @@ IL_016e:
 
 IL_0179:
 		{
-			MemoryStream_t2881531048 * L_67 = V_0;
+			StreamBuffer_t433541692 * L_67 = V_0;
 			ByteU5BU5D_t58506160* L_68 = V_3;
 			int32_t L_69 = V_1;
 			NullCheck(L_67);
 			VirtActionInvoker3< ByteU5BU5D_t58506160*, int32_t, int32_t >::Invoke(18 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_67, L_68, 0, L_69);
-			MemoryStream_t2881531048 * L_70 = V_0;
+			StreamBuffer_t433541692 * L_70 = V_0;
 			NullCheck(L_70);
 			int64_t L_71 = VirtFuncInvoker0< int64_t >::Invoke(8 /* System.Int64 System.IO.Stream::get_Length() */, L_70);
 			V_14 = (bool)((((int64_t)L_71) > ((int64_t)(((int64_t)((int64_t)0)))))? 1 : 0);
@@ -25500,10 +25288,10 @@ IL_0179:
 
 IL_0193:
 		{
-			MemoryStream_t2881531048 * L_73 = V_0;
+			StreamBuffer_t433541692 * L_73 = V_0;
 			NullCheck(L_73);
-			ByteU5BU5D_t58506160* L_74 = VirtFuncInvoker0< ByteU5BU5D_t58506160* >::Invoke(25 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_73);
-			MemoryStream_t2881531048 * L_75 = V_0;
+			ByteU5BU5D_t58506160* L_74 = StreamBuffer_ToArray_m4001605236(L_73, /*hidden argument*/NULL);
+			StreamBuffer_t433541692 * L_75 = V_0;
 			NullCheck(L_75);
 			int64_t L_76 = VirtFuncInvoker0< int64_t >::Invoke(8 /* System.Int64 System.IO.Stream::get_Length() */, L_75);
 			IPhotonSocket_HandleReceivedDatagram_m3916771341(__this, L_74, (((int32_t)((int32_t)L_76))), (bool)0, /*hidden argument*/NULL);
@@ -25522,12 +25310,12 @@ IL_01aa:
 
 IL_01b7:
 		{
-			MemoryStream_t2881531048 * L_79 = V_0;
+			StreamBuffer_t433541692 * L_79 = V_0;
 			NullCheck(L_79);
 			int64_t L_80 = VirtFuncInvoker0< int64_t >::Invoke(8 /* System.Int64 System.IO.Stream::get_Length() */, L_79);
 			int64_t L_81 = L_80;
 			Il2CppObject * L_82 = Box(Int64_t2847414882_il2cpp_TypeInfo_var, &L_81);
-			MemoryStream_t2881531048 * L_83 = V_0;
+			StreamBuffer_t433541692 * L_83 = V_0;
 			NullCheck(L_83);
 			int64_t L_84 = VirtFuncInvoker0< int64_t >::Invoke(8 /* System.Int64 System.IO.Stream::get_Length() */, L_83);
 			int32_t L_85 = V_4;
@@ -27010,6 +26798,609 @@ IL_00b3:
 	{
 		VirtFuncInvoker0< bool >::Invoke(5 /* System.Boolean ExitGames.Client.Photon.IPhotonSocket::Disconnect() */, __this);
 		return;
+	}
+}
+// System.Void ExitGames.Client.Photon.StreamBuffer::.ctor(System.Int32)
+extern TypeInfo* Stream_t219029575_il2cpp_TypeInfo_var;
+extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
+extern const uint32_t StreamBuffer__ctor_m3207855795_MetadataUsageId;
+extern "C"  void StreamBuffer__ctor_m3207855795 (StreamBuffer_t433541692 * __this, int32_t ___size, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (StreamBuffer__ctor_m3207855795_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Stream_t219029575_il2cpp_TypeInfo_var);
+		Stream__ctor_m1433294025(__this, /*hidden argument*/NULL);
+		int32_t L_0 = ___size;
+		__this->set_buf_4(((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)L_0)));
+		return;
+	}
+}
+// System.Void ExitGames.Client.Photon.StreamBuffer::.ctor(System.Byte[])
+extern TypeInfo* Stream_t219029575_il2cpp_TypeInfo_var;
+extern const uint32_t StreamBuffer__ctor_m3353141927_MetadataUsageId;
+extern "C"  void StreamBuffer__ctor_m3353141927 (StreamBuffer_t433541692 * __this, ByteU5BU5D_t58506160* ___buf, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (StreamBuffer__ctor_m3353141927_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Stream_t219029575_il2cpp_TypeInfo_var);
+		Stream__ctor_m1433294025(__this, /*hidden argument*/NULL);
+		ByteU5BU5D_t58506160* L_0 = ___buf;
+		__this->set_buf_4(L_0);
+		ByteU5BU5D_t58506160* L_1 = ___buf;
+		NullCheck(L_1);
+		__this->set_len_3((((int32_t)((int32_t)(((Il2CppArray *)L_1)->max_length)))));
+		return;
+	}
+}
+// System.Byte[] ExitGames.Client.Photon.StreamBuffer::ToArray()
+extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
+extern const uint32_t StreamBuffer_ToArray_m4001605236_MetadataUsageId;
+extern "C"  ByteU5BU5D_t58506160* StreamBuffer_ToArray_m4001605236 (StreamBuffer_t433541692 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (StreamBuffer_ToArray_m4001605236_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	ByteU5BU5D_t58506160* V_0 = NULL;
+	ByteU5BU5D_t58506160* V_1 = NULL;
+	{
+		int32_t L_0 = __this->get_len_3();
+		V_0 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)L_0));
+		ByteU5BU5D_t58506160* L_1 = __this->get_buf_4();
+		ByteU5BU5D_t58506160* L_2 = V_0;
+		int32_t L_3 = __this->get_len_3();
+		Buffer_BlockCopy_m1580643184(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_1, 0, (Il2CppArray *)(Il2CppArray *)L_2, 0, L_3, /*hidden argument*/NULL);
+		ByteU5BU5D_t58506160* L_4 = V_0;
+		V_1 = L_4;
+		goto IL_0026;
+	}
+
+IL_0026:
+	{
+		ByteU5BU5D_t58506160* L_5 = V_1;
+		return L_5;
+	}
+}
+// System.Boolean ExitGames.Client.Photon.StreamBuffer::get_CanRead()
+extern "C"  bool StreamBuffer_get_CanRead_m1597984199 (StreamBuffer_t433541692 * __this, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		V_0 = (bool)1;
+		goto IL_0005;
+	}
+
+IL_0005:
+	{
+		bool L_0 = V_0;
+		return L_0;
+	}
+}
+// System.Boolean ExitGames.Client.Photon.StreamBuffer::get_CanSeek()
+extern "C"  bool StreamBuffer_get_CanSeek_m1626739241 (StreamBuffer_t433541692 * __this, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		V_0 = (bool)1;
+		goto IL_0005;
+	}
+
+IL_0005:
+	{
+		bool L_0 = V_0;
+		return L_0;
+	}
+}
+// System.Boolean ExitGames.Client.Photon.StreamBuffer::get_CanWrite()
+extern "C"  bool StreamBuffer_get_CanWrite_m2815523440 (StreamBuffer_t433541692 * __this, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		V_0 = (bool)1;
+		goto IL_0005;
+	}
+
+IL_0005:
+	{
+		bool L_0 = V_0;
+		return L_0;
+	}
+}
+// System.Int64 ExitGames.Client.Photon.StreamBuffer::get_Length()
+extern "C"  int64_t StreamBuffer_get_Length_m2543552514 (StreamBuffer_t433541692 * __this, const MethodInfo* method)
+{
+	int64_t V_0 = 0;
+	{
+		int32_t L_0 = __this->get_len_3();
+		V_0 = (((int64_t)((int64_t)L_0)));
+		goto IL_000b;
+	}
+
+IL_000b:
+	{
+		int64_t L_1 = V_0;
+		return L_1;
+	}
+}
+// System.Int64 ExitGames.Client.Photon.StreamBuffer::get_Position()
+extern "C"  int64_t StreamBuffer_get_Position_m739075781 (StreamBuffer_t433541692 * __this, const MethodInfo* method)
+{
+	int64_t V_0 = 0;
+	{
+		int32_t L_0 = __this->get_pos_2();
+		V_0 = (((int64_t)((int64_t)L_0)));
+		goto IL_000b;
+	}
+
+IL_000b:
+	{
+		int64_t L_1 = V_0;
+		return L_1;
+	}
+}
+// System.Void ExitGames.Client.Photon.StreamBuffer::set_Position(System.Int64)
+extern "C"  void StreamBuffer_set_Position_m1715813210 (StreamBuffer_t433541692 * __this, int64_t ___value, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		int64_t L_0 = ___value;
+		__this->set_pos_2((((int32_t)((int32_t)L_0))));
+		int32_t L_1 = __this->get_len_3();
+		int32_t L_2 = __this->get_pos_2();
+		V_0 = (bool)((((int32_t)L_1) < ((int32_t)L_2))? 1 : 0);
+		bool L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		int32_t L_4 = __this->get_pos_2();
+		__this->set_len_3(L_4);
+		int32_t L_5 = __this->get_len_3();
+		StreamBuffer_CheckSize_m4293374308(__this, L_5, /*hidden argument*/NULL);
+	}
+
+IL_0036:
+	{
+		return;
+	}
+}
+// System.Void ExitGames.Client.Photon.StreamBuffer::Flush()
+extern "C"  void StreamBuffer_Flush_m886094724 (StreamBuffer_t433541692 * __this, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Int64 ExitGames.Client.Photon.StreamBuffer::Seek(System.Int64,System.IO.SeekOrigin)
+extern TypeInfo* ArgumentException_t124305799_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral4282301701;
+extern Il2CppCodeGenString* _stringLiteral2109371728;
+extern Il2CppCodeGenString* _stringLiteral1595790607;
+extern const uint32_t StreamBuffer_Seek_m1610142370_MetadataUsageId;
+extern "C"  int64_t StreamBuffer_Seek_m1610142370 (StreamBuffer_t433541692 * __this, int64_t ___offset, int32_t ___origin, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (StreamBuffer_Seek_m1610142370_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	bool V_2 = false;
+	bool V_3 = false;
+	int64_t V_4 = 0;
+	{
+		V_0 = 0;
+		int32_t L_0 = ___origin;
+		V_1 = L_0;
+		int32_t L_1 = V_1;
+		if (L_1 == 0)
+		{
+			goto IL_0019;
+		}
+		if (L_1 == 1)
+		{
+			goto IL_001e;
+		}
+		if (L_1 == 2)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		goto IL_0036;
+	}
+
+IL_0019:
+	{
+		int64_t L_2 = ___offset;
+		V_0 = (((int32_t)((int32_t)L_2)));
+		goto IL_0041;
+	}
+
+IL_001e:
+	{
+		int32_t L_3 = __this->get_pos_2();
+		int64_t L_4 = ___offset;
+		V_0 = ((int32_t)((int32_t)L_3+(int32_t)(((int32_t)((int32_t)L_4)))));
+		goto IL_0041;
+	}
+
+IL_002a:
+	{
+		int32_t L_5 = __this->get_len_3();
+		int64_t L_6 = ___offset;
+		V_0 = ((int32_t)((int32_t)L_5+(int32_t)(((int32_t)((int32_t)L_6)))));
+		goto IL_0041;
+	}
+
+IL_0036:
+	{
+		ArgumentException_t124305799 * L_7 = (ArgumentException_t124305799 *)il2cpp_codegen_object_new(ArgumentException_t124305799_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3544856547(L_7, _stringLiteral4282301701, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_7);
+	}
+
+IL_0041:
+	{
+		int32_t L_8 = V_0;
+		V_2 = (bool)((((int32_t)L_8) < ((int32_t)0))? 1 : 0);
+		bool L_9 = V_2;
+		if (!L_9)
+		{
+			goto IL_0055;
+		}
+	}
+	{
+		ArgumentException_t124305799 * L_10 = (ArgumentException_t124305799 *)il2cpp_codegen_object_new(ArgumentException_t124305799_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3544856547(L_10, _stringLiteral2109371728, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_10);
+	}
+
+IL_0055:
+	{
+		int32_t L_11 = V_0;
+		int32_t L_12 = __this->get_len_3();
+		V_3 = (bool)((((int32_t)((((int32_t)L_11) < ((int32_t)L_12))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_13 = V_3;
+		if (!L_13)
+		{
+			goto IL_0071;
+		}
+	}
+	{
+		ArgumentException_t124305799 * L_14 = (ArgumentException_t124305799 *)il2cpp_codegen_object_new(ArgumentException_t124305799_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m3544856547(L_14, _stringLiteral1595790607, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_14);
+	}
+
+IL_0071:
+	{
+		int32_t L_15 = V_0;
+		__this->set_pos_2(L_15);
+		int32_t L_16 = __this->get_pos_2();
+		V_4 = (((int64_t)((int64_t)L_16)));
+		goto IL_0083;
+	}
+
+IL_0083:
+	{
+		int64_t L_17 = V_4;
+		return L_17;
+	}
+}
+// System.Void ExitGames.Client.Photon.StreamBuffer::SetLength(System.Int64)
+extern "C"  void StreamBuffer_SetLength_m765638330 (StreamBuffer_t433541692 * __this, int64_t ___value, const MethodInfo* method)
+{
+	bool V_0 = false;
+	{
+		int64_t L_0 = ___value;
+		__this->set_len_3((((int32_t)((int32_t)L_0))));
+		int32_t L_1 = __this->get_len_3();
+		StreamBuffer_CheckSize_m4293374308(__this, L_1, /*hidden argument*/NULL);
+		int32_t L_2 = __this->get_pos_2();
+		int32_t L_3 = __this->get_len_3();
+		V_0 = (bool)((((int32_t)L_2) < ((int32_t)L_3))? 1 : 0);
+		bool L_4 = V_0;
+		if (!L_4)
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		int32_t L_5 = __this->get_len_3();
+		__this->set_pos_2(L_5);
+	}
+
+IL_0036:
+	{
+		return;
+	}
+}
+// System.Int32 ExitGames.Client.Photon.StreamBuffer::Read(System.Byte[],System.Int32,System.Int32)
+extern "C"  int32_t StreamBuffer_Read_m948410241 (StreamBuffer_t433541692 * __this, ByteU5BU5D_t58506160* ___buffer, int32_t ___offset, int32_t ___count, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	bool V_1 = false;
+	int32_t V_2 = 0;
+	bool V_3 = false;
+	{
+		int32_t L_0 = __this->get_len_3();
+		int32_t L_1 = __this->get_pos_2();
+		V_0 = ((int32_t)((int32_t)L_0-(int32_t)L_1));
+		int32_t L_2 = V_0;
+		V_1 = (bool)((((int32_t)((((int32_t)L_2) > ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_3 = V_1;
+		if (!L_3)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		V_2 = 0;
+		goto IL_0053;
+	}
+
+IL_001f:
+	{
+		int32_t L_4 = ___count;
+		int32_t L_5 = V_0;
+		V_3 = (bool)((((int32_t)L_4) > ((int32_t)L_5))? 1 : 0);
+		bool L_6 = V_3;
+		if (!L_6)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		int32_t L_7 = V_0;
+		___count = L_7;
+	}
+
+IL_002c:
+	{
+		ByteU5BU5D_t58506160* L_8 = __this->get_buf_4();
+		int32_t L_9 = __this->get_pos_2();
+		ByteU5BU5D_t58506160* L_10 = ___buffer;
+		int32_t L_11 = ___offset;
+		int32_t L_12 = ___count;
+		Buffer_BlockCopy_m1580643184(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_8, L_9, (Il2CppArray *)(Il2CppArray *)L_10, L_11, L_12, /*hidden argument*/NULL);
+		int32_t L_13 = __this->get_pos_2();
+		int32_t L_14 = ___count;
+		__this->set_pos_2(((int32_t)((int32_t)L_13+(int32_t)L_14)));
+		int32_t L_15 = ___count;
+		V_2 = L_15;
+		goto IL_0053;
+	}
+
+IL_0053:
+	{
+		int32_t L_16 = V_2;
+		return L_16;
+	}
+}
+// System.Void ExitGames.Client.Photon.StreamBuffer::Write(System.Byte[],System.Int32,System.Int32)
+extern "C"  void StreamBuffer_Write_m3276155242 (StreamBuffer_t433541692 * __this, ByteU5BU5D_t58506160* ___buffer, int32_t ___offset, int32_t ___count, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	bool V_1 = false;
+	{
+		int32_t L_0 = __this->get_pos_2();
+		int32_t L_1 = ___count;
+		V_0 = ((int32_t)((int32_t)L_0+(int32_t)L_1));
+		int32_t L_2 = V_0;
+		StreamBuffer_CheckSize_m4293374308(__this, L_2, /*hidden argument*/NULL);
+		int32_t L_3 = V_0;
+		int32_t L_4 = __this->get_len_3();
+		V_1 = (bool)((((int32_t)L_3) > ((int32_t)L_4))? 1 : 0);
+		bool L_5 = V_1;
+		if (!L_5)
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		int32_t L_6 = V_0;
+		__this->set_len_3(L_6);
+	}
+
+IL_0028:
+	{
+		ByteU5BU5D_t58506160* L_7 = ___buffer;
+		int32_t L_8 = ___offset;
+		ByteU5BU5D_t58506160* L_9 = __this->get_buf_4();
+		int32_t L_10 = __this->get_pos_2();
+		int32_t L_11 = ___count;
+		Buffer_BlockCopy_m1580643184(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_7, L_8, (Il2CppArray *)(Il2CppArray *)L_9, L_10, L_11, /*hidden argument*/NULL);
+		int32_t L_12 = V_0;
+		__this->set_pos_2(L_12);
+		return;
+	}
+}
+// System.Int32 ExitGames.Client.Photon.StreamBuffer::ReadByte()
+extern "C"  int32_t StreamBuffer_ReadByte_m365707024 (StreamBuffer_t433541692 * __this, const MethodInfo* method)
+{
+	bool V_0 = false;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	{
+		int32_t L_0 = __this->get_pos_2();
+		int32_t L_1 = __this->get_len_3();
+		V_0 = (bool)((((int32_t)((((int32_t)L_0) < ((int32_t)L_1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		V_1 = (-1);
+		goto IL_0036;
+	}
+
+IL_001b:
+	{
+		ByteU5BU5D_t58506160* L_3 = __this->get_buf_4();
+		int32_t L_4 = __this->get_pos_2();
+		V_2 = L_4;
+		int32_t L_5 = V_2;
+		__this->set_pos_2(((int32_t)((int32_t)L_5+(int32_t)1)));
+		int32_t L_6 = V_2;
+		NullCheck(L_3);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_6);
+		int32_t L_7 = L_6;
+		V_1 = ((L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_7)));
+		goto IL_0036;
+	}
+
+IL_0036:
+	{
+		int32_t L_8 = V_1;
+		return L_8;
+	}
+}
+// System.Void ExitGames.Client.Photon.StreamBuffer::WriteByte(System.Byte)
+extern "C"  void StreamBuffer_WriteByte_m2993855300 (StreamBuffer_t433541692 * __this, uint8_t ___value, const MethodInfo* method)
+{
+	bool V_0 = false;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = __this->get_pos_2();
+		int32_t L_1 = __this->get_len_3();
+		V_0 = (bool)((((int32_t)((((int32_t)L_0) < ((int32_t)L_1))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		int32_t L_3 = __this->get_pos_2();
+		__this->set_len_3(((int32_t)((int32_t)L_3+(int32_t)1)));
+		int32_t L_4 = __this->get_len_3();
+		StreamBuffer_CheckSize_m4293374308(__this, L_4, /*hidden argument*/NULL);
+	}
+
+IL_0033:
+	{
+		ByteU5BU5D_t58506160* L_5 = __this->get_buf_4();
+		int32_t L_6 = __this->get_pos_2();
+		V_1 = L_6;
+		int32_t L_7 = V_1;
+		__this->set_pos_2(((int32_t)((int32_t)L_7+(int32_t)1)));
+		int32_t L_8 = V_1;
+		uint8_t L_9 = ___value;
+		NullCheck(L_5);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, L_8);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(L_8), (uint8_t)L_9);
+		return;
+	}
+}
+// System.Boolean ExitGames.Client.Photon.StreamBuffer::CheckSize(System.Int32)
+extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
+extern const uint32_t StreamBuffer_CheckSize_m4293374308_MetadataUsageId;
+extern "C"  bool StreamBuffer_CheckSize_m4293374308 (StreamBuffer_t433541692 * __this, int32_t ___size, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (StreamBuffer_CheckSize_m4293374308_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	ByteU5BU5D_t58506160* V_1 = NULL;
+	bool V_2 = false;
+	bool V_3 = false;
+	bool V_4 = false;
+	bool V_5 = false;
+	{
+		int32_t L_0 = ___size;
+		ByteU5BU5D_t58506160* L_1 = __this->get_buf_4();
+		NullCheck(L_1);
+		V_2 = (bool)((((int32_t)((((int32_t)L_0) > ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_1)->max_length))))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_2 = V_2;
+		if (!L_2)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		V_3 = (bool)0;
+		goto IL_006a;
+	}
+
+IL_0018:
+	{
+		ByteU5BU5D_t58506160* L_3 = __this->get_buf_4();
+		NullCheck(L_3);
+		V_0 = (((int32_t)((int32_t)(((Il2CppArray *)L_3)->max_length))));
+		int32_t L_4 = V_0;
+		V_4 = (bool)((((int32_t)L_4) == ((int32_t)0))? 1 : 0);
+		bool L_5 = V_4;
+		if (!L_5)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		V_0 = 1;
+	}
+
+IL_002f:
+	{
+		goto IL_0037;
+	}
+
+IL_0031:
+	{
+		int32_t L_6 = V_0;
+		V_0 = ((int32_t)((int32_t)L_6*(int32_t)2));
+	}
+
+IL_0037:
+	{
+		int32_t L_7 = ___size;
+		int32_t L_8 = V_0;
+		V_5 = (bool)((((int32_t)L_7) > ((int32_t)L_8))? 1 : 0);
+		bool L_9 = V_5;
+		if (L_9)
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		int32_t L_10 = V_0;
+		V_1 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)L_10));
+		ByteU5BU5D_t58506160* L_11 = __this->get_buf_4();
+		ByteU5BU5D_t58506160* L_12 = V_1;
+		ByteU5BU5D_t58506160* L_13 = __this->get_buf_4();
+		NullCheck(L_13);
+		Buffer_BlockCopy_m1580643184(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_11, 0, (Il2CppArray *)(Il2CppArray *)L_12, 0, (((int32_t)((int32_t)(((Il2CppArray *)L_13)->max_length)))), /*hidden argument*/NULL);
+		ByteU5BU5D_t58506160* L_14 = V_1;
+		__this->set_buf_4(L_14);
+		V_3 = (bool)1;
+		goto IL_006a;
+	}
+
+IL_006a:
+	{
+		bool L_15 = V_3;
+		return L_15;
 	}
 }
 // System.UInt32 ExitGames.Client.Photon.SupportClass::CalculateCrc(System.Byte[],System.Int32)
@@ -28553,9 +28944,10 @@ IL_0067:
 	}
 }
 // System.Void ExitGames.Client.Photon.TPeer::EnqueueInit()
-extern TypeInfo* MemoryStream_t2881531048_il2cpp_TypeInfo_var;
+extern TypeInfo* StreamBuffer_t433541692_il2cpp_TypeInfo_var;
 extern TypeInfo* BinaryWriter_t2314211483_il2cpp_TypeInfo_var;
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
+extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
 extern const uint32_t TPeer_EnqueueInit_m3939461252_MetadataUsageId;
 extern "C"  void TPeer_EnqueueInit_m3939461252 (TPeer_t2266327570 * __this, const MethodInfo* method)
 {
@@ -28565,7 +28957,7 @@ extern "C"  void TPeer_EnqueueInit_m3939461252 (TPeer_t2266327570 * __this, cons
 		il2cpp_codegen_initialize_method (TPeer_EnqueueInit_m3939461252_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
-	MemoryStream_t2881531048 * V_0 = NULL;
+	StreamBuffer_t433541692 * V_0 = NULL;
 	BinaryWriter_t2314211483 * V_1 = NULL;
 	ByteU5BU5D_t58506160* V_2 = NULL;
 	int32_t V_3 = 0;
@@ -28583,15 +28975,15 @@ extern "C"  void TPeer_EnqueueInit_m3939461252 (TPeer_t2266327570 * __this, cons
 		}
 	}
 	{
-		goto IL_00c9;
+		goto IL_00c3;
 	}
 
 IL_0015:
 	{
-		MemoryStream_t2881531048 * L_2 = (MemoryStream_t2881531048 *)il2cpp_codegen_object_new(MemoryStream_t2881531048_il2cpp_TypeInfo_var);
-		MemoryStream__ctor_m1061194329(L_2, 0, /*hidden argument*/NULL);
+		StreamBuffer_t433541692 * L_2 = (StreamBuffer_t433541692 *)il2cpp_codegen_object_new(StreamBuffer_t433541692_il2cpp_TypeInfo_var);
+		StreamBuffer__ctor_m3207855795(L_2, 0, /*hidden argument*/NULL);
 		V_0 = L_2;
-		MemoryStream_t2881531048 * L_3 = V_0;
+		StreamBuffer_t433541692 * L_3 = V_0;
 		BinaryWriter_t2314211483 * L_4 = (BinaryWriter_t2314211483 *)il2cpp_codegen_object_new(BinaryWriter_t2314211483_il2cpp_TypeInfo_var);
 		BinaryWriter__ctor_m3820043020(L_4, L_3, /*hidden argument*/NULL);
 		V_1 = L_4;
@@ -28605,65 +28997,64 @@ IL_0015:
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(6), (uint8_t)1);
 		V_2 = L_6;
 		V_3 = 1;
-		IProtocol_t2724506835 * L_7 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
-		ByteU5BU5D_t58506160* L_8 = ((PeerBase_t2319621551 *)__this)->get_INIT_BYTES_52();
+		ByteU5BU5D_t58506160* L_7 = ((PeerBase_t2319621551 *)__this)->get_INIT_BYTES_52();
+		NullCheck(L_7);
+		ByteU5BU5D_t58506160* L_8 = V_2;
 		NullCheck(L_8);
 		ByteU5BU5D_t58506160* L_9 = V_2;
-		NullCheck(L_9);
-		ByteU5BU5D_t58506160* L_10 = V_2;
-		NullCheck(L_7);
-		VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_7, ((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_8)->max_length))))+(int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_9)->max_length)))))), L_10, (&V_3));
-		BinaryWriter_t2314211483 * L_11 = V_1;
-		ByteU5BU5D_t58506160* L_12 = V_2;
-		NullCheck(L_11);
-		VirtActionInvoker1< ByteU5BU5D_t58506160* >::Invoke(6 /* System.Void System.IO.BinaryWriter::Write(System.Byte[]) */, L_11, L_12);
-		BinaryWriter_t2314211483 * L_13 = V_1;
-		ByteU5BU5D_t58506160* L_14 = ((PeerBase_t2319621551 *)__this)->get_INIT_BYTES_52();
-		NullCheck(L_13);
-		VirtActionInvoker1< ByteU5BU5D_t58506160* >::Invoke(6 /* System.Void System.IO.BinaryWriter::Write(System.Byte[]) */, L_13, L_14);
-		MemoryStream_t2881531048 * L_15 = V_0;
-		NullCheck(L_15);
-		ByteU5BU5D_t58506160* L_16 = VirtFuncInvoker0< ByteU5BU5D_t58506160* >::Invoke(25 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_15);
-		V_4 = L_16;
-		bool L_17 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
-		V_6 = L_17;
-		bool L_18 = V_6;
-		if (!L_18)
+		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+		Protocol_Serialize_m2001046545(NULL /*static, unused*/, ((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_7)->max_length))))+(int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_8)->max_length)))))), L_9, (&V_3), /*hidden argument*/NULL);
+		BinaryWriter_t2314211483 * L_10 = V_1;
+		ByteU5BU5D_t58506160* L_11 = V_2;
+		NullCheck(L_10);
+		VirtActionInvoker1< ByteU5BU5D_t58506160* >::Invoke(6 /* System.Void System.IO.BinaryWriter::Write(System.Byte[]) */, L_10, L_11);
+		BinaryWriter_t2314211483 * L_12 = V_1;
+		ByteU5BU5D_t58506160* L_13 = ((PeerBase_t2319621551 *)__this)->get_INIT_BYTES_52();
+		NullCheck(L_12);
+		VirtActionInvoker1< ByteU5BU5D_t58506160* >::Invoke(6 /* System.Void System.IO.BinaryWriter::Write(System.Byte[]) */, L_12, L_13);
+		StreamBuffer_t433541692 * L_14 = V_0;
+		NullCheck(L_14);
+		ByteU5BU5D_t58506160* L_15 = StreamBuffer_ToArray_m4001605236(L_14, /*hidden argument*/NULL);
+		V_4 = L_15;
+		bool L_16 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
+		V_6 = L_16;
+		bool L_17 = V_6;
+		if (!L_17)
 		{
-			goto IL_00be;
+			goto IL_00b8;
 		}
 	}
 	{
-		TrafficStats_t3177679614 * L_19 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
-		TrafficStats_t3177679614 * L_20 = L_19;
-		NullCheck(L_20);
-		int32_t L_21 = TrafficStats_get_TotalPacketCount_m823934560(L_20, /*hidden argument*/NULL);
-		V_7 = L_21;
-		int32_t L_22 = V_7;
-		NullCheck(L_20);
-		TrafficStats_set_TotalPacketCount_m1026618997(L_20, ((int32_t)((int32_t)L_22+(int32_t)1)), /*hidden argument*/NULL);
-		TrafficStats_t3177679614 * L_23 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
-		TrafficStats_t3177679614 * L_24 = L_23;
-		NullCheck(L_24);
-		int32_t L_25 = TrafficStats_get_TotalCommandsInPackets_m1353327511(L_24, /*hidden argument*/NULL);
-		V_7 = L_25;
-		int32_t L_26 = V_7;
-		NullCheck(L_24);
-		TrafficStats_set_TotalCommandsInPackets_m2441453100(L_24, ((int32_t)((int32_t)L_26+(int32_t)1)), /*hidden argument*/NULL);
-		TrafficStats_t3177679614 * L_27 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
-		ByteU5BU5D_t58506160* L_28 = V_4;
-		NullCheck(L_28);
+		TrafficStats_t3177679614 * L_18 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
+		TrafficStats_t3177679614 * L_19 = L_18;
+		NullCheck(L_19);
+		int32_t L_20 = TrafficStats_get_TotalPacketCount_m823934560(L_19, /*hidden argument*/NULL);
+		V_7 = L_20;
+		int32_t L_21 = V_7;
+		NullCheck(L_19);
+		TrafficStats_set_TotalPacketCount_m1026618997(L_19, ((int32_t)((int32_t)L_21+(int32_t)1)), /*hidden argument*/NULL);
+		TrafficStats_t3177679614 * L_22 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
+		TrafficStats_t3177679614 * L_23 = L_22;
+		NullCheck(L_23);
+		int32_t L_24 = TrafficStats_get_TotalCommandsInPackets_m1353327511(L_23, /*hidden argument*/NULL);
+		V_7 = L_24;
+		int32_t L_25 = V_7;
+		NullCheck(L_23);
+		TrafficStats_set_TotalCommandsInPackets_m2441453100(L_23, ((int32_t)((int32_t)L_25+(int32_t)1)), /*hidden argument*/NULL);
+		TrafficStats_t3177679614 * L_26 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
+		ByteU5BU5D_t58506160* L_27 = V_4;
 		NullCheck(L_27);
-		TrafficStats_CountControlCommand_m3520535532(L_27, (((int32_t)((int32_t)(((Il2CppArray *)L_28)->max_length)))), /*hidden argument*/NULL);
+		NullCheck(L_26);
+		TrafficStats_CountControlCommand_m3520535532(L_26, (((int32_t)((int32_t)(((Il2CppArray *)L_27)->max_length)))), /*hidden argument*/NULL);
 	}
 
-IL_00be:
+IL_00b8:
 	{
-		ByteU5BU5D_t58506160* L_29 = V_4;
-		TPeer_EnqueueMessageAsPayload_m1033141982(__this, (bool)1, L_29, 0, /*hidden argument*/NULL);
+		ByteU5BU5D_t58506160* L_28 = V_4;
+		TPeer_EnqueueMessageAsPayload_m1033141982(__this, (bool)1, L_28, 0, /*hidden argument*/NULL);
 	}
 
-IL_00c9:
+IL_00c3:
 	{
 		return;
 	}
@@ -29327,10 +29718,19 @@ IL_011a:
 	}
 }
 // System.Byte[] ExitGames.Client.Photon.TPeer::SerializeOperationToMessage(System.Byte,System.Collections.Generic.Dictionary`2<System.Byte,System.Object>,ExitGames.Client.Photon.PeerBase/EgMessageType,System.Boolean)
+extern TypeInfo* ICryptoProvider_t3810498269_il2cpp_TypeInfo_var;
+extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
+extern const uint32_t TPeer_SerializeOperationToMessage_m2353976576_MetadataUsageId;
 extern "C"  ByteU5BU5D_t58506160* TPeer_SerializeOperationToMessage_m2353976576 (TPeer_t2266327570 * __this, uint8_t ___opc, Dictionary_2_t3871407537 * ___parameters, uint8_t ___messageType, bool ___encrypt, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (TPeer_SerializeOperationToMessage_m2353976576_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
 	ByteU5BU5D_t58506160* V_0 = NULL;
-	MemoryStream_t2881531048 * V_1 = NULL;
+	StreamBuffer_t433541692 * V_1 = NULL;
 	bool V_2 = false;
 	bool V_3 = false;
 	ByteU5BU5D_t58506160* V_4 = NULL;
@@ -29346,9 +29746,9 @@ extern "C"  ByteU5BU5D_t58506160* TPeer_SerializeOperationToMessage_m2353976576 
 	int32_t __leave_target = 0;
 	NO_UNUSED_WARNING (__leave_target);
 	{
-		MemoryStream_t2881531048 * L_0 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+		StreamBuffer_t433541692 * L_0 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 		V_1 = L_0;
-		MemoryStream_t2881531048 * L_1 = V_1;
+		StreamBuffer_t433541692 * L_1 = V_1;
 		Monitor_Enter_m476686225(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
 	}
 
@@ -29356,10 +29756,10 @@ IL_000f:
 	try
 	{ // begin try (depth: 1)
 		{
-			MemoryStream_t2881531048 * L_2 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_2 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			NullCheck(L_2);
 			VirtActionInvoker1< int64_t >::Invoke(10 /* System.Void System.IO.Stream::set_Position(System.Int64) */, L_2, (((int64_t)((int64_t)0))));
-			MemoryStream_t2881531048 * L_3 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_3 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			NullCheck(L_3);
 			VirtActionInvoker1< int64_t >::Invoke(17 /* System.Void System.IO.Stream::SetLength(System.Int64) */, L_3, (((int64_t)((int64_t)0))));
 			bool L_4 = ___encrypt;
@@ -29373,7 +29773,7 @@ IL_000f:
 
 IL_0035:
 		{
-			MemoryStream_t2881531048 * L_6 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_6 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			ByteU5BU5D_t58506160* L_7 = __this->get_messageHeader_78();
 			ByteU5BU5D_t58506160* L_8 = __this->get_messageHeader_78();
 			NullCheck(L_8);
@@ -29383,12 +29783,12 @@ IL_0035:
 
 IL_0052:
 		{
-			IProtocol_t2724506835 * L_9 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
-			MemoryStream_t2881531048 * L_10 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			IProtocol_t2724506835 * L_9 = ((PeerBase_t2319621551 *)__this)->get_protocol_0();
+			StreamBuffer_t433541692 * L_10 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			uint8_t L_11 = ___opc;
 			Dictionary_2_t3871407537 * L_12 = ___parameters;
 			NullCheck(L_9);
-			VirtActionInvoker4< MemoryStream_t2881531048 *, uint8_t, Dictionary_2_t3871407537 *, bool >::Invoke(12 /* System.Void ExitGames.Client.IProtocol::SerializeOperationRequest(System.IO.MemoryStream,System.Byte,System.Collections.Generic.Dictionary`2<System.Byte,System.Object>,System.Boolean) */, L_9, L_10, L_11, L_12, (bool)0);
+			VirtActionInvoker4< StreamBuffer_t433541692 *, uint8_t, Dictionary_2_t3871407537 *, bool >::Invoke(9 /* System.Void ExitGames.Client.IProtocol::SerializeOperationRequest(ExitGames.Client.Photon.StreamBuffer,System.Byte,System.Collections.Generic.Dictionary`2<System.Byte,System.Object>,System.Boolean) */, L_9, L_10, L_11, L_12, (bool)0);
 			bool L_13 = ___encrypt;
 			V_3 = L_13;
 			bool L_14 = V_3;
@@ -29400,28 +29800,28 @@ IL_0052:
 
 IL_006d:
 		{
-			MemoryStream_t2881531048 * L_15 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_15 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			NullCheck(L_15);
-			ByteU5BU5D_t58506160* L_16 = VirtFuncInvoker0< ByteU5BU5D_t58506160* >::Invoke(25 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_15);
+			ByteU5BU5D_t58506160* L_16 = StreamBuffer_ToArray_m4001605236(L_15, /*hidden argument*/NULL);
 			V_4 = L_16;
-			DiffieHellmanCryptoProvider_t3764219664 * L_17 = ((PeerBase_t2319621551 *)__this)->get_CryptoProvider_44();
+			Il2CppObject * L_17 = ((PeerBase_t2319621551 *)__this)->get_CryptoProvider_44();
 			ByteU5BU5D_t58506160* L_18 = V_4;
 			NullCheck(L_17);
-			ByteU5BU5D_t58506160* L_19 = DiffieHellmanCryptoProvider_Encrypt_m2616640250(L_17, L_18, /*hidden argument*/NULL);
+			ByteU5BU5D_t58506160* L_19 = InterfaceFuncInvoker1< ByteU5BU5D_t58506160*, ByteU5BU5D_t58506160* >::Invoke(2 /* System.Byte[] Photon.SocketServer.Security.ICryptoProvider::Encrypt(System.Byte[]) */, ICryptoProvider_t3810498269_il2cpp_TypeInfo_var, L_17, L_18);
 			V_4 = L_19;
-			MemoryStream_t2881531048 * L_20 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_20 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			NullCheck(L_20);
 			VirtActionInvoker1< int64_t >::Invoke(10 /* System.Void System.IO.Stream::set_Position(System.Int64) */, L_20, (((int64_t)((int64_t)0))));
-			MemoryStream_t2881531048 * L_21 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_21 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			NullCheck(L_21);
 			VirtActionInvoker1< int64_t >::Invoke(17 /* System.Void System.IO.Stream::SetLength(System.Int64) */, L_21, (((int64_t)((int64_t)0))));
-			MemoryStream_t2881531048 * L_22 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_22 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			ByteU5BU5D_t58506160* L_23 = __this->get_messageHeader_78();
 			ByteU5BU5D_t58506160* L_24 = __this->get_messageHeader_78();
 			NullCheck(L_24);
 			NullCheck(L_22);
 			VirtActionInvoker3< ByteU5BU5D_t58506160*, int32_t, int32_t >::Invoke(18 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_22, L_23, 0, (((int32_t)((int32_t)(((Il2CppArray *)L_24)->max_length)))));
-			MemoryStream_t2881531048 * L_25 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_25 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			ByteU5BU5D_t58506160* L_26 = V_4;
 			ByteU5BU5D_t58506160* L_27 = V_4;
 			NullCheck(L_27);
@@ -29431,9 +29831,9 @@ IL_006d:
 
 IL_00d5:
 		{
-			MemoryStream_t2881531048 * L_28 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
+			StreamBuffer_t433541692 * L_28 = ((PeerBase_t2319621551 *)__this)->get_SerializeMemStream_71();
 			NullCheck(L_28);
-			ByteU5BU5D_t58506160* L_29 = VirtFuncInvoker0< ByteU5BU5D_t58506160* >::Invoke(25 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_28);
+			ByteU5BU5D_t58506160* L_29 = StreamBuffer_ToArray_m4001605236(L_28, /*hidden argument*/NULL);
 			V_0 = L_29;
 			IL2CPP_LEAVE(0xEC, FINALLY_00e4);
 		}
@@ -29446,7 +29846,7 @@ IL_00d5:
 
 FINALLY_00e4:
 	{ // begin finally (depth: 1)
-		MemoryStream_t2881531048 * L_30 = V_1;
+		StreamBuffer_t433541692 * L_30 = V_1;
 		Monitor_Exit_m2088237919(NULL /*static, unused*/, L_30, /*hidden argument*/NULL);
 		IL2CPP_END_FINALLY(228)
 	} // end finally (depth: 1)
@@ -29508,30 +29908,29 @@ IL_0131:
 		bool L_44 = V_7;
 		if (!L_44)
 		{
-			goto IL_0154;
+			goto IL_014e;
 		}
 	}
 	{
 		V_8 = 1;
-		IProtocol_t2724506835 * L_45 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
-		ByteU5BU5D_t58506160* L_46 = V_0;
-		NullCheck(L_46);
-		ByteU5BU5D_t58506160* L_47 = V_0;
+		ByteU5BU5D_t58506160* L_45 = V_0;
 		NullCheck(L_45);
-		VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_45, (((int32_t)((int32_t)(((Il2CppArray *)L_46)->max_length)))), L_47, (&V_8));
+		ByteU5BU5D_t58506160* L_46 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+		Protocol_Serialize_m2001046545(NULL /*static, unused*/, (((int32_t)((int32_t)(((Il2CppArray *)L_45)->max_length)))), L_46, (&V_8), /*hidden argument*/NULL);
 	}
 
-IL_0154:
+IL_014e:
 	{
-		ByteU5BU5D_t58506160* L_48 = V_0;
-		V_9 = L_48;
-		goto IL_0159;
+		ByteU5BU5D_t58506160* L_47 = V_0;
+		V_9 = L_47;
+		goto IL_0153;
 	}
 
-IL_0159:
+IL_0153:
 	{
-		ByteU5BU5D_t58506160* L_49 = V_9;
-		return L_49;
+		ByteU5BU5D_t58506160* L_48 = V_9;
+		return L_48;
 	}
 }
 // System.Boolean ExitGames.Client.Photon.TPeer::EnqueueMessageAsPayload(System.Boolean,System.Byte[],System.Byte)
@@ -29751,6 +30150,7 @@ extern TypeInfo* SupportClass_t780002629_il2cpp_TypeInfo_var;
 extern TypeInfo* Dictionary_2_t3871407537_il2cpp_TypeInfo_var;
 extern TypeInfo* Int32_t2847414787_il2cpp_TypeInfo_var;
 extern TypeInfo* PhotonCodes_t1388247846_il2cpp_TypeInfo_var;
+extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
 extern const MethodInfo* Dictionary_2__ctor_m3983279474_MethodInfo_var;
 extern const uint32_t TPeer_SendPing_m292050224_MetadataUsageId;
 extern "C"  void TPeer_SendPing_m292050224 (TPeer_t2266327570 * __this, const MethodInfo* method)
@@ -29792,41 +30192,40 @@ extern "C"  void TPeer_SendPing_m292050224 (TPeer_t2266327570 * __this, const Me
 		IL2CPP_RUNTIME_CLASS_INIT(PhotonCodes_t1388247846_il2cpp_TypeInfo_var);
 		uint8_t L_9 = ((PhotonCodes_t1388247846_StaticFields*)PhotonCodes_t1388247846_il2cpp_TypeInfo_var->static_fields)->get_Ping_4();
 		VirtFuncInvoker6< bool, Dictionary_2_t3871407537 *, uint8_t, bool, uint8_t, bool, uint8_t >::Invoke(10 /* System.Boolean ExitGames.Client.Photon.PeerBase::EnqueueOperation(System.Collections.Generic.Dictionary`2<System.Byte,System.Object>,System.Byte,System.Boolean,System.Byte,System.Boolean,ExitGames.Client.Photon.PeerBase/EgMessageType) */, __this, L_5, L_9, (bool)1, 0, (bool)0, 6);
-		goto IL_0090;
+		goto IL_008a;
 	}
 
 IL_0046:
 	{
 		V_2 = 1;
-		IProtocol_t2724506835 * L_10 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(SupportClass_t780002629_il2cpp_TypeInfo_var);
-		int32_t L_11 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
-		ByteU5BU5D_t58506160* L_12 = __this->get_pingRequest_75();
-		NullCheck(L_10);
-		VirtActionInvoker3< int32_t, ByteU5BU5D_t58506160*, int32_t* >::Invoke(7 /* System.Void ExitGames.Client.IProtocol::Serialize(System.Int32,System.Byte[],System.Int32&) */, L_10, L_11, L_12, (&V_2));
-		bool L_13 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
-		V_3 = L_13;
-		bool L_14 = V_3;
-		if (!L_14)
+		int32_t L_10 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
+		ByteU5BU5D_t58506160* L_11 = __this->get_pingRequest_75();
+		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+		Protocol_Serialize_m2001046545(NULL /*static, unused*/, L_10, L_11, (&V_2), /*hidden argument*/NULL);
+		bool L_12 = PeerBase_get_TrafficStatsEnabled_m1446203245(__this, /*hidden argument*/NULL);
+		V_3 = L_12;
+		bool L_13 = V_3;
+		if (!L_13)
 		{
-			goto IL_0082;
+			goto IL_007c;
 		}
 	}
 	{
-		TrafficStats_t3177679614 * L_15 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
-		ByteU5BU5D_t58506160* L_16 = __this->get_pingRequest_75();
-		NullCheck(L_16);
+		TrafficStats_t3177679614 * L_14 = ((PeerBase_t2319621551 *)__this)->get_TrafficStatsOutgoing_8();
+		ByteU5BU5D_t58506160* L_15 = __this->get_pingRequest_75();
 		NullCheck(L_15);
-		TrafficStats_CountControlCommand_m3520535532(L_15, (((int32_t)((int32_t)(((Il2CppArray *)L_16)->max_length)))), /*hidden argument*/NULL);
+		NullCheck(L_14);
+		TrafficStats_CountControlCommand_m3520535532(L_14, (((int32_t)((int32_t)(((Il2CppArray *)L_15)->max_length)))), /*hidden argument*/NULL);
 	}
 
-IL_0082:
+IL_007c:
 	{
-		ByteU5BU5D_t58506160* L_17 = __this->get_pingRequest_75();
-		TPeer_SendData_m2732454753(__this, L_17, /*hidden argument*/NULL);
+		ByteU5BU5D_t58506160* L_16 = __this->get_pingRequest_75();
+		TPeer_SendData_m2732454753(__this, L_16, /*hidden argument*/NULL);
 	}
 
-IL_0090:
+IL_008a:
 	{
 		return;
 	}
@@ -30244,6 +30643,7 @@ IL_016f:
 	}
 }
 // System.Void ExitGames.Client.Photon.TPeer::ReadPingResult(System.Byte[])
+extern TypeInfo* Protocol_t1261748468_il2cpp_TypeInfo_var;
 extern TypeInfo* SupportClass_t780002629_il2cpp_TypeInfo_var;
 extern const uint32_t TPeer_ReadPingResult_m3812023214_MetadataUsageId;
 extern "C"  void TPeer_ReadPingResult_m3812023214 (TPeer_t2266327570 * __this, ByteU5BU5D_t58506160* ___inbuff, const MethodInfo* method)
@@ -30263,53 +30663,50 @@ extern "C"  void TPeer_ReadPingResult_m3812023214 (TPeer_t2266327570 * __this, B
 		V_0 = 0;
 		V_1 = 0;
 		V_2 = 1;
-		IProtocol_t2724506835 * L_0 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
+		ByteU5BU5D_t58506160* L_0 = ___inbuff;
+		IL2CPP_RUNTIME_CLASS_INIT(Protocol_t1261748468_il2cpp_TypeInfo_var);
+		Protocol_Deserialize_m2617704396(NULL /*static, unused*/, (&V_0), L_0, (&V_2), /*hidden argument*/NULL);
 		ByteU5BU5D_t58506160* L_1 = ___inbuff;
-		NullCheck(L_0);
-		VirtActionInvoker3< int32_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(16 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int32&,System.Byte[],System.Int32&) */, L_0, (&V_0), L_1, (&V_2));
-		IProtocol_t2724506835 * L_2 = PeerBase_get_Protocol_m4217687564(__this, /*hidden argument*/NULL);
-		ByteU5BU5D_t58506160* L_3 = ___inbuff;
-		NullCheck(L_2);
-		VirtActionInvoker3< int32_t*, ByteU5BU5D_t58506160*, int32_t* >::Invoke(16 /* System.Void ExitGames.Client.IProtocol::Deserialize(System.Int32&,System.Byte[],System.Int32&) */, L_2, (&V_1), L_3, (&V_2));
+		Protocol_Deserialize_m2617704396(NULL /*static, unused*/, (&V_1), L_1, (&V_2), /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(SupportClass_t780002629_il2cpp_TypeInfo_var);
-		int32_t L_4 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
-		int32_t L_5 = V_1;
-		((PeerBase_t2319621551 *)__this)->set_lastRoundTripTime_27(((int32_t)((int32_t)L_4-(int32_t)L_5)));
-		bool L_6 = ((PeerBase_t2319621551 *)__this)->get_serverTimeOffsetIsAvailable_24();
-		V_3 = (bool)((((int32_t)L_6) == ((int32_t)0))? 1 : 0);
-		bool L_7 = V_3;
-		if (!L_7)
+		int32_t L_2 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_3 = V_1;
+		((PeerBase_t2319621551 *)__this)->set_lastRoundTripTime_27(((int32_t)((int32_t)L_2-(int32_t)L_3)));
+		bool L_4 = ((PeerBase_t2319621551 *)__this)->get_serverTimeOffsetIsAvailable_24();
+		V_3 = (bool)((((int32_t)L_4) == ((int32_t)0))? 1 : 0);
+		bool L_5 = V_3;
+		if (!L_5)
 		{
-			goto IL_0051;
+			goto IL_0045;
 		}
 	}
 	{
-		int32_t L_8 = ((PeerBase_t2319621551 *)__this)->get_lastRoundTripTime_27();
-		((PeerBase_t2319621551 *)__this)->set_roundTripTime_25(L_8);
+		int32_t L_6 = ((PeerBase_t2319621551 *)__this)->get_lastRoundTripTime_27();
+		((PeerBase_t2319621551 *)__this)->set_roundTripTime_25(L_6);
 	}
 
-IL_0051:
+IL_0045:
 	{
-		int32_t L_9 = ((PeerBase_t2319621551 *)__this)->get_lastRoundTripTime_27();
-		PeerBase_UpdateRoundTripTimeAndVariance_m874745751(__this, L_9, /*hidden argument*/NULL);
-		bool L_10 = ((PeerBase_t2319621551 *)__this)->get_serverTimeOffsetIsAvailable_24();
-		V_4 = (bool)((((int32_t)L_10) == ((int32_t)0))? 1 : 0);
-		bool L_11 = V_4;
-		if (!L_11)
+		int32_t L_7 = ((PeerBase_t2319621551 *)__this)->get_lastRoundTripTime_27();
+		PeerBase_UpdateRoundTripTimeAndVariance_m874745751(__this, L_7, /*hidden argument*/NULL);
+		bool L_8 = ((PeerBase_t2319621551 *)__this)->get_serverTimeOffsetIsAvailable_24();
+		V_4 = (bool)((((int32_t)L_8) == ((int32_t)0))? 1 : 0);
+		bool L_9 = V_4;
+		if (!L_9)
 		{
-			goto IL_008c;
+			goto IL_0080;
 		}
 	}
 	{
-		int32_t L_12 = V_0;
-		int32_t L_13 = ((PeerBase_t2319621551 *)__this)->get_lastRoundTripTime_27();
+		int32_t L_10 = V_0;
+		int32_t L_11 = ((PeerBase_t2319621551 *)__this)->get_lastRoundTripTime_27();
 		IL2CPP_RUNTIME_CLASS_INIT(SupportClass_t780002629_il2cpp_TypeInfo_var);
-		int32_t L_14 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
-		((PeerBase_t2319621551 *)__this)->set_serverTimeOffset_23(((int32_t)((int32_t)((int32_t)((int32_t)L_12+(int32_t)((int32_t)((int32_t)L_13>>(int32_t)1))))-(int32_t)L_14)));
+		int32_t L_12 = SupportClass_GetTickCount_m172429079(NULL /*static, unused*/, /*hidden argument*/NULL);
+		((PeerBase_t2319621551 *)__this)->set_serverTimeOffset_23(((int32_t)((int32_t)((int32_t)((int32_t)L_10+(int32_t)((int32_t)((int32_t)L_11>>(int32_t)1))))-(int32_t)L_12)));
 		((PeerBase_t2319621551 *)__this)->set_serverTimeOffsetIsAvailable_24((bool)1);
 	}
 
-IL_008c:
+IL_0080:
 	{
 		return;
 	}
@@ -30389,7 +30786,7 @@ IL_0086:
 // System.Void ExitGames.Client.Photon.TPeer::.cctor()
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
 extern TypeInfo* TPeer_t2266327570_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238938____6668D4903321030E42A6CE59AB96ADD9D0214FAC_3_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238937____6668D4903321030E42A6CE59AB96ADD9D0214FAC_2_FieldInfo_var;
 extern const uint32_t TPeer__cctor_m4078892799_MetadataUsageId;
 extern "C"  void TPeer__cctor_m4078892799 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -30401,7 +30798,7 @@ extern "C"  void TPeer__cctor_m4078892799 (Il2CppObject * __this /* static, unus
 	}
 	{
 		ByteU5BU5D_t58506160* L_0 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)9)));
-		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238938____6668D4903321030E42A6CE59AB96ADD9D0214FAC_3_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238937____6668D4903321030E42A6CE59AB96ADD9D0214FAC_2_FieldInfo_var), /*hidden argument*/NULL);
 		((TPeer_t2266327570_StaticFields*)TPeer_t2266327570_il2cpp_TypeInfo_var->static_fields)->set_tcpFramedMessageHead_76(L_0);
 		ByteU5BU5D_t58506160* L_1 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)2));
 		NullCheck(L_1);
@@ -31454,7 +31851,7 @@ extern "C"  void TrafficStatsGameLevel__ctor_m3983251828 (TrafficStatsGameLevel_
 // System.Void ExitGames.Client.Photon.Version::.cctor()
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
 extern TypeInfo* Version_t4202529524_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238938____5EC4804EF31B736575B8DD011AD418F4BBBD59A4_2_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238937____6FEECBA4BA3EF4EC529CECBF362844DBA8955CE0_3_FieldInfo_var;
 extern const uint32_t Version__cctor_m3267662241_MetadataUsageId;
 extern "C"  void Version__cctor_m3267662241 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -31466,7 +31863,7 @@ extern "C"  void Version__cctor_m3267662241 (Il2CppObject * __this /* static, un
 	}
 	{
 		ByteU5BU5D_t58506160* L_0 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)4));
-		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238938____5EC4804EF31B736575B8DD011AD418F4BBBD59A4_2_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238937____6FEECBA4BA3EF4EC529CECBF362844DBA8955CE0_3_FieldInfo_var), /*hidden argument*/NULL);
 		((Version_t4202529524_StaticFields*)Version_t4202529524_il2cpp_TypeInfo_var->static_fields)->set_clientVersion_0(L_0);
 		return;
 	}
@@ -31483,10 +31880,10 @@ extern "C"  void BigInteger__ctor_m3370758135 (BigInteger_t2113513851 * __this, 
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		__this->set_data_2((UInt32U5BU5D_t2133601851*)NULL);
+		__this->set_data_1((UInt32U5BU5D_t2133601851*)NULL);
 		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
-		__this->set_data_2(((UInt32U5BU5D_t2133601851*)SZArrayNew(UInt32U5BU5D_t2133601851_il2cpp_TypeInfo_var, (uint32_t)((int32_t)70))));
-		__this->set_dataLength_3(1);
+		__this->set_data_1(((UInt32U5BU5D_t2133601851*)SZArrayNew(UInt32U5BU5D_t2133601851_il2cpp_TypeInfo_var, (uint32_t)((int32_t)70))));
+		__this->set_dataLength_2(1);
 		return;
 	}
 }
@@ -31515,27 +31912,27 @@ extern "C"  void BigInteger__ctor_m2077505097 (BigInteger_t2113513851 * __this, 
 	int32_t G_B10_0 = 0;
 	int32_t G_B17_0 = 0;
 	{
-		__this->set_data_2((UInt32U5BU5D_t2133601851*)NULL);
+		__this->set_data_1((UInt32U5BU5D_t2133601851*)NULL);
 		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
-		__this->set_data_2(((UInt32U5BU5D_t2133601851*)SZArrayNew(UInt32U5BU5D_t2133601851_il2cpp_TypeInfo_var, (uint32_t)((int32_t)70))));
+		__this->set_data_1(((UInt32U5BU5D_t2133601851*)SZArrayNew(UInt32U5BU5D_t2133601851_il2cpp_TypeInfo_var, (uint32_t)((int32_t)70))));
 		int64_t L_0 = ___value;
 		V_0 = L_0;
-		__this->set_dataLength_3(0);
+		__this->set_dataLength_2(0);
 		goto IL_004f;
 	}
 
 IL_0027:
 	{
-		UInt32U5BU5D_t2133601851* L_1 = __this->get_data_2();
-		int32_t L_2 = __this->get_dataLength_3();
+		UInt32U5BU5D_t2133601851* L_1 = __this->get_data_1();
+		int32_t L_2 = __this->get_dataLength_2();
 		int64_t L_3 = ___value;
 		NullCheck(L_1);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_1, L_2);
 		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(L_2), (uint32_t)(((int32_t)((uint32_t)((int64_t)((int64_t)L_3&(int64_t)(((int64_t)((uint64_t)(((uint32_t)((uint32_t)(-1)))))))))))));
 		int64_t L_4 = ___value;
 		___value = ((int64_t)((int64_t)L_4>>(int32_t)((int32_t)32)));
-		int32_t L_5 = __this->get_dataLength_3();
-		__this->set_dataLength_3(((int32_t)((int32_t)L_5+(int32_t)1)));
+		int32_t L_5 = __this->get_dataLength_2();
+		__this->set_dataLength_2(((int32_t)((int32_t)L_5+(int32_t)1)));
 	}
 
 IL_004f:
@@ -31547,7 +31944,7 @@ IL_004f:
 		}
 	}
 	{
-		int32_t L_7 = __this->get_dataLength_3();
+		int32_t L_7 = __this->get_dataLength_2();
 		G_B5_0 = ((((int32_t)L_7) < ((int32_t)((int32_t)70)))? 1 : 0);
 		goto IL_005f;
 	}
@@ -31583,7 +31980,7 @@ IL_005f:
 		}
 	}
 	{
-		UInt32U5BU5D_t2133601851* L_12 = __this->get_data_2();
+		UInt32U5BU5D_t2133601851* L_12 = __this->get_data_1();
 		NullCheck(L_12);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_12, ((int32_t)69));
 		int32_t L_13 = ((int32_t)69);
@@ -31634,8 +32031,8 @@ IL_0097:
 		}
 	}
 	{
-		UInt32U5BU5D_t2133601851* L_19 = __this->get_data_2();
-		int32_t L_20 = __this->get_dataLength_3();
+		UInt32U5BU5D_t2133601851* L_19 = __this->get_data_1();
+		int32_t L_20 = __this->get_dataLength_2();
 		NullCheck(L_19);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_19, ((int32_t)((int32_t)L_20-(int32_t)1)));
 		int32_t L_21 = ((int32_t)((int32_t)L_20-(int32_t)1));
@@ -31669,7 +32066,7 @@ IL_00d4:
 
 IL_00d5:
 	{
-		int32_t L_24 = __this->get_dataLength_3();
+		int32_t L_24 = __this->get_dataLength_2();
 		V_6 = (bool)((((int32_t)L_24) == ((int32_t)0))? 1 : 0);
 		bool L_25 = V_6;
 		if (!L_25)
@@ -31678,7 +32075,7 @@ IL_00d5:
 		}
 	}
 	{
-		__this->set_dataLength_3(1);
+		__this->set_dataLength_2(1);
 	}
 
 IL_00eb:
@@ -31700,24 +32097,24 @@ extern "C"  void BigInteger__ctor_m4089992530 (BigInteger_t2113513851 * __this, 
 	int32_t V_0 = 0;
 	bool V_1 = false;
 	{
-		__this->set_data_2((UInt32U5BU5D_t2133601851*)NULL);
+		__this->set_data_1((UInt32U5BU5D_t2133601851*)NULL);
 		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
-		__this->set_data_2(((UInt32U5BU5D_t2133601851*)SZArrayNew(UInt32U5BU5D_t2133601851_il2cpp_TypeInfo_var, (uint32_t)((int32_t)70))));
+		__this->set_data_1(((UInt32U5BU5D_t2133601851*)SZArrayNew(UInt32U5BU5D_t2133601851_il2cpp_TypeInfo_var, (uint32_t)((int32_t)70))));
 		BigInteger_t2113513851 * L_0 = ___bi;
 		NullCheck(L_0);
-		int32_t L_1 = L_0->get_dataLength_3();
-		__this->set_dataLength_3(L_1);
+		int32_t L_1 = L_0->get_dataLength_2();
+		__this->set_dataLength_2(L_1);
 		V_0 = 0;
 		goto IL_0040;
 	}
 
 IL_002c:
 	{
-		UInt32U5BU5D_t2133601851* L_2 = __this->get_data_2();
+		UInt32U5BU5D_t2133601851* L_2 = __this->get_data_1();
 		int32_t L_3 = V_0;
 		BigInteger_t2113513851 * L_4 = ___bi;
 		NullCheck(L_4);
-		UInt32U5BU5D_t2133601851* L_5 = L_4->get_data_2();
+		UInt32U5BU5D_t2133601851* L_5 = L_4->get_data_1();
 		int32_t L_6 = V_0;
 		NullCheck(L_5);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, L_6);
@@ -31732,7 +32129,7 @@ IL_002c:
 IL_0040:
 	{
 		int32_t L_9 = V_0;
-		int32_t L_10 = __this->get_dataLength_3();
+		int32_t L_10 = __this->get_dataLength_2();
 		V_1 = (bool)((((int32_t)L_9) < ((int32_t)L_10))? 1 : 0);
 		bool L_11 = V_1;
 		if (L_11)
@@ -31769,11 +32166,11 @@ extern "C"  void BigInteger__ctor_m2671917362 (BigInteger_t2113513851 * __this, 
 	bool V_9 = false;
 	int32_t G_B18_0 = 0;
 	{
-		__this->set_data_2((UInt32U5BU5D_t2133601851*)NULL);
+		__this->set_data_1((UInt32U5BU5D_t2133601851*)NULL);
 		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
 		ByteU5BU5D_t58506160* L_0 = ___inData;
 		NullCheck(L_0);
-		__this->set_dataLength_3(((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_0)->max_length))))>>(int32_t)2)));
+		__this->set_dataLength_2(((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_0)->max_length))))>>(int32_t)2)));
 		ByteU5BU5D_t58506160* L_1 = ___inData;
 		NullCheck(L_1);
 		V_0 = ((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_1)->max_length))))&(int32_t)3));
@@ -31786,13 +32183,13 @@ extern "C"  void BigInteger__ctor_m2671917362 (BigInteger_t2113513851 * __this, 
 		}
 	}
 	{
-		int32_t L_4 = __this->get_dataLength_3();
-		__this->set_dataLength_3(((int32_t)((int32_t)L_4+(int32_t)1)));
+		int32_t L_4 = __this->get_dataLength_2();
+		__this->set_dataLength_2(((int32_t)((int32_t)L_4+(int32_t)1)));
 	}
 
 IL_0036:
 	{
-		int32_t L_5 = __this->get_dataLength_3();
+		int32_t L_5 = __this->get_dataLength_2();
 		V_2 = (bool)((((int32_t)L_5) > ((int32_t)((int32_t)70)))? 1 : 0);
 		bool L_6 = V_2;
 		if (!L_6)
@@ -31808,7 +32205,7 @@ IL_0036:
 
 IL_004f:
 	{
-		__this->set_data_2(((UInt32U5BU5D_t2133601851*)SZArrayNew(UInt32U5BU5D_t2133601851_il2cpp_TypeInfo_var, (uint32_t)((int32_t)70))));
+		__this->set_data_1(((UInt32U5BU5D_t2133601851*)SZArrayNew(UInt32U5BU5D_t2133601851_il2cpp_TypeInfo_var, (uint32_t)((int32_t)70))));
 		ByteU5BU5D_t58506160* L_8 = ___inData;
 		NullCheck(L_8);
 		V_3 = ((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_8)->max_length))))-(int32_t)1));
@@ -31818,7 +32215,7 @@ IL_004f:
 
 IL_0067:
 	{
-		UInt32U5BU5D_t2133601851* L_9 = __this->get_data_2();
+		UInt32U5BU5D_t2133601851* L_9 = __this->get_data_1();
 		int32_t L_10 = V_4;
 		ByteU5BU5D_t58506160* L_11 = ___inData;
 		int32_t L_12 = V_3;
@@ -31869,8 +32266,8 @@ IL_0099:
 		}
 	}
 	{
-		UInt32U5BU5D_t2133601851* L_29 = __this->get_data_2();
-		int32_t L_30 = __this->get_dataLength_3();
+		UInt32U5BU5D_t2133601851* L_29 = __this->get_data_1();
+		int32_t L_30 = __this->get_dataLength_2();
 		ByteU5BU5D_t58506160* L_31 = ___inData;
 		NullCheck(L_31);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_31, 0);
@@ -31892,8 +32289,8 @@ IL_00c4:
 		}
 	}
 	{
-		UInt32U5BU5D_t2133601851* L_35 = __this->get_data_2();
-		int32_t L_36 = __this->get_dataLength_3();
+		UInt32U5BU5D_t2133601851* L_35 = __this->get_data_1();
+		int32_t L_36 = __this->get_dataLength_2();
 		ByteU5BU5D_t58506160* L_37 = ___inData;
 		NullCheck(L_37);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_37, 0);
@@ -31919,8 +32316,8 @@ IL_00e8:
 		}
 	}
 	{
-		UInt32U5BU5D_t2133601851* L_43 = __this->get_data_2();
-		int32_t L_44 = __this->get_dataLength_3();
+		UInt32U5BU5D_t2133601851* L_43 = __this->get_data_1();
+		int32_t L_44 = __this->get_dataLength_2();
 		ByteU5BU5D_t58506160* L_45 = ___inData;
 		NullCheck(L_45);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_45, 0);
@@ -31945,21 +32342,21 @@ IL_0111:
 
 IL_0113:
 	{
-		int32_t L_51 = __this->get_dataLength_3();
-		__this->set_dataLength_3(((int32_t)((int32_t)L_51-(int32_t)1)));
+		int32_t L_51 = __this->get_dataLength_2();
+		__this->set_dataLength_2(((int32_t)((int32_t)L_51-(int32_t)1)));
 	}
 
 IL_0121:
 	{
-		int32_t L_52 = __this->get_dataLength_3();
+		int32_t L_52 = __this->get_dataLength_2();
 		if ((((int32_t)L_52) <= ((int32_t)1)))
 		{
 			goto IL_013e;
 		}
 	}
 	{
-		UInt32U5BU5D_t2133601851* L_53 = __this->get_data_2();
-		int32_t L_54 = __this->get_dataLength_3();
+		UInt32U5BU5D_t2133601851* L_53 = __this->get_data_1();
+		int32_t L_54 = __this->get_dataLength_2();
 		NullCheck(L_53);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_53, ((int32_t)((int32_t)L_54-(int32_t)1)));
 		int32_t L_55 = ((int32_t)((int32_t)L_54-(int32_t)1));
@@ -32005,12 +32402,12 @@ extern "C"  void BigInteger__ctor_m945906881 (BigInteger_t2113513851 * __this, U
 	bool V_4 = false;
 	int32_t G_B10_0 = 0;
 	{
-		__this->set_data_2((UInt32U5BU5D_t2133601851*)NULL);
+		__this->set_data_1((UInt32U5BU5D_t2133601851*)NULL);
 		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
 		UInt32U5BU5D_t2133601851* L_0 = ___inData;
 		NullCheck(L_0);
-		__this->set_dataLength_3((((int32_t)((int32_t)(((Il2CppArray *)L_0)->max_length)))));
-		int32_t L_1 = __this->get_dataLength_3();
+		__this->set_dataLength_2((((int32_t)((int32_t)(((Il2CppArray *)L_0)->max_length)))));
+		int32_t L_1 = __this->get_dataLength_2();
 		V_0 = (bool)((((int32_t)L_1) > ((int32_t)((int32_t)70)))? 1 : 0);
 		bool L_2 = V_0;
 		if (!L_2)
@@ -32026,8 +32423,8 @@ extern "C"  void BigInteger__ctor_m945906881 (BigInteger_t2113513851 * __this, U
 
 IL_0031:
 	{
-		__this->set_data_2(((UInt32U5BU5D_t2133601851*)SZArrayNew(UInt32U5BU5D_t2133601851_il2cpp_TypeInfo_var, (uint32_t)((int32_t)70))));
-		int32_t L_4 = __this->get_dataLength_3();
+		__this->set_data_1(((UInt32U5BU5D_t2133601851*)SZArrayNew(UInt32U5BU5D_t2133601851_il2cpp_TypeInfo_var, (uint32_t)((int32_t)70))));
+		int32_t L_4 = __this->get_dataLength_2();
 		V_1 = ((int32_t)((int32_t)L_4-(int32_t)1));
 		V_2 = 0;
 		goto IL_005e;
@@ -32035,7 +32432,7 @@ IL_0031:
 
 IL_004b:
 	{
-		UInt32U5BU5D_t2133601851* L_5 = __this->get_data_2();
+		UInt32U5BU5D_t2133601851* L_5 = __this->get_data_1();
 		int32_t L_6 = V_2;
 		UInt32U5BU5D_t2133601851* L_7 = ___inData;
 		int32_t L_8 = V_1;
@@ -32067,21 +32464,21 @@ IL_005e:
 
 IL_006b:
 	{
-		int32_t L_14 = __this->get_dataLength_3();
-		__this->set_dataLength_3(((int32_t)((int32_t)L_14-(int32_t)1)));
+		int32_t L_14 = __this->get_dataLength_2();
+		__this->set_dataLength_2(((int32_t)((int32_t)L_14-(int32_t)1)));
 	}
 
 IL_0079:
 	{
-		int32_t L_15 = __this->get_dataLength_3();
+		int32_t L_15 = __this->get_dataLength_2();
 		if ((((int32_t)L_15) <= ((int32_t)1)))
 		{
 			goto IL_0096;
 		}
 	}
 	{
-		UInt32U5BU5D_t2133601851* L_16 = __this->get_data_2();
-		int32_t L_17 = __this->get_dataLength_3();
+		UInt32U5BU5D_t2133601851* L_16 = __this->get_data_1();
+		int32_t L_17 = __this->get_dataLength_2();
 		NullCheck(L_16);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_16, ((int32_t)((int32_t)L_17-(int32_t)1)));
 		int32_t L_18 = ((int32_t)((int32_t)L_17-(int32_t)1));
@@ -32195,10 +32592,10 @@ extern "C"  BigInteger_t2113513851 * BigInteger_op_Addition_m3854058833 (Il2CppO
 		BigInteger_t2113513851 * L_1 = V_0;
 		BigInteger_t2113513851 * L_2 = ___bi1;
 		NullCheck(L_2);
-		int32_t L_3 = L_2->get_dataLength_3();
+		int32_t L_3 = L_2->get_dataLength_2();
 		BigInteger_t2113513851 * L_4 = ___bi2;
 		NullCheck(L_4);
-		int32_t L_5 = L_4->get_dataLength_3();
+		int32_t L_5 = L_4->get_dataLength_2();
 		G_B1_0 = L_1;
 		if ((((int32_t)L_3) > ((int32_t)L_5)))
 		{
@@ -32209,7 +32606,7 @@ extern "C"  BigInteger_t2113513851 * BigInteger_op_Addition_m3854058833 (Il2CppO
 	{
 		BigInteger_t2113513851 * L_6 = ___bi2;
 		NullCheck(L_6);
-		int32_t L_7 = L_6->get_dataLength_3();
+		int32_t L_7 = L_6->get_dataLength_2();
 		G_B3_0 = L_7;
 		G_B3_1 = G_B1_0;
 		goto IL_0024;
@@ -32219,7 +32616,7 @@ IL_001e:
 	{
 		BigInteger_t2113513851 * L_8 = ___bi1;
 		NullCheck(L_8);
-		int32_t L_9 = L_8->get_dataLength_3();
+		int32_t L_9 = L_8->get_dataLength_2();
 		G_B3_0 = L_9;
 		G_B3_1 = G_B2_0;
 	}
@@ -32227,7 +32624,7 @@ IL_001e:
 IL_0024:
 	{
 		NullCheck(G_B3_1);
-		G_B3_1->set_dataLength_3(G_B3_0);
+		G_B3_1->set_dataLength_2(G_B3_0);
 		V_1 = (((int64_t)((int64_t)0)));
 		V_3 = 0;
 		goto IL_0061;
@@ -32237,14 +32634,14 @@ IL_0030:
 	{
 		BigInteger_t2113513851 * L_10 = ___bi1;
 		NullCheck(L_10);
-		UInt32U5BU5D_t2133601851* L_11 = L_10->get_data_2();
+		UInt32U5BU5D_t2133601851* L_11 = L_10->get_data_1();
 		int32_t L_12 = V_3;
 		NullCheck(L_11);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_11, L_12);
 		int32_t L_13 = L_12;
 		BigInteger_t2113513851 * L_14 = ___bi2;
 		NullCheck(L_14);
-		UInt32U5BU5D_t2133601851* L_15 = L_14->get_data_2();
+		UInt32U5BU5D_t2133601851* L_15 = L_14->get_data_1();
 		int32_t L_16 = V_3;
 		NullCheck(L_15);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_15, L_16);
@@ -32255,7 +32652,7 @@ IL_0030:
 		V_1 = ((int64_t)((int64_t)L_19>>(int32_t)((int32_t)32)));
 		BigInteger_t2113513851 * L_20 = V_0;
 		NullCheck(L_20);
-		UInt32U5BU5D_t2133601851* L_21 = L_20->get_data_2();
+		UInt32U5BU5D_t2133601851* L_21 = L_20->get_data_1();
 		int32_t L_22 = V_3;
 		int64_t L_23 = V_4;
 		NullCheck(L_21);
@@ -32270,7 +32667,7 @@ IL_0061:
 		int32_t L_25 = V_3;
 		BigInteger_t2113513851 * L_26 = V_0;
 		NullCheck(L_26);
-		int32_t L_27 = L_26->get_dataLength_3();
+		int32_t L_27 = L_26->get_dataLength_2();
 		V_5 = (bool)((((int32_t)L_25) < ((int32_t)L_27))? 1 : 0);
 		bool L_28 = V_5;
 		if (L_28)
@@ -32288,7 +32685,7 @@ IL_0061:
 	{
 		BigInteger_t2113513851 * L_30 = V_0;
 		NullCheck(L_30);
-		int32_t L_31 = L_30->get_dataLength_3();
+		int32_t L_31 = L_30->get_dataLength_2();
 		G_B9_0 = ((((int32_t)L_31) < ((int32_t)((int32_t)70)))? 1 : 0);
 		goto IL_0080;
 	}
@@ -32310,10 +32707,10 @@ IL_0080:
 	{
 		BigInteger_t2113513851 * L_33 = V_0;
 		NullCheck(L_33);
-		UInt32U5BU5D_t2133601851* L_34 = L_33->get_data_2();
+		UInt32U5BU5D_t2133601851* L_34 = L_33->get_data_1();
 		BigInteger_t2113513851 * L_35 = V_0;
 		NullCheck(L_35);
-		int32_t L_36 = L_35->get_dataLength_3();
+		int32_t L_36 = L_35->get_dataLength_2();
 		int64_t L_37 = V_1;
 		NullCheck(L_34);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_34, L_36);
@@ -32321,9 +32718,9 @@ IL_0080:
 		BigInteger_t2113513851 * L_38 = V_0;
 		BigInteger_t2113513851 * L_39 = L_38;
 		NullCheck(L_39);
-		int32_t L_40 = L_39->get_dataLength_3();
+		int32_t L_40 = L_39->get_dataLength_2();
 		NullCheck(L_39);
-		L_39->set_dataLength_3(((int32_t)((int32_t)L_40+(int32_t)1)));
+		L_39->set_dataLength_2(((int32_t)((int32_t)L_40+(int32_t)1)));
 	}
 
 IL_00a5:
@@ -32336,16 +32733,16 @@ IL_00a7:
 		BigInteger_t2113513851 * L_41 = V_0;
 		BigInteger_t2113513851 * L_42 = L_41;
 		NullCheck(L_42);
-		int32_t L_43 = L_42->get_dataLength_3();
+		int32_t L_43 = L_42->get_dataLength_2();
 		NullCheck(L_42);
-		L_42->set_dataLength_3(((int32_t)((int32_t)L_43-(int32_t)1)));
+		L_42->set_dataLength_2(((int32_t)((int32_t)L_43-(int32_t)1)));
 	}
 
 IL_00b5:
 	{
 		BigInteger_t2113513851 * L_44 = V_0;
 		NullCheck(L_44);
-		int32_t L_45 = L_44->get_dataLength_3();
+		int32_t L_45 = L_44->get_dataLength_2();
 		if ((((int32_t)L_45) <= ((int32_t)1)))
 		{
 			goto IL_00d2;
@@ -32354,10 +32751,10 @@ IL_00b5:
 	{
 		BigInteger_t2113513851 * L_46 = V_0;
 		NullCheck(L_46);
-		UInt32U5BU5D_t2133601851* L_47 = L_46->get_data_2();
+		UInt32U5BU5D_t2133601851* L_47 = L_46->get_data_1();
 		BigInteger_t2113513851 * L_48 = V_0;
 		NullCheck(L_48);
-		int32_t L_49 = L_48->get_dataLength_3();
+		int32_t L_49 = L_48->get_dataLength_2();
 		NullCheck(L_47);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_47, ((int32_t)((int32_t)L_49-(int32_t)1)));
 		int32_t L_50 = ((int32_t)((int32_t)L_49-(int32_t)1));
@@ -32383,14 +32780,14 @@ IL_00d3:
 		V_2 = ((int32_t)69);
 		BigInteger_t2113513851 * L_52 = ___bi1;
 		NullCheck(L_52);
-		UInt32U5BU5D_t2133601851* L_53 = L_52->get_data_2();
+		UInt32U5BU5D_t2133601851* L_53 = L_52->get_data_1();
 		int32_t L_54 = V_2;
 		NullCheck(L_53);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_53, L_54);
 		int32_t L_55 = L_54;
 		BigInteger_t2113513851 * L_56 = ___bi2;
 		NullCheck(L_56);
-		UInt32U5BU5D_t2133601851* L_57 = L_56->get_data_2();
+		UInt32U5BU5D_t2133601851* L_57 = L_56->get_data_1();
 		int32_t L_58 = V_2;
 		NullCheck(L_57);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_57, L_58);
@@ -32403,14 +32800,14 @@ IL_00d3:
 	{
 		BigInteger_t2113513851 * L_60 = V_0;
 		NullCheck(L_60);
-		UInt32U5BU5D_t2133601851* L_61 = L_60->get_data_2();
+		UInt32U5BU5D_t2133601851* L_61 = L_60->get_data_1();
 		int32_t L_62 = V_2;
 		NullCheck(L_61);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_61, L_62);
 		int32_t L_63 = L_62;
 		BigInteger_t2113513851 * L_64 = ___bi1;
 		NullCheck(L_64);
-		UInt32U5BU5D_t2133601851* L_65 = L_64->get_data_2();
+		UInt32U5BU5D_t2133601851* L_65 = L_64->get_data_1();
 		int32_t L_66 = V_2;
 		NullCheck(L_65);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_65, L_66);
@@ -32490,10 +32887,10 @@ extern "C"  BigInteger_t2113513851 * BigInteger_op_Subtraction_m2192134345 (Il2C
 		BigInteger_t2113513851 * L_1 = V_0;
 		BigInteger_t2113513851 * L_2 = ___bi1;
 		NullCheck(L_2);
-		int32_t L_3 = L_2->get_dataLength_3();
+		int32_t L_3 = L_2->get_dataLength_2();
 		BigInteger_t2113513851 * L_4 = ___bi2;
 		NullCheck(L_4);
-		int32_t L_5 = L_4->get_dataLength_3();
+		int32_t L_5 = L_4->get_dataLength_2();
 		G_B1_0 = L_1;
 		if ((((int32_t)L_3) > ((int32_t)L_5)))
 		{
@@ -32504,7 +32901,7 @@ extern "C"  BigInteger_t2113513851 * BigInteger_op_Subtraction_m2192134345 (Il2C
 	{
 		BigInteger_t2113513851 * L_6 = ___bi2;
 		NullCheck(L_6);
-		int32_t L_7 = L_6->get_dataLength_3();
+		int32_t L_7 = L_6->get_dataLength_2();
 		G_B3_0 = L_7;
 		G_B3_1 = G_B1_0;
 		goto IL_0024;
@@ -32514,7 +32911,7 @@ IL_001e:
 	{
 		BigInteger_t2113513851 * L_8 = ___bi1;
 		NullCheck(L_8);
-		int32_t L_9 = L_8->get_dataLength_3();
+		int32_t L_9 = L_8->get_dataLength_2();
 		G_B3_0 = L_9;
 		G_B3_1 = G_B2_0;
 	}
@@ -32522,7 +32919,7 @@ IL_001e:
 IL_0024:
 	{
 		NullCheck(G_B3_1);
-		G_B3_1->set_dataLength_3(G_B3_0);
+		G_B3_1->set_dataLength_2(G_B3_0);
 		V_1 = (((int64_t)((int64_t)0)));
 		V_3 = 0;
 		goto IL_006f;
@@ -32532,14 +32929,14 @@ IL_0030:
 	{
 		BigInteger_t2113513851 * L_10 = ___bi1;
 		NullCheck(L_10);
-		UInt32U5BU5D_t2133601851* L_11 = L_10->get_data_2();
+		UInt32U5BU5D_t2133601851* L_11 = L_10->get_data_1();
 		int32_t L_12 = V_3;
 		NullCheck(L_11);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_11, L_12);
 		int32_t L_13 = L_12;
 		BigInteger_t2113513851 * L_14 = ___bi2;
 		NullCheck(L_14);
-		UInt32U5BU5D_t2133601851* L_15 = L_14->get_data_2();
+		UInt32U5BU5D_t2133601851* L_15 = L_14->get_data_1();
 		int32_t L_16 = V_3;
 		NullCheck(L_15);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_15, L_16);
@@ -32548,7 +32945,7 @@ IL_0030:
 		V_4 = ((int64_t)((int64_t)((int64_t)((int64_t)(((int64_t)((uint64_t)((L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_13))))))-(int64_t)(((int64_t)((uint64_t)((L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_17))))))))-(int64_t)L_18));
 		BigInteger_t2113513851 * L_19 = V_0;
 		NullCheck(L_19);
-		UInt32U5BU5D_t2133601851* L_20 = L_19->get_data_2();
+		UInt32U5BU5D_t2133601851* L_20 = L_19->get_data_1();
 		int32_t L_21 = V_3;
 		int64_t L_22 = V_4;
 		NullCheck(L_20);
@@ -32583,7 +32980,7 @@ IL_006f:
 		int32_t L_26 = V_3;
 		BigInteger_t2113513851 * L_27 = V_0;
 		NullCheck(L_27);
-		int32_t L_28 = L_27->get_dataLength_3();
+		int32_t L_28 = L_27->get_dataLength_2();
 		V_6 = (bool)((((int32_t)L_26) < ((int32_t)L_28))? 1 : 0);
 		bool L_29 = V_6;
 		if (L_29)
@@ -32603,7 +33000,7 @@ IL_006f:
 	{
 		BigInteger_t2113513851 * L_32 = V_0;
 		NullCheck(L_32);
-		int32_t L_33 = L_32->get_dataLength_3();
+		int32_t L_33 = L_32->get_dataLength_2();
 		V_8 = L_33;
 		goto IL_00a4;
 	}
@@ -32612,7 +33009,7 @@ IL_0094:
 	{
 		BigInteger_t2113513851 * L_34 = V_0;
 		NullCheck(L_34);
-		UInt32U5BU5D_t2133601851* L_35 = L_34->get_data_2();
+		UInt32U5BU5D_t2133601851* L_35 = L_34->get_data_1();
 		int32_t L_36 = V_8;
 		NullCheck(L_35);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_35, L_36);
@@ -32634,7 +33031,7 @@ IL_00a4:
 	{
 		BigInteger_t2113513851 * L_40 = V_0;
 		NullCheck(L_40);
-		L_40->set_dataLength_3(((int32_t)70));
+		L_40->set_dataLength_2(((int32_t)70));
 	}
 
 IL_00b9:
@@ -32647,16 +33044,16 @@ IL_00bb:
 		BigInteger_t2113513851 * L_41 = V_0;
 		BigInteger_t2113513851 * L_42 = L_41;
 		NullCheck(L_42);
-		int32_t L_43 = L_42->get_dataLength_3();
+		int32_t L_43 = L_42->get_dataLength_2();
 		NullCheck(L_42);
-		L_42->set_dataLength_3(((int32_t)((int32_t)L_43-(int32_t)1)));
+		L_42->set_dataLength_2(((int32_t)((int32_t)L_43-(int32_t)1)));
 	}
 
 IL_00c9:
 	{
 		BigInteger_t2113513851 * L_44 = V_0;
 		NullCheck(L_44);
-		int32_t L_45 = L_44->get_dataLength_3();
+		int32_t L_45 = L_44->get_dataLength_2();
 		if ((((int32_t)L_45) <= ((int32_t)1)))
 		{
 			goto IL_00e6;
@@ -32665,10 +33062,10 @@ IL_00c9:
 	{
 		BigInteger_t2113513851 * L_46 = V_0;
 		NullCheck(L_46);
-		UInt32U5BU5D_t2133601851* L_47 = L_46->get_data_2();
+		UInt32U5BU5D_t2133601851* L_47 = L_46->get_data_1();
 		BigInteger_t2113513851 * L_48 = V_0;
 		NullCheck(L_48);
-		int32_t L_49 = L_48->get_dataLength_3();
+		int32_t L_49 = L_48->get_dataLength_2();
 		NullCheck(L_47);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_47, ((int32_t)((int32_t)L_49-(int32_t)1)));
 		int32_t L_50 = ((int32_t)((int32_t)L_49-(int32_t)1));
@@ -32694,14 +33091,14 @@ IL_00e7:
 		V_2 = ((int32_t)69);
 		BigInteger_t2113513851 * L_52 = ___bi1;
 		NullCheck(L_52);
-		UInt32U5BU5D_t2133601851* L_53 = L_52->get_data_2();
+		UInt32U5BU5D_t2133601851* L_53 = L_52->get_data_1();
 		int32_t L_54 = V_2;
 		NullCheck(L_53);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_53, L_54);
 		int32_t L_55 = L_54;
 		BigInteger_t2113513851 * L_56 = ___bi2;
 		NullCheck(L_56);
-		UInt32U5BU5D_t2133601851* L_57 = L_56->get_data_2();
+		UInt32U5BU5D_t2133601851* L_57 = L_56->get_data_1();
 		int32_t L_58 = V_2;
 		NullCheck(L_57);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_57, L_58);
@@ -32714,14 +33111,14 @@ IL_00e7:
 	{
 		BigInteger_t2113513851 * L_60 = V_0;
 		NullCheck(L_60);
-		UInt32U5BU5D_t2133601851* L_61 = L_60->get_data_2();
+		UInt32U5BU5D_t2133601851* L_61 = L_60->get_data_1();
 		int32_t L_62 = V_2;
 		NullCheck(L_61);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_61, L_62);
 		int32_t L_63 = L_62;
 		BigInteger_t2113513851 * L_64 = ___bi1;
 		NullCheck(L_64);
-		UInt32U5BU5D_t2133601851* L_65 = L_64->get_data_2();
+		UInt32U5BU5D_t2133601851* L_65 = L_64->get_data_1();
 		int32_t L_66 = V_2;
 		NullCheck(L_65);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_65, L_66);
@@ -32824,7 +33221,7 @@ IL_0008:
 		{
 			BigInteger_t2113513851 * L_0 = ___bi1;
 			NullCheck(L_0);
-			UInt32U5BU5D_t2133601851* L_1 = L_0->get_data_2();
+			UInt32U5BU5D_t2133601851* L_1 = L_0->get_data_1();
 			int32_t L_2 = V_0;
 			NullCheck(L_1);
 			IL2CPP_ARRAY_BOUNDS_CHECK(L_1, L_2);
@@ -32850,7 +33247,7 @@ IL_002c:
 		{
 			BigInteger_t2113513851 * L_7 = ___bi2;
 			NullCheck(L_7);
-			UInt32U5BU5D_t2133601851* L_8 = L_7->get_data_2();
+			UInt32U5BU5D_t2133601851* L_8 = L_7->get_data_1();
 			int32_t L_9 = V_0;
 			NullCheck(L_8);
 			IL2CPP_ARRAY_BOUNDS_CHECK(L_8, L_9);
@@ -32909,7 +33306,7 @@ IL_0066:
 		{
 			BigInteger_t2113513851 * L_15 = ___bi1;
 			NullCheck(L_15);
-			UInt32U5BU5D_t2133601851* L_16 = L_15->get_data_2();
+			UInt32U5BU5D_t2133601851* L_16 = L_15->get_data_1();
 			int32_t L_17 = V_6;
 			NullCheck(L_16);
 			IL2CPP_ARRAY_BOUNDS_CHECK(L_16, L_17);
@@ -32940,21 +33337,21 @@ IL_008b:
 		{
 			BigInteger_t2113513851 * L_21 = ___bi1;
 			NullCheck(L_21);
-			UInt32U5BU5D_t2133601851* L_22 = L_21->get_data_2();
+			UInt32U5BU5D_t2133601851* L_22 = L_21->get_data_1();
 			int32_t L_23 = V_6;
 			NullCheck(L_22);
 			IL2CPP_ARRAY_BOUNDS_CHECK(L_22, L_23);
 			int32_t L_24 = L_23;
 			BigInteger_t2113513851 * L_25 = ___bi2;
 			NullCheck(L_25);
-			UInt32U5BU5D_t2133601851* L_26 = L_25->get_data_2();
+			UInt32U5BU5D_t2133601851* L_26 = L_25->get_data_1();
 			int32_t L_27 = V_9;
 			NullCheck(L_26);
 			IL2CPP_ARRAY_BOUNDS_CHECK(L_26, L_27);
 			int32_t L_28 = L_27;
 			BigInteger_t2113513851 * L_29 = V_3;
 			NullCheck(L_29);
-			UInt32U5BU5D_t2133601851* L_30 = L_29->get_data_2();
+			UInt32U5BU5D_t2133601851* L_30 = L_29->get_data_1();
 			int32_t L_31 = V_10;
 			NullCheck(L_30);
 			IL2CPP_ARRAY_BOUNDS_CHECK(L_30, L_31);
@@ -32963,7 +33360,7 @@ IL_008b:
 			V_11 = ((int64_t)((int64_t)((int64_t)((int64_t)((int64_t)((int64_t)(((int64_t)((uint64_t)((L_22)->GetAt(static_cast<il2cpp_array_size_t>(L_24))))))*(int64_t)(((int64_t)((uint64_t)((L_26)->GetAt(static_cast<il2cpp_array_size_t>(L_28))))))))+(int64_t)(((int64_t)((uint64_t)((L_30)->GetAt(static_cast<il2cpp_array_size_t>(L_32))))))))+(int64_t)L_33));
 			BigInteger_t2113513851 * L_34 = V_3;
 			NullCheck(L_34);
-			UInt32U5BU5D_t2133601851* L_35 = L_34->get_data_2();
+			UInt32U5BU5D_t2133601851* L_35 = L_34->get_data_1();
 			int32_t L_36 = V_10;
 			uint64_t L_37 = V_11;
 			NullCheck(L_35);
@@ -32982,7 +33379,7 @@ IL_00d4:
 			int32_t L_41 = V_9;
 			BigInteger_t2113513851 * L_42 = ___bi2;
 			NullCheck(L_42);
-			int32_t L_43 = L_42->get_dataLength_3();
+			int32_t L_43 = L_42->get_dataLength_2();
 			V_12 = (bool)((((int32_t)L_41) < ((int32_t)L_43))? 1 : 0);
 			bool L_44 = V_12;
 			if (L_44)
@@ -33006,11 +33403,11 @@ IL_00f0:
 		{
 			BigInteger_t2113513851 * L_47 = V_3;
 			NullCheck(L_47);
-			UInt32U5BU5D_t2133601851* L_48 = L_47->get_data_2();
+			UInt32U5BU5D_t2133601851* L_48 = L_47->get_data_1();
 			int32_t L_49 = V_6;
 			BigInteger_t2113513851 * L_50 = ___bi2;
 			NullCheck(L_50);
-			int32_t L_51 = L_50->get_dataLength_3();
+			int32_t L_51 = L_50->get_dataLength_2();
 			uint64_t L_52 = V_7;
 			NullCheck(L_48);
 			IL2CPP_ARRAY_BOUNDS_CHECK(L_48, ((int32_t)((int32_t)L_49+(int32_t)L_51)));
@@ -33032,7 +33429,7 @@ IL_010a:
 			int32_t L_54 = V_6;
 			BigInteger_t2113513851 * L_55 = ___bi1;
 			NullCheck(L_55);
-			int32_t L_56 = L_55->get_dataLength_3();
+			int32_t L_56 = L_55->get_dataLength_2();
 			V_14 = (bool)((((int32_t)L_54) < ((int32_t)L_56))? 1 : 0);
 			bool L_57 = V_14;
 			if (L_57)
@@ -33066,15 +33463,15 @@ IL_012d:
 		BigInteger_t2113513851 * L_59 = V_3;
 		BigInteger_t2113513851 * L_60 = ___bi1;
 		NullCheck(L_60);
-		int32_t L_61 = L_60->get_dataLength_3();
+		int32_t L_61 = L_60->get_dataLength_2();
 		BigInteger_t2113513851 * L_62 = ___bi2;
 		NullCheck(L_62);
-		int32_t L_63 = L_62->get_dataLength_3();
+		int32_t L_63 = L_62->get_dataLength_2();
 		NullCheck(L_59);
-		L_59->set_dataLength_3(((int32_t)((int32_t)L_61+(int32_t)L_63)));
+		L_59->set_dataLength_2(((int32_t)((int32_t)L_61+(int32_t)L_63)));
 		BigInteger_t2113513851 * L_64 = V_3;
 		NullCheck(L_64);
-		int32_t L_65 = L_64->get_dataLength_3();
+		int32_t L_65 = L_64->get_dataLength_2();
 		V_15 = (bool)((((int32_t)L_65) > ((int32_t)((int32_t)70)))? 1 : 0);
 		bool L_66 = V_15;
 		if (!L_66)
@@ -33085,7 +33482,7 @@ IL_012d:
 	{
 		BigInteger_t2113513851 * L_67 = V_3;
 		NullCheck(L_67);
-		L_67->set_dataLength_3(((int32_t)70));
+		L_67->set_dataLength_2(((int32_t)70));
 	}
 
 IL_0158:
@@ -33098,16 +33495,16 @@ IL_015a:
 		BigInteger_t2113513851 * L_68 = V_3;
 		BigInteger_t2113513851 * L_69 = L_68;
 		NullCheck(L_69);
-		int32_t L_70 = L_69->get_dataLength_3();
+		int32_t L_70 = L_69->get_dataLength_2();
 		NullCheck(L_69);
-		L_69->set_dataLength_3(((int32_t)((int32_t)L_70-(int32_t)1)));
+		L_69->set_dataLength_2(((int32_t)((int32_t)L_70-(int32_t)1)));
 	}
 
 IL_0168:
 	{
 		BigInteger_t2113513851 * L_71 = V_3;
 		NullCheck(L_71);
-		int32_t L_72 = L_71->get_dataLength_3();
+		int32_t L_72 = L_71->get_dataLength_2();
 		if ((((int32_t)L_72) <= ((int32_t)1)))
 		{
 			goto IL_0185;
@@ -33116,10 +33513,10 @@ IL_0168:
 	{
 		BigInteger_t2113513851 * L_73 = V_3;
 		NullCheck(L_73);
-		UInt32U5BU5D_t2133601851* L_74 = L_73->get_data_2();
+		UInt32U5BU5D_t2133601851* L_74 = L_73->get_data_1();
 		BigInteger_t2113513851 * L_75 = V_3;
 		NullCheck(L_75);
-		int32_t L_76 = L_75->get_dataLength_3();
+		int32_t L_76 = L_75->get_dataLength_2();
 		NullCheck(L_74);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_74, ((int32_t)((int32_t)L_76-(int32_t)1)));
 		int32_t L_77 = ((int32_t)((int32_t)L_76-(int32_t)1));
@@ -33144,7 +33541,7 @@ IL_0186:
 	{
 		BigInteger_t2113513851 * L_79 = V_3;
 		NullCheck(L_79);
-		UInt32U5BU5D_t2133601851* L_80 = L_79->get_data_2();
+		UInt32U5BU5D_t2133601851* L_80 = L_79->get_data_1();
 		int32_t L_81 = V_0;
 		NullCheck(L_80);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_80, L_81);
@@ -33167,7 +33564,7 @@ IL_0186:
 	{
 		BigInteger_t2113513851 * L_86 = V_3;
 		NullCheck(L_86);
-		UInt32U5BU5D_t2133601851* L_87 = L_86->get_data_2();
+		UInt32U5BU5D_t2133601851* L_87 = L_86->get_data_1();
 		int32_t L_88 = V_0;
 		NullCheck(L_87);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_87, L_88);
@@ -33193,7 +33590,7 @@ IL_01bd:
 	{
 		BigInteger_t2113513851 * L_91 = V_3;
 		NullCheck(L_91);
-		int32_t L_92 = L_91->get_dataLength_3();
+		int32_t L_92 = L_91->get_dataLength_2();
 		V_19 = (bool)((((int32_t)L_92) == ((int32_t)1))? 1 : 0);
 		bool L_93 = V_19;
 		if (!L_93)
@@ -33218,7 +33615,7 @@ IL_01e1:
 	{
 		BigInteger_t2113513851 * L_95 = V_3;
 		NullCheck(L_95);
-		UInt32U5BU5D_t2133601851* L_96 = L_95->get_data_2();
+		UInt32U5BU5D_t2133601851* L_96 = L_95->get_data_1();
 		int32_t L_97 = V_22;
 		NullCheck(L_96);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_96, L_97);
@@ -33245,7 +33642,7 @@ IL_01fe:
 		int32_t L_101 = V_22;
 		BigInteger_t2113513851 * L_102 = V_3;
 		NullCheck(L_102);
-		int32_t L_103 = L_102->get_dataLength_3();
+		int32_t L_103 = L_102->get_dataLength_2();
 		bool L_104 = V_21;
 		V_24 = (bool)((int32_t)((int32_t)((((int32_t)L_101) < ((int32_t)((int32_t)((int32_t)L_103-(int32_t)1))))? 1 : 0)&(int32_t)L_104));
 		bool L_105 = V_24;
@@ -33333,12 +33730,12 @@ extern "C"  BigInteger_t2113513851 * BigInteger_op_LeftShift_m206804248 (Il2CppO
 		BigInteger_t2113513851 * L_2 = V_0;
 		BigInteger_t2113513851 * L_3 = V_0;
 		NullCheck(L_3);
-		UInt32U5BU5D_t2133601851* L_4 = L_3->get_data_2();
+		UInt32U5BU5D_t2133601851* L_4 = L_3->get_data_1();
 		int32_t L_5 = ___shiftVal;
 		IL2CPP_RUNTIME_CLASS_INIT(BigInteger_t2113513851_il2cpp_TypeInfo_var);
 		int32_t L_6 = BigInteger_shiftLeft_m3914629421(NULL /*static, unused*/, L_4, L_5, /*hidden argument*/NULL);
 		NullCheck(L_2);
-		L_2->set_dataLength_3(L_6);
+		L_2->set_dataLength_2(L_6);
 		BigInteger_t2113513851 * L_7 = V_0;
 		V_1 = L_7;
 		goto IL_001e;
@@ -33777,7 +34174,7 @@ extern "C"  BigInteger_t2113513851 * BigInteger_op_UnaryNegation_m2367373848 (Il
 	{
 		BigInteger_t2113513851 * L_0 = ___bi1;
 		NullCheck(L_0);
-		int32_t L_1 = L_0->get_dataLength_3();
+		int32_t L_1 = L_0->get_dataLength_2();
 		if ((!(((uint32_t)L_1) == ((uint32_t)1))))
 		{
 			goto IL_0017;
@@ -33786,7 +34183,7 @@ extern "C"  BigInteger_t2113513851 * BigInteger_op_UnaryNegation_m2367373848 (Il
 	{
 		BigInteger_t2113513851 * L_2 = ___bi1;
 		NullCheck(L_2);
-		UInt32U5BU5D_t2133601851* L_3 = L_2->get_data_2();
+		UInt32U5BU5D_t2133601851* L_3 = L_2->get_data_1();
 		NullCheck(L_3);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, 0);
 		int32_t L_4 = 0;
@@ -33829,11 +34226,11 @@ IL_0036:
 	{
 		BigInteger_t2113513851 * L_9 = V_0;
 		NullCheck(L_9);
-		UInt32U5BU5D_t2133601851* L_10 = L_9->get_data_2();
+		UInt32U5BU5D_t2133601851* L_10 = L_9->get_data_1();
 		int32_t L_11 = V_6;
 		BigInteger_t2113513851 * L_12 = ___bi1;
 		NullCheck(L_12);
-		UInt32U5BU5D_t2133601851* L_13 = L_12->get_data_2();
+		UInt32U5BU5D_t2133601851* L_13 = L_12->get_data_1();
 		int32_t L_14 = V_6;
 		NullCheck(L_13);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_13, L_14);
@@ -33865,7 +34262,7 @@ IL_0062:
 	{
 		BigInteger_t2113513851 * L_19 = V_0;
 		NullCheck(L_19);
-		UInt32U5BU5D_t2133601851* L_20 = L_19->get_data_2();
+		UInt32U5BU5D_t2133601851* L_20 = L_19->get_data_1();
 		int32_t L_21 = V_3;
 		NullCheck(L_20);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_20, L_21);
@@ -33875,7 +34272,7 @@ IL_0062:
 		V_1 = ((int64_t)((int64_t)L_23+(int64_t)(((int64_t)((int64_t)1)))));
 		BigInteger_t2113513851 * L_24 = V_0;
 		NullCheck(L_24);
-		UInt32U5BU5D_t2133601851* L_25 = L_24->get_data_2();
+		UInt32U5BU5D_t2133601851* L_25 = L_24->get_data_1();
 		int32_t L_26 = V_3;
 		int64_t L_27 = V_1;
 		NullCheck(L_25);
@@ -33918,13 +34315,13 @@ IL_0094:
 	{
 		BigInteger_t2113513851 * L_33 = ___bi1;
 		NullCheck(L_33);
-		UInt32U5BU5D_t2133601851* L_34 = L_33->get_data_2();
+		UInt32U5BU5D_t2133601851* L_34 = L_33->get_data_1();
 		NullCheck(L_34);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_34, ((int32_t)69));
 		int32_t L_35 = ((int32_t)69);
 		BigInteger_t2113513851 * L_36 = V_0;
 		NullCheck(L_36);
-		UInt32U5BU5D_t2133601851* L_37 = L_36->get_data_2();
+		UInt32U5BU5D_t2133601851* L_37 = L_36->get_data_1();
 		NullCheck(L_37);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_37, ((int32_t)69));
 		int32_t L_38 = ((int32_t)69);
@@ -33945,7 +34342,7 @@ IL_00cb:
 	{
 		BigInteger_t2113513851 * L_41 = V_0;
 		NullCheck(L_41);
-		L_41->set_dataLength_3(((int32_t)70));
+		L_41->set_dataLength_2(((int32_t)70));
 		goto IL_00e3;
 	}
 
@@ -33954,16 +34351,16 @@ IL_00d5:
 		BigInteger_t2113513851 * L_42 = V_0;
 		BigInteger_t2113513851 * L_43 = L_42;
 		NullCheck(L_43);
-		int32_t L_44 = L_43->get_dataLength_3();
+		int32_t L_44 = L_43->get_dataLength_2();
 		NullCheck(L_43);
-		L_43->set_dataLength_3(((int32_t)((int32_t)L_44-(int32_t)1)));
+		L_43->set_dataLength_2(((int32_t)((int32_t)L_44-(int32_t)1)));
 	}
 
 IL_00e3:
 	{
 		BigInteger_t2113513851 * L_45 = V_0;
 		NullCheck(L_45);
-		int32_t L_46 = L_45->get_dataLength_3();
+		int32_t L_46 = L_45->get_dataLength_2();
 		if ((((int32_t)L_46) <= ((int32_t)1)))
 		{
 			goto IL_0100;
@@ -33972,10 +34369,10 @@ IL_00e3:
 	{
 		BigInteger_t2113513851 * L_47 = V_0;
 		NullCheck(L_47);
-		UInt32U5BU5D_t2133601851* L_48 = L_47->get_data_2();
+		UInt32U5BU5D_t2133601851* L_48 = L_47->get_data_1();
 		BigInteger_t2113513851 * L_49 = V_0;
 		NullCheck(L_49);
-		int32_t L_50 = L_49->get_dataLength_3();
+		int32_t L_50 = L_49->get_dataLength_2();
 		NullCheck(L_48);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_48, ((int32_t)((int32_t)L_50-(int32_t)1)));
 		int32_t L_51 = ((int32_t)((int32_t)L_50-(int32_t)1));
@@ -34048,10 +34445,10 @@ extern "C"  bool BigInteger_Equals_m3410073170 (BigInteger_t2113513851 * __this,
 	{
 		Il2CppObject * L_0 = ___o;
 		V_0 = ((BigInteger_t2113513851 *)CastclassClass(L_0, BigInteger_t2113513851_il2cpp_TypeInfo_var));
-		int32_t L_1 = __this->get_dataLength_3();
+		int32_t L_1 = __this->get_dataLength_2();
 		BigInteger_t2113513851 * L_2 = V_0;
 		NullCheck(L_2);
-		int32_t L_3 = L_2->get_dataLength_3();
+		int32_t L_3 = L_2->get_dataLength_2();
 		V_1 = (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)L_3))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_4 = V_1;
 		if (!L_4)
@@ -34072,14 +34469,14 @@ IL_0021:
 
 IL_0025:
 	{
-		UInt32U5BU5D_t2133601851* L_5 = __this->get_data_2();
+		UInt32U5BU5D_t2133601851* L_5 = __this->get_data_1();
 		int32_t L_6 = V_3;
 		NullCheck(L_5);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, L_6);
 		int32_t L_7 = L_6;
 		BigInteger_t2113513851 * L_8 = V_0;
 		NullCheck(L_8);
-		UInt32U5BU5D_t2133601851* L_9 = L_8->get_data_2();
+		UInt32U5BU5D_t2133601851* L_9 = L_8->get_data_1();
 		int32_t L_10 = V_3;
 		NullCheck(L_9);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_9, L_10);
@@ -34105,7 +34502,7 @@ IL_0045:
 IL_004a:
 	{
 		int32_t L_14 = V_3;
-		int32_t L_15 = __this->get_dataLength_3();
+		int32_t L_15 = __this->get_dataLength_2();
 		V_5 = (bool)((((int32_t)L_14) < ((int32_t)L_15))? 1 : 0);
 		bool L_16 = V_5;
 		if (L_16)
@@ -34161,7 +34558,7 @@ extern "C"  bool BigInteger_op_GreaterThan_m3207443270 (Il2CppObject * __this /*
 		V_0 = ((int32_t)69);
 		BigInteger_t2113513851 * L_0 = ___bi1;
 		NullCheck(L_0);
-		UInt32U5BU5D_t2133601851* L_1 = L_0->get_data_2();
+		UInt32U5BU5D_t2133601851* L_1 = L_0->get_data_1();
 		int32_t L_2 = V_0;
 		NullCheck(L_1);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_1, L_2);
@@ -34174,7 +34571,7 @@ extern "C"  bool BigInteger_op_GreaterThan_m3207443270 (Il2CppObject * __this /*
 	{
 		BigInteger_t2113513851 * L_4 = ___bi2;
 		NullCheck(L_4);
-		UInt32U5BU5D_t2133601851* L_5 = L_4->get_data_2();
+		UInt32U5BU5D_t2133601851* L_5 = L_4->get_data_1();
 		int32_t L_6 = V_0;
 		NullCheck(L_5);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, L_6);
@@ -34206,7 +34603,7 @@ IL_0033:
 	{
 		BigInteger_t2113513851 * L_9 = ___bi1;
 		NullCheck(L_9);
-		UInt32U5BU5D_t2133601851* L_10 = L_9->get_data_2();
+		UInt32U5BU5D_t2133601851* L_10 = L_9->get_data_1();
 		int32_t L_11 = V_0;
 		NullCheck(L_10);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_10, L_11);
@@ -34219,7 +34616,7 @@ IL_0033:
 	{
 		BigInteger_t2113513851 * L_13 = ___bi2;
 		NullCheck(L_13);
-		UInt32U5BU5D_t2133601851* L_14 = L_13->get_data_2();
+		UInt32U5BU5D_t2133601851* L_14 = L_13->get_data_1();
 		int32_t L_15 = V_0;
 		NullCheck(L_14);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_14, L_15);
@@ -34251,10 +34648,10 @@ IL_0061:
 	{
 		BigInteger_t2113513851 * L_18 = ___bi1;
 		NullCheck(L_18);
-		int32_t L_19 = L_18->get_dataLength_3();
+		int32_t L_19 = L_18->get_dataLength_2();
 		BigInteger_t2113513851 * L_20 = ___bi2;
 		NullCheck(L_20);
-		int32_t L_21 = L_20->get_dataLength_3();
+		int32_t L_21 = L_20->get_dataLength_2();
 		if ((((int32_t)L_19) > ((int32_t)L_21)))
 		{
 			goto IL_0077;
@@ -34263,7 +34660,7 @@ IL_0061:
 	{
 		BigInteger_t2113513851 * L_22 = ___bi2;
 		NullCheck(L_22);
-		int32_t L_23 = L_22->get_dataLength_3();
+		int32_t L_23 = L_22->get_dataLength_2();
 		G_B13_0 = L_23;
 		goto IL_007d;
 	}
@@ -34272,7 +34669,7 @@ IL_0077:
 	{
 		BigInteger_t2113513851 * L_24 = ___bi1;
 		NullCheck(L_24);
-		int32_t L_25 = L_24->get_dataLength_3();
+		int32_t L_25 = L_24->get_dataLength_2();
 		G_B13_0 = L_25;
 	}
 
@@ -34301,14 +34698,14 @@ IL_0089:
 	{
 		BigInteger_t2113513851 * L_29 = ___bi1;
 		NullCheck(L_29);
-		UInt32U5BU5D_t2133601851* L_30 = L_29->get_data_2();
+		UInt32U5BU5D_t2133601851* L_30 = L_29->get_data_1();
 		int32_t L_31 = V_0;
 		NullCheck(L_30);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_30, L_31);
 		int32_t L_32 = L_31;
 		BigInteger_t2113513851 * L_33 = ___bi2;
 		NullCheck(L_33);
-		UInt32U5BU5D_t2133601851* L_34 = L_33->get_data_2();
+		UInt32U5BU5D_t2133601851* L_34 = L_33->get_data_1();
 		int32_t L_35 = V_0;
 		NullCheck(L_34);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_34, L_35);
@@ -34343,14 +34740,14 @@ IL_00a2:
 	{
 		BigInteger_t2113513851 * L_40 = ___bi1;
 		NullCheck(L_40);
-		UInt32U5BU5D_t2133601851* L_41 = L_40->get_data_2();
+		UInt32U5BU5D_t2133601851* L_41 = L_40->get_data_1();
 		int32_t L_42 = V_0;
 		NullCheck(L_41);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_41, L_42);
 		int32_t L_43 = L_42;
 		BigInteger_t2113513851 * L_44 = ___bi2;
 		NullCheck(L_44);
-		UInt32U5BU5D_t2133601851* L_45 = L_44->get_data_2();
+		UInt32U5BU5D_t2133601851* L_45 = L_44->get_data_1();
 		int32_t L_46 = V_0;
 		NullCheck(L_45);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_45, L_46);
@@ -34404,7 +34801,7 @@ extern "C"  bool BigInteger_op_LessThan_m610008719 (Il2CppObject * __this /* sta
 		V_0 = ((int32_t)69);
 		BigInteger_t2113513851 * L_0 = ___bi1;
 		NullCheck(L_0);
-		UInt32U5BU5D_t2133601851* L_1 = L_0->get_data_2();
+		UInt32U5BU5D_t2133601851* L_1 = L_0->get_data_1();
 		int32_t L_2 = V_0;
 		NullCheck(L_1);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_1, L_2);
@@ -34417,7 +34814,7 @@ extern "C"  bool BigInteger_op_LessThan_m610008719 (Il2CppObject * __this /* sta
 	{
 		BigInteger_t2113513851 * L_4 = ___bi2;
 		NullCheck(L_4);
-		UInt32U5BU5D_t2133601851* L_5 = L_4->get_data_2();
+		UInt32U5BU5D_t2133601851* L_5 = L_4->get_data_1();
 		int32_t L_6 = V_0;
 		NullCheck(L_5);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, L_6);
@@ -34449,7 +34846,7 @@ IL_0033:
 	{
 		BigInteger_t2113513851 * L_9 = ___bi1;
 		NullCheck(L_9);
-		UInt32U5BU5D_t2133601851* L_10 = L_9->get_data_2();
+		UInt32U5BU5D_t2133601851* L_10 = L_9->get_data_1();
 		int32_t L_11 = V_0;
 		NullCheck(L_10);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_10, L_11);
@@ -34462,7 +34859,7 @@ IL_0033:
 	{
 		BigInteger_t2113513851 * L_13 = ___bi2;
 		NullCheck(L_13);
-		UInt32U5BU5D_t2133601851* L_14 = L_13->get_data_2();
+		UInt32U5BU5D_t2133601851* L_14 = L_13->get_data_1();
 		int32_t L_15 = V_0;
 		NullCheck(L_14);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_14, L_15);
@@ -34494,10 +34891,10 @@ IL_0061:
 	{
 		BigInteger_t2113513851 * L_18 = ___bi1;
 		NullCheck(L_18);
-		int32_t L_19 = L_18->get_dataLength_3();
+		int32_t L_19 = L_18->get_dataLength_2();
 		BigInteger_t2113513851 * L_20 = ___bi2;
 		NullCheck(L_20);
-		int32_t L_21 = L_20->get_dataLength_3();
+		int32_t L_21 = L_20->get_dataLength_2();
 		if ((((int32_t)L_19) > ((int32_t)L_21)))
 		{
 			goto IL_0077;
@@ -34506,7 +34903,7 @@ IL_0061:
 	{
 		BigInteger_t2113513851 * L_22 = ___bi2;
 		NullCheck(L_22);
-		int32_t L_23 = L_22->get_dataLength_3();
+		int32_t L_23 = L_22->get_dataLength_2();
 		G_B13_0 = L_23;
 		goto IL_007d;
 	}
@@ -34515,7 +34912,7 @@ IL_0077:
 	{
 		BigInteger_t2113513851 * L_24 = ___bi1;
 		NullCheck(L_24);
-		int32_t L_25 = L_24->get_dataLength_3();
+		int32_t L_25 = L_24->get_dataLength_2();
 		G_B13_0 = L_25;
 	}
 
@@ -34544,14 +34941,14 @@ IL_0089:
 	{
 		BigInteger_t2113513851 * L_29 = ___bi1;
 		NullCheck(L_29);
-		UInt32U5BU5D_t2133601851* L_30 = L_29->get_data_2();
+		UInt32U5BU5D_t2133601851* L_30 = L_29->get_data_1();
 		int32_t L_31 = V_0;
 		NullCheck(L_30);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_30, L_31);
 		int32_t L_32 = L_31;
 		BigInteger_t2113513851 * L_33 = ___bi2;
 		NullCheck(L_33);
-		UInt32U5BU5D_t2133601851* L_34 = L_33->get_data_2();
+		UInt32U5BU5D_t2133601851* L_34 = L_33->get_data_1();
 		int32_t L_35 = V_0;
 		NullCheck(L_34);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_34, L_35);
@@ -34586,14 +34983,14 @@ IL_00a2:
 	{
 		BigInteger_t2113513851 * L_40 = ___bi1;
 		NullCheck(L_40);
-		UInt32U5BU5D_t2133601851* L_41 = L_40->get_data_2();
+		UInt32U5BU5D_t2133601851* L_41 = L_40->get_data_1();
 		int32_t L_42 = V_0;
 		NullCheck(L_41);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_41, L_42);
 		int32_t L_43 = L_42;
 		BigInteger_t2113513851 * L_44 = ___bi2;
 		NullCheck(L_44);
-		UInt32U5BU5D_t2133601851* L_45 = L_44->get_data_2();
+		UInt32U5BU5D_t2133601851* L_45 = L_44->get_data_1();
 		int32_t L_46 = V_0;
 		NullCheck(L_45);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_45, L_46);
@@ -34736,17 +35133,17 @@ extern "C"  void BigInteger_multiByteDivide_m1147113783 (Il2CppObject * __this /
 		V_0 = ((UInt32U5BU5D_t2133601851*)SZArrayNew(UInt32U5BU5D_t2133601851_il2cpp_TypeInfo_var, (uint32_t)((int32_t)70)));
 		BigInteger_t2113513851 * L_0 = ___bi1;
 		NullCheck(L_0);
-		int32_t L_1 = L_0->get_dataLength_3();
+		int32_t L_1 = L_0->get_dataLength_2();
 		V_1 = ((int32_t)((int32_t)L_1+(int32_t)1));
 		int32_t L_2 = V_1;
 		V_2 = ((UInt32U5BU5D_t2133601851*)SZArrayNew(UInt32U5BU5D_t2133601851_il2cpp_TypeInfo_var, (uint32_t)L_2));
 		V_3 = ((int32_t)-2147483648LL);
 		BigInteger_t2113513851 * L_3 = ___bi2;
 		NullCheck(L_3);
-		UInt32U5BU5D_t2133601851* L_4 = L_3->get_data_2();
+		UInt32U5BU5D_t2133601851* L_4 = L_3->get_data_1();
 		BigInteger_t2113513851 * L_5 = ___bi2;
 		NullCheck(L_5);
-		int32_t L_6 = L_5->get_dataLength_3();
+		int32_t L_6 = L_5->get_dataLength_2();
 		NullCheck(L_4);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, ((int32_t)((int32_t)L_6-(int32_t)1)));
 		int32_t L_7 = ((int32_t)((int32_t)L_6-(int32_t)1));
@@ -34804,7 +35201,7 @@ IL_005c:
 		int32_t L_15 = V_15;
 		BigInteger_t2113513851 * L_16 = ___bi1;
 		NullCheck(L_16);
-		UInt32U5BU5D_t2133601851* L_17 = L_16->get_data_2();
+		UInt32U5BU5D_t2133601851* L_17 = L_16->get_data_1();
 		int32_t L_18 = V_15;
 		NullCheck(L_17);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_17, L_18);
@@ -34821,7 +35218,7 @@ IL_006f:
 		int32_t L_21 = V_15;
 		BigInteger_t2113513851 * L_22 = ___bi1;
 		NullCheck(L_22);
-		int32_t L_23 = L_22->get_dataLength_3();
+		int32_t L_23 = L_22->get_dataLength_2();
 		V_16 = (bool)((((int32_t)L_21) < ((int32_t)L_23))? 1 : 0);
 		bool L_24 = V_16;
 		if (L_24)
@@ -34841,33 +35238,33 @@ IL_006f:
 		int32_t L_30 = V_1;
 		BigInteger_t2113513851 * L_31 = ___bi2;
 		NullCheck(L_31);
-		int32_t L_32 = L_31->get_dataLength_3();
+		int32_t L_32 = L_31->get_dataLength_2();
 		V_7 = ((int32_t)((int32_t)L_30-(int32_t)L_32));
 		int32_t L_33 = V_1;
 		V_8 = ((int32_t)((int32_t)L_33-(int32_t)1));
 		BigInteger_t2113513851 * L_34 = ___bi2;
 		NullCheck(L_34);
-		UInt32U5BU5D_t2133601851* L_35 = L_34->get_data_2();
+		UInt32U5BU5D_t2133601851* L_35 = L_34->get_data_1();
 		BigInteger_t2113513851 * L_36 = ___bi2;
 		NullCheck(L_36);
-		int32_t L_37 = L_36->get_dataLength_3();
+		int32_t L_37 = L_36->get_dataLength_2();
 		NullCheck(L_35);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_35, ((int32_t)((int32_t)L_37-(int32_t)1)));
 		int32_t L_38 = ((int32_t)((int32_t)L_37-(int32_t)1));
 		V_9 = (((int64_t)((uint64_t)((L_35)->GetAt(static_cast<il2cpp_array_size_t>(L_38))))));
 		BigInteger_t2113513851 * L_39 = ___bi2;
 		NullCheck(L_39);
-		UInt32U5BU5D_t2133601851* L_40 = L_39->get_data_2();
+		UInt32U5BU5D_t2133601851* L_40 = L_39->get_data_1();
 		BigInteger_t2113513851 * L_41 = ___bi2;
 		NullCheck(L_41);
-		int32_t L_42 = L_41->get_dataLength_3();
+		int32_t L_42 = L_41->get_dataLength_2();
 		NullCheck(L_40);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_40, ((int32_t)((int32_t)L_42-(int32_t)2)));
 		int32_t L_43 = ((int32_t)((int32_t)L_42-(int32_t)2));
 		V_10 = (((int64_t)((uint64_t)((L_40)->GetAt(static_cast<il2cpp_array_size_t>(L_43))))));
 		BigInteger_t2113513851 * L_44 = ___bi2;
 		NullCheck(L_44);
-		int32_t L_45 = L_44->get_dataLength_3();
+		int32_t L_45 = L_44->get_dataLength_2();
 		V_11 = ((int32_t)((int32_t)L_45+(int32_t)1));
 		int32_t L_46 = V_11;
 		V_12 = ((UInt32U5BU5D_t2133601851*)SZArrayNew(UInt32U5BU5D_t2133601851_il2cpp_TypeInfo_var, (uint32_t)L_46));
@@ -35057,10 +35454,10 @@ IL_01d2:
 		int32_t L_101 = V_30;
 		BigInteger_t2113513851 * L_102 = V_23;
 		NullCheck(L_102);
-		UInt32U5BU5D_t2133601851* L_103 = L_102->get_data_2();
+		UInt32U5BU5D_t2133601851* L_103 = L_102->get_data_1();
 		BigInteger_t2113513851 * L_104 = ___bi2;
 		NullCheck(L_104);
-		int32_t L_105 = L_104->get_dataLength_3();
+		int32_t L_105 = L_104->get_dataLength_2();
 		int32_t L_106 = V_30;
 		NullCheck(L_103);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_103, ((int32_t)((int32_t)L_105-(int32_t)L_106)));
@@ -35112,11 +35509,11 @@ IL_0215:
 		BigInteger_t2113513851 * L_120 = ___outQuotient;
 		int32_t L_121 = V_6;
 		NullCheck(L_120);
-		L_120->set_dataLength_3(L_121);
+		L_120->set_dataLength_2(L_121);
 		V_13 = 0;
 		BigInteger_t2113513851 * L_122 = ___outQuotient;
 		NullCheck(L_122);
-		int32_t L_123 = L_122->get_dataLength_3();
+		int32_t L_123 = L_122->get_dataLength_2();
 		V_33 = ((int32_t)((int32_t)L_123-(int32_t)1));
 		goto IL_0253;
 	}
@@ -35125,7 +35522,7 @@ IL_023a:
 	{
 		BigInteger_t2113513851 * L_124 = ___outQuotient;
 		NullCheck(L_124);
-		UInt32U5BU5D_t2133601851* L_125 = L_124->get_data_2();
+		UInt32U5BU5D_t2133601851* L_125 = L_124->get_data_1();
 		int32_t L_126 = V_13;
 		UInt32U5BU5D_t2133601851* L_127 = V_0;
 		int32_t L_128 = V_33;
@@ -35159,7 +35556,7 @@ IL_0263:
 	{
 		BigInteger_t2113513851 * L_134 = ___outQuotient;
 		NullCheck(L_134);
-		UInt32U5BU5D_t2133601851* L_135 = L_134->get_data_2();
+		UInt32U5BU5D_t2133601851* L_135 = L_134->get_data_1();
 		int32_t L_136 = V_13;
 		NullCheck(L_135);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_135, L_136);
@@ -35187,16 +35584,16 @@ IL_0281:
 		BigInteger_t2113513851 * L_140 = ___outQuotient;
 		BigInteger_t2113513851 * L_141 = L_140;
 		NullCheck(L_141);
-		int32_t L_142 = L_141->get_dataLength_3();
+		int32_t L_142 = L_141->get_dataLength_2();
 		NullCheck(L_141);
-		L_141->set_dataLength_3(((int32_t)((int32_t)L_142-(int32_t)1)));
+		L_141->set_dataLength_2(((int32_t)((int32_t)L_142-(int32_t)1)));
 	}
 
 IL_028f:
 	{
 		BigInteger_t2113513851 * L_143 = ___outQuotient;
 		NullCheck(L_143);
-		int32_t L_144 = L_143->get_dataLength_3();
+		int32_t L_144 = L_143->get_dataLength_2();
 		if ((((int32_t)L_144) <= ((int32_t)1)))
 		{
 			goto IL_02ac;
@@ -35205,10 +35602,10 @@ IL_028f:
 	{
 		BigInteger_t2113513851 * L_145 = ___outQuotient;
 		NullCheck(L_145);
-		UInt32U5BU5D_t2133601851* L_146 = L_145->get_data_2();
+		UInt32U5BU5D_t2133601851* L_146 = L_145->get_data_1();
 		BigInteger_t2113513851 * L_147 = ___outQuotient;
 		NullCheck(L_147);
-		int32_t L_148 = L_147->get_dataLength_3();
+		int32_t L_148 = L_147->get_dataLength_2();
 		NullCheck(L_146);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_146, ((int32_t)((int32_t)L_148-(int32_t)1)));
 		int32_t L_149 = ((int32_t)((int32_t)L_148-(int32_t)1));
@@ -35233,7 +35630,7 @@ IL_02ad:
 	{
 		BigInteger_t2113513851 * L_151 = ___outQuotient;
 		NullCheck(L_151);
-		int32_t L_152 = L_151->get_dataLength_3();
+		int32_t L_152 = L_151->get_dataLength_2();
 		V_37 = (bool)((((int32_t)L_152) == ((int32_t)0))? 1 : 0);
 		bool L_153 = V_37;
 		if (!L_153)
@@ -35244,7 +35641,7 @@ IL_02ad:
 	{
 		BigInteger_t2113513851 * L_154 = ___outQuotient;
 		NullCheck(L_154);
-		L_154->set_dataLength_3(1);
+		L_154->set_dataLength_2(1);
 	}
 
 IL_02c9:
@@ -35255,7 +35652,7 @@ IL_02c9:
 		IL2CPP_RUNTIME_CLASS_INIT(BigInteger_t2113513851_il2cpp_TypeInfo_var);
 		int32_t L_158 = BigInteger_shiftRight_m2434346486(NULL /*static, unused*/, L_156, L_157, /*hidden argument*/NULL);
 		NullCheck(L_155);
-		L_155->set_dataLength_3(L_158);
+		L_155->set_dataLength_2(L_158);
 		V_13 = 0;
 		goto IL_02ef;
 	}
@@ -35264,7 +35661,7 @@ IL_02dc:
 	{
 		BigInteger_t2113513851 * L_159 = ___outRemainder;
 		NullCheck(L_159);
-		UInt32U5BU5D_t2133601851* L_160 = L_159->get_data_2();
+		UInt32U5BU5D_t2133601851* L_160 = L_159->get_data_1();
 		int32_t L_161 = V_13;
 		UInt32U5BU5D_t2133601851* L_162 = V_2;
 		int32_t L_163 = V_13;
@@ -35283,7 +35680,7 @@ IL_02ef:
 		int32_t L_166 = V_13;
 		BigInteger_t2113513851 * L_167 = ___outRemainder;
 		NullCheck(L_167);
-		int32_t L_168 = L_167->get_dataLength_3();
+		int32_t L_168 = L_167->get_dataLength_2();
 		V_38 = (bool)((((int32_t)L_166) < ((int32_t)L_168))? 1 : 0);
 		bool L_169 = V_38;
 		if (L_169)
@@ -35299,7 +35696,7 @@ IL_0301:
 	{
 		BigInteger_t2113513851 * L_170 = ___outRemainder;
 		NullCheck(L_170);
-		UInt32U5BU5D_t2133601851* L_171 = L_170->get_data_2();
+		UInt32U5BU5D_t2133601851* L_171 = L_170->get_data_1();
 		int32_t L_172 = V_13;
 		NullCheck(L_171);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_171, L_172);
@@ -35366,11 +35763,11 @@ IL_0010:
 	{
 		BigInteger_t2113513851 * L_0 = ___outRemainder;
 		NullCheck(L_0);
-		UInt32U5BU5D_t2133601851* L_1 = L_0->get_data_2();
+		UInt32U5BU5D_t2133601851* L_1 = L_0->get_data_1();
 		int32_t L_2 = V_6;
 		BigInteger_t2113513851 * L_3 = ___bi1;
 		NullCheck(L_3);
-		UInt32U5BU5D_t2133601851* L_4 = L_3->get_data_2();
+		UInt32U5BU5D_t2133601851* L_4 = L_3->get_data_1();
 		int32_t L_5 = V_6;
 		NullCheck(L_4);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
@@ -35396,9 +35793,9 @@ IL_0028:
 		BigInteger_t2113513851 * L_10 = ___outRemainder;
 		BigInteger_t2113513851 * L_11 = ___bi1;
 		NullCheck(L_11);
-		int32_t L_12 = L_11->get_dataLength_3();
+		int32_t L_12 = L_11->get_dataLength_2();
 		NullCheck(L_10);
-		L_10->set_dataLength_3(L_12);
+		L_10->set_dataLength_2(L_12);
 		goto IL_0050;
 	}
 
@@ -35407,16 +35804,16 @@ IL_0042:
 		BigInteger_t2113513851 * L_13 = ___outRemainder;
 		BigInteger_t2113513851 * L_14 = L_13;
 		NullCheck(L_14);
-		int32_t L_15 = L_14->get_dataLength_3();
+		int32_t L_15 = L_14->get_dataLength_2();
 		NullCheck(L_14);
-		L_14->set_dataLength_3(((int32_t)((int32_t)L_15-(int32_t)1)));
+		L_14->set_dataLength_2(((int32_t)((int32_t)L_15-(int32_t)1)));
 	}
 
 IL_0050:
 	{
 		BigInteger_t2113513851 * L_16 = ___outRemainder;
 		NullCheck(L_16);
-		int32_t L_17 = L_16->get_dataLength_3();
+		int32_t L_17 = L_16->get_dataLength_2();
 		if ((((int32_t)L_17) <= ((int32_t)1)))
 		{
 			goto IL_006d;
@@ -35425,10 +35822,10 @@ IL_0050:
 	{
 		BigInteger_t2113513851 * L_18 = ___outRemainder;
 		NullCheck(L_18);
-		UInt32U5BU5D_t2133601851* L_19 = L_18->get_data_2();
+		UInt32U5BU5D_t2133601851* L_19 = L_18->get_data_1();
 		BigInteger_t2113513851 * L_20 = ___outRemainder;
 		NullCheck(L_20);
-		int32_t L_21 = L_20->get_dataLength_3();
+		int32_t L_21 = L_20->get_dataLength_2();
 		NullCheck(L_19);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_19, ((int32_t)((int32_t)L_21-(int32_t)1)));
 		int32_t L_22 = ((int32_t)((int32_t)L_21-(int32_t)1));
@@ -35453,18 +35850,18 @@ IL_006e:
 	{
 		BigInteger_t2113513851 * L_24 = ___bi2;
 		NullCheck(L_24);
-		UInt32U5BU5D_t2133601851* L_25 = L_24->get_data_2();
+		UInt32U5BU5D_t2133601851* L_25 = L_24->get_data_1();
 		NullCheck(L_25);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_25, 0);
 		int32_t L_26 = 0;
 		V_2 = (((int64_t)((uint64_t)((L_25)->GetAt(static_cast<il2cpp_array_size_t>(L_26))))));
 		BigInteger_t2113513851 * L_27 = ___outRemainder;
 		NullCheck(L_27);
-		int32_t L_28 = L_27->get_dataLength_3();
+		int32_t L_28 = L_27->get_dataLength_2();
 		V_3 = ((int32_t)((int32_t)L_28-(int32_t)1));
 		BigInteger_t2113513851 * L_29 = ___outRemainder;
 		NullCheck(L_29);
-		UInt32U5BU5D_t2133601851* L_30 = L_29->get_data_2();
+		UInt32U5BU5D_t2133601851* L_30 = L_29->get_data_1();
 		int32_t L_31 = V_3;
 		NullCheck(L_30);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_30, L_31);
@@ -35493,7 +35890,7 @@ IL_006e:
 		(L_38)->SetAt(static_cast<il2cpp_array_size_t>(L_40), (uint32_t)(((int32_t)((uint32_t)L_41))));
 		BigInteger_t2113513851 * L_42 = ___outRemainder;
 		NullCheck(L_42);
-		UInt32U5BU5D_t2133601851* L_43 = L_42->get_data_2();
+		UInt32U5BU5D_t2133601851* L_43 = L_42->get_data_1();
 		int32_t L_44 = V_3;
 		uint64_t L_45 = V_4;
 		uint64_t L_46 = V_2;
@@ -35513,14 +35910,14 @@ IL_00c5:
 	{
 		BigInteger_t2113513851 * L_48 = ___outRemainder;
 		NullCheck(L_48);
-		UInt32U5BU5D_t2133601851* L_49 = L_48->get_data_2();
+		UInt32U5BU5D_t2133601851* L_49 = L_48->get_data_1();
 		int32_t L_50 = V_3;
 		NullCheck(L_49);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_49, ((int32_t)((int32_t)L_50+(int32_t)1)));
 		int32_t L_51 = ((int32_t)((int32_t)L_50+(int32_t)1));
 		BigInteger_t2113513851 * L_52 = ___outRemainder;
 		NullCheck(L_52);
-		UInt32U5BU5D_t2133601851* L_53 = L_52->get_data_2();
+		UInt32U5BU5D_t2133601851* L_53 = L_52->get_data_1();
 		int32_t L_54 = V_3;
 		NullCheck(L_53);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_53, L_54);
@@ -35539,14 +35936,14 @@ IL_00c5:
 		(L_58)->SetAt(static_cast<il2cpp_array_size_t>(L_60), (uint32_t)(((int32_t)((uint32_t)L_61))));
 		BigInteger_t2113513851 * L_62 = ___outRemainder;
 		NullCheck(L_62);
-		UInt32U5BU5D_t2133601851* L_63 = L_62->get_data_2();
+		UInt32U5BU5D_t2133601851* L_63 = L_62->get_data_1();
 		int32_t L_64 = V_3;
 		NullCheck(L_63);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_63, ((int32_t)((int32_t)L_64+(int32_t)1)));
 		(L_63)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)((int32_t)L_64+(int32_t)1))), (uint32_t)0);
 		BigInteger_t2113513851 * L_65 = ___outRemainder;
 		NullCheck(L_65);
-		UInt32U5BU5D_t2133601851* L_66 = L_65->get_data_2();
+		UInt32U5BU5D_t2133601851* L_66 = L_65->get_data_1();
 		int32_t L_67 = V_3;
 		int32_t L_68 = L_67;
 		V_3 = ((int32_t)((int32_t)L_68-(int32_t)1));
@@ -35571,11 +35968,11 @@ IL_010d:
 		BigInteger_t2113513851 * L_73 = ___outQuotient;
 		int32_t L_74 = V_1;
 		NullCheck(L_73);
-		L_73->set_dataLength_3(L_74);
+		L_73->set_dataLength_2(L_74);
 		V_5 = 0;
 		BigInteger_t2113513851 * L_75 = ___outQuotient;
 		NullCheck(L_75);
-		int32_t L_76 = L_75->get_dataLength_3();
+		int32_t L_76 = L_75->get_dataLength_2();
 		V_13 = ((int32_t)((int32_t)L_76-(int32_t)1));
 		goto IL_0149;
 	}
@@ -35584,7 +35981,7 @@ IL_0130:
 	{
 		BigInteger_t2113513851 * L_77 = ___outQuotient;
 		NullCheck(L_77);
-		UInt32U5BU5D_t2133601851* L_78 = L_77->get_data_2();
+		UInt32U5BU5D_t2133601851* L_78 = L_77->get_data_1();
 		int32_t L_79 = V_5;
 		UInt32U5BU5D_t2133601851* L_80 = V_0;
 		int32_t L_81 = V_13;
@@ -35618,7 +36015,7 @@ IL_0159:
 	{
 		BigInteger_t2113513851 * L_87 = ___outQuotient;
 		NullCheck(L_87);
-		UInt32U5BU5D_t2133601851* L_88 = L_87->get_data_2();
+		UInt32U5BU5D_t2133601851* L_88 = L_87->get_data_1();
 		int32_t L_89 = V_5;
 		NullCheck(L_88);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_88, L_89);
@@ -35646,16 +36043,16 @@ IL_0177:
 		BigInteger_t2113513851 * L_93 = ___outQuotient;
 		BigInteger_t2113513851 * L_94 = L_93;
 		NullCheck(L_94);
-		int32_t L_95 = L_94->get_dataLength_3();
+		int32_t L_95 = L_94->get_dataLength_2();
 		NullCheck(L_94);
-		L_94->set_dataLength_3(((int32_t)((int32_t)L_95-(int32_t)1)));
+		L_94->set_dataLength_2(((int32_t)((int32_t)L_95-(int32_t)1)));
 	}
 
 IL_0185:
 	{
 		BigInteger_t2113513851 * L_96 = ___outQuotient;
 		NullCheck(L_96);
-		int32_t L_97 = L_96->get_dataLength_3();
+		int32_t L_97 = L_96->get_dataLength_2();
 		if ((((int32_t)L_97) <= ((int32_t)1)))
 		{
 			goto IL_01a2;
@@ -35664,10 +36061,10 @@ IL_0185:
 	{
 		BigInteger_t2113513851 * L_98 = ___outQuotient;
 		NullCheck(L_98);
-		UInt32U5BU5D_t2133601851* L_99 = L_98->get_data_2();
+		UInt32U5BU5D_t2133601851* L_99 = L_98->get_data_1();
 		BigInteger_t2113513851 * L_100 = ___outQuotient;
 		NullCheck(L_100);
-		int32_t L_101 = L_100->get_dataLength_3();
+		int32_t L_101 = L_100->get_dataLength_2();
 		NullCheck(L_99);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_99, ((int32_t)((int32_t)L_101-(int32_t)1)));
 		int32_t L_102 = ((int32_t)((int32_t)L_101-(int32_t)1));
@@ -35692,7 +36089,7 @@ IL_01a3:
 	{
 		BigInteger_t2113513851 * L_104 = ___outQuotient;
 		NullCheck(L_104);
-		int32_t L_105 = L_104->get_dataLength_3();
+		int32_t L_105 = L_104->get_dataLength_2();
 		V_17 = (bool)((((int32_t)L_105) == ((int32_t)0))? 1 : 0);
 		bool L_106 = V_17;
 		if (!L_106)
@@ -35703,7 +36100,7 @@ IL_01a3:
 	{
 		BigInteger_t2113513851 * L_107 = ___outQuotient;
 		NullCheck(L_107);
-		L_107->set_dataLength_3(1);
+		L_107->set_dataLength_2(1);
 	}
 
 IL_01bf:
@@ -35716,16 +36113,16 @@ IL_01c1:
 		BigInteger_t2113513851 * L_108 = ___outRemainder;
 		BigInteger_t2113513851 * L_109 = L_108;
 		NullCheck(L_109);
-		int32_t L_110 = L_109->get_dataLength_3();
+		int32_t L_110 = L_109->get_dataLength_2();
 		NullCheck(L_109);
-		L_109->set_dataLength_3(((int32_t)((int32_t)L_110-(int32_t)1)));
+		L_109->set_dataLength_2(((int32_t)((int32_t)L_110-(int32_t)1)));
 	}
 
 IL_01cf:
 	{
 		BigInteger_t2113513851 * L_111 = ___outRemainder;
 		NullCheck(L_111);
-		int32_t L_112 = L_111->get_dataLength_3();
+		int32_t L_112 = L_111->get_dataLength_2();
 		if ((((int32_t)L_112) <= ((int32_t)1)))
 		{
 			goto IL_01ec;
@@ -35734,10 +36131,10 @@ IL_01cf:
 	{
 		BigInteger_t2113513851 * L_113 = ___outRemainder;
 		NullCheck(L_113);
-		UInt32U5BU5D_t2133601851* L_114 = L_113->get_data_2();
+		UInt32U5BU5D_t2133601851* L_114 = L_113->get_data_1();
 		BigInteger_t2113513851 * L_115 = ___outRemainder;
 		NullCheck(L_115);
-		int32_t L_116 = L_115->get_dataLength_3();
+		int32_t L_116 = L_115->get_dataLength_2();
 		NullCheck(L_114);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_114, ((int32_t)((int32_t)L_116-(int32_t)1)));
 		int32_t L_117 = ((int32_t)((int32_t)L_116-(int32_t)1));
@@ -35797,7 +36194,7 @@ extern "C"  BigInteger_t2113513851 * BigInteger_op_Division_m3566706560 (Il2CppO
 		V_4 = (bool)0;
 		BigInteger_t2113513851 * L_2 = ___bi1;
 		NullCheck(L_2);
-		UInt32U5BU5D_t2133601851* L_3 = L_2->get_data_2();
+		UInt32U5BU5D_t2133601851* L_3 = L_2->get_data_1();
 		int32_t L_4 = V_2;
 		NullCheck(L_3);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_3, L_4);
@@ -35821,7 +36218,7 @@ IL_0039:
 	{
 		BigInteger_t2113513851 * L_9 = ___bi2;
 		NullCheck(L_9);
-		UInt32U5BU5D_t2133601851* L_10 = L_9->get_data_2();
+		UInt32U5BU5D_t2133601851* L_10 = L_9->get_data_1();
 		int32_t L_11 = V_2;
 		NullCheck(L_10);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_10, L_11);
@@ -35864,7 +36261,7 @@ IL_006f:
 	{
 		BigInteger_t2113513851 * L_21 = ___bi2;
 		NullCheck(L_21);
-		int32_t L_22 = L_21->get_dataLength_3();
+		int32_t L_22 = L_21->get_dataLength_2();
 		V_9 = (bool)((((int32_t)L_22) == ((int32_t)1))? 1 : 0);
 		bool L_23 = V_9;
 		if (!L_23)
@@ -35957,7 +36354,7 @@ extern "C"  BigInteger_t2113513851 * BigInteger_op_Modulus_m1341647206 (Il2CppOb
 		V_3 = (bool)0;
 		BigInteger_t2113513851 * L_3 = ___bi1;
 		NullCheck(L_3);
-		UInt32U5BU5D_t2133601851* L_4 = L_3->get_data_2();
+		UInt32U5BU5D_t2133601851* L_4 = L_3->get_data_1();
 		int32_t L_5 = V_2;
 		NullCheck(L_4);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
@@ -35981,7 +36378,7 @@ IL_0036:
 	{
 		BigInteger_t2113513851 * L_10 = ___bi2;
 		NullCheck(L_10);
-		UInt32U5BU5D_t2133601851* L_11 = L_10->get_data_2();
+		UInt32U5BU5D_t2133601851* L_11 = L_10->get_data_1();
 		int32_t L_12 = V_2;
 		NullCheck(L_11);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_11, L_12);
@@ -36023,7 +36420,7 @@ IL_0068:
 	{
 		BigInteger_t2113513851 * L_22 = ___bi2;
 		NullCheck(L_22);
-		int32_t L_23 = L_22->get_dataLength_3();
+		int32_t L_23 = L_22->get_dataLength_2();
 		V_8 = (bool)((((int32_t)L_23) == ((int32_t)1))? 1 : 0);
 		bool L_24 = V_8;
 		if (!L_24)
@@ -36184,7 +36581,7 @@ IL_001e:
 		V_3 = (bool)0;
 		BigInteger_t2113513851 * L_4 = V_2;
 		NullCheck(L_4);
-		UInt32U5BU5D_t2133601851* L_5 = L_4->get_data_2();
+		UInt32U5BU5D_t2133601851* L_5 = L_4->get_data_1();
 		NullCheck(L_5);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, ((int32_t)69));
 		int32_t L_6 = ((int32_t)69);
@@ -36239,7 +36636,7 @@ IL_005a:
 		V_6 = L_13;
 		BigInteger_t2113513851 * L_14 = V_2;
 		NullCheck(L_14);
-		int32_t L_15 = L_14->get_dataLength_3();
+		int32_t L_15 = L_14->get_dataLength_2();
 		if ((!(((uint32_t)L_15) == ((uint32_t)1))))
 		{
 			goto IL_0087;
@@ -36248,7 +36645,7 @@ IL_005a:
 	{
 		BigInteger_t2113513851 * L_16 = V_2;
 		NullCheck(L_16);
-		UInt32U5BU5D_t2133601851* L_17 = L_16->get_data_2();
+		UInt32U5BU5D_t2133601851* L_17 = L_16->get_data_1();
 		NullCheck(L_17);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_17, 0);
 		int32_t L_18 = 0;
@@ -36290,7 +36687,7 @@ IL_009c:
 		BigInteger_singleByteDivide_m2557339696(NULL /*static, unused*/, L_20, L_21, L_22, L_23, /*hidden argument*/NULL);
 		BigInteger_t2113513851 * L_24 = V_5;
 		NullCheck(L_24);
-		UInt32U5BU5D_t2133601851* L_25 = L_24->get_data_2();
+		UInt32U5BU5D_t2133601851* L_25 = L_24->get_data_1();
 		NullCheck(L_25);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_25, 0);
 		int32_t L_26 = 0;
@@ -36304,7 +36701,7 @@ IL_009c:
 	{
 		BigInteger_t2113513851 * L_28 = V_5;
 		NullCheck(L_28);
-		UInt32U5BU5D_t2133601851* L_29 = L_28->get_data_2();
+		UInt32U5BU5D_t2133601851* L_29 = L_28->get_data_1();
 		NullCheck(L_29);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_29, 0);
 		int32_t L_30 = 0;
@@ -36322,7 +36719,7 @@ IL_00d4:
 		String_t* L_35 = V_0;
 		BigInteger_t2113513851 * L_36 = V_5;
 		NullCheck(L_36);
-		UInt32U5BU5D_t2133601851* L_37 = L_36->get_data_2();
+		UInt32U5BU5D_t2133601851* L_37 = L_36->get_data_1();
 		NullCheck(L_37);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_37, 0);
 		int32_t L_38 = 0;
@@ -36346,7 +36743,7 @@ IL_00fa:
 	{
 		BigInteger_t2113513851 * L_44 = V_2;
 		NullCheck(L_44);
-		int32_t L_45 = L_44->get_dataLength_3();
+		int32_t L_45 = L_44->get_dataLength_2();
 		if ((((int32_t)L_45) > ((int32_t)1)))
 		{
 			goto IL_011c;
@@ -36355,7 +36752,7 @@ IL_00fa:
 	{
 		BigInteger_t2113513851 * L_46 = V_2;
 		NullCheck(L_46);
-		int32_t L_47 = L_46->get_dataLength_3();
+		int32_t L_47 = L_46->get_dataLength_2();
 		if ((!(((uint32_t)L_47) == ((uint32_t)1))))
 		{
 			goto IL_0119;
@@ -36364,7 +36761,7 @@ IL_00fa:
 	{
 		BigInteger_t2113513851 * L_48 = V_2;
 		NullCheck(L_48);
-		UInt32U5BU5D_t2133601851* L_49 = L_48->get_data_2();
+		UInt32U5BU5D_t2133601851* L_49 = L_48->get_data_1();
 		NullCheck(L_49);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_49, 0);
 		int32_t L_50 = 0;
@@ -36470,7 +36867,7 @@ extern "C"  BigInteger_t2113513851 * BigInteger_ModPow_m3875454377 (BigInteger_t
 	{
 		BigInteger_t2113513851 * L_0 = ___exp;
 		NullCheck(L_0);
-		UInt32U5BU5D_t2133601851* L_1 = L_0->get_data_2();
+		UInt32U5BU5D_t2133601851* L_1 = L_0->get_data_1();
 		NullCheck(L_1);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_1, ((int32_t)69));
 		int32_t L_2 = ((int32_t)69);
@@ -36493,7 +36890,7 @@ IL_0024:
 		BigInteger_t2113513851 * L_5 = BigInteger_op_Implicit_m77447535(NULL /*static, unused*/, 1, /*hidden argument*/NULL);
 		V_0 = L_5;
 		V_2 = (bool)0;
-		UInt32U5BU5D_t2133601851* L_6 = __this->get_data_2();
+		UInt32U5BU5D_t2133601851* L_6 = __this->get_data_1();
 		NullCheck(L_6);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, ((int32_t)69));
 		int32_t L_7 = ((int32_t)69);
@@ -36526,7 +36923,7 @@ IL_0060:
 	{
 		BigInteger_t2113513851 * L_14 = ___n;
 		NullCheck(L_14);
-		UInt32U5BU5D_t2133601851* L_15 = L_14->get_data_2();
+		UInt32U5BU5D_t2133601851* L_15 = L_14->get_data_1();
 		NullCheck(L_15);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_15, ((int32_t)69));
 		int32_t L_16 = ((int32_t)69);
@@ -36551,11 +36948,11 @@ IL_0080:
 		V_3 = L_20;
 		BigInteger_t2113513851 * L_21 = ___n;
 		NullCheck(L_21);
-		int32_t L_22 = L_21->get_dataLength_3();
+		int32_t L_22 = L_21->get_dataLength_2();
 		V_4 = ((int32_t)((int32_t)L_22<<(int32_t)1));
 		BigInteger_t2113513851 * L_23 = V_3;
 		NullCheck(L_23);
-		UInt32U5BU5D_t2133601851* L_24 = L_23->get_data_2();
+		UInt32U5BU5D_t2133601851* L_24 = L_23->get_data_1();
 		int32_t L_25 = V_4;
 		NullCheck(L_24);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_24, L_25);
@@ -36563,7 +36960,7 @@ IL_0080:
 		BigInteger_t2113513851 * L_26 = V_3;
 		int32_t L_27 = V_4;
 		NullCheck(L_26);
-		L_26->set_dataLength_3(((int32_t)((int32_t)L_27+(int32_t)1)));
+		L_26->set_dataLength_2(((int32_t)((int32_t)L_27+(int32_t)1)));
 		BigInteger_t2113513851 * L_28 = V_3;
 		BigInteger_t2113513851 * L_29 = ___n;
 		IL2CPP_RUNTIME_CLASS_INIT(BigInteger_t2113513851_il2cpp_TypeInfo_var);
@@ -36589,7 +36986,7 @@ IL_00cb:
 	{
 		BigInteger_t2113513851 * L_33 = ___exp;
 		NullCheck(L_33);
-		UInt32U5BU5D_t2133601851* L_34 = L_33->get_data_2();
+		UInt32U5BU5D_t2133601851* L_34 = L_33->get_data_1();
 		int32_t L_35 = V_10;
 		NullCheck(L_34);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_34, L_35);
@@ -36627,7 +37024,7 @@ IL_00f1:
 		V_1 = L_51;
 		BigInteger_t2113513851 * L_52 = V_1;
 		NullCheck(L_52);
-		int32_t L_53 = L_52->get_dataLength_3();
+		int32_t L_53 = L_52->get_dataLength_2();
 		if ((!(((uint32_t)L_53) == ((uint32_t)1))))
 		{
 			goto IL_011d;
@@ -36636,7 +37033,7 @@ IL_00f1:
 	{
 		BigInteger_t2113513851 * L_54 = V_1;
 		NullCheck(L_54);
-		UInt32U5BU5D_t2133601851* L_55 = L_54->get_data_2();
+		UInt32U5BU5D_t2133601851* L_55 = L_54->get_data_1();
 		NullCheck(L_55);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_55, 0);
 		int32_t L_56 = 0;
@@ -36668,7 +37065,7 @@ IL_011e:
 	{
 		BigInteger_t2113513851 * L_59 = ___exp;
 		NullCheck(L_59);
-		UInt32U5BU5D_t2133601851* L_60 = L_59->get_data_2();
+		UInt32U5BU5D_t2133601851* L_60 = L_59->get_data_1();
 		NullCheck(L_60);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_60, 0);
 		int32_t L_61 = 0;
@@ -36750,7 +37147,7 @@ IL_017e:
 		int32_t L_74 = V_10;
 		BigInteger_t2113513851 * L_75 = ___exp;
 		NullCheck(L_75);
-		int32_t L_76 = L_75->get_dataLength_3();
+		int32_t L_76 = L_75->get_dataLength_2();
 		V_19 = (bool)((((int32_t)L_74) < ((int32_t)L_76))? 1 : 0);
 		bool L_77 = V_19;
 		if (L_77)
@@ -36768,7 +37165,7 @@ IL_017e:
 	{
 		BigInteger_t2113513851 * L_79 = ___exp;
 		NullCheck(L_79);
-		UInt32U5BU5D_t2133601851* L_80 = L_79->get_data_2();
+		UInt32U5BU5D_t2133601851* L_80 = L_79->get_data_1();
 		NullCheck(L_80);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_80, 0);
 		int32_t L_81 = 0;
@@ -36861,7 +37258,7 @@ extern "C"  BigInteger_t2113513851 * BigInteger_BarrettReduction_m964458671 (Big
 	{
 		BigInteger_t2113513851 * L_0 = ___n;
 		NullCheck(L_0);
-		int32_t L_1 = L_0->get_dataLength_3();
+		int32_t L_1 = L_0->get_dataLength_2();
 		V_0 = L_1;
 		int32_t L_2 = V_0;
 		V_1 = ((int32_t)((int32_t)L_2+(int32_t)1));
@@ -36880,11 +37277,11 @@ IL_001e:
 	{
 		BigInteger_t2113513851 * L_6 = V_3;
 		NullCheck(L_6);
-		UInt32U5BU5D_t2133601851* L_7 = L_6->get_data_2();
+		UInt32U5BU5D_t2133601851* L_7 = L_6->get_data_1();
 		int32_t L_8 = V_10;
 		BigInteger_t2113513851 * L_9 = ___x;
 		NullCheck(L_9);
-		UInt32U5BU5D_t2133601851* L_10 = L_9->get_data_2();
+		UInt32U5BU5D_t2133601851* L_10 = L_9->get_data_1();
 		int32_t L_11 = V_9;
 		NullCheck(L_10);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_10, L_11);
@@ -36903,7 +37300,7 @@ IL_003c:
 		int32_t L_15 = V_9;
 		BigInteger_t2113513851 * L_16 = ___x;
 		NullCheck(L_16);
-		int32_t L_17 = L_16->get_dataLength_3();
+		int32_t L_17 = L_16->get_dataLength_2();
 		V_11 = (bool)((((int32_t)L_15) < ((int32_t)L_17))? 1 : 0);
 		bool L_18 = V_11;
 		if (L_18)
@@ -36915,13 +37312,13 @@ IL_003c:
 		BigInteger_t2113513851 * L_19 = V_3;
 		BigInteger_t2113513851 * L_20 = ___x;
 		NullCheck(L_20);
-		int32_t L_21 = L_20->get_dataLength_3();
+		int32_t L_21 = L_20->get_dataLength_2();
 		int32_t L_22 = V_2;
 		NullCheck(L_19);
-		L_19->set_dataLength_3(((int32_t)((int32_t)L_21-(int32_t)L_22)));
+		L_19->set_dataLength_2(((int32_t)((int32_t)L_21-(int32_t)L_22)));
 		BigInteger_t2113513851 * L_23 = V_3;
 		NullCheck(L_23);
-		int32_t L_24 = L_23->get_dataLength_3();
+		int32_t L_24 = L_23->get_dataLength_2();
 		V_12 = (bool)((((int32_t)((((int32_t)L_24) > ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_25 = V_12;
 		if (!L_25)
@@ -36932,7 +37329,7 @@ IL_003c:
 	{
 		BigInteger_t2113513851 * L_26 = V_3;
 		NullCheck(L_26);
-		L_26->set_dataLength_3(1);
+		L_26->set_dataLength_2(1);
 	}
 
 IL_0073:
@@ -36955,11 +37352,11 @@ IL_008b:
 	{
 		BigInteger_t2113513851 * L_32 = V_5;
 		NullCheck(L_32);
-		UInt32U5BU5D_t2133601851* L_33 = L_32->get_data_2();
+		UInt32U5BU5D_t2133601851* L_33 = L_32->get_data_1();
 		int32_t L_34 = V_14;
 		BigInteger_t2113513851 * L_35 = V_4;
 		NullCheck(L_35);
-		UInt32U5BU5D_t2133601851* L_36 = L_35->get_data_2();
+		UInt32U5BU5D_t2133601851* L_36 = L_35->get_data_1();
 		int32_t L_37 = V_13;
 		NullCheck(L_36);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_36, L_37);
@@ -36978,7 +37375,7 @@ IL_00ab:
 		int32_t L_41 = V_13;
 		BigInteger_t2113513851 * L_42 = V_4;
 		NullCheck(L_42);
-		int32_t L_43 = L_42->get_dataLength_3();
+		int32_t L_43 = L_42->get_dataLength_2();
 		V_15 = (bool)((((int32_t)L_41) < ((int32_t)L_43))? 1 : 0);
 		bool L_44 = V_15;
 		if (L_44)
@@ -36990,13 +37387,13 @@ IL_00ab:
 		BigInteger_t2113513851 * L_45 = V_5;
 		BigInteger_t2113513851 * L_46 = V_4;
 		NullCheck(L_46);
-		int32_t L_47 = L_46->get_dataLength_3();
+		int32_t L_47 = L_46->get_dataLength_2();
 		int32_t L_48 = V_1;
 		NullCheck(L_45);
-		L_45->set_dataLength_3(((int32_t)((int32_t)L_47-(int32_t)L_48)));
+		L_45->set_dataLength_2(((int32_t)((int32_t)L_47-(int32_t)L_48)));
 		BigInteger_t2113513851 * L_49 = V_5;
 		NullCheck(L_49);
-		int32_t L_50 = L_49->get_dataLength_3();
+		int32_t L_50 = L_49->get_dataLength_2();
 		V_16 = (bool)((((int32_t)((((int32_t)L_50) > ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_51 = V_16;
 		if (!L_51)
@@ -37007,7 +37404,7 @@ IL_00ab:
 	{
 		BigInteger_t2113513851 * L_52 = V_5;
 		NullCheck(L_52);
-		L_52->set_dataLength_3(1);
+		L_52->set_dataLength_2(1);
 	}
 
 IL_00e7:
@@ -37017,7 +37414,7 @@ IL_00e7:
 		V_6 = L_53;
 		BigInteger_t2113513851 * L_54 = ___x;
 		NullCheck(L_54);
-		int32_t L_55 = L_54->get_dataLength_3();
+		int32_t L_55 = L_54->get_dataLength_2();
 		int32_t L_56 = V_1;
 		if ((((int32_t)L_55) > ((int32_t)L_56)))
 		{
@@ -37027,7 +37424,7 @@ IL_00e7:
 	{
 		BigInteger_t2113513851 * L_57 = ___x;
 		NullCheck(L_57);
-		int32_t L_58 = L_57->get_dataLength_3();
+		int32_t L_58 = L_57->get_dataLength_2();
 		G_B13_0 = L_58;
 		goto IL_0100;
 	}
@@ -37049,11 +37446,11 @@ IL_0107:
 	{
 		BigInteger_t2113513851 * L_60 = V_6;
 		NullCheck(L_60);
-		UInt32U5BU5D_t2133601851* L_61 = L_60->get_data_2();
+		UInt32U5BU5D_t2133601851* L_61 = L_60->get_data_1();
 		int32_t L_62 = V_17;
 		BigInteger_t2113513851 * L_63 = ___x;
 		NullCheck(L_63);
-		UInt32U5BU5D_t2133601851* L_64 = L_63->get_data_2();
+		UInt32U5BU5D_t2133601851* L_64 = L_63->get_data_1();
 		int32_t L_65 = V_17;
 		NullCheck(L_64);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_64, L_65);
@@ -37080,7 +37477,7 @@ IL_0120:
 		BigInteger_t2113513851 * L_71 = V_6;
 		int32_t L_72 = V_7;
 		NullCheck(L_71);
-		L_71->set_dataLength_3(L_72);
+		L_71->set_dataLength_2(L_72);
 		BigInteger_t2113513851 * L_73 = (BigInteger_t2113513851 *)il2cpp_codegen_object_new(BigInteger_t2113513851_il2cpp_TypeInfo_var);
 		BigInteger__ctor_m3370758135(L_73, /*hidden argument*/NULL);
 		V_8 = L_73;
@@ -37092,7 +37489,7 @@ IL_0144:
 	{
 		BigInteger_t2113513851 * L_74 = V_5;
 		NullCheck(L_74);
-		UInt32U5BU5D_t2133601851* L_75 = L_74->get_data_2();
+		UInt32U5BU5D_t2133601851* L_75 = L_74->get_data_1();
 		int32_t L_76 = V_19;
 		NullCheck(L_75);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_75, L_76);
@@ -37121,21 +37518,21 @@ IL_016a:
 	{
 		BigInteger_t2113513851 * L_80 = V_5;
 		NullCheck(L_80);
-		UInt32U5BU5D_t2133601851* L_81 = L_80->get_data_2();
+		UInt32U5BU5D_t2133601851* L_81 = L_80->get_data_1();
 		int32_t L_82 = V_19;
 		NullCheck(L_81);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_81, L_82);
 		int32_t L_83 = L_82;
 		BigInteger_t2113513851 * L_84 = ___n;
 		NullCheck(L_84);
-		UInt32U5BU5D_t2133601851* L_85 = L_84->get_data_2();
+		UInt32U5BU5D_t2133601851* L_85 = L_84->get_data_1();
 		int32_t L_86 = V_23;
 		NullCheck(L_85);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_85, L_86);
 		int32_t L_87 = L_86;
 		BigInteger_t2113513851 * L_88 = V_8;
 		NullCheck(L_88);
-		UInt32U5BU5D_t2133601851* L_89 = L_88->get_data_2();
+		UInt32U5BU5D_t2133601851* L_89 = L_88->get_data_1();
 		int32_t L_90 = V_21;
 		NullCheck(L_89);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_89, L_90);
@@ -37144,7 +37541,7 @@ IL_016a:
 		V_24 = ((int64_t)((int64_t)((int64_t)((int64_t)((int64_t)((int64_t)(((int64_t)((uint64_t)((L_81)->GetAt(static_cast<il2cpp_array_size_t>(L_83))))))*(int64_t)(((int64_t)((uint64_t)((L_85)->GetAt(static_cast<il2cpp_array_size_t>(L_87))))))))+(int64_t)(((int64_t)((uint64_t)((L_89)->GetAt(static_cast<il2cpp_array_size_t>(L_91))))))))+(int64_t)L_92));
 		BigInteger_t2113513851 * L_93 = V_8;
 		NullCheck(L_93);
-		UInt32U5BU5D_t2133601851* L_94 = L_93->get_data_2();
+		UInt32U5BU5D_t2133601851* L_94 = L_93->get_data_1();
 		int32_t L_95 = V_21;
 		uint64_t L_96 = V_24;
 		NullCheck(L_94);
@@ -37163,7 +37560,7 @@ IL_01b6:
 		int32_t L_100 = V_23;
 		BigInteger_t2113513851 * L_101 = ___n;
 		NullCheck(L_101);
-		int32_t L_102 = L_101->get_dataLength_3();
+		int32_t L_102 = L_101->get_dataLength_2();
 		if ((((int32_t)L_100) >= ((int32_t)L_102)))
 		{
 			goto IL_01c7;
@@ -37203,7 +37600,7 @@ IL_01c8:
 	{
 		BigInteger_t2113513851 * L_109 = V_8;
 		NullCheck(L_109);
-		UInt32U5BU5D_t2133601851* L_110 = L_109->get_data_2();
+		UInt32U5BU5D_t2133601851* L_110 = L_109->get_data_1();
 		int32_t L_111 = V_21;
 		uint64_t L_112 = V_20;
 		NullCheck(L_110);
@@ -37226,7 +37623,7 @@ IL_01ed:
 		int32_t L_114 = V_19;
 		BigInteger_t2113513851 * L_115 = V_5;
 		NullCheck(L_115);
-		int32_t L_116 = L_115->get_dataLength_3();
+		int32_t L_116 = L_115->get_dataLength_2();
 		V_27 = (bool)((((int32_t)L_114) < ((int32_t)L_116))? 1 : 0);
 		bool L_117 = V_27;
 		if (L_117)
@@ -37238,7 +37635,7 @@ IL_01ed:
 		BigInteger_t2113513851 * L_118 = V_8;
 		int32_t L_119 = V_1;
 		NullCheck(L_118);
-		L_118->set_dataLength_3(L_119);
+		L_118->set_dataLength_2(L_119);
 		goto IL_021a;
 	}
 
@@ -37247,16 +37644,16 @@ IL_020b:
 		BigInteger_t2113513851 * L_120 = V_8;
 		BigInteger_t2113513851 * L_121 = L_120;
 		NullCheck(L_121);
-		int32_t L_122 = L_121->get_dataLength_3();
+		int32_t L_122 = L_121->get_dataLength_2();
 		NullCheck(L_121);
-		L_121->set_dataLength_3(((int32_t)((int32_t)L_122-(int32_t)1)));
+		L_121->set_dataLength_2(((int32_t)((int32_t)L_122-(int32_t)1)));
 	}
 
 IL_021a:
 	{
 		BigInteger_t2113513851 * L_123 = V_8;
 		NullCheck(L_123);
-		int32_t L_124 = L_123->get_dataLength_3();
+		int32_t L_124 = L_123->get_dataLength_2();
 		if ((((int32_t)L_124) <= ((int32_t)1)))
 		{
 			goto IL_023a;
@@ -37265,10 +37662,10 @@ IL_021a:
 	{
 		BigInteger_t2113513851 * L_125 = V_8;
 		NullCheck(L_125);
-		UInt32U5BU5D_t2133601851* L_126 = L_125->get_data_2();
+		UInt32U5BU5D_t2133601851* L_126 = L_125->get_data_1();
 		BigInteger_t2113513851 * L_127 = V_8;
 		NullCheck(L_127);
-		int32_t L_128 = L_127->get_dataLength_3();
+		int32_t L_128 = L_127->get_dataLength_2();
 		NullCheck(L_126);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_126, ((int32_t)((int32_t)L_128-(int32_t)1)));
 		int32_t L_129 = ((int32_t)((int32_t)L_128-(int32_t)1));
@@ -37298,7 +37695,7 @@ IL_023b:
 		V_6 = L_133;
 		BigInteger_t2113513851 * L_134 = V_6;
 		NullCheck(L_134);
-		UInt32U5BU5D_t2133601851* L_135 = L_134->get_data_2();
+		UInt32U5BU5D_t2133601851* L_135 = L_134->get_data_1();
 		NullCheck(L_135);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_135, ((int32_t)69));
 		int32_t L_136 = ((int32_t)69);
@@ -37315,7 +37712,7 @@ IL_023b:
 		V_30 = L_138;
 		BigInteger_t2113513851 * L_139 = V_30;
 		NullCheck(L_139);
-		UInt32U5BU5D_t2133601851* L_140 = L_139->get_data_2();
+		UInt32U5BU5D_t2133601851* L_140 = L_139->get_data_1();
 		int32_t L_141 = V_1;
 		NullCheck(L_140);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_140, L_141);
@@ -37323,7 +37720,7 @@ IL_023b:
 		BigInteger_t2113513851 * L_142 = V_30;
 		int32_t L_143 = V_1;
 		NullCheck(L_142);
-		L_142->set_dataLength_3(((int32_t)((int32_t)L_143+(int32_t)1)));
+		L_142->set_dataLength_2(((int32_t)((int32_t)L_143+(int32_t)1)));
 		BigInteger_t2113513851 * L_144 = V_6;
 		BigInteger_t2113513851 * L_145 = V_30;
 		IL2CPP_RUNTIME_CLASS_INIT(BigInteger_t2113513851_il2cpp_TypeInfo_var);
@@ -37470,7 +37867,7 @@ IL_002a:
 
 IL_002f:
 	{
-		UInt32U5BU5D_t2133601851* L_8 = __this->get_data_2();
+		UInt32U5BU5D_t2133601851* L_8 = __this->get_data_1();
 		int32_t L_9 = V_4;
 		Random_t922188920 * L_10 = ___rand;
 		NullCheck(L_10);
@@ -37501,7 +37898,7 @@ IL_004f:
 
 IL_005f:
 	{
-		UInt32U5BU5D_t2133601851* L_17 = __this->get_data_2();
+		UInt32U5BU5D_t2133601851* L_17 = __this->get_data_1();
 		int32_t L_18 = V_6;
 		NullCheck(L_17);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_17, L_18);
@@ -37532,7 +37929,7 @@ IL_006f:
 	{
 		int32_t L_24 = V_1;
 		V_9 = ((int32_t)((int32_t)1<<(int32_t)((int32_t)((int32_t)((int32_t)((int32_t)L_24-(int32_t)1))&(int32_t)((int32_t)31)))));
-		UInt32U5BU5D_t2133601851* L_25 = __this->get_data_2();
+		UInt32U5BU5D_t2133601851* L_25 = __this->get_data_1();
 		int32_t L_26 = V_0;
 		NullCheck(L_25);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_25, ((int32_t)((int32_t)L_26-(int32_t)1)));
@@ -37541,7 +37938,7 @@ IL_006f:
 		*((int32_t*)(L_27)) = (int32_t)((int32_t)((int32_t)(*((uint32_t*)L_27))|(int32_t)L_28));
 		int32_t L_29 = V_1;
 		V_9 = ((int32_t)((uint32_t)(-1)>>((int32_t)((int32_t)((int32_t)((int32_t)((int32_t)32)-(int32_t)L_29))&(int32_t)((int32_t)31)))));
-		UInt32U5BU5D_t2133601851* L_30 = __this->get_data_2();
+		UInt32U5BU5D_t2133601851* L_30 = __this->get_data_1();
 		int32_t L_31 = V_0;
 		NullCheck(L_30);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_30, ((int32_t)((int32_t)L_31-(int32_t)1)));
@@ -37553,7 +37950,7 @@ IL_006f:
 
 IL_00c6:
 	{
-		UInt32U5BU5D_t2133601851* L_34 = __this->get_data_2();
+		UInt32U5BU5D_t2133601851* L_34 = __this->get_data_1();
 		int32_t L_35 = V_0;
 		NullCheck(L_34);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_34, ((int32_t)((int32_t)L_35-(int32_t)1)));
@@ -37564,8 +37961,8 @@ IL_00c6:
 IL_00dd:
 	{
 		int32_t L_37 = V_0;
-		__this->set_dataLength_3(L_37);
-		int32_t L_38 = __this->get_dataLength_3();
+		__this->set_dataLength_2(L_37);
+		int32_t L_38 = __this->get_dataLength_2();
 		V_10 = (bool)((((int32_t)L_38) == ((int32_t)0))? 1 : 0);
 		bool L_39 = V_10;
 		if (!L_39)
@@ -37574,7 +37971,7 @@ IL_00dd:
 		}
 	}
 	{
-		__this->set_dataLength_3(1);
+		__this->set_dataLength_2(1);
 	}
 
 IL_00fa:
@@ -37599,21 +37996,21 @@ extern "C"  int32_t BigInteger_bitCount_m2723610239 (BigInteger_t2113513851 * __
 
 IL_0003:
 	{
-		int32_t L_0 = __this->get_dataLength_3();
-		__this->set_dataLength_3(((int32_t)((int32_t)L_0-(int32_t)1)));
+		int32_t L_0 = __this->get_dataLength_2();
+		__this->set_dataLength_2(((int32_t)((int32_t)L_0-(int32_t)1)));
 	}
 
 IL_0011:
 	{
-		int32_t L_1 = __this->get_dataLength_3();
+		int32_t L_1 = __this->get_dataLength_2();
 		if ((((int32_t)L_1) <= ((int32_t)1)))
 		{
 			goto IL_002e;
 		}
 	}
 	{
-		UInt32U5BU5D_t2133601851* L_2 = __this->get_data_2();
-		int32_t L_3 = __this->get_dataLength_3();
+		UInt32U5BU5D_t2133601851* L_2 = __this->get_data_1();
+		int32_t L_3 = __this->get_dataLength_2();
 		NullCheck(L_2);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_2, ((int32_t)((int32_t)L_3-(int32_t)1)));
 		int32_t L_4 = ((int32_t)((int32_t)L_3-(int32_t)1));
@@ -37636,8 +38033,8 @@ IL_002f:
 		}
 	}
 	{
-		UInt32U5BU5D_t2133601851* L_6 = __this->get_data_2();
-		int32_t L_7 = __this->get_dataLength_3();
+		UInt32U5BU5D_t2133601851* L_6 = __this->get_data_1();
+		int32_t L_7 = __this->get_dataLength_2();
 		NullCheck(L_6);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, ((int32_t)((int32_t)L_7-(int32_t)1)));
 		int32_t L_8 = ((int32_t)((int32_t)L_7-(int32_t)1));
@@ -37686,7 +38083,7 @@ IL_0065:
 	}
 	{
 		int32_t L_15 = V_2;
-		int32_t L_16 = __this->get_dataLength_3();
+		int32_t L_16 = __this->get_dataLength_2();
 		V_2 = ((int32_t)((int32_t)L_15+(int32_t)((int32_t)((int32_t)((int32_t)((int32_t)L_16-(int32_t)1))<<(int32_t)5))));
 		int32_t L_17 = V_2;
 		V_5 = L_17;
@@ -37781,14 +38178,14 @@ IL_003e:
 IL_0057:
 	{
 		V_4 = 0;
-		int32_t L_12 = __this->get_dataLength_3();
+		int32_t L_12 = __this->get_dataLength_2();
 		V_9 = ((int32_t)((int32_t)L_12-(int32_t)1));
 		goto IL_00b4;
 	}
 
 IL_0066:
 	{
-		UInt32U5BU5D_t2133601851* L_13 = __this->get_data_2();
+		UInt32U5BU5D_t2133601851* L_13 = __this->get_data_1();
 		int32_t L_14 = V_9;
 		NullCheck(L_13);
 		IL2CPP_ARRAY_BOUNDS_CHECK(L_13, L_14);
@@ -37858,7 +38255,7 @@ IL_00c7:
 // System.Void Photon.SocketServer.Numeric.BigInteger::.cctor()
 extern TypeInfo* Int32U5BU5D_t1809983122_il2cpp_TypeInfo_var;
 extern TypeInfo* BigInteger_t2113513851_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238938____AEAF34DCCF141E917F02F7768DAEA80AA2B13B95_5_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238937____AEAF34DCCF141E917F02F7768DAEA80AA2B13B95_5_FieldInfo_var;
 extern const uint32_t BigInteger__cctor_m932190870_MetadataUsageId;
 extern "C"  void BigInteger__cctor_m932190870 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -37870,8 +38267,8 @@ extern "C"  void BigInteger__cctor_m932190870 (Il2CppObject * __this /* static, 
 	}
 	{
 		Int32U5BU5D_t1809983122* L_0 = ((Int32U5BU5D_t1809983122*)SZArrayNew(Int32U5BU5D_t1809983122_il2cpp_TypeInfo_var, (uint32_t)((int32_t)303)));
-		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238938____AEAF34DCCF141E917F02F7768DAEA80AA2B13B95_5_FieldInfo_var), /*hidden argument*/NULL);
-		((BigInteger_t2113513851_StaticFields*)BigInteger_t2113513851_il2cpp_TypeInfo_var->static_fields)->set_primesBelow2000_1(L_0);
+		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238937____AEAF34DCCF141E917F02F7768DAEA80AA2B13B95_5_FieldInfo_var), /*hidden argument*/NULL);
+		((BigInteger_t2113513851_StaticFields*)BigInteger_t2113513851_il2cpp_TypeInfo_var->static_fields)->set_primesBelow2000_0(L_0);
 		return;
 	}
 }
@@ -37917,22 +38314,6 @@ IL_000f:
 	{
 		ByteU5BU5D_t58506160* L_2 = V_0;
 		return L_2;
-	}
-}
-// System.Byte[] Photon.SocketServer.Security.DiffieHellmanCryptoProvider::get_SharedKey()
-extern "C"  ByteU5BU5D_t58506160* DiffieHellmanCryptoProvider_get_SharedKey_m3516199707 (DiffieHellmanCryptoProvider_t3764219664 * __this, const MethodInfo* method)
-{
-	ByteU5BU5D_t58506160* V_0 = NULL;
-	{
-		ByteU5BU5D_t58506160* L_0 = __this->get_sharedKey_5();
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		ByteU5BU5D_t58506160* L_1 = V_0;
-		return L_1;
 	}
 }
 // System.Void Photon.SocketServer.Security.DiffieHellmanCryptoProvider::DeriveSharedKey(System.Byte[])
@@ -37981,7 +38362,7 @@ IL_0022:
 	try
 	{ // begin try (depth: 1)
 		SHA256_t4002183040 * L_7 = V_3;
-		ByteU5BU5D_t58506160* L_8 = DiffieHellmanCryptoProvider_get_SharedKey_m3516199707(__this, /*hidden argument*/NULL);
+		ByteU5BU5D_t58506160* L_8 = __this->get_sharedKey_5();
 		NullCheck(L_7);
 		ByteU5BU5D_t58506160* L_9 = HashAlgorithm_ComputeHash_m1325366732(L_7, L_8, /*hidden argument*/NULL);
 		V_2 = L_9;
@@ -38390,9 +38771,9 @@ extern "C"  void DiffieHellmanCryptoProvider__cctor_m4094277463 (Il2CppObject * 
 // System.Void Photon.SocketServer.Security.OakleyGroups::.cctor()
 extern TypeInfo* OakleyGroups_t1401475037_il2cpp_TypeInfo_var;
 extern TypeInfo* ByteU5BU5D_t58506160_il2cpp_TypeInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238938____4989E5469B40416DC5AFB739C747E32B40CC5C77_0_FieldInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238938____C033BD4351FBA3732545EA2E016D52B0FC3E69EC_6_FieldInfo_var;
-extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238938____49ECABA9727A1AF0636082C467485A1A9A04B669_1_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238937____4989E5469B40416DC5AFB739C747E32B40CC5C77_0_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238937____C033BD4351FBA3732545EA2E016D52B0FC3E69EC_6_FieldInfo_var;
+extern FieldInfo* U3CPrivateImplementationDetailsU3E_t3053238937____49ECABA9727A1AF0636082C467485A1A9A04B669_1_FieldInfo_var;
 extern const uint32_t OakleyGroups__cctor_m519789702_MetadataUsageId;
 extern "C"  void OakleyGroups__cctor_m519789702 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
 {
@@ -38405,13 +38786,13 @@ extern "C"  void OakleyGroups__cctor_m519789702 (Il2CppObject * __this /* static
 	{
 		((OakleyGroups_t1401475037_StaticFields*)OakleyGroups_t1401475037_il2cpp_TypeInfo_var->static_fields)->set_Generator_0(((int32_t)22));
 		ByteU5BU5D_t58506160* L_0 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)96)));
-		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238938____4989E5469B40416DC5AFB739C747E32B40CC5C77_0_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_0, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238937____4989E5469B40416DC5AFB739C747E32B40CC5C77_0_FieldInfo_var), /*hidden argument*/NULL);
 		((OakleyGroups_t1401475037_StaticFields*)OakleyGroups_t1401475037_il2cpp_TypeInfo_var->static_fields)->set_OakleyPrime768_1(L_0);
 		ByteU5BU5D_t58506160* L_1 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)128)));
-		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_1, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238938____C033BD4351FBA3732545EA2E016D52B0FC3E69EC_6_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_1, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238937____C033BD4351FBA3732545EA2E016D52B0FC3E69EC_6_FieldInfo_var), /*hidden argument*/NULL);
 		((OakleyGroups_t1401475037_StaticFields*)OakleyGroups_t1401475037_il2cpp_TypeInfo_var->static_fields)->set_OakleyPrime1024_2(L_1);
 		ByteU5BU5D_t58506160* L_2 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)192)));
-		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_2, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238938____49ECABA9727A1AF0636082C467485A1A9A04B669_1_FieldInfo_var), /*hidden argument*/NULL);
+		RuntimeHelpers_InitializeArray_m2058365049(NULL /*static, unused*/, (Il2CppArray *)(Il2CppArray *)L_2, LoadFieldToken(U3CPrivateImplementationDetailsU3E_t3053238937____49ECABA9727A1AF0636082C467485A1A9A04B669_1_FieldInfo_var), /*hidden argument*/NULL);
 		((OakleyGroups_t1401475037_StaticFields*)OakleyGroups_t1401475037_il2cpp_TypeInfo_var->static_fields)->set_OakleyPrime1536_3(L_2);
 		return;
 	}

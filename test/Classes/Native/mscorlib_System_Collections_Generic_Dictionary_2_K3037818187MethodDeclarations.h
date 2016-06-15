@@ -41,6 +41,6 @@
 // System.Void System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,ExitGames.Client.Photon.Hashtable>::CopyTo(TKey[],System.Int32)
 #define KeyCollection_CopyTo_m905072710(__this, ___array, ___index, method) ((  void (*) (KeyCollection_t3037818187 *, Int32U5BU5D_t1809983122*, int32_t, const MethodInfo*))KeyCollection_CopyTo_m2172375614_gshared)(__this, ___array, ___index, method)
 // System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,ExitGames.Client.Photon.Hashtable>::GetEnumerator()
-#define KeyCollection_GetEnumerator_m2941965075(__this, method) ((  Enumerator_t481570849  (*) (KeyCollection_t3037818187 *, const MethodInfo*))KeyCollection_GetEnumerator_m2291006859_gshared)(__this, method)
+#define KeyCollection_GetEnumerator_m2214346041(__this, method) ((  Enumerator_t481570848  (*) (KeyCollection_t3037818187 *, const MethodInfo*))KeyCollection_GetEnumerator_m2291006859_gshared)(__this, method)
 // System.Int32 System.Collections.Generic.Dictionary`2/KeyCollection<System.Int32,ExitGames.Client.Photon.Hashtable>::get_Count()
 #define KeyCollection_get_Count_m1888929238(__this, method) ((  int32_t (*) (KeyCollection_t3037818187 *, const MethodInfo*))KeyCollection_get_Count_m3431456206_gshared)(__this, method)

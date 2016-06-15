@@ -28,8 +28,6 @@ struct PhotonMessageInfo_t259585817;
 extern "C"  void PhotonTransformView__ctor_m3956947478 (PhotonTransformView_t486317301 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void PhotonTransformView::Awake()
 extern "C"  void PhotonTransformView_Awake_m4194552697 (PhotonTransformView_t486317301 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void PhotonTransformView::Reset()
-extern "C"  void PhotonTransformView_Reset_m1603380419 (PhotonTransformView_t486317301 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void PhotonTransformView::Update()
 extern "C"  void PhotonTransformView_Update_m4133149623 (PhotonTransformView_t486317301 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void PhotonTransformView::UpdatePosition()

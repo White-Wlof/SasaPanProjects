@@ -22,7 +22,7 @@ using Hashtable = ExitGames.Client.Photon.Hashtable;
 /// The internally used roomStartTimestamp is only valid in "this" room and only on the one Game Server where
 /// it was established initially. This means: <b>This is not useful for asynchronous gameplay!</b>
 /// </remarks>
-public class InRoomTime : MonoBehaviour
+public class InRoomTime : Photon.MonoBehaviour
 {
     private int roomStartTimestamp;
     private const string StartTimeKey = "#rt"; // the name of our "room time" custom property.

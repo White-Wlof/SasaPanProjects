@@ -8,7 +8,7 @@ using Hashtable = ExitGames.Client.Photon.Hashtable;
 /// <summary>
 /// This component can be used to move objects along a path. Optionally, the path can be updated by 
 /// </summary>
-public class DragToMove : MonoBehaviour
+public class DragToMove : Photon.MonoBehaviour
 {
     public float speed = 5.0f;
     public Transform[] cubes;

@@ -27,6 +27,8 @@ extern "C"  float CanvasGroup_get_alpha_m2646612977 (CanvasGroup_t1295922228 * _
 extern "C"  void CanvasGroup_set_alpha_m2140801370 (CanvasGroup_t1295922228 * __this, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.CanvasGroup::get_interactable()
 extern "C"  bool CanvasGroup_get_interactable_m2411844645 (CanvasGroup_t1295922228 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.CanvasGroup::set_interactable(System.Boolean)
+extern "C"  void CanvasGroup_set_interactable_m2570638198 (CanvasGroup_t1295922228 * __this, bool ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.CanvasGroup::get_blocksRaycasts()
 extern "C"  bool CanvasGroup_get_blocksRaycasts_m1777916261 (CanvasGroup_t1295922228 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.CanvasGroup::get_ignoreParentGroups()

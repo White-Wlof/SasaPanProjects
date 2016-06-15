@@ -15,7 +15,7 @@ struct String_t;
 // System.Collections.Generic.Dictionary`2<PunTeams/Team,System.Collections.Generic.List`1<PhotonPlayer>>
 struct Dictionary_2_t1507849619;
 
-#include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+#include "AssemblyU2DCSharp_Photon_MonoBehaviour4025988718.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -24,7 +24,7 @@ struct Dictionary_2_t1507849619;
 #endif
 
 // PunTeams
-struct  PunTeams_t1679509581  : public MonoBehaviour_t3012272455
+struct  PunTeams_t1679509581  : public MonoBehaviour_t4025988718
 {
 public:
 
@@ -35,16 +35,16 @@ struct PunTeams_t1679509581_StaticFields
 {
 public:
 	// System.Collections.Generic.Dictionary`2<PunTeams/Team,System.Collections.Generic.List`1<PhotonPlayer>> PunTeams::PlayersPerTeam
-	Dictionary_2_t1507849619 * ___PlayersPerTeam_3;
+	Dictionary_2_t1507849619 * ___PlayersPerTeam_4;
 
 public:
-	inline static int32_t get_offset_of_PlayersPerTeam_3() { return static_cast<int32_t>(offsetof(PunTeams_t1679509581_StaticFields, ___PlayersPerTeam_3)); }
-	inline Dictionary_2_t1507849619 * get_PlayersPerTeam_3() const { return ___PlayersPerTeam_3; }
-	inline Dictionary_2_t1507849619 ** get_address_of_PlayersPerTeam_3() { return &___PlayersPerTeam_3; }
-	inline void set_PlayersPerTeam_3(Dictionary_2_t1507849619 * value)
+	inline static int32_t get_offset_of_PlayersPerTeam_4() { return static_cast<int32_t>(offsetof(PunTeams_t1679509581_StaticFields, ___PlayersPerTeam_4)); }
+	inline Dictionary_2_t1507849619 * get_PlayersPerTeam_4() const { return ___PlayersPerTeam_4; }
+	inline Dictionary_2_t1507849619 ** get_address_of_PlayersPerTeam_4() { return &___PlayersPerTeam_4; }
+	inline void set_PlayersPerTeam_4(Dictionary_2_t1507849619 * value)
 	{
-		___PlayersPerTeam_3 = value;
-		Il2CppCodeGenWriteBarrier(&___PlayersPerTeam_3, value);
+		___PlayersPerTeam_4 = value;
+		Il2CppCodeGenWriteBarrier(&___PlayersPerTeam_4, value);
 	}
 };
 

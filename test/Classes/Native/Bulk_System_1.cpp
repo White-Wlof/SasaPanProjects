@@ -701,13 +701,13 @@ IL_0054:
 IL_0098:
 	{
 		ASN1_t1254135647 * L_18 = (ASN1_t1254135647 *)il2cpp_codegen_object_new(ASN1_t1254135647_il2cpp_TypeInfo_var);
-		ASN1__ctor_m3086925575(L_18, ((int32_t)48), /*hidden argument*/NULL);
+		ASN1__ctor_m1084222443(L_18, ((int32_t)48), /*hidden argument*/NULL);
 		V_2 = L_18;
 		ASN1_t1254135647 * L_19 = V_2;
 		ASN1_t1254135647 * L_20 = (ASN1_t1254135647 *)il2cpp_codegen_object_new(ASN1_t1254135647_il2cpp_TypeInfo_var);
-		ASN1__ctor_m3086925575(L_20, ((int32_t)48), /*hidden argument*/NULL);
+		ASN1__ctor_m1084222443(L_20, ((int32_t)48), /*hidden argument*/NULL);
 		NullCheck(L_19);
-		ASN1_t1254135647 * L_21 = ASN1_Add_m1424422628(L_19, L_20, /*hidden argument*/NULL);
+		ASN1_t1254135647 * L_21 = ASN1_Add_m3856133576(L_19, L_20, /*hidden argument*/NULL);
 		V_3 = L_21;
 		ASN1_t1254135647 * L_22 = V_3;
 		PublicKey_t2902591373 * L_23 = ___key;
@@ -718,9 +718,9 @@ IL_0098:
 		IL2CPP_RUNTIME_CLASS_INIT(CryptoConfig_t2102571196_il2cpp_TypeInfo_var);
 		ByteU5BU5D_t58506160* L_26 = CryptoConfig_EncodeOID_m3599780936(NULL /*static, unused*/, L_25, /*hidden argument*/NULL);
 		ASN1_t1254135647 * L_27 = (ASN1_t1254135647 *)il2cpp_codegen_object_new(ASN1_t1254135647_il2cpp_TypeInfo_var);
-		ASN1__ctor_m3008094309(L_27, L_26, /*hidden argument*/NULL);
+		ASN1__ctor_m2555733065(L_27, L_26, /*hidden argument*/NULL);
 		NullCheck(L_22);
-		ASN1_Add_m1424422628(L_22, L_27, /*hidden argument*/NULL);
+		ASN1_Add_m3856133576(L_22, L_27, /*hidden argument*/NULL);
 		ASN1_t1254135647 * L_28 = V_3;
 		PublicKey_t2902591373 * L_29 = ___key;
 		NullCheck(L_29);
@@ -728,9 +728,9 @@ IL_0098:
 		NullCheck(L_30);
 		ByteU5BU5D_t58506160* L_31 = AsnEncodedData_get_RawData_m334685068(L_30, /*hidden argument*/NULL);
 		ASN1_t1254135647 * L_32 = (ASN1_t1254135647 *)il2cpp_codegen_object_new(ASN1_t1254135647_il2cpp_TypeInfo_var);
-		ASN1__ctor_m3008094309(L_32, L_31, /*hidden argument*/NULL);
+		ASN1__ctor_m2555733065(L_32, L_31, /*hidden argument*/NULL);
 		NullCheck(L_28);
-		ASN1_Add_m1424422628(L_28, L_32, /*hidden argument*/NULL);
+		ASN1_Add_m3856133576(L_28, L_32, /*hidden argument*/NULL);
 		ByteU5BU5D_t58506160* L_33 = V_0;
 		NullCheck(L_33);
 		V_4 = ((ByteU5BU5D_t58506160*)SZArrayNew(ByteU5BU5D_t58506160_il2cpp_TypeInfo_var, (uint32_t)((int32_t)((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_33)->max_length))))+(int32_t)1))));
@@ -742,9 +742,9 @@ IL_0098:
 		ASN1_t1254135647 * L_37 = V_2;
 		ByteU5BU5D_t58506160* L_38 = V_4;
 		ASN1_t1254135647 * L_39 = (ASN1_t1254135647 *)il2cpp_codegen_object_new(ASN1_t1254135647_il2cpp_TypeInfo_var);
-		ASN1__ctor_m2727735242(L_39, 3, L_38, /*hidden argument*/NULL);
+		ASN1__ctor_m3139747246(L_39, 3, L_38, /*hidden argument*/NULL);
 		NullCheck(L_37);
-		ASN1_Add_m1424422628(L_37, L_39, /*hidden argument*/NULL);
+		ASN1_Add_m3856133576(L_37, L_39, /*hidden argument*/NULL);
 		SHA1_t1560027742 * L_40 = SHA1_Create_m2764862537(NULL /*static, unused*/, /*hidden argument*/NULL);
 		ASN1_t1254135647 * L_41 = V_2;
 		NullCheck(L_41);
@@ -817,7 +817,7 @@ IL_0019:
 	}
 	{
 		ByteU5BU5D_t58506160* L_4 = __this->get__subjectKeyIdentifier_6();
-		String_t* L_5 = CryptoConvert_ToHex_m1331445157(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
+		String_t* L_5 = CryptoConvert_ToHex_m1540445577(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
 		__this->set__ski_7(L_5);
 	}
 
@@ -1188,11 +1188,11 @@ IL_003c:
 	{ // begin try (depth: 1)
 		ByteU5BU5D_t58506160* L_7 = ___extension;
 		ASN1_t1254135647 * L_8 = (ASN1_t1254135647 *)il2cpp_codegen_object_new(ASN1_t1254135647_il2cpp_TypeInfo_var);
-		ASN1__ctor_m3008094309(L_8, L_7, /*hidden argument*/NULL);
+		ASN1__ctor_m2555733065(L_8, L_7, /*hidden argument*/NULL);
 		V_0 = L_8;
 		ASN1_t1254135647 * L_9 = V_0;
 		NullCheck(L_9);
-		ByteU5BU5D_t58506160* L_10 = ASN1_get_Value_m390067040(L_9, /*hidden argument*/NULL);
+		ByteU5BU5D_t58506160* L_10 = ASN1_get_Value_m4232529916(L_9, /*hidden argument*/NULL);
 		__this->set__subjectKeyIdentifier_6(L_10);
 		goto IL_0061;
 	} // end try (depth: 1)
@@ -1243,7 +1243,7 @@ extern "C"  ByteU5BU5D_t58506160* X509SubjectKeyIdentifierExtension_Encode_m8529
 	{
 		ByteU5BU5D_t58506160* L_0 = __this->get__subjectKeyIdentifier_6();
 		ASN1_t1254135647 * L_1 = (ASN1_t1254135647 *)il2cpp_codegen_object_new(ASN1_t1254135647_il2cpp_TypeInfo_var);
-		ASN1__ctor_m2727735242(L_1, 4, L_0, /*hidden argument*/NULL);
+		ASN1__ctor_m3139747246(L_1, 4, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
 		ASN1_t1254135647 * L_2 = V_0;
 		NullCheck(L_2);
@@ -1526,7 +1526,7 @@ extern "C"  String_t* BaseMachine_LTRReplace_m3233399719 (BaseMachine_t422321307
 		V_0 = L_6;
 		Match_t3797657504 * L_7 = V_0;
 		NullCheck(L_7);
-		bool L_8 = Group_get_Success_m3627958764(L_7, /*hidden argument*/NULL);
+		bool L_8 = Group_get_Success_m139536080(L_7, /*hidden argument*/NULL);
 		if (L_8)
 		{
 			goto IL_0026;
@@ -1623,7 +1623,7 @@ IL_0071:
 		V_0 = L_39;
 		Match_t3797657504 * L_40 = V_0;
 		NullCheck(L_40);
-		bool L_41 = Group_get_Success_m3627958764(L_40, /*hidden argument*/NULL);
+		bool L_41 = Group_get_Success_m139536080(L_40, /*hidden argument*/NULL);
 		if (L_41)
 		{
 			goto IL_0042;
@@ -1679,7 +1679,7 @@ extern "C"  String_t* BaseMachine_RTLReplace_m1984309653 (BaseMachine_t422321307
 		V_0 = L_5;
 		Match_t3797657504 * L_6 = V_0;
 		NullCheck(L_6);
-		bool L_7 = Group_get_Success_m3627958764(L_6, /*hidden argument*/NULL);
+		bool L_7 = Group_get_Success_m139536080(L_6, /*hidden argument*/NULL);
 		if (L_7)
 		{
 			goto IL_001e;
@@ -1787,7 +1787,7 @@ IL_006d:
 		V_0 = L_44;
 		Match_t3797657504 * L_45 = V_0;
 		NullCheck(L_45);
-		bool L_46 = Group_get_Success_m3627958764(L_45, /*hidden argument*/NULL);
+		bool L_46 = Group_get_Success_m139536080(L_45, /*hidden argument*/NULL);
 		if (L_46)
 		{
 			goto IL_0037;
@@ -1933,13 +1933,13 @@ extern "C"  int32_t Capture_get_Length_m669809376 (Capture_t1645813025 * __this,
 }
 // System.String System.Text.RegularExpressions.Capture::get_Value()
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
-extern const uint32_t Capture_get_Value_m2353629574_MetadataUsageId;
-extern "C"  String_t* Capture_get_Value_m2353629574 (Capture_t1645813025 * __this, const MethodInfo* method)
+extern const uint32_t Capture_get_Value_m2241099810_MetadataUsageId;
+extern "C"  String_t* Capture_get_Value_m2241099810 (Capture_t1645813025 * __this, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (Capture_get_Value_m2353629574_MetadataUsageId);
+		il2cpp_codegen_initialize_method (Capture_get_Value_m2241099810_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	String_t* G_B3_0 = NULL;
@@ -1976,7 +1976,7 @@ IL_002c:
 extern "C"  String_t* Capture_ToString_m1009743248 (Capture_t1645813025 * __this, const MethodInfo* method)
 {
 	{
-		String_t* L_0 = Capture_get_Value_m2353629574(__this, /*hidden argument*/NULL);
+		String_t* L_0 = Capture_get_Value_m2241099810(__this, /*hidden argument*/NULL);
 		return L_0;
 	}
 }
@@ -6219,7 +6219,7 @@ extern "C"  CaptureCollection_t1466462303 * Group_get_Captures_m3515423896 (Grou
 	}
 }
 // System.Boolean System.Text.RegularExpressions.Group::get_Success()
-extern "C"  bool Group_get_Success_m3627958764 (Group_t3792618586 * __this, const MethodInfo* method)
+extern "C"  bool Group_get_Success_m139536080 (Group_t3792618586 * __this, const MethodInfo* method)
 {
 	{
 		bool L_0 = __this->get_success_4();
@@ -6265,13 +6265,13 @@ extern "C"  bool GroupCollection_get_IsSynchronized_m3587250101 (GroupCollection
 // System.Text.RegularExpressions.Group System.Text.RegularExpressions.GroupCollection::get_Item(System.Int32)
 extern TypeInfo* Match_t3797657504_il2cpp_TypeInfo_var;
 extern TypeInfo* Group_t3792618586_il2cpp_TypeInfo_var;
-extern const uint32_t GroupCollection_get_Item_m3306908978_MetadataUsageId;
-extern "C"  Group_t3792618586 * GroupCollection_get_Item_m3306908978 (GroupCollection_t2158306392 * __this, int32_t ___i, const MethodInfo* method)
+extern const uint32_t GroupCollection_get_Item_m180115662_MetadataUsageId;
+extern "C"  Group_t3792618586 * GroupCollection_get_Item_m180115662 (GroupCollection_t2158306392 * __this, int32_t ___i, const MethodInfo* method)
 {
 	static bool s_Il2CppMethodIntialized;
 	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (GroupCollection_get_Item_m3306908978_MetadataUsageId);
+		il2cpp_codegen_initialize_method (GroupCollection_get_Item_m180115662_MetadataUsageId);
 		s_Il2CppMethodIntialized = true;
 	}
 	Match_t3797657504 * V_0 = NULL;
@@ -13043,7 +13043,7 @@ extern "C"  Il2CppObject * MatchCollection_GetEnumerator_m3446344180 (MatchColle
 	{
 		Match_t3797657504 * L_0 = __this->get_current_0();
 		NullCheck(L_0);
-		bool L_1 = Group_get_Success_m3627958764(L_0, /*hidden argument*/NULL);
+		bool L_1 = Group_get_Success_m139536080(L_0, /*hidden argument*/NULL);
 		if (!L_1)
 		{
 			goto IL_001d;
@@ -13105,7 +13105,7 @@ IL_0028:
 	{
 		Match_t3797657504 * L_7 = __this->get_current_0();
 		NullCheck(L_7);
-		bool L_8 = Group_get_Success_m3627958764(L_7, /*hidden argument*/NULL);
+		bool L_8 = Group_get_Success_m139536080(L_7, /*hidden argument*/NULL);
 		if (L_8)
 		{
 			goto IL_0005;
@@ -13126,7 +13126,7 @@ IL_0049:
 	{
 		Match_t3797657504 * L_12 = __this->get_current_0();
 		NullCheck(L_12);
-		bool L_13 = Group_get_Success_m3627958764(L_12, /*hidden argument*/NULL);
+		bool L_13 = Group_get_Success_m139536080(L_12, /*hidden argument*/NULL);
 		G_B7_0 = ((int32_t)(L_13));
 		goto IL_0068;
 	}
@@ -13257,7 +13257,7 @@ IL_003d:
 		NullCheck(L_11);
 		Match_t3797657504 * L_12 = L_11->get_current_0();
 		NullCheck(L_12);
-		bool L_13 = Group_get_Success_m3627958764(L_12, /*hidden argument*/NULL);
+		bool L_13 = Group_get_Success_m139536080(L_12, /*hidden argument*/NULL);
 		if (L_13)
 		{
 			goto IL_0078;
@@ -13355,7 +13355,7 @@ IL_0026:
 		NullCheck(L_9);
 		Match_t3797657504 * L_10 = L_9->get_current_0();
 		NullCheck(L_10);
-		bool L_11 = Group_get_Success_m3627958764(L_10, /*hidden argument*/NULL);
+		bool L_11 = Group_get_Success_m139536080(L_10, /*hidden argument*/NULL);
 		if (L_11)
 		{
 			goto IL_0058;
@@ -15406,7 +15406,7 @@ extern "C"  void Regex__ctor_m523653122 (Regex_t3802381858 * __this, const Metho
 	}
 }
 // System.Void System.Text.RegularExpressions.Regex::.ctor(System.String)
-extern "C"  void Regex__ctor_m2980635200 (Regex_t3802381858 * __this, String_t* ___pattern, const MethodInfo* method)
+extern "C"  void Regex__ctor_m574010660 (Regex_t3802381858 * __this, String_t* ___pattern, const MethodInfo* method)
 {
 	{
 		String_t* L_0 = ___pattern;
@@ -15532,6 +15532,50 @@ extern "C"  void Regex_System_Runtime_Serialization_ISerializable_GetObjectData_
 		NullCheck(L_3);
 		SerializationInfo_AddValue_m3341936982(L_3, _stringLiteral3045492382, L_6, L_7, /*hidden argument*/NULL);
 		return;
+	}
+}
+// System.Text.RegularExpressions.Match System.Text.RegularExpressions.Regex::Match(System.String,System.String)
+extern TypeInfo* Regex_t3802381858_il2cpp_TypeInfo_var;
+extern const uint32_t Regex_Match_m2072979584_MetadataUsageId;
+extern "C"  Match_t3797657504 * Regex_Match_m2072979584 (Il2CppObject * __this /* static, unused */, String_t* ___input, String_t* ___pattern, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Regex_Match_m2072979584_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___input;
+		String_t* L_1 = ___pattern;
+		IL2CPP_RUNTIME_CLASS_INIT(Regex_t3802381858_il2cpp_TypeInfo_var);
+		Match_t3797657504 * L_2 = Regex_Match_m563114696(NULL /*static, unused*/, L_0, L_1, 0, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// System.Text.RegularExpressions.Match System.Text.RegularExpressions.Regex::Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
+extern TypeInfo* Regex_t3802381858_il2cpp_TypeInfo_var;
+extern const uint32_t Regex_Match_m563114696_MetadataUsageId;
+extern "C"  Match_t3797657504 * Regex_Match_m563114696 (Il2CppObject * __this /* static, unused */, String_t* ___input, String_t* ___pattern, int32_t ___options, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Regex_Match_m563114696_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Regex_t3802381858 * V_0 = NULL;
+	{
+		String_t* L_0 = ___pattern;
+		int32_t L_1 = ___options;
+		Regex_t3802381858 * L_2 = (Regex_t3802381858 *)il2cpp_codegen_object_new(Regex_t3802381858_il2cpp_TypeInfo_var);
+		Regex__ctor_m2068483208(L_2, L_0, L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		Regex_t3802381858 * L_3 = V_0;
+		String_t* L_4 = ___input;
+		NullCheck(L_3);
+		Match_t3797657504 * L_5 = Regex_Match_m2003175236(L_3, L_4, /*hidden argument*/NULL);
+		return L_5;
 	}
 }
 // System.String System.Text.RegularExpressions.Regex::Replace(System.String,System.String,System.String)
@@ -15976,7 +16020,18 @@ extern "C"  bool Regex_IsMatch_m3759940314 (Regex_t3802381858 * __this, String_t
 		int32_t L_1 = ___startat;
 		Match_t3797657504 * L_2 = Regex_Match_m1021969427(__this, L_0, L_1, /*hidden argument*/NULL);
 		NullCheck(L_2);
-		bool L_3 = Group_get_Success_m3627958764(L_2, /*hidden argument*/NULL);
+		bool L_3 = Group_get_Success_m139536080(L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+// System.Text.RegularExpressions.Match System.Text.RegularExpressions.Regex::Match(System.String)
+extern "C"  Match_t3797657504 * Regex_Match_m2003175236 (Regex_t3802381858 * __this, String_t* ___input, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___input;
+		String_t* L_1 = ___input;
+		int32_t L_2 = Regex_default_startat_m996366267(__this, L_1, /*hidden argument*/NULL);
+		Match_t3797657504 * L_3 = Regex_Match_m1021969427(__this, L_0, L_2, /*hidden argument*/NULL);
 		return L_3;
 	}
 }
@@ -16048,7 +16103,7 @@ IL_002f:
 	}
 }
 // System.Text.RegularExpressions.MatchCollection System.Text.RegularExpressions.Regex::Matches(System.String)
-extern "C"  MatchCollection_t318449694 * Regex_Matches_m3092142232 (Regex_t3802381858 * __this, String_t* ___input, const MethodInfo* method)
+extern "C"  MatchCollection_t318449694 * Regex_Matches_m4260316212 (Regex_t3802381858 * __this, String_t* ___input, const MethodInfo* method)
 {
 	{
 		String_t* L_0 = ___input;
@@ -16510,7 +16565,7 @@ IL_0055:
 		GroupCollection_t2158306392 * L_18 = VirtFuncInvoker0< GroupCollection_t2158306392 * >::Invoke(4 /* System.Text.RegularExpressions.GroupCollection System.Text.RegularExpressions.Match::get_Groups() */, L_17);
 		int32_t L_19 = V_1;
 		NullCheck(L_18);
-		Group_t3792618586 * L_20 = GroupCollection_get_Item_m3306908978(L_18, ((-((int32_t)((int32_t)L_19+(int32_t)4)))), /*hidden argument*/NULL);
+		Group_t3792618586 * L_20 = GroupCollection_get_Item_m180115662(L_18, ((-((int32_t)((int32_t)L_19+(int32_t)4)))), /*hidden argument*/NULL);
 		V_3 = L_20;
 		StringBuilder_t3822575854 * L_21 = ___sb;
 		Group_t3792618586 * L_22 = V_3;
@@ -27120,7 +27175,7 @@ IL_0042:
 	}
 }
 // System.String System.Uri::get_Host()
-extern "C"  String_t* Uri_get_Host_m1446697833 (Uri_t2776692961 * __this, const MethodInfo* method)
+extern "C"  String_t* Uri_get_Host_m3136333645 (Uri_t2776692961 * __this, const MethodInfo* method)
 {
 	{
 		Uri_EnsureAbsoluteUri_m3407571844(__this, /*hidden argument*/NULL);
@@ -27169,7 +27224,7 @@ extern "C"  bool Uri_get_IsLoopback_m224603913 (Uri_t2776692961 * __this, const 
 	IPv6Address_t256391031 * V_1 = NULL;
 	{
 		Uri_EnsureAbsoluteUri_m3407571844(__this, /*hidden argument*/NULL);
-		String_t* L_0 = Uri_get_Host_m1446697833(__this, /*hidden argument*/NULL);
+		String_t* L_0 = Uri_get_Host_m3136333645(__this, /*hidden argument*/NULL);
 		NullCheck(L_0);
 		int32_t L_1 = String_get_Length_m2979997331(L_0, /*hidden argument*/NULL);
 		if (L_1)
@@ -32854,10 +32909,10 @@ extern "C"  void UriParser__cctor_m1205478205 (Il2CppObject * __this /* static, 
 		Object__ctor_m1772956182(L_0, /*hidden argument*/NULL);
 		((UriParser_t1660745760_StaticFields*)UriParser_t1660745760_il2cpp_TypeInfo_var->static_fields)->set_lock_object_0(L_0);
 		Regex_t3802381858 * L_1 = (Regex_t3802381858 *)il2cpp_codegen_object_new(Regex_t3802381858_il2cpp_TypeInfo_var);
-		Regex__ctor_m2980635200(L_1, _stringLiteral3057722339, /*hidden argument*/NULL);
+		Regex__ctor_m574010660(L_1, _stringLiteral3057722339, /*hidden argument*/NULL);
 		((UriParser_t1660745760_StaticFields*)UriParser_t1660745760_il2cpp_TypeInfo_var->static_fields)->set_uri_regex_4(L_1);
 		Regex_t3802381858 * L_2 = (Regex_t3802381858 *)il2cpp_codegen_object_new(Regex_t3802381858_il2cpp_TypeInfo_var);
-		Regex__ctor_m2980635200(L_2, _stringLiteral3989333014, /*hidden argument*/NULL);
+		Regex__ctor_m574010660(L_2, _stringLiteral3989333014, /*hidden argument*/NULL);
 		((UriParser_t1660745760_StaticFields*)UriParser_t1660745760_il2cpp_TypeInfo_var->static_fields)->set_auth_regex_5(L_2);
 		return;
 	}

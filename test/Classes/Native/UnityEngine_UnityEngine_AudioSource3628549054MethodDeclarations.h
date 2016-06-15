@@ -20,6 +20,12 @@ struct AudioClip_t3714538611;
 #include "codegen/il2cpp-codegen.h"
 #include "UnityEngine_UnityEngine_AudioClip3714538611.h"
 
+// System.Single UnityEngine.AudioSource::get_volume()
+extern "C"  float AudioSource_get_volume_m2334326995 (AudioSource_t3628549054 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.AudioSource::set_volume(System.Single)
+extern "C"  void AudioSource_set_volume_m1410546616 (AudioSource_t3628549054 * __this, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.AudioSource::get_pitch()
+extern "C"  float AudioSource_get_pitch_m3729473033 (AudioSource_t3628549054 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.AudioSource::set_pitch(System.Single)
 extern "C"  void AudioSource_set_pitch_m1518407234 (AudioSource_t3628549054 * __this, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.AudioSource::set_clip(UnityEngine.AudioClip)

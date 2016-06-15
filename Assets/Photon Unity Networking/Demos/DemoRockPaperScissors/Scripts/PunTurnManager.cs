@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using ExitGames.Client.Photon;
 using Photon;
@@ -19,6 +19,8 @@ public class PunTurnManager : PunBehaviour
     {
         get { return ((float)(PhotonNetwork.ServerTimestamp - PhotonNetwork.room.GetTurnStart()))/1000.0f; }
     }
+
+	// should this not be a float?
 
     public int TurnDuration = 0;
 
@@ -112,6 +114,7 @@ public class PunTurnManager : PunBehaviour
     /// <summary>Called when the turns time is over.</summary>
     public void OnTurnTimeEnds()
     {
+		Debug.Log("Hello");
         // callback to listener
     }
 

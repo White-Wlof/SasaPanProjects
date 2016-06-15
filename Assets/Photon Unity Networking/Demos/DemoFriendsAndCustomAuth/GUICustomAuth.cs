@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class GUICustomAuth : MonoBehaviour
+public class GUICustomAuth : Photon.MonoBehaviour
 {
     public Rect GuiRect;
     

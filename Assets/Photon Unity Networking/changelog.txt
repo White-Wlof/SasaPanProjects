@@ -1,4 +1,29 @@
+v1.70 (8. June 2016)
+Changed: Serialization methods from MemoryStream to StreamBuffer. This is a light wrapper for a byte[] which provides access to this array. That was not allowed in the Windows Store compatible API. To update, just replace MemoryStream with StreamBuffer in your custom type serialization.
+New: PUN Basics Tutorial, available within the Demo Hub.
+Updated: Input for some demos now also works with controllers (RPGCamera, RPGMovement and JumpAndRunMovement support this now).
+Fixed: Ownership of a PhotonView no longer gets updated when anyone (aside from the owner) sends updates for it. This could cause issues when the (new) owner of an object got outdated updates from another (older) owner.
+Fixed: PhotonViewInspector. When ownership gets transferred for scene objects, this shows correctly in the inspector at runtime.
+Fixed: PhotonAnimatorView. removed warning thrown during trigger caching checks.
+Changed: Delta compression will now re-use some memory, which should be more effective.
+Changed: Aggregation of internal OnPhotonSerializeView()-updates is more effective. More memory is being re-used.
+Updated: To latest Photon3Unity3D.dll v4.1.0.5. It will no longer fail Windows Store Certification and has several improvements throughout.
+
+
+v1.69 (19. May 2016)
+Updated: Rock Paper Scissors Demo Scene, featuring fixes for timing and turn management, and implementation of a progress bar to indicate timer
+Updated: PUN+ native socket library for Unity 4.7 iOS to support IPv6.
+Fixed: PhotonAnimatorView. Triggers now properly synchronized if set to "discrete" mode.
+
+v1.68 (3. May 2016)
+Fixed: The "reset" action of a PhotonTransformView-inspector now works as expected and sets proper, useful default values.
+Fixed: PhotonAnimatorView. Layers in Unity 4 where not counted properly, it now lists layers properly.
+Fixed: Buffered RPCs can be removed (as expected) from the buffer with RemoveRPCs(). Affected versions were v1.66 and v1.67. Please update those.
+Updated: The docs (.chm and .pdf).
+
 v1.67 (21. April 2016)
+Fixed: PhotonAnimatorView, Triggers now supported
+Added: PhotonAnimatorView, Live view in Inspector of current Values for parameters
 Fixed: Photon Chat for WebGL export. It failed to compile because SocketWebTcp was not found. The PhotonChatApi folder now got moved from Assets\Plugins to Assets.
 Changed: If sent by server, UserId and Nickname values are updated (with the server's values). This can be done with CustomAuthentication. All clients always get some UserId assigned by the server (if you didn't set one in the first place).
 Added: "Slot Reservation" as feature for matchmaking. 
@@ -25,7 +50,6 @@ Added: PhotonNetwork.ReconnectAndRejoin() to be used when a client loses connect
 Added: PhotonNetwork.Reconnect() to be used when a client lost connection. Use this only when your client was connected to a region or a game before (to get into the same region).
 Fixed: A compile warning about Photon.MonoBehaviour.networkView "does not hide an inherited member" in Unity 5.3.4 and up. The old networking API of Unity is being removed, it seems.
 Fixed: PhotonNetwork.time for offline mode. Internal: It now uses the Environment.TickCount, which is similar to the server's timestamps. All usage of time in PUN is now either based on PhotonNetwork.time or .ServerTimestamp.
-
 
 v1.66 (21. January 2016)
 Important: This might affect your import! The folder "ChatApi" is now renamed to "PhotonChatApi". This way, the folder uses the same name as in our other packages. Remove the "ChatApi" folder, if the import didn't do that for you!

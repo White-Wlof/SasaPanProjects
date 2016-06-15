@@ -26,8 +26,6 @@ extern "C"  void MemoryStream__ctor_m3603177736 (MemoryStream_t2881531048 * __th
 extern "C"  void MemoryStream__ctor_m1061194329 (MemoryStream_t2881531048 * __this, int32_t ___capacity, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.MemoryStream::.ctor(System.Byte[])
 extern "C"  void MemoryStream__ctor_m1231145921 (MemoryStream_t2881531048 * __this, ByteU5BU5D_t58506160* ___buffer, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void System.IO.MemoryStream::.ctor(System.Byte[],System.Int32,System.Int32,System.Boolean)
-extern "C"  void MemoryStream__ctor_m3748180860 (MemoryStream_t2881531048 * __this, ByteU5BU5D_t58506160* ___buffer, int32_t ___index, int32_t ___count, bool ___writable, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.MemoryStream::InternalConstructor(System.Byte[],System.Int32,System.Int32,System.Boolean,System.Boolean)
 extern "C"  void MemoryStream_InternalConstructor_m661185350 (MemoryStream_t2881531048 * __this, ByteU5BU5D_t58506160* ___buffer, int32_t ___index, int32_t ___count, bool ___writable, bool ___publicallyVisible, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.MemoryStream::CheckIfClosedThrowDisposed()

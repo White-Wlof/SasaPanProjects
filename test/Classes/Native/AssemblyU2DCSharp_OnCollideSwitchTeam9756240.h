@@ -11,7 +11,7 @@
 #include <stdint.h>
 
 
-#include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+#include "AssemblyU2DCSharp_Photon_MonoBehaviour4025988718.h"
 #include "AssemblyU2DCSharp_PunTeams_Team2602621.h"
 
 #ifdef __clang__
@@ -21,19 +21,19 @@
 #endif
 
 // OnCollideSwitchTeam
-struct  OnCollideSwitchTeam_t9756240  : public MonoBehaviour_t3012272455
+struct  OnCollideSwitchTeam_t9756240  : public MonoBehaviour_t4025988718
 {
 public:
 	// PunTeams/Team OnCollideSwitchTeam::TeamToSwitchTo
-	uint8_t ___TeamToSwitchTo_2;
+	uint8_t ___TeamToSwitchTo_3;
 
 public:
-	inline static int32_t get_offset_of_TeamToSwitchTo_2() { return static_cast<int32_t>(offsetof(OnCollideSwitchTeam_t9756240, ___TeamToSwitchTo_2)); }
-	inline uint8_t get_TeamToSwitchTo_2() const { return ___TeamToSwitchTo_2; }
-	inline uint8_t* get_address_of_TeamToSwitchTo_2() { return &___TeamToSwitchTo_2; }
-	inline void set_TeamToSwitchTo_2(uint8_t value)
+	inline static int32_t get_offset_of_TeamToSwitchTo_3() { return static_cast<int32_t>(offsetof(OnCollideSwitchTeam_t9756240, ___TeamToSwitchTo_3)); }
+	inline uint8_t get_TeamToSwitchTo_3() const { return ___TeamToSwitchTo_3; }
+	inline uint8_t* get_address_of_TeamToSwitchTo_3() { return &___TeamToSwitchTo_3; }
+	inline void set_TeamToSwitchTo_3(uint8_t value)
 	{
-		___TeamToSwitchTo_2 = value;
+		___TeamToSwitchTo_3 = value;
 	}
 };
 

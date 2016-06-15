@@ -1,6 +1,6 @@
-﻿using UnityEngine;
+using UnityEngine;
 
-public class DemoOwnershipGui : MonoBehaviour
+public class DemoOwnershipGui : Photon.MonoBehaviour
 {
     public GUISkin Skin;
     public bool TransferOwnershipOnRequest = true;

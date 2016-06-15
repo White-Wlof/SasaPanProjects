@@ -87,6 +87,8 @@ struct AudioClip_t3714538611;
 struct Material_t1886596500;
 // UnityEngine.MonoBehaviour
 struct MonoBehaviour_t3012272455;
+// UnityEngine.Rigidbody
+struct Rigidbody_t1972007546;
 
 #include "mscorlib_System_Array2840145358.h"
 #include "UnityEngine_UnityEngine_Object3878351788.h"
@@ -142,6 +144,7 @@ struct MonoBehaviour_t3012272455;
 #include "UnityEngine_UnityEngine_AudioClip3714538611.h"
 #include "UnityEngine_UnityEngine_Material1886596500.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+#include "UnityEngine_UnityEngine_Rigidbody1972007546.h"
 
 #pragma once
 // UnityEngine.Object[]
@@ -975,6 +978,21 @@ public:
 	inline MonoBehaviour_t3012272455 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline MonoBehaviour_t3012272455 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, MonoBehaviour_t3012272455 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.Rigidbody[]
+struct RigidbodyU5BU5D_t1292182111  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) Rigidbody_t1972007546 * m_Items[1];
+
+public:
+	inline Rigidbody_t1972007546 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline Rigidbody_t1972007546 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, Rigidbody_t1972007546 * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);

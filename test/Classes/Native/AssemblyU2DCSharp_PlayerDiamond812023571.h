@@ -17,7 +17,7 @@ struct PhotonView_t1498838369;
 // UnityEngine.Renderer
 struct Renderer_t1092684080;
 
-#include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+#include "AssemblyU2DCSharp_Photon_MonoBehaviour4025988718.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -26,72 +26,72 @@ struct Renderer_t1092684080;
 #endif
 
 // PlayerDiamond
-struct  PlayerDiamond_t812023571  : public MonoBehaviour_t3012272455
+struct  PlayerDiamond_t812023571  : public MonoBehaviour_t4025988718
 {
 public:
 	// UnityEngine.Transform PlayerDiamond::HeadTransform
-	Transform_t284553113 * ___HeadTransform_2;
+	Transform_t284553113 * ___HeadTransform_3;
 	// System.Single PlayerDiamond::HeightOffset
-	float ___HeightOffset_3;
+	float ___HeightOffset_4;
 	// PhotonView PlayerDiamond::m_PhotonView
-	PhotonView_t1498838369 * ___m_PhotonView_4;
+	PhotonView_t1498838369 * ___m_PhotonView_5;
 	// UnityEngine.Renderer PlayerDiamond::m_DiamondRenderer
-	Renderer_t1092684080 * ___m_DiamondRenderer_5;
+	Renderer_t1092684080 * ___m_DiamondRenderer_6;
 	// System.Single PlayerDiamond::m_Rotation
-	float ___m_Rotation_6;
+	float ___m_Rotation_7;
 	// System.Single PlayerDiamond::m_Height
-	float ___m_Height_7;
+	float ___m_Height_8;
 
 public:
-	inline static int32_t get_offset_of_HeadTransform_2() { return static_cast<int32_t>(offsetof(PlayerDiamond_t812023571, ___HeadTransform_2)); }
-	inline Transform_t284553113 * get_HeadTransform_2() const { return ___HeadTransform_2; }
-	inline Transform_t284553113 ** get_address_of_HeadTransform_2() { return &___HeadTransform_2; }
-	inline void set_HeadTransform_2(Transform_t284553113 * value)
+	inline static int32_t get_offset_of_HeadTransform_3() { return static_cast<int32_t>(offsetof(PlayerDiamond_t812023571, ___HeadTransform_3)); }
+	inline Transform_t284553113 * get_HeadTransform_3() const { return ___HeadTransform_3; }
+	inline Transform_t284553113 ** get_address_of_HeadTransform_3() { return &___HeadTransform_3; }
+	inline void set_HeadTransform_3(Transform_t284553113 * value)
 	{
-		___HeadTransform_2 = value;
-		Il2CppCodeGenWriteBarrier(&___HeadTransform_2, value);
+		___HeadTransform_3 = value;
+		Il2CppCodeGenWriteBarrier(&___HeadTransform_3, value);
 	}
 
-	inline static int32_t get_offset_of_HeightOffset_3() { return static_cast<int32_t>(offsetof(PlayerDiamond_t812023571, ___HeightOffset_3)); }
-	inline float get_HeightOffset_3() const { return ___HeightOffset_3; }
-	inline float* get_address_of_HeightOffset_3() { return &___HeightOffset_3; }
-	inline void set_HeightOffset_3(float value)
+	inline static int32_t get_offset_of_HeightOffset_4() { return static_cast<int32_t>(offsetof(PlayerDiamond_t812023571, ___HeightOffset_4)); }
+	inline float get_HeightOffset_4() const { return ___HeightOffset_4; }
+	inline float* get_address_of_HeightOffset_4() { return &___HeightOffset_4; }
+	inline void set_HeightOffset_4(float value)
 	{
-		___HeightOffset_3 = value;
+		___HeightOffset_4 = value;
 	}
 
-	inline static int32_t get_offset_of_m_PhotonView_4() { return static_cast<int32_t>(offsetof(PlayerDiamond_t812023571, ___m_PhotonView_4)); }
-	inline PhotonView_t1498838369 * get_m_PhotonView_4() const { return ___m_PhotonView_4; }
-	inline PhotonView_t1498838369 ** get_address_of_m_PhotonView_4() { return &___m_PhotonView_4; }
-	inline void set_m_PhotonView_4(PhotonView_t1498838369 * value)
+	inline static int32_t get_offset_of_m_PhotonView_5() { return static_cast<int32_t>(offsetof(PlayerDiamond_t812023571, ___m_PhotonView_5)); }
+	inline PhotonView_t1498838369 * get_m_PhotonView_5() const { return ___m_PhotonView_5; }
+	inline PhotonView_t1498838369 ** get_address_of_m_PhotonView_5() { return &___m_PhotonView_5; }
+	inline void set_m_PhotonView_5(PhotonView_t1498838369 * value)
 	{
-		___m_PhotonView_4 = value;
-		Il2CppCodeGenWriteBarrier(&___m_PhotonView_4, value);
+		___m_PhotonView_5 = value;
+		Il2CppCodeGenWriteBarrier(&___m_PhotonView_5, value);
 	}
 
-	inline static int32_t get_offset_of_m_DiamondRenderer_5() { return static_cast<int32_t>(offsetof(PlayerDiamond_t812023571, ___m_DiamondRenderer_5)); }
-	inline Renderer_t1092684080 * get_m_DiamondRenderer_5() const { return ___m_DiamondRenderer_5; }
-	inline Renderer_t1092684080 ** get_address_of_m_DiamondRenderer_5() { return &___m_DiamondRenderer_5; }
-	inline void set_m_DiamondRenderer_5(Renderer_t1092684080 * value)
+	inline static int32_t get_offset_of_m_DiamondRenderer_6() { return static_cast<int32_t>(offsetof(PlayerDiamond_t812023571, ___m_DiamondRenderer_6)); }
+	inline Renderer_t1092684080 * get_m_DiamondRenderer_6() const { return ___m_DiamondRenderer_6; }
+	inline Renderer_t1092684080 ** get_address_of_m_DiamondRenderer_6() { return &___m_DiamondRenderer_6; }
+	inline void set_m_DiamondRenderer_6(Renderer_t1092684080 * value)
 	{
-		___m_DiamondRenderer_5 = value;
-		Il2CppCodeGenWriteBarrier(&___m_DiamondRenderer_5, value);
+		___m_DiamondRenderer_6 = value;
+		Il2CppCodeGenWriteBarrier(&___m_DiamondRenderer_6, value);
 	}
 
-	inline static int32_t get_offset_of_m_Rotation_6() { return static_cast<int32_t>(offsetof(PlayerDiamond_t812023571, ___m_Rotation_6)); }
-	inline float get_m_Rotation_6() const { return ___m_Rotation_6; }
-	inline float* get_address_of_m_Rotation_6() { return &___m_Rotation_6; }
-	inline void set_m_Rotation_6(float value)
+	inline static int32_t get_offset_of_m_Rotation_7() { return static_cast<int32_t>(offsetof(PlayerDiamond_t812023571, ___m_Rotation_7)); }
+	inline float get_m_Rotation_7() const { return ___m_Rotation_7; }
+	inline float* get_address_of_m_Rotation_7() { return &___m_Rotation_7; }
+	inline void set_m_Rotation_7(float value)
 	{
-		___m_Rotation_6 = value;
+		___m_Rotation_7 = value;
 	}
 
-	inline static int32_t get_offset_of_m_Height_7() { return static_cast<int32_t>(offsetof(PlayerDiamond_t812023571, ___m_Height_7)); }
-	inline float get_m_Height_7() const { return ___m_Height_7; }
-	inline float* get_address_of_m_Height_7() { return &___m_Height_7; }
-	inline void set_m_Height_7(float value)
+	inline static int32_t get_offset_of_m_Height_8() { return static_cast<int32_t>(offsetof(PlayerDiamond_t812023571, ___m_Height_8)); }
+	inline float get_m_Height_8() const { return ___m_Height_8; }
+	inline float* get_address_of_m_Height_8() { return &___m_Height_8; }
+	inline void set_m_Height_8(float value)
 	{
-		___m_Height_7 = value;
+		___m_Height_8 = value;
 	}
 };
 

@@ -21886,28 +21886,6 @@ IL_0017:
 		return;
 	}
 }
-// System.Void System.IO.MemoryStream::.ctor(System.Byte[],System.Int32,System.Int32,System.Boolean)
-extern TypeInfo* Stream_t219029575_il2cpp_TypeInfo_var;
-extern const uint32_t MemoryStream__ctor_m3748180860_MetadataUsageId;
-extern "C"  void MemoryStream__ctor_m3748180860 (MemoryStream_t2881531048 * __this, ByteU5BU5D_t58506160* ___buffer, int32_t ___index, int32_t ___count, bool ___writable, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (MemoryStream__ctor_m3748180860_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Stream_t219029575_il2cpp_TypeInfo_var);
-		Stream__ctor_m1433294025(__this, /*hidden argument*/NULL);
-		ByteU5BU5D_t58506160* L_0 = ___buffer;
-		int32_t L_1 = ___index;
-		int32_t L_2 = ___count;
-		bool L_3 = ___writable;
-		MemoryStream_InternalConstructor_m661185350(__this, L_0, L_1, L_2, L_3, (bool)0, /*hidden argument*/NULL);
-		return;
-	}
-}
 // System.Void System.IO.MemoryStream::InternalConstructor(System.Byte[],System.Int32,System.Int32,System.Boolean,System.Boolean)
 extern TypeInfo* ArgumentNullException_t3214793280_il2cpp_TypeInfo_var;
 extern TypeInfo* ArgumentOutOfRangeException_t3479058991_il2cpp_TypeInfo_var;
@@ -34533,6 +34511,42 @@ extern "C"  double Math_Round_m2587388934 (Il2CppObject * __this /* static, unus
 	typedef double (*Math_Round_m2587388934_ftn) (double);
 	return  ((Math_Round_m2587388934_ftn)mscorlib::System::Math::Round) (___a);
 }
+// System.Double System.Math::Truncate(System.Double)
+extern "C"  double Math_Truncate_m534017384 (Il2CppObject * __this /* static, unused */, double ___d, const MethodInfo* method)
+{
+	{
+		double L_0 = ___d;
+		if ((!(((double)L_0) > ((double)(0.0)))))
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		double L_1 = ___d;
+		double L_2 = floor(L_1);
+		return L_2;
+	}
+
+IL_0016:
+	{
+		double L_3 = ___d;
+		if ((!(((double)L_3) < ((double)(0.0)))))
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		double L_4 = ___d;
+		double L_5 = ceil(L_4);
+		return L_5;
+	}
+
+IL_002c:
+	{
+		double L_6 = ___d;
+		return L_6;
+	}
+}
 // System.Double System.Math::Sin(System.Double)
 extern "C"  double Math_Sin_m1832281148 (Il2CppObject * __this /* static, unused */, double ___a, const MethodInfo* method)
 {
@@ -34553,6 +34567,13 @@ extern "C"  double Math_Acos_m971391944 (Il2CppObject * __this /* static, unused
 	using namespace il2cpp::icalls;
 	typedef double (*Math_Acos_m971391944_ftn) (double);
 	return  ((Math_Acos_m971391944_ftn)mscorlib::System::Math::Acos) (___d);
+}
+// System.Double System.Math::Asin(System.Double)
+extern "C"  double Math_Asin_m925883479 (Il2CppObject * __this /* static, unused */, double ___d, const MethodInfo* method)
+{
+	using namespace il2cpp::icalls;
+	typedef double (*Math_Asin_m925883479_ftn) (double);
+	return  ((Math_Asin_m925883479_ftn)mscorlib::System::Math::Asin) (___d);
 }
 // System.Double System.Math::Atan2(System.Double,System.Double)
 extern "C"  double Math_Atan2_m2472972670 (Il2CppObject * __this /* static, unused */, double ___y, double ___x, const MethodInfo* method)

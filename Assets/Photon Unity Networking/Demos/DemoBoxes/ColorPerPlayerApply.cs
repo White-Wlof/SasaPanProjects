@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using Photon;
 
 /// <summary>Sample script that uses ColorPerPlayer to apply it to an object's material color.</summary>

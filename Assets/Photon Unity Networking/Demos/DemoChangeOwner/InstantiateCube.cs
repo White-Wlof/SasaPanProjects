@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class InstantiateCube : MonoBehaviour
+public class InstantiateCube : Photon.MonoBehaviour
 {
     public GameObject Prefab;
     public int InstantiateType;

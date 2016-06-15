@@ -1,5 +1,7 @@
 <linker>
 <assembly fullname="Assembly-CSharp">
+<type fullname="Basics" preserve="all"/>
+<type fullname="Sequences" preserve="all"/>
 <type fullname="DetonatorSprayHelper" preserve="all"/>
 <type fullname="Detonator" preserve="all"/>
 <type fullname="DetonatorBurstEmitter" preserve="all"/>
@@ -72,6 +74,14 @@
 <type fullname="myThirdPersonController" preserve="all"/>
 <type fullname="NetworkCharacter" preserve="all"/>
 <type fullname="RandomMatchmaker" preserve="all"/>
+<type fullname="ExitGames.Demos.DemoAnimator.CameraWork" preserve="all"/>
+<type fullname="ExitGames.Demos.DemoAnimator.GameManager" preserve="all"/>
+<type fullname="ExitGames.Demos.DemoAnimator.Launcher" preserve="all"/>
+<type fullname="ExitGames.Demos.DemoAnimator.LoaderAnime" preserve="all"/>
+<type fullname="ExitGames.Demos.DemoAnimator.PlayerAnimatorManager" preserve="all"/>
+<type fullname="ExitGames.Demos.DemoAnimator.PlayerManager" preserve="all"/>
+<type fullname="ExitGames.Demos.DemoAnimator.PlayerNameInputField" preserve="all"/>
+<type fullname="ExitGames.Demos.DemoAnimator.PlayerUI" preserve="all"/>
 <type fullname="IdleRunJump" preserve="all"/>
 <type fullname="PlayerDiamond" preserve="all"/>
 <type fullname="Photon.MonoBehaviour" preserve="all"/>
@@ -116,17 +126,23 @@
 <type fullname="IRiverTool" preserve="all"/>
 <type fullname="TextureAnimator" preserve="all"/>
 <type fullname="Cannon.CannonBallController" preserve="all"/>
-<type fullname="PLAYER.CharacterOperationMaster" preserve="all"/>
-<type fullname="PLAYER.GameUIButton" preserve="all"/>
-<type fullname="PLAYER.PlayerCameraController" preserve="all"/>
-<type fullname="PLAYER.PlayerCollider" preserve="all"/>
-<type fullname="PLAYER.PlayerController" preserve="all"/>
+<type fullname="Game.CharacterOperationMaster" preserve="all"/>
+<type fullname="Game.GameState" preserve="all"/>
+<type fullname="Game.GameStateOnline" preserve="all"/>
+<type fullname="Game.GameUIButton" preserve="all"/>
+<type fullname="Game.PlayerCameraController" preserve="all"/>
+<type fullname="Game.PlayerCollider" preserve="all"/>
+<type fullname="Game.PlayerController" preserve="all"/>
+<type fullname="Game.PlayerControllerOnline" preserve="all"/>
 <type fullname="PlayerStateManager" preserve="all"/>
-<type fullname="PLAYER.RivalController" preserve="all"/>
+<type fullname="Game.RivalController" preserve="all"/>
 <type fullname="UIController" preserve="all"/>
-<type fullname="PLAYER.BoatDirectionSystem" preserve="all"/>
+<type fullname="Game.NetworkPlayer" preserve="all"/>
+<type fullname="PUNController" preserve="all"/>
+<type fullname="Game.BoatDirectionSystem" preserve="all"/>
 <type fullname="CannonPullSystem" preserve="all"/>
-<type fullname="PLAYER.OrbitPredictioner" preserve="all"/>
+<type fullname="Game.OrbitPredictioner" preserve="all"/>
+<type fullname="Pauser" preserve="all"/>
 </assembly>
 <assembly fullname="Assembly-UnityScript">
 <type fullname="ScrollUV" preserve="all"/>
@@ -173,6 +189,10 @@
 <type fullname="UnityEngine.UI.Outline" preserve="all"/>
 <type fullname="UnityEngine.UI.PositionAsUV1" preserve="all"/>
 <type fullname="UnityEngine.UI.Shadow" preserve="all"/>
+</assembly>
+<assembly fullname="DOTween">
+<type fullname="DG.Tweening.Core.DOTweenComponent" preserve="all"/>
+<type fullname="DG.Tweening.Core.DOTweenSettings" preserve="all"/>
 </assembly>
 <assembly fullname="RiverTools">
 <type fullname="CurvePoint" preserve="all"/>

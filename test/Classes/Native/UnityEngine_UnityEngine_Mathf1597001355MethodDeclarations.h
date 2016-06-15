@@ -83,6 +83,10 @@ extern "C"  float Mathf_SmoothDampAngle_m131672272 (Il2CppObject * __this /* sta
 extern "C"  float Mathf_Repeat_m3424250200 (Il2CppObject * __this /* static, unused */, float ___t, float ___length, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::InverseLerp(System.Single,System.Single,System.Single)
 extern "C"  float Mathf_InverseLerp_m152689993 (Il2CppObject * __this /* static, unused */, float ___a, float ___b, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::GammaToLinearSpace(System.Single)
+extern "C"  float Mathf_GammaToLinearSpace_m2525971407 (Il2CppObject * __this /* static, unused */, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Mathf::LinearToGammaSpace(System.Single)
+extern "C"  float Mathf_LinearToGammaSpace_m966693007 (Il2CppObject * __this /* static, unused */, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::DeltaAngle(System.Single,System.Single)
 extern "C"  float Mathf_DeltaAngle_m226689272 (Il2CppObject * __this /* static, unused */, float ___current, float ___target, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 

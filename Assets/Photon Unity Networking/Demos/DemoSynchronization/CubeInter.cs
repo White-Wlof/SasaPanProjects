@@ -5,7 +5,7 @@
 // This should be more than the lag.
 // This script will replay the movement of a cube, based on already received position updates.
 // 
-// Network interpolation is affected by the network sendRate.
+// PhotonNetwork interpolation is affected by the network sendRate.
 // By default this is 10 times/second for OnSerialize. (See PhotonNetwork.sendIntervalOnSerialize)
 // Raise the sendrate if you want to lower the interpolationBackTime.
 //

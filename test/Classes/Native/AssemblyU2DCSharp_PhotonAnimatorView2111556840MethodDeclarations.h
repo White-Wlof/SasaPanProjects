@@ -38,6 +38,8 @@ extern "C"  void PhotonAnimatorView__ctor_m2841524403 (PhotonAnimatorView_t21115
 extern "C"  void PhotonAnimatorView_Awake_m3079129622 (PhotonAnimatorView_t2111556840 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void PhotonAnimatorView::Update()
 extern "C"  void PhotonAnimatorView_Update_m3914772666 (PhotonAnimatorView_t2111556840 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PhotonAnimatorView::CacheDiscreteTriggers()
+extern "C"  void PhotonAnimatorView_CacheDiscreteTriggers_m2559704007 (PhotonAnimatorView_t2111556840 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean PhotonAnimatorView::DoesLayerSynchronizeTypeExist(System.Int32)
 extern "C"  bool PhotonAnimatorView_DoesLayerSynchronizeTypeExist_m3455097491 (PhotonAnimatorView_t2111556840 * __this, int32_t ___layerIndex, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean PhotonAnimatorView::DoesParameterSynchronizeTypeExist(System.String)

@@ -46,6 +46,9 @@ extern "C"  Il2CppObject* Stack_1_System_Collections_Generic_IEnumerableU3CTU3E_
 // System.Collections.IEnumerator System.Collections.Generic.Stack`1<System.Object>::System.Collections.IEnumerable.GetEnumerator()
 extern "C"  Il2CppObject * Stack_1_System_Collections_IEnumerable_GetEnumerator_m4095051687_gshared (Stack_1_t3407512455 * __this, const MethodInfo* method);
 #define Stack_1_System_Collections_IEnumerable_GetEnumerator_m4095051687(__this, method) ((  Il2CppObject * (*) (Stack_1_t3407512455 *, const MethodInfo*))Stack_1_System_Collections_IEnumerable_GetEnumerator_m4095051687_gshared)(__this, method)
+// System.Void System.Collections.Generic.Stack`1<System.Object>::Clear()
+extern "C"  void Stack_1_Clear_m131822403_gshared (Stack_1_t3407512455 * __this, const MethodInfo* method);
+#define Stack_1_Clear_m131822403(__this, method) ((  void (*) (Stack_1_t3407512455 *, const MethodInfo*))Stack_1_Clear_m131822403_gshared)(__this, method)
 // T System.Collections.Generic.Stack`1<System.Object>::Peek()
 extern "C"  Il2CppObject * Stack_1_Peek_m3418768488_gshared (Stack_1_t3407512455 * __this, const MethodInfo* method);
 #define Stack_1_Peek_m3418768488(__this, method) ((  Il2CppObject * (*) (Stack_1_t3407512455 *, const MethodInfo*))Stack_1_Peek_m3418768488_gshared)(__this, method)

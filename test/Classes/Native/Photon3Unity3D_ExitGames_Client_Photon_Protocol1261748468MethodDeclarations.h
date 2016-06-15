@@ -28,12 +28,16 @@ struct ByteU5BU5D_t58506160;
 
 // System.Boolean ExitGames.Client.Photon.Protocol::TryRegisterType(System.Type,System.Byte,ExitGames.Client.Photon.SerializeStreamMethod,ExitGames.Client.Photon.DeserializeStreamMethod)
 extern "C"  bool Protocol_TryRegisterType_m4026185887 (Il2CppObject * __this /* static, unused */, Type_t * ___type, uint8_t ___typeCode, SerializeStreamMethod_t741406109 * ___serializeFunction, DeserializeStreamMethod_t2269051836 * ___deserializeFunction, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void ExitGames.Client.Photon.Protocol::Serialize(System.Int16,System.Byte[],System.Int32&)
+extern "C"  void Protocol_Serialize_m1344711179 (Il2CppObject * __this /* static, unused */, int16_t ___value, ByteU5BU5D_t58506160* ___target, int32_t* ___targetOffset, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ExitGames.Client.Photon.Protocol::Serialize(System.Int32,System.Byte[],System.Int32&)
 extern "C"  void Protocol_Serialize_m2001046545 (Il2CppObject * __this /* static, unused */, int32_t ___value, ByteU5BU5D_t58506160* ___target, int32_t* ___targetOffset, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ExitGames.Client.Photon.Protocol::Serialize(System.Single,System.Byte[],System.Int32&)
 extern "C"  void Protocol_Serialize_m729069851 (Il2CppObject * __this /* static, unused */, float ___value, ByteU5BU5D_t58506160* ___target, int32_t* ___targetOffset, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ExitGames.Client.Photon.Protocol::Deserialize(System.Int32&,System.Byte[],System.Int32&)
 extern "C"  void Protocol_Deserialize_m2617704396 (Il2CppObject * __this /* static, unused */, int32_t* ___value, ByteU5BU5D_t58506160* ___source, int32_t* ___offset, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void ExitGames.Client.Photon.Protocol::Deserialize(System.Int16&,System.Byte[],System.Int32&)
+extern "C"  void Protocol_Deserialize_m3746144530 (Il2CppObject * __this /* static, unused */, int16_t* ___value, ByteU5BU5D_t58506160* ___source, int32_t* ___offset, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ExitGames.Client.Photon.Protocol::Deserialize(System.Single&,System.Byte[],System.Int32&)
 extern "C"  void Protocol_Deserialize_m3616978080 (Il2CppObject * __this /* static, unused */, float* ___value, ByteU5BU5D_t58506160* ___source, int32_t* ___offset, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ExitGames.Client.Photon.Protocol::.cctor()

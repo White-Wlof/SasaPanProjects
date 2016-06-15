@@ -107,6 +107,6 @@
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,PhotonView>::ContainsKeyValuePair(System.Collections.Generic.KeyValuePair`2<TKey,TValue>)
 #define Dictionary_2_ContainsKeyValuePair_m1917302197(__this, ___pair, method) ((  bool (*) (Dictionary_2_t1989649152 *, KeyValuePair_2_t1478180450 , const MethodInfo*))Dictionary_2_ContainsKeyValuePair_m139391042_gshared)(__this, ___pair, method)
 // System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Int32,PhotonView>::GetEnumerator()
-#define Dictionary_2_GetEnumerator_m4137717036(__this, method) ((  Enumerator_t1756677094  (*) (Dictionary_2_t1989649152 *, const MethodInfo*))Dictionary_2_GetEnumerator_m3720989159_gshared)(__this, method)
+#define Dictionary_2_GetEnumerator_m1457409490(__this, method) ((  Enumerator_t1756677094  (*) (Dictionary_2_t1989649152 *, const MethodInfo*))Dictionary_2_GetEnumerator_m3720989159_gshared)(__this, method)
 // System.Collections.DictionaryEntry System.Collections.Generic.Dictionary`2<System.Int32,PhotonView>::<CopyTo>m__0(TKey,TValue)
 #define Dictionary_2_U3CCopyToU3Em__0_m2832088481(__this /* static, unused */, ___key, ___value, method) ((  DictionaryEntry_t130027246  (*) (Il2CppObject * /* static, unused */, int32_t, PhotonView_t1498838369 *, const MethodInfo*))Dictionary_2_U3CCopyToU3Em__0_m2937104030_gshared)(__this /* static, unused */, ___key, ___value, method)

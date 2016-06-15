@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ToHubButton : MonoBehaviour
+public class ToHubButton : Photon.MonoBehaviour
 {
     public Texture2D ButtonTexture;
     private Rect ButtonRect;

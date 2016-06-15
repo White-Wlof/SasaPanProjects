@@ -15,7 +15,7 @@ struct Transform_t284553113;
 // UnityEngine.GameObject[]
 struct GameObjectU5BU5D_t3499186955;
 
-#include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+#include "AssemblyU2DCSharp_Photon_MonoBehaviour4025988718.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -24,41 +24,41 @@ struct GameObjectU5BU5D_t3499186955;
 #endif
 
 // OnJoinedInstantiate
-struct  OnJoinedInstantiate_t4161748898  : public MonoBehaviour_t3012272455
+struct  OnJoinedInstantiate_t4161748898  : public MonoBehaviour_t4025988718
 {
 public:
 	// UnityEngine.Transform OnJoinedInstantiate::SpawnPosition
-	Transform_t284553113 * ___SpawnPosition_2;
+	Transform_t284553113 * ___SpawnPosition_3;
 	// System.Single OnJoinedInstantiate::PositionOffset
-	float ___PositionOffset_3;
+	float ___PositionOffset_4;
 	// UnityEngine.GameObject[] OnJoinedInstantiate::PrefabsToInstantiate
-	GameObjectU5BU5D_t3499186955* ___PrefabsToInstantiate_4;
+	GameObjectU5BU5D_t3499186955* ___PrefabsToInstantiate_5;
 
 public:
-	inline static int32_t get_offset_of_SpawnPosition_2() { return static_cast<int32_t>(offsetof(OnJoinedInstantiate_t4161748898, ___SpawnPosition_2)); }
-	inline Transform_t284553113 * get_SpawnPosition_2() const { return ___SpawnPosition_2; }
-	inline Transform_t284553113 ** get_address_of_SpawnPosition_2() { return &___SpawnPosition_2; }
-	inline void set_SpawnPosition_2(Transform_t284553113 * value)
+	inline static int32_t get_offset_of_SpawnPosition_3() { return static_cast<int32_t>(offsetof(OnJoinedInstantiate_t4161748898, ___SpawnPosition_3)); }
+	inline Transform_t284553113 * get_SpawnPosition_3() const { return ___SpawnPosition_3; }
+	inline Transform_t284553113 ** get_address_of_SpawnPosition_3() { return &___SpawnPosition_3; }
+	inline void set_SpawnPosition_3(Transform_t284553113 * value)
 	{
-		___SpawnPosition_2 = value;
-		Il2CppCodeGenWriteBarrier(&___SpawnPosition_2, value);
+		___SpawnPosition_3 = value;
+		Il2CppCodeGenWriteBarrier(&___SpawnPosition_3, value);
 	}
 
-	inline static int32_t get_offset_of_PositionOffset_3() { return static_cast<int32_t>(offsetof(OnJoinedInstantiate_t4161748898, ___PositionOffset_3)); }
-	inline float get_PositionOffset_3() const { return ___PositionOffset_3; }
-	inline float* get_address_of_PositionOffset_3() { return &___PositionOffset_3; }
-	inline void set_PositionOffset_3(float value)
+	inline static int32_t get_offset_of_PositionOffset_4() { return static_cast<int32_t>(offsetof(OnJoinedInstantiate_t4161748898, ___PositionOffset_4)); }
+	inline float get_PositionOffset_4() const { return ___PositionOffset_4; }
+	inline float* get_address_of_PositionOffset_4() { return &___PositionOffset_4; }
+	inline void set_PositionOffset_4(float value)
 	{
-		___PositionOffset_3 = value;
+		___PositionOffset_4 = value;
 	}
 
-	inline static int32_t get_offset_of_PrefabsToInstantiate_4() { return static_cast<int32_t>(offsetof(OnJoinedInstantiate_t4161748898, ___PrefabsToInstantiate_4)); }
-	inline GameObjectU5BU5D_t3499186955* get_PrefabsToInstantiate_4() const { return ___PrefabsToInstantiate_4; }
-	inline GameObjectU5BU5D_t3499186955** get_address_of_PrefabsToInstantiate_4() { return &___PrefabsToInstantiate_4; }
-	inline void set_PrefabsToInstantiate_4(GameObjectU5BU5D_t3499186955* value)
+	inline static int32_t get_offset_of_PrefabsToInstantiate_5() { return static_cast<int32_t>(offsetof(OnJoinedInstantiate_t4161748898, ___PrefabsToInstantiate_5)); }
+	inline GameObjectU5BU5D_t3499186955* get_PrefabsToInstantiate_5() const { return ___PrefabsToInstantiate_5; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_PrefabsToInstantiate_5() { return &___PrefabsToInstantiate_5; }
+	inline void set_PrefabsToInstantiate_5(GameObjectU5BU5D_t3499186955* value)
 	{
-		___PrefabsToInstantiate_4 = value;
-		Il2CppCodeGenWriteBarrier(&___PrefabsToInstantiate_4, value);
+		___PrefabsToInstantiate_5 = value;
+		Il2CppCodeGenWriteBarrier(&___PrefabsToInstantiate_5, value);
 	}
 };
 

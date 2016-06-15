@@ -33,8 +33,8 @@ struct Int32U5BU5D_t1809983122;
 extern "C"  void Queue_1__ctor_m2598507734_gshared (Queue_1_t260535031 * __this, const MethodInfo* method);
 #define Queue_1__ctor_m2598507734(__this, method) ((  void (*) (Queue_1_t260535031 *, const MethodInfo*))Queue_1__ctor_m2598507734_gshared)(__this, method)
 // System.Void System.Collections.Generic.Queue`1<System.Int32>::.ctor(System.Int32)
-extern "C"  void Queue_1__ctor_m983011815_gshared (Queue_1_t260535031 * __this, int32_t ___count, const MethodInfo* method);
-#define Queue_1__ctor_m983011815(__this, ___count, method) ((  void (*) (Queue_1_t260535031 *, int32_t, const MethodInfo*))Queue_1__ctor_m983011815_gshared)(__this, ___count, method)
+extern "C"  void Queue_1__ctor_m752466278_gshared (Queue_1_t260535031 * __this, int32_t ___count, const MethodInfo* method);
+#define Queue_1__ctor_m752466278(__this, ___count, method) ((  void (*) (Queue_1_t260535031 *, int32_t, const MethodInfo*))Queue_1__ctor_m752466278_gshared)(__this, ___count, method)
 // System.Void System.Collections.Generic.Queue`1<System.Int32>::System.Collections.ICollection.CopyTo(System.Array,System.Int32)
 extern "C"  void Queue_1_System_Collections_ICollection_CopyTo_m2342894702_gshared (Queue_1_t260535031 * __this, Il2CppArray * ___array, int32_t ___idx, const MethodInfo* method);
 #define Queue_1_System_Collections_ICollection_CopyTo_m2342894702(__this, ___array, ___idx, method) ((  void (*) (Queue_1_t260535031 *, Il2CppArray *, int32_t, const MethodInfo*))Queue_1_System_Collections_ICollection_CopyTo_m2342894702_gshared)(__this, ___array, ___idx, method)
@@ -66,8 +66,8 @@ extern "C"  int32_t Queue_1_Peek_m601045192_gshared (Queue_1_t260535031 * __this
 extern "C"  void Queue_1_Enqueue_m3905011245_gshared (Queue_1_t260535031 * __this, int32_t ___item, const MethodInfo* method);
 #define Queue_1_Enqueue_m3905011245(__this, ___item, method) ((  void (*) (Queue_1_t260535031 *, int32_t, const MethodInfo*))Queue_1_Enqueue_m3905011245_gshared)(__this, ___item, method)
 // T[] System.Collections.Generic.Queue`1<System.Int32>::ToArray()
-extern "C"  Int32U5BU5D_t1809983122* Queue_1_ToArray_m2563645269_gshared (Queue_1_t260535031 * __this, const MethodInfo* method);
-#define Queue_1_ToArray_m2563645269(__this, method) ((  Int32U5BU5D_t1809983122* (*) (Queue_1_t260535031 *, const MethodInfo*))Queue_1_ToArray_m2563645269_gshared)(__this, method)
+extern "C"  Int32U5BU5D_t1809983122* Queue_1_ToArray_m3992632389_gshared (Queue_1_t260535031 * __this, const MethodInfo* method);
+#define Queue_1_ToArray_m3992632389(__this, method) ((  Int32U5BU5D_t1809983122* (*) (Queue_1_t260535031 *, const MethodInfo*))Queue_1_ToArray_m3992632389_gshared)(__this, method)
 // System.Void System.Collections.Generic.Queue`1<System.Int32>::SetCapacity(System.Int32)
 extern "C"  void Queue_1_SetCapacity_m2966725121_gshared (Queue_1_t260535031 * __this, int32_t ___new_size, const MethodInfo* method);
 #define Queue_1_SetCapacity_m2966725121(__this, ___new_size, method) ((  void (*) (Queue_1_t260535031 *, int32_t, const MethodInfo*))Queue_1_SetCapacity_m2966725121_gshared)(__this, ___new_size, method)

@@ -20,6 +20,8 @@ struct List_1_t4108301774;
 struct List_1_t2715307382;
 // PhotonView
 struct PhotonView_t1498838369;
+// System.Collections.Generic.List`1<System.String>
+struct List_1_t1765447871;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
 #include "UnityEngine_UnityEngine_Vector33525329789.h"
@@ -54,6 +56,8 @@ public:
 	bool ___m_WasSynchronizeTypeChanged_10;
 	// PhotonView PhotonAnimatorView::m_PhotonView
 	PhotonView_t1498838369 * ___m_PhotonView_11;
+	// System.Collections.Generic.List`1<System.String> PhotonAnimatorView::m_raisedDiscreteTriggersCache
+	List_1_t1765447871 * ___m_raisedDiscreteTriggersCache_12;
 
 public:
 	inline static int32_t get_offset_of_m_Animator_2() { return static_cast<int32_t>(offsetof(PhotonAnimatorView_t2111556840, ___m_Animator_2)); }
@@ -139,6 +143,15 @@ public:
 	{
 		___m_PhotonView_11 = value;
 		Il2CppCodeGenWriteBarrier(&___m_PhotonView_11, value);
+	}
+
+	inline static int32_t get_offset_of_m_raisedDiscreteTriggersCache_12() { return static_cast<int32_t>(offsetof(PhotonAnimatorView_t2111556840, ___m_raisedDiscreteTriggersCache_12)); }
+	inline List_1_t1765447871 * get_m_raisedDiscreteTriggersCache_12() const { return ___m_raisedDiscreteTriggersCache_12; }
+	inline List_1_t1765447871 ** get_address_of_m_raisedDiscreteTriggersCache_12() { return &___m_raisedDiscreteTriggersCache_12; }
+	inline void set_m_raisedDiscreteTriggersCache_12(List_1_t1765447871 * value)
+	{
+		___m_raisedDiscreteTriggersCache_12 = value;
+		Il2CppCodeGenWriteBarrier(&___m_raisedDiscreteTriggersCache_12, value);
 	}
 };
 

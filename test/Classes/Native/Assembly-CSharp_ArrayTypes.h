@@ -31,6 +31,8 @@ struct Region_t2444038932;
 struct TypedLobbyInfo_t1584678010;
 // PhotonAnimatorView/SynchronizedLayer
 struct SynchronizedLayer_t1918348413;
+// Pauser
+struct Pauser_t2383512924;
 
 #include "mscorlib_System_Array2840145358.h"
 #include "AssemblyU2DCSharp_PhotonPlayer1400510109.h"
@@ -46,6 +48,7 @@ struct SynchronizedLayer_t1918348413;
 #include "AssemblyU2DCSharp_Region2444038932.h"
 #include "AssemblyU2DCSharp_TypedLobbyInfo1584678010.h"
 #include "AssemblyU2DCSharp_PhotonAnimatorView_SynchronizedL1918348413.h"
+#include "AssemblyU2DCSharp_Pauser2383512924.h"
 
 #pragma once
 // PhotonPlayer[]
@@ -236,6 +239,21 @@ public:
 	inline SynchronizedLayer_t1918348413 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline SynchronizedLayer_t1918348413 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, SynchronizedLayer_t1918348413 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// Pauser[]
+struct PauserU5BU5D_t3946401205  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) Pauser_t2383512924 * m_Items[1];
+
+public:
+	inline Pauser_t2383512924 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline Pauser_t2383512924 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, Pauser_t2383512924 * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);

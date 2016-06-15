@@ -1,7 +1,7 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
-public class Demo2DJumpAndRun : MonoBehaviour 
+public class Demo2DJumpAndRun : Photon.MonoBehaviour 
 {
     void OnJoinedRoom()
     {
