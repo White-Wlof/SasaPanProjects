@@ -11,10 +11,7 @@ namespace Game
 
         void Start()
         {
-            if (!mainCamera)
-            {
-                mainCamera = Camera.main;
-            }
+            mainCamera = Camera.main;
         }
         // Update is called once per frame
         void Update()

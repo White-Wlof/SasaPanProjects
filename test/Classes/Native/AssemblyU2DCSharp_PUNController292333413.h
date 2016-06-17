@@ -25,6 +25,8 @@ struct  PUNController_t292333413  : public MonoBehaviour_t4025988718
 public:
 	// System.Boolean PUNController::isWaiting
 	bool ___isWaiting_3;
+	// System.Int32 PUNController::online
+	int32_t ___online_4;
 
 public:
 	inline static int32_t get_offset_of_isWaiting_3() { return static_cast<int32_t>(offsetof(PUNController_t292333413, ___isWaiting_3)); }
@@ -33,6 +35,14 @@ public:
 	inline void set_isWaiting_3(bool value)
 	{
 		___isWaiting_3 = value;
+	}
+
+	inline static int32_t get_offset_of_online_4() { return static_cast<int32_t>(offsetof(PUNController_t292333413, ___online_4)); }
+	inline int32_t get_online_4() const { return ___online_4; }
+	inline int32_t* get_address_of_online_4() { return &___online_4; }
+	inline void set_online_4(int32_t value)
+	{
+		___online_4 = value;
 	}
 };
 

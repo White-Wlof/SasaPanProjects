@@ -22,6 +22,14 @@ namespace Game
 
         void Update()
         {
+            if (!state.cannonMode)
+            {
+                lineRenderer.enabled = false;
+            }
+            else
+            {
+                lineRenderer.enabled = true;
+            }
             Debug.Log(state.initialVelocityCannon);
             DrawLine((state.initialVelocityCannon + playerRb.velocity.z) / 7.5f, 10);
         }

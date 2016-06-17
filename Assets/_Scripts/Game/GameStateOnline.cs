@@ -26,7 +26,7 @@ namespace Game
         void Start()
         {
             players.Add(GameObject.FindGameObjectWithTag("Player").transform);
-            //players.Add(GameObject.FindGameObjectWithTag("Rival").transform);
+            players.Add(GameObject.FindGameObjectWithTag("Player").transform);
             changeInitializePosition();
             //Ready
             Invoke("showSignText", 0.1f);

@@ -2051,6 +2051,21 @@ extern const Il2CppGenericInst GenInst_CameraWork_t2856068663_0_0_0 = { 1, GenIn
 extern const Il2CppType CharacterController_t2029520850_0_0_0;
 static const Il2CppType* GenInst_CharacterController_t2029520850_0_0_0_Types[] = { &CharacterController_t2029520850_0_0_0 };
 extern const Il2CppGenericInst GenInst_CharacterController_t2029520850_0_0_0 = { 1, GenInst_CharacterController_t2029520850_0_0_0_Types };
+extern const Il2CppType PlayerCameraController_t2657252648_0_0_0;
+static const Il2CppType* GenInst_PlayerCameraController_t2657252648_0_0_0_Types[] = { &PlayerCameraController_t2657252648_0_0_0 };
+extern const Il2CppGenericInst GenInst_PlayerCameraController_t2657252648_0_0_0 = { 1, GenInst_PlayerCameraController_t2657252648_0_0_0_Types };
+extern const Il2CppType CannonPullSystem_t3255870929_0_0_0;
+static const Il2CppType* GenInst_CannonPullSystem_t3255870929_0_0_0_Types[] = { &CannonPullSystem_t3255870929_0_0_0 };
+extern const Il2CppGenericInst GenInst_CannonPullSystem_t3255870929_0_0_0 = { 1, GenInst_CannonPullSystem_t3255870929_0_0_0_Types };
+extern const Il2CppType BoatDirectionSystem_t992795764_0_0_0;
+static const Il2CppType* GenInst_BoatDirectionSystem_t992795764_0_0_0_Types[] = { &BoatDirectionSystem_t992795764_0_0_0 };
+extern const Il2CppGenericInst GenInst_BoatDirectionSystem_t992795764_0_0_0 = { 1, GenInst_BoatDirectionSystem_t992795764_0_0_0_Types };
+extern const Il2CppType GameStateOnline_t3171627576_0_0_0;
+static const Il2CppType* GenInst_GameStateOnline_t3171627576_0_0_0_Types[] = { &GameStateOnline_t3171627576_0_0_0 };
+extern const Il2CppGenericInst GenInst_GameStateOnline_t3171627576_0_0_0 = { 1, GenInst_GameStateOnline_t3171627576_0_0_0_Types };
+extern const Il2CppType PlayerControllerOnline_t2665889174_0_0_0;
+static const Il2CppType* GenInst_PlayerControllerOnline_t2665889174_0_0_0_Types[] = { &PlayerControllerOnline_t2665889174_0_0_0 };
+extern const Il2CppGenericInst GenInst_PlayerControllerOnline_t2665889174_0_0_0 = { 1, GenInst_PlayerControllerOnline_t2665889174_0_0_0_Types };
 extern const Il2CppType PhotonTransformView_t486317301_0_0_0;
 static const Il2CppType* GenInst_PhotonTransformView_t486317301_0_0_0_Types[] = { &PhotonTransformView_t486317301_0_0_0 };
 extern const Il2CppGenericInst GenInst_PhotonTransformView_t486317301_0_0_0 = { 1, GenInst_PhotonTransformView_t486317301_0_0_0_Types };
@@ -2186,7 +2201,7 @@ static const Il2CppType* GenInst_Vector3ArrayOptions_t939984481_0_0_0_Types[] = 
 extern const Il2CppGenericInst GenInst_Vector3ArrayOptions_t939984481_0_0_0 = { 1, GenInst_Vector3ArrayOptions_t939984481_0_0_0_Types };
 static const Il2CppType* GenInst_VectorOptions_t3308462279_0_0_0_Types[] = { &VectorOptions_t3308462279_0_0_0 };
 extern const Il2CppGenericInst GenInst_VectorOptions_t3308462279_0_0_0 = { 1, GenInst_VectorOptions_t3308462279_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[767] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[772] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t2847414787_0_0_0,
@@ -2894,6 +2909,11 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[767] =
 	&GenInst_Light_t1596303683_0_0_0,
 	&GenInst_CameraWork_t2856068663_0_0_0,
 	&GenInst_CharacterController_t2029520850_0_0_0,
+	&GenInst_PlayerCameraController_t2657252648_0_0_0,
+	&GenInst_CannonPullSystem_t3255870929_0_0_0,
+	&GenInst_BoatDirectionSystem_t992795764_0_0_0,
+	&GenInst_GameStateOnline_t3171627576_0_0_0,
+	&GenInst_PlayerControllerOnline_t2665889174_0_0_0,
 	&GenInst_PhotonTransformView_t486317301_0_0_0,
 	&GenInst_OnClickDestroy_t3078095089_0_0_0,
 	&GenInst_myThirdPersonController_t1717065228_0_0_0,

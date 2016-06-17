@@ -8,6 +8,8 @@ TagManager:
   - River
   - Field
   - CannonBall
+  - Beam
+  - GameState
   layers:
   - Default
   - TransparentFX

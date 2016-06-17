@@ -247,10 +247,12 @@ struct GameState_t3027501829;
 struct GameStateOnline_t3171627576;
 // Game.GameUIButton
 struct GameUIButton_t467804254;
-// Game.NetworkPlayer
-struct NetworkPlayer_t4086688245;
 // Game.OrbitPredictioner
 struct OrbitPredictioner_t1410782764;
+// Game.PhotonPanda
+struct PhotonPanda_t3542014468;
+// Game.PhotonPlayer
+struct PhotonPlayer_t1433979395;
 // Game.PlayerCameraController
 struct PlayerCameraController_t2657252648;
 // Game.PlayerCollider
@@ -263,12 +265,6 @@ struct PlayerController_t2899995875;
 struct PlayerControllerOnline_t2665889174;
 // Game.RivalController
 struct RivalController_t3057565708;
-// GameLogic
-struct GameLogic_t2987424364;
-// System.Collections.Generic.IEnumerable`1<PhotonPlayer>
-struct IEnumerable_1_t4272664465;
-// System.Collections.Generic.IEnumerable`1<System.Object>
-struct IEnumerable_1_t3709260776;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -701,12 +697,14 @@ struct IEnumerable_1_t3709260776;
 #include "AssemblyU2DCSharp_Game_GameStateOnline3171627576MethodDeclarations.h"
 #include "AssemblyU2DCSharp_Game_GameUIButton467804254.h"
 #include "AssemblyU2DCSharp_Game_GameUIButton467804254MethodDeclarations.h"
-#include "AssemblyU2DCSharp_Game_NetworkPlayer4086688245.h"
-#include "AssemblyU2DCSharp_Game_NetworkPlayer4086688245MethodDeclarations.h"
 #include "AssemblyU2DCSharp_Game_OrbitPredictioner1410782764.h"
 #include "AssemblyU2DCSharp_Game_OrbitPredictioner1410782764MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_LineRenderer305781060MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_LineRenderer305781060.h"
+#include "UnityEngine_UnityEngine_LineRenderer305781060MethodDeclarations.h"
+#include "AssemblyU2DCSharp_Game_PhotonPanda3542014468.h"
+#include "AssemblyU2DCSharp_Game_PhotonPanda3542014468MethodDeclarations.h"
+#include "AssemblyU2DCSharp_Game_PhotonPlayer1433979395.h"
+#include "AssemblyU2DCSharp_Game_PhotonPlayer1433979395MethodDeclarations.h"
 #include "AssemblyU2DCSharp_Game_PlayerCameraController2657252648.h"
 #include "AssemblyU2DCSharp_Game_PlayerCameraController2657252648MethodDeclarations.h"
 #include "AssemblyU2DCSharp_Game_PlayerCollider3332416891.h"
@@ -718,11 +716,9 @@ struct IEnumerable_1_t3709260776;
 #include "AssemblyU2DCSharp_Prefabs_GameObj1469031301MethodDeclarations.h"
 #include "AssemblyU2DCSharp_Game_PlayerControllerOnline2665889174.h"
 #include "AssemblyU2DCSharp_Game_PlayerControllerOnline2665889174MethodDeclarations.h"
+#include "AssemblyU2DCSharp_PhotonTargets3716398278.h"
 #include "AssemblyU2DCSharp_Game_RivalController3057565708.h"
 #include "AssemblyU2DCSharp_Game_RivalController3057565708MethodDeclarations.h"
-#include "System_Core_System_Linq_Enumerable4285654829MethodDeclarations.h"
-#include "System_Core_System_Linq_Enumerable4285654829.h"
-#include "AssemblyU2DCSharp_PhotonTargets3716398278.h"
 
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gshared (Component_t2126946602 * __this, const MethodInfo* method);
@@ -833,11 +829,14 @@ extern "C"  Il2CppObject * TweenSettingsExtensions_SetEase_TisIl2CppObject_m1121
 #define TweenSettingsExtensions_SetEase_TisIl2CppObject_m1121537884(__this /* static, unused */, p0, p1, method) ((  Il2CppObject * (*) (Il2CppObject * /* static, unused */, Il2CppObject *, int32_t, const MethodInfo*))TweenSettingsExtensions_SetEase_TisIl2CppObject_m1121537884_gshared)(__this /* static, unused */, p0, p1, method)
 // !!0 DG.Tweening.TweenSettingsExtensions::SetEase<DG.Tweening.Tweener>(!!0,DG.Tweening.Ease)
 #define TweenSettingsExtensions_SetEase_TisTweener_t1766303790_m358930734(__this /* static, unused */, p0, p1, method) ((  Tweener_t1766303790 * (*) (Il2CppObject * /* static, unused */, Tweener_t1766303790 *, int32_t, const MethodInfo*))TweenSettingsExtensions_SetEase_TisIl2CppObject_m1121537884_gshared)(__this /* static, unused */, p0, p1, method)
-// System.Int32 System.Linq.Enumerable::Count<System.Object>(System.Collections.Generic.IEnumerable`1<!!0>)
-extern "C"  int32_t Enumerable_Count_TisIl2CppObject_m1136236352_gshared (Il2CppObject * __this /* static, unused */, Il2CppObject* p0, const MethodInfo* method);
-#define Enumerable_Count_TisIl2CppObject_m1136236352(__this /* static, unused */, p0, method) ((  int32_t (*) (Il2CppObject * /* static, unused */, Il2CppObject*, const MethodInfo*))Enumerable_Count_TisIl2CppObject_m1136236352_gshared)(__this /* static, unused */, p0, method)
-// System.Int32 System.Linq.Enumerable::Count<PhotonPlayer>(System.Collections.Generic.IEnumerable`1<!!0>)
-#define Enumerable_Count_TisPhotonPlayer_t1400510109_m3133405235(__this /* static, unused */, p0, method) ((  int32_t (*) (Il2CppObject * /* static, unused */, Il2CppObject*, const MethodInfo*))Enumerable_Count_TisIl2CppObject_m1136236352_gshared)(__this /* static, unused */, p0, method)
+// !!0 UnityEngine.GameObject::GetComponent<Game.PlayerCameraController>()
+#define GameObject_GetComponent_TisPlayerCameraController_t2657252648_m953183747(__this, method) ((  PlayerCameraController_t2657252648 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::GetComponent<CannonPullSystem>()
+#define GameObject_GetComponent_TisCannonPullSystem_t3255870929_m1996461932(__this, method) ((  CannonPullSystem_t3255870929 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::GetComponent<Game.BoatDirectionSystem>()
+#define GameObject_GetComponent_TisBoatDirectionSystem_t992795764_m2728314475(__this, method) ((  BoatDirectionSystem_t992795764 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
+// !!0 UnityEngine.GameObject::GetComponent<Game.GameStateOnline>()
+#define GameObject_GetComponent_TisGameStateOnline_t3171627576_m3061233447(__this, method) ((  GameStateOnline_t3171627576 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3233378628_gshared)(__this, method)
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -23685,12 +23684,25 @@ extern "C"  void GameStateOnline__ctor_m718558821 (GameStateOnline_t3171627576 *
 	}
 }
 // System.Void Game.GameStateOnline::Awake()
+extern TypeInfo* PhotonNetwork_t2803193330_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral4017789123;
+extern const uint32_t GameStateOnline_Awake_m956164040_MetadataUsageId;
 extern "C"  void GameStateOnline_Awake_m956164040 (GameStateOnline_t3171627576 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (GameStateOnline_Awake_m956164040_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
 	{
 		__this->set_GameStart_3((bool)0);
 		__this->set_GameFinish_4((bool)0);
 		__this->set_textOrder_5(0);
+		Vector3_t3525329789  L_0 = Vector3_get_zero_m2017759730(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Quaternion_t1891715979  L_1 = Quaternion_get_identity_m1743882806(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		PhotonNetwork_Instantiate_m3216725381(NULL /*static, unused*/, _stringLiteral4017789123, L_0, L_1, 0, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -23716,6 +23728,12 @@ extern "C"  void GameStateOnline_Start_m3960663909 (GameStateOnline_t3171627576 
 		Transform_t284553113 * L_2 = GameObject_get_transform_m1278640159(L_1, /*hidden argument*/NULL);
 		NullCheck(L_0);
 		VirtActionInvoker1< Transform_t284553113 * >::Invoke(22 /* System.Void System.Collections.Generic.List`1<UnityEngine.Transform>::Add(!0) */, L_0, L_2);
+		List_1_t1081512082 * L_3 = __this->get_players_6();
+		GameObject_t4012695102 * L_4 = GameObject_FindGameObjectWithTag_m2635560165(NULL /*static, unused*/, _stringLiteral2393081601, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Transform_t284553113 * L_5 = GameObject_get_transform_m1278640159(L_4, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		VirtActionInvoker1< Transform_t284553113 * >::Invoke(22 /* System.Void System.Collections.Generic.List`1<UnityEngine.Transform>::Add(!0) */, L_3, L_5);
 		GameStateOnline_changeInitializePosition_m1869137288(__this, /*hidden argument*/NULL);
 		MonoBehaviour_Invoke_m2825545578(__this, _stringLiteral3754320551, (0.1f), /*hidden argument*/NULL);
 		MonoBehaviour_Invoke_m2825545578(__this, _stringLiteral3461040447, (0.4f), /*hidden argument*/NULL);
@@ -24346,114 +24364,6 @@ IL_00f6:
 		return;
 	}
 }
-// System.Void Game.NetworkPlayer::.ctor()
-extern "C"  void NetworkPlayer__ctor_m1446875208 (NetworkPlayer_t4086688245 * __this, const MethodInfo* method)
-{
-	{
-		Vector3_t3525329789  L_0 = Vector3_get_zero_m2017759730(NULL /*static, unused*/, /*hidden argument*/NULL);
-		__this->set_correctPlayerPos_3(L_0);
-		Quaternion_t1891715979  L_1 = Quaternion_get_identity_m1743882806(NULL /*static, unused*/, /*hidden argument*/NULL);
-		__this->set_correctPlayerRot_4(L_1);
-		MonoBehaviour__ctor_m1617345651(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void Game.NetworkPlayer::Update()
-extern "C"  void NetworkPlayer_Update_m3630320581 (NetworkPlayer_t4086688245 * __this, const MethodInfo* method)
-{
-	{
-		PhotonView_t1498838369 * L_0 = MonoBehaviour_get_photonView_m1543213783(__this, /*hidden argument*/NULL);
-		NullCheck(L_0);
-		bool L_1 = PhotonView_get_isMine_m1828472228(L_0, /*hidden argument*/NULL);
-		if (L_1)
-		{
-			goto IL_0068;
-		}
-	}
-	{
-		Transform_t284553113 * L_2 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		Transform_t284553113 * L_3 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_3);
-		Vector3_t3525329789  L_4 = Transform_get_position_m2211398607(L_3, /*hidden argument*/NULL);
-		Vector3_t3525329789  L_5 = __this->get_correctPlayerPos_3();
-		float L_6 = Time_get_deltaTime_m2741110510(NULL /*static, unused*/, /*hidden argument*/NULL);
-		Vector3_t3525329789  L_7 = Vector3_Lerp_m650470329(NULL /*static, unused*/, L_4, L_5, ((float)((float)L_6*(float)(5.0f))), /*hidden argument*/NULL);
-		NullCheck(L_2);
-		Transform_set_position_m3111394108(L_2, L_7, /*hidden argument*/NULL);
-		Transform_t284553113 * L_8 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		Transform_t284553113 * L_9 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_9);
-		Quaternion_t1891715979  L_10 = Transform_get_rotation_m11483428(L_9, /*hidden argument*/NULL);
-		Quaternion_t1891715979  L_11 = __this->get_correctPlayerRot_4();
-		float L_12 = Time_get_deltaTime_m2741110510(NULL /*static, unused*/, /*hidden argument*/NULL);
-		Quaternion_t1891715979  L_13 = Quaternion_Lerp_m1693481477(NULL /*static, unused*/, L_10, L_11, ((float)((float)L_12*(float)(5.0f))), /*hidden argument*/NULL);
-		NullCheck(L_8);
-		Transform_set_rotation_m1525803229(L_8, L_13, /*hidden argument*/NULL);
-	}
-
-IL_0068:
-	{
-		return;
-	}
-}
-// System.Void Game.NetworkPlayer::OnPhotonSerializeView(PhotonStream,PhotonMessageInfo)
-extern TypeInfo* Vector3_t3525329789_il2cpp_TypeInfo_var;
-extern TypeInfo* Quaternion_t1891715979_il2cpp_TypeInfo_var;
-extern const uint32_t NetworkPlayer_OnPhotonSerializeView_m3942151495_MetadataUsageId;
-extern "C"  void NetworkPlayer_OnPhotonSerializeView_m3942151495 (NetworkPlayer_t4086688245 * __this, PhotonStream_t1494272828 * ___stream, PhotonMessageInfo_t259585817 * ___info, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (NetworkPlayer_OnPhotonSerializeView_m3942151495_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		PhotonStream_t1494272828 * L_0 = ___stream;
-		NullCheck(L_0);
-		bool L_1 = PhotonStream_get_isWriting_m4099770962(L_0, /*hidden argument*/NULL);
-		if (!L_1)
-		{
-			goto IL_003c;
-		}
-	}
-	{
-		PhotonStream_t1494272828 * L_2 = ___stream;
-		Transform_t284553113 * L_3 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_3);
-		Vector3_t3525329789  L_4 = Transform_get_position_m2211398607(L_3, /*hidden argument*/NULL);
-		Vector3_t3525329789  L_5 = L_4;
-		Il2CppObject * L_6 = Box(Vector3_t3525329789_il2cpp_TypeInfo_var, &L_5);
-		NullCheck(L_2);
-		PhotonStream_SendNext_m3887129908(L_2, L_6, /*hidden argument*/NULL);
-		PhotonStream_t1494272828 * L_7 = ___stream;
-		Transform_t284553113 * L_8 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
-		NullCheck(L_8);
-		Quaternion_t1891715979  L_9 = Transform_get_rotation_m11483428(L_8, /*hidden argument*/NULL);
-		Quaternion_t1891715979  L_10 = L_9;
-		Il2CppObject * L_11 = Box(Quaternion_t1891715979_il2cpp_TypeInfo_var, &L_10);
-		NullCheck(L_7);
-		PhotonStream_SendNext_m3887129908(L_7, L_11, /*hidden argument*/NULL);
-		goto IL_005e;
-	}
-
-IL_003c:
-	{
-		PhotonStream_t1494272828 * L_12 = ___stream;
-		NullCheck(L_12);
-		Il2CppObject * L_13 = PhotonStream_ReceiveNext_m1218125854(L_12, /*hidden argument*/NULL);
-		__this->set_correctPlayerPos_3(((*(Vector3_t3525329789 *)((Vector3_t3525329789 *)UnBox (L_13, Vector3_t3525329789_il2cpp_TypeInfo_var)))));
-		PhotonStream_t1494272828 * L_14 = ___stream;
-		NullCheck(L_14);
-		Il2CppObject * L_15 = PhotonStream_ReceiveNext_m1218125854(L_14, /*hidden argument*/NULL);
-		__this->set_correctPlayerRot_4(((*(Quaternion_t1891715979 *)((Quaternion_t1891715979 *)UnBox (L_15, Quaternion_t1891715979_il2cpp_TypeInfo_var)))));
-	}
-
-IL_005e:
-	{
-		return;
-	}
-}
 // System.Void Game.OrbitPredictioner::.ctor()
 extern "C"  void OrbitPredictioner__ctor_m3452016625 (OrbitPredictioner_t1410782764 * __this, const MethodInfo* method)
 {
@@ -24504,20 +24414,44 @@ extern "C"  void OrbitPredictioner_Update_m1365195068 (OrbitPredictioner_t141078
 	{
 		PlayerStateManager_t4277940093 * L_0 = __this->get_state_6();
 		NullCheck(L_0);
-		float L_1 = PlayerStateManager_get_initialVelocityCannon_m3651262565(L_0, /*hidden argument*/NULL);
-		float L_2 = L_1;
-		Il2CppObject * L_3 = Box(Single_t958209021_il2cpp_TypeInfo_var, &L_2);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
-		Debug_Log_m1731103628(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		bool L_1 = PlayerStateManager_get_cannonMode_m4227638435(L_0, /*hidden argument*/NULL);
+		if (L_1)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		LineRenderer_t305781060 * L_2 = __this->get_lineRenderer_3();
+		NullCheck(L_2);
+		Renderer_set_enabled_m2514140131(L_2, (bool)0, /*hidden argument*/NULL);
+		goto IL_002d;
+	}
+
+IL_0021:
+	{
+		LineRenderer_t305781060 * L_3 = __this->get_lineRenderer_3();
+		NullCheck(L_3);
+		Renderer_set_enabled_m2514140131(L_3, (bool)1, /*hidden argument*/NULL);
+	}
+
+IL_002d:
+	{
 		PlayerStateManager_t4277940093 * L_4 = __this->get_state_6();
 		NullCheck(L_4);
 		float L_5 = PlayerStateManager_get_initialVelocityCannon_m3651262565(L_4, /*hidden argument*/NULL);
-		Rigidbody_t1972007546 * L_6 = __this->get_playerRb_4();
-		NullCheck(L_6);
-		Vector3_t3525329789  L_7 = Rigidbody_get_velocity_m2696244068(L_6, /*hidden argument*/NULL);
-		V_0 = L_7;
-		float L_8 = (&V_0)->get_z_3();
-		OrbitPredictioner_DrawLine_m3194012887(__this, ((float)((float)((float)((float)L_5+(float)L_8))/(float)(7.5f))), ((int32_t)10), /*hidden argument*/NULL);
+		float L_6 = L_5;
+		Il2CppObject * L_7 = Box(Single_t958209021_il2cpp_TypeInfo_var, &L_6);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
+		PlayerStateManager_t4277940093 * L_8 = __this->get_state_6();
+		NullCheck(L_8);
+		float L_9 = PlayerStateManager_get_initialVelocityCannon_m3651262565(L_8, /*hidden argument*/NULL);
+		Rigidbody_t1972007546 * L_10 = __this->get_playerRb_4();
+		NullCheck(L_10);
+		Vector3_t3525329789  L_11 = Rigidbody_get_velocity_m2696244068(L_10, /*hidden argument*/NULL);
+		V_0 = L_11;
+		float L_12 = (&V_0)->get_z_3();
+		OrbitPredictioner_DrawLine_m3194012887(__this, ((float)((float)((float)((float)L_9+(float)L_12))/(float)(7.5f))), ((int32_t)10), /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -24612,11 +24546,372 @@ IL_00ec:
 		return;
 	}
 }
+// System.Void Game.PhotonPanda::.ctor()
+extern "C"  void PhotonPanda__ctor_m447548953 (PhotonPanda_t3542014468 * __this, const MethodInfo* method)
+{
+	{
+		Vector3_t3525329789  L_0;
+		memset(&L_0, 0, sizeof(L_0));
+		Vector3__ctor_m2926210380(&L_0, (0.0f), (0.0f), (0.6f), /*hidden argument*/NULL);
+		__this->set_correctPlayerPos_3(L_0);
+		Quaternion_t1891715979  L_1 = Quaternion_get_identity_m1743882806(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_correctPlayerRot_4(L_1);
+		MonoBehaviour__ctor_m1617345651(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Game.PhotonPanda::Update()
+extern "C"  void PhotonPanda_Update_m2715977748 (PhotonPanda_t3542014468 * __this, const MethodInfo* method)
+{
+	{
+		PhotonView_t1498838369 * L_0 = MonoBehaviour_get_photonView_m1543213783(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		bool L_1 = PhotonView_get_isMine_m1828472228(L_0, /*hidden argument*/NULL);
+		if (L_1)
+		{
+			goto IL_005b;
+		}
+	}
+	{
+		Transform_t284553113 * L_2 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_3;
+		memset(&L_3, 0, sizeof(L_3));
+		Vector3__ctor_m2926210380(&L_3, (0.0f), (0.0f), (0.6f), /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Transform_set_localPosition_m3504330903(L_2, L_3, /*hidden argument*/NULL);
+		Transform_t284553113 * L_4 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		Transform_t284553113 * L_5 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Quaternion_t1891715979  L_6 = Transform_get_rotation_m11483428(L_5, /*hidden argument*/NULL);
+		Quaternion_t1891715979  L_7 = __this->get_correctPlayerRot_4();
+		float L_8 = Time_get_deltaTime_m2741110510(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Quaternion_t1891715979  L_9 = Quaternion_Lerp_m1693481477(NULL /*static, unused*/, L_6, L_7, ((float)((float)L_8*(float)(5.0f))), /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Transform_set_rotation_m1525803229(L_4, L_9, /*hidden argument*/NULL);
+	}
+
+IL_005b:
+	{
+		return;
+	}
+}
+// System.Void Game.PhotonPanda::OnPhotonSerializeView(PhotonStream,PhotonMessageInfo)
+extern TypeInfo* Vector3_t3525329789_il2cpp_TypeInfo_var;
+extern TypeInfo* Quaternion_t1891715979_il2cpp_TypeInfo_var;
+extern const uint32_t PhotonPanda_OnPhotonSerializeView_m3532549464_MetadataUsageId;
+extern "C"  void PhotonPanda_OnPhotonSerializeView_m3532549464 (PhotonPanda_t3542014468 * __this, PhotonStream_t1494272828 * ___stream, PhotonMessageInfo_t259585817 * ___info, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PhotonPanda_OnPhotonSerializeView_m3532549464_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		PhotonStream_t1494272828 * L_0 = ___stream;
+		NullCheck(L_0);
+		bool L_1 = PhotonStream_get_isWriting_m4099770962(L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		PhotonStream_t1494272828 * L_2 = ___stream;
+		Transform_t284553113 * L_3 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Vector3_t3525329789  L_4 = Transform_get_position_m2211398607(L_3, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_5 = L_4;
+		Il2CppObject * L_6 = Box(Vector3_t3525329789_il2cpp_TypeInfo_var, &L_5);
+		NullCheck(L_2);
+		PhotonStream_SendNext_m3887129908(L_2, L_6, /*hidden argument*/NULL);
+		PhotonStream_t1494272828 * L_7 = ___stream;
+		Transform_t284553113 * L_8 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		Quaternion_t1891715979  L_9 = Transform_get_rotation_m11483428(L_8, /*hidden argument*/NULL);
+		Quaternion_t1891715979  L_10 = L_9;
+		Il2CppObject * L_11 = Box(Quaternion_t1891715979_il2cpp_TypeInfo_var, &L_10);
+		NullCheck(L_7);
+		PhotonStream_SendNext_m3887129908(L_7, L_11, /*hidden argument*/NULL);
+		goto IL_005e;
+	}
+
+IL_003c:
+	{
+		PhotonStream_t1494272828 * L_12 = ___stream;
+		NullCheck(L_12);
+		Il2CppObject * L_13 = PhotonStream_ReceiveNext_m1218125854(L_12, /*hidden argument*/NULL);
+		__this->set_correctPlayerPos_3(((*(Vector3_t3525329789 *)((Vector3_t3525329789 *)UnBox (L_13, Vector3_t3525329789_il2cpp_TypeInfo_var)))));
+		PhotonStream_t1494272828 * L_14 = ___stream;
+		NullCheck(L_14);
+		Il2CppObject * L_15 = PhotonStream_ReceiveNext_m1218125854(L_14, /*hidden argument*/NULL);
+		__this->set_correctPlayerRot_4(((*(Quaternion_t1891715979 *)((Quaternion_t1891715979 *)UnBox (L_15, Quaternion_t1891715979_il2cpp_TypeInfo_var)))));
+	}
+
+IL_005e:
+	{
+		return;
+	}
+}
+// System.Void Game.PhotonPlayer::.ctor()
+extern "C"  void PhotonPlayer__ctor_m103990930 (PhotonPlayer_t1433979395 * __this, const MethodInfo* method)
+{
+	{
+		Vector3_t3525329789  L_0 = Vector3_get_zero_m2017759730(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_correctPlayerPos_3(L_0);
+		Quaternion_t1891715979  L_1 = Quaternion_get_identity_m1743882806(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_correctPlayerRot_4(L_1);
+		MonoBehaviour__ctor_m1617345651(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Game.PhotonPlayer::Start()
+extern const MethodInfo* GameObject_GetComponent_TisPlayerCameraController_t2657252648_m953183747_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisCannonPullSystem_t3255870929_m1996461932_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisBoatDirectionSystem_t992795764_m2728314475_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral78973290;
+extern const uint32_t PhotonPlayer_Start_m3346096018_MetadataUsageId;
+extern "C"  void PhotonPlayer_Start_m3346096018 (PhotonPlayer_t1433979395 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PhotonPlayer_Start_m3346096018_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		PhotonView_t1498838369 * L_0 = MonoBehaviour_get_photonView_m1543213783(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		int32_t L_1 = PhotonView_get_viewID_m364432417(L_0, /*hidden argument*/NULL);
+		__this->set_viewID_5(L_1);
+		int32_t L_2 = __this->get_viewID_5();
+		V_0 = L_2;
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)((int32_t)1001))))
+		{
+			goto IL_0049;
+		}
+	}
+	{
+		int32_t L_4 = V_0;
+		if ((((int32_t)L_4) == ((int32_t)((int32_t)1002))))
+		{
+			goto IL_0055;
+		}
+	}
+	{
+		int32_t L_5 = V_0;
+		if ((((int32_t)L_5) == ((int32_t)((int32_t)2001))))
+		{
+			goto IL_0049;
+		}
+	}
+	{
+		int32_t L_6 = V_0;
+		if ((((int32_t)L_6) == ((int32_t)((int32_t)2002))))
+		{
+			goto IL_0055;
+		}
+	}
+	{
+		goto IL_0061;
+	}
+
+IL_0049:
+	{
+		__this->set_viewID_5(1);
+		goto IL_0061;
+	}
+
+IL_0055:
+	{
+		__this->set_viewID_5(2);
+		goto IL_0061;
+	}
+
+IL_0061:
+	{
+		PhotonView_t1498838369 * L_7 = MonoBehaviour_get_photonView_m1543213783(__this, /*hidden argument*/NULL);
+		NullCheck(L_7);
+		bool L_8 = PhotonView_get_isMine_m1828472228(L_7, /*hidden argument*/NULL);
+		if (L_8)
+		{
+			goto IL_00bd;
+		}
+	}
+	{
+		int32_t L_9 = __this->get_viewID_5();
+		if ((!(((uint32_t)L_9) == ((uint32_t)1))))
+		{
+			goto IL_00bd;
+		}
+	}
+	{
+		Transform_t284553113 * L_10 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		Component_set_tag_m3240989163(L_10, _stringLiteral78973290, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_11 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		PlayerCameraController_t2657252648 * L_12 = GameObject_GetComponent_TisPlayerCameraController_t2657252648_m953183747(L_11, /*hidden argument*/GameObject_GetComponent_TisPlayerCameraController_t2657252648_m953183747_MethodInfo_var);
+		Object_Destroy_m176400816(NULL /*static, unused*/, L_12, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_13 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_13);
+		CannonPullSystem_t3255870929 * L_14 = GameObject_GetComponent_TisCannonPullSystem_t3255870929_m1996461932(L_13, /*hidden argument*/GameObject_GetComponent_TisCannonPullSystem_t3255870929_m1996461932_MethodInfo_var);
+		Object_Destroy_m176400816(NULL /*static, unused*/, L_14, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_15 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_15);
+		BoatDirectionSystem_t992795764 * L_16 = GameObject_GetComponent_TisBoatDirectionSystem_t992795764_m2728314475(L_15, /*hidden argument*/GameObject_GetComponent_TisBoatDirectionSystem_t992795764_m2728314475_MethodInfo_var);
+		Object_Destroy_m176400816(NULL /*static, unused*/, L_16, /*hidden argument*/NULL);
+	}
+
+IL_00bd:
+	{
+		int32_t L_17 = __this->get_viewID_5();
+		if ((!(((uint32_t)L_17) == ((uint32_t)2))))
+		{
+			goto IL_00c9;
+		}
+	}
+
+IL_00c9:
+	{
+		return;
+	}
+}
+// System.Void Game.PhotonPlayer::Update()
+extern "C"  void PhotonPlayer_Update_m655613627 (PhotonPlayer_t1433979395 * __this, const MethodInfo* method)
+{
+	{
+		PhotonView_t1498838369 * L_0 = MonoBehaviour_get_photonView_m1543213783(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		bool L_1 = PhotonView_get_isMine_m1828472228(L_0, /*hidden argument*/NULL);
+		if (L_1)
+		{
+			goto IL_005c;
+		}
+	}
+	{
+		Transform_t284553113 * L_2 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		Transform_t284553113 * L_3 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Vector3_t3525329789  L_4 = Transform_get_position_m2211398607(L_3, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_5 = __this->get_correctPlayerPos_3();
+		float L_6 = Time_get_deltaTime_m2741110510(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_7 = Vector3_Lerp_m650470329(NULL /*static, unused*/, L_4, L_5, L_6, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Transform_set_position_m3111394108(L_2, L_7, /*hidden argument*/NULL);
+		Transform_t284553113 * L_8 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		Transform_t284553113 * L_9 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		Quaternion_t1891715979  L_10 = Transform_get_rotation_m11483428(L_9, /*hidden argument*/NULL);
+		Quaternion_t1891715979  L_11 = __this->get_correctPlayerRot_4();
+		float L_12 = Time_get_deltaTime_m2741110510(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Quaternion_t1891715979  L_13 = Quaternion_Lerp_m1693481477(NULL /*static, unused*/, L_10, L_11, L_12, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		Transform_set_rotation_m1525803229(L_8, L_13, /*hidden argument*/NULL);
+	}
+
+IL_005c:
+	{
+		return;
+	}
+}
+// System.Void Game.PhotonPlayer::OnPhotonSerializeView(PhotonStream,PhotonMessageInfo)
+extern TypeInfo* Vector3_t3525329789_il2cpp_TypeInfo_var;
+extern TypeInfo* String_t_il2cpp_TypeInfo_var;
+extern TypeInfo* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern TypeInfo* Quaternion_t1891715979_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2157147855;
+extern const uint32_t PhotonPlayer_OnPhotonSerializeView_m2945333777_MetadataUsageId;
+extern "C"  void PhotonPlayer_OnPhotonSerializeView_m2945333777 (PhotonPlayer_t1433979395 * __this, PhotonStream_t1494272828 * ___stream, PhotonMessageInfo_t259585817 * ___info, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PhotonPlayer_OnPhotonSerializeView_m2945333777_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		PhotonStream_t1494272828 * L_0 = ___stream;
+		NullCheck(L_0);
+		bool L_1 = PhotonStream_get_isWriting_m4099770962(L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		int32_t L_2 = __this->get_viewID_5();
+		if ((!(((uint32_t)L_2) == ((uint32_t)2))))
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		Transform_t284553113 * L_3 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Vector3_t3525329789  L_4 = Transform_get_position_m2211398607(L_3, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_5 = L_4;
+		Il2CppObject * L_6 = Box(Vector3_t3525329789_il2cpp_TypeInfo_var, &L_5);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_7 = String_Concat_m389863537(NULL /*static, unused*/, _stringLiteral2157147855, L_6, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
+	}
+
+IL_0036:
+	{
+		PhotonStream_t1494272828 * L_8 = ___stream;
+		Transform_t284553113 * L_9 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		Vector3_t3525329789  L_10 = Transform_get_position_m2211398607(L_9, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_11 = L_10;
+		Il2CppObject * L_12 = Box(Vector3_t3525329789_il2cpp_TypeInfo_var, &L_11);
+		NullCheck(L_8);
+		PhotonStream_SendNext_m3887129908(L_8, L_12, /*hidden argument*/NULL);
+		PhotonStream_t1494272828 * L_13 = ___stream;
+		Transform_t284553113 * L_14 = Component_get_transform_m4257140443(__this, /*hidden argument*/NULL);
+		NullCheck(L_14);
+		Quaternion_t1891715979  L_15 = Transform_get_rotation_m11483428(L_14, /*hidden argument*/NULL);
+		Quaternion_t1891715979  L_16 = L_15;
+		Il2CppObject * L_17 = Box(Quaternion_t1891715979_il2cpp_TypeInfo_var, &L_16);
+		NullCheck(L_13);
+		PhotonStream_SendNext_m3887129908(L_13, L_17, /*hidden argument*/NULL);
+		goto IL_0089;
+	}
+
+IL_0067:
+	{
+		PhotonStream_t1494272828 * L_18 = ___stream;
+		NullCheck(L_18);
+		Il2CppObject * L_19 = PhotonStream_ReceiveNext_m1218125854(L_18, /*hidden argument*/NULL);
+		__this->set_correctPlayerPos_3(((*(Vector3_t3525329789 *)((Vector3_t3525329789 *)UnBox (L_19, Vector3_t3525329789_il2cpp_TypeInfo_var)))));
+		PhotonStream_t1494272828 * L_20 = ___stream;
+		NullCheck(L_20);
+		Il2CppObject * L_21 = PhotonStream_ReceiveNext_m1218125854(L_20, /*hidden argument*/NULL);
+		__this->set_correctPlayerRot_4(((*(Quaternion_t1891715979 *)((Quaternion_t1891715979 *)UnBox (L_21, Quaternion_t1891715979_il2cpp_TypeInfo_var)))));
+	}
+
+IL_0089:
+	{
+		return;
+	}
+}
 // System.Void Game.PlayerCameraController::.ctor()
 extern "C"  void PlayerCameraController__ctor_m4242421261 (PlayerCameraController_t2657252648 * __this, const MethodInfo* method)
 {
 	{
 		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void Game.PlayerCameraController::Start()
+extern "C"  void PlayerCameraController_Start_m3189559053 (PlayerCameraController_t2657252648 * __this, const MethodInfo* method)
+{
+	{
+		Camera_t3533968274 * L_0 = Camera_get_main_m671815697(NULL /*static, unused*/, /*hidden argument*/NULL);
+		__this->set_mainCamera_2(L_0);
 		return;
 	}
 }
@@ -25129,6 +25424,10 @@ extern "C"  void PlayerControllerOnline__ctor_m933890399 (PlayerControllerOnline
 }
 // System.Void Game.PlayerControllerOnline::Start()
 extern const MethodInfo* Component_GetComponent_TisRigidbody_t1972007546_m2174365699_MethodInfo_var;
+extern const MethodInfo* GameObject_GetComponent_TisGameStateOnline_t3171627576_m3061233447_MethodInfo_var;
+extern const MethodInfo* Component_GetComponent_TisPhotonView_t1498838369_m3611772932_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2994032543;
+extern Il2CppCodeGenString* _stringLiteral2739656152;
 extern const uint32_t PlayerControllerOnline_Start_m4175995487_MetadataUsageId;
 extern "C"  void PlayerControllerOnline_Start_m4175995487 (PlayerControllerOnline_t2665889174 * __this, const MethodInfo* method)
 {
@@ -25142,14 +25441,26 @@ extern "C"  void PlayerControllerOnline_Start_m4175995487 (PlayerControllerOnlin
 		PlayerStateManager_t4277940093 * L_0 = PlayerStateManager_get_Instance_m967648580(NULL /*static, unused*/, /*hidden argument*/NULL);
 		__this->set_state_7(L_0);
 		Rigidbody_t1972007546 * L_1 = Component_GetComponent_TisRigidbody_t1972007546_m2174365699(__this, /*hidden argument*/Component_GetComponent_TisRigidbody_t1972007546_m2174365699_MethodInfo_var);
-		__this->set_playerRb_8(L_1);
+		__this->set_playerRb_9(L_1);
 		GameObject_t4012695102 * L_2 = GameObj_get_CannonBall_m3262182350(NULL /*static, unused*/, /*hidden argument*/NULL);
-		__this->set_cannonBall_9(L_2);
+		__this->set_cannonBall_10(L_2);
+		GameObject_t4012695102 * L_3 = GameObject_FindGameObjectWithTag_m2635560165(NULL /*static, unused*/, _stringLiteral2994032543, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		GameStateOnline_t3171627576 * L_4 = GameObject_GetComponent_TisGameStateOnline_t3171627576_m3061233447(L_3, /*hidden argument*/GameObject_GetComponent_TisGameStateOnline_t3171627576_m3061233447_MethodInfo_var);
+		__this->set_gameState_6(L_4);
+		PhotonView_t1498838369 * L_5 = Component_GetComponent_TisPhotonView_t1498838369_m3611772932(__this, /*hidden argument*/Component_GetComponent_TisPhotonView_t1498838369_m3611772932_MethodInfo_var);
+		__this->set_photonMethod_8(L_5);
+		String_t* L_6 = PlayerPrefs_GetString_m3230559948(NULL /*static, unused*/, _stringLiteral2739656152, (String_t*)NULL, /*hidden argument*/NULL);
+		__this->set_playerType_11(L_6);
 		return;
 	}
 }
 // System.Void Game.PlayerControllerOnline::Update()
 extern TypeInfo* Input_t1593691127_il2cpp_TypeInfo_var;
+extern TypeInfo* ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var;
+extern TypeInfo* Single_t958209021_il2cpp_TypeInfo_var;
+extern TypeInfo* String_t_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1939831959;
 extern const uint32_t PlayerControllerOnline_Update_m612693390_MetadataUsageId;
 extern "C"  void PlayerControllerOnline_Update_m612693390 (PlayerControllerOnline_t2665889174 * __this, const MethodInfo* method)
 {
@@ -25160,7 +25471,7 @@ extern "C"  void PlayerControllerOnline_Update_m612693390 (PlayerControllerOnlin
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		Rigidbody_t1972007546 * L_0 = __this->get_playerRb_8();
+		Rigidbody_t1972007546 * L_0 = __this->get_playerRb_9();
 		Vector3_t3525329789  L_1 = Vector3_get_forward_m1039372701(NULL /*static, unused*/, /*hidden argument*/NULL);
 		Vector3_t3525329789  L_2 = Vector3_op_Multiply_m973638459(NULL /*static, unused*/, L_1, (2.0f), /*hidden argument*/NULL);
 		NullCheck(L_0);
@@ -25222,7 +25533,7 @@ IL_0061:
 		}
 	}
 	{
-		Rigidbody_t1972007546 * L_14 = __this->get_playerRb_8();
+		Rigidbody_t1972007546 * L_14 = __this->get_playerRb_9();
 		PlayerStateManager_t4277940093 * L_15 = __this->get_state_7();
 		NullCheck(L_15);
 		int32_t L_16 = PlayerStateManager_get_boostLevel_m881456158(L_15, /*hidden argument*/NULL);
@@ -25242,18 +25553,25 @@ IL_00b1:
 		}
 	}
 	{
-		Transform_t284553113 * L_19 = __this->get_center_4();
-		Rigidbody_t1972007546 * L_20 = __this->get_playerRb_8();
-		GameObject_t4012695102 * L_21 = __this->get_cannon_5();
-		NullCheck(L_21);
-		Transform_t284553113 * L_22 = GameObject_get_transform_m1278640159(L_21, /*hidden argument*/NULL);
+		PhotonView_t1498838369 * L_19 = __this->get_photonMethod_8();
+		ObjectU5BU5D_t11523773* L_20 = ((ObjectU5BU5D_t11523773*)SZArrayNew(ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var, (uint32_t)2));
+		String_t* L_21 = __this->get_playerType_11();
+		NullCheck(L_20);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_20, 0);
+		ArrayElementTypeCheck (L_20, L_21);
+		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_21);
+		ObjectU5BU5D_t11523773* L_22 = L_20;
+		PlayerStateManager_t4277940093 * L_23 = __this->get_state_7();
+		NullCheck(L_23);
+		float L_24 = PlayerStateManager_get_initialVelocityCannon_m3651262565(L_23, /*hidden argument*/NULL);
+		float L_25 = L_24;
+		Il2CppObject * L_26 = Box(Single_t958209021_il2cpp_TypeInfo_var, &L_25);
 		NullCheck(L_22);
-		Vector3_t3525329789  L_23 = Transform_get_position_m2211398607(L_22, /*hidden argument*/NULL);
-		GameObject_t4012695102 * L_24 = __this->get_cannonBall_9();
-		PlayerStateManager_t4277940093 * L_25 = __this->get_state_7();
-		NullCheck(L_25);
-		float L_26 = PlayerStateManager_get_initialVelocityCannon_m3651262565(L_25, /*hidden argument*/NULL);
-		CharacterOperationMaster_shotCannon_m249559881(__this, L_19, L_20, L_23, L_24, L_26, /*hidden argument*/NULL);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_22, 1);
+		ArrayElementTypeCheck (L_22, L_26);
+		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_26);
+		NullCheck(L_19);
+		PhotonView_RPC_m1971004631(L_19, _stringLiteral1939831959, 0, L_22, /*hidden argument*/NULL);
 	}
 
 IL_00f0:
@@ -25267,7 +25585,7 @@ IL_00f0:
 		}
 	}
 	{
-		Rigidbody_t1972007546 * L_29 = __this->get_playerRb_8();
+		Rigidbody_t1972007546 * L_29 = __this->get_playerRb_9();
 		CharacterOperationMaster_endGame_m3916473378(__this, L_29, /*hidden argument*/NULL);
 	}
 
@@ -25301,21 +25619,118 @@ IL_010c:
 		}
 	}
 	{
-		Transform_t284553113 * L_35 = __this->get_center_4();
-		Rigidbody_t1972007546 * L_36 = __this->get_playerRb_8();
-		GameObject_t4012695102 * L_37 = __this->get_cannon_5();
-		NullCheck(L_37);
-		Transform_t284553113 * L_38 = GameObject_get_transform_m1278640159(L_37, /*hidden argument*/NULL);
+		PhotonView_t1498838369 * L_35 = __this->get_photonMethod_8();
+		ObjectU5BU5D_t11523773* L_36 = ((ObjectU5BU5D_t11523773*)SZArrayNew(ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var, (uint32_t)2));
+		String_t* L_37 = __this->get_playerType_11();
+		NullCheck(L_36);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_36, 0);
+		ArrayElementTypeCheck (L_36, L_37);
+		(L_36)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_37);
+		ObjectU5BU5D_t11523773* L_38 = L_36;
+		PlayerStateManager_t4277940093 * L_39 = __this->get_state_7();
+		NullCheck(L_39);
+		float L_40 = PlayerStateManager_get_initialVelocityCannon_m3651262565(L_39, /*hidden argument*/NULL);
+		float L_41 = L_40;
+		Il2CppObject * L_42 = Box(Single_t958209021_il2cpp_TypeInfo_var, &L_41);
 		NullCheck(L_38);
-		Vector3_t3525329789  L_39 = Transform_get_position_m2211398607(L_38, /*hidden argument*/NULL);
-		GameObject_t4012695102 * L_40 = __this->get_cannonBall_9();
-		PlayerStateManager_t4277940093 * L_41 = __this->get_state_7();
-		NullCheck(L_41);
-		float L_42 = PlayerStateManager_get_initialVelocityCannon_m3651262565(L_41, /*hidden argument*/NULL);
-		CharacterOperationMaster_shotCannon_m249559881(__this, L_35, L_36, L_39, L_40, L_42, /*hidden argument*/NULL);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_38, 1);
+		ArrayElementTypeCheck (L_38, L_42);
+		(L_38)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_42);
+		NullCheck(L_35);
+		PhotonView_RPC_m1971004631(L_35, _stringLiteral1939831959, 0, L_38, /*hidden argument*/NULL);
 	}
 
 IL_0170:
+	{
+		String_t* L_43 = __this->get_shotPlayer_12();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_44 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		bool L_45 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_43, L_44, /*hidden argument*/NULL);
+		if (!L_45)
+		{
+			goto IL_018a;
+		}
+	}
+	{
+		goto IL_0252;
+	}
+
+IL_018a:
+	{
+		String_t* L_46 = __this->get_playerType_11();
+		String_t* L_47 = __this->get_shotPlayer_12();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_48 = String_op_Equality_m1260523650(NULL /*static, unused*/, L_46, L_47, /*hidden argument*/NULL);
+		if (!L_48)
+		{
+			goto IL_01f3;
+		}
+	}
+	{
+		PhotonView_t1498838369 * L_49 = __this->get_photonMethod_8();
+		NullCheck(L_49);
+		bool L_50 = PhotonView_get_isMine_m1828472228(L_49, /*hidden argument*/NULL);
+		if (!L_50)
+		{
+			goto IL_01f3;
+		}
+	}
+	{
+		Transform_t284553113 * L_51 = __this->get_center_4();
+		Rigidbody_t1972007546 * L_52 = __this->get_playerRb_9();
+		GameObject_t4012695102 * L_53 = __this->get_cannon_5();
+		NullCheck(L_53);
+		Transform_t284553113 * L_54 = GameObject_get_transform_m1278640159(L_53, /*hidden argument*/NULL);
+		NullCheck(L_54);
+		Vector3_t3525329789  L_55 = Transform_get_position_m2211398607(L_54, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_56 = __this->get_cannonBall_10();
+		PlayerStateManager_t4277940093 * L_57 = __this->get_state_7();
+		NullCheck(L_57);
+		float L_58 = PlayerStateManager_get_initialVelocityCannon_m3651262565(L_57, /*hidden argument*/NULL);
+		CharacterOperationMaster_shotCannon_m249559881(__this, L_51, L_52, L_55, L_56, L_58, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_59 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		__this->set_shotPlayer_12(L_59);
+		goto IL_0252;
+	}
+
+IL_01f3:
+	{
+		String_t* L_60 = __this->get_playerType_11();
+		String_t* L_61 = __this->get_shotPlayer_12();
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		bool L_62 = String_op_Inequality_m2125462205(NULL /*static, unused*/, L_60, L_61, /*hidden argument*/NULL);
+		if (!L_62)
+		{
+			goto IL_0252;
+		}
+	}
+	{
+		PhotonView_t1498838369 * L_63 = __this->get_photonMethod_8();
+		NullCheck(L_63);
+		bool L_64 = PhotonView_get_isMine_m1828472228(L_63, /*hidden argument*/NULL);
+		if (L_64)
+		{
+			goto IL_0252;
+		}
+	}
+	{
+		Transform_t284553113 * L_65 = __this->get_center_4();
+		Rigidbody_t1972007546 * L_66 = __this->get_playerRb_9();
+		GameObject_t4012695102 * L_67 = __this->get_cannon_5();
+		NullCheck(L_67);
+		Transform_t284553113 * L_68 = GameObject_get_transform_m1278640159(L_67, /*hidden argument*/NULL);
+		NullCheck(L_68);
+		Vector3_t3525329789  L_69 = Transform_get_position_m2211398607(L_68, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_70 = __this->get_cannonBall_10();
+		float L_71 = __this->get_O_Speed_13();
+		CharacterOperationMaster_shotCannon_m249559881(__this, L_65, L_66, L_69, L_70, L_71, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_72 = ((String_t_StaticFields*)String_t_il2cpp_TypeInfo_var->static_fields)->get_Empty_2();
+		__this->set_shotPlayer_12(L_72);
+	}
+
+IL_0252:
 	{
 		return;
 	}
@@ -25531,267 +25946,6 @@ IL_0160:
 
 IL_01e4:
 	{
-		return;
-	}
-}
-// System.Void GameLogic::.ctor()
-extern "C"  void GameLogic__ctor_m737121407 (GameLogic_t2987424364 * __this, const MethodInfo* method)
-{
-	{
-		MonoBehaviour__ctor_m1617345651(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void GameLogic::.cctor()
-extern "C"  void GameLogic__cctor_m893830926 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
-{
-	{
-		return;
-	}
-}
-// System.Void GameLogic::Start()
-extern TypeInfo* GameLogic_t2987424364_il2cpp_TypeInfo_var;
-extern const MethodInfo* Component_GetComponent_TisPhotonView_t1498838369_m3611772932_MethodInfo_var;
-extern const uint32_t GameLogic_Start_m3979226495_MetadataUsageId;
-extern "C"  void GameLogic_Start_m3979226495 (GameLogic_t2987424364 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (GameLogic_Start_m3979226495_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		PhotonView_t1498838369 * L_0 = Component_GetComponent_TisPhotonView_t1498838369_m3611772932(__this, /*hidden argument*/Component_GetComponent_TisPhotonView_t1498838369_m3611772932_MethodInfo_var);
-		IL2CPP_RUNTIME_CLASS_INIT(GameLogic_t2987424364_il2cpp_TypeInfo_var);
-		((GameLogic_t2987424364_StaticFields*)GameLogic_t2987424364_il2cpp_TypeInfo_var->static_fields)->set_ScenePhotonView_4(L_0);
-		return;
-	}
-}
-// System.Void GameLogic::OnJoinedRoom()
-extern TypeInfo* PhotonNetwork_t2803193330_il2cpp_TypeInfo_var;
-extern TypeInfo* GameLogic_t2987424364_il2cpp_TypeInfo_var;
-extern TypeInfo* Int32_t2847414787_il2cpp_TypeInfo_var;
-extern TypeInfo* String_t_il2cpp_TypeInfo_var;
-extern TypeInfo* Debug_t1588791936_il2cpp_TypeInfo_var;
-extern const MethodInfo* Enumerable_Count_TisPhotonPlayer_t1400510109_m3133405235_MethodInfo_var;
-extern Il2CppCodeGenString* _stringLiteral749991256;
-extern const uint32_t GameLogic_OnJoinedRoom_m3003056936_MetadataUsageId;
-extern "C"  void GameLogic_OnJoinedRoom_m3003056936 (GameLogic_t2987424364 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (GameLogic_OnJoinedRoom_m3003056936_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
-		PhotonPlayerU5BU5D_t3977425488* L_0 = PhotonNetwork_get_playerList_m1877894549(NULL /*static, unused*/, /*hidden argument*/NULL);
-		int32_t L_1 = Enumerable_Count_TisPhotonPlayer_t1400510109_m3133405235(NULL /*static, unused*/, (Il2CppObject*)(Il2CppObject*)L_0, /*hidden argument*/Enumerable_Count_TisPhotonPlayer_t1400510109_m3133405235_MethodInfo_var);
-		if ((!(((uint32_t)L_1) == ((uint32_t)1))))
-		{
-			goto IL_001f;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
-		PhotonPlayer_t1400510109 * L_2 = PhotonNetwork_get_player_m2629430517(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_2);
-		int32_t L_3 = PhotonPlayer_get_ID_m2258525368(L_2, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(GameLogic_t2987424364_il2cpp_TypeInfo_var);
-		((GameLogic_t2987424364_StaticFields*)GameLogic_t2987424364_il2cpp_TypeInfo_var->static_fields)->set_playerWhoIsIt_3(L_3);
-	}
-
-IL_001f:
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(GameLogic_t2987424364_il2cpp_TypeInfo_var);
-		int32_t L_4 = ((GameLogic_t2987424364_StaticFields*)GameLogic_t2987424364_il2cpp_TypeInfo_var->static_fields)->get_playerWhoIsIt_3();
-		int32_t L_5 = L_4;
-		Il2CppObject * L_6 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_5);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_7 = String_Concat_m389863537(NULL /*static, unused*/, _stringLiteral749991256, L_6, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
-		Debug_Log_m1731103628(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void GameLogic::OnPhotonPlayerConnected(PhotonPlayer)
-extern TypeInfo* String_t_il2cpp_TypeInfo_var;
-extern TypeInfo* Debug_t1588791936_il2cpp_TypeInfo_var;
-extern TypeInfo* PhotonNetwork_t2803193330_il2cpp_TypeInfo_var;
-extern TypeInfo* GameLogic_t2987424364_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1983168563;
-extern const uint32_t GameLogic_OnPhotonPlayerConnected_m2339583821_MetadataUsageId;
-extern "C"  void GameLogic_OnPhotonPlayerConnected_m2339583821 (GameLogic_t2987424364 * __this, PhotonPlayer_t1400510109 * ___player, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (GameLogic_OnPhotonPlayerConnected_m2339583821_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		PhotonPlayer_t1400510109 * L_0 = ___player;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_1 = String_Concat_m389863537(NULL /*static, unused*/, _stringLiteral1983168563, L_0, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
-		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
-		bool L_2 = PhotonNetwork_get_isMasterClient_m2816581815(NULL /*static, unused*/, /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_0024;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(GameLogic_t2987424364_il2cpp_TypeInfo_var);
-		int32_t L_3 = ((GameLogic_t2987424364_StaticFields*)GameLogic_t2987424364_il2cpp_TypeInfo_var->static_fields)->get_playerWhoIsIt_3();
-		GameLogic_TagPlayer_m2860916041(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
-	}
-
-IL_0024:
-	{
-		return;
-	}
-}
-// System.Void GameLogic::TagPlayer(System.Int32)
-extern TypeInfo* Int32_t2847414787_il2cpp_TypeInfo_var;
-extern TypeInfo* String_t_il2cpp_TypeInfo_var;
-extern TypeInfo* Debug_t1588791936_il2cpp_TypeInfo_var;
-extern TypeInfo* GameLogic_t2987424364_il2cpp_TypeInfo_var;
-extern TypeInfo* ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral2252668769;
-extern Il2CppCodeGenString* _stringLiteral376474509;
-extern const uint32_t GameLogic_TagPlayer_m2860916041_MetadataUsageId;
-extern "C"  void GameLogic_TagPlayer_m2860916041 (Il2CppObject * __this /* static, unused */, int32_t ___playerID, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (GameLogic_TagPlayer_m2860916041_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		int32_t L_0 = ___playerID;
-		int32_t L_1 = L_0;
-		Il2CppObject * L_2 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_1);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_3 = String_Concat_m389863537(NULL /*static, unused*/, _stringLiteral2252668769, L_2, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
-		Debug_Log_m1731103628(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(GameLogic_t2987424364_il2cpp_TypeInfo_var);
-		PhotonView_t1498838369 * L_4 = ((GameLogic_t2987424364_StaticFields*)GameLogic_t2987424364_il2cpp_TypeInfo_var->static_fields)->get_ScenePhotonView_4();
-		ObjectU5BU5D_t11523773* L_5 = ((ObjectU5BU5D_t11523773*)SZArrayNew(ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var, (uint32_t)1));
-		int32_t L_6 = ___playerID;
-		int32_t L_7 = L_6;
-		Il2CppObject * L_8 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_7);
-		NullCheck(L_5);
-		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, 0);
-		ArrayElementTypeCheck (L_5, L_8);
-		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_8);
-		NullCheck(L_4);
-		PhotonView_RPC_m1971004631(L_4, _stringLiteral376474509, 0, L_5, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void GameLogic::TaggedPlayer(System.Int32)
-extern TypeInfo* GameLogic_t2987424364_il2cpp_TypeInfo_var;
-extern TypeInfo* Int32_t2847414787_il2cpp_TypeInfo_var;
-extern TypeInfo* String_t_il2cpp_TypeInfo_var;
-extern TypeInfo* Debug_t1588791936_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1014752115;
-extern const uint32_t GameLogic_TaggedPlayer_m264610659_MetadataUsageId;
-extern "C"  void GameLogic_TaggedPlayer_m264610659 (GameLogic_t2987424364 * __this, int32_t ___playerID, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (GameLogic_TaggedPlayer_m264610659_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		int32_t L_0 = ___playerID;
-		IL2CPP_RUNTIME_CLASS_INIT(GameLogic_t2987424364_il2cpp_TypeInfo_var);
-		((GameLogic_t2987424364_StaticFields*)GameLogic_t2987424364_il2cpp_TypeInfo_var->static_fields)->set_playerWhoIsIt_3(L_0);
-		int32_t L_1 = ___playerID;
-		int32_t L_2 = L_1;
-		Il2CppObject * L_3 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_2);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_4 = String_Concat_m389863537(NULL /*static, unused*/, _stringLiteral1014752115, L_3, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
-		Debug_Log_m1731103628(NULL /*static, unused*/, L_4, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void GameLogic::OnPhotonPlayerDisconnected(PhotonPlayer)
-extern TypeInfo* String_t_il2cpp_TypeInfo_var;
-extern TypeInfo* Debug_t1588791936_il2cpp_TypeInfo_var;
-extern TypeInfo* PhotonNetwork_t2803193330_il2cpp_TypeInfo_var;
-extern TypeInfo* GameLogic_t2987424364_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral1279268829;
-extern const uint32_t GameLogic_OnPhotonPlayerDisconnected_m1590107903_MetadataUsageId;
-extern "C"  void GameLogic_OnPhotonPlayerDisconnected_m1590107903 (GameLogic_t2987424364 * __this, PhotonPlayer_t1400510109 * ___player, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (GameLogic_OnPhotonPlayerDisconnected_m1590107903_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		PhotonPlayer_t1400510109 * L_0 = ___player;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_1 = String_Concat_m389863537(NULL /*static, unused*/, _stringLiteral1279268829, L_0, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
-		Debug_Log_m1731103628(NULL /*static, unused*/, L_1, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
-		bool L_2 = PhotonNetwork_get_isMasterClient_m2816581815(NULL /*static, unused*/, /*hidden argument*/NULL);
-		if (!L_2)
-		{
-			goto IL_0039;
-		}
-	}
-	{
-		PhotonPlayer_t1400510109 * L_3 = ___player;
-		NullCheck(L_3);
-		int32_t L_4 = PhotonPlayer_get_ID_m2258525368(L_3, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(GameLogic_t2987424364_il2cpp_TypeInfo_var);
-		int32_t L_5 = ((GameLogic_t2987424364_StaticFields*)GameLogic_t2987424364_il2cpp_TypeInfo_var->static_fields)->get_playerWhoIsIt_3();
-		if ((!(((uint32_t)L_4) == ((uint32_t)L_5))))
-		{
-			goto IL_0039;
-		}
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
-		PhotonPlayer_t1400510109 * L_6 = PhotonNetwork_get_player_m2629430517(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_6);
-		int32_t L_7 = PhotonPlayer_get_ID_m2258525368(L_6, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(GameLogic_t2987424364_il2cpp_TypeInfo_var);
-		GameLogic_TagPlayer_m2860916041(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
-	}
-
-IL_0039:
-	{
-		return;
-	}
-}
-// System.Void GameLogic::OnMasterClientSwitched()
-extern TypeInfo* Debug_t1588791936_il2cpp_TypeInfo_var;
-extern Il2CppCodeGenString* _stringLiteral717066079;
-extern const uint32_t GameLogic_OnMasterClientSwitched_m1949461348_MetadataUsageId;
-extern "C"  void GameLogic_OnMasterClientSwitched_m1949461348 (GameLogic_t2987424364 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (GameLogic_OnMasterClientSwitched_m1949461348_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
-		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral717066079, /*hidden argument*/NULL);
 		return;
 	}
 }

@@ -1497,8 +1497,10 @@
 #include "AssemblyU2DCSharp_PlayerStateManager4277940093.h"
 #include "AssemblyU2DCSharp_Game_RivalController3057565708.h"
 #include "AssemblyU2DCSharp_UIController2684559696.h"
-#include "AssemblyU2DCSharp_Game_NetworkPlayer4086688245.h"
 #include "AssemblyU2DCSharp_PUNController292333413.h"
+#include "AssemblyU2DCSharp_Game_PhotonPanda3542014468.h"
+#include "AssemblyU2DCSharp_Game_PhotonPlayer1433979395.h"
+#include "AssemblyU2DCSharp_Game_RPCMethod1471448684.h"
 #include "AssemblyU2DCSharp_Game_BoatDirectionSystem992795764.h"
 #include "AssemblyU2DCSharp_CannonPullSystem3255870929.h"
 #include "AssemblyU2DCSharp_Game_OrbitPredictioner1410782764.h"
@@ -2027,7 +2029,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9592] = 
+extern const int32_t g_FieldOffsetTable[9601] = 
 {
 	0,
 	0,
@@ -11567,8 +11569,12 @@ extern const int32_t g_FieldOffsetTable[9592] =
 	PlayerControllerOnline_t2665889174::get_offset_of_cannon_5(),
 	PlayerControllerOnline_t2665889174::get_offset_of_gameState_6(),
 	PlayerControllerOnline_t2665889174::get_offset_of_state_7(),
-	PlayerControllerOnline_t2665889174::get_offset_of_playerRb_8(),
-	PlayerControllerOnline_t2665889174::get_offset_of_cannonBall_9(),
+	PlayerControllerOnline_t2665889174::get_offset_of_photonMethod_8(),
+	PlayerControllerOnline_t2665889174::get_offset_of_playerRb_9(),
+	PlayerControllerOnline_t2665889174::get_offset_of_cannonBall_10(),
+	PlayerControllerOnline_t2665889174::get_offset_of_playerType_11(),
+	PlayerControllerOnline_t2665889174::get_offset_of_shotPlayer_12(),
+	PlayerControllerOnline_t2665889174::get_offset_of_O_Speed_13(),
 	PlayerStateManager_t4277940093_StaticFields::get_offset_of__singleInstance_2(),
 	PlayerStateManager_t4277940093::get_offset_of_U3CownHpU3Ek__BackingField_3(),
 	PlayerStateManager_t4277940093::get_offset_of_U3CownAtkU3Ek__BackingField_4(),
@@ -11591,9 +11597,14 @@ extern const int32_t g_FieldOffsetTable[9592] =
 	UIController_t2684559696::get_offset_of_state_3(),
 	UIController_t2684559696::get_offset_of_boostTimer_4(),
 	UIController_t2684559696::get_offset_of_meterCount_5(),
-	NetworkPlayer_t4086688245::get_offset_of_correctPlayerPos_3(),
-	NetworkPlayer_t4086688245::get_offset_of_correctPlayerRot_4(),
 	PUNController_t292333413::get_offset_of_isWaiting_3(),
+	PUNController_t292333413::get_offset_of_online_4(),
+	PhotonPanda_t3542014468::get_offset_of_correctPlayerPos_3(),
+	PhotonPanda_t3542014468::get_offset_of_correctPlayerRot_4(),
+	PhotonPlayer_t1433979395::get_offset_of_correctPlayerPos_3(),
+	PhotonPlayer_t1433979395::get_offset_of_correctPlayerRot_4(),
+	PhotonPlayer_t1433979395::get_offset_of_viewID_5(),
+	RPCMethod_t1471448684::get_offset_of_player_3(),
 	BoatDirectionSystem_t992795764::get_offset_of_state_4(),
 	BoatDirectionSystem_t992795764::get_offset_of_touchPos_5(),
 	BoatDirectionSystem_t992795764::get_offset_of_detachPos_6(),
@@ -11625,7 +11636,7 @@ extern const int32_t g_FieldOffsetTable[9592] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2243] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2245] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -13861,8 +13872,10 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2243] =
 	sizeof (PlayerStateManager_t4277940093), -1, sizeof(PlayerStateManager_t4277940093_StaticFields), 0,
 	sizeof (RivalController_t3057565708), -1, 0, 0,
 	sizeof (UIController_t2684559696), -1, 0, 0,
-	sizeof (NetworkPlayer_t4086688245), -1, 0, 0,
 	sizeof (PUNController_t292333413), -1, 0, 0,
+	sizeof (PhotonPanda_t3542014468), -1, 0, 0,
+	sizeof (PhotonPlayer_t1433979395), -1, 0, 0,
+	sizeof (RPCMethod_t1471448684), -1, 0, 0,
 	sizeof (BoatDirectionSystem_t992795764), -1, 0, 0,
 	sizeof (CannonPullSystem_t3255870929), -1, 0, 0,
 	sizeof (OrbitPredictioner_t1410782764), -1, 0, 0,

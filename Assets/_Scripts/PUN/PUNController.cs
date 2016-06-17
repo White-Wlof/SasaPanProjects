@@ -8,11 +8,13 @@ using System.Linq;
 public class PUNController : Photon.MonoBehaviour
 {
     bool isWaiting;
+    [SerializeField] int online;
 
     void Start()
     {
         isWaiting = true;
         PhotonNetwork.ConnectUsingSettings("v1.0");
+        PhotonNetwork.sendRate = 30;
     }
 
     void OnJoinedLobby()
@@ -59,7 +61,7 @@ public class PUNController : Photon.MonoBehaviour
         if (room != null)
         {  
             // 取得した情報から人数を取得  
-            if (PhotonNetwork.room.playerCount == 2 && isWaiting)
+            if (PhotonNetwork.room.playerCount == online && isWaiting)
             {
                 isWaiting = false;
                 SceneManager.LoadScene("Game_OnlineMode", LoadSceneMode.Additive);

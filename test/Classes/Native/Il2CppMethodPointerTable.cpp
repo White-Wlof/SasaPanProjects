@@ -13209,14 +13209,19 @@ extern "C" void GameStateOnline_changeInitializePosition_m1869137288 ();
 extern "C" void GameUIButton__ctor_m3892668055 ();
 extern "C" void GameUIButton_Start_m2839805847 ();
 extern "C" void GameUIButton_pushButton_m1836476681 ();
-extern "C" void NetworkPlayer__ctor_m1446875208 ();
-extern "C" void NetworkPlayer_Update_m3630320581 ();
-extern "C" void NetworkPlayer_OnPhotonSerializeView_m3942151495 ();
 extern "C" void OrbitPredictioner__ctor_m3452016625 ();
 extern "C" void OrbitPredictioner_Start_m2399154417 ();
 extern "C" void OrbitPredictioner_Update_m1365195068 ();
 extern "C" void OrbitPredictioner_DrawLine_m3194012887 ();
+extern "C" void PhotonPanda__ctor_m447548953 ();
+extern "C" void PhotonPanda_Update_m2715977748 ();
+extern "C" void PhotonPanda_OnPhotonSerializeView_m3532549464 ();
+extern "C" void PhotonPlayer__ctor_m103990930 ();
+extern "C" void PhotonPlayer_Start_m3346096018 ();
+extern "C" void PhotonPlayer_Update_m655613627 ();
+extern "C" void PhotonPlayer_OnPhotonSerializeView_m2945333777 ();
 extern "C" void PlayerCameraController__ctor_m4242421261 ();
+extern "C" void PlayerCameraController_Start_m3189559053 ();
 extern "C" void PlayerCameraController_Update_m97935008 ();
 extern "C" void PlayerCollider__ctor_m3022094106 ();
 extern "C" void PlayerCollider_Start_m1969231898 ();
@@ -13231,6 +13236,9 @@ extern "C" void PlayerControllerOnline_Update_m612693390 ();
 extern "C" void RivalController__ctor_m2602637073 ();
 extern "C" void RivalController_Start_m1549774865 ();
 extern "C" void RivalController_Update_m804232732 ();
+extern "C" void RPCMethod__ctor_m788194225 ();
+extern "C" void RPCMethod_Start_m4030299313 ();
+extern "C" void RPCMethod_shotCannon_m666653565 ();
 extern "C" void GameLogic__ctor_m737121407 ();
 extern "C" void GameLogic__cctor_m893830926 ();
 extern "C" void GameLogic_Start_m3979226495 ();
@@ -14308,7 +14316,7 @@ extern "C" void WorkerMenu_OnPhotonRandomJoinFailed_m4114795819 ();
 extern "C" void WorkerMenu_OnCreatedRoom_m1217269952 ();
 extern "C" void WorkerMenu_OnDisconnectedFromPhoton_m2118066182 ();
 extern "C" void WorkerMenu_OnFailedToConnectToPhoton_m3646086862 ();
-extern const methodPointerType g_MethodPointers[14297] = 
+extern const methodPointerType g_MethodPointers[14305] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -27508,14 +27516,19 @@ extern const methodPointerType g_MethodPointers[14297] =
 	GameUIButton__ctor_m3892668055,
 	GameUIButton_Start_m2839805847,
 	GameUIButton_pushButton_m1836476681,
-	NetworkPlayer__ctor_m1446875208,
-	NetworkPlayer_Update_m3630320581,
-	NetworkPlayer_OnPhotonSerializeView_m3942151495,
 	OrbitPredictioner__ctor_m3452016625,
 	OrbitPredictioner_Start_m2399154417,
 	OrbitPredictioner_Update_m1365195068,
 	OrbitPredictioner_DrawLine_m3194012887,
+	PhotonPanda__ctor_m447548953,
+	PhotonPanda_Update_m2715977748,
+	PhotonPanda_OnPhotonSerializeView_m3532549464,
+	PhotonPlayer__ctor_m103990930,
+	PhotonPlayer_Start_m3346096018,
+	PhotonPlayer_Update_m655613627,
+	PhotonPlayer_OnPhotonSerializeView_m2945333777,
 	PlayerCameraController__ctor_m4242421261,
+	PlayerCameraController_Start_m3189559053,
 	PlayerCameraController_Update_m97935008,
 	PlayerCollider__ctor_m3022094106,
 	PlayerCollider_Start_m1969231898,
@@ -27530,6 +27543,9 @@ extern const methodPointerType g_MethodPointers[14297] =
 	RivalController__ctor_m2602637073,
 	RivalController_Start_m1549774865,
 	RivalController_Update_m804232732,
+	RPCMethod__ctor_m788194225,
+	RPCMethod_Start_m4030299313,
+	RPCMethod_shotCannon_m666653565,
 	GameLogic__ctor_m737121407,
 	GameLogic__cctor_m893830926,
 	GameLogic_Start_m3979226495,

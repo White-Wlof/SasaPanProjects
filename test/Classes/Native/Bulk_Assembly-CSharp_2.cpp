@@ -13,16 +13,22 @@
 #include <limits>
 #include <assert.h>
 
-// PickupItemSimple
-struct PickupItemSimple_t4157210209;
+// PickupDemoGui
+struct PickupDemoGui_t1433495068;
+// PickupItem
+struct PickupItem_t1028143055;
 // UnityEngine.Collider
 struct Collider_t955670625;
 // PhotonView
 struct PhotonView_t1498838369;
 // System.Object
 struct Il2CppObject;
+// PhotonStream
+struct PhotonStream_t1494272828;
 // PhotonMessageInfo
 struct PhotonMessageInfo_t259585817;
+// PickupItemSimple
+struct PickupItemSimple_t4157210209;
 // PickupItemSyncer
 struct PickupItemSyncer_t4172003639;
 // PhotonPlayer
@@ -33,8 +39,6 @@ struct IEnumerable_1_t4272664465;
 struct IEnumerable_1_t3709260776;
 // System.Single[]
 struct SingleU5BU5D_t1219431280;
-// PickupItem
-struct PickupItem_t1028143055;
 // PickupTriggerForward
 struct PickupTriggerForward_t2302048169;
 // PlayerDiamond
@@ -135,8 +139,6 @@ struct TextMesh_t583678247;
 struct ShowStatusWhenConnecting_t3278922977;
 // SmoothSyncMovement
 struct SmoothSyncMovement_t1075783000;
-// PhotonStream
-struct PhotonStream_t1494272828;
 // SupportLogger
 struct SupportLogger_t3911006751;
 // SupportLogging
@@ -183,56 +185,84 @@ struct WorkerMenu_t1608960541;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array2840145358.h"
-#include "AssemblyU2DCSharp_PickupItemSimple4157210209.h"
-#include "AssemblyU2DCSharp_PickupItemSimple4157210209MethodDeclarations.h"
+#include "AssemblyU2DCSharp_PickupDemoGui1433495068.h"
+#include "AssemblyU2DCSharp_PickupDemoGui1433495068MethodDeclarations.h"
 #include "mscorlib_System_Void2779279689.h"
 #include "AssemblyU2DCSharp_Photon_MonoBehaviour4025988718MethodDeclarations.h"
 #include "mscorlib_System_Single958209021.h"
-#include "UnityEngine_UnityEngine_Collider955670625.h"
-#include "UnityEngine_UnityEngine_Component2126946602MethodDeclarations.h"
+#include "AssemblyU2DCSharp_PhotonNetwork2803193330MethodDeclarations.h"
+#include "AssemblyU2DCSharp_ScoreExtensions470200358MethodDeclarations.h"
+#include "mscorlib_System_String968488902MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_GUILayout2490032242MethodDeclarations.h"
+#include "System_Core_System_Collections_Generic_HashSet_1_g3726831726MethodDeclarations.h"
+#include "System_Core_System_Collections_Generic_HashSet_1_E4205852312MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Object3878351788MethodDeclarations.h"
+#include "AssemblyU2DCSharp_PickupItem1028143055MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Random3963434288MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Vector33525329789MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_GameObject4012695102MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Transform284553113MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_g1507849619MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_K3831124899MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_K1274877560MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen2197469078MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumerat283252070MethodDeclarations.h"
+#include "AssemblyU2DCSharp_PhotonPlayer1400510109MethodDeclarations.h"
+#include "AssemblyU2DCSharp_TeamExtensions2434778737MethodDeclarations.h"
+#include "AssemblyU2DCSharp_PickupItem1028143055.h"
+#include "System_Core_System_Collections_Generic_HashSet_1_E4205852312.h"
+#include "UnityEngine_UnityEngine_GameObject4012695102.h"
+#include "UnityEngine_UnityEngine_Vector33525329789.h"
+#include "AssemblyU2DCSharp_PunTeams_Team2602621.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_K1274877560.h"
+#include "mscorlib_System_Collections_Generic_List_1_gen2197469078.h"
+#include "AssemblyU2DCSharp_PhotonPlayer1400510109.h"
+#include "mscorlib_System_Collections_Generic_List_1_Enumerat283252070.h"
+#include "mscorlib_System_Boolean211005341.h"
+#include "mscorlib_System_String968488902.h"
+#include "mscorlib_System_Int322847414787.h"
+#include "mscorlib_System_Object837106420.h"
+#include "UnityEngine_ArrayTypes.h"
+#include "UnityEngine_UnityEngine_GUILayoutOption3151226183.h"
+#include "System_Core_System_Collections_Generic_HashSet_1_g3726831726.h"
+#include "UnityEngine_UnityEngine_Object3878351788.h"
+#include "UnityEngine_UnityEngine_Transform284553113.h"
+#include "AssemblyU2DCSharp_PunTeams1679509581.h"
+#include "AssemblyU2DCSharp_PunTeams1679509581MethodDeclarations.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_g1507849619.h"
+#include "mscorlib_System_Collections_Generic_Dictionary_2_K3831124899.h"
+#include "mscorlib_System_Enum2778772662MethodDeclarations.h"
+#include "mscorlib_System_Enum2778772662.h"
+#include "mscorlib_ArrayTypes.h"
 #include "AssemblyU2DCSharp_PhotonView1498838369MethodDeclarations.h"
 #include "AssemblyU2DCSharp_PhotonView1498838369.h"
+#include "UnityEngine_UnityEngine_Collider955670625.h"
+#include "UnityEngine_UnityEngine_Component2126946602MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Component2126946602.h"
-#include "mscorlib_System_Boolean211005341.h"
-#include "UnityEngine_UnityEngine_Object3878351788.h"
-#include "mscorlib_System_String968488902.h"
-#include "mscorlib_ArrayTypes.h"
-#include "mscorlib_System_Object837106420.h"
-#include "AssemblyU2DCSharp_PhotonTargets3716398278.h"
+#include "AssemblyU2DCSharp_PhotonStream1494272828.h"
 #include "AssemblyU2DCSharp_PhotonMessageInfo259585817.h"
+#include "AssemblyU2DCSharp_PhotonStream1494272828MethodDeclarations.h"
+#include "AssemblyU2DCSharp_PhotonTargets3716398278.h"
 #include "AssemblyU2DCSharp_GameObjectExtensions3462973669MethodDeclarations.h"
-#include "mscorlib_System_String968488902MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Debug1588791936MethodDeclarations.h"
-#include "AssemblyU2DCSharp_PhotonNetwork2803193330MethodDeclarations.h"
 #include "AssemblyU2DCSharp_PhotonMessageInfo259585817MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_GameObject4012695102MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_MonoBehaviour3012272455MethodDeclarations.h"
 #include "mscorlib_System_Double534516614.h"
-#include "AssemblyU2DCSharp_PhotonPlayer1400510109.h"
-#include "UnityEngine_UnityEngine_GameObject4012695102.h"
+#include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+#include "UnityEngine_UnityEngine_MonoBehaviour3012272455MethodDeclarations.h"
+#include "AssemblyU2DCSharp_PickupItemSimple4157210209.h"
+#include "AssemblyU2DCSharp_PickupItemSimple4157210209MethodDeclarations.h"
 #include "AssemblyU2DCSharp_PickupItemSyncer4172003639.h"
 #include "AssemblyU2DCSharp_PickupItemSyncer4172003639MethodDeclarations.h"
-#include "AssemblyU2DCSharp_PhotonPlayer1400510109MethodDeclarations.h"
 #include "System_Core_System_Linq_Enumerable4285654829MethodDeclarations.h"
-#include "mscorlib_System_Int322847414787.h"
 #include "Assembly-CSharp_ArrayTypes.h"
 #include "System_Core_System_Linq_Enumerable4285654829.h"
-#include "System_Core_System_Collections_Generic_HashSet_1_g3726831726MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen1755167990MethodDeclarations.h"
-#include "AssemblyU2DCSharp_PickupItem1028143055MethodDeclarations.h"
-#include "AssemblyU2DCSharp_PickupItem1028143055.h"
 #include "mscorlib_System_Collections_Generic_List_1_gen1755167990.h"
-#include "System_Core_System_Collections_Generic_HashSet_1_g3726831726.h"
 #include "AssemblyU2DCSharp_PickupTriggerForward2302048169.h"
 #include "AssemblyU2DCSharp_PickupTriggerForward2302048169MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Transform284553113MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Transform284553113.h"
 #include "AssemblyU2DCSharp_PlayerDiamond812023571.h"
 #include "AssemblyU2DCSharp_PlayerDiamond812023571MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Renderer1092684080.h"
-#include "UnityEngine_UnityEngine_Vector33525329789.h"
-#include "UnityEngine_UnityEngine_Vector33525329789MethodDeclarations.h"
 #include "mscorlib_System_Single958209021MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Time1525492538MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Quaternion1891715979MethodDeclarations.h"
@@ -244,7 +274,6 @@ struct WorkerMenu_t1608960541;
 #include "AssemblyU2DCSharp_PlayerVariables1513449334MethodDeclarations.h"
 #include "mscorlib_System_Object837106420MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Color1588175760MethodDeclarations.h"
-#include "UnityEngine_ArrayTypes.h"
 #include "UnityEngine_UnityEngine_Color1588175760.h"
 #include "UnityEngine_UnityEngine_Material1886596500.h"
 #include "UnityEngine_UnityEngine_Material1886596500MethodDeclarations.h"
@@ -281,19 +310,10 @@ struct WorkerMenu_t1608960541;
 #include "AssemblyU2DCSharp_PunRPC2401742396.h"
 #include "AssemblyU2DCSharp_PunRPC2401742396MethodDeclarations.h"
 #include "mscorlib_System_Attribute498693649MethodDeclarations.h"
-#include "AssemblyU2DCSharp_PunTeams1679509581.h"
-#include "AssemblyU2DCSharp_PunTeams1679509581MethodDeclarations.h"
-#include "mscorlib_System_Collections_Generic_Dictionary_2_g1507849619MethodDeclarations.h"
 #include "mscorlib_System_Type2779229935MethodDeclarations.h"
-#include "mscorlib_System_Enum2778772662MethodDeclarations.h"
-#include "mscorlib_System_Collections_Generic_List_1_gen2197469078MethodDeclarations.h"
-#include "mscorlib_System_Collections_Generic_Dictionary_2_g1507849619.h"
 #include "mscorlib_System_Type2779229935.h"
 #include "mscorlib_System_RuntimeTypeHandle1864875887.h"
 #include "mscorlib_System_Array2840145358MethodDeclarations.h"
-#include "mscorlib_System_Collections_Generic_List_1_gen2197469078.h"
-#include "AssemblyU2DCSharp_PunTeams_Team2602621.h"
-#include "AssemblyU2DCSharp_TeamExtensions2434778737MethodDeclarations.h"
 #include "AssemblyU2DCSharp_PunTeams_Team2602621MethodDeclarations.h"
 #include "AssemblyU2DCSharp_PunTurnManager2757607879.h"
 #include "AssemblyU2DCSharp_PunTurnManager2757607879MethodDeclarations.h"
@@ -321,10 +341,7 @@ struct WorkerMenu_t1608960541;
 #include "AssemblyU2DCSharp_RandomMatchmaker662331106MethodDeclarations.h"
 #include "AssemblyU2DCSharp_myThirdPersonController1717065228.h"
 #include "AssemblyU2DCSharp_ThirdPersonController973398072.h"
-#include "UnityEngine_UnityEngine_GUILayout2490032242MethodDeclarations.h"
 #include "AssemblyU2DCSharp_PeerState4150202415.h"
-#include "mscorlib_System_Enum2778772662.h"
-#include "UnityEngine_UnityEngine_GUILayoutOption3151226183.h"
 #include "AssemblyU2DCSharp_GameLogic2987424364.h"
 #include "AssemblyU2DCSharp_GameLogic2987424364MethodDeclarations.h"
 #include "AssemblyU2DCSharp_Region2444038932.h"
@@ -368,14 +385,12 @@ struct WorkerMenu_t1608960541;
 #include "UnityEngine_UnityEngine_CanvasGroup1295922228.h"
 #include "mscorlib_System_NotImplementedException1091014741MethodDeclarations.h"
 #include "mscorlib_System_NotImplementedException1091014741.h"
-#include "AssemblyU2DCSharp_ScoreExtensions470200358MethodDeclarations.h"
 #include "AssemblyU2DCSharp_RpsCore_ResultType1421627671.h"
 #include "AssemblyU2DCSharp_RpsCore_U3CShowResultsBeginNextT1983439939MethodDeclarations.h"
 #include "AssemblyU2DCSharp_RpsCore_U3CShowResultsBeginNextT1983439939.h"
 #include "AssemblyU2DCSharp_RpsCore_U3CCycleRemoteHandCorouti246049543MethodDeclarations.h"
 #include "AssemblyU2DCSharp_RpsCore_U3CCycleRemoteHandCorouti246049543.h"
 #include "AssemblyU2DCSharp_DisconnectCause396256525.h"
-#include "UnityEngine_UnityEngine_Random3963434288MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_WaitForSeconds1291133240MethodDeclarations.h"
 #include "mscorlib_System_UInt32985925326.h"
 #include "UnityEngine_UnityEngine_WaitForSeconds1291133240.h"
@@ -437,8 +452,6 @@ struct WorkerMenu_t1608960541;
 #include "UnityEngine_UnityEngine_GUIStyle1006925219.h"
 #include "AssemblyU2DCSharp_SmoothSyncMovement1075783000.h"
 #include "AssemblyU2DCSharp_SmoothSyncMovement1075783000MethodDeclarations.h"
-#include "AssemblyU2DCSharp_PhotonStream1494272828.h"
-#include "AssemblyU2DCSharp_PhotonStream1494272828MethodDeclarations.h"
 #include "AssemblyU2DCSharp_SupportLogger3911006751.h"
 #include "AssemblyU2DCSharp_SupportLogger3911006751MethodDeclarations.h"
 #include "AssemblyU2DCSharp_SupportLogging982128816.h"
@@ -580,6 +593,1009 @@ extern "C"  Il2CppObject * TweenSettingsExtensions_SetLoops_TisIl2CppObject_m269
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void PickupDemoGui::.ctor()
+extern "C"  void PickupDemoGui__ctor_m461642447 (PickupDemoGui_t1433495068 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_DropOffset_6((0.5f));
+		MonoBehaviour__ctor_m1617345651(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void PickupDemoGui::OnGUI()
+extern TypeInfo* PhotonNetwork_t2803193330_il2cpp_TypeInfo_var;
+extern TypeInfo* Int32_t2847414787_il2cpp_TypeInfo_var;
+extern TypeInfo* String_t_il2cpp_TypeInfo_var;
+extern TypeInfo* GUILayoutOptionU5BU5D_t1890718142_il2cpp_TypeInfo_var;
+extern TypeInfo* PickupItem_t1028143055_il2cpp_TypeInfo_var;
+extern TypeInfo* GameObject_t4012695102_il2cpp_TypeInfo_var;
+extern TypeInfo* Enumerator_t4205852312_il2cpp_TypeInfo_var;
+extern TypeInfo* IDisposable_t1628921374_il2cpp_TypeInfo_var;
+extern TypeInfo* PunTeams_t1679509581_il2cpp_TypeInfo_var;
+extern TypeInfo* Team_t2602621_il2cpp_TypeInfo_var;
+extern TypeInfo* ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var;
+extern TypeInfo* Enumerator_t283252070_il2cpp_TypeInfo_var;
+extern TypeInfo* Enumerator_t1274877560_il2cpp_TypeInfo_var;
+extern const MethodInfo* HashSet_1_GetEnumerator_m260372327_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m1179300407_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m4137388345_MethodInfo_var;
+extern const MethodInfo* Dictionary_2_get_Keys_m133269896_MethodInfo_var;
+extern const MethodInfo* KeyCollection_GetEnumerator_m1882144640_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m1482887985_MethodInfo_var;
+extern const MethodInfo* List_1_GetEnumerator_m4146185877_MethodInfo_var;
+extern const MethodInfo* Enumerator_get_Current_m1313011969_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m1182457339_MethodInfo_var;
+extern const MethodInfo* Enumerator_MoveNext_m1827511679_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3120709195;
+extern Il2CppCodeGenString* _stringLiteral66305777;
+extern Il2CppCodeGenString* _stringLiteral1440488927;
+extern Il2CppCodeGenString* _stringLiteral2501120611;
+extern Il2CppCodeGenString* _stringLiteral1024;
+extern Il2CppCodeGenString* _stringLiteral3524009208;
+extern Il2CppCodeGenString* _stringLiteral3424558444;
+extern Il2CppCodeGenString* _stringLiteral3081627359;
+extern const uint32_t PickupDemoGui_OnGUI_m4252008393_MetadataUsageId;
+extern "C"  void PickupDemoGui_OnGUI_m4252008393 (PickupDemoGui_t1433495068 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PickupDemoGui_OnGUI_m4252008393_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	PickupItem_t1028143055 * V_0 = NULL;
+	Enumerator_t4205852312  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	GameObject_t4012695102 * V_2 = NULL;
+	Vector3_t3525329789  V_3;
+	memset(&V_3, 0, sizeof(V_3));
+	Vector3_t3525329789  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	uint8_t V_5 = 0;
+	Enumerator_t1274877560  V_6;
+	memset(&V_6, 0, sizeof(V_6));
+	List_1_t2197469078 * V_7 = NULL;
+	PhotonPlayer_t1400510109 * V_8 = NULL;
+	Enumerator_t283252070  V_9;
+	memset(&V_9, 0, sizeof(V_9));
+	Exception_t1967233988 * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t1967233988 * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		bool L_0 = PhotonNetwork_get_inRoom_m1914383872(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_000b;
+		}
+	}
+	{
+		return;
+	}
+
+IL_000b:
+	{
+		bool L_1 = __this->get_ShowScores_3();
+		if (!L_1)
+		{
+			goto IL_003a;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		PhotonPlayer_t1400510109 * L_2 = PhotonNetwork_get_player_m2629430517(NULL /*static, unused*/, /*hidden argument*/NULL);
+		int32_t L_3 = ScoreExtensions_GetScore_m428945840(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
+		int32_t L_4 = L_3;
+		Il2CppObject * L_5 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_4);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_6 = String_Concat_m389863537(NULL /*static, unused*/, _stringLiteral3120709195, L_5, /*hidden argument*/NULL);
+		GUILayout_Label_m925445731(NULL /*static, unused*/, L_6, ((GUILayoutOptionU5BU5D_t1890718142*)SZArrayNew(GUILayoutOptionU5BU5D_t1890718142_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+	}
+
+IL_003a:
+	{
+		bool L_7 = __this->get_ShowDropButton_4();
+		if (!L_7)
+		{
+			goto IL_0137;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PickupItem_t1028143055_il2cpp_TypeInfo_var);
+		HashSet_1_t3726831726 * L_8 = ((PickupItem_t1028143055_StaticFields*)PickupItem_t1028143055_il2cpp_TypeInfo_var->static_fields)->get_DisabledPickupItems_9();
+		NullCheck(L_8);
+		Enumerator_t4205852312  L_9 = HashSet_1_GetEnumerator_m260372327(L_8, /*hidden argument*/HashSet_1_GetEnumerator_m260372327_MethodInfo_var);
+		V_1 = L_9;
+	}
+
+IL_0050:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_011a;
+		}
+
+IL_0055:
+		{
+			PickupItem_t1028143055 * L_10 = Enumerator_get_Current_m1179300407((&V_1), /*hidden argument*/Enumerator_get_Current_m1179300407_MethodInfo_var);
+			V_0 = L_10;
+			PickupItem_t1028143055 * L_11 = V_0;
+			NullCheck(L_11);
+			bool L_12 = L_11->get_PickupIsMine_5();
+			if (!L_12)
+			{
+				goto IL_011a;
+			}
+		}
+
+IL_0068:
+		{
+			PickupItem_t1028143055 * L_13 = V_0;
+			NullCheck(L_13);
+			float L_14 = L_13->get_SecondsBeforeRespawn_3();
+			if ((!(((float)L_14) <= ((float)(0.0f)))))
+			{
+				goto IL_011a;
+			}
+		}
+
+IL_0078:
+		{
+			PickupItem_t1028143055 * L_15 = V_0;
+			NullCheck(L_15);
+			String_t* L_16 = Object_get_name_m3709440845(L_15, /*hidden argument*/NULL);
+			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+			String_t* L_17 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral66305777, L_16, /*hidden argument*/NULL);
+			bool L_18 = GUILayout_Button_m6468109(NULL /*static, unused*/, L_17, ((GUILayoutOptionU5BU5D_t1890718142*)SZArrayNew(GUILayoutOptionU5BU5D_t1890718142_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+			if (!L_18)
+			{
+				goto IL_009e;
+			}
+		}
+
+IL_0098:
+		{
+			PickupItem_t1028143055 * L_19 = V_0;
+			NullCheck(L_19);
+			PickupItem_Drop_m936983879(L_19, /*hidden argument*/NULL);
+		}
+
+IL_009e:
+		{
+			IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+			PhotonPlayer_t1400510109 * L_20 = PhotonNetwork_get_player_m2629430517(NULL /*static, unused*/, /*hidden argument*/NULL);
+			NullCheck(L_20);
+			Il2CppObject * L_21 = L_20->get_TagObject_3();
+			V_2 = ((GameObject_t4012695102 *)IsInstSealed(L_21, GameObject_t4012695102_il2cpp_TypeInfo_var));
+			GameObject_t4012695102 * L_22 = V_2;
+			bool L_23 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_22, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
+			if (!L_23)
+			{
+				goto IL_011a;
+			}
+		}
+
+IL_00ba:
+		{
+			PickupItem_t1028143055 * L_24 = V_0;
+			NullCheck(L_24);
+			String_t* L_25 = Object_get_name_m3709440845(L_24, /*hidden argument*/NULL);
+			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+			String_t* L_26 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral1440488927, L_25, /*hidden argument*/NULL);
+			bool L_27 = GUILayout_Button_m6468109(NULL /*static, unused*/, L_26, ((GUILayoutOptionU5BU5D_t1890718142*)SZArrayNew(GUILayoutOptionU5BU5D_t1890718142_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+			if (!L_27)
+			{
+				goto IL_011a;
+			}
+		}
+
+IL_00da:
+		{
+			Vector3_t3525329789  L_28 = Random_get_insideUnitSphere_m1884270890(NULL /*static, unused*/, /*hidden argument*/NULL);
+			V_3 = L_28;
+			(&V_3)->set_y_2((0.0f));
+			Vector3_t3525329789  L_29 = Vector3_get_normalized_m2650940353((&V_3), /*hidden argument*/NULL);
+			V_3 = L_29;
+			GameObject_t4012695102 * L_30 = V_2;
+			NullCheck(L_30);
+			Transform_t284553113 * L_31 = GameObject_get_transform_m1278640159(L_30, /*hidden argument*/NULL);
+			NullCheck(L_31);
+			Vector3_t3525329789  L_32 = Transform_get_position_m2211398607(L_31, /*hidden argument*/NULL);
+			float L_33 = __this->get_DropOffset_6();
+			Vector3_t3525329789  L_34 = V_3;
+			Vector3_t3525329789  L_35 = Vector3_op_Multiply_m3809076219(NULL /*static, unused*/, L_33, L_34, /*hidden argument*/NULL);
+			Vector3_t3525329789  L_36 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, L_32, L_35, /*hidden argument*/NULL);
+			V_4 = L_36;
+			PickupItem_t1028143055 * L_37 = V_0;
+			Vector3_t3525329789  L_38 = V_4;
+			NullCheck(L_37);
+			PickupItem_Drop_m3201648434(L_37, L_38, /*hidden argument*/NULL);
+		}
+
+IL_011a:
+		{
+			bool L_39 = Enumerator_MoveNext_m4137388345((&V_1), /*hidden argument*/Enumerator_MoveNext_m4137388345_MethodInfo_var);
+			if (L_39)
+			{
+				goto IL_0055;
+			}
+		}
+
+IL_0126:
+		{
+			IL2CPP_LEAVE(0x137, FINALLY_012b);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1967233988 *)e.ex;
+		goto FINALLY_012b;
+	}
+
+FINALLY_012b:
+	{ // begin finally (depth: 1)
+		Enumerator_t4205852312  L_40 = V_1;
+		Enumerator_t4205852312  L_41 = L_40;
+		Il2CppObject * L_42 = Box(Enumerator_t4205852312_il2cpp_TypeInfo_var, &L_41);
+		NullCheck((Il2CppObject *)L_42);
+		InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t1628921374_il2cpp_TypeInfo_var, (Il2CppObject *)L_42);
+		IL2CPP_END_FINALLY(299)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(299)
+	{
+		IL2CPP_JUMP_TBL(0x137, IL_0137)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1967233988 *)
+	}
+
+IL_0137:
+	{
+		bool L_43 = __this->get_ShowTeams_5();
+		if (!L_43)
+		{
+			goto IL_0262;
+		}
+	}
+	{
+		Dictionary_2_t1507849619 * L_44 = ((PunTeams_t1679509581_StaticFields*)PunTeams_t1679509581_il2cpp_TypeInfo_var->static_fields)->get_PlayersPerTeam_4();
+		NullCheck(L_44);
+		KeyCollection_t3831124899 * L_45 = Dictionary_2_get_Keys_m133269896(L_44, /*hidden argument*/Dictionary_2_get_Keys_m133269896_MethodInfo_var);
+		NullCheck(L_45);
+		Enumerator_t1274877560  L_46 = KeyCollection_GetEnumerator_m1882144640(L_45, /*hidden argument*/KeyCollection_GetEnumerator_m1882144640_MethodInfo_var);
+		V_6 = L_46;
+	}
+
+IL_0153:
+	try
+	{ // begin try (depth: 1)
+		{
+			goto IL_0204;
+		}
+
+IL_0158:
+		{
+			uint8_t L_47 = Enumerator_get_Current_m1482887985((&V_6), /*hidden argument*/Enumerator_get_Current_m1482887985_MethodInfo_var);
+			V_5 = L_47;
+			uint8_t L_48 = V_5;
+			uint8_t L_49 = L_48;
+			Il2CppObject * L_50 = Box(Team_t2602621_il2cpp_TypeInfo_var, &L_49);
+			NullCheck((Enum_t2778772662 *)L_50);
+			String_t* L_51 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Enum::ToString() */, (Enum_t2778772662 *)L_50);
+			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+			String_t* L_52 = String_Concat_m138640077(NULL /*static, unused*/, _stringLiteral2501120611, L_51, /*hidden argument*/NULL);
+			GUILayout_Label_m925445731(NULL /*static, unused*/, L_52, ((GUILayoutOptionU5BU5D_t1890718142*)SZArrayNew(GUILayoutOptionU5BU5D_t1890718142_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+			Dictionary_2_t1507849619 * L_53 = ((PunTeams_t1679509581_StaticFields*)PunTeams_t1679509581_il2cpp_TypeInfo_var->static_fields)->get_PlayersPerTeam_4();
+			uint8_t L_54 = V_5;
+			NullCheck(L_53);
+			List_1_t2197469078 * L_55 = VirtFuncInvoker1< List_1_t2197469078 *, uint8_t >::Invoke(26 /* !1 System.Collections.Generic.Dictionary`2<PunTeams/Team,System.Collections.Generic.List`1<PhotonPlayer>>::get_Item(!0) */, L_53, L_54);
+			V_7 = L_55;
+			List_1_t2197469078 * L_56 = V_7;
+			NullCheck(L_56);
+			Enumerator_t283252070  L_57 = List_1_GetEnumerator_m4146185877(L_56, /*hidden argument*/List_1_GetEnumerator_m4146185877_MethodInfo_var);
+			V_9 = L_57;
+		}
+
+IL_0199:
+		try
+		{ // begin try (depth: 2)
+			{
+				goto IL_01e6;
+			}
+
+IL_019e:
+			{
+				PhotonPlayer_t1400510109 * L_58 = Enumerator_get_Current_m1313011969((&V_9), /*hidden argument*/Enumerator_get_Current_m1313011969_MethodInfo_var);
+				V_8 = L_58;
+				ObjectU5BU5D_t11523773* L_59 = ((ObjectU5BU5D_t11523773*)SZArrayNew(ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var, (uint32_t)4));
+				NullCheck(L_59);
+				IL2CPP_ARRAY_BOUNDS_CHECK(L_59, 0);
+				ArrayElementTypeCheck (L_59, _stringLiteral1024);
+				(L_59)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)_stringLiteral1024);
+				ObjectU5BU5D_t11523773* L_60 = L_59;
+				PhotonPlayer_t1400510109 * L_61 = V_8;
+				NullCheck(L_61);
+				String_t* L_62 = PhotonPlayer_ToStringFull_m4203175908(L_61, /*hidden argument*/NULL);
+				NullCheck(L_60);
+				IL2CPP_ARRAY_BOUNDS_CHECK(L_60, 1);
+				ArrayElementTypeCheck (L_60, L_62);
+				(L_60)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_62);
+				ObjectU5BU5D_t11523773* L_63 = L_60;
+				NullCheck(L_63);
+				IL2CPP_ARRAY_BOUNDS_CHECK(L_63, 2);
+				ArrayElementTypeCheck (L_63, _stringLiteral3524009208);
+				(L_63)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)_stringLiteral3524009208);
+				ObjectU5BU5D_t11523773* L_64 = L_63;
+				PhotonPlayer_t1400510109 * L_65 = V_8;
+				int32_t L_66 = ScoreExtensions_GetScore_m428945840(NULL /*static, unused*/, L_65, /*hidden argument*/NULL);
+				int32_t L_67 = L_66;
+				Il2CppObject * L_68 = Box(Int32_t2847414787_il2cpp_TypeInfo_var, &L_67);
+				NullCheck(L_64);
+				IL2CPP_ARRAY_BOUNDS_CHECK(L_64, 3);
+				ArrayElementTypeCheck (L_64, L_68);
+				(L_64)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_68);
+				IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+				String_t* L_69 = String_Concat_m3016520001(NULL /*static, unused*/, L_64, /*hidden argument*/NULL);
+				GUILayout_Label_m925445731(NULL /*static, unused*/, L_69, ((GUILayoutOptionU5BU5D_t1890718142*)SZArrayNew(GUILayoutOptionU5BU5D_t1890718142_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+			}
+
+IL_01e6:
+			{
+				bool L_70 = Enumerator_MoveNext_m1182457339((&V_9), /*hidden argument*/Enumerator_MoveNext_m1182457339_MethodInfo_var);
+				if (L_70)
+				{
+					goto IL_019e;
+				}
+			}
+
+IL_01f2:
+			{
+				IL2CPP_LEAVE(0x204, FINALLY_01f7);
+			}
+		} // end try (depth: 2)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__last_unhandled_exception = (Exception_t1967233988 *)e.ex;
+			goto FINALLY_01f7;
+		}
+
+FINALLY_01f7:
+		{ // begin finally (depth: 2)
+			Enumerator_t283252070  L_71 = V_9;
+			Enumerator_t283252070  L_72 = L_71;
+			Il2CppObject * L_73 = Box(Enumerator_t283252070_il2cpp_TypeInfo_var, &L_72);
+			NullCheck((Il2CppObject *)L_73);
+			InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t1628921374_il2cpp_TypeInfo_var, (Il2CppObject *)L_73);
+			IL2CPP_END_FINALLY(503)
+		} // end finally (depth: 2)
+		IL2CPP_CLEANUP(503)
+		{
+			IL2CPP_JUMP_TBL(0x204, IL_0204)
+			IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1967233988 *)
+		}
+
+IL_0204:
+		{
+			bool L_74 = Enumerator_MoveNext_m1827511679((&V_6), /*hidden argument*/Enumerator_MoveNext_m1827511679_MethodInfo_var);
+			if (L_74)
+			{
+				goto IL_0158;
+			}
+		}
+
+IL_0210:
+		{
+			IL2CPP_LEAVE(0x222, FINALLY_0215);
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t1967233988 *)e.ex;
+		goto FINALLY_0215;
+	}
+
+FINALLY_0215:
+	{ // begin finally (depth: 1)
+		Enumerator_t1274877560  L_75 = V_6;
+		Enumerator_t1274877560  L_76 = L_75;
+		Il2CppObject * L_77 = Box(Enumerator_t1274877560_il2cpp_TypeInfo_var, &L_76);
+		NullCheck((Il2CppObject *)L_77);
+		InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t1628921374_il2cpp_TypeInfo_var, (Il2CppObject *)L_77);
+		IL2CPP_END_FINALLY(533)
+	} // end finally (depth: 1)
+	IL2CPP_CLEANUP(533)
+	{
+		IL2CPP_JUMP_TBL(0x222, IL_0222)
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t1967233988 *)
+	}
+
+IL_0222:
+	{
+		bool L_78 = GUILayout_Button_m6468109(NULL /*static, unused*/, _stringLiteral3424558444, ((GUILayoutOptionU5BU5D_t1890718142*)SZArrayNew(GUILayoutOptionU5BU5D_t1890718142_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		if (!L_78)
+		{
+			goto IL_0242;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		PhotonPlayer_t1400510109 * L_79 = PhotonNetwork_get_player_m2629430517(NULL /*static, unused*/, /*hidden argument*/NULL);
+		TeamExtensions_SetTeam_m1529815319(NULL /*static, unused*/, L_79, 1, /*hidden argument*/NULL);
+	}
+
+IL_0242:
+	{
+		bool L_80 = GUILayout_Button_m6468109(NULL /*static, unused*/, _stringLiteral3081627359, ((GUILayoutOptionU5BU5D_t1890718142*)SZArrayNew(GUILayoutOptionU5BU5D_t1890718142_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		if (!L_80)
+		{
+			goto IL_0262;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		PhotonPlayer_t1400510109 * L_81 = PhotonNetwork_get_player_m2629430517(NULL /*static, unused*/, /*hidden argument*/NULL);
+		TeamExtensions_SetTeam_m1529815319(NULL /*static, unused*/, L_81, 2, /*hidden argument*/NULL);
+	}
+
+IL_0262:
+	{
+		return;
+	}
+}
+// System.Void PickupItem::.ctor()
+extern "C"  void PickupItem__ctor_m506706348 (PickupItem_t1028143055 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_SecondsBeforeRespawn_3((2.0f));
+		MonoBehaviour__ctor_m1617345651(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void PickupItem::.cctor()
+extern TypeInfo* HashSet_1_t3726831726_il2cpp_TypeInfo_var;
+extern TypeInfo* PickupItem_t1028143055_il2cpp_TypeInfo_var;
+extern const MethodInfo* HashSet_1__ctor_m2935081234_MethodInfo_var;
+extern const uint32_t PickupItem__cctor_m2340898689_MetadataUsageId;
+extern "C"  void PickupItem__cctor_m2340898689 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PickupItem__cctor_m2340898689_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		HashSet_1_t3726831726 * L_0 = (HashSet_1_t3726831726 *)il2cpp_codegen_object_new(HashSet_1_t3726831726_il2cpp_TypeInfo_var);
+		HashSet_1__ctor_m2935081234(L_0, /*hidden argument*/HashSet_1__ctor_m2935081234_MethodInfo_var);
+		((PickupItem_t1028143055_StaticFields*)PickupItem_t1028143055_il2cpp_TypeInfo_var->static_fields)->set_DisabledPickupItems_9(L_0);
+		return;
+	}
+}
+// System.Int32 PickupItem::get_ViewID()
+extern "C"  int32_t PickupItem_get_ViewID_m2794527279 (PickupItem_t1028143055 * __this, const MethodInfo* method)
+{
+	{
+		PhotonView_t1498838369 * L_0 = MonoBehaviour_get_photonView_m1543213783(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		int32_t L_1 = PhotonView_get_viewID_m364432417(L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.Void PickupItem::OnTriggerEnter(UnityEngine.Collider)
+extern const MethodInfo* Component_GetComponent_TisPhotonView_t1498838369_m3611772932_MethodInfo_var;
+extern const uint32_t PickupItem_OnTriggerEnter_m877797708_MetadataUsageId;
+extern "C"  void PickupItem_OnTriggerEnter_m877797708 (PickupItem_t1028143055 * __this, Collider_t955670625 * ___other, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PickupItem_OnTriggerEnter_m877797708_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	PhotonView_t1498838369 * V_0 = NULL;
+	{
+		Collider_t955670625 * L_0 = ___other;
+		NullCheck(L_0);
+		PhotonView_t1498838369 * L_1 = Component_GetComponent_TisPhotonView_t1498838369_m3611772932(L_0, /*hidden argument*/Component_GetComponent_TisPhotonView_t1498838369_m3611772932_MethodInfo_var);
+		V_0 = L_1;
+		bool L_2 = __this->get_PickupOnTrigger_4();
+		if (!L_2)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		PhotonView_t1498838369 * L_3 = V_0;
+		bool L_4 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_3, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
+		if (!L_4)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		PhotonView_t1498838369 * L_5 = V_0;
+		NullCheck(L_5);
+		bool L_6 = PhotonView_get_isMine_m1828472228(L_5, /*hidden argument*/NULL);
+		if (!L_6)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		PickupItem_Pickup_m2488827860(__this, /*hidden argument*/NULL);
+	}
+
+IL_002f:
+	{
+		return;
+	}
+}
+// System.Void PickupItem::OnPhotonSerializeView(PhotonStream,PhotonMessageInfo)
+extern TypeInfo* Vector3_t3525329789_il2cpp_TypeInfo_var;
+extern const uint32_t PickupItem_OnPhotonSerializeView_m2823147435_MetadataUsageId;
+extern "C"  void PickupItem_OnPhotonSerializeView_m2823147435 (PickupItem_t1028143055 * __this, PhotonStream_t1494272828 * ___stream, PhotonMessageInfo_t259585817 * ___info, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PickupItem_OnPhotonSerializeView_m2823147435_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Vector3_t3525329789  V_0;
+	memset(&V_0, 0, sizeof(V_0));
+	{
+		PhotonStream_t1494272828 * L_0 = ___stream;
+		NullCheck(L_0);
+		bool L_1 = PhotonStream_get_isWriting_m4099770962(L_0, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_003b;
+		}
+	}
+	{
+		float L_2 = __this->get_SecondsBeforeRespawn_3();
+		if ((!(((float)L_2) <= ((float)(0.0f)))))
+		{
+			goto IL_003b;
+		}
+	}
+	{
+		PhotonStream_t1494272828 * L_3 = ___stream;
+		GameObject_t4012695102 * L_4 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Transform_t284553113 * L_5 = GameObject_get_transform_m1278640159(L_4, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Vector3_t3525329789  L_6 = Transform_get_position_m2211398607(L_5, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_7 = L_6;
+		Il2CppObject * L_8 = Box(Vector3_t3525329789_il2cpp_TypeInfo_var, &L_7);
+		NullCheck(L_3);
+		PhotonStream_SendNext_m3887129908(L_3, L_8, /*hidden argument*/NULL);
+		goto IL_0058;
+	}
+
+IL_003b:
+	{
+		PhotonStream_t1494272828 * L_9 = ___stream;
+		NullCheck(L_9);
+		Il2CppObject * L_10 = PhotonStream_ReceiveNext_m1218125854(L_9, /*hidden argument*/NULL);
+		V_0 = ((*(Vector3_t3525329789 *)((Vector3_t3525329789 *)UnBox (L_10, Vector3_t3525329789_il2cpp_TypeInfo_var))));
+		GameObject_t4012695102 * L_11 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		Transform_t284553113 * L_12 = GameObject_get_transform_m1278640159(L_11, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_13 = V_0;
+		NullCheck(L_12);
+		Transform_set_position_m3111394108(L_12, L_13, /*hidden argument*/NULL);
+	}
+
+IL_0058:
+	{
+		return;
+	}
+}
+// System.Void PickupItem::Pickup()
+extern TypeInfo* ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral414424773;
+extern const uint32_t PickupItem_Pickup_m2488827860_MetadataUsageId;
+extern "C"  void PickupItem_Pickup_m2488827860 (PickupItem_t1028143055 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PickupItem_Pickup_m2488827860_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = __this->get_SentPickup_7();
+		if (!L_0)
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		return;
+	}
+
+IL_000c:
+	{
+		__this->set_SentPickup_7((bool)1);
+		PhotonView_t1498838369 * L_1 = MonoBehaviour_get_photonView_m1543213783(__this, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		PhotonView_RPC_m1971004631(L_1, _stringLiteral414424773, 5, ((ObjectU5BU5D_t11523773*)SZArrayNew(ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void PickupItem::Drop()
+extern TypeInfo* ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1637663231;
+extern const uint32_t PickupItem_Drop_m936983879_MetadataUsageId;
+extern "C"  void PickupItem_Drop_m936983879 (PickupItem_t1028143055 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PickupItem_Drop_m936983879_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = __this->get_PickupIsMine_5();
+		if (!L_0)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		PhotonView_t1498838369 * L_1 = MonoBehaviour_get_photonView_m1543213783(__this, /*hidden argument*/NULL);
+		NullCheck(L_1);
+		PhotonView_RPC_m1971004631(L_1, _stringLiteral1637663231, 5, ((ObjectU5BU5D_t11523773*)SZArrayNew(ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
+	}
+
+IL_0022:
+	{
+		return;
+	}
+}
+// System.Void PickupItem::Drop(UnityEngine.Vector3)
+extern TypeInfo* ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var;
+extern TypeInfo* Vector3_t3525329789_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1637663231;
+extern const uint32_t PickupItem_Drop_m3201648434_MetadataUsageId;
+extern "C"  void PickupItem_Drop_m3201648434 (PickupItem_t1028143055 * __this, Vector3_t3525329789  ___newPosition, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PickupItem_Drop_m3201648434_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		bool L_0 = __this->get_PickupIsMine_5();
+		if (!L_0)
+		{
+			goto IL_002b;
+		}
+	}
+	{
+		PhotonView_t1498838369 * L_1 = MonoBehaviour_get_photonView_m1543213783(__this, /*hidden argument*/NULL);
+		ObjectU5BU5D_t11523773* L_2 = ((ObjectU5BU5D_t11523773*)SZArrayNew(ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var, (uint32_t)1));
+		Vector3_t3525329789  L_3 = ___newPosition;
+		Vector3_t3525329789  L_4 = L_3;
+		Il2CppObject * L_5 = Box(Vector3_t3525329789_il2cpp_TypeInfo_var, &L_4);
+		NullCheck(L_2);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_2, 0);
+		ArrayElementTypeCheck (L_2, L_5);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)L_5);
+		NullCheck(L_1);
+		PhotonView_RPC_m1971004631(L_1, _stringLiteral1637663231, 5, L_2, /*hidden argument*/NULL);
+	}
+
+IL_002b:
+	{
+		return;
+	}
+}
+// System.Void PickupItem::PunPickup(PhotonMessageInfo)
+extern TypeInfo* ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var;
+extern TypeInfo* Single_t958209021_il2cpp_TypeInfo_var;
+extern TypeInfo* Double_t534516614_il2cpp_TypeInfo_var;
+extern TypeInfo* PhotonNetwork_t2803193330_il2cpp_TypeInfo_var;
+extern TypeInfo* Boolean_t211005341_il2cpp_TypeInfo_var;
+extern TypeInfo* String_t_il2cpp_TypeInfo_var;
+extern TypeInfo* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3431530153;
+extern Il2CppCodeGenString* _stringLiteral1072242000;
+extern Il2CppCodeGenString* _stringLiteral851760362;
+extern Il2CppCodeGenString* _stringLiteral1878574508;
+extern Il2CppCodeGenString* _stringLiteral4024496730;
+extern const uint32_t PickupItem_PunPickup_m3535652138_MetadataUsageId;
+extern "C"  void PickupItem_PunPickup_m3535652138 (PickupItem_t1028143055 * __this, PhotonMessageInfo_t259585817 * ___msgInfo, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PickupItem_PunPickup_m3535652138_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	double V_0 = 0.0;
+	double V_1 = 0.0;
+	{
+		PhotonMessageInfo_t259585817 * L_0 = ___msgInfo;
+		NullCheck(L_0);
+		PhotonPlayer_t1400510109 * L_1 = L_0->get_sender_1();
+		NullCheck(L_1);
+		bool L_2 = L_1->get_isLocal_2();
+		if (!L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		__this->set_SentPickup_7((bool)0);
+	}
+
+IL_0017:
+	{
+		GameObject_t4012695102 * L_3 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		bool L_4 = GameObjectExtensions_GetActive_m708656180(NULL /*static, unused*/, L_3, /*hidden argument*/NULL);
+		if (L_4)
+		{
+			goto IL_0092;
+		}
+	}
+	{
+		ObjectU5BU5D_t11523773* L_5 = ((ObjectU5BU5D_t11523773*)SZArrayNew(ObjectU5BU5D_t11523773_il2cpp_TypeInfo_var, (uint32_t)8));
+		NullCheck(L_5);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_5, 0);
+		ArrayElementTypeCheck (L_5, _stringLiteral3431530153);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppObject *)_stringLiteral3431530153);
+		ObjectU5BU5D_t11523773* L_6 = L_5;
+		GameObject_t4012695102 * L_7 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_6, 1);
+		ArrayElementTypeCheck (L_6, L_7);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(1), (Il2CppObject *)L_7);
+		ObjectU5BU5D_t11523773* L_8 = L_6;
+		NullCheck(L_8);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_8, 2);
+		ArrayElementTypeCheck (L_8, _stringLiteral1072242000);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(2), (Il2CppObject *)_stringLiteral1072242000);
+		ObjectU5BU5D_t11523773* L_9 = L_8;
+		float L_10 = __this->get_SecondsBeforeRespawn_3();
+		float L_11 = L_10;
+		Il2CppObject * L_12 = Box(Single_t958209021_il2cpp_TypeInfo_var, &L_11);
+		NullCheck(L_9);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_9, 3);
+		ArrayElementTypeCheck (L_9, L_12);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(3), (Il2CppObject *)L_12);
+		ObjectU5BU5D_t11523773* L_13 = L_9;
+		NullCheck(L_13);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_13, 4);
+		ArrayElementTypeCheck (L_13, _stringLiteral851760362);
+		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(4), (Il2CppObject *)_stringLiteral851760362);
+		ObjectU5BU5D_t11523773* L_14 = L_13;
+		double L_15 = __this->get_TimeOfRespawn_8();
+		double L_16 = L_15;
+		Il2CppObject * L_17 = Box(Double_t534516614_il2cpp_TypeInfo_var, &L_16);
+		NullCheck(L_14);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_14, 5);
+		ArrayElementTypeCheck (L_14, L_17);
+		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(5), (Il2CppObject *)L_17);
+		ObjectU5BU5D_t11523773* L_18 = L_14;
+		NullCheck(L_18);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_18, 6);
+		ArrayElementTypeCheck (L_18, _stringLiteral1878574508);
+		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(6), (Il2CppObject *)_stringLiteral1878574508);
+		ObjectU5BU5D_t11523773* L_19 = L_18;
+		double L_20 = __this->get_TimeOfRespawn_8();
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		double L_21 = PhotonNetwork_get_time_m1772017886(NULL /*static, unused*/, /*hidden argument*/NULL);
+		bool L_22 = ((bool)((((double)L_20) > ((double)L_21))? 1 : 0));
+		Il2CppObject * L_23 = Box(Boolean_t211005341_il2cpp_TypeInfo_var, &L_22);
+		NullCheck(L_19);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_19, 7);
+		ArrayElementTypeCheck (L_19, L_23);
+		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(7), (Il2CppObject *)L_23);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_24 = String_Concat_m3016520001(NULL /*static, unused*/, L_19, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, L_24, /*hidden argument*/NULL);
+		return;
+	}
+
+IL_0092:
+	{
+		PhotonMessageInfo_t259585817 * L_25 = ___msgInfo;
+		NullCheck(L_25);
+		PhotonPlayer_t1400510109 * L_26 = L_25->get_sender_1();
+		NullCheck(L_26);
+		bool L_27 = L_26->get_isLocal_2();
+		__this->set_PickupIsMine_5(L_27);
+		MonoBehaviour_t3012272455 * L_28 = __this->get_OnPickedUpCall_6();
+		bool L_29 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_28, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
+		if (!L_29)
+		{
+			goto IL_00c5;
+		}
+	}
+	{
+		MonoBehaviour_t3012272455 * L_30 = __this->get_OnPickedUpCall_6();
+		NullCheck(L_30);
+		Component_SendMessage_m904598583(L_30, _stringLiteral4024496730, __this, /*hidden argument*/NULL);
+	}
+
+IL_00c5:
+	{
+		float L_31 = __this->get_SecondsBeforeRespawn_3();
+		if ((!(((float)L_31) <= ((float)(0.0f)))))
+		{
+			goto IL_00e5;
+		}
+	}
+	{
+		PickupItem_PickedUp_m9051512(__this, (0.0f), /*hidden argument*/NULL);
+		goto IL_0113;
+	}
+
+IL_00e5:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		double L_32 = PhotonNetwork_get_time_m1772017886(NULL /*static, unused*/, /*hidden argument*/NULL);
+		PhotonMessageInfo_t259585817 * L_33 = ___msgInfo;
+		NullCheck(L_33);
+		double L_34 = PhotonMessageInfo_get_timestamp_m801105536(L_33, /*hidden argument*/NULL);
+		V_0 = ((double)((double)L_32-(double)L_34));
+		float L_35 = __this->get_SecondsBeforeRespawn_3();
+		double L_36 = V_0;
+		V_1 = ((double)((double)(((double)((double)L_35)))-(double)L_36));
+		double L_37 = V_1;
+		if ((!(((double)L_37) > ((double)(0.0)))))
+		{
+			goto IL_0113;
+		}
+	}
+	{
+		double L_38 = V_1;
+		PickupItem_PickedUp_m9051512(__this, (((float)((float)L_38))), /*hidden argument*/NULL);
+	}
+
+IL_0113:
+	{
+		return;
+	}
+}
+// System.Void PickupItem::PickedUp(System.Single)
+extern TypeInfo* PickupItem_t1028143055_il2cpp_TypeInfo_var;
+extern TypeInfo* PhotonNetwork_t2803193330_il2cpp_TypeInfo_var;
+extern const MethodInfo* HashSet_1_Add_m4032572878_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral1637663231;
+extern const uint32_t PickupItem_PickedUp_m9051512_MetadataUsageId;
+extern "C"  void PickupItem_PickedUp_m9051512 (PickupItem_t1028143055 * __this, float ___timeUntilRespawn, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PickupItem_PickedUp_m9051512_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		GameObject_t4012695102 * L_0 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		GameObject_SetActive_m3538205401(L_0, (bool)0, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(PickupItem_t1028143055_il2cpp_TypeInfo_var);
+		HashSet_1_t3726831726 * L_1 = ((PickupItem_t1028143055_StaticFields*)PickupItem_t1028143055_il2cpp_TypeInfo_var->static_fields)->get_DisabledPickupItems_9();
+		NullCheck(L_1);
+		HashSet_1_Add_m4032572878(L_1, __this, /*hidden argument*/HashSet_1_Add_m4032572878_MethodInfo_var);
+		__this->set_TimeOfRespawn_8((0.0));
+		float L_2 = ___timeUntilRespawn;
+		if ((!(((float)L_2) > ((float)(0.0f)))))
+		{
+			goto IL_004c;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		double L_3 = PhotonNetwork_get_time_m1772017886(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_4 = ___timeUntilRespawn;
+		__this->set_TimeOfRespawn_8(((double)((double)L_3+(double)(((double)((double)L_4))))));
+		float L_5 = ___timeUntilRespawn;
+		MonoBehaviour_Invoke_m2825545578(__this, _stringLiteral1637663231, L_5, /*hidden argument*/NULL);
+	}
+
+IL_004c:
+	{
+		return;
+	}
+}
+// System.Void PickupItem::PunRespawn(UnityEngine.Vector3)
+extern TypeInfo* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral3363907948;
+extern const uint32_t PickupItem_PunRespawn_m3037019010_MetadataUsageId;
+extern "C"  void PickupItem_PunRespawn_m3037019010 (PickupItem_t1028143055 * __this, Vector3_t3525329789  ___pos, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PickupItem_PunRespawn_m3037019010_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral3363907948, /*hidden argument*/NULL);
+		PickupItem_PunRespawn_m1336380151(__this, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_0 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		Transform_t284553113 * L_1 = GameObject_get_transform_m1278640159(L_0, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_2 = ___pos;
+		NullCheck(L_1);
+		Transform_set_position_m3111394108(L_1, L_2, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void PickupItem::PunRespawn()
+extern TypeInfo* PhotonNetwork_t2803193330_il2cpp_TypeInfo_var;
+extern TypeInfo* Double_t534516614_il2cpp_TypeInfo_var;
+extern TypeInfo* String_t_il2cpp_TypeInfo_var;
+extern TypeInfo* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern TypeInfo* PickupItem_t1028143055_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral234836440;
+extern Il2CppCodeGenString* _stringLiteral1877102241;
+extern const uint32_t PickupItem_PunRespawn_m1336380151_MetadataUsageId;
+extern "C"  void PickupItem_PunRespawn_m1336380151 (PickupItem_t1028143055 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PickupItem_PunRespawn_m1336380151_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	double V_0 = 0.0;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
+		double L_0 = PhotonNetwork_get_time_m1772017886(NULL /*static, unused*/, /*hidden argument*/NULL);
+		double L_1 = __this->get_TimeOfRespawn_8();
+		V_0 = ((double)((double)L_0-(double)L_1));
+		double L_2 = V_0;
+		if ((!(((double)L_2) > ((double)(0.10000000149011612)))))
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		double L_3 = V_0;
+		double L_4 = L_3;
+		Il2CppObject * L_5 = Box(Double_t534516614_il2cpp_TypeInfo_var, &L_4);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_6 = String_Concat_m2809334143(NULL /*static, unused*/, _stringLiteral234836440, L_5, _stringLiteral1877102241, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_LogWarning_m3123317694(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
+	}
+
+IL_0036:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(PickupItem_t1028143055_il2cpp_TypeInfo_var);
+		HashSet_1_t3726831726 * L_7 = ((PickupItem_t1028143055_StaticFields*)PickupItem_t1028143055_il2cpp_TypeInfo_var->static_fields)->get_DisabledPickupItems_9();
+		NullCheck(L_7);
+		VirtFuncInvoker1< bool, PickupItem_t1028143055 * >::Invoke(10 /* System.Boolean System.Collections.Generic.HashSet`1<PickupItem>::Remove(!0) */, L_7, __this);
+		__this->set_TimeOfRespawn_8((0.0));
+		__this->set_PickupIsMine_5((bool)0);
+		GameObject_t4012695102 * L_8 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		bool L_9 = Object_op_Inequality_m1296218211(NULL /*static, unused*/, L_8, (Object_t3878351788 *)NULL, /*hidden argument*/NULL);
+		if (!L_9)
+		{
+			goto IL_0075;
+		}
+	}
+	{
+		GameObject_t4012695102 * L_10 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		GameObject_SetActive_m3538205401(L_10, (bool)1, /*hidden argument*/NULL);
+	}
+
+IL_0075:
+	{
+		return;
+	}
+}
 // System.Void PickupItemSimple::.ctor()
 extern "C"  void PickupItemSimple__ctor_m280806746 (PickupItemSimple_t4157210209 * __this, const MethodInfo* method)
 {
@@ -2423,6 +3439,7 @@ extern "C"  void PUNController_Start_m3117536422 (PUNController_t292333413 * __t
 		__this->set_isWaiting_3((bool)1);
 		IL2CPP_RUNTIME_CLASS_INIT(PhotonNetwork_t2803193330_il2cpp_TypeInfo_var);
 		PhotonNetwork_ConnectUsingSettings_m3332130446(NULL /*static, unused*/, _stringLiteral3563901, /*hidden argument*/NULL);
+		PhotonNetwork_set_sendRate_m2916110369(NULL /*static, unused*/, ((int32_t)30), /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -2568,7 +3585,7 @@ extern "C"  void PUNController_loadGameScene_m2248272472 (PUNController_t2923334
 		String_t* L_2 = V_0;
 		if (!L_2)
 		{
-			goto IL_0043;
+			goto IL_0048;
 		}
 	}
 	{
@@ -2576,16 +3593,17 @@ extern "C"  void PUNController_loadGameScene_m2248272472 (PUNController_t2923334
 		Room_t2553083 * L_3 = PhotonNetwork_get_room_m4104045837(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(L_3);
 		int32_t L_4 = Room_get_playerCount_m2163219765(L_3, /*hidden argument*/NULL);
-		if ((!(((uint32_t)L_4) == ((uint32_t)2))))
+		int32_t L_5 = __this->get_online_4();
+		if ((!(((uint32_t)L_4) == ((uint32_t)L_5))))
 		{
-			goto IL_003e;
+			goto IL_0043;
 		}
 	}
 	{
-		bool L_5 = __this->get_isWaiting_3();
-		if (!L_5)
+		bool L_6 = __this->get_isWaiting_3();
+		if (!L_6)
 		{
-			goto IL_003e;
+			goto IL_0043;
 		}
 	}
 	{
@@ -2593,18 +3611,18 @@ extern "C"  void PUNController_loadGameScene_m2248272472 (PUNController_t2923334
 		SceneManager_LoadScene_m3907168970(NULL /*static, unused*/, _stringLiteral3079279875, 1, /*hidden argument*/NULL);
 	}
 
-IL_003e:
+IL_0043:
 	{
-		goto IL_004d;
+		goto IL_0052;
 	}
 
-IL_0043:
+IL_0048:
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
 		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral3764879220, /*hidden argument*/NULL);
 	}
 
-IL_004d:
+IL_0052:
 	{
 		return;
 	}

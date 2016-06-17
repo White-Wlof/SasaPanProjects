@@ -137,8 +137,10 @@
 <type fullname="PlayerStateManager" preserve="all"/>
 <type fullname="Game.RivalController" preserve="all"/>
 <type fullname="UIController" preserve="all"/>
-<type fullname="Game.NetworkPlayer" preserve="all"/>
 <type fullname="PUNController" preserve="all"/>
+<type fullname="Game.PhotonPanda" preserve="all"/>
+<type fullname="Game.PhotonPlayer" preserve="all"/>
+<type fullname="Game.RPCMethod" preserve="all"/>
 <type fullname="Game.BoatDirectionSystem" preserve="all"/>
 <type fullname="CannonPullSystem" preserve="all"/>
 <type fullname="Game.OrbitPredictioner" preserve="all"/>
