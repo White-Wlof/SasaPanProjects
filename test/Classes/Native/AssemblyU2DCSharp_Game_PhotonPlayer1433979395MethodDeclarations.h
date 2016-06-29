@@ -25,6 +25,8 @@ struct PhotonMessageInfo_t259585817;
 
 // System.Void Game.PhotonPlayer::.ctor()
 extern "C"  void PhotonPlayer__ctor_m103990930 (PhotonPlayer_t1433979395 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Game.PhotonPlayer::Awake()
+extern "C"  void PhotonPlayer_Awake_m341596149 (PhotonPlayer_t1433979395 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Game.PhotonPlayer::Start()
 extern "C"  void PhotonPlayer_Start_m3346096018 (PhotonPlayer_t1433979395 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Game.PhotonPlayer::Update()

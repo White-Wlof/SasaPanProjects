@@ -1,5 +1,16 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="ButtonTransition">
+			<method name="sceneTransitionLoading"/>
+			<method name="sceneTransition"/>
+			<method name="sceneTransition"/>
+			<method name="sceneTransitionLoading"/>
+			<method name="sceneTransition"/>
+			<method name="sceneTransition"/>
+			<method name="sceneTransition"/>
+			<method name="sceneTransition"/>
+			<method name="sceneTransition"/>
+		</type>
 		<type fullname="Game.GameUIButton">
 			<method name="pushButton"/>
 			<method name="pushButton"/>

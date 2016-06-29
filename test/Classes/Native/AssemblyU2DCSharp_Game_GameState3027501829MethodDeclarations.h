@@ -14,6 +14,8 @@
 
 // Game.GameState
 struct GameState_t3027501829;
+// System.Collections.IEnumerator
+struct IEnumerator_t287207039;
 
 #include "codegen/il2cpp-codegen.h"
 
@@ -37,6 +39,12 @@ extern "C"  void GameState_changeText_m2203829353 (GameState_t3027501829 * __thi
 extern "C"  void GameState_changeGameState_m416998501 (GameState_t3027501829 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Game.GameState::changeInitializePosition()
 extern "C"  void GameState_changeInitializePosition_m3763194325 (GameState_t3027501829 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Game.GameState::victoryOrDefeat()
+extern "C"  void GameState_victoryOrDefeat_m3613131102 (GameState_t3027501829 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.IEnumerator Game.GameState::showAwardPanel()
+extern "C"  Il2CppObject * GameState_showAwardPanel_m3471805176 (GameState_t3027501829 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Collections.IEnumerator Game.GameState::sceneToResult()
+extern "C"  Il2CppObject * GameState_sceneToResult_m3764024914 (GameState_t3027501829 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean Game.GameState::getGameStart()
 extern "C"  bool GameState_getGameStart_m2801723898 (GameState_t3027501829 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean Game.GameState::getGameFinish()

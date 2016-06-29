@@ -24,6 +24,9 @@ struct ObjectU5BU5D_t3051965477;
 struct Type_t;
 // System.String
 struct String_t;
+// UnityEngine.AsyncOperation
+struct AsyncOperation_t3374395064;
+struct AsyncOperation_t3374395064_marshaled_pinvoke;
 // UnityEngine.Rigidbody
 struct Rigidbody_t1972007546;
 // UnityEngine.Rigidbody2D
@@ -32,9 +35,6 @@ struct Rigidbody2D_t3632243084;
 struct RPC_t1522967058;
 // System.Object
 struct Il2CppObject;
-// UnityEngine.AsyncOperation
-struct AsyncOperation_t3374395064;
-struct AsyncOperation_t3374395064_marshaled_pinvoke;
 // UnityEngine.ScriptableObject
 struct ScriptableObject_t184905905;
 struct ScriptableObject_t184905905_marshaled_pinvoke;
@@ -210,6 +210,7 @@ struct TypeInferenceRuleAttribute_t471424957;
 #include "UnityEngine_ArrayTypes.h"
 #include "mscorlib_System_Type2779229935MethodDeclarations.h"
 #include "mscorlib_System_RuntimeTypeHandle1864875887.h"
+#include "UnityEngine_UnityEngine_AsyncOperation3374395064.h"
 #include "UnityEngine_UnityEngine_Rigidbody1972007546.h"
 #include "UnityEngine_UnityEngine_Rigidbody1972007546MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector33525329789.h"
@@ -236,7 +237,6 @@ struct TypeInferenceRuleAttribute_t471424957;
 #include "mscorlib_System_Object837106420.h"
 #include "UnityEngine_UnityEngine_SceneManagement_SceneManag1523288937.h"
 #include "UnityEngine_UnityEngine_SceneManagement_SceneManag1523288937MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_AsyncOperation3374395064.h"
 #include "UnityEngine_UnityEngine_Screen3994030297.h"
 #include "UnityEngine_UnityEngine_Screen3994030297MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_ScriptableObject184905905.h"
@@ -602,6 +602,15 @@ extern "C"  Object_t3878351788 * Resources_Load_m3601699608 (Il2CppObject * __th
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Resources_Load_m3601699608_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Resources::Load(System.String,System.Type)");
 	return _il2cpp_icall_func(___path, ___systemTypeInstance);
+}
+// UnityEngine.AsyncOperation UnityEngine.Resources::UnloadUnusedAssets()
+extern "C"  AsyncOperation_t3374395064 * Resources_UnloadUnusedAssets_m3831138427 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef AsyncOperation_t3374395064 * (*Resources_UnloadUnusedAssets_m3831138427_ftn) ();
+	static Resources_UnloadUnusedAssets_m3831138427_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Resources_UnloadUnusedAssets_m3831138427_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Resources::UnloadUnusedAssets()");
+	return _il2cpp_icall_func();
 }
 // UnityEngine.Vector3 UnityEngine.Rigidbody::get_velocity()
 extern "C"  Vector3_t3525329789  Rigidbody_get_velocity_m2696244068 (Rigidbody_t1972007546 * __this, const MethodInfo* method)
@@ -1216,6 +1225,60 @@ IL_0010:
 		return;
 	}
 }
+// UnityEngine.AsyncOperation UnityEngine.SceneManagement.SceneManager::LoadSceneAsync(System.String)
+extern "C"  AsyncOperation_t3374395064 * SceneManager_LoadSceneAsync_m1034954248 (Il2CppObject * __this /* static, unused */, String_t* ___sceneName, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		V_0 = 0;
+		String_t* L_0 = ___sceneName;
+		int32_t L_1 = V_0;
+		AsyncOperation_t3374395064 * L_2 = SceneManager_LoadSceneAsync_m1685951617(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+// UnityEngine.AsyncOperation UnityEngine.SceneManagement.SceneManager::LoadSceneAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+extern "C"  AsyncOperation_t3374395064 * SceneManager_LoadSceneAsync_m1685951617 (Il2CppObject * __this /* static, unused */, String_t* ___sceneName, int32_t ___mode, const MethodInfo* method)
+{
+	int32_t G_B2_0 = 0;
+	String_t* G_B2_1 = NULL;
+	int32_t G_B1_0 = 0;
+	String_t* G_B1_1 = NULL;
+	int32_t G_B3_0 = 0;
+	int32_t G_B3_1 = 0;
+	String_t* G_B3_2 = NULL;
+	{
+		String_t* L_0 = ___sceneName;
+		int32_t L_1 = ___mode;
+		G_B1_0 = (-1);
+		G_B1_1 = L_0;
+		if ((!(((uint32_t)L_1) == ((uint32_t)1))))
+		{
+			G_B2_0 = (-1);
+			G_B2_1 = L_0;
+			goto IL_000f;
+		}
+	}
+	{
+		G_B3_0 = 1;
+		G_B3_1 = G_B1_0;
+		G_B3_2 = G_B1_1;
+		goto IL_0010;
+	}
+
+IL_000f:
+	{
+		G_B3_0 = 0;
+		G_B3_1 = G_B2_0;
+		G_B3_2 = G_B2_1;
+	}
+
+IL_0010:
+	{
+		AsyncOperation_t3374395064 * L_2 = SceneManager_LoadSceneAsyncNameIndexInternal_m3775081569(NULL /*static, unused*/, G_B3_2, G_B3_1, (bool)G_B3_0, (bool)0, /*hidden argument*/NULL);
+		return L_2;
+	}
+}
 // UnityEngine.AsyncOperation UnityEngine.SceneManagement.SceneManager::LoadSceneAsyncNameIndexInternal(System.String,System.Int32,System.Boolean,System.Boolean)
 extern "C"  AsyncOperation_t3374395064 * SceneManager_LoadSceneAsyncNameIndexInternal_m3775081569 (Il2CppObject * __this /* static, unused */, String_t* ___sceneName, int32_t ___sceneBuildIndex, bool ___isAdditive, bool ___mustCompleteNextFrame, const MethodInfo* method)
 {
@@ -1224,6 +1287,24 @@ extern "C"  AsyncOperation_t3374395064 * SceneManager_LoadSceneAsyncNameIndexInt
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (SceneManager_LoadSceneAsyncNameIndexInternal_m3775081569_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SceneManagement.SceneManager::LoadSceneAsyncNameIndexInternal(System.String,System.Int32,System.Boolean,System.Boolean)");
 	return _il2cpp_icall_func(___sceneName, ___sceneBuildIndex, ___isAdditive, ___mustCompleteNextFrame);
+}
+// System.Boolean UnityEngine.SceneManagement.SceneManager::UnloadScene(System.String)
+extern "C"  bool SceneManager_UnloadScene_m4140861840 (Il2CppObject * __this /* static, unused */, String_t* ___sceneName, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___sceneName;
+		bool L_1 = SceneManager_UnloadSceneNameIndexInternal_m3857679177(NULL /*static, unused*/, L_0, (-1), /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.Boolean UnityEngine.SceneManagement.SceneManager::UnloadSceneNameIndexInternal(System.String,System.Int32)
+extern "C"  bool SceneManager_UnloadSceneNameIndexInternal_m3857679177 (Il2CppObject * __this /* static, unused */, String_t* ___sceneName, int32_t ___sceneBuildIndex, const MethodInfo* method)
+{
+	typedef bool (*SceneManager_UnloadSceneNameIndexInternal_m3857679177_ftn) (String_t*, int32_t);
+	static SceneManager_UnloadSceneNameIndexInternal_m3857679177_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (SceneManager_UnloadSceneNameIndexInternal_m3857679177_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SceneManagement.SceneManager::UnloadSceneNameIndexInternal(System.String,System.Int32)");
+	return _il2cpp_icall_func(___sceneName, ___sceneBuildIndex);
 }
 // System.Int32 UnityEngine.Screen::get_width()
 extern "C"  int32_t Screen_get_width_m3080333084 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)

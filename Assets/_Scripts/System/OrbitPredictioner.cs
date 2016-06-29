@@ -26,11 +26,14 @@ namespace Game
             {
                 lineRenderer.enabled = false;
             }
-            else
+            else if (state.cannonMode && Input.touchCount > 0)
             {
-                lineRenderer.enabled = true;
+                if (Input.touches[0].phase == TouchPhase.Moved || Input.touches[0].phase == TouchPhase.Stationary)
+                {
+                    
+                    lineRenderer.enabled = true;
+                }
             }
-            Debug.Log(state.initialVelocityCannon);
             DrawLine((state.initialVelocityCannon + playerRb.velocity.z) / 7.5f, 10);
         }
 

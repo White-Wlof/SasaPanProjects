@@ -12628,6 +12628,15 @@ extern "C"  GameObject_t4012695102 * GameObject_FindGameObjectWithTag_m263556016
 	_il2cpp_icall_func = (GameObject_FindGameObjectWithTag_m2635560165_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.GameObject::FindGameObjectWithTag(System.String)");
 	return _il2cpp_icall_func(___tag);
 }
+// UnityEngine.GameObject UnityEngine.GameObject::FindWithTag(System.String)
+extern "C"  GameObject_t4012695102 * GameObject_FindWithTag_m3162815092 (Il2CppObject * __this /* static, unused */, String_t* ___tag, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___tag;
+		GameObject_t4012695102 * L_1 = GameObject_FindGameObjectWithTag_m2635560165(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		return L_1;
+	}
+}
 // UnityEngine.GameObject[] UnityEngine.GameObject::FindGameObjectsWithTag(System.String)
 extern "C"  GameObjectU5BU5D_t3499186955* GameObject_FindGameObjectsWithTag_m3058873418 (Il2CppObject * __this /* static, unused */, String_t* ___tag, const MethodInfo* method)
 {

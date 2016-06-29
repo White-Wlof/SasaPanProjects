@@ -115,6 +115,7 @@ public class Pauser : MonoBehaviour
         rg2dBodies = null;
         rg2dBodyVels = null;
         rg2dBodyAVels = null;
+
     }
 
     // ポーズ
@@ -133,5 +134,6 @@ public class Pauser : MonoBehaviour
         {
             obj.OnResume();
         }
+        targets.Clear();
     }
 }

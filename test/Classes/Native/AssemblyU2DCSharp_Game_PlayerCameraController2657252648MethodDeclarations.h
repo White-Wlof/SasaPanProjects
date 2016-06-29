@@ -23,3 +23,5 @@ extern "C"  void PlayerCameraController__ctor_m4242421261 (PlayerCameraControlle
 extern "C"  void PlayerCameraController_Start_m3189559053 (PlayerCameraController_t2657252648 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Game.PlayerCameraController::Update()
 extern "C"  void PlayerCameraController_Update_m97935008 (PlayerCameraController_t2657252648 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void Game.PlayerCameraController::setTag()
+extern "C"  void PlayerCameraController_setTag_m115528143 (PlayerCameraController_t2657252648 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

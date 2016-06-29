@@ -18195,6 +18195,24 @@ extern "C" void Plane_t1600081545_marshal_com_cleanup(Plane_t1600081545_marshale
 {
 	Vector3_t3525329789_marshal_com_cleanup(marshaled.___m_Normal_0);
 }
+// System.Boolean UnityEngine.PlayerPrefs::TrySetInt(System.String,System.Int32)
+extern "C"  bool PlayerPrefs_TrySetInt_m2066630347 (Il2CppObject * __this /* static, unused */, String_t* ___key, int32_t ___value, const MethodInfo* method)
+{
+	typedef bool (*PlayerPrefs_TrySetInt_m2066630347_ftn) (String_t*, int32_t);
+	static PlayerPrefs_TrySetInt_m2066630347_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (PlayerPrefs_TrySetInt_m2066630347_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.PlayerPrefs::TrySetInt(System.String,System.Int32)");
+	return _il2cpp_icall_func(___key, ___value);
+}
+// System.Boolean UnityEngine.PlayerPrefs::TrySetFloat(System.String,System.Single)
+extern "C"  bool PlayerPrefs_TrySetFloat_m96551332 (Il2CppObject * __this /* static, unused */, String_t* ___key, float ___value, const MethodInfo* method)
+{
+	typedef bool (*PlayerPrefs_TrySetFloat_m96551332_ftn) (String_t*, float);
+	static PlayerPrefs_TrySetFloat_m96551332_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (PlayerPrefs_TrySetFloat_m96551332_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.PlayerPrefs::TrySetFloat(System.String,System.Single)");
+	return _il2cpp_icall_func(___key, ___value);
+}
 // System.Boolean UnityEngine.PlayerPrefs::TrySetSetString(System.String,System.String)
 extern "C"  bool PlayerPrefs_TrySetSetString_m452988068 (Il2CppObject * __this /* static, unused */, String_t* ___key, String_t* ___value, const MethodInfo* method)
 {
@@ -18203,6 +18221,88 @@ extern "C"  bool PlayerPrefs_TrySetSetString_m452988068 (Il2CppObject * __this /
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (PlayerPrefs_TrySetSetString_m452988068_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.PlayerPrefs::TrySetSetString(System.String,System.String)");
 	return _il2cpp_icall_func(___key, ___value);
+}
+// System.Void UnityEngine.PlayerPrefs::SetInt(System.String,System.Int32)
+extern TypeInfo* PlayerPrefsException_t3551081773_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2586178071;
+extern const uint32_t PlayerPrefs_SetInt_m3485171996_MetadataUsageId;
+extern "C"  void PlayerPrefs_SetInt_m3485171996 (Il2CppObject * __this /* static, unused */, String_t* ___key, int32_t ___value, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerPrefs_SetInt_m3485171996_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___key;
+		int32_t L_1 = ___value;
+		bool L_2 = PlayerPrefs_TrySetInt_m2066630347(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		if (L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		PlayerPrefsException_t3551081773 * L_3 = (PlayerPrefsException_t3551081773 *)il2cpp_codegen_object_new(PlayerPrefsException_t3551081773_il2cpp_TypeInfo_var);
+		PlayerPrefsException__ctor_m3661687413(L_3, _stringLiteral2586178071, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_0017:
+	{
+		return;
+	}
+}
+// System.Int32 UnityEngine.PlayerPrefs::GetInt(System.String,System.Int32)
+extern "C"  int32_t PlayerPrefs_GetInt_m3632746280 (Il2CppObject * __this /* static, unused */, String_t* ___key, int32_t ___defaultValue, const MethodInfo* method)
+{
+	typedef int32_t (*PlayerPrefs_GetInt_m3632746280_ftn) (String_t*, int32_t);
+	static PlayerPrefs_GetInt_m3632746280_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (PlayerPrefs_GetInt_m3632746280_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.PlayerPrefs::GetInt(System.String,System.Int32)");
+	return _il2cpp_icall_func(___key, ___defaultValue);
+}
+// System.Void UnityEngine.PlayerPrefs::SetFloat(System.String,System.Single)
+extern TypeInfo* PlayerPrefsException_t3551081773_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral2586178071;
+extern const uint32_t PlayerPrefs_SetFloat_m1687591347_MetadataUsageId;
+extern "C"  void PlayerPrefs_SetFloat_m1687591347 (Il2CppObject * __this /* static, unused */, String_t* ___key, float ___value, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (PlayerPrefs_SetFloat_m1687591347_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		String_t* L_0 = ___key;
+		float L_1 = ___value;
+		bool L_2 = PlayerPrefs_TrySetFloat_m96551332(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		if (L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		PlayerPrefsException_t3551081773 * L_3 = (PlayerPrefsException_t3551081773 *)il2cpp_codegen_object_new(PlayerPrefsException_t3551081773_il2cpp_TypeInfo_var);
+		PlayerPrefsException__ctor_m3661687413(L_3, _stringLiteral2586178071, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_0017:
+	{
+		return;
+	}
+}
+// System.Single UnityEngine.PlayerPrefs::GetFloat(System.String,System.Single)
+extern "C"  float PlayerPrefs_GetFloat_m1210224051 (Il2CppObject * __this /* static, unused */, String_t* ___key, float ___defaultValue, const MethodInfo* method)
+{
+	typedef float (*PlayerPrefs_GetFloat_m1210224051_ftn) (String_t*, float);
+	static PlayerPrefs_GetFloat_m1210224051_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (PlayerPrefs_GetFloat_m1210224051_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.PlayerPrefs::GetFloat(System.String,System.Single)");
+	return _il2cpp_icall_func(___key, ___defaultValue);
 }
 // System.Void UnityEngine.PlayerPrefs::SetString(System.String,System.String)
 extern TypeInfo* PlayerPrefsException_t3551081773_il2cpp_TypeInfo_var;

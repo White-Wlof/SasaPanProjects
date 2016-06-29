@@ -49,6 +49,18 @@ struct Toggle_t1499417981;
 struct IClipper_t4185560397;
 // UnityEngine.UI.LayoutRebuilder
 struct LayoutRebuilder_t1563460583;
+// UnityEngine.UI.Image
+struct Image_t3354615620;
+// UnityEngine.UI.ILayoutElement
+struct ILayoutElement_t109776050;
+// UnityEngine.UI.MaskableGraphic
+struct MaskableGraphic_t2806572971;
+// UnityEngine.UI.IMaskable
+struct IMaskable_t528807864;
+// UnityEngine.UI.IMaterialModifier
+struct IMaterialModifier_t2519068048;
+// UnityEngine.EventSystems.UIBehaviour
+struct UIBehaviour_t644839684;
 
 #include "mscorlib_System_Array2840145358.h"
 #include "UnityEngine_UI_UnityEngine_EventSystems_BaseInputM3800378272.h"
@@ -69,6 +81,9 @@ struct LayoutRebuilder_t1563460583;
 #include "UnityEngine_UI_UnityEngine_UI_StencilMaterial_MatEn334050066.h"
 #include "UnityEngine_UI_UnityEngine_UI_Toggle1499417981.h"
 #include "UnityEngine_UI_UnityEngine_UI_LayoutRebuilder1563460583.h"
+#include "UnityEngine_UI_UnityEngine_UI_Image3354615620.h"
+#include "UnityEngine_UI_UnityEngine_UI_MaskableGraphic2806572971.h"
+#include "UnityEngine_UI_UnityEngine_EventSystems_UIBehaviour644839684.h"
 
 #pragma once
 // UnityEngine.EventSystems.BaseInputModule[]
@@ -394,6 +409,96 @@ public:
 	inline LayoutRebuilder_t1563460583 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline LayoutRebuilder_t1563460583 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, LayoutRebuilder_t1563460583 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.UI.Image[]
+struct ImageU5BU5D_t2279835437  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) Image_t3354615620 * m_Items[1];
+
+public:
+	inline Image_t3354615620 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline Image_t3354615620 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, Image_t3354615620 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.UI.ILayoutElement[]
+struct ILayoutElementU5BU5D_t1959821383  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) Il2CppObject * m_Items[1];
+
+public:
+	inline Il2CppObject * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline Il2CppObject ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, Il2CppObject * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.UI.MaskableGraphic[]
+struct MaskableGraphicU5BU5D_t787899722  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) MaskableGraphic_t2806572971 * m_Items[1];
+
+public:
+	inline MaskableGraphic_t2806572971 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline MaskableGraphic_t2806572971 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, MaskableGraphic_t2806572971 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.UI.IMaskable[]
+struct IMaskableU5BU5D_t624056937  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) Il2CppObject * m_Items[1];
+
+public:
+	inline Il2CppObject * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline Il2CppObject ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, Il2CppObject * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.UI.IMaterialModifier[]
+struct IMaterialModifierU5BU5D_t828856881  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) Il2CppObject * m_Items[1];
+
+public:
+	inline Il2CppObject * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline Il2CppObject ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, Il2CppObject * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.EventSystems.UIBehaviour[]
+struct UIBehaviourU5BU5D_t165219949  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) UIBehaviour_t644839684 * m_Items[1];
+
+public:
+	inline UIBehaviour_t644839684 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline UIBehaviour_t644839684 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, UIBehaviour_t644839684 * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);

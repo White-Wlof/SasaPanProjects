@@ -20,6 +20,7 @@ namespace Game
             }
         }
 
+
         void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
         {
 

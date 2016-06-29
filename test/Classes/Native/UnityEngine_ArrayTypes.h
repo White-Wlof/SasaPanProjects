@@ -87,6 +87,10 @@ struct AudioClip_t3714538611;
 struct Material_t1886596500;
 // UnityEngine.MonoBehaviour
 struct MonoBehaviour_t3012272455;
+// UnityEngine.ICanvasRaycastFilter
+struct ICanvasRaycastFilter_t1382353421;
+// UnityEngine.ISerializationCallbackReceiver
+struct ISerializationCallbackReceiver_t3330895336;
 // UnityEngine.Rigidbody
 struct Rigidbody_t1972007546;
 
@@ -978,6 +982,36 @@ public:
 	inline MonoBehaviour_t3012272455 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline MonoBehaviour_t3012272455 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, MonoBehaviour_t3012272455 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.ICanvasRaycastFilter[]
+struct ICanvasRaycastFilterU5BU5D_t2843595552  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) Il2CppObject * m_Items[1];
+
+public:
+	inline Il2CppObject * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline Il2CppObject ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, Il2CppObject * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.ISerializationCallbackReceiver[]
+struct ISerializationCallbackReceiverU5BU5D_t2209207673  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) Il2CppObject * m_Items[1];
+
+public:
+	inline Il2CppObject * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline Il2CppObject ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, Il2CppObject * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);

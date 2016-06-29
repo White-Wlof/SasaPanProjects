@@ -13,6 +13,8 @@
 #include <limits>
 #include <assert.h>
 
+// System.Collections.Generic.EqualityComparer`1/DefaultComparer<UnityEngine.Vector4>
+struct DefaultComparer_t2863283522;
 // System.Collections.Generic.EqualityComparer`1<ExitGames.Client.Photon.ConnectionProtocol>
 struct EqualityComparer_1_t2801842796;
 // System.Object
@@ -125,20 +127,25 @@ struct IEqualityComparer_1_t3161373071;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array2840145358.h"
+#include "mscorlib_System_Collections_Generic_EqualityCompar2863283521.h"
+#include "mscorlib_System_Collections_Generic_EqualityCompar2863283521MethodDeclarations.h"
+#include "mscorlib_System_Void2779279689.h"
+#include "mscorlib_System_Collections_Generic_EqualityCompar2959720440MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Vector43525329790.h"
+#include "mscorlib_System_Int322847414787.h"
+#include "UnityEngine_UnityEngine_Vector43525329790MethodDeclarations.h"
+#include "mscorlib_System_Object837106420MethodDeclarations.h"
+#include "mscorlib_System_Object837106420.h"
+#include "mscorlib_System_Boolean211005341.h"
 #include "mscorlib_System_Collections_Generic_EqualityCompar2801842796.h"
 #include "mscorlib_System_Collections_Generic_EqualityCompar2801842796MethodDeclarations.h"
-#include "mscorlib_System_Void2779279689.h"
-#include "mscorlib_System_Object837106420MethodDeclarations.h"
 #include "mscorlib_System_Type2779229935MethodDeclarations.h"
 #include "mscorlib_System_Activator690001546MethodDeclarations.h"
 #include "mscorlib_System_Type2779229935.h"
 #include "mscorlib_System_RuntimeTypeHandle1864875887.h"
-#include "mscorlib_System_Boolean211005341.h"
 #include "mscorlib_ArrayTypes.h"
-#include "mscorlib_System_Object837106420.h"
 #include "mscorlib_System_Collections_Generic_EqualityCompar2705405877.h"
 #include "mscorlib_System_Collections_Generic_EqualityCompar2705405877MethodDeclarations.h"
-#include "mscorlib_System_Int322847414787.h"
 #include "Photon3Unity3D_ExitGames_Client_Photon_ConnectionP3367452146.h"
 #include "mscorlib_System_Collections_Generic_EqualityCompar3731960567.h"
 #include "mscorlib_System_Collections_Generic_EqualityCompar3731960567MethodDeclarations.h"
@@ -248,10 +255,6 @@ struct IEqualityComparer_1_t3161373071;
 #include "mscorlib_System_Collections_Generic_EqualityCompar2863283520MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector33525329789.h"
 #include "mscorlib_System_Collections_Generic_EqualityCompar2959720440.h"
-#include "mscorlib_System_Collections_Generic_EqualityCompar2959720440MethodDeclarations.h"
-#include "mscorlib_System_Collections_Generic_EqualityCompar2863283521.h"
-#include "mscorlib_System_Collections_Generic_EqualityCompar2863283521MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Vector43525329790.h"
 #include "mscorlib_System_Collections_Generic_GenericCompare3591975052.h"
 #include "mscorlib_System_Collections_Generic_GenericCompare3591975052MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_Comparer_1_gen3233354157MethodDeclarations.h"
@@ -354,6 +357,54 @@ struct IEqualityComparer_1_t3161373071;
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.Collections.Generic.EqualityComparer`1/DefaultComparer<UnityEngine.Vector4>::.ctor()
+extern "C"  void DefaultComparer__ctor_m3341899896_gshared (DefaultComparer_t2863283522 * __this, const MethodInfo* method)
+{
+	{
+		NullCheck((EqualityComparer_1_t2959720440 *)__this);
+		IL2CPP_RUNTIME_CLASS_INIT(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 1));
+		((  void (*) (EqualityComparer_1_t2959720440 *, const MethodInfo*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0)->method)((EqualityComparer_1_t2959720440 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->declaring_type)->rgctx_data, 0));
+		return;
+	}
+}
+// System.Int32 System.Collections.Generic.EqualityComparer`1/DefaultComparer<UnityEngine.Vector4>::GetHashCode(T)
+extern "C"  int32_t DefaultComparer_GetHashCode_m260381747_gshared (DefaultComparer_t2863283522 * __this, Vector4_t3525329790  ___obj, const MethodInfo* method)
+{
+	{
+		goto IL_000d;
+	}
+	{
+		return 0;
+	}
+
+IL_000d:
+	{
+		int32_t L_1 = Vector4_GetHashCode_m3402333527((Vector4_t3525329790 *)(&___obj), /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+// System.Boolean System.Collections.Generic.EqualityComparer`1/DefaultComparer<UnityEngine.Vector4>::Equals(T,T)
+extern "C"  bool DefaultComparer_Equals_m3592339785_gshared (DefaultComparer_t2863283522 * __this, Vector4_t3525329790  ___x, Vector4_t3525329790  ___y, const MethodInfo* method)
+{
+	{
+		goto IL_0015;
+	}
+	{
+		Vector4_t3525329790  L_1 = ___y;
+		Vector4_t3525329790  L_2 = L_1;
+		Il2CppObject * L_3 = Box(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 2), &L_2);
+		return (bool)((((Il2CppObject*)(Il2CppObject *)L_3) == ((Il2CppObject*)(Il2CppObject *)NULL))? 1 : 0);
+	}
+
+IL_0015:
+	{
+		Vector4_t3525329790  L_4 = ___y;
+		Vector4_t3525329790  L_5 = L_4;
+		Il2CppObject * L_6 = Box(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->declaring_type)->rgctx_data, 2), &L_5);
+		bool L_7 = Vector4_Equals_m3270185343((Vector4_t3525329790 *)(&___x), (Il2CppObject *)L_6, /*hidden argument*/NULL);
+		return L_7;
+	}
+}
 // System.Void System.Collections.Generic.EqualityComparer`1<ExitGames.Client.Photon.ConnectionProtocol>::.ctor()
 extern "C"  void EqualityComparer_1__ctor_m2889152411_gshared (EqualityComparer_1_t2801842796 * __this, const MethodInfo* method)
 {

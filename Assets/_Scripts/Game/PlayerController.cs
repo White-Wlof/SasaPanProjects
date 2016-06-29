@@ -20,7 +20,7 @@ namespace Game
         {
             state = PlayerStateManager.Instance;
             playerRb = this.GetComponent<Rigidbody>();
-            cannonBall = Prefabs.GameObj.CannonBall;
+            cannonBall = Prefabs.GameObj.PlayerCannonBall;
         }
 	
         // Update is called once per frame

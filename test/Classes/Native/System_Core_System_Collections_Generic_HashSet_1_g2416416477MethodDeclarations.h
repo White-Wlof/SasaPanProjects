@@ -63,4 +63,4 @@
 // System.Void System.Collections.Generic.HashSet`1<UnityEngine.GameObject>::OnDeserialization(System.Object)
 #define HashSet_1_OnDeserialization_m2732531115(__this, ___sender, method) ((  void (*) (HashSet_1_t2416416477 *, Il2CppObject *, const MethodInfo*))HashSet_1_OnDeserialization_m3000579185_gshared)(__this, ___sender, method)
 // System.Collections.Generic.HashSet`1/Enumerator<T> System.Collections.Generic.HashSet`1<UnityEngine.GameObject>::GetEnumerator()
-#define HashSet_1_GetEnumerator_m1720557856(__this, method) ((  Enumerator_t2895437063  (*) (HashSet_1_t2416416477 *, const MethodInfo*))HashSet_1_GetEnumerator_m2905523585_gshared)(__this, method)
+#define HashSet_1_GetEnumerator_m1720557856(__this, method) ((  Enumerator_t2895437064  (*) (HashSet_1_t2416416477 *, const MethodInfo*))HashSet_1_GetEnumerator_m2905523585_gshared)(__this, method)

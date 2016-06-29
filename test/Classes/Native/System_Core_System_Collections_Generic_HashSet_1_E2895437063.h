@@ -24,7 +24,7 @@ struct GameObject_t4012695102;
 #endif
 
 // System.Collections.Generic.HashSet`1/Enumerator<UnityEngine.GameObject>
-struct  Enumerator_t2895437063 
+struct  Enumerator_t2895437064 
 {
 public:
 	// System.Collections.Generic.HashSet`1<T> System.Collections.Generic.HashSet`1/Enumerator::hashset
@@ -37,7 +37,7 @@ public:
 	GameObject_t4012695102 * ___current_3;
 
 public:
-	inline static int32_t get_offset_of_hashset_0() { return static_cast<int32_t>(offsetof(Enumerator_t2895437063, ___hashset_0)); }
+	inline static int32_t get_offset_of_hashset_0() { return static_cast<int32_t>(offsetof(Enumerator_t2895437064, ___hashset_0)); }
 	inline HashSet_1_t2416416477 * get_hashset_0() const { return ___hashset_0; }
 	inline HashSet_1_t2416416477 ** get_address_of_hashset_0() { return &___hashset_0; }
 	inline void set_hashset_0(HashSet_1_t2416416477 * value)
@@ -46,7 +46,7 @@ public:
 		Il2CppCodeGenWriteBarrier(&___hashset_0, value);
 	}
 
-	inline static int32_t get_offset_of_next_1() { return static_cast<int32_t>(offsetof(Enumerator_t2895437063, ___next_1)); }
+	inline static int32_t get_offset_of_next_1() { return static_cast<int32_t>(offsetof(Enumerator_t2895437064, ___next_1)); }
 	inline int32_t get_next_1() const { return ___next_1; }
 	inline int32_t* get_address_of_next_1() { return &___next_1; }
 	inline void set_next_1(int32_t value)
@@ -54,7 +54,7 @@ public:
 		___next_1 = value;
 	}
 
-	inline static int32_t get_offset_of_stamp_2() { return static_cast<int32_t>(offsetof(Enumerator_t2895437063, ___stamp_2)); }
+	inline static int32_t get_offset_of_stamp_2() { return static_cast<int32_t>(offsetof(Enumerator_t2895437064, ___stamp_2)); }
 	inline int32_t get_stamp_2() const { return ___stamp_2; }
 	inline int32_t* get_address_of_stamp_2() { return &___stamp_2; }
 	inline void set_stamp_2(int32_t value)
@@ -62,7 +62,7 @@ public:
 		___stamp_2 = value;
 	}
 
-	inline static int32_t get_offset_of_current_3() { return static_cast<int32_t>(offsetof(Enumerator_t2895437063, ___current_3)); }
+	inline static int32_t get_offset_of_current_3() { return static_cast<int32_t>(offsetof(Enumerator_t2895437064, ___current_3)); }
 	inline GameObject_t4012695102 * get_current_3() const { return ___current_3; }
 	inline GameObject_t4012695102 ** get_address_of_current_3() { return &___current_3; }
 	inline void set_current_3(GameObject_t4012695102 * value)

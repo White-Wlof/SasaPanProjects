@@ -19,7 +19,7 @@ namespace Game
             
             state = PlayerStateManager.Instance;
             rivalRb = this.GetComponent<Rigidbody>();
-            cannonBall = Prefabs.GameObj.CannonBall;
+            cannonBall = Prefabs.GameObj.RivalCannonBall;
             timer = 0;
         }
 	

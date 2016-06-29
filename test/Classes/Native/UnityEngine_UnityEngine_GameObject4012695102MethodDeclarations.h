@@ -84,6 +84,8 @@ extern "C"  String_t* GameObject_get_tag_m211612200 (GameObject_t4012695102 * __
 extern "C"  void GameObject_set_tag_m859036203 (GameObject_t4012695102 * __this, String_t* ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.GameObject UnityEngine.GameObject::FindGameObjectWithTag(System.String)
 extern "C"  GameObject_t4012695102 * GameObject_FindGameObjectWithTag_m2635560165 (Il2CppObject * __this /* static, unused */, String_t* ___tag, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GameObject UnityEngine.GameObject::FindWithTag(System.String)
+extern "C"  GameObject_t4012695102 * GameObject_FindWithTag_m3162815092 (Il2CppObject * __this /* static, unused */, String_t* ___tag, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.GameObject[] UnityEngine.GameObject::FindGameObjectsWithTag(System.String)
 extern "C"  GameObjectU5BU5D_t3499186955* GameObject_FindGameObjectsWithTag_m3058873418 (Il2CppObject * __this /* static, unused */, String_t* ___tag, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.GameObject::SendMessage(System.String,System.Object,UnityEngine.SendMessageOptions)

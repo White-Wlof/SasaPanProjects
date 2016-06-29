@@ -40,7 +40,7 @@ void RegisterStaticallyLinkedModulesGranular()
 
 void RegisterAllClasses()
 {
-	//Total: 93 classes
+	//Total: 94 classes
 	//0. MeshFilter
 	void RegisterClass_MeshFilter();
 	RegisterClass_MeshFilter();
@@ -317,99 +317,103 @@ void RegisterAllClasses()
 	void RegisterClass_BoxCollider();
 	RegisterClass_BoxCollider();
 
-	//69. TagManager
+	//69. WorldParticleCollider
+	void RegisterClass_WorldParticleCollider();
+	RegisterClass_WorldParticleCollider();
+
+	//70. TagManager
 	void RegisterClass_TagManager();
 	RegisterClass_TagManager();
 
-	//70. AudioListener
+	//71. AudioListener
 	void RegisterClass_AudioListener();
 	RegisterClass_AudioListener();
 
-	//71. Avatar
+	//72. Avatar
 	void RegisterClass_Avatar();
 	RegisterClass_Avatar();
 
-	//72. AnimatorController
+	//73. AnimatorController
 	void RegisterClass_AnimatorController();
 	RegisterClass_AnimatorController();
 
-	//73. ScriptMapper
+	//74. ScriptMapper
 	void RegisterClass_ScriptMapper();
 	RegisterClass_ScriptMapper();
 
-	//74. DelayedCallManager
+	//75. DelayedCallManager
 	void RegisterClass_DelayedCallManager();
 	RegisterClass_DelayedCallManager();
 
-	//75. RenderSettings
+	//76. RenderSettings
 	void RegisterClass_RenderSettings();
 	RegisterClass_RenderSettings();
 
-	//76. MonoScript
+	//77. MonoScript
 	void RegisterClass_MonoScript();
 	RegisterClass_MonoScript();
 
-	//77. MonoManager
+	//78. MonoManager
 	void RegisterClass_MonoManager();
 	RegisterClass_MonoManager();
 
-	//78. FlareLayer
+	//79. FlareLayer
 	void RegisterClass_FlareLayer();
 	RegisterClass_FlareLayer();
 
-	//79. PlayerSettings
+	//80. PlayerSettings
 	void RegisterClass_PlayerSettings();
 	RegisterClass_PlayerSettings();
 
-	//80. PhysicMaterial
+	//81. PhysicMaterial
 	void RegisterClass_PhysicMaterial();
 	RegisterClass_PhysicMaterial();
 
-	//81. SphereCollider
+	//82. SphereCollider
 	void RegisterClass_SphereCollider();
 	RegisterClass_SphereCollider();
 
-	//82. SkinnedMeshRenderer
+	//83. SkinnedMeshRenderer
 	void RegisterClass_SkinnedMeshRenderer();
 	RegisterClass_SkinnedMeshRenderer();
 
-	//83. BuildSettings
+	//84. BuildSettings
 	void RegisterClass_BuildSettings();
 	RegisterClass_BuildSettings();
 
-	//84. ResourceManager
+	//85. ResourceManager
 	void RegisterClass_ResourceManager();
 	RegisterClass_ResourceManager();
 
-	//85. NetworkManager
+	//86. NetworkManager
 	void RegisterClass_NetworkManager();
 	RegisterClass_NetworkManager();
 
-	//86. TerrainCollider
+	//87. TerrainCollider
 	void RegisterClass_TerrainCollider();
 	RegisterClass_TerrainCollider();
 
-	//87. MasterServerInterface
+	//88. MasterServerInterface
 	void RegisterClass_MasterServerInterface();
 	RegisterClass_MasterServerInterface();
 
-	//88. TerrainData
+	//89. TerrainData
 	void RegisterClass_TerrainData();
 	RegisterClass_TerrainData();
 
-	//89. LightmapSettings
+	//90. LightmapSettings
 	void RegisterClass_LightmapSettings();
 	RegisterClass_LightmapSettings();
 
-	//90. Terrain
+	//91. Terrain
 	void RegisterClass_Terrain();
 	RegisterClass_Terrain();
 
-	//91. LightProbes
+	//92. LightProbes
 	void RegisterClass_LightProbes();
 	RegisterClass_LightProbes();
 
-	//92. RuntimeInitializeOnLoadManager
+	//93. RuntimeInitializeOnLoadManager
 	void RegisterClass_RuntimeInitializeOnLoadManager();
 	RegisterClass_RuntimeInitializeOnLoadManager();
 

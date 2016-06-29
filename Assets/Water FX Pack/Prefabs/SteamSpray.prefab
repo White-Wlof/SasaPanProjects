@@ -11,6 +11,7 @@ GameObject:
   - 15: {fileID: 1500000}
   - 12: {fileID: 1200000}
   - 26: {fileID: 2600000}
+  - 76: {fileID: 7688936}
   m_Layer: 0
   m_Name: FX_SteamSpit
   m_TagString: Untagged
@@ -44,6 +45,7 @@ GameObject:
   - 15: {fileID: 1500002}
   - 12: {fileID: 1200002}
   - 26: {fileID: 2600002}
+  - 76: {fileID: 7695710}
   m_Layer: 0
   m_Name: FX_Steam
   m_TagString: Untagged
@@ -69,8 +71,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.55388546, y: 1.2348591, z: -0.37442756}
+  m_LocalRotation: {x: -0.44662192, y: 0, z: 0, w: 0.8947228}
+  m_LocalPosition: {x: 0.51, y: -0.109999985, z: 2.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400004}
@@ -160,8 +162,8 @@ EllipsoidParticleEmitter:
   m_Emit: 1
   minSize: 0.1
   maxSize: 0.3
-  minEnergy: 1
-  maxEnergy: 1.5
+  minEnergy: 2
+  maxEnergy: 2
   minEmission: 50
   maxEmission: 50
   worldVelocity: {x: 0, y: 0, z: 0}
@@ -174,7 +176,7 @@ EllipsoidParticleEmitter:
   rndRotation: 0
   Simulate in Worldspace?: 1
   m_OneShot: 0
-  m_Ellipsoid: {x: 0, y: 0, z: 0}
+  m_Ellipsoid: {x: 0.8, y: 0, z: 0}
   m_MinEmitterRange: 0
 --- !u!15 &1500002
 EllipsoidParticleEmitter:
@@ -187,8 +189,8 @@ EllipsoidParticleEmitter:
   m_Emit: 1
   minSize: 0.1
   maxSize: 0.1
-  minEnergy: 3
-  maxEnergy: 3
+  minEnergy: 1
+  maxEnergy: 1.5
   minEmission: 100
   maxEmission: 100
   worldVelocity: {x: 0, y: 0, z: 0}
@@ -201,7 +203,7 @@ EllipsoidParticleEmitter:
   rndRotation: 0
   Simulate in Worldspace?: 1
   m_OneShot: 0
-  m_Ellipsoid: {x: 0, y: 0, z: 0}
+  m_Ellipsoid: {x: 0.8, y: 0, z: 0}
   m_MinEmitterRange: 0
 --- !u!26 &2600000
 ParticleRenderer:
@@ -275,6 +277,32 @@ ParticleRenderer:
     x Tile: 9
     y Tile: 4
     cycles: 2
+--- !u!76 &7688936
+WorldParticleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_BounceFactor: 0.5
+  m_CollisionEnergyLoss: 0
+  m_CollidesWith:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_SendCollisionMessage: 0
+  m_MinKillVelocity: 0
+--- !u!76 &7695710
+WorldParticleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_BounceFactor: 0.5
+  m_CollisionEnergyLoss: 0
+  m_CollidesWith:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_SendCollisionMessage: 0
+  m_MinKillVelocity: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

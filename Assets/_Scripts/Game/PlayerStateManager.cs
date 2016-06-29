@@ -9,6 +9,12 @@ public sealed class PlayerStateManager : MonoBehaviour
 
     public int ownAtk{ get; set; }
 
+    public string rivalName{ get; set; }
+
+    public int rivalHp { get; set; }
+
+    public int rivalAtk{ get; set; }
+
     public bool cannonMode{ get; set; }
 
     public bool boostFrag{ get; set; }
@@ -24,6 +30,8 @@ public sealed class PlayerStateManager : MonoBehaviour
     public int maxSuccessionCannon { get; set; }
 
     public int revivalCannon { get; set; }
+
+    public int leafCount{ get; set; }
 
 
     public static PlayerStateManager Instance
@@ -44,9 +52,12 @@ public sealed class PlayerStateManager : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
-        
-        ownHp = 300;
-        ownAtk = 50;
+        var data = UserDataManager.Instance;
+        ownHp = data.HP;
+        ownAtk = data.ATK;
+        rivalName = "";
+        rivalHp = 1000;
+        rivalAtk = 1;
         cannonMode = false;
         boostFrag = false;
         boostLevel = 0;
@@ -55,5 +66,7 @@ public sealed class PlayerStateManager : MonoBehaviour
         initialVelocityCannon = 200;
         maxSuccessionCannon = 5;
         revivalCannon = 1;
+        leafCount = 0;
     }
+        
 }

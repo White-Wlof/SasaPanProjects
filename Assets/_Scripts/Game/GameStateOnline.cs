@@ -10,43 +10,62 @@ namespace Game
     {
         bool GameStart;
         bool GameFinish;
+        bool OnStarting;
         int textOrder;
-        List<Transform> players = new List<Transform>();
+        List<GameObject> players;
         [SerializeField] Text stateText;
         [SerializeField] Transform goalLine;
+        [SerializeField] GameObject awardPanel;
+        [SerializeField] Text awardText;
+        [SerializeField] Text playerName;
+        [SerializeField] Text rivalName;
 
         void Awake()
         {
+            players = new List<GameObject>();
             GameStart = false;
             GameFinish = false;
+            OnStarting = false;
             textOrder = 0;
             PhotonNetwork.Instantiate("PlayerMaster", Vector3.zero, Quaternion.identity, 0);
         }
 
         void Start()
         {
-            players.Add(GameObject.FindGameObjectWithTag("Player").transform);
-            players.Add(GameObject.FindGameObjectWithTag("Player").transform);
-            changeInitializePosition();
+            var data = UserDataManager.Instance;
+            playerName.text = data.UserName;
+
+            GameStart = true;
+
+            Pauser.Pause();
+
             //Ready
-            Invoke("showSignText", 0.1f);
-            Invoke("middleSignText", 0.4f);
-            Invoke("hideSignText", 0.9f);
+            Invoke("showSignText", 1.1f);
+            Invoke("middleSignText", 1.4f);
+            Invoke("hideSignText", 1.9f);
             //GO!!
-            Invoke("showSignText", 1.3f);
-            Invoke("middleSignText", 1.6f);
-            Invoke("hideSignText", 2.1f);
-            Invoke("changeGameState", 2.4f);
+            Invoke("showSignText", 2.3f);
+            Invoke("middleSignText", 2.6f);
+            Invoke("hideSignText", 3.1f);
+            Invoke("changeGameState", 3.4f);
         }
 
         void Update()
         {
-            foreach (Transform t in players)
+            if (players.Count == 2 && !OnStarting)
             {
-                if (t.position.z > goalLine.position.z && !GameFinish)
+                changeInitializePosition();
+            }
+            if (GameStart && !GameFinish)
+            {
+                foreach (GameObject t in players)
                 {
-                    showSignText();
-                    changeGameState();
+                    if (t.transform.position.z > goalLine.position.z && !GameFinish)
+                    {
+                        showSignText();
+                        changeGameState();
+                        victoryOrDefeat();
+                    }
                 }
             }
         }
@@ -74,13 +93,15 @@ namespace Game
             switch (textOrder)
             {
                 case 0:
-                    Pauser.Pause();
+                    var state = PlayerStateManager.Instance;
+                    rivalName.text = state.rivalName;
                     stateText.text = "READY";
                     textOrder++;
                     break;
                 case 1:
                     stateText.text = "GO";
                     textOrder++;
+                    OnStarting = true;
                     break;
                 case 2:
                     stateText.text = "FINISH";
@@ -94,13 +115,50 @@ namespace Game
             switch (textOrder)
             {
                 case 2:
-                    GameStart = true;
                     Pauser.Resume();
                     break;
                 case 3:
                     GameFinish = true;
                     break;
             }
+        }
+
+        void victoryOrDefeat()
+        {
+            if (players[0].transform.position.z > players[1].transform.position.z)
+            {
+                awardText.text = "You Win";
+                Debug.Log("YouWin");
+            }
+            else if (players[0].transform.position.z == players[1].transform.position.z)
+            {
+                awardText.text = "Draw";
+                Debug.Log("Draw");
+            }
+            else
+            {
+                awardText.text = "You Lose";
+                Debug.Log("YouLose");
+            }
+            if (GameFinish)
+            {
+                StartCoroutine(showAwardPanel());
+            }
+        }
+
+        IEnumerator showAwardPanel()
+        {
+            yield return new WaitForSeconds(1.5f);
+            hideSignText();
+            awardPanel.SetActive(true);
+            StartCoroutine(sceneToResult());
+        }
+
+        IEnumerator sceneToResult()
+        {
+            yield return new WaitForSeconds(1.5f);
+            SceneTransition.waitLoading(this, "Result");
+            //SceneTransition.UnLoad("Game_OnlineMode");
         }
 
         public bool getGameStart()
@@ -113,18 +171,50 @@ namespace Game
             return GameFinish;
         }
 
-        void changeInitializePosition()
+        public bool getOnStarting()
+        {
+            return OnStarting;
+        }
+
+        public void changeInitializePosition()
         {
             var playerType = PlayerPrefs.GetString("PLAYER_TYPE", "null");
             switch (playerType)
             {
                 case "Parent":
-                    players[0].transform.position = new Vector3(-2.09f, -0.36f, 4.98f);
+                    foreach (GameObject p in players)
+                    {
+                        if (p.transform.tag == "Player")
+                        {
+                            p.transform.position = new Vector3(-2.09f, -0.36f, 4.98f);
+                        }
+                        else
+                        {
+                            p.transform.position = new Vector3(0.83f, -0.36f, 4.98f);
+                        }
+                    }
                     break;
                 case "Child":
-                    players[0].transform.position = new Vector3(0.83f, -0.36f, 4.98f);
+                    foreach (GameObject p in players)
+                    {
+                        
+                        if (p.transform.tag == "Player")
+                        {
+                            p.transform.position = new Vector3(0.83f, -0.36f, 4.98f);
+                        }
+                        else
+                        {
+                            p.transform.position = new Vector3(-2.09f, -0.36f, 4.98f);
+
+                        }
+                    }
                     break;
             }
+        }
+
+        public void addPlayerList(GameObject player)
+        {
+            players.Add(player);
         }
     }
 }

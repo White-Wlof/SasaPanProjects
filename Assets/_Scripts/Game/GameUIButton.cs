@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 namespace Game
 {
@@ -9,12 +10,15 @@ namespace Game
 
         [SerializeField] Rigidbody playerRb;
         [SerializeField] Transform playerCenter;
+        [SerializeField] Image lineEffect;
         PlayerStateManager state;
 
         // Use this for initialization
         void Start()
         {
             state = PlayerStateManager.Instance;
+            var player = GameObject.FindGameObjectWithTag("Player");
+            playerRb = player.GetComponent<Rigidbody>();
         }
 
         public void pushButton(string buttonName)
@@ -27,6 +31,8 @@ namespace Game
                         if (!state.boostFrag && state.boostLevel > 0)
                         {
                             playerBoost(playerRb, state.boostLevel);
+                            lineEffect.enabled = true;
+                            StartCoroutine(endEffect(0.5F * state.boostLevel));
                             state.boostFrag = true;
                         } 
                     }
@@ -43,6 +49,12 @@ namespace Game
                     }
                     break;
             }
+        }
+
+        IEnumerator endEffect(float time)
+        {
+            yield return new WaitForSeconds(time);
+            lineEffect.enabled = false;
         }
     }
 }

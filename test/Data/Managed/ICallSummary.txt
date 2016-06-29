@@ -498,7 +498,11 @@ UnityEngine.Physics::INTERNAL_CALL_RaycastAll
 UnityEngine.Physics2D::INTERNAL_CALL_Internal_Raycast
 UnityEngine.Physics2D::INTERNAL_CALL_GetRayIntersectionAll
 UnityEngine.PlayerPrefs::HasKey
+UnityEngine.PlayerPrefs::TrySetFloat
+UnityEngine.PlayerPrefs::TrySetInt
 UnityEngine.PlayerPrefs::TrySetSetString
+UnityEngine.PlayerPrefs::GetInt
+UnityEngine.PlayerPrefs::GetFloat
 UnityEngine.PlayerPrefs::GetString
 UnityEngine.PlayerPrefs::DeleteKey
 UnityEngine.Profiler::BeginSampleOnly
@@ -555,6 +559,7 @@ UnityEngine.Renderer::get_material
 UnityEngine.Renderer::get_sharedMaterial
 UnityEngine.RenderTexture::Internal_GetHeight
 UnityEngine.RenderTexture::Internal_GetWidth
+UnityEngine.Resources::UnloadUnusedAssets
 UnityEngine.Resources::Load
 UnityEngine.Resources::FindObjectsOfTypeAll
 UnityEngine.Rigidbody::INTERNAL_CALL_IsSleeping
@@ -582,6 +587,7 @@ UnityEngine.Rigidbody2D::set_angularVelocity
 UnityEngine.Rigidbody2D::set_isKinematic
 UnityEngine.SceneManagement.Scene::GetBuildIndexInternal
 UnityEngine.SceneManagement.Scene::GetNameInternal
+UnityEngine.SceneManagement.SceneManager::UnloadSceneNameIndexInternal
 UnityEngine.SceneManagement.SceneManager::INTERNAL_CALL_GetActiveScene
 UnityEngine.SceneManagement.SceneManager::LoadSceneAsyncNameIndexInternal
 UnityEngine.Screen::get_height

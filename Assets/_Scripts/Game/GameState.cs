@@ -14,6 +14,11 @@ namespace Game
         List<Transform> players = new List<Transform>();
         [SerializeField] Text stateText;
         [SerializeField] Transform goalLine;
+        [SerializeField] GameObject awardPanel;
+        [SerializeField] Text awardText;
+        [SerializeField] Text playerName;
+        [SerializeField] Text rivalName;
+        [SerializeField] Text getSasaNum;
 
         void Awake()
         {
@@ -24,9 +29,15 @@ namespace Game
 
         void Start()
         {
+            var data = UserDataManager.Instance;
+            playerName.text = data.UserName;
+            rivalName.text = "ささギャング";
             players.Add(GameObject.FindGameObjectWithTag("Player").transform);
             players.Add(GameObject.FindGameObjectWithTag("Rival").transform);
-            changeInitializePosition();
+            if (PhotonNetwork.connected)
+            {
+                changeInitializePosition();
+            }
 
             //Ready
             Invoke("showSignText", 0.1f);
@@ -47,7 +58,9 @@ namespace Game
                 {
                     showSignText();
                     changeGameState();
+                    victoryOrDefeat();
                 }
+                    
             }
         }
 
@@ -116,6 +129,43 @@ namespace Game
                     players[1].transform.position = pos;
                     break;
             }
+        }
+
+        void victoryOrDefeat()
+        {
+            if (players[0].transform.position.z > players[1].transform.position.z)
+            {
+                awardText.text = "You Win";
+                Debug.Log("YouWin");
+            }
+            else if (players[0].transform.position.z == players[1].transform.position.z)
+            {
+                awardText.text = "Draw";
+                Debug.Log("Draw");
+            }
+            else
+            {
+                awardText.text = "You Lose";
+                Debug.Log("YouLose");
+            }
+            if (GameFinish)
+            {
+                StartCoroutine(showAwardPanel());
+            }
+        }
+
+        IEnumerator showAwardPanel()
+        {
+            yield return new WaitForSeconds(1.5f);
+            hideSignText();
+            awardPanel.SetActive(true);
+            StartCoroutine(sceneToResult());
+        }
+
+        IEnumerator sceneToResult()
+        {
+            yield return new WaitForSeconds(1.5f);
+            SceneTransition.Load("Result");
         }
 
         public bool getGameStart()

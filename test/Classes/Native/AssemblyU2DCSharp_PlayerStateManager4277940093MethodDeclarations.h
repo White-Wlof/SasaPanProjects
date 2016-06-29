@@ -14,8 +14,11 @@
 
 // PlayerStateManager
 struct PlayerStateManager_t4277940093;
+// System.String
+struct String_t;
 
 #include "codegen/il2cpp-codegen.h"
+#include "mscorlib_System_String968488902.h"
 
 // System.Void PlayerStateManager::.ctor()
 extern "C"  void PlayerStateManager__ctor_m3091918270 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -27,6 +30,18 @@ extern "C"  void PlayerStateManager_set_ownHp_m3929320478 (PlayerStateManager_t4
 extern "C"  int32_t PlayerStateManager_get_ownAtk_m3833796975 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void PlayerStateManager::set_ownAtk(System.Int32)
 extern "C"  void PlayerStateManager_set_ownAtk_m3740470694 (PlayerStateManager_t4277940093 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String PlayerStateManager::get_rivalName()
+extern "C"  String_t* PlayerStateManager_get_rivalName_m1061880197 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerStateManager::set_rivalName(System.String)
+extern "C"  void PlayerStateManager_set_rivalName_m1262259694 (PlayerStateManager_t4277940093 * __this, String_t* ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 PlayerStateManager::get_rivalHp()
+extern "C"  int32_t PlayerStateManager_get_rivalHp_m2544518263 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerStateManager::set_rivalHp(System.Int32)
+extern "C"  void PlayerStateManager_set_rivalHp_m266845858 (PlayerStateManager_t4277940093 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 PlayerStateManager::get_rivalAtk()
+extern "C"  int32_t PlayerStateManager_get_rivalAtk_m1564373739 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerStateManager::set_rivalAtk(System.Int32)
+extern "C"  void PlayerStateManager_set_rivalAtk_m1872907170 (PlayerStateManager_t4277940093 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean PlayerStateManager::get_cannonMode()
 extern "C"  bool PlayerStateManager_get_cannonMode_m4227638435 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void PlayerStateManager::set_cannonMode(System.Boolean)

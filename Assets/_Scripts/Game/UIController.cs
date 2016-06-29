@@ -16,7 +16,6 @@ public class UIController : MonoBehaviour
         state = PlayerStateManager.Instance;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!state.boostFrag)
@@ -35,9 +34,9 @@ public class UIController : MonoBehaviour
         boostTimer += Time.deltaTime;
         if (boostTimer >= state.revivalBoost)
         {
-            if (boostGage.fillAmount != 0)
+            if (boostGage.fillAmount != 1)
             {
-                boostGage.fillAmount -= 0.01f;
+                boostGage.fillAmount += 0.01f;
                 meterCount++;
                 state.boostLevel = meterCount / 10;
             }
@@ -49,8 +48,8 @@ public class UIController : MonoBehaviour
     private void resetMeter()
     {
         var meterDiff = (float)(meterCount % 10) / 100;
-        boostGage.fillAmount += 0.01f;
-        if (boostGage.fillAmount >= 1 - meterDiff)
+        boostGage.fillAmount -= 0.01f;
+        if (boostGage.fillAmount <= 0 + meterDiff)
         {
             meterCount = meterCount % 10;
             state.boostFrag = false;

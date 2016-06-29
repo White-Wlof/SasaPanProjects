@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/RoomSetting.unity
+    path: Assets/_Scenes/Menu.unity
+  - enabled: 1
+    path: Assets/_Scenes/OnlineModeSelect.unity
+  - enabled: 1
+    path: Assets/_Scenes/RandomRoom.unity
   - enabled: 1
     path: Assets/_Scenes/Game_LocalMode.unity
   - enabled: 1
     path: Assets/_Scenes/Game_OnlineMode.unity
+  - enabled: 1
+    path: Assets/_Scenes/CreateFriend.unity
+  - enabled: 1
+    path: Assets/_Scenes/JoinFriend.unity
+  - enabled: 1
+    path: Assets/_Scenes/Result.unity
+  - enabled: 1
+    path: Assets/_Scenes/Loading.unity

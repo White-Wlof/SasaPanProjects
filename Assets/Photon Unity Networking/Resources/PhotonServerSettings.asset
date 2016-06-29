@@ -37,4 +37,6 @@ MonoBehaviour:
   - RequestForPickupTimes
   - TaggedPlayer
   - shotCannon
+  - setRivalState
+  - setRivalHp
   DisableAutoOpenWizard: 1

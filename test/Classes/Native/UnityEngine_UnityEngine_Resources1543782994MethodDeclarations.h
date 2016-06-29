@@ -21,6 +21,9 @@ struct Object_t3878351788;
 struct Object_t3878351788_marshaled_pinvoke;
 // System.String
 struct String_t;
+// UnityEngine.AsyncOperation
+struct AsyncOperation_t3374395064;
+struct AsyncOperation_t3374395064_marshaled_pinvoke;
 
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Type2779229935.h"
@@ -32,3 +35,5 @@ extern "C"  ObjectU5BU5D_t3051965477* Resources_FindObjectsOfTypeAll_m1346325355
 extern "C"  Object_t3878351788 * Resources_Load_m2187391845 (Il2CppObject * __this /* static, unused */, String_t* ___path, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Object UnityEngine.Resources::Load(System.String,System.Type)
 extern "C"  Object_t3878351788 * Resources_Load_m3601699608 (Il2CppObject * __this /* static, unused */, String_t* ___path, Type_t * ___systemTypeInstance, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.AsyncOperation UnityEngine.Resources::UnloadUnusedAssets()
+extern "C"  AsyncOperation_t3374395064 * Resources_UnloadUnusedAssets_m3831138427 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;

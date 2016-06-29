@@ -1425,12 +1425,12 @@
 #include "AssemblyU2DCSharp_PhotonAnimatorView_SynchronizeTyp341227658.h"
 #include "AssemblyU2DCSharp_PhotonAnimatorView_SynchronizedP3311342805.h"
 #include "AssemblyU2DCSharp_PhotonAnimatorView_SynchronizedL1918348413.h"
-#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CDoesLayerS1573396519.h"
-#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CDoesParame2133516375.h"
-#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CGetLayerSy1115327302.h"
-#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CGetParamet3056155807.h"
-#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CSetLayerSy3336388188.h"
-#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CSetParameter28730885.h"
+#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CDoesLayerS1530651635.h"
+#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CDoesParame1714497740.h"
+#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CGetLayerSyn215407519.h"
+#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CGetParamete251549000.h"
+#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CSetLayerSyn348818189.h"
+#include "AssemblyU2DCSharp_PhotonAnimatorView_U3CSetParamete890656870.h"
 #include "AssemblyU2DCSharp_PhotonRigidbody2DView2664395880.h"
 #include "AssemblyU2DCSharp_PhotonRigidbodyView1273153366.h"
 #include "AssemblyU2DCSharp_PhotonTransformView486317301.h"
@@ -1485,26 +1485,50 @@
 #include "AssemblyU2DCSharp_ExitGames_Client_Photon_Chat_Cha1678887231.h"
 #include "AssemblyU2DCSharp_ExitGames_Client_Photon_Chat_Cha3332334203.h"
 #include "AssemblyU2DCSharp_TextureAnimator186110210.h"
-#include "AssemblyU2DCSharp_Cannon_CannonBallController3728533319.h"
+#include "AssemblyU2DCSharp_UniClipboard3530431142.h"
 #include "AssemblyU2DCSharp_Game_CharacterOperationMaster2712534982.h"
 #include "AssemblyU2DCSharp_Game_GameState3027501829.h"
+#include "AssemblyU2DCSharp_Game_GameState_U3CshowAwardPanel1434139846.h"
+#include "AssemblyU2DCSharp_Game_GameState_U3CsceneToResultU4253694246.h"
 #include "AssemblyU2DCSharp_Game_GameStateOnline3171627576.h"
+#include "AssemblyU2DCSharp_Game_GameStateOnline_U3CshowAwar1434139855.h"
+#include "AssemblyU2DCSharp_Game_GameStateOnline_U3CsceneToR4253694248.h"
 #include "AssemblyU2DCSharp_Game_GameUIButton467804254.h"
 #include "AssemblyU2DCSharp_Game_PlayerCameraController2657252648.h"
+#include "AssemblyU2DCSharp_Game_PlayerCameraControllerOnlin3193323035.h"
+#include "AssemblyU2DCSharp_Cannon_PlayerCannonBallControlle1936712648.h"
 #include "AssemblyU2DCSharp_Game_PlayerCollider3332416891.h"
 #include "AssemblyU2DCSharp_Game_PlayerController2899995875.h"
 #include "AssemblyU2DCSharp_Game_PlayerControllerOnline2665889174.h"
+#include "AssemblyU2DCSharp_PlayerHpView3887621678.h"
 #include "AssemblyU2DCSharp_PlayerStateManager4277940093.h"
+#include "AssemblyU2DCSharp_Cannon_RivalCannonBallController241768369.h"
+#include "AssemblyU2DCSharp_Game_RivalCollider740404964.h"
 #include "AssemblyU2DCSharp_Game_RivalController3057565708.h"
 #include "AssemblyU2DCSharp_UIController2684559696.h"
-#include "AssemblyU2DCSharp_PUNController292333413.h"
+#include "AssemblyU2DCSharp_LoadingManager3564041969.h"
+#include "AssemblyU2DCSharp_LoadingManager_U3CLoadingAnimU3E1732218016.h"
+#include "AssemblyU2DCSharp_GrowView572087672.h"
+#include "AssemblyU2DCSharp_MenuView3755892932.h"
+#include "AssemblyU2DCSharp_MenuView_U3CshowMenuPanelU3Ec__I4223506790.h"
+#include "AssemblyU2DCSharp_OnlineModeSelect740007762.h"
+#include "AssemblyU2DCSharp_FriendRoomCreate2039659285.h"
+#include "AssemblyU2DCSharp_FriendRoomEnter2699937183.h"
 #include "AssemblyU2DCSharp_Game_PhotonPanda3542014468.h"
 #include "AssemblyU2DCSharp_Game_PhotonPlayer1433979395.h"
 #include "AssemblyU2DCSharp_Game_RPCMethod1471448684.h"
+#include "AssemblyU2DCSharp_RandomRoomMatching856125051.h"
+#include "AssemblyU2DCSharp_ResultView1421671554.h"
 #include "AssemblyU2DCSharp_Game_BoatDirectionSystem992795764.h"
+#include "AssemblyU2DCSharp_Game_BoatDirectionSystem_U3Cauto1786154333.h"
+#include "AssemblyU2DCSharp_ButtonTransition_U3CLoadNextU3Ec_711222279.h"
 #include "AssemblyU2DCSharp_CannonPullSystem3255870929.h"
 #include "AssemblyU2DCSharp_Game_OrbitPredictioner1410782764.h"
 #include "AssemblyU2DCSharp_Pauser2383512924.h"
+#include "AssemblyU2DCSharp_PlayData1942919454.h"
+#include "AssemblyU2DCSharp_SceneTransition_U3CLoadNextU3Ec__711222280.h"
+#include "AssemblyU2DCSharp_UserDataManager271735736.h"
+#include "AssemblyU2DCSharp_UserInfo4092807993.h"
 #include "mscorlib_U3CModuleU3E86524790.h"
 #include "mscorlib_System_Object837106420.h"
 #include "mscorlib_System_ValueType4014882752.h"
@@ -2018,8 +2042,12 @@
 #include "AssemblyU2DCSharp_ServerTime167540944.h"
 #include "AssemblyU2DCSharp_ICurvePoint2098231050.h"
 #include "AssemblyU2DCSharp_IRiverTool3609154427.h"
+#include "AssemblyU2DCSharp_EditorBoard648044889.h"
+#include "AssemblyU2DCSharp_IOSBoard2210025209.h"
+#include "AssemblyU2DCSharp_ButtonTransition85581383.h"
 #include "AssemblyU2DCSharp_Prefabs1345984335.h"
 #include "AssemblyU2DCSharp_Prefabs_GameObj1469031301.h"
+#include "AssemblyU2DCSharp_SceneTransition2973162209.h"
 #include "AssemblyU2DCSharpU2Dfirstpass_U3CModuleU3E86524790.h"
 
 
@@ -2029,7 +2057,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9601] = 
+extern const int32_t g_FieldOffsetTable[9740] = 
 {
 	0,
 	0,
@@ -11234,12 +11262,12 @@ extern const int32_t g_FieldOffsetTable[9601] =
 	SynchronizedParameter_t3311342805::get_offset_of_Name_2(),
 	SynchronizedLayer_t1918348413::get_offset_of_SynchronizeType_0(),
 	SynchronizedLayer_t1918348413::get_offset_of_LayerIndex_1(),
-	U3CDoesLayerSynchronizeTypeExistU3Ec__AnonStorey9_t1573396519::get_offset_of_layerIndex_0(),
-	U3CDoesParameterSynchronizeTypeExistU3Ec__AnonStoreyA_t2133516375::get_offset_of_name_0(),
-	U3CGetLayerSynchronizeTypeU3Ec__AnonStoreyB_t1115327302::get_offset_of_layerIndex_0(),
-	U3CGetParameterSynchronizeTypeU3Ec__AnonStoreyC_t3056155807::get_offset_of_name_0(),
-	U3CSetLayerSynchronizedU3Ec__AnonStoreyD_t3336388188::get_offset_of_layerIndex_0(),
-	U3CSetParameterSynchronizedU3Ec__AnonStoreyE_t28730885::get_offset_of_name_0(),
+	U3CDoesLayerSynchronizeTypeExistU3Ec__AnonStorey12_t1530651635::get_offset_of_layerIndex_0(),
+	U3CDoesParameterSynchronizeTypeExistU3Ec__AnonStorey13_t1714497740::get_offset_of_name_0(),
+	U3CGetLayerSynchronizeTypeU3Ec__AnonStorey14_t215407519::get_offset_of_layerIndex_0(),
+	U3CGetParameterSynchronizeTypeU3Ec__AnonStorey15_t251549000::get_offset_of_name_0(),
+	U3CSetLayerSynchronizedU3Ec__AnonStorey16_t348818189::get_offset_of_layerIndex_0(),
+	U3CSetParameterSynchronizedU3Ec__AnonStorey17_t890656870::get_offset_of_name_0(),
 	PhotonRigidbody2DView_t2664395880::get_offset_of_m_SynchronizeVelocity_2(),
 	PhotonRigidbody2DView_t2664395880::get_offset_of_m_SynchronizeAngularVelocity_3(),
 	PhotonRigidbody2DView_t2664395880::get_offset_of_m_Body_4(),
@@ -11528,9 +11556,7 @@ extern const int32_t g_FieldOffsetTable[9601] =
 	TextureAnimator_t186110210::get_offset_of_frameCounter_6(),
 	TextureAnimator_t186110210::get_offset_of__renderer_7(),
 	TextureAnimator_t186110210::get_offset_of__material_8(),
-	CannonBallController_t3728533319::get_offset_of_detonatorSmall_2(),
-	CannonBallController_t3728533319::get_offset_of_detonatorBig_3(),
-	CannonBallController_t3728533319_StaticFields::get_offset_of_U3CU3Ef__switchU24map0_4(),
+	UniClipboard_t3530431142_StaticFields::get_offset_of__board_0(),
 	CharacterOperationMaster_t2712534982::get_offset_of_LEFT_2(),
 	CharacterOperationMaster_t2712534982::get_offset_of_RIGHT_3(),
 	GameState_t3027501829::get_offset_of_GameStart_3(),
@@ -11539,26 +11565,61 @@ extern const int32_t g_FieldOffsetTable[9601] =
 	GameState_t3027501829::get_offset_of_players_6(),
 	GameState_t3027501829::get_offset_of_stateText_7(),
 	GameState_t3027501829::get_offset_of_goalLine_8(),
-	GameState_t3027501829_StaticFields::get_offset_of_U3CU3Ef__switchU24map1_9(),
+	GameState_t3027501829::get_offset_of_awardPanel_9(),
+	GameState_t3027501829::get_offset_of_awardText_10(),
+	GameState_t3027501829::get_offset_of_playerName_11(),
+	GameState_t3027501829::get_offset_of_rivalName_12(),
+	GameState_t3027501829::get_offset_of_getSasaNum_13(),
+	GameState_t3027501829_StaticFields::get_offset_of_U3CU3Ef__switchU24map0_14(),
+	U3CshowAwardPanelU3Ec__Iterator9_t1434139846::get_offset_of_U24PC_0(),
+	U3CshowAwardPanelU3Ec__Iterator9_t1434139846::get_offset_of_U24current_1(),
+	U3CshowAwardPanelU3Ec__Iterator9_t1434139846::get_offset_of_U3CU3Ef__this_2(),
+	U3CsceneToResultU3Ec__IteratorA_t4253694246::get_offset_of_U24PC_0(),
+	U3CsceneToResultU3Ec__IteratorA_t4253694246::get_offset_of_U24current_1(),
 	GameStateOnline_t3171627576::get_offset_of_GameStart_3(),
 	GameStateOnline_t3171627576::get_offset_of_GameFinish_4(),
-	GameStateOnline_t3171627576::get_offset_of_textOrder_5(),
-	GameStateOnline_t3171627576::get_offset_of_players_6(),
-	GameStateOnline_t3171627576::get_offset_of_stateText_7(),
-	GameStateOnline_t3171627576::get_offset_of_goalLine_8(),
-	GameStateOnline_t3171627576_StaticFields::get_offset_of_U3CU3Ef__switchU24map2_9(),
+	GameStateOnline_t3171627576::get_offset_of_OnStarting_5(),
+	GameStateOnline_t3171627576::get_offset_of_textOrder_6(),
+	GameStateOnline_t3171627576::get_offset_of_players_7(),
+	GameStateOnline_t3171627576::get_offset_of_stateText_8(),
+	GameStateOnline_t3171627576::get_offset_of_goalLine_9(),
+	GameStateOnline_t3171627576::get_offset_of_awardPanel_10(),
+	GameStateOnline_t3171627576::get_offset_of_awardText_11(),
+	GameStateOnline_t3171627576::get_offset_of_playerName_12(),
+	GameStateOnline_t3171627576::get_offset_of_rivalName_13(),
+	GameStateOnline_t3171627576_StaticFields::get_offset_of_U3CU3Ef__switchU24map1_14(),
+	U3CshowAwardPanelU3Ec__IteratorB_t1434139855::get_offset_of_U24PC_0(),
+	U3CshowAwardPanelU3Ec__IteratorB_t1434139855::get_offset_of_U24current_1(),
+	U3CshowAwardPanelU3Ec__IteratorB_t1434139855::get_offset_of_U3CU3Ef__this_2(),
+	U3CsceneToResultU3Ec__IteratorC_t4253694248::get_offset_of_U24PC_0(),
+	U3CsceneToResultU3Ec__IteratorC_t4253694248::get_offset_of_U24current_1(),
+	U3CsceneToResultU3Ec__IteratorC_t4253694248::get_offset_of_U3CU3Ef__this_2(),
 	GameUIButton_t467804254::get_offset_of_playerRb_4(),
 	GameUIButton_t467804254::get_offset_of_playerCenter_5(),
 	GameUIButton_t467804254::get_offset_of_state_6(),
-	GameUIButton_t467804254_StaticFields::get_offset_of_U3CU3Ef__switchU24map3_7(),
+	GameUIButton_t467804254_StaticFields::get_offset_of_U3CU3Ef__switchU24map2_7(),
 	PlayerCameraController_t2657252648::get_offset_of_mainCamera_2(),
+	PlayerCameraController_t2657252648::get_offset_of_rival_3(),
+	PlayerCameraController_t2657252648::get_offset_of_state_4(),
+	PlayerCameraController_t2657252648::get_offset_of_backCamera_5(),
+	PlayerCameraController_t2657252648::get_offset_of_isRival_6(),
+	PlayerCameraControllerOnline_t3193323035::get_offset_of_mainCamera_2(),
+	PlayerCameraControllerOnline_t3193323035::get_offset_of_rival_3(),
+	PlayerCameraControllerOnline_t3193323035::get_offset_of_state_4(),
+	PlayerCameraControllerOnline_t3193323035::get_offset_of_backCamera_5(),
+	PlayerCameraControllerOnline_t3193323035::get_offset_of_isRival_6(),
+	PlayerCannonBallController_t1936712648::get_offset_of_detonatorSmall_2(),
+	PlayerCannonBallController_t1936712648::get_offset_of_detonatorBig_3(),
+	PlayerCannonBallController_t1936712648_StaticFields::get_offset_of_U3CU3Ef__switchU24map3_4(),
 	0,
 	0,
-	PlayerCollider_t3332416891::get_offset_of_state_4(),
-	PlayerCollider_t3332416891::get_offset_of_ballDamage_5(),
-	PlayerCollider_t3332416891::get_offset_of_fieldDamage_6(),
-	PlayerCollider_t3332416891_StaticFields::get_offset_of_U3CU3Ef__switchU24map4_7(),
-	PlayerCollider_t3332416891_StaticFields::get_offset_of_U3CU3Ef__switchU24map5_8(),
+	0,
+	PlayerCollider_t3332416891::get_offset_of_state_5(),
+	PlayerCollider_t3332416891::get_offset_of_hp_6(),
+	PlayerCollider_t3332416891::get_offset_of_ballDamage_7(),
+	PlayerCollider_t3332416891::get_offset_of_fieldDamage_8(),
+	PlayerCollider_t3332416891_StaticFields::get_offset_of_U3CU3Ef__switchU24map4_9(),
+	PlayerCollider_t3332416891_StaticFields::get_offset_of_U3CU3Ef__switchU24map5_10(),
 	PlayerController_t2899995875::get_offset_of_center_4(),
 	PlayerController_t2899995875::get_offset_of_cannon_5(),
 	PlayerController_t2899995875::get_offset_of_gameState_6(),
@@ -11575,17 +11636,35 @@ extern const int32_t g_FieldOffsetTable[9601] =
 	PlayerControllerOnline_t2665889174::get_offset_of_playerType_11(),
 	PlayerControllerOnline_t2665889174::get_offset_of_shotPlayer_12(),
 	PlayerControllerOnline_t2665889174::get_offset_of_O_Speed_13(),
+	PlayerHpView_t3887621678::get_offset_of_ownHpSlider_2(),
+	PlayerHpView_t3887621678::get_offset_of_rivalHpSlider_3(),
+	PlayerHpView_t3887621678::get_offset_of_state_4(),
 	PlayerStateManager_t4277940093_StaticFields::get_offset_of__singleInstance_2(),
 	PlayerStateManager_t4277940093::get_offset_of_U3CownHpU3Ek__BackingField_3(),
 	PlayerStateManager_t4277940093::get_offset_of_U3CownAtkU3Ek__BackingField_4(),
-	PlayerStateManager_t4277940093::get_offset_of_U3CcannonModeU3Ek__BackingField_5(),
-	PlayerStateManager_t4277940093::get_offset_of_U3CboostFragU3Ek__BackingField_6(),
-	PlayerStateManager_t4277940093::get_offset_of_U3CboostLevelU3Ek__BackingField_7(),
-	PlayerStateManager_t4277940093::get_offset_of_U3CrevivalBoostU3Ek__BackingField_8(),
-	PlayerStateManager_t4277940093::get_offset_of_U3CcannonFragU3Ek__BackingField_9(),
-	PlayerStateManager_t4277940093::get_offset_of_U3CinitialVelocityCannonU3Ek__BackingField_10(),
-	PlayerStateManager_t4277940093::get_offset_of_U3CmaxSuccessionCannonU3Ek__BackingField_11(),
-	PlayerStateManager_t4277940093::get_offset_of_U3CrevivalCannonU3Ek__BackingField_12(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CrivalNameU3Ek__BackingField_5(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CrivalHpU3Ek__BackingField_6(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CrivalAtkU3Ek__BackingField_7(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CcannonModeU3Ek__BackingField_8(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CboostFragU3Ek__BackingField_9(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CboostLevelU3Ek__BackingField_10(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CrevivalBoostU3Ek__BackingField_11(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CcannonFragU3Ek__BackingField_12(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CinitialVelocityCannonU3Ek__BackingField_13(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CmaxSuccessionCannonU3Ek__BackingField_14(),
+	PlayerStateManager_t4277940093::get_offset_of_U3CrevivalCannonU3Ek__BackingField_15(),
+	RivalCannonBallController_t241768369::get_offset_of_detonatorSmall_2(),
+	RivalCannonBallController_t241768369::get_offset_of_detonatorBig_3(),
+	RivalCannonBallController_t241768369_StaticFields::get_offset_of_U3CU3Ef__switchU24map6_4(),
+	0,
+	0,
+	0,
+	RivalCollider_t740404964::get_offset_of_state_5(),
+	RivalCollider_t740404964::get_offset_of_hp_6(),
+	RivalCollider_t740404964::get_offset_of_ballDamage_7(),
+	RivalCollider_t740404964::get_offset_of_fieldDamage_8(),
+	RivalCollider_t740404964_StaticFields::get_offset_of_U3CU3Ef__switchU24map7_9(),
+	RivalCollider_t740404964_StaticFields::get_offset_of_U3CU3Ef__switchU24map8_10(),
 	RivalController_t3057565708::get_offset_of_center_4(),
 	RivalController_t3057565708::get_offset_of_cannon_5(),
 	RivalController_t3057565708::get_offset_of_player_6(),
@@ -11597,17 +11676,77 @@ extern const int32_t g_FieldOffsetTable[9601] =
 	UIController_t2684559696::get_offset_of_state_3(),
 	UIController_t2684559696::get_offset_of_boostTimer_4(),
 	UIController_t2684559696::get_offset_of_meterCount_5(),
-	PUNController_t292333413::get_offset_of_isWaiting_3(),
-	PUNController_t292333413::get_offset_of_online_4(),
+	LoadingManager_t3564041969::get_offset_of_loadingAnim_3(),
+	LoadingManager_t3564041969::get_offset_of_loadingImages_4(),
+	U3CLoadingAnimU3Ec__IteratorD_t1732218016::get_offset_of_U24PC_0(),
+	U3CLoadingAnimU3Ec__IteratorD_t1732218016::get_offset_of_U24current_1(),
+	U3CLoadingAnimU3Ec__IteratorD_t1732218016::get_offset_of_U3CU3Ef__this_2(),
+	GrowView_t572087672::get_offset_of_data_2(),
+	GrowView_t572087672::get_offset_of_userName_3(),
+	GrowView_t572087672::get_offset_of_newUserName_4(),
+	GrowView_t572087672::get_offset_of_save_5(),
+	0,
+	0,
+	0,
+	MenuView_t3755892932::get_offset_of_selectPanel_5(),
+	MenuView_t3755892932::get_offset_of_childPanel_6(),
+	MenuView_t3755892932::get_offset_of_comment_7(),
+	MenuView_t3755892932::get_offset_of_grow_8(),
+	MenuView_t3755892932::get_offset_of_play_9(),
+	MenuView_t3755892932::get_offset_of_create_10(),
+	MenuView_t3755892932::get_offset_of_back_11(),
+	U3CshowMenuPanelU3Ec__IteratorE_t4223506790::get_offset_of_menu_0(),
+	U3CshowMenuPanelU3Ec__IteratorE_t4223506790::get_offset_of_U3CiU3E__0_1(),
+	U3CshowMenuPanelU3Ec__IteratorE_t4223506790::get_offset_of_U24PC_2(),
+	U3CshowMenuPanelU3Ec__IteratorE_t4223506790::get_offset_of_U24current_3(),
+	U3CshowMenuPanelU3Ec__IteratorE_t4223506790::get_offset_of_U3CU24U3Emenu_4(),
+	U3CshowMenuPanelU3Ec__IteratorE_t4223506790::get_offset_of_U3CU3Ef__this_5(),
+	OnlineModeSelect_t740007762::get_offset_of_Panel_0_3(),
+	OnlineModeSelect_t740007762::get_offset_of_Panel_1_4(),
+	OnlineModeSelect_t740007762::get_offset_of_withFriend_5(),
+	OnlineModeSelect_t740007762::get_offset_of_back_6(),
+	FriendRoomCreate_t2039659285::get_offset_of_roomId_3(),
+	FriendRoomCreate_t2039659285::get_offset_of_copy_4(),
+	FriendRoomCreate_t2039659285::get_offset_of_panel_5(),
+	FriendRoomCreate_t2039659285::get_offset_of_roomList_6(),
+	FriendRoomCreate_t2039659285::get_offset_of_data_7(),
+	FriendRoomEnter_t2699937183::get_offset_of_inputField_3(),
+	FriendRoomEnter_t2699937183::get_offset_of_roomName_4(),
+	FriendRoomEnter_t2699937183::get_offset_of_join_5(),
+	FriendRoomEnter_t2699937183::get_offset_of_paste_6(),
+	FriendRoomEnter_t2699937183::get_offset_of_panel_7(),
 	PhotonPanda_t3542014468::get_offset_of_correctPlayerPos_3(),
 	PhotonPanda_t3542014468::get_offset_of_correctPlayerRot_4(),
 	PhotonPlayer_t1433979395::get_offset_of_correctPlayerPos_3(),
 	PhotonPlayer_t1433979395::get_offset_of_correctPlayerRot_4(),
-	PhotonPlayer_t1433979395::get_offset_of_viewID_5(),
+	PhotonPlayer_t1433979395::get_offset_of_online_5(),
 	RPCMethod_t1471448684::get_offset_of_player_3(),
+	RandomRoomMatching_t856125051::get_offset_of_isWaiting_3(),
+	RandomRoomMatching_t856125051::get_offset_of_online_4(),
+	RandomRoomMatching_t856125051::get_offset_of_roomList_5(),
+	ResultView_t1421671554::get_offset_of_data_2(),
 	BoatDirectionSystem_t992795764::get_offset_of_state_4(),
 	BoatDirectionSystem_t992795764::get_offset_of_touchPos_5(),
 	BoatDirectionSystem_t992795764::get_offset_of_detachPos_6(),
+	BoatDirectionSystem_t992795764::get_offset_of_deltaPos_7(),
+	BoatDirectionSystem_t992795764::get_offset_of_rudderPos_8(),
+	BoatDirectionSystem_t992795764::get_offset_of_rudder_9(),
+	BoatDirectionSystem_t992795764::get_offset_of_autoRotateState_10(),
+	BoatDirectionSystem_t992795764::get_offset_of_isAutoRotate_11(),
+	U3CautoRudderRotateU3Ec__IteratorF_t1786154333::get_offset_of_U3CtimerU3E__0_0(),
+	U3CautoRudderRotateU3Ec__IteratorF_t1786154333::get_offset_of_U3CdeltaAngleU3E__1_1(),
+	U3CautoRudderRotateU3Ec__IteratorF_t1786154333::get_offset_of_state_2(),
+	U3CautoRudderRotateU3Ec__IteratorF_t1786154333::get_offset_of_U24PC_3(),
+	U3CautoRudderRotateU3Ec__IteratorF_t1786154333::get_offset_of_U24current_4(),
+	U3CautoRudderRotateU3Ec__IteratorF_t1786154333::get_offset_of_U3CU24U3Estate_5(),
+	U3CautoRudderRotateU3Ec__IteratorF_t1786154333::get_offset_of_U3CU3Ef__this_6(),
+	U3CLoadNextU3Ec__Iterator10_t711222279::get_offset_of_U3CtimerU3E__0_0(),
+	U3CLoadNextU3Ec__Iterator10_t711222279::get_offset_of_sceneName_1(),
+	U3CLoadNextU3Ec__Iterator10_t711222279::get_offset_of_U3CasyncU3E__1_2(),
+	U3CLoadNextU3Ec__Iterator10_t711222279::get_offset_of_U3CloadingAnimU3E__2_3(),
+	U3CLoadNextU3Ec__Iterator10_t711222279::get_offset_of_U24PC_4(),
+	U3CLoadNextU3Ec__Iterator10_t711222279::get_offset_of_U24current_5(),
+	U3CLoadNextU3Ec__Iterator10_t711222279::get_offset_of_U3CU24U3EsceneName_6(),
 	CannonPullSystem_t3255870929::get_offset_of_center_2(),
 	CannonPullSystem_t3255870929::get_offset_of_state_3(),
 	CannonPullSystem_t3255870929::get_offset_of_touchPos_4(),
@@ -11632,11 +11771,39 @@ extern const int32_t g_FieldOffsetTable[9601] =
 	Pauser_t2383512924_StaticFields::get_offset_of_U3CU3Ef__amU24cache8_10(),
 	Pauser_t2383512924_StaticFields::get_offset_of_U3CU3Ef__amU24cache9_11(),
 	Pauser_t2383512924_StaticFields::get_offset_of_U3CU3Ef__amU24cacheA_12(),
+	PlayData_t1942919454::get_offset_of_U3CCPUCountU3Ek__BackingField_3(),
+	PlayData_t1942919454::get_offset_of_U3CVSCountU3Ek__BackingField_4(),
+	PlayData_t1942919454::get_offset_of_U3CWinU3Ek__BackingField_5(),
+	PlayData_t1942919454::get_offset_of_U3CLoseU3Ek__BackingField_6(),
+	PlayData_t1942919454::get_offset_of_U3CPlayTimeU3Ek__BackingField_7(),
+	U3CLoadNextU3Ec__Iterator11_t711222280::get_offset_of_U3CtimerU3E__0_0(),
+	U3CLoadNextU3Ec__Iterator11_t711222280::get_offset_of_sceneName_1(),
+	U3CLoadNextU3Ec__Iterator11_t711222280::get_offset_of_U3CasyncU3E__1_2(),
+	U3CLoadNextU3Ec__Iterator11_t711222280::get_offset_of_U3CloadingAnimU3E__2_3(),
+	U3CLoadNextU3Ec__Iterator11_t711222280::get_offset_of_U24PC_4(),
+	U3CLoadNextU3Ec__Iterator11_t711222280::get_offset_of_U24current_5(),
+	U3CLoadNextU3Ec__Iterator11_t711222280::get_offset_of_U3CU24U3EsceneName_6(),
+	0,
+	UserDataManager_t271735736::get_offset_of_U3CUserNameU3Ek__BackingField_3(),
+	UserDataManager_t271735736::get_offset_of_U3CLevelU3Ek__BackingField_4(),
+	UserDataManager_t271735736::get_offset_of_U3CExperienceU3Ek__BackingField_5(),
+	UserDataManager_t271735736::get_offset_of_U3CMaxExpU3Ek__BackingField_6(),
+	UserDataManager_t271735736::get_offset_of_U3CHPU3Ek__BackingField_7(),
+	UserDataManager_t271735736::get_offset_of_U3CATKU3Ek__BackingField_8(),
+	UserDataManager_t271735736::get_offset_of_U3CNormalSasaU3Ek__BackingField_9(),
+	UserDataManager_t271735736::get_offset_of_U3CGoldSasaU3Ek__BackingField_10(),
+	UserDataManager_t271735736::get_offset_of_U3CHostRoomIdU3Ek__BackingField_11(),
+	UserInfo_t4092807993::get_offset_of_level_2(),
+	UserInfo_t4092807993::get_offset_of_userName_3(),
+	UserInfo_t4092807993::get_offset_of_goldSasa_4(),
+	UserInfo_t4092807993::get_offset_of_normalSasa_5(),
+	UserInfo_t4092807993::get_offset_of_experience_6(),
+	UserInfo_t4092807993::get_offset_of_data_7(),
 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2245] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2275] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -13790,12 +13957,12 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2245] =
 	sizeof (SynchronizeType_t341227658)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (SynchronizedParameter_t3311342805), -1, 0, 0,
 	sizeof (SynchronizedLayer_t1918348413), -1, 0, 0,
-	sizeof (U3CDoesLayerSynchronizeTypeExistU3Ec__AnonStorey9_t1573396519), -1, 0, 0,
-	sizeof (U3CDoesParameterSynchronizeTypeExistU3Ec__AnonStoreyA_t2133516375), -1, 0, 0,
-	sizeof (U3CGetLayerSynchronizeTypeU3Ec__AnonStoreyB_t1115327302), -1, 0, 0,
-	sizeof (U3CGetParameterSynchronizeTypeU3Ec__AnonStoreyC_t3056155807), -1, 0, 0,
-	sizeof (U3CSetLayerSynchronizedU3Ec__AnonStoreyD_t3336388188), -1, 0, 0,
-	sizeof (U3CSetParameterSynchronizedU3Ec__AnonStoreyE_t28730885), -1, 0, 0,
+	sizeof (U3CDoesLayerSynchronizeTypeExistU3Ec__AnonStorey12_t1530651635), -1, 0, 0,
+	sizeof (U3CDoesParameterSynchronizeTypeExistU3Ec__AnonStorey13_t1714497740), -1, 0, 0,
+	sizeof (U3CGetLayerSynchronizeTypeU3Ec__AnonStorey14_t215407519), -1, 0, 0,
+	sizeof (U3CGetParameterSynchronizeTypeU3Ec__AnonStorey15_t251549000), -1, 0, 0,
+	sizeof (U3CSetLayerSynchronizedU3Ec__AnonStorey16_t348818189), -1, 0, 0,
+	sizeof (U3CSetParameterSynchronizedU3Ec__AnonStorey17_t890656870), -1, 0, 0,
 	sizeof (PhotonRigidbody2DView_t2664395880), -1, 0, 0,
 	sizeof (PhotonRigidbodyView_t1273153366), -1, 0, 0,
 	sizeof (PhotonTransformView_t486317301), -1, 0, 0,
@@ -13860,27 +14027,57 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[2245] =
 	sizeof (ICurvePoint_t2098231050), -1, 0, 0,
 	sizeof (IRiverTool_t3609154427), -1, 0, 0,
 	sizeof (TextureAnimator_t186110210), -1, 0, 0,
-	sizeof (CannonBallController_t3728533319), -1, sizeof(CannonBallController_t3728533319_StaticFields), 0,
+	sizeof (UniClipboard_t3530431142), -1, sizeof(UniClipboard_t3530431142_StaticFields), 0,
+	0, -1, 0, 0,
+	sizeof (EditorBoard_t648044889), -1, 0, 0,
+	sizeof (IOSBoard_t2210025209), -1, 0, 0,
 	sizeof (CharacterOperationMaster_t2712534982), -1, 0, 0,
 	sizeof (GameState_t3027501829), -1, sizeof(GameState_t3027501829_StaticFields), 0,
+	sizeof (U3CshowAwardPanelU3Ec__Iterator9_t1434139846), -1, 0, 0,
+	sizeof (U3CsceneToResultU3Ec__IteratorA_t4253694246), -1, 0, 0,
 	sizeof (GameStateOnline_t3171627576), -1, sizeof(GameStateOnline_t3171627576_StaticFields), 0,
+	sizeof (U3CshowAwardPanelU3Ec__IteratorB_t1434139855), -1, 0, 0,
+	sizeof (U3CsceneToResultU3Ec__IteratorC_t4253694248), -1, 0, 0,
 	sizeof (GameUIButton_t467804254), -1, sizeof(GameUIButton_t467804254_StaticFields), 0,
 	sizeof (PlayerCameraController_t2657252648), -1, 0, 0,
+	sizeof (PlayerCameraControllerOnline_t3193323035), -1, 0, 0,
+	sizeof (PlayerCannonBallController_t1936712648), -1, sizeof(PlayerCannonBallController_t1936712648_StaticFields), 0,
 	sizeof (PlayerCollider_t3332416891), -1, sizeof(PlayerCollider_t3332416891_StaticFields), 0,
 	sizeof (PlayerController_t2899995875), -1, 0, 0,
 	sizeof (PlayerControllerOnline_t2665889174), -1, 0, 0,
+	sizeof (PlayerHpView_t3887621678), -1, 0, 0,
 	sizeof (PlayerStateManager_t4277940093), -1, sizeof(PlayerStateManager_t4277940093_StaticFields), 0,
+	sizeof (RivalCannonBallController_t241768369), -1, sizeof(RivalCannonBallController_t241768369_StaticFields), 0,
+	sizeof (RivalCollider_t740404964), -1, sizeof(RivalCollider_t740404964_StaticFields), 0,
 	sizeof (RivalController_t3057565708), -1, 0, 0,
 	sizeof (UIController_t2684559696), -1, 0, 0,
-	sizeof (PUNController_t292333413), -1, 0, 0,
+	sizeof (LoadingManager_t3564041969), -1, 0, 0,
+	sizeof (U3CLoadingAnimU3Ec__IteratorD_t1732218016), -1, 0, 0,
+	sizeof (GrowView_t572087672), -1, 0, 0,
+	sizeof (MenuView_t3755892932), -1, 0, 0,
+	sizeof (U3CshowMenuPanelU3Ec__IteratorE_t4223506790), -1, 0, 0,
+	sizeof (OnlineModeSelect_t740007762), -1, 0, 0,
+	sizeof (FriendRoomCreate_t2039659285), -1, 0, 0,
+	sizeof (FriendRoomEnter_t2699937183), -1, 0, 0,
 	sizeof (PhotonPanda_t3542014468), -1, 0, 0,
 	sizeof (PhotonPlayer_t1433979395), -1, 0, 0,
 	sizeof (RPCMethod_t1471448684), -1, 0, 0,
+	sizeof (RandomRoomMatching_t856125051), -1, 0, 0,
+	sizeof (ResultView_t1421671554), -1, 0, 0,
 	sizeof (BoatDirectionSystem_t992795764), -1, 0, 0,
+	sizeof (U3CautoRudderRotateU3Ec__IteratorF_t1786154333), -1, 0, 0,
+	sizeof (ButtonTransition_t85581383), -1, 0, 0,
+	sizeof (U3CLoadNextU3Ec__Iterator10_t711222279), -1, 0, 0,
 	sizeof (CannonPullSystem_t3255870929), -1, 0, 0,
 	sizeof (OrbitPredictioner_t1410782764), -1, 0, 0,
 	sizeof (Pauser_t2383512924), -1, sizeof(Pauser_t2383512924_StaticFields), 0,
+	sizeof (PlayData_t1942919454), -1, 0, 0,
 	sizeof (Prefabs_t1345984335), -1, 0, 0,
 	sizeof (GameObj_t1469031301), -1, 0, 0,
+	sizeof (SceneTransition_t2973162209), -1, 0, 0,
+	sizeof (U3CLoadNextU3Ec__Iterator11_t711222280), -1, 0, 0,
+	0, 0, 0, 0,
+	sizeof (UserDataManager_t271735736), -1, 0, 0,
+	sizeof (UserInfo_t4092807993), -1, 0, 0,
 	sizeof (U3CModuleU3E_t86524801), -1, 0, 0,
 };

@@ -7,7 +7,6 @@ namespace Game
     public class PlayerControllerOnline : CharacterOperationMaster
     {
 
-
         [SerializeField] Transform center;
         [SerializeField] GameObject cannon;
         GameStateOnline gameState;
@@ -21,13 +20,32 @@ namespace Game
 
         public float O_Speed;
 
+        void Awake()
+        {
+            photonMethod = GetComponent<PhotonView>();
+            if (!photonMethod.isMine)
+            {
+                this.tag = "Rival";
+            }
+        }
+
         void Start()
         {
             state = PlayerStateManager.Instance;
+            var data = UserDataManager.Instance;
             playerRb = this.GetComponent<Rigidbody>();
-            cannonBall = Prefabs.GameObj.CannonBall;
+            if (this.transform.tag == "Player")
+            {
+                cannonBall = Prefabs.GameObj.PlayerCannonBall;
+                photonMethod.RPC("setRivalState", PhotonTargets.Others, state.ownHp, state.ownAtk, data.UserName);
+            }
+            else if (this.transform.tag == "Rival")
+            {
+                cannonBall = Prefabs.GameObj.RivalCannonBall;
+
+            }
             gameState = GameObject.FindGameObjectWithTag("GameState").GetComponent<GameStateOnline>();
-            photonMethod = GetComponent<PhotonView>();
+
             playerType = PlayerPrefs.GetString("PLAYER_TYPE", null);
 
         }
@@ -86,6 +104,14 @@ namespace Game
             {
                 shotCannon(center, playerRb, cannon.transform.position, cannonBall, O_Speed);
                 shotPlayer = "";
+            }
+        }
+
+        void LateUpdate()
+        {
+            if (PhotonNetwork.connected && !gameState.getGameFinish())
+            {
+                photonMethod.RPC("setRivalHp", PhotonTargets.Others, state.ownHp);
             }
         }
     }

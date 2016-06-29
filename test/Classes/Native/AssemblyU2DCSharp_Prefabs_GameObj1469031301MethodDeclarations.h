@@ -17,5 +17,7 @@ struct GameObject_t4012695102;
 
 #include "codegen/il2cpp-codegen.h"
 
-// UnityEngine.GameObject Prefabs/GameObj::get_CannonBall()
-extern "C"  GameObject_t4012695102 * GameObj_get_CannonBall_m3262182350 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GameObject Prefabs/GameObj::get_PlayerCannonBall()
+extern "C"  GameObject_t4012695102 * GameObj_get_PlayerCannonBall_m2894540943 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.GameObject Prefabs/GameObj::get_RivalCannonBall()
+extern "C"  GameObject_t4012695102 * GameObj_get_RivalCannonBall_m3392153270 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
