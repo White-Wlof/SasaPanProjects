@@ -13,7 +13,7 @@ namespace Game
         }
 
         [PunRPC]
-        public void setRivalState(int hp, int atk, string name)
+        public void setRivalState(float hp, float atk, string name)
         {
             var state = PlayerStateManager.Instance;
             state.rivalHp = hp;
@@ -22,7 +22,7 @@ namespace Game
         }
 
         [PunRPC]
-        public void setRivalHp(int hp)
+        public void setRivalHp(float hp)
         {
             var state = PlayerStateManager.Instance;
             state.rivalHp = hp;

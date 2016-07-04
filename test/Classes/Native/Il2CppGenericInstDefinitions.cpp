@@ -1248,6 +1248,9 @@ extern const Il2CppGenericInst GenInst_KeyValuePair_2_t2182947067_0_0_0 = { 1, G
 extern const Il2CppType SynchronizedLayer_t1918348413_0_0_0;
 static const Il2CppType* GenInst_SynchronizedLayer_t1918348413_0_0_0_Types[] = { &SynchronizedLayer_t1918348413_0_0_0 };
 extern const Il2CppGenericInst GenInst_SynchronizedLayer_t1918348413_0_0_0 = { 1, GenInst_SynchronizedLayer_t1918348413_0_0_0_Types };
+extern const Il2CppType AudioSource_t3628549054_0_0_0;
+static const Il2CppType* GenInst_AudioSource_t3628549054_0_0_0_Types[] = { &AudioSource_t3628549054_0_0_0 };
+extern const Il2CppGenericInst GenInst_AudioSource_t3628549054_0_0_0 = { 1, GenInst_AudioSource_t3628549054_0_0_0_Types };
 extern const Il2CppType UserDataManager_t271735736_0_0_0;
 static const Il2CppType* GenInst_UserDataManager_t271735736_0_0_0_Types[] = { &UserDataManager_t271735736_0_0_0 };
 extern const Il2CppGenericInst GenInst_UserDataManager_t271735736_0_0_0 = { 1, GenInst_UserDataManager_t271735736_0_0_0_Types };
@@ -1277,6 +1280,12 @@ extern const Il2CppGenericInst GenInst_IMaterialModifier_t2519068048_0_0_0 = { 1
 extern const Il2CppType UIBehaviour_t644839684_0_0_0;
 static const Il2CppType* GenInst_UIBehaviour_t644839684_0_0_0_Types[] = { &UIBehaviour_t644839684_0_0_0 };
 extern const Il2CppGenericInst GenInst_UIBehaviour_t644839684_0_0_0 = { 1, GenInst_UIBehaviour_t644839684_0_0_0_Types };
+extern const Il2CppType Button_t990034267_0_0_0;
+static const Il2CppType* GenInst_Button_t990034267_0_0_0_Types[] = { &Button_t990034267_0_0_0 };
+extern const Il2CppGenericInst GenInst_Button_t990034267_0_0_0 = { 1, GenInst_Button_t990034267_0_0_0_Types };
+extern const Il2CppType SoundManager_t2444342206_0_0_0;
+static const Il2CppType* GenInst_SoundManager_t2444342206_0_0_0_Types[] = { &SoundManager_t2444342206_0_0_0 };
+extern const Il2CppGenericInst GenInst_SoundManager_t2444342206_0_0_0 = { 1, GenInst_SoundManager_t2444342206_0_0_0_Types };
 extern const Il2CppType Pauser_t2383512924_0_0_0;
 static const Il2CppType* GenInst_Pauser_t2383512924_0_0_0_Types[] = { &Pauser_t2383512924_0_0_0 };
 extern const Il2CppGenericInst GenInst_Pauser_t2383512924_0_0_0 = { 1, GenInst_Pauser_t2383512924_0_0_0_Types };
@@ -1888,9 +1897,6 @@ extern const Il2CppGenericInst GenInst_AspectMode_t2721296955_0_0_0 = { 1, GenIn
 extern const Il2CppType FitMode_t816341300_0_0_0;
 static const Il2CppType* GenInst_FitMode_t816341300_0_0_0_Types[] = { &FitMode_t816341300_0_0_0 };
 extern const Il2CppGenericInst GenInst_FitMode_t816341300_0_0_0 = { 1, GenInst_FitMode_t816341300_0_0_0_Types };
-extern const Il2CppType Button_t990034267_0_0_0;
-static const Il2CppType* GenInst_Button_t990034267_0_0_0_Types[] = { &Button_t990034267_0_0_0 };
-extern const Il2CppGenericInst GenInst_Button_t990034267_0_0_0 = { 1, GenInst_Button_t990034267_0_0_0_Types };
 extern const Il2CppType RawImage_t3831555132_0_0_0;
 static const Il2CppType* GenInst_RawImage_t3831555132_0_0_0_Types[] = { &RawImage_t3831555132_0_0_0 };
 extern const Il2CppGenericInst GenInst_RawImage_t3831555132_0_0_0 = { 1, GenInst_RawImage_t3831555132_0_0_0_Types };
@@ -2020,9 +2026,6 @@ extern const Il2CppGenericInst GenInst_TweenerCore_3_t3204927250_0_0_0 = { 1, Ge
 extern const Il2CppType Renderer_t1092684080_0_0_0;
 static const Il2CppType* GenInst_Renderer_t1092684080_0_0_0_Types[] = { &Renderer_t1092684080_0_0_0 };
 extern const Il2CppGenericInst GenInst_Renderer_t1092684080_0_0_0 = { 1, GenInst_Renderer_t1092684080_0_0_0_Types };
-extern const Il2CppType AudioSource_t3628549054_0_0_0;
-static const Il2CppType* GenInst_AudioSource_t3628549054_0_0_0_Types[] = { &AudioSource_t3628549054_0_0_0 };
-extern const Il2CppGenericInst GenInst_AudioSource_t3628549054_0_0_0 = { 1, GenInst_AudioSource_t3628549054_0_0_0_Types };
 extern const Il2CppType ChatGui_t2403745443_0_0_0;
 static const Il2CppType* GenInst_ChatGui_t2403745443_0_0_0_Types[] = { &ChatGui_t2403745443_0_0_0 };
 extern const Il2CppGenericInst GenInst_ChatGui_t2403745443_0_0_0 = { 1, GenInst_ChatGui_t2403745443_0_0_0_Types };
@@ -2086,9 +2089,6 @@ extern const Il2CppGenericInst GenInst_CharacterController_t2029520850_0_0_0 = {
 extern const Il2CppType PlayerCameraControllerOnline_t3193323035_0_0_0;
 static const Il2CppType* GenInst_PlayerCameraControllerOnline_t3193323035_0_0_0_Types[] = { &PlayerCameraControllerOnline_t3193323035_0_0_0 };
 extern const Il2CppGenericInst GenInst_PlayerCameraControllerOnline_t3193323035_0_0_0 = { 1, GenInst_PlayerCameraControllerOnline_t3193323035_0_0_0_Types };
-extern const Il2CppType PlayerCollider_t3332416891_0_0_0;
-static const Il2CppType* GenInst_PlayerCollider_t3332416891_0_0_0_Types[] = { &PlayerCollider_t3332416891_0_0_0 };
-extern const Il2CppGenericInst GenInst_PlayerCollider_t3332416891_0_0_0 = { 1, GenInst_PlayerCollider_t3332416891_0_0_0_Types };
 extern const Il2CppType CannonPullSystem_t3255870929_0_0_0;
 static const Il2CppType* GenInst_CannonPullSystem_t3255870929_0_0_0_Types[] = { &CannonPullSystem_t3255870929_0_0_0 };
 extern const Il2CppGenericInst GenInst_CannonPullSystem_t3255870929_0_0_0 = { 1, GenInst_CannonPullSystem_t3255870929_0_0_0_Types };
@@ -2098,9 +2098,6 @@ extern const Il2CppGenericInst GenInst_BoatDirectionSystem_t992795764_0_0_0 = { 
 extern const Il2CppType OrbitPredictioner_t1410782764_0_0_0;
 static const Il2CppType* GenInst_OrbitPredictioner_t1410782764_0_0_0_Types[] = { &OrbitPredictioner_t1410782764_0_0_0 };
 extern const Il2CppGenericInst GenInst_OrbitPredictioner_t1410782764_0_0_0 = { 1, GenInst_OrbitPredictioner_t1410782764_0_0_0_Types };
-extern const Il2CppType RivalCollider_t740404964_0_0_0;
-static const Il2CppType* GenInst_RivalCollider_t740404964_0_0_0_Types[] = { &RivalCollider_t740404964_0_0_0 };
-extern const Il2CppGenericInst GenInst_RivalCollider_t740404964_0_0_0 = { 1, GenInst_RivalCollider_t740404964_0_0_0_Types };
 extern const Il2CppType GameStateOnline_t3171627576_0_0_0;
 static const Il2CppType* GenInst_GameStateOnline_t3171627576_0_0_0_Types[] = { &GameStateOnline_t3171627576_0_0_0 };
 extern const Il2CppGenericInst GenInst_GameStateOnline_t3171627576_0_0_0 = { 1, GenInst_GameStateOnline_t3171627576_0_0_0_Types };
@@ -2248,7 +2245,7 @@ static const Il2CppType* GenInst_Vector3ArrayOptions_t939984481_0_0_0_Types[] = 
 extern const Il2CppGenericInst GenInst_Vector3ArrayOptions_t939984481_0_0_0 = { 1, GenInst_Vector3ArrayOptions_t939984481_0_0_0_Types };
 static const Il2CppType* GenInst_VectorOptions_t3308462279_0_0_0_Types[] = { &VectorOptions_t3308462279_0_0_0 };
 extern const Il2CppGenericInst GenInst_VectorOptions_t3308462279_0_0_0 = { 1, GenInst_VectorOptions_t3308462279_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[788] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[787] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t2847414787_0_0_0,
@@ -2695,6 +2692,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[788] =
 	&GenInst_Component_t2126946602_0_0_0_MethodInfo_t_0_0_0_DictionaryEntry_t130027246_0_0_0,
 	&GenInst_KeyValuePair_2_t2182947067_0_0_0,
 	&GenInst_SynchronizedLayer_t1918348413_0_0_0,
+	&GenInst_AudioSource_t3628549054_0_0_0,
 	&GenInst_UserDataManager_t271735736_0_0_0,
 	&GenInst_LoadingManager_t3564041969_0_0_0,
 	&GenInst_Image_t3354615620_0_0_0,
@@ -2705,6 +2703,8 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[788] =
 	&GenInst_IMaskable_t528807864_0_0_0,
 	&GenInst_IMaterialModifier_t2519068048_0_0_0,
 	&GenInst_UIBehaviour_t644839684_0_0_0,
+	&GenInst_Button_t990034267_0_0_0,
+	&GenInst_SoundManager_t2444342206_0_0_0,
 	&GenInst_Pauser_t2383512924_0_0_0,
 	&GenInst_Rigidbody_t1972007546_0_0_0,
 	&GenInst_PlayData_t1942919454_0_0_0,
@@ -2902,7 +2902,6 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[788] =
 	&GenInst_SpriteRenderer_t2223784725_0_0_0,
 	&GenInst_AspectMode_t2721296955_0_0_0,
 	&GenInst_FitMode_t816341300_0_0_0,
-	&GenInst_Button_t990034267_0_0_0,
 	&GenInst_RawImage_t3831555132_0_0_0,
 	&GenInst_Slider_t1468074762_0_0_0,
 	&GenInst_Scrollbar_t1410649103_0_0_0,
@@ -2946,7 +2945,6 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[788] =
 	&GenInst_TweenerCore_3_t2905908171_0_0_0,
 	&GenInst_TweenerCore_3_t3204927250_0_0_0,
 	&GenInst_Renderer_t1092684080_0_0_0,
-	&GenInst_AudioSource_t3628549054_0_0_0,
 	&GenInst_ChatGui_t2403745443_0_0_0,
 	&GenInst_InputToEvent_t4267075029_0_0_0,
 	&GenInst_ColorPerPlayer_t2366540379_0_0_0,
@@ -2968,11 +2966,9 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[788] =
 	&GenInst_CameraWork_t2856068663_0_0_0,
 	&GenInst_CharacterController_t2029520850_0_0_0,
 	&GenInst_PlayerCameraControllerOnline_t3193323035_0_0_0,
-	&GenInst_PlayerCollider_t3332416891_0_0_0,
 	&GenInst_CannonPullSystem_t3255870929_0_0_0,
 	&GenInst_BoatDirectionSystem_t992795764_0_0_0,
 	&GenInst_OrbitPredictioner_t1410782764_0_0_0,
-	&GenInst_RivalCollider_t740404964_0_0_0,
 	&GenInst_GameStateOnline_t3171627576_0_0_0,
 	&GenInst_GameState_t3027501829_0_0_0,
 	&GenInst_PlayerHpView_t3887621678_0_0_0,

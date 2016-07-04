@@ -20,6 +20,8 @@ struct Rigidbody_t1972007546;
 #include "codegen/il2cpp-codegen.h"
 #include "UnityEngine_UnityEngine_Bounds3518514978.h"
 
+// System.Void UnityEngine.Collider::set_enabled(System.Boolean)
+extern "C"  void Collider_set_enabled_m2575670866 (Collider_t955670625 * __this, bool ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Rigidbody UnityEngine.Collider::get_attachedRigidbody()
 extern "C"  Rigidbody_t1972007546 * Collider_get_attachedRigidbody_m2821754842 (Collider_t955670625 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Bounds UnityEngine.Collider::get_bounds()

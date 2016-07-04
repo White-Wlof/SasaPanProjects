@@ -43,5 +43,5 @@ extern "C"  String_t* FriendRoomCreate_roomNameMake_m787164789 (FriendRoomCreate
 extern "C"  void FriendRoomCreate_createRoom_m2962548589 (FriendRoomCreate_t2039659285 * __this, String_t* ___roomIdText, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void FriendRoomCreate::OnApplicationPause(System.Boolean)
 extern "C"  void FriendRoomCreate_OnApplicationPause_m669191194 (FriendRoomCreate_t2039659285 * __this, bool ___pauseStatus, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void FriendRoomCreate::<Start>m__10()
-extern "C"  void FriendRoomCreate_U3CStartU3Em__10_m493094578 (FriendRoomCreate_t2039659285 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void FriendRoomCreate::<Start>m__19()
+extern "C"  void FriendRoomCreate_U3CStartU3Em__19_m493103227 (FriendRoomCreate_t2039659285 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -214,9 +214,9 @@ struct TypeInferenceRuleAttribute_t471424957;
 #include "UnityEngine_UnityEngine_Rigidbody1972007546.h"
 #include "UnityEngine_UnityEngine_Rigidbody1972007546MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector33525329789.h"
+#include "mscorlib_System_Single958209021.h"
 #include "mscorlib_System_Boolean211005341.h"
 #include "UnityEngine_UnityEngine_ForceMode759713627.h"
-#include "mscorlib_System_Single958209021.h"
 #include "UnityEngine_UnityEngine_Quaternion1891715979.h"
 #include "UnityEngine_UnityEngine_Rigidbody2D3632243084.h"
 #include "UnityEngine_UnityEngine_Rigidbody2D3632243084MethodDeclarations.h"
@@ -684,6 +684,33 @@ extern "C"  void Rigidbody_INTERNAL_set_angularVelocity_m1952192267 (Rigidbody_t
 	static Rigidbody_INTERNAL_set_angularVelocity_m1952192267_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Rigidbody_INTERNAL_set_angularVelocity_m1952192267_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody::INTERNAL_set_angularVelocity(UnityEngine.Vector3&)");
+	_il2cpp_icall_func(__this, ___value);
+}
+// System.Single UnityEngine.Rigidbody::get_mass()
+extern "C"  float Rigidbody_get_mass_m3953106025 (Rigidbody_t1972007546 * __this, const MethodInfo* method)
+{
+	typedef float (*Rigidbody_get_mass_m3953106025_ftn) (Rigidbody_t1972007546 *);
+	static Rigidbody_get_mass_m3953106025_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Rigidbody_get_mass_m3953106025_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody::get_mass()");
+	return _il2cpp_icall_func(__this);
+}
+// System.Void UnityEngine.Rigidbody::set_mass(System.Single)
+extern "C"  void Rigidbody_set_mass_m1579962594 (Rigidbody_t1972007546 * __this, float ___value, const MethodInfo* method)
+{
+	typedef void (*Rigidbody_set_mass_m1579962594_ftn) (Rigidbody_t1972007546 *, float);
+	static Rigidbody_set_mass_m1579962594_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Rigidbody_set_mass_m1579962594_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody::set_mass(System.Single)");
+	_il2cpp_icall_func(__this, ___value);
+}
+// System.Void UnityEngine.Rigidbody::set_useGravity(System.Boolean)
+extern "C"  void Rigidbody_set_useGravity_m2620827635 (Rigidbody_t1972007546 * __this, bool ___value, const MethodInfo* method)
+{
+	typedef void (*Rigidbody_set_useGravity_m2620827635_ftn) (Rigidbody_t1972007546 *, bool);
+	static Rigidbody_set_useGravity_m2620827635_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Rigidbody_set_useGravity_m2620827635_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Rigidbody::set_useGravity(System.Boolean)");
 	_il2cpp_icall_func(__this, ___value);
 }
 // System.Void UnityEngine.Rigidbody::set_isKinematic(System.Boolean)

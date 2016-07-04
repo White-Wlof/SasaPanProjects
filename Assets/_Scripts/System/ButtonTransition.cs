@@ -4,15 +4,23 @@ using UnityEngine.SceneManagement;
 
 public class ButtonTransition : MonoBehaviour
 {
+    SoundManager sound;
+
+    void Start()
+    {
+        sound = SoundManager.Instance;
+    }
 
     public void sceneTransition(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+        sound.Click();
     }
 
     public void sceneTransitionAdditive(string sceneName)
     {
         SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+        sound.Click();
 
     }
 
@@ -22,6 +30,8 @@ public class ButtonTransition : MonoBehaviour
         loadingAnim.Play();
         Resources.UnloadUnusedAssets();
         StartCoroutine(LoadNext(sceneName));
+        sound.Click();
+
     }
 
     IEnumerator LoadNext(string sceneName)
@@ -40,6 +50,7 @@ public class ButtonTransition : MonoBehaviour
         async.allowSceneActivation = true;
         var loadingAnim = LoadingManager.Instance;
         loadingAnim.Stop();
+        sound.StopMenuBGM();
         yield return async;
 
     }

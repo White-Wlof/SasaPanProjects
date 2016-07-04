@@ -14,6 +14,8 @@
 struct GameObject_t4012695102;
 // UnityEngine.UI.Button
 struct Button_t990034267;
+// SoundManager
+struct SoundManager_t2444342206;
 
 #include "AssemblyU2DCSharp_Photon_MonoBehaviour4025988718.h"
 
@@ -35,6 +37,8 @@ public:
 	Button_t990034267 * ___withFriend_5;
 	// UnityEngine.UI.Button OnlineModeSelect::back
 	Button_t990034267 * ___back_6;
+	// SoundManager OnlineModeSelect::sound
+	SoundManager_t2444342206 * ___sound_7;
 
 public:
 	inline static int32_t get_offset_of_Panel_0_3() { return static_cast<int32_t>(offsetof(OnlineModeSelect_t740007762, ___Panel_0_3)); }
@@ -71,6 +75,15 @@ public:
 	{
 		___back_6 = value;
 		Il2CppCodeGenWriteBarrier(&___back_6, value);
+	}
+
+	inline static int32_t get_offset_of_sound_7() { return static_cast<int32_t>(offsetof(OnlineModeSelect_t740007762, ___sound_7)); }
+	inline SoundManager_t2444342206 * get_sound_7() const { return ___sound_7; }
+	inline SoundManager_t2444342206 ** get_address_of_sound_7() { return &___sound_7; }
+	inline void set_sound_7(SoundManager_t2444342206 * value)
+	{
+		___sound_7 = value;
+		Il2CppCodeGenWriteBarrier(&___sound_7, value);
 	}
 };
 

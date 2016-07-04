@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class UIController : MonoBehaviour
 {
     [SerializeField] Image boostGage;
+    [SerializeField] Text item;
     PlayerStateManager state;
     private float boostTimer;
     private int meterCount;
@@ -26,6 +27,7 @@ public class UIController : MonoBehaviour
         {
             resetMeter();
         }
+        item.text = "" + state.leafCount;
     }
 
     //メーターが増える

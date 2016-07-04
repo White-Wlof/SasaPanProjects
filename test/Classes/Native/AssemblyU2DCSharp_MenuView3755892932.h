@@ -14,10 +14,10 @@
 struct GameObject_t4012695102;
 // UnityEngine.GameObject[]
 struct GameObjectU5BU5D_t3499186955;
-// UnityEngine.UI.Image
-struct Image_t3354615620;
 // UnityEngine.UI.Button
 struct Button_t990034267;
+// SoundManager
+struct SoundManager_t2444342206;
 
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
 
@@ -35,8 +35,8 @@ public:
 	GameObject_t4012695102 * ___selectPanel_5;
 	// UnityEngine.GameObject[] MenuView::childPanel
 	GameObjectU5BU5D_t3499186955* ___childPanel_6;
-	// UnityEngine.UI.Image MenuView::comment
-	Image_t3354615620 * ___comment_7;
+	// UnityEngine.GameObject MenuView::comment
+	GameObject_t4012695102 * ___comment_7;
 	// UnityEngine.UI.Button MenuView::grow
 	Button_t990034267 * ___grow_8;
 	// UnityEngine.UI.Button MenuView::play
@@ -45,6 +45,8 @@ public:
 	Button_t990034267 * ___create_10;
 	// UnityEngine.UI.Button MenuView::back
 	Button_t990034267 * ___back_11;
+	// SoundManager MenuView::sound
+	SoundManager_t2444342206 * ___sound_12;
 
 public:
 	inline static int32_t get_offset_of_selectPanel_5() { return static_cast<int32_t>(offsetof(MenuView_t3755892932, ___selectPanel_5)); }
@@ -66,9 +68,9 @@ public:
 	}
 
 	inline static int32_t get_offset_of_comment_7() { return static_cast<int32_t>(offsetof(MenuView_t3755892932, ___comment_7)); }
-	inline Image_t3354615620 * get_comment_7() const { return ___comment_7; }
-	inline Image_t3354615620 ** get_address_of_comment_7() { return &___comment_7; }
-	inline void set_comment_7(Image_t3354615620 * value)
+	inline GameObject_t4012695102 * get_comment_7() const { return ___comment_7; }
+	inline GameObject_t4012695102 ** get_address_of_comment_7() { return &___comment_7; }
+	inline void set_comment_7(GameObject_t4012695102 * value)
 	{
 		___comment_7 = value;
 		Il2CppCodeGenWriteBarrier(&___comment_7, value);
@@ -108,6 +110,15 @@ public:
 	{
 		___back_11 = value;
 		Il2CppCodeGenWriteBarrier(&___back_11, value);
+	}
+
+	inline static int32_t get_offset_of_sound_12() { return static_cast<int32_t>(offsetof(MenuView_t3755892932, ___sound_12)); }
+	inline SoundManager_t2444342206 * get_sound_12() const { return ___sound_12; }
+	inline SoundManager_t2444342206 ** get_address_of_sound_12() { return &___sound_12; }
+	inline void set_sound_12(SoundManager_t2444342206 * value)
+	{
+		___sound_12 = value;
+		Il2CppCodeGenWriteBarrier(&___sound_12, value);
 	}
 };
 

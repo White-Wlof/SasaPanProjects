@@ -29,6 +29,8 @@ extern "C"  float Mathf_Atan2_m3138013817 (Il2CppObject * __this /* static, unus
 extern "C"  float Mathf_Sqrt_m3592270478 (Il2CppObject * __this /* static, unused */, float ___f, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Abs(System.Single)
 extern "C"  float Mathf_Abs_m3641135540 (Il2CppObject * __this /* static, unused */, float ___f, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 UnityEngine.Mathf::Abs(System.Int32)
+extern "C"  int32_t Mathf_Abs_m4265466780 (Il2CppObject * __this /* static, unused */, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Mathf::Min(System.Single,System.Single)
 extern "C"  float Mathf_Min_m2322067385 (Il2CppObject * __this /* static, unused */, float ___a, float ___b, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Mathf::Min(System.Int32,System.Int32)

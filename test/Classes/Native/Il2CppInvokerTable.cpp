@@ -10699,6 +10699,13 @@ void* RuntimeInvoker_Void_t2779279689_Il2CppObject_Il2CppObject_Vector3_t3525329
 	return NULL;
 }
 
+void* RuntimeInvoker_Void_t2779279689_Single_t958209021_Single_t958209021_Il2CppObject (const MethodInfo* method, void* obj, void** args)
+{
+	typedef void (*Func)(void* obj, float p1, float p2, Il2CppObject * p3, const MethodInfo* method);
+	((Func)method->method)(obj, *((float*)args[0]), *((float*)args[1]), (Il2CppObject *)args[2], method);
+	return NULL;
+}
+
 void* RuntimeInvoker_Void_t2779279689_Int32_t2847414787_ObjectU26_t426379564 (const MethodInfo* method, void* obj, void** args)
 {
 	typedef void (*Func)(void* obj, int32_t p1, Il2CppObject ** p2, const MethodInfo* method);
@@ -14892,7 +14899,7 @@ void* RuntimeInvoker_Il2CppObject_FloatTween_t587838465 (const MethodInfo* metho
 	return ret;
 }
 
-extern const InvokerMethod g_Il2CppInvokerPointers[2064] = 
+extern const InvokerMethod g_Il2CppInvokerPointers[2065] = 
 {
 	RuntimeInvoker_Void_t2779279689,
 	RuntimeInvoker_Boolean_t211005341_Il2CppObject,
@@ -16359,6 +16366,7 @@ extern const InvokerMethod g_Il2CppInvokerPointers[2064] =
 	RuntimeInvoker_CustomAuthenticationType_t1632816265,
 	RuntimeInvoker_Void_t2779279689_Il2CppObject_Il2CppObject_Vector3_t3525329789_Il2CppObject_Single_t958209021,
 	RuntimeInvoker_Void_t2779279689_Il2CppObject_Il2CppObject_Vector3_t3525329789_Il2CppObject,
+	RuntimeInvoker_Void_t2779279689_Single_t958209021_Single_t958209021_Il2CppObject,
 	RuntimeInvoker_Void_t2779279689_Int32_t2847414787_ObjectU26_t426379564,
 	RuntimeInvoker_Void_t2779279689_ObjectU5BU5DU26_t3434429003_Int32_t2847414787,
 	RuntimeInvoker_Void_t2779279689_ObjectU5BU5DU26_t3434429003_Int32_t2847414787_Int32_t2847414787,

@@ -125,10 +125,12 @@
 <type fullname="ICurvePoint" preserve="all"/>
 <type fullname="IRiverTool" preserve="all"/>
 <type fullname="TextureAnimator" preserve="all"/>
-<type fullname="Game.CharacterOperationMaster" preserve="all"/>
+<type fullname="Game.CharactorOperationMaster" preserve="all"/>
 <type fullname="Game.GameState" preserve="all"/>
 <type fullname="Game.GameStateOnline" preserve="all"/>
 <type fullname="Game.GameUIButton" preserve="all"/>
+<type fullname="LeafSpawner" preserve="all"/>
+<type fullname="OffTheTrack" preserve="all"/>
 <type fullname="Game.PlayerCameraController" preserve="all"/>
 <type fullname="Game.PlayerCameraControllerOnline" preserve="all"/>
 <type fullname="Cannon.PlayerCannonBallController" preserve="all"/>
@@ -142,6 +144,7 @@
 <type fullname="Game.RivalController" preserve="all"/>
 <type fullname="UIController" preserve="all"/>
 <type fullname="LoadingManager" preserve="all"/>
+<type fullname="CreateView" preserve="all"/>
 <type fullname="GrowView" preserve="all"/>
 <type fullname="MenuView" preserve="all"/>
 <type fullname="OnlineModeSelect" preserve="all"/>
@@ -160,6 +163,7 @@
 <type fullname="PlayData" preserve="all"/>
 <type fullname="SceneTransition" preserve="all"/>
 <type fullname="SingletonMonoBehaviour`1" preserve="all"/>
+<type fullname="SoundManager" preserve="all"/>
 <type fullname="UserDataManager" preserve="all"/>
 <type fullname="UserInfo" preserve="all"/>
 </assembly>

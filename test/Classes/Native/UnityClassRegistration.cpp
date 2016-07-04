@@ -249,73 +249,73 @@ void RegisterAllClasses()
 	void RegisterClass_MeshRenderer();
 	RegisterClass_MeshRenderer();
 
-	//52. RuntimeAnimatorController
+	//52. BoxCollider
+	void RegisterClass_BoxCollider();
+	RegisterClass_BoxCollider();
+
+	//53. RuntimeAnimatorController
 	void RegisterClass_RuntimeAnimatorController();
 	RegisterClass_RuntimeAnimatorController();
 
-	//53. PreloadData
+	//54. PreloadData
 	void RegisterClass_PreloadData();
 	RegisterClass_PreloadData();
 
-	//54. Cubemap
+	//55. Cubemap
 	void RegisterClass_Cubemap();
 	RegisterClass_Cubemap();
 
-	//55. Texture3D
+	//56. Texture3D
 	void RegisterClass_Texture3D();
 	RegisterClass_Texture3D();
 
-	//56. LevelGameManager
+	//57. LevelGameManager
 	void RegisterClass_LevelGameManager();
 	RegisterClass_LevelGameManager();
 
-	//57. GameManager
+	//58. GameManager
 	void RegisterClass_GameManager();
 	RegisterClass_GameManager();
 
-	//58. TimeManager
+	//59. TimeManager
 	void RegisterClass_TimeManager();
 	RegisterClass_TimeManager();
 
-	//59. GlobalGameManager
+	//60. GlobalGameManager
 	void RegisterClass_GlobalGameManager();
 	RegisterClass_GlobalGameManager();
 
-	//60. AudioManager
+	//61. AudioManager
 	void RegisterClass_AudioManager();
 	RegisterClass_AudioManager();
 
-	//61. InputManager
+	//62. InputManager
 	void RegisterClass_InputManager();
 	RegisterClass_InputManager();
 
-	//62. Physics2DSettings
+	//63. Physics2DSettings
 	void RegisterClass_Physics2DSettings();
 	RegisterClass_Physics2DSettings();
 
-	//63. GraphicsSettings
+	//64. GraphicsSettings
 	void RegisterClass_GraphicsSettings();
 	RegisterClass_GraphicsSettings();
 
-	//64. QualitySettings
+	//65. QualitySettings
 	void RegisterClass_QualitySettings();
 	RegisterClass_QualitySettings();
 
-	//65. PhysicsManager
+	//66. PhysicsManager
 	void RegisterClass_PhysicsManager();
 	RegisterClass_PhysicsManager();
 
-	//66. BoxCollider2D
+	//67. BoxCollider2D
 	void RegisterClass_BoxCollider2D();
 	RegisterClass_BoxCollider2D();
 
-	//67. PhysicsMaterial2D
+	//68. PhysicsMaterial2D
 	void RegisterClass_PhysicsMaterial2D();
 	RegisterClass_PhysicsMaterial2D();
-
-	//68. BoxCollider
-	void RegisterClass_BoxCollider();
-	RegisterClass_BoxCollider();
 
 	//69. WorldParticleCollider
 	void RegisterClass_WorldParticleCollider();

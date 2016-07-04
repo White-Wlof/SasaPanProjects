@@ -17,11 +17,11 @@ namespace Game
             {
                 this.tag = "Rival";
                 Destroy(this.gameObject.GetComponent<PlayerCameraControllerOnline>());
-                Destroy(this.gameObject.GetComponent<PlayerCollider>());
+                //Destroy(this.gameObject.GetComponent<PlayerCollider>());
                 Destroy(this.gameObject.GetComponent<CannonPullSystem>());
                 Destroy(this.gameObject.GetComponent<BoatDirectionSystem>());
                 Destroy(this.gameObject.GetComponentInChildren<OrbitPredictioner>());
-                this.gameObject.AddComponent<RivalCollider>();
+                //this.gameObject.AddComponent<RivalCollider>();
             }
 
 

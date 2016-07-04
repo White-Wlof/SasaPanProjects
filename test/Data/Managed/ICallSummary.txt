@@ -48,9 +48,11 @@ UnityEngine.AudioSource::get_pitch
 UnityEngine.AudioSource::get_volume
 UnityEngine.AudioSource::Play
 UnityEngine.AudioSource::PlayOneShot
+UnityEngine.AudioSource::Stop
 UnityEngine.AudioSource::set_clip
 UnityEngine.AudioSource::set_pitch
 UnityEngine.AudioSource::set_volume
+UnityEngine.AudioSource::get_clip
 UnityEngine.Behaviour::get_enabled
 UnityEngine.Behaviour::get_isActiveAndEnabled
 UnityEngine.Behaviour::set_enabled
@@ -140,6 +142,7 @@ UnityEngine.CanvasRenderer::set_popMaterialCount
 UnityEngine.CharacterController::get_height
 UnityEngine.CharacterController::INTERNAL_CALL_Move
 UnityEngine.Collider::INTERNAL_get_bounds
+UnityEngine.Collider::set_enabled
 UnityEngine.Collider::get_attachedRigidbody
 UnityEngine.Collider2D::get_attachedRigidbody
 UnityEngine.Component::CompareTag
@@ -505,8 +508,6 @@ UnityEngine.PlayerPrefs::GetInt
 UnityEngine.PlayerPrefs::GetFloat
 UnityEngine.PlayerPrefs::GetString
 UnityEngine.PlayerPrefs::DeleteKey
-UnityEngine.Profiler::BeginSampleOnly
-UnityEngine.Profiler::EndSample
 UnityEngine.Quaternion::INTERNAL_CALL_AngleAxis
 UnityEngine.Quaternion::INTERNAL_CALL_FromToRotation
 UnityEngine.Quaternion::INTERNAL_CALL_Internal_FromEulerRad
@@ -563,6 +564,7 @@ UnityEngine.Resources::UnloadUnusedAssets
 UnityEngine.Resources::Load
 UnityEngine.Resources::FindObjectsOfTypeAll
 UnityEngine.Rigidbody::INTERNAL_CALL_IsSleeping
+UnityEngine.Rigidbody::get_mass
 UnityEngine.Rigidbody::INTERNAL_CALL_AddExplosionForce
 UnityEngine.Rigidbody::INTERNAL_CALL_AddForce
 UnityEngine.Rigidbody::INTERNAL_CALL_MovePosition
@@ -576,6 +578,8 @@ UnityEngine.Rigidbody::INTERNAL_get_velocity
 UnityEngine.Rigidbody::INTERNAL_set_angularVelocity
 UnityEngine.Rigidbody::INTERNAL_set_velocity
 UnityEngine.Rigidbody::set_isKinematic
+UnityEngine.Rigidbody::set_mass
+UnityEngine.Rigidbody::set_useGravity
 UnityEngine.Rigidbody2D::IsSleeping
 UnityEngine.Rigidbody2D::get_angularVelocity
 UnityEngine.Rigidbody2D::INTERNAL_CALL_AddForce

@@ -4,7 +4,7 @@ using System.Collections;
 namespace Game
 {
 
-    public class BoatDirectionSystem : CharacterOperationMaster
+    public class BoatDirectionSystem : CharactorOperationMaster
     {
 
         PlayerStateManager state;
@@ -73,12 +73,12 @@ namespace Game
             if (touchPos.x < detachPos.x)
             {
                 rudder.transform.eulerAngles = new Vector3(0, 0, -angle);
-                playerRotation(this.gameObject, RIGHT);
+                playerRotation(this.gameObject, RIGHT, state.operability);
             }
             else if (touchPos.x > detachPos.x)
             {
                 rudder.transform.eulerAngles = new Vector3(0, 0, angle);
-                playerRotation(this.gameObject, LEFT);
+                playerRotation(this.gameObject, LEFT, state.operability);
             }
         }
 
@@ -111,7 +111,7 @@ namespace Game
             }
         }
 
-        IEnumerator autoRudderRotate(int state)
+        IEnumerator autoRudderRotate(int status)
         {
             var timer = 0f;
             var deltaAngle = 8f;
@@ -121,15 +121,15 @@ namespace Game
                 Debug.Log("logog" + timer);
                 Debug.Log("euler" + rudder.transform.eulerAngles);
                 timer += Time.deltaTime;
-                if (state == 1)
+                if (status == 1)
                 {
                     rudder.transform.eulerAngles += new Vector3(0, 0, deltaAngle);
-                    playerRotation(this.gameObject, LEFT);
+                    playerRotation(this.gameObject, LEFT, state.operability);
                 }
-                else if (state == 2)
+                else if (status == 2)
                 {
                     rudder.transform.eulerAngles += new Vector3(0, 0, -deltaAngle);
-                    playerRotation(this.gameObject, RIGHT);
+                    playerRotation(this.gameObject, RIGHT, state.operability);
                 }
                 yield return new WaitForEndOfFrame();
             }

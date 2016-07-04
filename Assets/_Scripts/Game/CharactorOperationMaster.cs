@@ -3,20 +3,21 @@ using System.Collections;
 
 namespace Game
 {
-    public class CharacterOperationMaster : MonoBehaviour
+    public class CharactorOperationMaster : MonoBehaviour
     {
         protected readonly string LEFT = "Left";
         protected readonly string RIGHT = "Right";
+        protected AudioSource[] audioSource;
 
-        protected void playerRotation(GameObject ownObj, string direction)
+        protected void playerRotation(GameObject ownObj, string direction, int operability)
         {
             if (direction == LEFT)
             {
-                ownObj.transform.Rotate(new Vector3(0, 1, 0), -0.1f);
+                ownObj.transform.Rotate(new Vector3(0, 1, 0), -0.1f - operability * 0.01f);
             }
             else if (direction == RIGHT)
             {
-                ownObj.transform.Rotate(new Vector3(0, 1, 0), 0.1f);
+                ownObj.transform.Rotate(new Vector3(0, 1, 0), 0.1f + operability * 0.01f);
             }
         }
 

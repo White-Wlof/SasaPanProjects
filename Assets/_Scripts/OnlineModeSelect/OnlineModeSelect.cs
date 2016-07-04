@@ -9,9 +9,12 @@ public class OnlineModeSelect : Photon.MonoBehaviour
     [SerializeField] GameObject Panel_1;
     [SerializeField] Button withFriend;
     [SerializeField] Button back;
+    SoundManager sound;
+
 
     void Start()
     {
+        sound = SoundManager.Instance;
         Panel_0.SetActive(true);
         Panel_1.SetActive(false);
         if (PhotonNetwork.connected)
@@ -20,6 +23,18 @@ public class OnlineModeSelect : Photon.MonoBehaviour
             PhotonNetwork.LeaveLobby();
             PhotonNetwork.Disconnect();
         }
+        withFriend.onClick.AddListener(() =>
+            {
+                Panel_0.SetActive(false);
+                Panel_1.SetActive(true);
+                sound.Click();
+            });
+        back.onClick.AddListener(() =>
+            {
+                Panel_0.SetActive(true);
+                Panel_1.SetActive(false);
+                sound.Click();
+            });
     }
 
     void OnDisconnectedFromServer()
@@ -29,16 +44,7 @@ public class OnlineModeSelect : Photon.MonoBehaviour
 
     void Update()
     {
-        withFriend.onClick.AddListener(() =>
-            {
-                Panel_0.SetActive(false);
-                Panel_1.SetActive(true);
-            });
-        back.onClick.AddListener(() =>
-            {
-                Panel_0.SetActive(true);
-                Panel_1.SetActive(false);
-            });
+        
     }
 
 }

@@ -4,11 +4,12 @@ using System.Collections;
 namespace Game
 {
 
-    public class PlayerControllerOnline : CharacterOperationMaster
+    public class PlayerControllerOnline : CharactorOperationMaster
     {
 
         [SerializeField] Transform center;
         [SerializeField] GameObject cannon;
+        [SerializeField] AudioSource cannonAudio;
         GameStateOnline gameState;
         PlayerStateManager state;
         PhotonView photonMethod;
@@ -36,6 +37,8 @@ namespace Game
             playerRb = this.GetComponent<Rigidbody>();
             if (this.transform.tag == "Player")
             {
+                playerRb.mass += data.Weight * 0.01f;
+
                 cannonBall = Prefabs.GameObj.PlayerCannonBall;
                 photonMethod.RPC("setRivalState", PhotonTargets.Others, state.ownHp, state.ownAtk, data.UserName);
             }
@@ -52,14 +55,18 @@ namespace Game
 
         void Update()
         { 
+            if (state.ownHp <= 0 && playerRb.velocity.z > 3)
+            {
+                playerRb.velocity -= new Vector3(0, 0, 1);
+            }
             playerRb.AddForce(Vector3.forward * 2);
             if (Input.GetKey(KeyCode.LeftArrow))
             {
-                playerRotation(this.gameObject, LEFT);
+                playerRotation(this.gameObject, LEFT, state.operability);
             }
             else if (Input.GetKey(KeyCode.RightArrow))
             {
-                playerRotation(this.gameObject, RIGHT);
+                playerRotation(this.gameObject, RIGHT, state.operability);
             }
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -95,14 +102,18 @@ namespace Game
             if (shotPlayer == "")
             {
             }
-            else if (playerType == shotPlayer && photonMethod.isMine)
+            else if (playerType == shotPlayer && photonMethod.isMine && state.initialVelocityCannon > 100)
             {
                 shotCannon(center, playerRb, cannon.transform.position, cannonBall, state.initialVelocityCannon);
+                cannonAudio.PlayOneShot(cannonAudio.clip);
+
                 shotPlayer = "";
             }
             else if (playerType != shotPlayer && !photonMethod.isMine)
             {
                 shotCannon(center, playerRb, cannon.transform.position, cannonBall, O_Speed);
+                cannonAudio.PlayOneShot(cannonAudio.clip);
+
                 shotPlayer = "";
             }
         }

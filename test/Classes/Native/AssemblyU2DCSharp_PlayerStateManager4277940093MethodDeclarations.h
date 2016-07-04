@@ -22,26 +22,26 @@ struct String_t;
 
 // System.Void PlayerStateManager::.ctor()
 extern "C"  void PlayerStateManager__ctor_m3091918270 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 PlayerStateManager::get_ownHp()
-extern "C"  int32_t PlayerStateManager_get_ownHp_m1370799475 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void PlayerStateManager::set_ownHp(System.Int32)
-extern "C"  void PlayerStateManager_set_ownHp_m3929320478 (PlayerStateManager_t4277940093 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 PlayerStateManager::get_ownAtk()
-extern "C"  int32_t PlayerStateManager_get_ownAtk_m3833796975 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void PlayerStateManager::set_ownAtk(System.Int32)
-extern "C"  void PlayerStateManager_set_ownAtk_m3740470694 (PlayerStateManager_t4277940093 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single PlayerStateManager::get_ownHp()
+extern "C"  float PlayerStateManager_get_ownHp_m2863721205 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerStateManager::set_ownHp(System.Single)
+extern "C"  void PlayerStateManager_set_ownHp_m1687872638 (PlayerStateManager_t4277940093 * __this, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single PlayerStateManager::get_ownAtk()
+extern "C"  float PlayerStateManager_get_ownAtk_m2869730349 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerStateManager::set_ownAtk(System.Single)
+extern "C"  void PlayerStateManager_set_ownAtk_m128496630 (PlayerStateManager_t4277940093 * __this, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String PlayerStateManager::get_rivalName()
 extern "C"  String_t* PlayerStateManager_get_rivalName_m1061880197 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void PlayerStateManager::set_rivalName(System.String)
 extern "C"  void PlayerStateManager_set_rivalName_m1262259694 (PlayerStateManager_t4277940093 * __this, String_t* ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 PlayerStateManager::get_rivalHp()
-extern "C"  int32_t PlayerStateManager_get_rivalHp_m2544518263 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void PlayerStateManager::set_rivalHp(System.Int32)
-extern "C"  void PlayerStateManager_set_rivalHp_m266845858 (PlayerStateManager_t4277940093 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Int32 PlayerStateManager::get_rivalAtk()
-extern "C"  int32_t PlayerStateManager_get_rivalAtk_m1564373739 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void PlayerStateManager::set_rivalAtk(System.Int32)
-extern "C"  void PlayerStateManager_set_rivalAtk_m1872907170 (PlayerStateManager_t4277940093 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single PlayerStateManager::get_rivalHp()
+extern "C"  float PlayerStateManager_get_rivalHp_m2723223929 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerStateManager::set_rivalHp(System.Single)
+extern "C"  void PlayerStateManager_set_rivalHp_m4115276410 (PlayerStateManager_t4277940093 * __this, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Single PlayerStateManager::get_rivalAtk()
+extern "C"  float PlayerStateManager_get_rivalAtk_m2809282089 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerStateManager::set_rivalAtk(System.Single)
+extern "C"  void PlayerStateManager_set_rivalAtk_m2363569530 (PlayerStateManager_t4277940093 * __this, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean PlayerStateManager::get_cannonMode()
 extern "C"  bool PlayerStateManager_get_cannonMode_m4227638435 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void PlayerStateManager::set_cannonMode(System.Boolean)
@@ -66,6 +66,10 @@ extern "C"  void PlayerStateManager_set_cannonFrag_m1518735593 (PlayerStateManag
 extern "C"  float PlayerStateManager_get_initialVelocityCannon_m3651262565 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void PlayerStateManager::set_initialVelocityCannon(System.Single)
 extern "C"  void PlayerStateManager_set_initialVelocityCannon_m1304886542 (PlayerStateManager_t4277940093 * __this, float ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 PlayerStateManager::get_operability()
+extern "C"  int32_t PlayerStateManager_get_operability_m1793090273 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerStateManager::set_operability(System.Int32)
+extern "C"  void PlayerStateManager_set_operability_m2568900876 (PlayerStateManager_t4277940093 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 PlayerStateManager::get_maxSuccessionCannon()
 extern "C"  int32_t PlayerStateManager_get_maxSuccessionCannon_m1837612363 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void PlayerStateManager::set_maxSuccessionCannon(System.Int32)
@@ -74,6 +78,10 @@ extern "C"  void PlayerStateManager_set_maxSuccessionCannon_m3795608182 (PlayerS
 extern "C"  int32_t PlayerStateManager_get_revivalCannon_m3374323165 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void PlayerStateManager::set_revivalCannon(System.Int32)
 extern "C"  void PlayerStateManager_set_revivalCannon_m465976200 (PlayerStateManager_t4277940093 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 PlayerStateManager::get_leafCount()
+extern "C"  int32_t PlayerStateManager_get_leafCount_m2944842710 (PlayerStateManager_t4277940093 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void PlayerStateManager::set_leafCount(System.Int32)
+extern "C"  void PlayerStateManager_set_leafCount_m3690377473 (PlayerStateManager_t4277940093 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // PlayerStateManager PlayerStateManager::get_Instance()
 extern "C"  PlayerStateManager_t4277940093 * PlayerStateManager_get_Instance_m967648580 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void PlayerStateManager::Awake()

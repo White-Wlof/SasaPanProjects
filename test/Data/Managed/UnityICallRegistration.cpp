@@ -1,4 +1,4 @@
-//Generated on : 2016/06/30 1:47:16
+//Generated on : 2016/07/04 2:14:04
 void RegisterAllStrippedInternalCalls()
 {
 	//Start Registrations for type : UnityEngine.Animation
@@ -235,6 +235,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AudioSource_PlayOneShot();
 		Register_UnityEngine_AudioSource_PlayOneShot();
 
+		//System.Void UnityEngine.AudioSource::Stop()
+		void Register_UnityEngine_AudioSource_Stop();
+		Register_UnityEngine_AudioSource_Stop();
+
 		//System.Void UnityEngine.AudioSource::set_clip(UnityEngine.AudioClip)
 		void Register_UnityEngine_AudioSource_set_clip();
 		Register_UnityEngine_AudioSource_set_clip();
@@ -246,6 +250,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.AudioSource::set_volume(System.Single)
 		void Register_UnityEngine_AudioSource_set_volume();
 		Register_UnityEngine_AudioSource_set_volume();
+
+		//UnityEngine.AudioClip UnityEngine.AudioSource::get_clip()
+		void Register_UnityEngine_AudioSource_get_clip();
+		Register_UnityEngine_AudioSource_get_clip();
 
 	//End Registrations for type : UnityEngine.AudioSource
 
@@ -634,6 +642,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Collider::INTERNAL_get_bounds(UnityEngine.Bounds&)
 		void Register_UnityEngine_Collider_INTERNAL_get_bounds();
 		Register_UnityEngine_Collider_INTERNAL_get_bounds();
+
+		//System.Void UnityEngine.Collider::set_enabled(System.Boolean)
+		void Register_UnityEngine_Collider_set_enabled();
+		Register_UnityEngine_Collider_set_enabled();
 
 		//UnityEngine.Rigidbody UnityEngine.Collider::get_attachedRigidbody()
 		void Register_UnityEngine_Collider_get_attachedRigidbody();
@@ -2273,18 +2285,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.PlayerPrefs
 
-	//Start Registrations for type : UnityEngine.Profiler
-
-		//System.Void UnityEngine.Profiler::BeginSampleOnly(System.String)
-		void Register_UnityEngine_Profiler_BeginSampleOnly();
-		Register_UnityEngine_Profiler_BeginSampleOnly();
-
-		//System.Void UnityEngine.Profiler::EndSample()
-		void Register_UnityEngine_Profiler_EndSample();
-		Register_UnityEngine_Profiler_EndSample();
-
-	//End Registrations for type : UnityEngine.Profiler
-
 	//Start Registrations for type : UnityEngine.Quaternion
 
 		//System.Void UnityEngine.Quaternion::INTERNAL_CALL_AngleAxis(System.Single,UnityEngine.Vector3&,UnityEngine.Quaternion&)
@@ -2543,6 +2543,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Rigidbody_INTERNAL_CALL_IsSleeping();
 		Register_UnityEngine_Rigidbody_INTERNAL_CALL_IsSleeping();
 
+		//System.Single UnityEngine.Rigidbody::get_mass()
+		void Register_UnityEngine_Rigidbody_get_mass();
+		Register_UnityEngine_Rigidbody_get_mass();
+
 		//System.Void UnityEngine.Rigidbody::INTERNAL_CALL_AddExplosionForce(UnityEngine.Rigidbody,System.Single,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.ForceMode)
 		void Register_UnityEngine_Rigidbody_INTERNAL_CALL_AddExplosionForce();
 		Register_UnityEngine_Rigidbody_INTERNAL_CALL_AddExplosionForce();
@@ -2594,6 +2598,14 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Rigidbody::set_isKinematic(System.Boolean)
 		void Register_UnityEngine_Rigidbody_set_isKinematic();
 		Register_UnityEngine_Rigidbody_set_isKinematic();
+
+		//System.Void UnityEngine.Rigidbody::set_mass(System.Single)
+		void Register_UnityEngine_Rigidbody_set_mass();
+		Register_UnityEngine_Rigidbody_set_mass();
+
+		//System.Void UnityEngine.Rigidbody::set_useGravity(System.Boolean)
+		void Register_UnityEngine_Rigidbody_set_useGravity();
+		Register_UnityEngine_Rigidbody_set_useGravity();
 
 	//End Registrations for type : UnityEngine.Rigidbody
 

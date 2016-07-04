@@ -25,7 +25,7 @@ extern "C"  void OnlineModeSelect_Start_m3366009993 (OnlineModeSelect_t740007762
 extern "C"  void OnlineModeSelect_OnDisconnectedFromServer_m184780482 (OnlineModeSelect_t740007762 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void OnlineModeSelect::Update()
 extern "C"  void OnlineModeSelect_Update_m1272946852 (OnlineModeSelect_t740007762 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void OnlineModeSelect::<Update>m__E()
-extern "C"  void OnlineModeSelect_U3CUpdateU3Em__E_m3140346700 (OnlineModeSelect_t740007762 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void OnlineModeSelect::<Update>m__F()
-extern "C"  void OnlineModeSelect_U3CUpdateU3Em__F_m3140347661 (OnlineModeSelect_t740007762 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void OnlineModeSelect::<Start>m__17()
+extern "C"  void OnlineModeSelect_U3CStartU3Em__17_m1109322550 (OnlineModeSelect_t740007762 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void OnlineModeSelect::<Start>m__18()
+extern "C"  void OnlineModeSelect_U3CStartU3Em__18_m1109323511 (OnlineModeSelect_t740007762 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

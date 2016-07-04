@@ -5,12 +5,13 @@ using UnityEngine.UI;
 namespace Game
 {
 
-    public class GameUIButton : CharacterOperationMaster
+    public class GameUIButton : CharactorOperationMaster
     {
 
         [SerializeField] Rigidbody playerRb;
         [SerializeField] Transform playerCenter;
         [SerializeField] Image lineEffect;
+        [SerializeField] AudioSource boostAudio;
         PlayerStateManager state;
 
         // Use this for initialization
@@ -31,6 +32,7 @@ namespace Game
                         if (!state.boostFrag && state.boostLevel > 0)
                         {
                             playerBoost(playerRb, state.boostLevel);
+                            boostAudio.PlayOneShot(boostAudio.clip);
                             lineEffect.enabled = true;
                             StartCoroutine(endEffect(0.5F * state.boostLevel));
                             state.boostFrag = true;

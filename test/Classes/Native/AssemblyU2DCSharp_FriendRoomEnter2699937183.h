@@ -18,6 +18,8 @@ struct Text_t3286458198;
 struct Button_t990034267;
 // UnityEngine.GameObject
 struct GameObject_t4012695102;
+// SoundManager
+struct SoundManager_t2444342206;
 
 #include "AssemblyU2DCSharp_Photon_MonoBehaviour4025988718.h"
 
@@ -41,6 +43,8 @@ public:
 	Button_t990034267 * ___paste_6;
 	// UnityEngine.GameObject FriendRoomEnter::panel
 	GameObject_t4012695102 * ___panel_7;
+	// SoundManager FriendRoomEnter::sound
+	SoundManager_t2444342206 * ___sound_8;
 
 public:
 	inline static int32_t get_offset_of_inputField_3() { return static_cast<int32_t>(offsetof(FriendRoomEnter_t2699937183, ___inputField_3)); }
@@ -86,6 +90,15 @@ public:
 	{
 		___panel_7 = value;
 		Il2CppCodeGenWriteBarrier(&___panel_7, value);
+	}
+
+	inline static int32_t get_offset_of_sound_8() { return static_cast<int32_t>(offsetof(FriendRoomEnter_t2699937183, ___sound_8)); }
+	inline SoundManager_t2444342206 * get_sound_8() const { return ___sound_8; }
+	inline SoundManager_t2444342206 ** get_address_of_sound_8() { return &___sound_8; }
+	inline void set_sound_8(SoundManager_t2444342206 * value)
+	{
+		___sound_8 = value;
+		Il2CppCodeGenWriteBarrier(&___sound_8, value);
 	}
 };
 

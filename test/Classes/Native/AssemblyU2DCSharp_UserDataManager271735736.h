@@ -35,14 +35,22 @@ public:
 	int32_t ___U3CMaxExpU3Ek__BackingField_6;
 	// System.Int32 UserDataManager::<HP>k__BackingField
 	int32_t ___U3CHPU3Ek__BackingField_7;
+	// System.Int32 UserDataManager::<PlusHP>k__BackingField
+	int32_t ___U3CPlusHPU3Ek__BackingField_8;
 	// System.Int32 UserDataManager::<ATK>k__BackingField
-	int32_t ___U3CATKU3Ek__BackingField_8;
+	int32_t ___U3CATKU3Ek__BackingField_9;
+	// System.Int32 UserDataManager::<PlusATK>k__BackingField
+	int32_t ___U3CPlusATKU3Ek__BackingField_10;
+	// System.Int32 UserDataManager::<Operability>k__BackingField
+	int32_t ___U3COperabilityU3Ek__BackingField_11;
+	// System.Int32 UserDataManager::<Weight>k__BackingField
+	int32_t ___U3CWeightU3Ek__BackingField_12;
 	// System.Int32 UserDataManager::<NormalSasa>k__BackingField
-	int32_t ___U3CNormalSasaU3Ek__BackingField_9;
+	int32_t ___U3CNormalSasaU3Ek__BackingField_13;
 	// System.Int32 UserDataManager::<GoldSasa>k__BackingField
-	int32_t ___U3CGoldSasaU3Ek__BackingField_10;
+	int32_t ___U3CGoldSasaU3Ek__BackingField_14;
 	// System.String UserDataManager::<HostRoomId>k__BackingField
-	String_t* ___U3CHostRoomIdU3Ek__BackingField_11;
+	String_t* ___U3CHostRoomIdU3Ek__BackingField_15;
 
 public:
 	inline static int32_t get_offset_of_U3CUserNameU3Ek__BackingField_3() { return static_cast<int32_t>(offsetof(UserDataManager_t271735736, ___U3CUserNameU3Ek__BackingField_3)); }
@@ -86,37 +94,69 @@ public:
 		___U3CHPU3Ek__BackingField_7 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CATKU3Ek__BackingField_8() { return static_cast<int32_t>(offsetof(UserDataManager_t271735736, ___U3CATKU3Ek__BackingField_8)); }
-	inline int32_t get_U3CATKU3Ek__BackingField_8() const { return ___U3CATKU3Ek__BackingField_8; }
-	inline int32_t* get_address_of_U3CATKU3Ek__BackingField_8() { return &___U3CATKU3Ek__BackingField_8; }
-	inline void set_U3CATKU3Ek__BackingField_8(int32_t value)
+	inline static int32_t get_offset_of_U3CPlusHPU3Ek__BackingField_8() { return static_cast<int32_t>(offsetof(UserDataManager_t271735736, ___U3CPlusHPU3Ek__BackingField_8)); }
+	inline int32_t get_U3CPlusHPU3Ek__BackingField_8() const { return ___U3CPlusHPU3Ek__BackingField_8; }
+	inline int32_t* get_address_of_U3CPlusHPU3Ek__BackingField_8() { return &___U3CPlusHPU3Ek__BackingField_8; }
+	inline void set_U3CPlusHPU3Ek__BackingField_8(int32_t value)
 	{
-		___U3CATKU3Ek__BackingField_8 = value;
+		___U3CPlusHPU3Ek__BackingField_8 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CNormalSasaU3Ek__BackingField_9() { return static_cast<int32_t>(offsetof(UserDataManager_t271735736, ___U3CNormalSasaU3Ek__BackingField_9)); }
-	inline int32_t get_U3CNormalSasaU3Ek__BackingField_9() const { return ___U3CNormalSasaU3Ek__BackingField_9; }
-	inline int32_t* get_address_of_U3CNormalSasaU3Ek__BackingField_9() { return &___U3CNormalSasaU3Ek__BackingField_9; }
-	inline void set_U3CNormalSasaU3Ek__BackingField_9(int32_t value)
+	inline static int32_t get_offset_of_U3CATKU3Ek__BackingField_9() { return static_cast<int32_t>(offsetof(UserDataManager_t271735736, ___U3CATKU3Ek__BackingField_9)); }
+	inline int32_t get_U3CATKU3Ek__BackingField_9() const { return ___U3CATKU3Ek__BackingField_9; }
+	inline int32_t* get_address_of_U3CATKU3Ek__BackingField_9() { return &___U3CATKU3Ek__BackingField_9; }
+	inline void set_U3CATKU3Ek__BackingField_9(int32_t value)
 	{
-		___U3CNormalSasaU3Ek__BackingField_9 = value;
+		___U3CATKU3Ek__BackingField_9 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CGoldSasaU3Ek__BackingField_10() { return static_cast<int32_t>(offsetof(UserDataManager_t271735736, ___U3CGoldSasaU3Ek__BackingField_10)); }
-	inline int32_t get_U3CGoldSasaU3Ek__BackingField_10() const { return ___U3CGoldSasaU3Ek__BackingField_10; }
-	inline int32_t* get_address_of_U3CGoldSasaU3Ek__BackingField_10() { return &___U3CGoldSasaU3Ek__BackingField_10; }
-	inline void set_U3CGoldSasaU3Ek__BackingField_10(int32_t value)
+	inline static int32_t get_offset_of_U3CPlusATKU3Ek__BackingField_10() { return static_cast<int32_t>(offsetof(UserDataManager_t271735736, ___U3CPlusATKU3Ek__BackingField_10)); }
+	inline int32_t get_U3CPlusATKU3Ek__BackingField_10() const { return ___U3CPlusATKU3Ek__BackingField_10; }
+	inline int32_t* get_address_of_U3CPlusATKU3Ek__BackingField_10() { return &___U3CPlusATKU3Ek__BackingField_10; }
+	inline void set_U3CPlusATKU3Ek__BackingField_10(int32_t value)
 	{
-		___U3CGoldSasaU3Ek__BackingField_10 = value;
+		___U3CPlusATKU3Ek__BackingField_10 = value;
 	}
 
-	inline static int32_t get_offset_of_U3CHostRoomIdU3Ek__BackingField_11() { return static_cast<int32_t>(offsetof(UserDataManager_t271735736, ___U3CHostRoomIdU3Ek__BackingField_11)); }
-	inline String_t* get_U3CHostRoomIdU3Ek__BackingField_11() const { return ___U3CHostRoomIdU3Ek__BackingField_11; }
-	inline String_t** get_address_of_U3CHostRoomIdU3Ek__BackingField_11() { return &___U3CHostRoomIdU3Ek__BackingField_11; }
-	inline void set_U3CHostRoomIdU3Ek__BackingField_11(String_t* value)
+	inline static int32_t get_offset_of_U3COperabilityU3Ek__BackingField_11() { return static_cast<int32_t>(offsetof(UserDataManager_t271735736, ___U3COperabilityU3Ek__BackingField_11)); }
+	inline int32_t get_U3COperabilityU3Ek__BackingField_11() const { return ___U3COperabilityU3Ek__BackingField_11; }
+	inline int32_t* get_address_of_U3COperabilityU3Ek__BackingField_11() { return &___U3COperabilityU3Ek__BackingField_11; }
+	inline void set_U3COperabilityU3Ek__BackingField_11(int32_t value)
 	{
-		___U3CHostRoomIdU3Ek__BackingField_11 = value;
-		Il2CppCodeGenWriteBarrier(&___U3CHostRoomIdU3Ek__BackingField_11, value);
+		___U3COperabilityU3Ek__BackingField_11 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CWeightU3Ek__BackingField_12() { return static_cast<int32_t>(offsetof(UserDataManager_t271735736, ___U3CWeightU3Ek__BackingField_12)); }
+	inline int32_t get_U3CWeightU3Ek__BackingField_12() const { return ___U3CWeightU3Ek__BackingField_12; }
+	inline int32_t* get_address_of_U3CWeightU3Ek__BackingField_12() { return &___U3CWeightU3Ek__BackingField_12; }
+	inline void set_U3CWeightU3Ek__BackingField_12(int32_t value)
+	{
+		___U3CWeightU3Ek__BackingField_12 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CNormalSasaU3Ek__BackingField_13() { return static_cast<int32_t>(offsetof(UserDataManager_t271735736, ___U3CNormalSasaU3Ek__BackingField_13)); }
+	inline int32_t get_U3CNormalSasaU3Ek__BackingField_13() const { return ___U3CNormalSasaU3Ek__BackingField_13; }
+	inline int32_t* get_address_of_U3CNormalSasaU3Ek__BackingField_13() { return &___U3CNormalSasaU3Ek__BackingField_13; }
+	inline void set_U3CNormalSasaU3Ek__BackingField_13(int32_t value)
+	{
+		___U3CNormalSasaU3Ek__BackingField_13 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CGoldSasaU3Ek__BackingField_14() { return static_cast<int32_t>(offsetof(UserDataManager_t271735736, ___U3CGoldSasaU3Ek__BackingField_14)); }
+	inline int32_t get_U3CGoldSasaU3Ek__BackingField_14() const { return ___U3CGoldSasaU3Ek__BackingField_14; }
+	inline int32_t* get_address_of_U3CGoldSasaU3Ek__BackingField_14() { return &___U3CGoldSasaU3Ek__BackingField_14; }
+	inline void set_U3CGoldSasaU3Ek__BackingField_14(int32_t value)
+	{
+		___U3CGoldSasaU3Ek__BackingField_14 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CHostRoomIdU3Ek__BackingField_15() { return static_cast<int32_t>(offsetof(UserDataManager_t271735736, ___U3CHostRoomIdU3Ek__BackingField_15)); }
+	inline String_t* get_U3CHostRoomIdU3Ek__BackingField_15() const { return ___U3CHostRoomIdU3Ek__BackingField_15; }
+	inline String_t** get_address_of_U3CHostRoomIdU3Ek__BackingField_15() { return &___U3CHostRoomIdU3Ek__BackingField_15; }
+	inline void set_U3CHostRoomIdU3Ek__BackingField_15(String_t* value)
+	{
+		___U3CHostRoomIdU3Ek__BackingField_15 = value;
+		Il2CppCodeGenWriteBarrier(&___U3CHostRoomIdU3Ek__BackingField_15, value);
 	}
 };
 

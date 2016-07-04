@@ -19,6 +19,7 @@ namespace Game
         [SerializeField] Text playerName;
         [SerializeField] Text rivalName;
         [SerializeField] Text getSasaNum;
+        [SerializeField] AudioSource[] audioSource;
 
         void Awake()
         {
@@ -93,10 +94,12 @@ namespace Game
                     break;
                 case 1:
                     stateText.text = "GO";
+                    audioSource[0].PlayOneShot(audioSource[0].clip);
                     textOrder++;
                     break;
                 case 2:
                     stateText.text = "FINISH";
+                    audioSource[1].PlayOneShot(audioSource[1].clip);
                     textOrder++;
                     break;
             }
@@ -133,19 +136,27 @@ namespace Game
 
         void victoryOrDefeat()
         {
+            var data = UserDataManager.Instance;
             if (players[0].transform.position.z > players[1].transform.position.z)
             {
                 awardText.text = "You Win";
+                audioSource[2].PlayOneShot(audioSource[2].clip);
+                PlayerPrefs.SetString("Result", "勝利");
+                PlayerPrefs.SetInt("GetSasa", int.Parse(getSasaNum.text));
                 Debug.Log("YouWin");
             }
             else if (players[0].transform.position.z == players[1].transform.position.z)
             {
                 awardText.text = "Draw";
+                PlayerPrefs.SetString("Result", "引き分け");
                 Debug.Log("Draw");
             }
             else
             {
+                audioSource[3].PlayOneShot(audioSource[3].clip);
                 awardText.text = "You Lose";
+                PlayerPrefs.SetString("Result", "敗北");
+                PlayerPrefs.SetInt("GetSasa", int.Parse(getSasaNum.text));
                 Debug.Log("YouLose");
             }
             if (GameFinish)

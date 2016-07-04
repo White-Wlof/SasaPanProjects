@@ -17,6 +17,7 @@ public class SceneTransition : MonoBehaviour
 
     public static void waitLoading(MonoBehaviour m, string sceneName)
     {
+
         var loadingAnim = LoadingManager.Instance;
         loadingAnim.Play();
         m.StartCoroutine(LoadNext(sceneName));
@@ -43,6 +44,8 @@ public class SceneTransition : MonoBehaviour
         async.allowSceneActivation = true;
         var loadingAnim = LoadingManager.Instance;
         loadingAnim.Stop();
+        var sound = SoundManager.Instance;
+        sound.StopMenuBGM();
         yield return async;
 
     }

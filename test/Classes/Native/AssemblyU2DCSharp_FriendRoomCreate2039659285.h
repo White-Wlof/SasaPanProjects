@@ -20,6 +20,8 @@ struct GameObject_t4012695102;
 struct List_1_t1765447871;
 // UserDataManager
 struct UserDataManager_t271735736;
+// SoundManager
+struct SoundManager_t2444342206;
 
 #include "AssemblyU2DCSharp_Photon_MonoBehaviour4025988718.h"
 
@@ -43,6 +45,8 @@ public:
 	List_1_t1765447871 * ___roomList_6;
 	// UserDataManager FriendRoomCreate::data
 	UserDataManager_t271735736 * ___data_7;
+	// SoundManager FriendRoomCreate::sound
+	SoundManager_t2444342206 * ___sound_8;
 
 public:
 	inline static int32_t get_offset_of_roomId_3() { return static_cast<int32_t>(offsetof(FriendRoomCreate_t2039659285, ___roomId_3)); }
@@ -88,6 +92,15 @@ public:
 	{
 		___data_7 = value;
 		Il2CppCodeGenWriteBarrier(&___data_7, value);
+	}
+
+	inline static int32_t get_offset_of_sound_8() { return static_cast<int32_t>(offsetof(FriendRoomCreate_t2039659285, ___sound_8)); }
+	inline SoundManager_t2444342206 * get_sound_8() const { return ___sound_8; }
+	inline SoundManager_t2444342206 ** get_address_of_sound_8() { return &___sound_8; }
+	inline void set_sound_8(SoundManager_t2444342206 * value)
+	{
+		___sound_8 = value;
+		Il2CppCodeGenWriteBarrier(&___sound_8, value);
 	}
 };
 

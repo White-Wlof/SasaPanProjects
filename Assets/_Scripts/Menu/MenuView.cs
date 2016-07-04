@@ -10,30 +10,35 @@ public class MenuView : MonoBehaviour
     const int CreateButton = 2;
     [SerializeField] GameObject selectPanel;
     [SerializeField] GameObject[] childPanel;
-    [SerializeField] Image comment;
+    [SerializeField] GameObject comment;
     [SerializeField] Button grow;
     [SerializeField] Button play;
     [SerializeField] Button create;
     [SerializeField] Button back;
-
+    SoundManager sound;
 
     void Start()
     {
+        sound = SoundManager.Instance;
         grow.onClick.AddListener(() =>
             {
                 selectMenu(GrowButton);
+                sound.Click();
             });
         play.onClick.AddListener(() =>
             {
                 selectMenu(PlayButton);
+                sound.Click();
             });
         create.onClick.AddListener(() =>
             {
                 selectMenu(CreateButton);
+                sound.Click();
             });
         back.onClick.AddListener(() =>
             {
                 hideMenuPanel();
+                sound.Click();
             });
     }
 
@@ -47,7 +52,7 @@ public class MenuView : MonoBehaviour
     void hideMenuPanel()
     {
         selectPanel.transform.DOLocalMoveX(-818, 0.2f);
-        comment.enabled = true;
+        comment.SetActive(true);
     }
 
     IEnumerator showMenuPanel(int menu)
@@ -72,7 +77,7 @@ public class MenuView : MonoBehaviour
                 childPanel[i].SetActive(false);
             }
         }
-        comment.enabled = false;
+        comment.SetActive(false);
         selectPanel.transform.DOLocalMoveX(0, 0.2F);
     }
 }

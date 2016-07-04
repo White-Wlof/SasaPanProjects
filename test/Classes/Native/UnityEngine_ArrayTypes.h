@@ -87,6 +87,8 @@ struct AudioClip_t3714538611;
 struct Material_t1886596500;
 // UnityEngine.MonoBehaviour
 struct MonoBehaviour_t3012272455;
+// UnityEngine.AudioSource
+struct AudioSource_t3628549054;
 // UnityEngine.ICanvasRaycastFilter
 struct ICanvasRaycastFilter_t1382353421;
 // UnityEngine.ISerializationCallbackReceiver
@@ -148,6 +150,7 @@ struct Rigidbody_t1972007546;
 #include "UnityEngine_UnityEngine_AudioClip3714538611.h"
 #include "UnityEngine_UnityEngine_Material1886596500.h"
 #include "UnityEngine_UnityEngine_MonoBehaviour3012272455.h"
+#include "UnityEngine_UnityEngine_AudioSource3628549054.h"
 #include "UnityEngine_UnityEngine_Rigidbody1972007546.h"
 
 #pragma once
@@ -982,6 +985,21 @@ public:
 	inline MonoBehaviour_t3012272455 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
 	inline MonoBehaviour_t3012272455 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
 	inline void SetAt(il2cpp_array_size_t index, MonoBehaviour_t3012272455 * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier(m_Items + index, value);
+	}
+};
+// UnityEngine.AudioSource[]
+struct AudioSourceU5BU5D_t224472971  : public Il2CppArray
+{
+public:
+	ALIGN_TYPE (8) AudioSource_t3628549054 * m_Items[1];
+
+public:
+	inline AudioSource_t3628549054 * GetAt(il2cpp_array_size_t index) const { return m_Items[index]; }
+	inline AudioSource_t3628549054 ** GetAddressAt(il2cpp_array_size_t index) { return m_Items + index; }
+	inline void SetAt(il2cpp_array_size_t index, AudioSource_t3628549054 * value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier(m_Items + index, value);

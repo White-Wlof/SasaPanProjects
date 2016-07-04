@@ -4,7 +4,7 @@ using System.Collections;
 
 namespace Game
 {
-    public class RivalController : CharacterOperationMaster
+    public class RivalController : CharactorOperationMaster
     {
         [SerializeField] Transform center;
         [SerializeField] GameObject cannon;
@@ -26,32 +26,39 @@ namespace Game
         // Update is called once per frame
         void Update()
         {
-            rivalRb.AddForce(Vector3.forward * 2);
-            timer += Time.deltaTime;
-            //Debug.Log(rivalRb.velocity.z);
-            if (this.transform.position.z + 5 < player.transform.position.z)
+            if (state.rivalHp <= 0 && rivalRb.velocity.z > 3)
             {
-                this.transform.LookAt(player.transform.position);
-                if (rivalRb.velocity.z < 0 && rivalRb.velocity.y < 0)
+                rivalRb.velocity -= new Vector3(0, 0, 1);
+            }
+            else if (state.rivalHp > 0)
+            {
+                rivalRb.AddForce(Vector3.forward * 2);
+                timer += Time.deltaTime;
+                //Debug.Log(rivalRb.velocity.z);
+                if (this.transform.position.z + 5 < player.transform.position.z)
                 {
-                    playerBoost(rivalRb, state.boostLevel + 5);
+                    this.transform.LookAt(player.transform.position);
+//                if (rivalRb.velocity.z < 0 && rivalRb.velocity.y < 0)
+//                {
+//                    playerBoost(rivalRb, state.boostLevel + 5);
+//                }
                 }
-            }
-            else
-            {
-                this.transform.eulerAngles = Vector3.zero;
-            }
-            if (timer > 3 && Mathf.Abs(rivalRb.velocity.z) < 1 && rivalRb.velocity.y < 0)
-            {
-                playerBoost(rivalRb, state.boostLevel + Random.Range(0, 5));
-                timer = 0;
-            }
-            if (timer > 5)
-            {
-                center.transform.LookAt(player.transform.position);
-                shotCannon(center, rivalRb, cannon.transform.position, cannonBall);
-                playerBoost(rivalRb, state.boostLevel);
-                timer = Random.Range(0.0f, 3.0f);
+                else
+                {
+                    this.transform.eulerAngles = Vector3.zero;
+                }
+                if (timer > 3 && Mathf.Abs(rivalRb.velocity.z) < 1 && rivalRb.velocity.y < 0)
+                {
+                    playerBoost(rivalRb, state.boostLevel + Random.Range(0, 5));
+                    timer = 0;
+                }
+                if (timer > 5)
+                {
+                    center.transform.LookAt(player.transform.position);
+                    shotCannon(center, rivalRb, cannon.transform.position, cannonBall);
+                    playerBoost(rivalRb, 1);
+                    timer = Random.Range(0.0f, 3.0f);
+                }
             }
         }
     }

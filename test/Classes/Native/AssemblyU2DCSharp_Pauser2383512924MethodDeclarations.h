@@ -42,9 +42,9 @@ extern "C"  void Pauser_OnResume_m1941001361 (Pauser_t2383512924 * __this, const
 extern "C"  void Pauser_Pause_m4139387987 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Pauser::Resume()
 extern "C"  void Pauser_Resume_m2157562514 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean Pauser::<OnPause>m__13(UnityEngine.Behaviour)
-extern "C"  bool Pauser_U3COnPauseU3Em__13_m3987935815 (Il2CppObject * __this /* static, unused */, Behaviour_t3120504042 * ___obj, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean Pauser::<OnPause>m__14(UnityEngine.Rigidbody)
-extern "C"  bool Pauser_U3COnPauseU3Em__14_m2677276054 (Il2CppObject * __this /* static, unused */, Rigidbody_t1972007546 * ___obj, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Boolean Pauser::<OnPause>m__15(UnityEngine.Rigidbody2D)
-extern "C"  bool Pauser_U3COnPauseU3Em__15_m207908195 (Il2CppObject * __this /* static, unused */, Rigidbody2D_t3632243084 * ___obj, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Pauser::<OnPause>m__1D(UnityEngine.Behaviour)
+extern "C"  bool Pauser_U3COnPauseU3Em__1D_m2848821014 (Il2CppObject * __this /* static, unused */, Behaviour_t3120504042 * ___obj, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Pauser::<OnPause>m__1E(UnityEngine.Rigidbody)
+extern "C"  bool Pauser_U3COnPauseU3Em__1E_m1538161253 (Il2CppObject * __this /* static, unused */, Rigidbody_t1972007546 * ___obj, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Pauser::<OnPause>m__1F(UnityEngine.Rigidbody2D)
+extern "C"  bool Pauser_U3COnPauseU3Em__1F_m735244914 (Il2CppObject * __this /* static, unused */, Rigidbody2D_t3632243084 * ___obj, const MethodInfo* method) IL2CPP_METHOD_ATTR;

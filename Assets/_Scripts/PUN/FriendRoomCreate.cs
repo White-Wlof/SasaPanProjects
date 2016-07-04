@@ -11,15 +11,17 @@ public class FriendRoomCreate : Photon.MonoBehaviour
     [SerializeField] GameObject panel;
     List<string> roomList = new List<string>();
     UserDataManager data;
-
+    SoundManager sound;
 
     void Start()
     {
+        sound = SoundManager.Instance;
         data = UserDataManager.Instance;
         initiarizeRoom();
         copy.onClick.AddListener(() =>
             {
                 UniClipboard.SetText(roomId.text);
+                sound.Click();
             });
     }
 

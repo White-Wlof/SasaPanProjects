@@ -29,11 +29,11 @@ extern "C"  void MenuView_selectMenu_m2496488953 (MenuView_t3755892932 * __this,
 extern "C"  void MenuView_hideMenuPanel_m721183640 (MenuView_t3755892932 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator MenuView::showMenuPanel(System.Int32)
 extern "C"  Il2CppObject * MenuView_showMenuPanel_m2641462150 (MenuView_t3755892932 * __this, int32_t ___menu, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void MenuView::<Start>m__A()
-extern "C"  void MenuView_U3CStartU3Em__A_m3226648033 (MenuView_t3755892932 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void MenuView::<Start>m__B()
-extern "C"  void MenuView_U3CStartU3Em__B_m3226648994 (MenuView_t3755892932 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void MenuView::<Start>m__C()
-extern "C"  void MenuView_U3CStartU3Em__C_m3226649955 (MenuView_t3755892932 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
-// System.Void MenuView::<Start>m__D()
-extern "C"  void MenuView_U3CStartU3Em__D_m3226650916 (MenuView_t3755892932 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void MenuView::<Start>m__13()
+extern "C"  void MenuView_U3CStartU3Em__13_m1241375140 (MenuView_t3755892932 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void MenuView::<Start>m__14()
+extern "C"  void MenuView_U3CStartU3Em__14_m1241376101 (MenuView_t3755892932 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void MenuView::<Start>m__15()
+extern "C"  void MenuView_U3CStartU3Em__15_m1241377062 (MenuView_t3755892932 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void MenuView::<Start>m__16()
+extern "C"  void MenuView_U3CStartU3Em__16_m1241378023 (MenuView_t3755892932 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

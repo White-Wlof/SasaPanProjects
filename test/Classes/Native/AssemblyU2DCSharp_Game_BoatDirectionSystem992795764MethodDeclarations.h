@@ -33,7 +33,7 @@ extern "C"  void BoatDirectionSystem_autoRudderState_m895149074 (BoatDirectionSy
 // System.Void Game.BoatDirectionSystem::autoRudderRotateStart()
 extern "C"  void BoatDirectionSystem_autoRudderRotateStart_m2982680239 (BoatDirectionSystem_t992795764 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Collections.IEnumerator Game.BoatDirectionSystem::autoRudderRotate(System.Int32)
-extern "C"  Il2CppObject * BoatDirectionSystem_autoRudderRotate_m1356316590 (BoatDirectionSystem_t992795764 * __this, int32_t ___state, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+extern "C"  Il2CppObject * BoatDirectionSystem_autoRudderRotate_m1356316590 (BoatDirectionSystem_t992795764 * __this, int32_t ___status, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single Game.BoatDirectionSystem::get_vector_length(UnityEngine.Vector3)
 extern "C"  float BoatDirectionSystem_get_vector_length_m4200351941 (BoatDirectionSystem_t992795764 * __this, Vector3_t3525329789  ___v, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single Game.BoatDirectionSystem::dot_product(UnityEngine.Vector3,UnityEngine.Vector3)

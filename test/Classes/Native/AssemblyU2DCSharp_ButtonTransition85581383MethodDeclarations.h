@@ -24,6 +24,8 @@ struct IEnumerator_t287207039;
 
 // System.Void ButtonTransition::.ctor()
 extern "C"  void ButtonTransition__ctor_m4292044852 (ButtonTransition_t85581383 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void ButtonTransition::Start()
+extern "C"  void ButtonTransition_Start_m3239182644 (ButtonTransition_t85581383 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ButtonTransition::sceneTransition(System.String)
 extern "C"  void ButtonTransition_sceneTransition_m1673445103 (ButtonTransition_t85581383 * __this, String_t* ___sceneName, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void ButtonTransition::sceneTransitionAdditive(System.String)

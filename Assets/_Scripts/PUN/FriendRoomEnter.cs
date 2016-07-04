@@ -11,18 +11,22 @@ public class FriendRoomEnter : Photon.MonoBehaviour
     [SerializeField] Button join;
     [SerializeField] Button paste;
     [SerializeField] GameObject panel;
+    SoundManager sound;
 
     void Start()
     {
+        sound = SoundManager.Instance;
         PhotonNetwork.ConnectUsingSettings("v1.0");
         PhotonNetwork.sendRate = 30;
         join.onClick.AddListener(() =>
             {
                 joinFriendRoom();
+                sound.Click();
             });
         paste.onClick.AddListener(() =>
             {
                 inputField.text = UniClipboard.GetText();
+                sound.Click();
             });
     }
 

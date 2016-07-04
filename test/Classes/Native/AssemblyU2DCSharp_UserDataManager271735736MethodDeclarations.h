@@ -42,10 +42,26 @@ extern "C"  void UserDataManager_set_MaxExp_m3633037848 (UserDataManager_t271735
 extern "C"  int32_t UserDataManager_get_HP_m3602079764 (UserDataManager_t271735736 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UserDataManager::set_HP(System.Int32)
 extern "C"  void UserDataManager_set_HP_m1473574183 (UserDataManager_t271735736 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 UserDataManager::get_PlusHP()
+extern "C"  int32_t UserDataManager_get_PlusHP_m518977358 (UserDataManager_t271735736 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UserDataManager::set_PlusHP(System.Int32)
+extern "C"  void UserDataManager_set_PlusHP_m265081953 (UserDataManager_t271735736 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UserDataManager::get_ATK()
 extern "C"  int32_t UserDataManager_get_ATK_m4283978446 (UserDataManager_t271735736 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UserDataManager::set_ATK(System.Int32)
 extern "C"  void UserDataManager_set_ATK_m3924729245 (UserDataManager_t271735736 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 UserDataManager::get_PlusATK()
+extern "C"  int32_t UserDataManager_get_PlusATK_m3197084372 (UserDataManager_t271735736 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UserDataManager::set_PlusATK(System.Int32)
+extern "C"  void UserDataManager_set_PlusATK_m821208483 (UserDataManager_t271735736 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 UserDataManager::get_Operability()
+extern "C"  int32_t UserDataManager_get_Operability_m2766684498 (UserDataManager_t271735736 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UserDataManager::set_Operability(System.Int32)
+extern "C"  void UserDataManager_set_Operability_m3243083809 (UserDataManager_t271735736 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 UserDataManager::get_Weight()
+extern "C"  int32_t UserDataManager_get_Weight_m1857512484 (UserDataManager_t271735736 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UserDataManager::set_Weight(System.Int32)
+extern "C"  void UserDataManager_set_Weight_m2614800439 (UserDataManager_t271735736 * __this, int32_t ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UserDataManager::get_NormalSasa()
 extern "C"  int32_t UserDataManager_get_NormalSasa_m680631311 (UserDataManager_t271735736 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UserDataManager::set_NormalSasa(System.Int32)
