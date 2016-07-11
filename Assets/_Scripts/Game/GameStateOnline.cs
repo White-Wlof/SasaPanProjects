@@ -137,12 +137,15 @@ namespace Game
                 audioSource[2].PlayOneShot(audioSource[2].clip);
                 PlayerPrefs.SetInt("GetSasa", int.Parse(getSasaNum.text));
                 Debug.Log("YouWin");
+                PlayerPrefs.SetInt("Experience", (int)(players[0].transform.position.z / 10 * 1.5f));
             }
             else if (players[0].transform.position.z == players[1].transform.position.z)
             {
                 awardText.text = "Draw";
                 PlayerPrefs.SetString("Result", "引き分け");
                 Debug.Log("Draw");
+                PlayerPrefs.SetInt("Experience", (int)(players[0].transform.position.z / 15 * 1.5f));
+
             }
             else
             {
@@ -150,8 +153,11 @@ namespace Game
                 awardText.text = "You Lose";
                 PlayerPrefs.SetString("Result", "敗北");
                 PlayerPrefs.SetInt("GetSasa", int.Parse(getSasaNum.text));
+                PlayerPrefs.SetInt("Experience", (int)(players[0].transform.position.z / 20 * 1.5f));
+
                 Debug.Log("YouLose");
             }
+
             if (GameFinish)
             {
                 StartCoroutine(showAwardPanel());

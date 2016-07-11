@@ -4449,6 +4449,7 @@ MonoBehaviour:
   center: {fileID: 418942}
   cannon: {fileID: 133214}
   cannonAudio: {fileID: 8235346}
+  col: {fileID: 6574462}
   shotPlayer: 
   O_Speed: 0
 --- !u!114 &11484818

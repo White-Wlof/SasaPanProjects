@@ -24,6 +24,6 @@ public class UserInfo : MonoBehaviour
         userName.text = data.UserName;
         goldSasa.text = "" + data.GoldSasa;
         normalSasa.text = "" + data.NormalSasa;
-        experience.fillAmount = 1 / data.MaxExp * data.Experience;
+        experience.fillAmount = (1f / (float)data.MaxExp * data.Experience);
     }
 }

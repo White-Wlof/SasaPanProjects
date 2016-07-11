@@ -20,6 +20,7 @@ namespace Game
         [SerializeField] Text rivalName;
         [SerializeField] Text getSasaNum;
         [SerializeField] AudioSource[] audioSource;
+        PlayerStateManager state;
 
         void Awake()
         {
@@ -31,6 +32,7 @@ namespace Game
         void Start()
         {
             var data = UserDataManager.Instance;
+            state = PlayerStateManager.Instance;
             playerName.text = data.UserName;
             rivalName.text = "ささギャング";
             players.Add(GameObject.FindGameObjectWithTag("Player").transform);
@@ -53,6 +55,11 @@ namespace Game
 
         void Update()
         {
+            if (state.deadPlayers == 2)
+            {
+                StartCoroutine(playersDead());
+                state.deadPlayers = 0;
+            }
             foreach (Transform t in players)
             {
                 if (t.position.z > goalLine.position.z && !GameFinish)
@@ -144,12 +151,16 @@ namespace Game
                 PlayerPrefs.SetString("Result", "勝利");
                 PlayerPrefs.SetInt("GetSasa", int.Parse(getSasaNum.text));
                 Debug.Log("YouWin");
+                PlayerPrefs.SetInt("Experience", (int)players[0].transform.position.z / 10);
+
             }
             else if (players[0].transform.position.z == players[1].transform.position.z)
             {
                 awardText.text = "Draw";
                 PlayerPrefs.SetString("Result", "引き分け");
                 Debug.Log("Draw");
+                PlayerPrefs.SetInt("Experience", (int)players[0].transform.position.z / 15);
+
             }
             else
             {
@@ -158,9 +169,13 @@ namespace Game
                 PlayerPrefs.SetString("Result", "敗北");
                 PlayerPrefs.SetInt("GetSasa", int.Parse(getSasaNum.text));
                 Debug.Log("YouLose");
+                PlayerPrefs.SetInt("Experience", (int)players[0].transform.position.z / 20);
+
             }
+
             if (GameFinish)
             {
+                
                 StartCoroutine(showAwardPanel());
             }
         }
@@ -177,6 +192,14 @@ namespace Game
         {
             yield return new WaitForSeconds(1.5f);
             SceneTransition.Load("Result");
+        }
+
+        IEnumerator playersDead()
+        {
+            yield return new WaitForSeconds(2);
+            showSignText();
+            changeGameState();
+            victoryOrDefeat();
         }
 
         public bool getGameStart()

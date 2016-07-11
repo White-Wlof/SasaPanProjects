@@ -123,7 +123,7 @@ TerrainCollider:
   m_GameObject: {fileID: 3670652}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: c8421fb50496c467c8ff7ba5af8c7351, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 5cb42f3bc0f5f4d128717de4fc4830d0, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &3670655
 Terrain:
@@ -133,7 +133,7 @@ Terrain:
   m_GameObject: {fileID: 3670652}
   m_Enabled: 1
   serializedVersion: 3
-  m_TerrainData: {fileID: 15600000, guid: c8421fb50496c467c8ff7ba5af8c7351, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 5cb42f3bc0f5f4d128717de4fc4830d0, type: 2}
   m_TreeDistance: 2000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -295,6 +295,22 @@ Prefab:
       propertyPath: m_TagString
       value: Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 11483258, guid: 713905f86724d4c699f6304ba6600812, type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22464406, guid: 713905f86724d4c699f6304ba6600812, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22464406, guid: 713905f86724d4c699f6304ba6600812, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22464406, guid: 713905f86724d4c699f6304ba6600812, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 713905f86724d4c699f6304ba6600812, type: 2}
   m_IsPrefabParent: 0
@@ -388,6 +404,10 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 724026853}
+    - target: {fileID: 11424640, guid: 60e57303421734cc9b765d4f8c1c62db, type: 2}
+      propertyPath: col
+      value: 
+      objectReference: {fileID: 909896884}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60e57303421734cc9b765d4f8c1c62db, type: 2}
   m_IsPrefabParent: 0
@@ -553,10 +573,6 @@ Prefab:
       propertyPath: gameState
       value: 
       objectReference: {fileID: 1868854760}
-    - target: {fileID: 11478778, guid: 579becdf5d31e4271b231d25dfe59bfe, type: 2}
-      propertyPath: wallow
-      value: 
-      objectReference: {fileID: 2087379207}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 579becdf5d31e4271b231d25dfe59bfe, type: 2}
   m_IsPrefabParent: 0
@@ -567,10 +583,6 @@ Transform:
 --- !u!1 &724026853 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 151970, guid: 579becdf5d31e4271b231d25dfe59bfe, type: 2}
-  m_PrefabInternal: {fileID: 661598945}
---- !u!4 &724026854 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 407774, guid: 579becdf5d31e4271b231d25dfe59bfe, type: 2}
   m_PrefabInternal: {fileID: 661598945}
 --- !u!54 &724026855 stripped
 Rigidbody:
@@ -620,9 +632,19 @@ Prefab:
       propertyPath: m_Name
       value: Stage0-1
       objectReference: {fileID: 0}
+    - target: {fileID: 15446076, guid: a564522385ee54ad1aac896507c8d6b7, type: 2}
+      propertyPath: m_TerrainData
+      value: 
+      objectReference: {fileID: 15600000, guid: 119add1d7b9684d12b4d6fea4c9bc8dc,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a564522385ee54ad1aac896507c8d6b7, type: 2}
   m_IsPrefabParent: 0
+--- !u!65 &909896884 stripped
+BoxCollider:
+  m_PrefabParentObject: {fileID: 6508308, guid: 60e57303421734cc9b765d4f8c1c62db,
+    type: 2}
+  m_PrefabInternal: {fileID: 472795155}
 --- !u!1 &1051732048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,60 +1336,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2081093680}
   m_Mesh: {fileID: 4300000, guid: 3debbd7f9809944119a47dc0eb132fbd, type: 2}
---- !u!1 &2087379207 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100074, guid: e3025bc223a0f404f8f023b90bc01047, type: 3}
-  m_PrefabInternal: {fileID: 2093595247}
---- !u!1001 &2093595247
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 724026854}
-    m_Modifications:
-    - target: {fileID: 400074, guid: e3025bc223a0f404f8f023b90bc01047, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: e3025bc223a0f404f8f023b90bc01047, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.55999947
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: e3025bc223a0f404f8f023b90bc01047, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.17999268
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: e3025bc223a0f404f8f023b90bc01047, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.000000068119334
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: e3025bc223a0f404f8f023b90bc01047, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.9943152
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: e3025bc223a0f404f8f023b90bc01047, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.10647685
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: e3025bc223a0f404f8f023b90bc01047, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.00000063612146
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: e3025bc223a0f404f8f023b90bc01047, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: e3025bc223a0f404f8f023b90bc01047, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: de1fd548378d14ee6a2bfbc6e94a1dae, type: 2}
-    - target: {fileID: 100074, guid: e3025bc223a0f404f8f023b90bc01047, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: e3025bc223a0f404f8f023b90bc01047, type: 3}
-  m_IsPrefabParent: 0
 --- !u!1 &2100115498
 GameObject:
   m_ObjectHideFlags: 0

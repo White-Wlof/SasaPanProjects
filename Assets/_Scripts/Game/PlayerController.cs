@@ -10,6 +10,7 @@ namespace Game
 
         [SerializeField] Transform center;
         [SerializeField] GameObject cannon;
+        [SerializeField] BoxCollider col;
         [SerializeField] GameState gameState;
         [SerializeField] AudioSource cannonAudio;
         PlayerStateManager state;
@@ -27,9 +28,18 @@ namespace Game
         // Update is called once per frame
         void Update()
         { 
-            if (state.ownHp <= 0 && playerRb.velocity.z > 3)
+            if (state.ownHp <= 0)
             {
-                playerRb.velocity -= new Vector3(0, 0, 1);
+                if (playerRb.useGravity == false)
+                {
+                    playerRb.useGravity = true;
+                    col.enabled = true;
+                    state.deadPlayers++;
+                }
+                if (playerRb.velocity.z > 3)
+                {
+                    playerRb.velocity -= new Vector3(0, 0, 1);
+                }
             }
             playerRb.AddForce(Vector3.forward * 2);
             if (Input.GetKey(KeyCode.LeftArrow))
@@ -44,7 +54,7 @@ namespace Game
             {
                 if (!state.boostFrag && state.boostLevel > 0)
                 {
-                    playerBoost(playerRb, state.boostLevel);
+                    playerBoost(this.gameObject, playerRb, state.boostLevel);
                     state.boostFrag = true;
                 } 
             }
@@ -60,7 +70,7 @@ namespace Game
                 endGame(playerRb);
             }
 
-            #if UNITY_IOS
+            #if UNITY_IOS || UNITY_ANDROID
             if (Input.touchCount > 0)
             {
                 if (Input.touches[0].phase == TouchPhase.Ended && state.cannonMode && state.initialVelocityCannon > 100)

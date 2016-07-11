@@ -12,13 +12,14 @@ namespace Game
         [SerializeField] Transform playerCenter;
         [SerializeField] Image lineEffect;
         [SerializeField] AudioSource boostAudio;
+        GameObject player;
         PlayerStateManager state;
 
         // Use this for initialization
         void Start()
         {
             state = PlayerStateManager.Instance;
-            var player = GameObject.FindGameObjectWithTag("Player");
+            player = GameObject.FindGameObjectWithTag("Player");
             playerRb = player.GetComponent<Rigidbody>();
         }
 
@@ -27,17 +28,15 @@ namespace Game
             switch (buttonName)
             {
                 case "Boost":
-                    if (!state.cannonMode)
+                    if (!state.boostFrag && state.boostLevel > 0)
                     {
-                        if (!state.boostFrag && state.boostLevel > 0)
-                        {
-                            playerBoost(playerRb, state.boostLevel);
-                            boostAudio.PlayOneShot(boostAudio.clip);
-                            lineEffect.enabled = true;
-                            StartCoroutine(endEffect(0.5F * state.boostLevel));
-                            state.boostFrag = true;
-                        } 
-                    }
+                        playerBoost(player, playerRb, state.boostLevel);
+                        boostAudio.PlayOneShot(boostAudio.clip);
+                        lineEffect.enabled = true;
+                        StartCoroutine(endEffect(0.5F * state.boostLevel));
+                        state.boostFrag = true;
+                        state.cannonMode = false;
+                    } 
                     break;
                 case "Cannon":
                     if (!state.cannonMode)

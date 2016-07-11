@@ -26,8 +26,8 @@ namespace Game
         float isFieldTimer;
         [SerializeField] AudioSource itemAudio;
 
-        [SerializeField] int ballDamage = 20;
-        [SerializeField] int fieldDamage = 2;
+        [SerializeField] int ballDamage = 100;
+        [SerializeField] int fieldDamage = 1;
 
         void Start()
         {
@@ -55,7 +55,7 @@ namespace Game
                         break;
                 }
             }
-            else
+            else if (!PhotonNetwork.connected)
             {
                 switch (collision.transform.tag)
                 {
@@ -97,7 +97,7 @@ namespace Game
                 }
                
             }
-            else
+            else if (!PhotonNetwork.connected)
             {
                 switch (collision.transform.tag)
                 {
@@ -218,7 +218,7 @@ namespace Game
 
         IEnumerator blackOutPanel()
         {
-            while (panel.color.a < 1.0f)
+            while (panel.color.a < 1.0f && transform.tag == "Player")
             {
                 panel.color += new Color(0, 0, 0, 0.05f);
                 yield return new WaitForSeconds(0.1f);

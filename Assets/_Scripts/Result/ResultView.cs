@@ -12,6 +12,7 @@ public class ResultView : MonoBehaviour
     [SerializeField] Text normalSasa;
     [SerializeField] Text goldSasa;
     [SerializeField] Text winBonus;
+    [SerializeField] Text experience;
 
     void Start()
     {
@@ -28,6 +29,16 @@ public class ResultView : MonoBehaviour
 
         result.text = PlayerPrefs.GetString("Result", "");
         normalSasa.text = "" + PlayerPrefs.GetInt("GetSasa", 0);
+        var exp = PlayerPrefs.GetInt("Experience", 0);
+        data.Experience += exp;
+        while (data.MaxExp <= data.Experience)
+        {
+            data.Level++;
+            var diffExp = data.Experience - data.MaxExp;
+            data.MaxExp = newMaxExp(data.Level);
+            data.Experience = diffExp;
+        }
+        experience.text = "" + exp;
 
         switch (result.text)
         {
@@ -50,5 +61,10 @@ public class ResultView : MonoBehaviour
 
         data.HostRoomId = "00000000";
         data.Save();
+    }
+
+    int newMaxExp(int level)
+    {
+        return 10 * level * level + 33 * (level - 1);
     }
 }

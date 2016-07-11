@@ -1,4 +1,4 @@
-//Generated on : 2016/07/04 2:14:04
+//Generated on : 2016/07/09 15:27:12
 void RegisterAllStrippedInternalCalls()
 {
 	//Start Registrations for type : UnityEngine.Animation
@@ -2543,6 +2543,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Rigidbody_INTERNAL_CALL_IsSleeping();
 		Register_UnityEngine_Rigidbody_INTERNAL_CALL_IsSleeping();
 
+		//System.Boolean UnityEngine.Rigidbody::get_useGravity()
+		void Register_UnityEngine_Rigidbody_get_useGravity();
+		Register_UnityEngine_Rigidbody_get_useGravity();
+
 		//System.Single UnityEngine.Rigidbody::get_mass()
 		void Register_UnityEngine_Rigidbody_get_mass();
 		Register_UnityEngine_Rigidbody_get_mass();
@@ -2874,6 +2878,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Boolean UnityEngine.SystemInfo::get_supportsImageEffects()
 		void Register_UnityEngine_SystemInfo_get_supportsImageEffects();
 		Register_UnityEngine_SystemInfo_get_supportsImageEffects();
+
+		//System.String UnityEngine.SystemInfo::get_deviceModel()
+		void Register_UnityEngine_SystemInfo_get_deviceModel();
+		Register_UnityEngine_SystemInfo_get_deviceModel();
 
 		//System.String UnityEngine.SystemInfo::get_operatingSystem()
 		void Register_UnityEngine_SystemInfo_get_operatingSystem();

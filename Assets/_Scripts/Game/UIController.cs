@@ -54,7 +54,14 @@ public class UIController : MonoBehaviour
         if (boostGage.fillAmount <= 0 + meterDiff)
         {
             meterCount = meterCount % 10;
+            state.boostLevel = 0;
             state.boostFrag = false;
         }
+    }
+
+    IEnumerator isBoostFlagFalse()
+    {
+        yield return new WaitForSeconds(1);
+        state.boostFrag = false;
     }
 }

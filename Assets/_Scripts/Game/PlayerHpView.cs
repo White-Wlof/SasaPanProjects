@@ -11,8 +11,7 @@ public class PlayerHpView : MonoBehaviour
     void Start()
     {
         state = PlayerStateManager.Instance;
-        ownHpSlider.maxValue = state.ownHp;
-        rivalHpSlider.maxValue = state.rivalHp;
+        Invoke("setMaxHp", 1f);
         ownHpSlider.value = state.ownHp;
         rivalHpSlider.value = state.rivalHp;
     }
@@ -25,5 +24,11 @@ public class PlayerHpView : MonoBehaviour
     public void updateRivalHp()
     {
         rivalHpSlider.value = state.rivalHp;
+    }
+
+    void setMaxHp()
+    {
+        ownHpSlider.maxValue = state.ownHp;
+        rivalHpSlider.maxValue = state.rivalHp;
     }
 }

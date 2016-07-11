@@ -10,7 +10,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: NeTGroup
-  productName: SasaProjects
+  productName: SasaPan
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_ShowUnitySplashScreen: 1
@@ -89,7 +89,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleIdentifier: com.NeTGroup.ProductName
+  bundleIdentifier: com.NeTGroup.SasaPan
   bundleVersion: 1.0
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
@@ -98,7 +98,7 @@ PlayerSettings:
   virtualRealitySupported: 0
   productGUID: 5a4aa7340f06b4217b28f4478b5a32ac
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 9
+  AndroidMinSdkVersion: 16
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   apiCompatibilityLevel: 2
@@ -173,7 +173,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 0}
+      m_Icon: {fileID: 2800000, guid: 0b4ba7dd28b3e41169b10322a6b83187, type: 3}
       m_Width: 128
       m_Height: 128
   m_BuildTargetBatching: []

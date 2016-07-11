@@ -9,6 +9,7 @@ namespace Game
         [SerializeField] Transform center;
         [SerializeField] GameObject cannon;
         [SerializeField] GameObject player;
+        [SerializeField] BoxCollider col;
         PlayerStateManager state;
         private Rigidbody rivalRb;
         private GameObject cannonBall;
@@ -26,9 +27,18 @@ namespace Game
         // Update is called once per frame
         void Update()
         {
-            if (state.rivalHp <= 0 && rivalRb.velocity.z > 3)
+            if (state.ownHp <= 0)
             {
-                rivalRb.velocity -= new Vector3(0, 0, 1);
+                if (rivalRb.useGravity == false)
+                {
+                    rivalRb.useGravity = true;
+                    col.enabled = true;
+                    state.deadPlayers++;
+                }
+                if (rivalRb.velocity.z > 3)
+                {
+                    rivalRb.velocity -= new Vector3(0, 0, 1);
+                }
             }
             else if (state.rivalHp > 0)
             {
@@ -49,14 +59,14 @@ namespace Game
                 }
                 if (timer > 3 && Mathf.Abs(rivalRb.velocity.z) < 1 && rivalRb.velocity.y < 0)
                 {
-                    playerBoost(rivalRb, state.boostLevel + Random.Range(0, 5));
+                    playerBoost(this.gameObject, rivalRb, state.boostLevel + Random.Range(0, 5));
                     timer = 0;
                 }
                 if (timer > 5)
                 {
                     center.transform.LookAt(player.transform.position);
                     shotCannon(center, rivalRb, cannon.transform.position, cannonBall);
-                    playerBoost(rivalRb, 1);
+                    playerBoost(this.gameObject, rivalRb, 1);
                     timer = Random.Range(0.0f, 3.0f);
                 }
             }

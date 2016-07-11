@@ -4,6 +4,7 @@ using System.Collections;
 public sealed class PlayerStateManager : MonoBehaviour
 {
     private static PlayerStateManager _singleInstance;
+    UserDataManager data;
 
     public float ownHp { get; set; }
 
@@ -35,6 +36,8 @@ public sealed class PlayerStateManager : MonoBehaviour
 
     public int leafCount{ get; set; }
 
+    public int deadPlayers{ get; set; }
+
 
     public static PlayerStateManager Instance
     {
@@ -54,9 +57,9 @@ public sealed class PlayerStateManager : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
-        var data = UserDataManager.Instance;
-        ownHp = data.HP + data.PlusHP * 10;
-        ownAtk = data.ATK + data.PlusATK / 10F;
+        data = UserDataManager.Instance;
+        ownHp = data.HP + LevelHp() + plusHp();
+        ownAtk = data.ATK + LevelATK() + plusATK();
         rivalName = "";
         rivalHp = 1000;
         rivalAtk = 10;
@@ -70,6 +73,27 @@ public sealed class PlayerStateManager : MonoBehaviour
         maxSuccessionCannon = 5;
         revivalCannon = 1;
         leafCount = 0;
+        deadPlayers = 0;
     }
-        
+
+    float plusHp()
+    {
+        return data.PlusHP * 10;
+    }
+
+    float plusATK()
+    {
+        return data.PlusATK / 10F;
+    }
+
+    float LevelHp()
+    {
+        return data.Level * 100;
+    }
+
+    float LevelATK()
+    {
+        return data.Level / 5F;
+    }
+
 }
